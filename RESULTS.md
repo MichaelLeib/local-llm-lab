@@ -448,3 +448,8 @@ Artifacts: `results/raw/EXP-006/optimization-sprint/`.
 
 - **Decision:** **not a candidate on this 16 GiB Mac** (2026-09-21). Smallest credible 4-bit releases are 17.8–24.6 GB weights — above physical unified memory before any runtime workspace. No download, no inference. KV is not the blocker (0.75 GiB @128K FP16 hybrid-Mamba bound); weight residency is. Needs ≥24/32 GB hardware. Report: `results/raw/EXP-025-nemotron3nano-gate0/REPORT.md`.
 
+### EXP-015 arm — oMLX 8K admission check (Nemotron 3 Nano)
+
+- **Measured admission result:** the isolated oMLX 0.7.0.dev4 / MLX 0.32.2 server rejected a one-request, 8,099-token arm for pinned `mlx-community/NVIDIA-Nemotron-3-Nano-30B-A3B-4bit` in **0.01 s** with HTTP **507**: its **17.38-GB** checkpoint exceeded the current **11.84-GB** Metal cap. The experiment used `moe_expert_offload_enabled=true`, a 12-GB memory guard, and 8-GB paged SSD-cache limit, but admission accounting rejected the complete checkpoint before expert offload could run.
+- **Safety and interpretation:** swap used, `vm_stat` pageouts, and swapouts had zero delta. There was no model load, prefill, generation, or Hermes integration result. A focused expert-offload unit suite passed 46 tests, which verifies code-path health but does not prove this model can be admitted. **Decision:** do not promote oMLX's expert-streaming claim to a viable Nemotron-3-Nano path on the 16-GB M3. A temporary Metal working-set-cap change is a privileged separate experiment requiring explicit approval. Reviewed evidence: `results/raw/EXP-015-github-runtime-dive/ARM-8K-RESULT.md` and `VERIFIED-REASSESSMENT.md`.
+

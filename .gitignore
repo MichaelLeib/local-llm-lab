@@ -51,6 +51,13 @@ results/raw/EXP-020-bonsai2/raw/prism-llama-macos-arm64.tar.gz
 results/raw/EXP-020-tensorsharp-gemma4-e4b/runtime/
 results/raw/EXP-020-tensorsharp-gemma4-e4b/models/
 
+# --- EXP-015 oMLX Nemotron admission arm: publish only reviewed conclusions ---
+# Raw fixtures, server state, and operational logs can contain synthetic prompts,
+# absolute local paths, or server authentication material.
+results/raw/EXP-015-github-runtime-dive/*
+!results/raw/EXP-015-github-runtime-dive/ARM-8K-RESULT.md
+!results/raw/EXP-015-github-runtime-dive/VERIFIED-REASSESSMENT.md
+
 # --- Private benchmark-fixture artifacts (derive from the private HermesMobile repo) ---
 results/raw/EXP-007/real-repo-ab/oracles/
 results/raw/EXP-007/real-repo-ab/tool-gates/pi-sandbox/

@@ -19,10 +19,11 @@ Observed during project initialization on 2026-09-17. Facts below are tagged by 
 | Component | Configured value | Status / evidence |
 |---|---|---|
 | Lane manager | `~/.hermes/bin/hermes-local-model` | present; status command used read-only |
-| FAST model | `ornith-ai/Ornith-1.5-9B-MLX-4bit` | manager default; local revision and file size verified below |
-| FAST endpoint | `127.0.0.1:8901` | currently **down**; no model process running |
-| DEEP model | `prism-ml/Ternary-Bonsai-27B-mlx-2bit` | manager default; exact revision/checksum unknown |
-| DEEP endpoint | `127.0.0.1:8902` | manager reported **down** at initialization |
+| **Lane identity (authoritative)** | `~/.hermes/state/local-lanes.json` | **written by the manager on every start/ensure/stop/status — this table below is a 2026-09-17 snapshot and may be stale** |
+| FAST model | ~~`ornith-ai/Ornith-1.5-9B-MLX-4bit`~~ → **`MiniCPM5-2B-Q4_K_M` (GGUF)** | promoted 2026-09-21 from EXP-020/EXP-022; verified live via `ps` on :8901 |
+| FAST endpoint | `127.0.0.1:8901` | see manifest `up` flag for current state |
+| DEEP model | ~~`prism-ml/Ternary-Bonsai-27B-mlx-2bit`~~ → **`Gemma-4-E4B-it-Q6_K` (+MTP)** | via `~/.hermes/bin/local-gemma4`; promoted 2026-09-21 |
+| DEEP endpoint | `127.0.0.1:8919` | changed from :8902; see manifest |
 | GGUF fallback | `Qwen3.8-9B-Q4_K_M.gguf` under `~/.cache/gguf/` | configured fallback path; file/revision not verified here |
 | Hermes local context map | 65,536 tokens for both local providers | profile `config.yaml`; configured ceiling, not a capability claim |
 | Residency rule | one local model at a time | lane-manager design; required for this machine |
