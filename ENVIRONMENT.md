@@ -11,7 +11,7 @@ Observed during project initialization on 2026-09-17. Facts below are tagged by 
 | Unified memory | 16 GB (`17179869184` bytes) | system profiler + `sysctl`; observed |
 | OS family/version | macOS 27.0, build `26A428` | `sw_vers`; observed |
 | Root volume | 460 GiB total, 20 GiB available, 40% used | `df -h /`; observed at EXP-004 gate |
-| Thermal design | Fanless MacBook Air | hardware class; sustained behavior still to measure |
+| Thermal design | Fanless MacBook Air, thermal-hacked with active water cooling | hardware class; sustained behavior still to measure |
 | Other machines | Unknown | To be added only when actually inspected |
 
 ## Current local serving setup
