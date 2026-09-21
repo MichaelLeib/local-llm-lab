@@ -27,32 +27,32 @@ IDENTITY_EMAIL="73171570+MichaelLeib@users.noreply.github.com"
 ORIGIN_URL="https://github.com/MichaelLeib/local-llm-lab.git"
 
 # --- 1. SCRUB tracked files (worktree) -------------------------------------
-# Run repeatedly until fixpoint: a file can contain several forms; order is
-# longest-first to keep /Users/michaelleib -> /Users/<user> consistent.
-pass=0; total_subs=0; total_files=0
+# Run repeatedly until fixpoint: a file can contain several forms; the sed
+# applies longest-first within one pass (/Users/... before bare username).
+# Compatible with macOS bash 3.2 (no mapfile).
+pass=0; total_files=0
 while :; do
-  mapfile -t files < <(git ls-files -z | tr '\0' '\n' | while IFS= read -r f; do
-    [ -f "$f" ] && grep -lE "michaelleib|100\.85\.108\.51" "$f" 2>/dev/null || true
+  # collector: grep legitimately fails (exit 1) on no-match files; keep that
+  # from tripping `set -e` by running the substitution with errexit disabled
+  set +e
+  files=$(git ls-files | grep -vE '^(PUBLISHING\.md|SANITIZATION\.md|publish\.sh)$' | while IFS= read -r f; do
+    [ -f "$f" ] && grep -lE "michaelleib|100\.85\.108\.51" "$f" 2>/dev/null
   done)
-  [ "${#files[@]}" -eq 0 ] && break
-  n=0
-  for f in "${files[@]}"; do
-    # skip the docs that must contain the tokens verbatim
-    case "$f" in
-      PUBLISHING.md|SANITIZATION.md|publish.sh) continue ;;
-    esac
-    before=$(wc -c < "$f")
+  set -e
+  [ -z "$files" ] && break
+  pass=$((pass+1))
+  # shellcheck disable=SC2086
+  n=$(printf '%s\n' "$files" | wc -l | tr -d ' ')
+  total_files=$((total_files+n))
+  printf '%s\n' "$files" | while IFS= read -r f; do
     sed -i '' \
       -e 's|/Users/michaelleib|/Users/<user>|g' \
       -e 's|100\.85\.108\.51|100.x.x.x.51|g' \
       -e 's|michaelleib|<user>|g' \
       "$f"
-    after=$(wc -c < "$f")
-    n=$((n+1)); total_subs=$((total_subs+1))
   done
-  total_files=$((total_files+n))
+  echo "[scrub pass $pass] rewrote tokens in $n files"
 done
-echo "[scrub] rewrote tokens in $total_files file-passes"
 
 # --- 2. VERIFY index is clean ----------------------------------------------
 stage_all() { git add -A; }
