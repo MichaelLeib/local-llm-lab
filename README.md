@@ -1,7 +1,8 @@
 # Local-LLM-Lab
 
 Benchmark and experiment results for running open-weight LLMs locally on Apple
-Silicon (MacBook Air M3, 16 GB unified memory), orchestrated through the
+Silicon (MacBook Air M3, 16 GB unified memory, thermal-hacked with active
+water cooling), orchestrated through the
 [Hermes Agent](https://github.com/NousResearch/hermes-agent).
 
 Every experiment is a self-contained evidence pack: raw server logs, captured
