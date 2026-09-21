@@ -21,12 +21,18 @@ serving on constrained hardware — not leaderboard chasing.
 
 ## Highlights
 
-- **EXP-019 (Ornith-1.5-9B GGUF):** Q6_K is the promoted DEEP lane —
-  12.4–12.7 tok/s decode, 145–172 tok/s prefill, needle retrieval correct
-  through **61,943 tokens** (514.8 s cold fill; 64K is a technical envelope,
-  32K is the comfortable operating target). Q5_K_M rejected as primary on
-  prefill throughput (119 tok/s). Fresh Hermes turn: cold 78.5 s at 11,068
-  input tokens, warm 4.7 s at 99% prefix cache.
+- **EXP-020 (Gemma4-E4B + TensorSharp):** new DEEP lane — Gemma-4-E4B
+  Q6_K + MTP draft on the TensorSharp runtime (ggml_metal). 11.1 tok/s
+  decode, ~184 tok/s prefill through 15K, native Hermes tool-call loop
+  PASS, radix prefix cache 89–91% reuse on append-only Hermes turns.
+  MTP spec decoding nearly halves effective ms/tok on populated turns
+  (200.5 → 108.1 at 59–64% acceptance). 64K KV via `MAX_CONTEXT=65536`;
+  15K prefill pushes the 16 GB host to ~10% free (+1.7 GB swap) — the
+  binding constraint. Ornith Q6 retained as instant rollback.
+- **EXP-019 (Ornith-1.5-9B GGUF):** superseded as DEEP default but kept
+  as rollback — 12.4–12.7 tok/s decode, 145–172 tok/s prefill, needle
+  retrieval correct through **61,943 tokens**. Fresh Hermes turn: cold
+  78.5 s at 11,068 input tokens, warm 4.7 s at 99% prefix cache.
 - **EXP-023 (FAST lane):** MiniCPM5-2B Q4_K_M retained over the faster 1B —
   the 1B failed 3 of 4 real-Hermes end-to-end checks (refuses compression,
   wrong answers) despite ~82–87 tok/s direct decode. Promoted **Q4_0 K/V
@@ -67,7 +73,8 @@ the decision current) as part of writing the result pack — plus a
 
 | Model | Size / quant | Key numbers | Decision |
 |---|---|---|---|
-| **Ornith-1.5-9B GGUF Q6_K** (EXP-019) | 9B, Q6_K + Q8_0 KV | decode 12.4–12.7 tok/s; prefill 145–172 tok/s; needle OK @61.9K; Hermes cold 78.5 s / warm 4.7 s | **DEEP lane — promoted** |
+| **Gemma-4-E4B Q6_K + MTP (TensorSharp)** (EXP-020) | 4B-active/8.6B MoE, Q6_K + MTP draft GGUF | 11.1 tok/s decode; ~184 tok/s prefill @15K; tool loop + JSON mode PASS; prefix cache 89–91% | **DEEP lane — promoted** (Ornith Q6 = rollback) |
+| **Ornith-1.5-9B GGUF Q6_K** (EXP-019) | 9B, Q6_K + Q8_0 KV | decode 12.4–12.7 tok/s; prefill 145–172 tok/s; needle OK @61.9K; Hermes cold 78.5 s / warm 4.7 s | **DEEP rollback** (superseded by Gemma4) |
 | **Ornith-1.5-9B MLX 4-bit** (EXP-002/022b) | 9B, 4-bit | faster (146.8 tok/s prefill) but 11/16 exact-answer score vs Q6's 14/16 | speed-only lane; **rejected as Q6 replacement** |
 | **MiniCPM5-2B Q4_K_M** (EXP-022/023) | 2B, Q4_K_M | 47–52 tok/s; 41 ms tool-call latency; Paris ✓; native tool calls ✓; 64K Q4_0 KV idle 857 MB | **FAST/THINK lane — promoted** |
 | **MiniCPM5-1B Q4_K_M** (EXP-023) | 1B, Q4_K_M | 82–87 tok/s direct decode but failed 3/4 real Hermes checks (refuses compression, wrong answers) | **rejected** — too unreliable for the session/tool surface |
@@ -94,6 +101,8 @@ the decision current) as part of writing the result pack — plus a
 
 | Candidate | Why it's next |
 |---|---|
+| Nemotron-3-Nano-30B-A3B | **gated out 2026-09-21 (EXP-025)** — smallest credible 4-bit (17.8–24.6 GB) exceeds 16 GiB; needs ≥32 GB Mac |
+| Mference vs Slipstream warm-lane integration (EXP-024) | designed paired 8K qualification of the Mference runtime; awaiting approval to run |
 | Ornith-vs-Bonsai direct autonomy tournament (EXP-019 follow-up) | Q5 lane saved for it; the full tournament is explicitly unrun |
 | North-Mini-Code-1.0 full Hermes native-tool turn + quality batteries | EXP-016's only survivor earned its intelligence test |
 | Larger-context FAST tuning (Q4_0 K/V at 32K operating targets) | promoted KV setting has unmeasured populated-context behavior above 22.8K |

@@ -48,6 +48,8 @@
 **/quantizer-provenance/stock-bf16-reproduction-gate/
 **/quantizer-provenance/wheels/
 results/raw/EXP-020-bonsai2/raw/prism-llama-macos-arm64.tar.gz
+results/raw/EXP-020-tensorsharp-gemma4-e4b/runtime/
+results/raw/EXP-020-tensorsharp-gemma4-e4b/models/
 
 # --- Private benchmark-fixture artifacts (derive from the private HermesMobile repo) ---
 results/raw/EXP-007/real-repo-ab/oracles/

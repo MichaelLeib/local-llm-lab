@@ -194,3 +194,22 @@ Copy this block into a dated section or experiment file before running:
 - **Decision:** reject Nanbeige as primary and FAST complement. Its modest short-input decode edge did not become an end-to-end time or context-health advantage. Keep Ornith Q5 primary and preserve the candidate only as an isolated reproducible experiment.
 - **Report/evidence:** `results/raw/EXP-021-nanbeige42/REPORT.md`, `summary.json`, pinned source/build, verified model hashes, raw context probes, MLX smoke, and Hermes transcript/resource logs.
 
+## EXP-020 — TensorSharp runtime + Gemma-4-E4B Q6_K DEEP-lane promotion
+
+**Status:** complete and **promoted** on 2026-09-21. Gemma-4-E4B Q6_K + MTP draft on TensorSharp v2026.09.01 (ggml_metal) is the current DEEP lane; Ornith Q6 GGUF is retained as instant rollback.
+
+- **Question:** can the TensorSharp runtime serving Gemma-4-E4B Q6_K with its MTP draft replace the Ornith GGUF DEEP lane within the 16 GB envelope?
+- **Direct results:** 11.1 tok/s decode small-prompt; ~184 tok/s prefill through 15,036 tokens; load 30.6 s cold / 9.9 s warm. Native tool-call loop and JSON mode PASS. Radix prefix cache reused 89–91% of the Hermes prefix on append-only turns.
+- **Speculative decoding:** MTP draft (per-token, maxDraft 7) at 59–64% acceptance; short outputs ≈ break-even, populated turns nearly halve effective ms/tok (plain 200.5 → spec 108.1).
+- **Memory:** 64K KV via `MAX_CONTEXT=65536` env (KV reservation ~1.07 GB); a 15K prefill pushed the host to ~10% free with +1.7 GB swap on a quiet machine — populated deep work is the binding constraint. Restart writes a 22.8 MB prefix-cache checkpoint, but restart restore is not applied (first big prompt after restart is a cold prefill).
+- **Rollout:** profile `local-gemma4`, provider `local-deep` @ 127.0.0.1:8919, exact served id `gemma-4-E4B-it-Q6_K` everywhere; lane manager wired (`start deep`); research runner deep/super tiers default to the DEEP lane; alias/help/doctor tooling refreshed across all profiles.
+- **Report/evidence:** `results/raw/EXP-020-tensorsharp-gemma4-e4b/PROGRESS.md`, `bench/`, `logs/`, `gen-test*.json`, `release.json` (runtime + models dirs are local-only).
+
+## EXP-024 — Mference / Qwen3.6 Hermes integration qualification
+
+**Status:** designed 2026-09-21; **not yet run** (awaits explicit approval). Bounded paired qualification of the Mference runtime versus the retained Slipstream configuration at an 8K context, same `qwen36.gturbo` artifact, loopback-only, documented flags only (`--model --port --max-context --queue-limit --prompt-cache-mode`). Full spec: `results/raw/EXP-024-mference-hermes-integration/TEST_SUITE.md`.
+
+## EXP-025 — Nemotron-3-Nano-30B-A3B Gate 0
+
+**Status:** complete 2026-09-21. **Decision: not a candidate on this 16 GiB Mac.** Smallest credible production 4-bit releases (MLX community 4-bit 17.8 GB weights / 18.4 GB measured peak; Unsloth Q4_K_M 24.6 GB; even Q2_K GGUF 16.85 GiB) exceed physical unified memory before runtime workspaces. No weights downloaded, no server started. Its hybrid Mamba KV lower bound is unusually small (0.75 GiB @128K FP16), so context is not the blocker — weight residency is. Honest qualification needs ≥24 GB (constrained 64K) / 32 GB+ (stable 64–128K loop). Report: `results/raw/EXP-025-nemotron3nano-gate0/REPORT.md`.
+

@@ -431,3 +431,20 @@ Artifacts: `results/raw/EXP-006/optimization-sprint/`.
 - **Safety:** all new arms exited 0 with 0 MiB swap increase and 0 swapouts. Minimum free memory declined 32% → 26% → **20%** at 22/26/30 slots; therefore 34 and optional 38 were not run. FAST/DEEP were down and no ERNIE/llama process or listener remained after cleanup.
 - **Interpretation:** resident slots materially help but are insufficient for safe operational promotion on this 16 GiB host. CLI cache hit/miss/load/eviction stats were unavailable even after inspection of existing diagnostics; Darwin process disk reads fell 1.249 TB → 1.014 TB → 0.772 TB across new arms, supportive but not expert-attributed evidence. Deprioritize more low-level Q4 ERNIE optimization. Full evidence: `results/raw/EXP-017-ernie-streamed-gguf/EXPERT-SLOT-LADDER-REPORT.md`, `expert-slot-ladder-comparison.json`, and `expert-slot-ladder-4k/`.
 
+## EXP-019/022/022b/023 — lane consolidation (earlier runs, summarized)
+
+- **EXP-019:** Ornith-1.5-9B GGUF Q6_K + Q8_0 KV qualified as DEEP lane (decode 12.4–12.7 tok/s; prefill 145–172 tok/s; needle correct @61.9K; Hermes cold 78.5 s / warm 4.7 s @99% cache). Q5_K_M rejected on prefill.
+- **EXP-022/022b:** MiniCPM5-2B promoted FAST/THINK (native tool calls, Paris ✓); MLX 4-bit Ornith regressed 11/16 vs Q6 14/16 on exact-answer suite — speed-only.
+- **EXP-023:** MiniCPM5-1B rejected (3/4 real-Hermes failures despite 82–87 tok/s); Q4_0 K/V promoted at 64K (857 MB idle vs 2,787 MB F16).
+
+## EXP-020 — TensorSharp + Gemma-4-E4B Q6_K DEEP promotion
+
+- **Result:** Gemma-4-E4B Q6_K + MTP draft on TensorSharp ggml_metal **promoted as the DEEP lane** (2026-09-21). 11.1 tok/s decode; ~184 tok/s prefill through 15K; native tool loop + JSON PASS; radix cache 89–91% reuse on append-only Hermes turns. MTP spec decoding nearly halves effective ms/tok on populated turns (200.5 → 108.1 ms/tok, 59–64% acceptance).
+- **Memory envelope:** 64K KV reservation via `MAX_CONTEXT=65536`; 15K prefill reaches ~10% free + 1.7 GB swap — populated deep context remains the binding constraint on 16 GB. Restart checkpoints (22.8 MB) are written but not restored: treat post-restart first big prompt as cold.
+- **Rollout:** exact served id `gemma-4-E4B-it-Q6_K` wired across lane manager, root config, all profile alias maps/providers, research runner (deep/super → DEEP), and user tooling; Ornith Q6 retained as instant rollback.
+- **Evidence:** `results/raw/EXP-020-tensorsharp-gemma4-e4b/` (PROGRESS.md, bench/, logs/, gen-test JSON, release.json).
+
+## EXP-025 — Nemotron-3-Nano-30B-A3B Gate 0
+
+- **Decision:** **not a candidate on this 16 GiB Mac** (2026-09-21). Smallest credible 4-bit releases are 17.8–24.6 GB weights — above physical unified memory before any runtime workspace. No download, no inference. KV is not the blocker (0.75 GiB @128K FP16 hybrid-Mamba bound); weight residency is. Needs ≥24/32 GB hardware. Report: `results/raw/EXP-025-nemotron3nano-gate0/REPORT.md`.
+

@@ -1,0 +1,41 @@
+[
+  {
+    "name": "factual",
+    "seconds": 1.59,
+    "finish": "stop",
+    "tool_calls": null,
+    "content": "Paris",
+    "usage": {
+      "cached_tokens": 0
+    }
+  },
+  {
+    "name": "tool",
+    "seconds": 2.49,
+    "finish": "tool_calls",
+    "tool_calls": [
+      {
+        "id": "call_bcbf2ae42eb541fa99c",
+        "type": "function",
+        "function": {
+          "name": "get_git_status",
+          "arguments": "{}"
+        }
+      }
+    ],
+    "content": "",
+    "usage": {
+      "cached_tokens": 0
+    }
+  },
+  {
+    "name": "structured",
+    "seconds": 4.32,
+    "finish": "stop",
+    "tool_calls": null,
+    "content": "{\"route\":\"DEEP\",\"confidence\":0.9}",
+    "usage": {
+      "cached_tokens": 0
+    }
+  }
+]
