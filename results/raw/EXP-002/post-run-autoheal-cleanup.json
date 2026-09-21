@@ -1,0 +1,19 @@
+{
+  "experiment": "EXP-002",
+  "event": "post-run-autoheal-cleanup",
+  "observed_at_utc": "2026-09-17T08:07:28Z",
+  "observation": "After the official 8-bit server had exited, the FAST lane unexpectedly reappeared on port 8901 running the manager default official 4-bit model in lazy standby.",
+  "observed_process": {
+    "pid": 18417,
+    "rss_kib": 146064,
+    "command_model": "ornith-ai/Ornith-1.5-9B-MLX-4bit",
+    "endpoint": "127.0.0.1:8901",
+    "manager_pid_file": "missing",
+    "weights_loaded": "not established; process was in lazy standby and no inference request was sent"
+  },
+  "cleanup": {
+    "action": "hermes-local-model stop fast",
+    "result": "port closed, endpoint unreachable, no rapid-mlx or llama-server process, FAST and DEEP down",
+    "auto_heal": "disabled by manager's user-stopped marker"
+  }
+}

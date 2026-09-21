@@ -1,0 +1,24 @@
+Here's a thinking process:
+
+1.  **Understand User Request:**
+   - **Topic:** Compare optimistic concurrency control (OCC) vs. pessimistic locking (PL) for a collaborative document service.
+   - **Requirements:** 
+     - State the trade-off
+     - Identify a failure mode for each
+     - Give a practical hybrid design
+     - Be precise and concise.
+
+2.  **Deconstruct Key Concepts:**
+   - *Optimistic Concurrency Control (OCC):* Assumes conflicts are rare. Reads without locking, checks for conflicts at write time (e.g., version numbers, timestamps). If conflict, abort/retry.
+   - *Pessimistic Locking (PL):* Assumes conflicts are common. Locks resources during read/write to prevent concurrent access. Blocks other transactions until lock is released.
+   - *Context:* Collaborative document service (multiple users editing the same document simultaneously).
+
+3.  **Identify Trade-off:**
+   - OCC: High throughput, low latency under low contention, but suffers from wasted work and retries under high contention.
+   - PL: Guarantees consistency, prevents wasted work, but causes blocking, reduced concurrency, and potential deadlocks/starvation under high contention.
+   - *Trade-off:* Concurrency/throughput vs. consistency/blocking. OCC favors performance when conflicts are rare; PL favors predictability and avoids wasted work when conflicts are frequent.
+
+4.  **Identify Failure Modes:**
+   - *OCC Failure Mode:* "Lost update" or "write-write conflict" under high contention → repeated retries, livelock, or degraded performance. Also, stale reads if not using strong consistency.
+   - *PL Failure Mode:* "Deadlock" or "starvation" when multiple users hold locks on overlapping document sections or when a lock holder
+[stop=maxTokens prefill=48tok/8.76s new=384tok decode=39.12s tok/s=9.816]

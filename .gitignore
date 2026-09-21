@@ -1,0 +1,60 @@
+# --- Never track: model weights, binaries, build artifacts ---
+*.gguf
+*.safetensors
+*.bin
+*.gguf.part*
+*.kv
+*.pth
+*.ckpt
+*.tgz
+*.tar
+*.tar.gz
+*.tgz
+*.whl
+*.dylib
+*.so
+*.a
+*.o
+*.pyc
+*.wasm
+*.bundle
+*.mgc
+.DS_Store
+
+# --- Vendored third-party source trees (llama.cpp clones, deps, build outputs) ---
+**/source/
+**/node_modules/
+**/site-packages/
+**/__pycache__/
+**/.build/
+**/venv/
+**/.venv*/
+**/mlx-venv*/
+**/venv-turboquant/
+**/packed_experts/
+**/binaries/
+**/ios-native/
+**/worktrees/
+**/fixtures/
+**/private/
+
+# --- Local workspace snapshots (contain live session secrets + private code) ---
+**/backups/
+**/models/
+**/model/
+**/acquisition/
+**/first-probe/stdout-stderr.log
+**/generated-resident/
+**/quantizer-provenance/stock-bf16-reproduction-gate/
+**/quantizer-provenance/wheels/
+results/raw/EXP-020-bonsai2/raw/prism-llama-macos-arm64.tar.gz
+
+# --- Private benchmark-fixture artifacts (derive from the private HermesMobile repo) ---
+results/raw/EXP-007/real-repo-ab/oracles/
+results/raw/EXP-007/real-repo-ab/tool-gates/pi-sandbox/
+results/raw/EXP-007/real-repo-ab/pi-config/
+results/raw/EXP-007/real-repo-ab/backups/
+# model artifact dirs: manifests only, weights/tokenizer excluded
+**/.gturbo/tokenizer/
+results/raw/EXP-007/**/results/candidate-*/hermes/T01/*/worktree-create.txt
+results/raw/EXP-007/**/results/candidate-*/hermes/T01/*/worktree-path.txt

@@ -1,0 +1,22 @@
+{
+  "experiment": "EXP-005",
+  "sweep": "post_reboot_clean_prefill_decode",
+  "status": "success",
+  "baseline": {
+    "swap_before_mib": 0.0,
+    "swap_after_mib": 0.0,
+    "expert_cache_slots": 16,
+    "max_context": 4096,
+    "temperature": 0,
+    "seed": 12345,
+    "all_exit_codes": [0, 0, 0, 0, 0]
+  },
+  "arms": [
+    {"prompt_tokens": 5, "prefill_seconds": 8.58, "decode_tok_s": 8.778, "new_tokens": 8},
+    {"prompt_tokens": 273, "prefill_seconds": 9.74, "decode_tok_s": 8.417, "new_tokens": 16},
+    {"prompt_tokens": 546, "prefill_seconds": 11.40, "decode_tok_s": 8.219, "new_tokens": 16},
+    {"prompt_tokens": 1105, "prefill_seconds": 15.14, "decode_tok_s": 7.531, "new_tokens": 16},
+    {"prompt_tokens": 2210, "prefill_seconds": 37.99, "decode_tok_s": 5.903, "new_tokens": 16}
+  ],
+  "artifacts": "results/raw/EXP-005/prefill-sweep-clean/"
+}

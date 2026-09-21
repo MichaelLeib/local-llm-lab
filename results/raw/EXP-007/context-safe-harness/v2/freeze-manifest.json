@@ -1,0 +1,65 @@
+{
+  "files": [
+    {
+      "path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/context-safe-harness/v2/POLICY.md",
+      "sha256": "9ae740bf64142a8acc57925ece3438e5610b1ea55b7054e852186cd8eacdebb8"
+    },
+    {
+      "path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/context-safe-harness/v2/exp007_run_blind_hermes_task_v2.sh",
+      "sha256": "1e5199e828d01d527195135bb2490ca559ecd007636c900428b1338e6532e64e"
+    },
+    {
+      "path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/context-safe-harness/v2/exp007_summarize_context_metrics_v2.py",
+      "sha256": "5c7a3f8a4aeeaab83875edf0208213243e9130d033a8eebfe082ea477a3506c2"
+    },
+    {
+      "path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/context-safe-harness/v2/exp007_retrieval_refinement.py",
+      "sha256": "89d08ef7ece7b3d59e08089c3e9c553bb9aa6ffa610ac34c1c788cfe2b9cbf88"
+    },
+    {
+      "path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/context-safe-harness/v2/exp007_v2_trace_replay.py",
+      "sha256": "0cad442bd5d9aae57ea92f78f3f77119e3d11136b3025a5a0fe4c99b009c0017"
+    },
+    {
+      "path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/context-safe-harness/v2/tests/test_context_safe_output_v2.py",
+      "sha256": "e0654b41d1830505b4d2ed4f8d137c4f25fe03968aa9dd21c311f90a5fef054f"
+    },
+    {
+      "path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/context-safe-harness/v2/tests/test_context_metrics_v2.py",
+      "sha256": "05a30e4d5b21045ffb16ddbcb337fc152b80a872ce7e841d78abb207f5f901ae"
+    },
+    {
+      "path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/context-safe-harness/v2/tests/test_plugin_schema_safety_v2.py",
+      "sha256": "787402706def6878424aa0f8cf497bdfbe508683438914704c96787b8a7d75f6"
+    },
+    {
+      "path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/context-safe-harness/v2/tests/test_retrieval_refinement_v2.py",
+      "sha256": "e5062c28ad1597e90135b3a4b8905c58622136783fcd67730a6bc520a622f2ae"
+    },
+    {
+      "path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/context-safe-harness/v2/tests/test_runner_v2_contract.py",
+      "sha256": "2827562f7c7b1d816f3765b54a228320fe762a19ac175320fa201195a7947696"
+    },
+    {
+      "path": "/Users/<user>/.hermes/profiles/exp007benchv2/config.yaml",
+      "sha256": "2b6606a1ce8987baa592a8775aff81c329aca2d15a716ae7ed8a61a65789f704"
+    },
+    {
+      "path": "/Users/<user>/.hermes/profiles/exp007benchv2/plugins/exp007-context-safe-v2/__init__.py",
+      "sha256": "c8193c9b247c4877c27d6633a753a449c28b9008cb5dcd90be48ba131fa6242a"
+    },
+    {
+      "path": "/Users/<user>/.hermes/profiles/exp007benchv2/plugins/exp007-context-safe-v2/plugin.yaml",
+      "sha256": "b7333a47c454d9b0adaf2ac2ea5fe1f1390e64a65fc00227440a760b3b5564fd"
+    }
+  ],
+  "freeze_status": "validated-no-model; candidate launch permitted",
+  "invariants": {
+    "completion_allowance": 4096,
+    "serialized_tool_result_cap": 350,
+    "server_context": 16384
+  },
+  "policy": "EXP-007-context-safe-v2",
+  "v1_policy_sha256": "69b37171d15e855ac7c9f5ff8c7096623931dc66242e9920d93d6ebf92a8ad04",
+  "v2_tool_schema_sha256": "9f0e6dd16cb627e08757233643d864615c6aabb28f3005fe57b5b4786b1f94ed"
+}

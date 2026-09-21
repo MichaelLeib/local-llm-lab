@@ -1,0 +1,15 @@
+2026-09-18T13:11:17Z
+reason=incremental swap rose from 1585.56 MiB baseline to 4371.06 MiB (+2785.50 MiB) during prefill; memory-pressure free=27%. This exceeds the project’s prior 24-slot unacceptable envelope before decode and is stopped to protect host usability.
+target_pid=75744
+vm.swapusage: total = 5120.00M  used = 4315.06M  free = 804.94M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+System-wide memory free percentage: 26%
+75744 75716 04:16 5748768   5.5 34.3 /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-009-qwen38-long-context/source/tinytitan-current/.build/release/TinyTitanCLI --model /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/model/qwen3.8-flash-next_125B_A6B_4Bit --messages-file /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-009-qwen38-long-context/arms/phase2-short-16slot-current-7k/messages.json --max-new 256 --max-context 8192 --temperature 0 --seed 12345 --thinking off --expert-cache-slots 16 --prefill-chunk 4096
+======================================================================
+TinyTitanCLI [75744]: 64-bit    Footprint: 8266144512 B (16384 bytes per page)
+======================================================================
+
+Auxiliary data:
+    phys_footprint: 8251153152 B
+    phys_footprint_peak: 8650545896 B
+

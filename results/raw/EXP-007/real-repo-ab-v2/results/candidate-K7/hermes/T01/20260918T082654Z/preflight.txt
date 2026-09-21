@@ -1,0 +1,38 @@
+2026-09-18T08:26:54Z
+blind_candidate=candidate-K7
+harness=hermes
+task=T01
+d8635752d0f2d41b65aa03126e1eb782e8515cc29e3fc2fb4c186fbeca8cd695  /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/prompts/T01/task.md
+9ae740bf64142a8acc57925ece3438e5610b1ea55b7054e852186cd8eacdebb8  /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/context-safe-harness/v2/POLICY.md
+a43d24cb624dee4e5ddfb4b0c8f788fd9fd6c8c9
+vm.swapusage: total = 2048.00M  used = 1158.31M  free = 889.69M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 21469 
+Pages purgeable: 29765 
+Pages purged: 13299230 
+
+Swap I/O:
+Swapins: 42312 
+Swapouts: 116124 
+
+Page Q counts:
+Pages active: 323019 
+Pages inactive: 316982 
+Pages speculative: 5476 
+Pages throttled: 0 
+Pages wired down: 177779 
+
+Compressor Stats:
+Pages used by compressor: 166422 
+Pages decompressed: 55226070 
+Pages compressed: 64978501 
+
+File I/O:
+Pageins: 141369038 
+Pageouts: 42299 
+
+System-wide memory free percentage: 65%
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi    44Gi    23%    484k  461M    0%   /

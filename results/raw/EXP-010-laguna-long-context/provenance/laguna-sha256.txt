@@ -1,0 +1,6 @@
+be47277ecdea7c1d56d8d51f53177d2ed0c5e1b1382eb5cac8c489021bf6036a  model/laguna-s21-tqTe-g64/model-00001-of-00006.safetensors
+245492a0c5041144f12146dfc961b5713a94187e1ba4dda16eca2b70411ef4fd  model/laguna-s21-tqTe-g64/model-00002-of-00006.safetensors
+64496edde5e97881424a2b88ba81ef215a4f0e897eeefdb72900e7f83e918990  model/laguna-s21-tqTe-g64/model-00003-of-00006.safetensors
+0e5e93a3bf0cb4743914a2cc5677fe2ed07707009c055bac20d9c277b8d4921c  model/laguna-s21-tqTe-g64/model-00004-of-00006.safetensors
+5565f854f398de256df54c512f2aa9138185289b243a2bd3807a5e4cbe2c5f71  model/laguna-s21-tqTe-g64/model-00005-of-00006.safetensors
+c8dc58cdc7ef300e7078cdd4b9f8a630cdbe136c123cbad1d527a884ca7daa4c  model/laguna-s21-tqTe-g64/model-00006-of-00006.safetensors

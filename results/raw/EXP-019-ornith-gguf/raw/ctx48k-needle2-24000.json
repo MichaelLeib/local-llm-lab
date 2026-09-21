@@ -1,0 +1,52 @@
+{
+  "summary": {
+    "ok": true,
+    "elapsed": 181.335,
+    "prompt_tokens": 26579,
+    "gen_tokens": 74,
+    "decode_tps": 0.41,
+    "finish": "stop",
+    "has_reasoning": true,
+    "content_head": "LAGUNA_ORNITH_QUARTZ_7391",
+    "tool_calls": null,
+    "needle_correct": true,
+    "target_tokens_approx": 24000
+  },
+  "raw": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "LAGUNA_ORNITH_QUARTZ_7391",
+          "reasoning_content": "The user is asking for the exact archival identifier. Looking through the text, I can find \"Critical archival identifier: LAGUNA_ORNITH_QUARTZ_7391.\"\n\nThe answer is LAGUNA_ORNITH_QUARTZ_7391.\n"
+        }
+      }
+    ],
+    "created": 1789842204,
+    "model": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-019-ornith-gguf/models/Ornith-1.5-9B-Q6_K.gguf",
+    "system_fingerprint": "b10964-b29c606e2",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 74,
+      "prompt_tokens": 26579,
+      "total_tokens": 26653,
+      "prompt_tokens_details": {
+        "cached_tokens": 12
+      }
+    },
+    "id": "chatcmpl-7fwHMqeEIxIEMQ8ADERkWQYlf3rMb69q",
+    "timings": {
+      "cache_n": 12,
+      "prompt_n": 26567,
+      "prompt_ms": 173435.658,
+      "prompt_per_token_ms": 6.528236458764633,
+      "prompt_per_second": 153.18072596120922,
+      "predicted_n": 74,
+      "predicted_ms": 7339.939,
+      "predicted_per_token_ms": 100.5471095890411,
+      "predicted_per_second": 9.945586741252209
+    }
+  }
+}

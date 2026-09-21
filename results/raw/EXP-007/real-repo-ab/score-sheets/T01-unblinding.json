@@ -1,0 +1,25 @@
+{
+  "receipt_version": "EXP-007-T01-unblinding-v1",
+  "unblinding_precondition": "both paired blind score rows locked",
+  "assignment_sha256": "0e8b75544f810ead5e92e5538ca320f62eb6cb3d99ba65cb88ca2c6354198a7f",
+  "pair": [
+    {
+      "blind_candidate": "candidate-K7",
+      "model": "Stock Hybrid Control Qwen3.6",
+      "artifact": "qwen36-stock-hybrid-control.gturbo",
+      "coding_score": 0,
+      "agent_execution_score": 14,
+      "outcome": "context-exhaustion before edit"
+    },
+    {
+      "blind_candidate": "candidate-R2",
+      "model": "Carnice Qwen3.6 MoE 35B A3B hybrid",
+      "artifact": "Carnice-Qwen3.6-MoE-35B-A3B.gturbo",
+      "coding_score": 0,
+      "agent_execution_score": 12,
+      "outcome": "context-exhaustion before edit"
+    }
+  ],
+  "paired_conclusion": "Both arms independently reached context exhaustion under EXP-007-context-safe-v1 before editing. The predeclared threshold for a separate structural-harness review is met; these locked v1 scores remain candidate failures and are not retroactively altered.",
+  "next_action": "Design and validate a separately versioned context-safe-v2 policy; do not modify EXP-007-context-safe-v1 or overwrite its paired evidence."
+}

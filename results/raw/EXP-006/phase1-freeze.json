@@ -1,0 +1,64 @@
+{
+  "experiment": "EXP-006",
+  "phase": "phase1-freeze",
+  "created_at_utc": "2026-09-17T15:18:28Z",
+  "exp005": {
+    "runtime_repo": "https://github.com/dwijenpatel/slipstream.git",
+    "runtime_path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream",
+    "commit": "3a892465729406944778a24064664d817617f558",
+    "working_tree_status": "",
+    "model_path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/model/qwen36.gturbo",
+    "model_du_bytes": 19551416320,
+    "model_files": {
+      "first-probe-clean/summary.json": {
+        "path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/first-probe-clean/summary.json",
+        "bytes": 744,
+        "sha256": "06020f59f7cc8981960071c3986ba3a3516e815e11948bdcac3f861368f3a6b9"
+      },
+      "prefill-sweep-clean/summary.json": {
+        "path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/prefill-sweep-clean/summary.json",
+        "bytes": 857,
+        "sha256": "15835d211caf7c1be40628bb825d3853ca68d2ccde9c12f3c55f22515edf276a"
+      },
+      "kv-snapshot-clean/summary.json": {
+        "path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/kv-snapshot-clean/summary.json",
+        "bytes": 611,
+        "sha256": "4cac3ab23ec4be34ed55ca23a84b57f8aa573bb73468ee074ecac5e413edea49"
+      },
+      "hermes-tool-test-clean-reboot-result.json": {
+        "path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/hermes-tool-test-clean-reboot-result.json",
+        "bytes": 1206,
+        "sha256": "e2a7c6a016e3db844c41a12c7ec8051303db71561797685aa74e46654be2c804"
+      },
+      "first-probe-clean-run.py": {
+        "path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/first-probe-clean-run.py",
+        "bytes": 2850,
+        "sha256": "1cceb0b84c78ee04612c5f4baf19c0cb68c822752abaf783f07c994b62f6890e"
+      },
+      "prefill-sweep-clean-run.py": {
+        "path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/prefill-sweep-clean-run.py",
+        "bytes": 2347,
+        "sha256": "5cc53f6abb09ee6ac1edef49ec54b1326e4eeda31b9da0d1b98ea110617dbb71"
+      },
+      "kv-snapshot-clean-run.py": {
+        "path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/kv-snapshot-clean-run.py",
+        "bytes": 2298,
+        "sha256": "e5fe609d368a28c6f068ecbb9c689c429cfd145622ce419b50ec3e620ee7753e"
+      }
+    },
+    "hermes_profile": "exp005",
+    "hermes_config_path": "/Users/<user>/.hermes/profiles/exp005/config.yaml",
+    "default_profile_untouched": true,
+    "clean_results": {
+      "probe": "READY.; 14.22 s cold prefill; 8.404 tok/s; 0 MiB swap delta",
+      "prefill_sweep": "273: 9.74 s/8.417 tok/s; 546: 11.40 s/8.219 tok/s; 1105: 15.14 s/7.531 tok/s; 2210: 37.99 s/5.903 tok/s",
+      "disk_kv": "1196 tokens; cold 16.67 s/7.563 tok/s; restored 0.04 s/1.546 tok/s",
+      "hermes": "5003-token first request 107.87 s TTFT; follow-up 4.50 s TTFT; 5052/5106 reused; 84.38 MiB swap after workflow"
+    }
+  },
+  "preservation_policy": [
+    "EXP-005 source, model, raw results and exp005 Hermes profile are not modified by EXP-006.",
+    "EXP-006 runtime/model paths are separate.",
+    "No local model process was running at freeze time."
+  ]
+}

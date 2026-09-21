@@ -1,0 +1,76 @@
+{
+  "first_wall_seconds": 22.597,
+  "first_response": {
+    "created": 1789708634,
+    "model": "carnice-exp007",
+    "choices": [
+      {
+        "finish_reason": "tool_calls",
+        "index": 0,
+        "message": {
+          "content": null,
+          "tool_calls": [
+            {
+              "id": "call_a4f864525637ce56889fce18",
+              "function": {
+                "arguments": "{\"command\":\"printf AGENT_TOOL_OK\"}",
+                "name": "terminal"
+              },
+              "type": "function"
+            },
+            {
+              "id": "call_8a33862a40d97838fedbe971",
+              "type": "function",
+              "function": {
+                "arguments": "{\"command\":\"printf AGENT_TOOL_OK\"}",
+                "name": "terminal"
+              }
+            }
+          ],
+          "role": "assistant"
+        }
+      }
+    ],
+    "id": "chatcmpl-268448648e2d428fba5f7b30702f202c",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens": 109,
+      "total_tokens": 414,
+      "prompt_tokens": 305
+    }
+  },
+  "executed_tool": {
+    "command": "printf AGENT_TOOL_OK",
+    "stdout": "AGENT_TOOL_OK",
+    "stderr": "",
+    "returncode": 0
+  },
+  "second_wall_seconds": 71.407,
+  "second_response": {
+    "object": "chat.completion",
+    "id": "chatcmpl-57a4ce5559a04f3e9f5f24b2e30d048c",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "",
+          "role": "assistant"
+        },
+        "finish_reason": "length"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 355,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens": 512,
+      "total_tokens": 867
+    },
+    "created": 1789708656,
+    "model": "carnice-exp007"
+  }
+}

@@ -1,0 +1,18 @@
+Fetching 8 files:   0%|          | 0/8 [00:00<?, ?it/s]Downloading 'tokenizer.json' to 'results/raw/EXP-016-small-moe-feasibility/ernie/model/.cache/huggingface/download/HgM_lKo9sdSCfRtVg7MMFS7EKqo=.93a291ef6e5c89e6c0f2d5d004734ff429faa8ab925e39d71d2374b3d0daf49e.incomplete'
+Downloading 'model-00001-of-00003.safetensors' to 'results/raw/EXP-016-small-moe-feasibility/ernie/model/.cache/huggingface/download/Y6g195DXbsCiN_Ka1NwH6jyLkvc=.7fbdfe7f79a0e1c4fac6b18b4e033fe1a059c6f924604c9e6e6258c37707c32e.incomplete'
+Downloading 'model-00003-of-00003.safetensors' to 'results/raw/EXP-016-small-moe-feasibility/ernie/model/.cache/huggingface/download/NmVQgThqhsRkG2FlXLh-M51MilA=.4c519390384e3d1d8e92e716954535b05b0e23d0443e49ec2fadac40d8768ec7.incomplete'
+Downloading 'model-00002-of-00003.safetensors' to 'results/raw/EXP-016-small-moe-feasibility/ernie/model/.cache/huggingface/download/D5-QTaCbl9VUFv9Wr0C28eFewRc=.50fea6ed52be0d7eb980764436a2eae43f3065ca9d052205988a7333c0e94cb4.incomplete'
+Downloading 'generation_config.json' to 'results/raw/EXP-016-small-moe-feasibility/ernie/model/.cache/huggingface/download/3EVKVggOldJcKSsGjSdoUCN1AyQ=.1c466a304311a9f2d9533f2bebc0b63c5aea9aa4.incomplete'
+Downloading 'special_tokens_map.json' to 'results/raw/EXP-016-small-moe-feasibility/ernie/model/.cache/huggingface/download/ahkChHUJFxEmOdq5GDFEmerRzCY=.04de6b0db10be8dee2a8f0a2f2ef86202e896ac6.incomplete'
+Downloading 'tokenizer_config.json' to 'results/raw/EXP-016-small-moe-feasibility/ernie/model/.cache/huggingface/download/vzaExXFZNBay89bvlQv-ZcI6BTg=.deb110b1e4159d3effd8047ac3febf6c939e2c26.incomplete'
+Downloading 'config.json' to 'results/raw/EXP-016-small-moe-feasibility/ernie/model/.cache/huggingface/download/8_PA_wEVGiVa2goH2H4KQOQpvVY=.7881c6f2cf4c071b09292d16af2e971025d2ba21.incomplete'
+Download complete. Moving file to results/raw/EXP-016-small-moe-feasibility/ernie/model/generation_config.json
+Download complete. Moving file to results/raw/EXP-016-small-moe-feasibility/ernie/model/special_tokens_map.json
+Download complete. Moving file to results/raw/EXP-016-small-moe-feasibility/ernie/model/tokenizer_config.json
+Download complete. Moving file to results/raw/EXP-016-small-moe-feasibility/ernie/model/config.json
+Fetching 8 files:  12%|█▎        | 1/8 [00:00<00:03,  1.93it/s]Download complete. Moving file to results/raw/EXP-016-small-moe-feasibility/ernie/model/tokenizer.json
+Download complete. Moving file to results/raw/EXP-016-small-moe-feasibility/ernie/model/model-00003-of-00003.safetensors
+Download complete. Moving file to results/raw/EXP-016-small-moe-feasibility/ernie/model/model-00001-of-00003.safetensors
+Fetching 8 files:  38%|███▊      | 3/8 [01:47<03:18, 39.63s/it]Download complete. Moving file to results/raw/EXP-016-small-moe-feasibility/ernie/model/model-00002-of-00003.safetensors
+Fetching 8 files:  50%|█████     | 4/8 [01:47<01:44, 26.17s/it]Fetching 8 files: 100%|██████████| 8/8 [01:47<00:00, 13.49s/it]
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-016-small-moe-feasibility/ernie/model

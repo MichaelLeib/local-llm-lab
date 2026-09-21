@@ -1,0 +1,39 @@
+2026-09-20T18:06:30+02:00
+FAST: up (MiniCPM5-2B Q4_K_M, port 8901)
+DEEP: down
+vm.swapusage: total = 2048.00M  used = 1169.81M  free = 878.19M  (encrypted)
+vm.swapusage: total = 2048.00M  used = 1169.81M  free = 878.19M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 83283 
+Pages purgeable: 21966 
+Pages purged: 35066748 
+
+Swap I/O:
+Swapins: 3788773 
+Swapouts: 5001505 
+
+Page Q counts:
+Pages active: 229713 
+Pages inactive: 224816 
+Pages speculative: 5577 
+Pages throttled: 0 
+Pages wired down: 403763 
+
+Compressor Stats:
+Pages used by compressor: 63995 
+Pages decompressed: 201965368 
+Pages compressed: 224983193 
+
+File I/O:
+Pageins: 126244880 
+Pageouts: 181119 
+
+System-wide memory free percentage: 53%
+23693     1   8048       26:07 /Users/<user>/.hermes/hermes-agent/venv/bin/python -m hermes_cli.stderr_timestamp --error-log /Users/<user>/.hermes/logs/gateway.error.log -- /Users/<user>/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main gateway run --external-supervisor
+23699 23693 231808       26:07 /Users/<user>/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main gateway run --external-supervisor
+23830     1  14704       25:27 /Users/<user>/.local/bin/node /Users/<user>/HermesProjects/HermesMobile/server/dist/index.js
+24095     1 4287936       24:26 /opt/homebrew/bin/llama-server -m /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-022-auto-routing/models/minicpm/MiniCPM5-2B-Q4_K_M.gguf --host 127.0.0.1 --port 8901 -ngl 99 -c 65536 --jinja --flash-attn on --no-warmup --no-reasoning-preserve -rea off --metrics --alias minicpm5-2b
+27586  1127   2528       00:00 /bin/bash -c source /var/folders/y0/g1szp20x4pl86bgz0w_w9_280000gn/T/hermes-snap-db2485b1e374.sh >/dev/null 2>&1 || true\012export AI_AGENT="${AI_AGENT:-hermes-agent}" HERMES_AGENT="${HERMES_AGENT:-true}"\012export GIT_PAGER="${GIT_PAGER:-cat}" PAGER="${PAGER:-cat}"\012builtin cd -- /Users/<user> || exit 126\012eval 'set -e\012ROOT=/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-023-fast-lane-optimization\012mkdir -p "$ROOT"/{raw,models,backups,source}\012STAMP=$(date +%Y%m%dT%H%M%S%z)\012DEST="$ROOT/backups/$STAMP"\012mkdir -p "$DEST/configs" "$DEST/mychatty"\012cp -p /Users/<user>/.hermes/bin/hermes-local-model "$DEST/"\012cp -p /Users/<user>/.hermes/config.yaml "$DEST/configs/default.yaml"\012for f in /Users/<user>/.hermes/profiles/*/config.yaml; do cp -p "$f" "$DEST/configs/$(basename "$(dirname "$f")").yaml"; done\012cp -p /Users/<user>/HermesProjects/HermesMobile/server/src/auto-router.ts "$DEST/mychatty/"\012printf '\''%s\n'\'' "$DEST" > "$ROOT/LATEST_BACKUP_PATH"\012{ date -Iseconds; /Users/<user>/.hermes/bin/hermes-local-model status; sysctl vm.swapusage; memory_pressure; ps -axo pid,ppid,rss,etime,command | grep -E '\''[l]lama-server|[h]ermes.*gateway|HermesMobile/server/dist'\'' || true; } > "$ROOT/raw/baseline-system.txt"\012git -C /Users/<user>/HermesProjects/HermesMobile status --short > "$ROOT/raw/mychatty-git-status.txt"\012git -C /Users/<user>/HermesProjects/HermesMobile rev-parse HEAD > "$ROOT/raw/mychatty-commit.txt"\012cat "$ROOT/LATEST_BACKUP_PATH"'\012__hermes_ec=$?\012umask 077\012__hermes_snap_tmp=$(mktemp /var/folders/y0/g1szp20x4pl86bgz0w_w9_280000gn/T/hermes-snap-db2485b1e374.sh.tmp.XXXXXXXXXX) && { { ( unset ${!HERMES_SESSION_*} ${!HERMES_CRON_AUTO_DELIVER_*} ${!HERMES_BROWSER_CONTROL_*} AI_AGENT HERMES_AGENT HERMES_UI_SESSION_ID 2>/dev/null; export -p; ) || true; } > "$__hermes_snap_tmp" && mv -f "$__hermes_snap_tmp" /var/folders/y0/g1szp20x4pl86bgz0w_w9_280000gn/T/hermes-snap-db2485b1e374.sh; } 2>/dev/null || rm -f "$__hermes_snap_tmp" 2>/dev/null || true\012printf '\n__HERMES_CWD_db2485b1e374__%s__HERMES_CWD_db2485b1e374__\n' "$(pwd -P)"\012exit $__hermes_ec
+27649 27586   1248       00:00 grep -E [l]lama-server|[h]ermes.*gateway|HermesMobile/server/dist

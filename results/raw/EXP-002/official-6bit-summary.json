@@ -1,0 +1,99 @@
+{
+  "experiment": "EXP-002",
+  "model": "ornith-ai/Ornith-1.5-9B-MLX-6bit",
+  "revision": "538eb2e517a3adf8691e77cc20232ef1a3af39f3",
+  "repository_bytes": 7298157745,
+  "process_pid": 14881,
+  "runtime": "rapid-mlx 0.14.1 / MLX 0.32.1 / mlx-lm 0.31.3",
+  "configuration": {
+    "gpu_memory_utilization": 0.85,
+    "cache_memory_mb": 3072,
+    "lazy_load": true,
+    "idle_unload_seconds": 1800,
+    "reasoning": "disabled",
+    "kv_cache_dtype": "bf16",
+    "prompt_tokens": 1958,
+    "max_generated_tokens": 512,
+    "temperature": 0.2,
+    "top_p": 0.95
+  },
+  "load": {
+    "load_duration_seconds": 33.268715500002145,
+    "warmup_time_to_first_event_seconds": 33.586,
+    "warmup_artifact": "official-6bit-warmup.json"
+  },
+  "checkpoints": {
+    "loaded_idle": {
+      "os_footprint_mb": 7884,
+      "os_footprint_peak_mb": 8225,
+      "ioaccelerator_mb": 7253,
+      "rapid_mlx_metal_active_gb_decimal": 7.57,
+      "rapid_mlx_metal_peak_gb_decimal": 8.26,
+      "rapid_mlx_metal_cache_gb_decimal": 0.03,
+      "memory_pressure_free_percent": 29.0,
+      "swap_used_mb": 4596.56,
+      "artifacts": ["official-6bit-idle-loaded.json", "official-6bit-idle-footprint.txt", "official-6bit-idle-metrics.txt"]
+    },
+    "pre_inference": {
+      "os_footprint_mb": 7885,
+      "memory_pressure_free_percent": 33.0,
+      "swap_used_mb": 5686.44,
+      "artifacts": ["official-6bit-pre-inference.json", "official-6bit-pre-inference-footprint.txt", "official-6bit-pre-inference-metrics.txt"]
+    },
+    "active_peak": {
+      "os_footprint_mb": 8694,
+      "os_footprint_peak_mb": 8840,
+      "ioaccelerator_mb": 8194,
+      "rapid_mlx_metal_active_gb_decimal": 8.32,
+      "rapid_mlx_metal_peak_gb_decimal": 8.37,
+      "rapid_mlx_metal_cache_gb_decimal": 0.27,
+      "memory_pressure_free_percent": 11.0,
+      "swap_used_mb": 3884.00,
+      "artifacts": ["official-6bit-active-peak.json", "official-6bit-active-peak-footprint.txt", "official-6bit-active-peak-metrics.txt"]
+    },
+    "post_generation": {
+      "os_footprint_mb": 8181,
+      "os_footprint_peak_mb": 9341,
+      "ioaccelerator_mb": 7720,
+      "rapid_mlx_metal_active_gb_decimal": 7.94,
+      "rapid_mlx_metal_peak_gb_decimal": 9.05,
+      "rapid_mlx_metal_cache_gb_decimal": 0.15,
+      "memory_pressure_free_percent": 34.0,
+      "swap_used_mb": 6612.38,
+      "artifacts": ["official-6bit-post-generation.json", "official-6bit-post-generation-footprint.txt", "official-6bit-post-generation-metrics.txt"]
+    },
+    "post_release": {
+      "server_process_present": false,
+      "memory_pressure_free_percent_immediate": 13.0,
+      "swap_used_mb_immediate": 3325.69,
+      "memory_pressure_free_percent_stable": 66.0,
+      "swap_used_mb_stable": 3081.62,
+      "artifacts": ["official-6bit-post-release.json", "official-6bit-post-release-stable.json"]
+    }
+  },
+  "performance": {
+    "prompt_tokens": 1958,
+    "completion_tokens": 512,
+    "time_to_first_stream_event_seconds": 0.4369970409970847,
+    "total_elapsed_seconds": 118.96923395799968,
+    "client_decode_tokens_per_second_approx": 4.320,
+    "client_end_to_end_tokens_per_second_approx": 4.304,
+    "prompt_tokens_per_second_approx": 4480.5,
+    "prompt_rate_note": "1958 / first-event time; first-event time includes scheduling and is not a pure prefill timer",
+    "inference_artifact": "official-6bit-active.json"
+  },
+  "subjective": {
+    "idle_degradation_rating": 0,
+    "active_degradation_rating": 0,
+    "symptoms": [],
+    "idle_artifact": "official-6bit-idle-subjective.json",
+    "active_artifact": "official-6bit-active-subjective.json"
+  },
+  "result": "Official 6-bit was fully responsive both loaded-idle and during active inference in this session despite reaching an 8.694 GB OS footprint, a 9.05 GB rapid-mlx Metal peak, and an 11% simulated pressure-free sample during active inference. It was substantially slower than the 4-bit run. Model release was verified after delayed reclamation.",
+  "limitations": [
+    "One warm-up and one standardized active generation only.",
+    "Swap and simulated free memory fluctuated substantially during the session.",
+    "No quality judgment is made from the coding output.",
+    "The subjective result applies to this workload and session state, not all future workloads."
+  ]
+}

@@ -1,0 +1,11 @@
+[2026-09-17T18:09:35Z] watchdogs=off
+[2026-09-17T18:09:40Z] request qwen3.8-flash-next-mtp_4-Bit reasoning: a JSON response format constrains every token, so thinking is off for this request
+[2026-09-17T18:09:40Z] request chatcmpl-02a8a10ef5c34a3a80b6700ecff7dbc0 accepted streaming=false
+[2026-09-17T18:09:40Z] request chatcmpl-02a8a10ef5c34a3a80b6700ecff7dbc0 generating
+[2026-09-17T18:09:40Z] request chatcmpl-7625fd8216a5472fb4eff5a17b19c4a1 accepted streaming=true
+[2026-09-17T18:09:40Z] request chatcmpl-7625fd8216a5472fb4eff5a17b19c4a1 queued
+[2026-09-17T18:10:00Z] request chatcmpl-02a8a10ef5c34a3a80b6700ecff7dbc0 completed in 20.498s prompt=262 cached=0 completion=7 finish=stop
+[2026-09-17T18:10:00Z] request chatcmpl-7625fd8216a5472fb4eff5a17b19c4a1 generating
+[2026-09-17T18:10:01Z] request chatcmpl-7625fd8216a5472fb4eff5a17b19c4a1 failed phase=generating status=400 error=TinyTitanServerCore.ServerRequestError.invalid(message: "prompt exceeds the configured context", param: Optional("messages"), code: "context_length_exceeded")
+TinyTitanServer 5.7 ready at http://127.0.0.1:8092 model=qwen3.8-flash-next-mtp_4-Bit context=8192 concurrency=1 prefill_chunk=4096 expert_slots=16 prompt_cache=off prompt_cache_memory_mib=0 prompt_cache_disk=off thinking=off mtp=off
+TinyTitan generation prefill_s=17.535 decode_s=2.869 decode_tok_s=2.440

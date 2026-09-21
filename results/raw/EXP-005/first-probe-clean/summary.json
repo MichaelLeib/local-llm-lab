@@ -1,0 +1,31 @@
+{
+  "experiment": "EXP-005",
+  "probe": "first_standalone_qwen36_clean_post_reboot",
+  "status": "success",
+  "baseline": {
+    "swap_before_mib": 0.0,
+    "swap_after_mib": 0.0,
+    "memory_free_before_percent": 59,
+    "memory_free_after_percent": 50,
+    "fast_lane": "down",
+    "deep_lane": "down"
+  },
+  "settings": {
+    "expert_cache_slots": 16,
+    "max_context": 4096,
+    "max_new": 8,
+    "temperature": 0,
+    "seed": 12345,
+    "prefill_chunk": "auto"
+  },
+  "output": "READY.",
+  "exit_code": 0,
+  "prompt_tokens": 5,
+  "prefill_seconds": 14.22,
+  "new_tokens": 8,
+  "decode_seconds": 0.95,
+  "decode_tok_s": 8.404,
+  "peak_footprint_mb": 1460,
+  "peak_rss_kib": 269056,
+  "artifacts": "results/raw/EXP-005/first-probe-clean/"
+}

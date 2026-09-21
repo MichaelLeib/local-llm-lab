@@ -1,0 +1,72 @@
+{
+  "first_wall_seconds": 22.956,
+  "first_response": {
+    "id": "chatcmpl-92aeaf879fef46048e3df6e3eebc7127",
+    "created": 1789709049,
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "tool_calls",
+        "message": {
+          "content": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "function": {
+                "name": "terminal",
+                "arguments": "{\"command\":\"printf AGENT_TOOL_OK\"}"
+              },
+              "id": "call_20a6d733e2f54c0239bb84db"
+            }
+          ],
+          "role": "assistant"
+        }
+      }
+    ],
+    "object": "chat.completion",
+    "usage": {
+      "total_tokens": 403,
+      "completion_tokens": 94,
+      "prompt_tokens": 309,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "model": "stock-qwen-exp007"
+  },
+  "executed_tools": [
+    {
+      "id": "call_20a6d733e2f54c0239bb84db",
+      "args": {
+        "command": "printf AGENT_TOOL_OK"
+      },
+      "stdout": "AGENT_TOOL_OK",
+      "returncode": 0
+    }
+  ],
+  "second_wall_seconds": 11.203,
+  "second_response": {
+    "id": "chatcmpl-17ec68c99ce04f27a7fe3292afc47d9e",
+    "created": 1789709072,
+    "choices": [
+      {
+        "index": 0,
+        "finish_reason": "stop",
+        "message": {
+          "content": "AGENT_TOOL_OK",
+          "role": "assistant"
+        }
+      }
+    ],
+    "object": "chat.completion",
+    "usage": {
+      "total_tokens": 488,
+      "completion_tokens": 67,
+      "prompt_tokens": 421,
+      "prompt_tokens_details": {
+        "cached_tokens": 402
+      }
+    },
+    "model": "stock-qwen-exp007"
+  }
+}

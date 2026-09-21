@@ -1,0 +1,21 @@
+{
+  "file": "/Users/<user>/.cache/huggingface/hub/models--ornith-ai--Ornith-1.5-9B-MLX-8bit/snapshots/b4b70543d60c81e7c418a001b74cd4352212bd44/model-00001-of-00002.safetensors",
+  "file_bytes": 5346606498,
+  "file_gib": 4.979415329173207,
+  "sequential": {
+    "bytes": 5346606498,
+    "elapsed_s": 2.1442776670000003,
+    "gib_s": 2.3221877491919085,
+    "block_bytes": 4194304,
+    "direct_cache_control": "F_NOCACHE"
+  },
+  "random_4k": {
+    "reads": 8192,
+    "bytes": 33554432,
+    "elapsed_s": 0.22923812499999974,
+    "read_mib_s": 139.5928360520312,
+    "avg_ms": 0.02798316955566403,
+    "seed": 23003
+  },
+  "platform": "macOS-27.0-arm64-arm-64bit"
+}

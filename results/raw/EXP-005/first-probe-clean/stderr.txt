@@ -1,0 +1,2 @@
+
+[stop=eos prefill=5tok/14.22s new=8tok decode=0.95s tok/s=8.404]

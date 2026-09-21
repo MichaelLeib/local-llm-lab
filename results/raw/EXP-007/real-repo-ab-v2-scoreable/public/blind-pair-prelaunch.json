@@ -1,0 +1,23 @@
+{
+  "receipt_version": "EXP-007-v2-scoreable-pair-prelaunch-v1",
+  "pair_status": "sealed-before-first-scoreable-arm",
+  "assignment_created_at_utc": "2026-09-18T08:44:34.845952+00:00",
+  "opaque_candidate_ids": ["candidate-S6", "candidate-W0"],
+  "sealed_assignment_path": "private/assignment.json",
+  "sealed_assignment_sha256": "3f6647f0835e639fdb2038e97ef5c807b3c892b207a264e2342144b9beb18b0d",
+  "frozen_v2_harness_manifest_sha256": "587572903b789eea1ce2693c2bb7d33b394cab07a947363da3572434f9dc0d35",
+  "t01_fixture_commit": "a43d24cb624dee4e5ddfb4b0c8f788fd9fd6c8c9",
+  "t01_prompt_sha256": "d8635752d0f2d41b65aa03126e1eb782e8515cc29e3fc2fb4c186fbeca8cd695",
+  "assignment_adapter": {
+    "path": "context-safe-harness/v2/exp007_run_scoreable_pair_v2.sh",
+    "purpose": "sealed-assignment binding only; frozen v2 runner, policy, profile, plugin, and manifest remain unchanged",
+    "behavioral_controls": "identical to frozen v2 runner except it reads the new private assignment and writes to the scoreable-v2 result root"
+  },
+  "blinding_checks": {
+    "labels_previously_unused_across_EXP_007": true,
+    "mapping_private_only": true,
+    "public_mapping_leak": false,
+    "mapping_not_to_be_opened_during_scoring": true
+  },
+  "scoring_rule": "Both fresh-ID score rows must be locked before the private assignment is opened for unblinding."
+}

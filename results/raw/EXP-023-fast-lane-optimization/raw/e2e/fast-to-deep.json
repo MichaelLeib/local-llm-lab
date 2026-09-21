@@ -1,0 +1,43 @@
+{
+  "run_id": "run_b82fb02d5d9846b086d5d6e29214551e",
+  "admission_seconds": 15.223,
+  "total_seconds": 125.838,
+  "events": [
+    {
+      "event": "message.delta",
+      "run_id": "run_b82fb02d5d9846b086d5d6e29214551e",
+      "timestamp": 1789922176.135628,
+      "delta": "DE"
+    },
+    {
+      "event": "message.delta",
+      "run_id": "run_b82fb02d5d9846b086d5d6e29214551e",
+      "timestamp": 1789922176.251754,
+      "delta": "EP"
+    },
+    {
+      "event": "message.delta",
+      "run_id": "run_b82fb02d5d9846b086d5d6e29214551e",
+      "timestamp": 1789922176.3745449,
+      "delta": "_OK"
+    },
+    {
+      "event": "reasoning.available",
+      "run_id": "run_b82fb02d5d9846b086d5d6e29214551e",
+      "timestamp": 1789922176.6294,
+      "text": "DEEP_OK"
+    },
+    {
+      "event": "run.completed",
+      "run_id": "run_b82fb02d5d9846b086d5d6e29214551e",
+      "timestamp": 1789922176.711275,
+      "output": "DEEP_OK",
+      "usage": {
+        "input_tokens": 14423,
+        "output_tokens": 40,
+        "total_tokens": 14463
+      }
+    }
+  ],
+  "raw_sse": ": keepalive\n\n: keepalive\n\n: keepalive\n\ndata: {\"event\": \"message.delta\", \"run_id\": \"run_b82fb02d5d9846b086d5d6e29214551e\", \"timestamp\": 1789922176.135628, \"delta\": \"DE\"}\n\ndata: {\"event\": \"message.delta\", \"run_id\": \"run_b82fb02d5d9846b086d5d6e29214551e\", \"timestamp\": 1789922176.251754, \"delta\": \"EP\"}\n\ndata: {\"event\": \"message.delta\", \"run_id\": \"run_b82fb02d5d9846b086d5d6e29214551e\", \"timestamp\": 1789922176.3745449, \"delta\": \"_OK\"}\n\ndata: {\"event\": \"reasoning.available\", \"run_id\": \"run_b82fb02d5d9846b086d5d6e29214551e\", \"timestamp\": 1789922176.6294, \"text\": \"DEEP_OK\"}\n\ndata: {\"event\": \"run.completed\", \"run_id\": \"run_b82fb02d5d9846b086d5d6e29214551e\", \"timestamp\": 1789922176.711275, \"output\": \"DEEP_OK\", \"usage\": {\"input_tokens\": 14423, \"output_tokens\": 40, \"total_tokens\": 14463}}\n\n: stream closed\n\n"
+}

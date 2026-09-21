@@ -1,0 +1,25 @@
+{
+  "classification": "operational-diagnostic-nonblind-label-reuse",
+  "scoring_eligibility": "excluded_from_final_blinded_model_comparison",
+  "run_path": "results/raw/EXP-007/real-repo-ab-v2/results/candidate-K7/hermes/T01/20260918T082654Z",
+  "preservation": "raw trace, token telemetry, source diff, acceptance/build/regression outputs, retrieval-refinement output, and postflight cleanup state retained unchanged",
+  "operational_outcome": {
+    "hermes_exit_code": 0,
+    "wall_seconds": 947.1876890659332,
+    "acceptance": "failed with five unmet checks",
+    "candidate_source_diff_bytes": 0,
+    "tool_calls_made": 35,
+    "cumulative_model_visible_tool_result_tokens": 10063,
+    "maximum_accumulated_prompt_tokens": 15434,
+    "context_limit": 16384,
+    "completion_allowance": 4096,
+    "context_limit_approached": true,
+    "truncated_tool_outputs": 25,
+    "retrieval_refinement": {
+      "explicit_file_offset_followup": 2,
+      "unrefined_repeat": 0
+    },
+    "postflight_model_ports_clear": true
+  },
+  "interpretation_constraint": "This diagnostic result must not be used to tune the frozen v2 harness or assigned a task-level model-comparison score."
+}

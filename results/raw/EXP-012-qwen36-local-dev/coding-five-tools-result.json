@@ -1,0 +1,34 @@
+{
+  "tool_names": [
+    "patch",
+    "read_file",
+    "search_files",
+    "terminal",
+    "write_file"
+  ],
+  "ok": true,
+  "elapsed_s": 149.93,
+  "finish_reason": "tool_calls",
+  "message": {
+    "content": null,
+    "tool_calls": [
+      {
+        "function": {
+          "arguments": "{\"command\":\"date\"}",
+          "name": "terminal"
+        },
+        "type": "function",
+        "id": "call_bf906da007fbd3e848c4ec83"
+      }
+    ],
+    "role": "assistant"
+  },
+  "usage": {
+    "completion_tokens": 46,
+    "prompt_tokens": 5763,
+    "total_tokens": 5809,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

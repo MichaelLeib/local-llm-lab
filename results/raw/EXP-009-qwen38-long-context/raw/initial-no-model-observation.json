@@ -1,0 +1,71 @@
+{
+  "classification": "no_live_qwen_flash_run_detected_before_disturbance",
+  "experiment": "EXP-009-qwen38-long-context",
+  "host": {
+    "df": {
+      "command": "df -h /",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s1s1   460Gi    13Gi    40Gi    25%    484k  417M    0%   /\n"
+    },
+    "lanes": {
+      "command": "/Users/<user>/.hermes/bin/hermes-local-model status",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "FAST: down\nDEEP: down\n  vm.swapusage: total = 2048.00M  used = 1593.56M  free = 454.44M  (encrypted)\n"
+    },
+    "listeners": {
+      "command": "lsof -nP -iTCP -sTCP:LISTEN | grep -Ei 'python|llama|mlx|890[0-9]|8080|8092|8000' || true",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "python    1082 <user>    9u  IPv4 0x70b50f006906440e      0t0  TCP 127.0.0.1:49282 (LISTEN)\npython3.1 1231 <user>   13u  IPv6 0x41d7e676c55dbeda      0t0  TCP [::1]:8008 (LISTEN)\npython3.1 1231 <user>   15u  IPv4 0x4dc94083891572e6      0t0  TCP 127.0.0.1:8008 (LISTEN)\npython    1336 <user>   54u  IPv4 0x63dc897b1526753e      0t0  TCP 127.0.0.1:8642 (LISTEN)\n"
+    },
+    "memory_pressure": {
+      "command": "memory_pressure -Q",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "The system has 17179869184 (1048576 pages with a page size of 16384).\nSystem-wide memory free percentage: 60%\n"
+    },
+    "processes": {
+      "command": "ps -axo pid,ppid,etime,%cpu,%mem,rss,command | grep -Ei '[q]wen|[t]inytitan|[s]lotstream|[t]urboquant|[l]lama-server|[r]apid-mlx|[m]lx_lm' || true",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": " 1237     1 07:12:01   0.0  0.0   3424 /Users/<user>/.hermes/hermes-agent/venv/bin/python -m hermes_cli.stderr_timestamp --error-log /Users/<user>/.hermes/profiles/qwenloop/logs/gateway.error.log -- /Users/<user>/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main --profile qwenloop gateway run --external-supervisor\n 1335  1237 07:11:58   0.6  0.3  45984 /Users/<user>/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main --profile qwenloop gateway run --external-supervisor\n72037  1082    00:00   0.1  0.0   2512 /bin/bash -c source /var/folders/y0/g1szp20x4pl86bgz0w_w9_280000gn/T/hermes-snap-b8e747574c11.sh >/dev/null 2>&1 || true\\012export AI_AGENT=\"${AI_AGENT:-hermes-agent}\" HERMES_AGENT=\"${HERMES_AGENT:-true}\"\\012export GIT_PAGER=\"${GIT_PAGER:-cat}\" PAGER=\"${PAGER:-cat}\"\\012builtin cd -- /Users/<user>/HermesProjects/Local-LLM-Lab || exit 126\\012eval 'set -euo pipefail\\012ROOT=/Users/<user>/HermesProjects/Local-LLM-Lab\\012EXP=\"$ROOT/results/raw/EXP-009-qwen38-long-context\"\\012[ ! -e \"$EXP\" ] || { echo \"Refusing: $EXP already exists\" >&2; exit 2; }\\012mkdir -p \"$EXP\"/{source,raw,logs,arms}\\012python3 - <<'\\''PY'\\''\\012import json, subprocess, os, platform, datetime, pathlib\\012root=pathlib.Path('\\''/Users/<user>/HermesProjects/Local-LLM-Lab'\\'')\\012out=root/'\\''results/raw/EXP-009-qwen38-long-context/raw/initial-no-model-observation.json'\\''\\012src=root/'\\''results/raw/EXP-006/source/tinytitan'\\''\\012model=root/'\\''results/raw/EXP-006/model/qwen3.8-flash-next_125B_A6B_4Bit'\\''\\012def cmd(s):\\012 p=subprocess.run(s,text=True,shell=True,capture_output=True)\\012 return {'\\''command'\\'':s,'\\''exit_code'\\'':p.returncode,'\\''stdout'\\'':p.stdout,'\\''stderr'\\'':p.stderr}\\012obs={'\\''experiment'\\'':'\\''EXP-009-qwen38-long-context'\\'','\\''observed_at'\\'':datetime.datetime.now(datetime.timezone.utc).isoformat(),'\\''classification'\\'':'\\''no_live_qwen_flash_run_detected_before_disturbance'\\'','\\''runtime_candidate'\\'':{'\\''previous_source'\\'':str(src),'\\''commit'\\'':cmd(f'\\''git -C {src} rev-parse HEAD'\\'')['\\''stdout'\\''].strip(),'\\''remote_head'\\'':cmd(f'\\''git -C {src} ls-remote origin HEAD'\\'')['\\''stdout'\\''].strip()},'\\''model'\\'':{'\\''path'\\'':str(model),'\\''receipt'\\'':str(model/'\\''verified-install.json'\\''),'\\''manifest'\\'':str(model/'\\''manifest.json'\\'')},'\\''host'\\'':{'\\''uname'\\'':cmd('\\''uname -a'\\''),'\\''sw_vers'\\'':cmd('\\''sw_vers'\\''),'\\''memory_pressure'\\'':cmd('\\''memory_pressure -Q'\\''),'\\''swap'\\'':cmd('\\''sysctl vm.swapusage'\\''),'\\''vm_stat'\\'':cmd('\\''vm_stat'\\''),'\\''df'\\'':cmd('\\''df -h /'\\''),'\\''processes'\\'':cmd(\"ps -axo pid,ppid,etime,%cpu,%mem,rss,command | grep -Ei '\\''[q]wen|[t]inytitan|[s]lotstream|[t]urboquant|[l]lama-server|[r]apid-mlx|[m]lx_lm'\\'' || true\"),'\\''listeners'\\'':cmd(\"lsof -nP -iTCP -sTCP:LISTEN | grep -Ei '\\''python|llama|mlx|890[0-9]|8080|8092|8000'\\'' || true\"),'\\''lanes'\\'':cmd(os.path.expanduser('\\''~/.hermes/bin/hermes-local-model status'\\''))}}\\012out.write_text(json.dumps(obs,indent=2,sort_keys=True))\\012print(out)\\012PY\\012# Clone a distinct current-runtime source at the remote head; EXP-006 stays untouched.\\012git clone --filter=blob:none https://github.com/Pummelchen/TinyTitan.git \"$EXP/source/tinytitan-current\" 2>&1 | tee \"$EXP/logs/source-clone.log\"\\012SRC=\"$EXP/source/tinytitan-current\"\\012{\\012  printf '\\''HEAD='\\''; git -C \"$SRC\" rev-parse HEAD\\012  git -C \"$SRC\" log -1 --format='\\''commit=%H%nauthor_date=%aI%nsubject=%s'\\''\\012  git -C \"$SRC\" status --short\\012  git -C \"$SRC\" remote -v\\012} > \"$EXP/raw/current-runtime-provenance.txt\"\\012# Build the isolated current source only; no model is launched.\\012swift build -c release --product TinyTitanCLI --product TinyTitanServer --product TinyTitanRepack 2>&1 | tee \"$EXP/logs/current-runtime-build.log\"\\012for x in \"$SRC/.build/release/TinyTitanCLI\" \"$SRC/.build/release/TinyTitanServer\" \"$SRC/.build/release/TinyTitanRepack\"; do file \"$x\"; done > \"$EXP/raw/current-runtime-binaries.txt\"\\012printf '\\''EXP directory: %s\\n'\\'' \"$EXP\"'\\012__hermes_ec=$?\\012umask 077\\012__hermes_snap_tmp=$(mktemp /var/folders/y0/g1szp20x4pl86bgz0w_w9_280000gn/T/hermes-snap-b8e747574c11.sh.tmp.XXXXXXXXXX) && { { ( unset ${!HERMES_SESSION_*} ${!HERMES_CRON_AUTO_DELIVER_*} ${!HERMES_BROWSER_CONTROL_*} AI_AGENT HERMES_AGENT HERMES_UI_SESSION_ID 2>/dev/null; export -p; ) || true; } > \"$__hermes_snap_tmp\" && mv -f \"$__hermes_snap_tmp\" /var/folders/y0/g1szp20x4pl86bgz0w_w9_280000gn/T/hermes-snap-b8e747574c11.sh; } 2>/dev/null || rm -f \"$__hermes_snap_tmp\" 2>/dev/null || true\\012printf '\\n__HERMES_CWD_b8e747574c11__%s__HERMES_CWD_b8e747574c11__\\n' \"$(pwd -P)\"\\012exit $__hermes_ec\n"
+    },
+    "sw_vers": {
+      "command": "sw_vers",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t27.0\nBuildVersion:\t\t26A428\n"
+    },
+    "swap": {
+      "command": "sysctl vm.swapusage",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "vm.swapusage: total = 2048.00M  used = 1593.56M  free = 454.44M  (encrypted)\n"
+    },
+    "uname": {
+      "command": "uname -a",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "Darwin Mac.fritz.box 27.0.0 Darwin Kernel Version 27.0.0: Tue Aug 11 21:05:41 PDT 2026; root:xnu-13432.1.9~1/RELEASE_ARM64_T8122 arm64\n"
+    },
+    "vm_stat": {
+      "command": "vm_stat",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     5417.\nPages active:                                 304868.\nPages inactive:                               289406.\nPages speculative:                             14815.\nPages throttled:                                   0.\nPages wired down:                             200074.\nPages purgeable:                               20398.\n\"Translation faults\":                      423881629.\nPages copy-on-write:                        14201712.\nPages zero filled:                         346328967.\nPages reactivated:                          54959036.\nPages purged:                               20924644.\nFile-backed pages:                            199772.\nAnonymous pages:                              409317.\nPages stored in compressor:                   433816.\nPages occupied by compressor:                 196375.\nDecompressions:                             96698344.\nCompressions:                              112663695.\nPageins:                                   297908987.\nPageouts:                                     115691.\nSwapins:                                       66125.\nSwapouts:                                     168560.\n"
+    }
+  },
+  "model": {
+    "manifest": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/model/qwen3.8-flash-next_125B_A6B_4Bit/manifest.json",
+    "path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/model/qwen3.8-flash-next_125B_A6B_4Bit",
+    "receipt": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/model/qwen3.8-flash-next_125B_A6B_4Bit/verified-install.json"
+  },
+  "observed_at": "2026-09-18T12:58:19.239528+00:00",
+  "runtime_candidate": {
+    "commit": "008510e2753cc16a674cb75169ba3133cf56fa4e",
+    "previous_source": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan",
+    "remote_head": "9c03db58d86e7ac35917ee3f05cf58fbab97f666\tHEAD"
+  }
+}

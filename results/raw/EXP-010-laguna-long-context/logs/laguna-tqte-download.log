@@ -1,0 +1,33 @@
+Downloading 'model-00001-of-00006.safetensors' to 'model/laguna-s21-tqTe-g64/.cache/huggingface/download/lPnGVsdaF542Y6w1ufNAL-pphxo=.be47277ecdea7c1d56d8d51f53177d2ed0c5e1b1382eb5cac8c489021bf6036a.incomplete'
+Downloading '.gitattributes' to 'model/laguna-s21-tqTe-g64/.cache/huggingface/download/wPaCkH-WbT7GsmxMKKrNZTV4nSM=.a6344aac8c09253b3b630fb776ae94478aa0275b.incomplete'
+Downloading 'LICENSE.md' to 'model/laguna-s21-tqTe-g64/.cache/huggingface/download/5HHJ6px3_ZRDOG3OxNZMhuycwOk=.db7c88d0bff738c671a454dfd679cc36b1b15862.incomplete'
+Downloading 'chat_template.jinja' to 'model/laguna-s21-tqTe-g64/.cache/huggingface/download/yIUQ6Jg7XpBWXEkozaEkS2ih05g=.acf45eb429178c36d1f4b41400b647510b359545.incomplete'
+Downloading 'generation_config.json' to 'model/laguna-s21-tqTe-g64/.cache/huggingface/download/3EVKVggOldJcKSsGjSdoUCN1AyQ=.7421facbd1d8cd9f4f89815f8b4b2be6787b6a8d.incomplete'
+Downloading 'configuration_laguna.py' to 'model/laguna-s21-tqTe-g64/.cache/huggingface/download/TLy6hnSuilXWuQw3fLanafIckp8=.f10d728591219b4482b1f8cb679dcf28c1c8463b.incomplete'
+Downloading 'README.md' to 'model/laguna-s21-tqTe-g64/.cache/huggingface/download/Xn7B-BWUGOee2Y6hCZtEhtFu4BE=.515f1e345f2e761c6c8ef49f85dc8007f3224a11.incomplete'
+Download complete. Moving file to model/laguna-s21-tqTe-g64/.gitattributes
+Download complete. Moving file to model/laguna-s21-tqTe-g64/LICENSE.md
+Download complete. Moving file to model/laguna-s21-tqTe-g64/chat_template.jinja
+Download complete. Moving file to model/laguna-s21-tqTe-g64/README.md
+Download complete. Moving file to model/laguna-s21-tqTe-g64/configuration_laguna.py
+Download complete. Moving file to model/laguna-s21-tqTe-g64/generation_config.json
+Downloading 'model-00002-of-00006.safetensors' to 'model/laguna-s21-tqTe-g64/.cache/huggingface/download/H1O8ZB_QwtWjsrLtliP4_68j6q4=.245492a0c5041144f12146dfc961b5713a94187e1ba4dda16eca2b70411ef4fd.incomplete'
+Downloading 'model-00003-of-00006.safetensors' to 'model/laguna-s21-tqTe-g64/.cache/huggingface/download/XYxS_-gMKqyeF0pSwDVvLc_63Nc=.64496edde5e97881424a2b88ba81ef215a4f0e897eeefdb72900e7f83e918990.incomplete'
+Downloading 'model-00004-of-00006.safetensors' to 'model/laguna-s21-tqTe-g64/.cache/huggingface/download/71f3TSsxAmosSx1AFSGJtFrSxfc=.0e5e93a3bf0cb4743914a2cc5677fe2ed07707009c055bac20d9c277b8d4921c.incomplete'
+Downloading 'model-00005-of-00006.safetensors' to 'model/laguna-s21-tqTe-g64/.cache/huggingface/download/oSetzz1DFkf7L3TvpxdZ6YtuoKo=.5565f854f398de256df54c512f2aa9138185289b243a2bd3807a5e4cbe2c5f71.incomplete'
+Downloading 'model-00006-of-00006.safetensors' to 'model/laguna-s21-tqTe-g64/.cache/huggingface/download/uHlhOCT17Z6wYlt1x1jlrCcHTyE=.c8dc58cdc7ef300e7078cdd4b9f8a630cdbe136c123cbad1d527a884ca7daa4c.incomplete'
+Downloading 'modeling_laguna.py' to 'model/laguna-s21-tqTe-g64/.cache/huggingface/download/mNGHKd8XaBxjXgFB6uDbDqB-XP4=.9bcc79b402b7cb043f9bb06d8bc64c54ff9099a0.incomplete'
+Download complete. Moving file to model/laguna-s21-tqTe-g64/modeling_laguna.py
+Downloading 'tokenizer.json' to 'model/laguna-s21-tqTe-g64/.cache/huggingface/download/HgM_lKo9sdSCfRtVg7MMFS7EKqo=.6e1831624c51e57a207aef5f89cad24740ed2a67.incomplete'
+Downloading 'tokenizer_config.json' to 'model/laguna-s21-tqTe-g64/.cache/huggingface/download/vzaExXFZNBay89bvlQv-ZcI6BTg=.10bd54e1d15c20f991e3139b003d26526735752a.incomplete'
+Download complete. Moving file to model/laguna-s21-tqTe-g64/tokenizer_config.json
+Download complete. Moving file to model/laguna-s21-tqTe-g64/tokenizer.json
+{"timestamp":"2026-09-18T13:27:49.340824Z","level":"WARN","fields":{"message":"Reqwest(reqwest::Error { kind: Request, source: hyper_util::client::legacy::Error(SendRequest, hyper::Error(IncompleteMessage)) }). Retrying..."},"filename":"/Users/runner/work/xet-core/xet-core/cas_client/src/http_client.rs","line_number":242}
+{"timestamp":"2026-09-18T13:27:49.349801Z","level":"WARN","fields":{"message":"Retry attempt #0. Sleeping 130.071174ms before the next attempt"},"filename":"/Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-retry-0.7.0/src/middleware.rs","line_number":171}
+Download complete. Moving file to model/laguna-s21-tqTe-g64/model-00006-of-00006.safetensors
+Download complete. Moving file to model/laguna-s21-tqTe-g64/model-00001-of-00006.safetensors
+Download complete. Moving file to model/laguna-s21-tqTe-g64/model-00005-of-00006.safetensors
+Download complete. Moving file to model/laguna-s21-tqTe-g64/model-00002-of-00006.safetensors
+Download complete. Moving file to model/laguna-s21-tqTe-g64/model-00003-of-00006.safetensors
+Download complete. Moving file to model/laguna-s21-tqTe-g64/model-00004-of-00006.safetensors
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-010-laguna-long-context/model/laguna-s21-tqTe-g64

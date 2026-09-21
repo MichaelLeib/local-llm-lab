@@ -1,0 +1,1 @@
+hf download unsloth/ERNIE-4.5-21B-A3B-Thinking-GGUF --revision b1fa62d9e5864da596c78a0fb5cc02e5ffba336c --include ERNIE-4.5-21B-A3B-Thinking-Q4_K_M.gguf README.md

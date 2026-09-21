@@ -1,0 +1,11 @@
+{
+  "timestamp_utc": "2026-09-19T09:17:49Z",
+  "source_repo": "amd/Instella-MoE-16B-A3B-Think",
+  "source_revision": "74d28c1a8425583d7805b58e2caa9c13d6b62929",
+  "gguf_repo": "DevQuasar/amd.Instella-MoE-16B-A3B-Think-GGUF",
+  "gguf_revision": "987ee1648d7e4bcb33ab98dfbf4e910b2230c30a",
+  "chosen_file": "Q4_K_M/amd.Instella-MoE-16B-A3B-Think.f16.gguf.Q4_K_M.gguf",
+  "chosen_size_bytes": 10470249600,
+  "representation": "GGUF Q4_K_M",
+  "reason": "4-bit first per campaign; strongest available broad-runtime artifact before 3-bit fallback"
+}

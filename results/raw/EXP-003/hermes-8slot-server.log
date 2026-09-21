@@ -1,0 +1,73 @@
+0.00.048.306 I log_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.048.309 I device_info:
+0.00.048.312 I   - MTL0    : Apple M3 (12124 MiB, 12123 MiB free)
+0.00.048.313 I   - BLAS    : Accelerate (0 MiB, 0 MiB free)
+0.00.048.317 I   - CPU     : Apple M3 (16384 MiB, 16384 MiB free)
+0.00.048.334 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | ACCELERATE = 1 | REPACK = 1 | 
+0.00.048.541 I srv          init: running without SSL
+0.00.049.685 I srv          init: using 7 threads for HTTP server
+0.00.049.697 I srv          init: The UI is disabled
+0.00.049.697 I srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+0.00.049.990 I srv         start: binding port with default address family
+0.00.051.393 I srv  llama_server: loading model
+0.00.051.413 I srv    load_model: loading model '/Users/<user>/.cache/huggingface/hub/models--ornith-ai--Ornith-1.5-35B-A3B-GGUF/snapshots/12393612fd4f730ff5aadc23e9b8f9648aa49ceb/Ornith-1.5-35B-Q4_K_M.gguf'
+0.00.052.109 I common_init_result: fitting params to device memory ...
+0.00.052.111 I common_init_result: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+0.01.658.284 W llama_context: n_ctx_seq (8192) < n_ctx_train (262144) -- the full capacity of the model will not be utilized
+0.01.772.081 I srv    load_model: initializing slots, n_slots = 1
+0.02.340.439 W srv    load_model: speculative decoding will use checkpoints
+0.02.340.443 W common_speculative_init: no implementations specified for speculative decoding
+0.02.340.462 I slot   load_model: id  0 | task -1 | new slot, n_ctx = 8192
+0.02.340.490 I srv    load_model: prompt cache is enabled, size limit: 8192 MiB
+0.02.340.491 I srv    load_model: use `--cache-ram 0` to disable the prompt cache
+0.02.340.491 I srv    load_model: for more info see https://github.com/ggml-org/llama.cpp/pull/16391
+0.02.340.491 I srv    load_model: context checkpoints enabled, max = 32, min spacing = 256
+0.02.340.523 W srv          init: --cache-idle-slots requires --kv-unified, disabling
+0.02.352.915 I init: chat template, example_format: '<|im_start|>system
+You are a helpful assistant<|im_end|>
+<|im_start|>user
+Hello<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+Hi there<|im_end|>
+<|im_start|>user
+How are you?<|im_end|>
+<|im_start|>assistant
+<think>
+'
+0.02.359.993 I srv          init: init: chat template, thinking = 1
+0.02.360.003 I srv  llama_server: model loaded
+0.02.360.006 I srv  llama_server: server is listening on http://127.0.0.1:8901
+0.02.360.019 I srv  update_slots: all slots are idle
+0.34.937.468 I srv  params_from_: Chat format: peg-native
+0.34.937.742 I slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+0.34.937.743 I srv  get_availabl: updating prompt cache
+0.34.937.745 I srv          load:  - looking for better prompt, base f_keep = -1.000, sim = 0.000
+0.34.937.748 I srv        update:  - cache state: 0 prompts, 0.000 MiB (limits: 8192.000 MiB, 8192 tokens, 8589934592 est)
+0.34.937.749 I srv  get_availabl: prompt cache update took 0.01 ms
+0.34.937.792 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+0.34.943.673 I srv  params_from_: Chat format: peg-native
+1.05.007.781 W srv          next: stopping wait for next result due to should_stop condition (adjust the --timeout argument if needed)
+1.05.007.786 W srv          next: ref: https://github.com/ggml-org/llama.cpp/pull/22907
+1.05.007.923 W srv          stop: cancel task, id_task = 0
+1.25.603.691 I slot      release: id  0 | task 0 | stop processing: n_tokens = 241, truncated = 0
+1.25.603.962 I slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = 93335611319
+1.25.603.964 I srv  get_availabl: updating prompt cache
+1.25.604.033 W srv   prompt_save:  - saving prompt with length 241, total state size = 67.525 MiB (draft: 0.000 MiB)
+1.25.734.576 I srv          load:  - looking for better prompt, base f_keep = 0.012, sim = 0.001
+1.25.734.580 I srv        update:  - cache state: 1 prompts, 67.525 MiB (limits: 8192.000 MiB, 8192 tokens, 29237 est)
+1.25.734.581 I srv        update:    - prompt 0x7ca7003710:     241 tokens, checkpoints:  0,    67.525 MiB
+1.25.734.582 I srv  get_availabl: prompt cache update took 130.62 ms
+1.25.737.823 I reasoning-budget: activated, budget=2147483647 tokens
+1.25.738.164 I slot launch_slot_: id  0 | task 2 | processing task, is_child = 0
+1.25.738.295 W slot update_slots: id  0 | task 2 | forcing full prompt re-processing due to lack of cache data (likely due to SWA or hybrid/recurrent memory, see https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+2.35.209.822 W srv          next: stopping wait for next result due to should_stop condition (adjust the --timeout argument if needed)
+2.35.209.826 W srv          next: ref: https://github.com/ggml-org/llama.cpp/pull/22907
+2.35.209.928 W srv          stop: cancel task, id_task = 2
+2.36.858.339 I srv  params_from_: Chat format: peg-native
+2.55.889.974 W srv          next: stopping wait for next result due to should_stop condition (adjust the --timeout argument if needed)
+2.55.889.979 W srv          next: ref: https://github.com/ggml-org/llama.cpp/pull/22907
+2.55.890.110 W srv          stop: cancel task, id_task = 6

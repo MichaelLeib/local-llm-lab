@@ -1,0 +1,346 @@
+{
+  "candidate": "minicpm5-2b-q4km",
+  "model": "models/minicpm/MiniCPM5-2B-Q4_K_M.gguf",
+  "port": 8921,
+  "started_at_epoch": 1789914812.8307421,
+  "before": {
+    "swapusage": "vm.swapusage: total = 2048.00M  used = 869.50M  free = 1178.50M  (encrypted)",
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 117935 \nPages purgeable: 2130 \nPages purged: 29410307 \n\nSwap I/O:\nSwapins: 2872180 \nSwapouts: 3895953 \n\nPage Q counts:\nPages active: 332789 \nPages inactive: 329515 \nPages speculative: 8641 \nPages throttled: 0 \nPages wired down: 136235 \n\nCompressor Stats:\nPages used by compressor: 86032 \nPages decompressed: 130275214 \nPages compressed: 151592580 \n\nFile I/O:\nPageins: 95167033 \nPageouts: 164086 \n\nSystem-wide memory free percentage: 77%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                   117934.\nPages active:                                 332790.\nPages inactive:                               329515.\nPages speculative:                              8641.\nPages throttled:                                   0.\nPages wired down:                             136235.\nPages purgeable:                                2130.\n\"Translation faults\":                      907386988.\nPages copy-on-write:                        37620574.\nPages zero filled:                         482589584.\nPages reactivated:                         136432456.\nPages purged:                               29410307.\nFile-backed pages:                            470069.\nAnonymous pages:                              200877.\nPages stored in compressor:                   189237.\nPages occupied by compressor:                  86032.\nDecompressions:                            130275214.\nCompressions:                              151592580.\nPageins:                                    95167034.\nPageouts:                                     164086.\nSwapins:                                     2872180.\nSwapouts:                                    3895953."
+  },
+  "pid": 9437,
+  "load_seconds": 1.02,
+  "health": {
+    "status": "ok"
+  },
+  "models": {
+    "models": [
+      {
+        "name": "minicpm5-2b-q4km",
+        "model": "minicpm5-2b-q4km",
+        "modified_at": "",
+        "size": "",
+        "digest": "",
+        "type": "model",
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "capabilities": [
+          "completion"
+        ],
+        "parameters": "",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "",
+          "families": [
+            ""
+          ],
+          "parameter_size": "",
+          "quantization_level": ""
+        }
+      }
+    ],
+    "object": "list",
+    "data": [
+      {
+        "id": "minicpm5-2b-q4km",
+        "aliases": [
+          "minicpm5-2b-q4km"
+        ],
+        "tags": [],
+        "object": "model",
+        "created": 1789914813,
+        "owned_by": "llamacpp",
+        "meta": {
+          "vocab_type": true,
+          "n_vocab": 130560,
+          "n_ctx": 8192,
+          "n_ctx_train": 131072,
+          "n_embd": 2048,
+          "n_params": 2516756480,
+          "size": 1556172800,
+          "ftype": "Q4_K - Medium"
+        }
+      }
+    ]
+  },
+  "props": {
+    "default_generation_settings": {
+      "params": {
+        "seed": 4294967295,
+        "temperature": 1.0,
+        "dynatemp_range": 0.0,
+        "dynatemp_exponent": 1.0,
+        "top_k": 40,
+        "top_p": 0.949999988079071,
+        "min_p": 0.05000000074505806,
+        "top_n_sigma": -1.0,
+        "xtc_probability": 0.0,
+        "xtc_threshold": 0.10000000149011612,
+        "typical_p": 1.0,
+        "repeat_last_n": 64,
+        "repeat_penalty": 1.0,
+        "presence_penalty": 0.0,
+        "frequency_penalty": 0.0,
+        "dry_multiplier": 0.0,
+        "dry_base": 1.75,
+        "dry_allowed_length": 2,
+        "dry_penalty_last_n": 64,
+        "mirostat": 0,
+        "mirostat_tau": 5.0,
+        "mirostat_eta": 0.10000000149011612,
+        "adaptive_target": -1.0,
+        "adaptive_decay": 0.8999999761581421,
+        "max_tokens": -1,
+        "n_predict": -1,
+        "n_keep": 0,
+        "n_discard": 0,
+        "ignore_eos": false,
+        "stream": false,
+        "n_probs": 0,
+        "min_keep": 0,
+        "chat_format": "Content-only",
+        "reasoning_format": "none",
+        "reasoning_in_content": false,
+        "generation_prompt": "",
+        "samplers": [
+          "penalties",
+          "dry",
+          "top_n_sigma",
+          "top_k",
+          "typ_p",
+          "top_p",
+          "min_p",
+          "xtc",
+          "temperature"
+        ],
+        "speculative.types": "none",
+        "timings_per_token": false,
+        "post_sampling_probs": false,
+        "backend_sampling": false,
+        "lora": []
+      },
+      "n_ctx": 8192
+    },
+    "total_slots": 4,
+    "model_alias": "minicpm5-2b-q4km",
+    "model_ftype": "Q4_K - Medium",
+    "model_path": "models/minicpm/MiniCPM5-2B-Q4_K_M.gguf",
+    "modalities": {
+      "vision": false,
+      "video": false,
+      "audio": false
+    },
+    "media_marker": "<__media_YQuUg1pvLcIIH8xKVTOV5QkZZe4MW3NM__>",
+    "endpoint_slots": true,
+    "endpoint_props": false,
+    "endpoint_metrics": true,
+    "ui": true,
+    "ui_settings": {},
+    "chat_template": "{{- bos_token }}{%- if tools %}\n    {%- set tool_definitions %}\n        {{- \"# Tools\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\" }}\n        {%- for tool in tools %}\n            {{- \"\\n\" }}\n            {{- tool | tojson(ensure_ascii=False) }}\n        {%- endfor %}\n        {{- '\\n</tools>\\n\\nTool usage guidelines:\\n- You may call zero or more functions. If no function calls are needed, just answer normally and do not include any <function ... </function>.\\n- When calling a function, return an XML object within <function ... </function> using:\\n<function name=\"function-name\"><param name=\"param-name\">param-value</param></function>\\n- param-value may be multi-line. If it contains <, & or newline characters, wrap it in a CDATA block: <param name=\"param-name\"><![CDATA[...multi-line value...]]></param>' }}\n    {%- endset %}\n    \n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0].role == 'system' %}\n        {%- if '<tool_def_sep>' in messages[0].content %}\n            {{- messages[0].content.replace('<tool_def_sep>', tool_definitions) }}\n        {%- else %}\n            {{- messages[0].content + '\\n\\n' + tool_definitions }}\n        {%- endif %}\n    {%- else %}\n        {{- tool_definitions.lstrip() }}\n    {%- endif %}\n    {{- '<|im_end|>\\n' }}\n{%- else %}\n    {%- if messages[0].role == 'system' %}\n        {{- '<|im_start|>system\\n' + messages[0].content + '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- set ns = namespace(multi_step_tool=true, last_query_index=messages|length - 1) %}\n{%- for message in messages[::-1] %}\n    {%- set index = (messages|length - 1) - loop.index0 %}\n    {%- if ns.multi_step_tool and message.role == \"user\" and message.content is string and not(message.content.startswith('<tool_response>') and message.content.endswith('</tool_response>')) %}\n        {%- set ns.multi_step_tool = false %}\n        {%- set ns.last_query_index = index %}\n    {%- endif %}\n{%- endfor %}\n{%- for message in messages %}\n    {%- if message.content is string %}\n        {%- set content = message.content %}\n    {%- else %}\n        {%- set content = '' %}\n    {%- endif %}\n    {%- if (message.role == \"user\") or (message.role == \"system\" and not loop.first) %}\n        {{- '<|im_start|>' + message.role + '\\n' + content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {%- set reasoning_content = '' %}\n        {%- if message.reasoning_content is string %}\n            {%- set reasoning_content = message.reasoning_content %}\n        {%- else %}\n            {%- if '</think>' in content %}\n                {%- set reasoning_content = content.split('</think>')[0].rstrip('\\n').split('<think>')[-1].lstrip('\\n') %}\n                {%- set content = content.split('</think>')[-1].lstrip('\\n') %}\n            {%- endif %}\n        {%- endif %}\n        \n        {%- if message.tool_calls %}\n            {%- set content_parts = content.split('<tool_sep>') %}\n            {%- set processed_content = content_parts[0] %}\n            {%- set tool_calls_count = message.tool_calls|length %}\n            {%- set tool_sep_count = content_parts|length - 1 %}\n            {%- set min_count = [tool_calls_count, tool_sep_count]|min %}\n            \n            {%- for i in range(1, content_parts|length) %}\n                {%- set tool_index = i - 1 %}\n                {%- if tool_index < tool_calls_count %}\n                    {%- set tool_call = message.tool_calls[tool_index] %}\n                    {%- if tool_call.function %}\n                        {%- set tool_call = tool_call.function %}\n                    {%- endif %}\n                    {%- set single_tool_xml %}\n                        {{- '<function name=\"' ~ tool_call.name ~ '\">' }}\n                        {%- if tool_call.arguments %}\n                            {%- set args_dict = tool_call.arguments %}\n                            {%- for param_name, param_value in args_dict.items() %}\n                                {{- '<param name=\"' ~ param_name ~ '\">' }}\n                                {%- if param_value is string and ('<' in param_value or '&' in param_value or '\\n' in param_value) %}\n                                    {{- '<![CDATA[' + param_value + ']]>' }}\n                                {%- else %}\n                                    {{- param_value }}\n                                {%- endif %}\n                                {{- '</param>' }}\n                            {%- endfor %}\n                        {%- endif %}\n                        {{- '</function>' }}\n                    {%- endset %}\n                    {%- set processed_content = processed_content + single_tool_xml + content_parts[i] %}\n                {%- else %}\n                    {%- set processed_content = processed_content + content_parts[i] %}\n                {%- endif %}\n            {%- endfor %}\n            \n            {%- if tool_calls_count > tool_sep_count %}\n                {%- for remaining_index in range(tool_sep_count, tool_calls_count) %}\n                    {%- set tool_call = message.tool_calls[remaining_index] %}\n                    {%- if tool_call.function %}\n                        {%- set tool_call = tool_call.function %}\n                    {%- endif %}\n                    {%- set remaining_tool_xml %}\n                        {{- '<function name=\"' ~ tool_call.name ~ '\">' }}\n                        {%- if tool_call.arguments %}\n                            {%- set args_dict = tool_call.arguments %}\n                            {%- for param_name, param_value in args_dict.items() %}\n                                {{- '<param name=\"' ~ param_name ~ '\">' }}\n                                {%- if param_value is string and ('<' in param_value or '&' in param_value or '\\n' in param_value) %}\n                                    {{- '<![CDATA[' + param_value + ']]>' }}\n                                {%- else %}\n                                    {{- param_value }}\n                                {%- endif %}\n                                {{- '</param>' }}\n                            {%- endfor %}\n                        {%- endif %}\n                        {{- '</function>' }}\n                    {%- endset %}\n                    {%- set processed_content = processed_content + remaining_tool_xml %}\n                {%- endfor %}\n            {%- endif %}\n            \n            {%- set content = processed_content %}\n        {%- endif %}\n        \n        {%- if reasoning_content %}\n            {{- '<|im_start|>' + message.role + '\\n<think>\\n' + reasoning_content.strip('\\n') + '\\n</think>\\n\\n' + content.lstrip('\\n') }}\n        {%- elif '<think>' not in content and '</think>' not in content %}\n            {{- '<|im_start|>' + message.role + '\\n<think>\\n\\n</think>\\n\\n' + content.lstrip('\\n') }}\n        {%- else %}\n            {{- '<|im_start|>' + message.role + '\\n' + content }}\n        {%- endif %}\n        \n        {%- if message.tool_calls and not has_tool_sep %}\n            {%- for tool_call in message.tool_calls %}\n                {%- if (loop.first and content) or (not loop.first) %}\n                    {{- '\\n' }}\n                {%- endif %}\n                {%- if tool_call.function %}\n                    {%- set tool_call = tool_call.function %}\n                {%- endif %}\n                {{- '<function name=\"' ~ tool_call.name ~ '\">' }}\n                {%- if tool_call.arguments %}\n                    {%- set args_dict = tool_call.arguments %}\n                    {%- for param_name, param_value in args_dict.items() %}\n                        {{- '<param name=\"' ~ param_name ~ '\">' }}\n                        {%- if param_value is string and ('<' in param_value or '&' in param_value or '\\n' in param_value) %}\n                            {{- '<![CDATA[' + param_value + ']]>' }}\n                        {%- else %}\n                            {{- param_value }}\n                        {%- endif %}\n                        {{- '</param>' }}\n                    {%- endfor %}\n                {%- endif %}\n                {{- '</function>' }}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.first or (messages[loop.index0 - 1].role != \"tool\") %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {%- if message.content is string %}\n            {{- content }}\n        {%- else %}\n            {{- message.content | tojson(ensure_ascii=False) }}\n        {%- endif %}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0 + 1].role != \"tool\") %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n    {%- if enable_thinking is defined %}\n        {%- if enable_thinking is false %}\n            {{- '<think>\\n\\n</think>\\n\\n' }}\n        {%- elif enable_thinking is true %}\n            {{- '<think>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endif %}",
+    "chat_template_caps": {
+      "supports_object_arguments": true,
+      "supports_parallel_tool_calls": true,
+      "supports_preserve_reasoning": true,
+      "supports_reasoning_effort": false,
+      "supports_string_content": true,
+      "supports_system_role": true,
+      "supports_tool_calls": true,
+      "supports_tools": true,
+      "supports_typed_content": false
+    },
+    "bos_token": "<s>",
+    "eos_token": "</s>",
+    "build_info": "b10964-b29c606e2",
+    "is_sleeping": false,
+    "cors_proxy_enabled": false
+  },
+  "loaded_idle_rss": "9437 1984128 00:01 /opt/homebrew/bin/llama-server -m models/minicpm/MiniCPM5-2B-Q4_K_M.gguf --host 127.0.0.1 --port 8921 -ngl 99 -c 8192 --jinja --flash-attn on --no-warmup --metrics --alias minicpm5-2b-q4km",
+  "loaded_idle": {
+    "swapusage": "vm.swapusage: total = 2048.00M  used = 869.50M  free = 1178.50M  (encrypted)",
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 62662 \nPages purgeable: 2132 \nPages purged: 29410307 \n\nSwap I/O:\nSwapins: 2872180 \nSwapouts: 3895953 \n\nPage Q counts:\nPages active: 303279 \nPages inactive: 292679 \nPages speculative: 9006 \nPages throttled: 0 \nPages wired down: 257492 \n\nCompressor Stats:\nPages used by compressor: 86029 \nPages decompressed: 130275236 \nPages compressed: 151592580 \n\nFile I/O:\nPageins: 95186515 \nPageouts: 164086 \n\nSystem-wide memory free percentage: 65%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                    62662.\nPages active:                                 303011.\nPages inactive:                               292947.\nPages speculative:                              9006.\nPages throttled:                                   0.\nPages wired down:                             257492.\nPages purgeable:                                2132.\n\"Translation faults\":                      907522959.\nPages copy-on-write:                        37621873.\nPages zero filled:                         482627679.\nPages reactivated:                         136432461.\nPages purged:                               29410307.\nFile-backed pages:                            394778.\nAnonymous pages:                              210186.\nPages stored in compressor:                   189215.\nPages occupied by compressor:                  86029.\nDecompressions:                            130275236.\nCompressions:                              151592580.\nPageins:                                    95186516.\nPageouts:                                     164086.\nSwapins:                                     2872180.\nSwapouts:                                    3895953."
+  },
+  "direct_no_think": {
+    "seconds": 0.19619362500000004,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "France"
+          }
+        }
+      ],
+      "created": 1789914814,
+      "model": "minicpm5-2b-q4km",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 21,
+        "total_tokens": 23,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "id": "chatcmpl-W8MaJHKuN8aFRIDkiFR9uTGAixTmKPjf",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 21,
+        "prompt_ms": 170.381,
+        "prompt_per_token_ms": 8.113380952380952,
+        "prompt_per_second": 123.25317963857472,
+        "predicted_n": 2,
+        "predicted_ms": 22.331,
+        "predicted_per_token_ms": 22.331,
+        "predicted_per_second": 44.78079799382025
+      }
+    }
+  },
+  "warm_direct": {
+    "seconds": 0.041358833999999955,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "France"
+          }
+        }
+      ],
+      "created": 1789914814,
+      "model": "minicpm5-2b-q4km",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 21,
+        "total_tokens": 23,
+        "prompt_tokens_details": {
+          "cached_tokens": 20
+        }
+      },
+      "id": "chatcmpl-0CGpP48HHLHlNRkuVKkpeF4OjSWYo3S5",
+      "timings": {
+        "cache_n": 20,
+        "prompt_n": 1,
+        "prompt_ms": 20.095,
+        "prompt_per_token_ms": 20.095,
+        "prompt_per_second": 49.763622791739245,
+        "predicted_n": 2,
+        "predicted_ms": 19.135,
+        "predicted_per_token_ms": 19.135,
+        "predicted_per_second": 52.260256075254766
+      }
+    }
+  },
+  "tool_call": {
+    "seconds": 0.837400792,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "tool_calls",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "get_git_status",
+                  "arguments": "{\"path\":\"/tmp/repo\"}"
+                },
+                "id": "82ZFo9vxd6GIPlsSBKrQvHZZt8Yq0SwM"
+              }
+            ]
+          }
+        }
+      ],
+      "created": 1789914814,
+      "model": "minicpm5-2b-q4km",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 20,
+        "prompt_tokens": 239,
+        "total_tokens": 259,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "id": "chatcmpl-vjpY4h2s8IwDlgtuws7I0jZw9GaDSW5Y",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 239,
+        "prompt_ms": 428.913,
+        "prompt_per_token_ms": 1.7946150627615063,
+        "prompt_per_second": 557.2225602861187,
+        "predicted_n": 20,
+        "predicted_ms": 403.205,
+        "predicted_per_token_ms": 21.22131578947368,
+        "predicted_per_second": 47.122431517466296
+      }
+    }
+  },
+  "tool_continuation": {
+    "seconds": 0.5852536669999999,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "The repository at /tmp/repo is currently on the 'main' branch and is clean (no uncommitted changes)."
+          }
+        }
+      ],
+      "created": 1789914815,
+      "model": "minicpm5-2b-q4km",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 25,
+        "prompt_tokens": 284,
+        "total_tokens": 309,
+        "prompt_tokens_details": {
+          "cached_tokens": 258
+        }
+      },
+      "id": "chatcmpl-QfzayNutDER4YjQ954oZvCS633bzpcj8",
+      "timings": {
+        "cache_n": 258,
+        "prompt_n": 26,
+        "prompt_ms": 72.917,
+        "prompt_per_token_ms": 2.8045,
+        "prompt_per_second": 356.5697985380638,
+        "predicted_n": 25,
+        "predicted_ms": 504.779,
+        "predicted_per_token_ms": 21.032458333333334,
+        "predicted_per_second": 47.545559541898534
+      }
+    }
+  },
+  "active_rss": "9437 1995008 00:03 /opt/homebrew/bin/llama-server -m models/minicpm/MiniCPM5-2B-Q4_K_M.gguf --host 127.0.0.1 --port 8921 -ngl 99 -c 8192 --jinja --flash-attn on --no-warmup --metrics --alias minicpm5-2b-q4km",
+  "metrics": "# HELP llamacpp:prompt_tokens_total Number of prompt tokens processed, excluding cached tokens\n# TYPE llamacpp:prompt_tokens_total counter\nllamacpp:prompt_tokens_total 287\n# HELP llamacpp:prompt_tokens_cached_total Number of prompt tokens reused from the cache\n# TYPE llamacpp:prompt_tokens_cached_total counter\nllamacpp:prompt_tokens_cached_total 278\n# HELP llamacpp:prompt_seconds_total Total time spent processing prompts\n# TYPE llamacpp:prompt_seconds_total counter\nllamacpp:prompt_seconds_total 0.690586\n# HELP llamacpp:tokens_predicted_total Number of generation tokens processed\n# TYPE llamacpp:tokens_predicted_total counter\nllamacpp:tokens_predicted_total 49\n# HELP llamacpp:tokens_predicted_seconds_total Total time spent generating tokens\n# TYPE llamacpp:tokens_predicted_seconds_total counter\nllamacpp:tokens_predicted_seconds_total 0.94945\n# HELP llamacpp:n_decode_total Total number of llama_decode() calls, excluding speculative decoding and multimodal decoding\n# TYPE llamacpp:n_decode_total counter\nllamacpp:n_decode_total 49\n# HELP llamacpp:n_tokens_max Largest observed sequence length (prompt + generation)\n# TYPE llamacpp:n_tokens_max counter\nllamacpp:n_tokens_max 308\n# HELP llamacpp:spec_decode_num_draft_tokens_total Speculative: Total draft tokens generated\n# TYPE llamacpp:spec_decode_num_draft_tokens_total counter\nllamacpp:spec_decode_num_draft_tokens_total 0\n# HELP llamacpp:spec_decode_num_accepted_tokens_total Speculative: Total draft tokens accepted by the target model\n# TYPE llamacpp:spec_decode_num_accepted_tokens_total counter\nllamacpp:spec_decode_num_accepted_tokens_total 0\n# HELP llamacpp:spec_decode_num_drafts_total Speculative: Total speculative decoding verification steps\n# TYPE llamacpp:spec_decode_num_drafts_total counter\nllamacpp:spec_decode_num_drafts_total 0\n# HELP llamacpp:prompt_tokens_seconds Average prompt throughput in tokens/s\n# TYPE llamacpp:prompt_tokens_seconds gauge\nllamacpp:prompt_tokens_seconds 415.589\n# HELP llamacpp:predicted_tokens_seconds Average generation throughput in tokens/s\n# TYPE llamacpp:predicted_tokens_seconds gauge\nllamacpp:predicted_tokens_seconds 47.3959\n# HELP llamacpp:requests_processing Number of requests processing\n# TYPE llamacpp:requests_processing gauge\nllamacpp:requests_processing 0\n# HELP llamacpp:requests_deferred Number of requests deferred\n# TYPE llamacpp:requests_deferred gauge\nllamacpp:requests_deferred 0\n# HELP llamacpp:n_busy_slots_per_decode Average number of busy slots per llama_decode() call\n# TYPE llamacpp:n_busy_slots_per_decode gauge\nllamacpp:n_busy_slots_per_decode 1\n",
+  "after": {
+    "swapusage": "vm.swapusage: total = 2048.00M  used = 869.50M  free = 1178.50M  (encrypted)",
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 61088 \nPages purgeable: 2902 \nPages purged: 29410307 \n\nSwap I/O:\nSwapins: 2872180 \nSwapouts: 3895953 \n\nPage Q counts:\nPages active: 304065 \nPages inactive: 294471 \nPages speculative: 9017 \nPages throttled: 0 \nPages wired down: 256477 \n\nCompressor Stats:\nPages used by compressor: 86029 \nPages decompressed: 130275242 \nPages compressed: 151592580 \n\nFile I/O:\nPageins: 95186571 \nPageouts: 164086 \n\nSystem-wide memory free percentage: 65%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                    61088.\nPages active:                                 304064.\nPages inactive:                               294472.\nPages speculative:                              9017.\nPages throttled:                                   0.\nPages wired down:                             256477.\nPages purgeable:                                2902.\n\"Translation faults\":                      907536267.\nPages copy-on-write:                        37623241.\nPages zero filled:                         482634526.\nPages reactivated:                         136432465.\nPages purged:                               29410307.\nFile-backed pages:                            394846.\nAnonymous pages:                              212707.\nPages stored in compressor:                   189213.\nPages occupied by compressor:                  86029.\nDecompressions:                            130275242.\nCompressions:                              151592580.\nPageins:                                    95186572.\nPageouts:                                     164086.\nSwapins:                                     2872180.\nSwapouts:                                    3895953."
+  },
+  "outcome": "completed",
+  "exit_code": 0,
+  "post_stop": {
+    "swapusage": "vm.swapusage: total = 2048.00M  used = 869.50M  free = 1178.50M  (encrypted)",
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 96204 \nPages purgeable: 2894 \nPages purged: 29410320 \n\nSwap I/O:\nSwapins: 2872180 \nSwapouts: 3895953 \n\nPage Q counts:\nPages active: 373864 \nPages inactive: 313332 \nPages speculative: 9015 \nPages throttled: 0 \nPages wired down: 132706 \n\nCompressor Stats:\nPages used by compressor: 86026 \nPages decompressed: 130275257 \nPages compressed: 151592580 \n\nFile I/O:\nPageins: 95186574 \nPageouts: 164086 \n\nSystem-wide memory free percentage: 78%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                    96200.\nPages active:                                 373741.\nPages inactive:                               313455.\nPages speculative:                              9015.\nPages throttled:                                   0.\nPages wired down:                             132710.\nPages purgeable:                                2894.\n\"Translation faults\":                      907537803.\nPages copy-on-write:                        37623724.\nPages zero filled:                         482634763.\nPages reactivated:                         136432465.\nPages purged:                               29410320.\nFile-backed pages:                            489804.\nAnonymous pages:                              206407.\nPages stored in compressor:                   189198.\nPages occupied by compressor:                  86026.\nDecompressions:                            130275257.\nCompressions:                              151592580.\nPageins:                                    95186575.\nPageouts:                                     164086.\nSwapins:                                     2872180.\nSwapouts:                                    3895953."
+  }
+}

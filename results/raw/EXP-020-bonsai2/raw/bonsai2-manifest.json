@@ -1,0 +1,61 @@
+{
+  "source_url": "https://huggingface.co/api/models/prism-ml/Ternary-Bonsai-2-27B-gguf/tree/main?recursive=true",
+  "files": [
+    {
+      "path": "README.md",
+      "size": 22785,
+      "oid": "1fe303ecbb0990bd7f45865cdf5d245220d473ec",
+      "lfs": null
+    },
+    {
+      "path": "Ternary-Bonsai-2-27B-F16.gguf",
+      "size": 53808408928,
+      "oid": "6ed901f6df9dcae2058958b3aec54f3620a10b5d",
+      "lfs": {
+        "oid": "f6f3b2c9b41956c34b379ec7c301dc936bc38d79b3c24c83388dd7d76000c180",
+        "size": 53808408928,
+        "pointerSize": 136
+      }
+    },
+    {
+      "path": "Ternary-Bonsai-2-27B-PQ2_0.gguf",
+      "size": 7206168928,
+      "oid": "8d0823f96b78839696c57d6ee544160444f956f7",
+      "lfs": {
+        "oid": "3907dc1658db1f78a9826bf8d5bcb8dc65db0d466388937af57f2294fae62ec1",
+        "size": 7206168928,
+        "pointerSize": 135
+      }
+    },
+    {
+      "path": "Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+      "size": 5946648928,
+      "oid": "8c9da0522bd62bdda9347ed1855ea024d7e11765",
+      "lfs": {
+        "oid": "53107f530aa52eb00912263ab1ee29bd199261c87cd7b4ad4ca1318c1fe33ee3",
+        "size": 5946648928,
+        "pointerSize": 135
+      }
+    },
+    {
+      "path": "Ternary-Bonsai-2-27B-mmproj-BF16.gguf",
+      "size": 931145856,
+      "oid": "fe3f1d0119708de49e8d3166013238229535fa97",
+      "lfs": {
+        "oid": "e287342d92332fa3577ed1d42e921dac9370c08da58ba9337fa450f6cc76cfd7",
+        "size": 931145856,
+        "pointerSize": 134
+      }
+    },
+    {
+      "path": "Ternary-Bonsai-2-27B-mmproj-Q8_0.gguf",
+      "size": 629246976,
+      "oid": "19ca9905c6e3ddcd06960506f4d1bf19613ce169",
+      "lfs": {
+        "oid": "6807ede61d570bb86ba34b756a0fa109edc33668604de867c6ea6d8f1d631903",
+        "size": 629246976,
+        "pointerSize": 134
+      }
+    }
+  ]
+}

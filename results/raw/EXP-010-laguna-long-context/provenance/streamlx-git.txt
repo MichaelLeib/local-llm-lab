@@ -1,0 +1,5 @@
+remote=https://github.com/srcterm/streamlx.git
+head=146507b59293058b3a1cecc43f47947b25012297
+commit=146507b59293058b3a1cecc43f47947b25012297
+author_date=2026-08-11T21:33:13+02:00
+subject=readme updated

@@ -1,0 +1,59 @@
+{
+  "label": "q5-4k",
+  "requested_target_tokens": 4000,
+  "actual_prompt_text_tokens": 3930,
+  "before": {
+    "time": 1789883301.057684,
+    "rss_kib": 3814752,
+    "swap": "total = 3072.00M  used = 1547.88M  free = 1524.12M  (encrypted)",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                    87108.\nPages active:                                 205655.\nPages inactive:                               271917.\nPages speculative:                              6774.\nPages throttled:                                   0.\nPages wired down:                             392004.\nPages purgeable:                                6193.\n\"Translation faults\":                      501254616.\nPages copy-on-write:                        21034566.\nPages zero filled:                         299312354.\nPages reactivated:                          48957162.\nPages purged:                               12752230.\nFile-backed pages:                            302248.\nAnonymous pages:                              182098.\nPages stored in compressor:                   104718.\nPages occupied by compressor:                  47689.\nDecompressions:                             51243281.\nCompressions:                               60883910.\nPageins:                                    31960037.\nPageouts:                                      41720.\nSwapins:                                     2193237.\nSwapouts:                                    2833699.",
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 87111 \nPages purgeable: 6193 \nPages purged: 12752230 \n\nSwap I/O:\nSwapins: 2193237 \nSwapouts: 2833699 \n\nPage Q counts:\nPages active: 205652 \nPages inactive: 271917 \nPages speculative: 6774 \nPages throttled: 0 \nPages wired down: 392004 \n\nCompressor Stats:\nPages used by compressor: 47689 \nPages decompressed: 51243281 \nPages compressed: 60883910 \n\nFile I/O:\nPageins: 31960038 \nPageouts: 41720 \n\nSystem-wide memory free percentage: 56%"
+  },
+  "http_ok": true,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "NANBEIGE_CONTEXT_NEEDLE_Q5-4K_7391"
+        }
+      }
+    ],
+    "created": 1789883332,
+    "model": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-021-nanbeige42/models/q5/Nanbeige4.2-3B-Q5_K_M.gguf",
+    "system_fingerprint": "b1-c6640a1",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 22,
+      "prompt_tokens": 3969,
+      "total_tokens": 3991,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "id": "chatcmpl-xjNzr07Ih4PCNKaLRac8qBCNfUh2wbyE",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 3969,
+      "prompt_ms": 29912.387,
+      "prompt_per_token_ms": 7.5365046611237085,
+      "prompt_per_second": 132.6875050125555,
+      "predicted_n": 22,
+      "predicted_ms": 1588.466,
+      "predicted_per_token_ms": 72.20299999999999,
+      "predicted_per_second": 13.849840034347604
+    }
+  },
+  "elapsed_s": 31.514402866363525,
+  "retrieval_correct": true,
+  "finish_reason": "stop",
+  "after": {
+    "time": 1789883332.585757,
+    "rss_kib": 3819600,
+    "swap": "total = 3072.00M  used = 1539.88M  free = 1532.12M  (encrypted)",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                    72751.\nPages active:                                 253071.\nPages inactive:                               274085.\nPages speculative:                             12513.\nPages throttled:                                   0.\nPages wired down:                             353638.\nPages purgeable:                                7792.\n\"Translation faults\":                      501547283.\nPages copy-on-write:                        21057545.\nPages zero filled:                         299450991.\nPages reactivated:                          48957269.\nPages purged:                               12753205.\nFile-backed pages:                            316174.\nAnonymous pages:                              223495.\nPages stored in compressor:                    97901.\nPages occupied by compressor:                  45089.\nDecompressions:                             51256866.\nCompressions:                               60883910.\nPageins:                                    31969999.\nPageouts:                                      41720.\nSwapins:                                     2193973.\nSwapouts:                                    2833699.",
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 72752 \nPages purgeable: 7792 \nPages purged: 12753205 \n\nSwap I/O:\nSwapins: 2193973 \nSwapouts: 2833699 \n\nPage Q counts:\nPages active: 253070 \nPages inactive: 274085 \nPages speculative: 12513 \nPages throttled: 0 \nPages wired down: 353638 \n\nCompressor Stats:\nPages used by compressor: 45089 \nPages decompressed: 51256866 \nPages compressed: 60883910 \n\nFile I/O:\nPageins: 31970000 \nPageouts: 41720 \n\nSystem-wide memory free percentage: 60%"
+  }
+}

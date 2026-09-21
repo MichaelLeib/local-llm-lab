@@ -1,0 +1,32 @@
+{
+  "experiment": "EXP-002",
+  "event": "approved-model-downloads",
+  "completed_at_utc": "2026-09-17T07:22:59Z",
+  "approval": "User explicitly approved downloading the official 6-bit and 8-bit variants.",
+  "downloads": [
+    {
+      "repo": "ornith-ai/Ornith-1.5-9B-MLX-6bit",
+      "revision": "538eb2e517a3adf8691e77cc20232ef1a3af39f3",
+      "snapshot": "/Users/<user>/.cache/huggingface/hub/models--ornith-ai--Ornith-1.5-9B-MLX-6bit/snapshots/538eb2e517a3adf8691e77cc20232ef1a3af39f3",
+      "repository_bytes": 7298157745,
+      "repository_gib": 6.797,
+      "verification": "local snapshot file total exactly matched Hub metadata"
+    },
+    {
+      "repo": "ornith-ai/Ornith-1.5-9B-MLX-8bit",
+      "revision": "b4b70543d60c81e7c418a001b74cd4352212bd44",
+      "snapshot": "/Users/<user>/.cache/huggingface/hub/models--ornith-ai--Ornith-1.5-9B-MLX-8bit/snapshots/b4b70543d60c81e7c418a001b74cd4352212bd44",
+      "repository_bytes": 9536343460,
+      "repository_gib": 8.881,
+      "verification": "local snapshot file total exactly matched Hub metadata"
+    }
+  ],
+  "total_new_repository_bytes": 16834501205,
+  "total_new_repository_gib": 15.678,
+  "disk_available_after_download_gib": 58,
+  "model_server_running_after_download": false,
+  "lanes_after_download": {
+    "FAST": "down",
+    "DEEP": "down"
+  }
+}

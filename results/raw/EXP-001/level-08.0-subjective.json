@@ -1,0 +1,9 @@
+{
+  "experiment": "EXP-001",
+  "level_gib": 8.0,
+  "rating": 0,
+  "assessment": "Still all good - no lags - all fluent. All works good still",
+  "continue_explicit": true,
+  "recorded_at": "2026-09-17",
+  "notes": "User reported no lag and fluent operation, and explicitly instructed continuation to 9 GiB."
+}

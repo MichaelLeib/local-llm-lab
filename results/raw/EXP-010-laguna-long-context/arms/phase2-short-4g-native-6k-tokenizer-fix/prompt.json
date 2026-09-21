@@ -1,0 +1,8 @@
+{
+  "target_tokens": 6144,
+  "actual_rendered_tokens": 6159,
+  "record_units": 87,
+  "rendered_chars": 25311,
+  "user_prompt_chars": 25107,
+  "tokenizer_class": "Tokenizer"
+}

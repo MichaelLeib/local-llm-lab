@@ -1,0 +1,20 @@
+{
+  "completed_at_utc": "2026-09-18T09:16:54.092243+00:00",
+  "frozen_v2_harness_manifest_sha256": "587572903b789eea1ce2693c2bb7d33b394cab07a947363da3572434f9dc0d35",
+  "identity_leak_check": "passed: public artifacts and locked score rows contain no model, artifact, or engine identity",
+  "mapping_remained_sealed_during_scoring": true,
+  "opaque_candidate_ids": [
+    "candidate-S6",
+    "candidate-W0"
+  ],
+  "receipt_version": "EXP-007-v2-scoreable-blind-pair-completion-v1",
+  "score_sheet_sha256": {
+    "candidate-S6": "f0edbb32b9cafaa147060fac15a8b669db6240a8a3bd9e92b709d6d2136c2d36",
+    "candidate-W0": "4a8e77f5b0c05b10d9466858a2867f804cf0a166026493e141621c6336cb4552"
+  },
+  "scoring_state": "final; no further pre-unblinding scoring edits planned",
+  "sealed_assignment_sha256": "3f6647f0835e639fdb2038e97ef5c807b3c892b207a264e2342144b9beb18b0d",
+  "t01_fixture_commit": "a43d24cb624dee4e5ddfb4b0c8f788fd9fd6c8c9",
+  "t01_prompt_sha256": "d8635752d0f2d41b65aa03126e1eb782e8515cc29e3fc2fb4c186fbeca8cd695",
+  "unblinding_eligible": true
+}

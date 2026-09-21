@@ -1,0 +1,19 @@
+{
+  "snapshot": {
+    "timestamp": 1789823805.772287,
+    "label": "cleanup",
+    "model_pid": null,
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                   419507.\nPages active:                                 150064.\nPages inactive:                               147784.\nPages speculative:                              1496.\nPages throttled:                                   0.\nPages wired down:                             153402.\nPages purgeable:                                 142.\n\"Translation faults\":                     1257775571.\nPages copy-on-write:                        61239767.\nPages zero filled:                         770468603.\nPages reactivated:                         111431405.\nPages purged:                               30865413.\nFile-backed pages:                            182787.\nAnonymous pages:                              116557.\nPages stored in compressor:                   312698.\nPages occupied by compressor:                 138888.\nDecompressions:                            264017988.\nCompressions:                              298768544.\nPageins:                                  1091385915.\nPageouts:                                    1294648.\nSwapins:                                     3197623.\nSwapouts:                                    4528759.\n",
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 419351 \nPages purgeable: 144 \nPages purged: 30865413 \n\nSwap I/O:\nSwapins: 3197623 \nSwapouts: 4528759 \n\nPage Q counts:\nPages active: 149473 \nPages inactive: 147236 \nPages speculative: 1538 \nPages throttled: 0 \nPages wired down: 154677 \n\nCompressor Stats:\nPages used by compressor: 138871 \nPages decompressed: 264018056 \nPages compressed: 298768544 \n\nFile I/O:\nPageins: 1091385947 \nPageouts: 1294648 \n\nSystem-wide memory free percentage: 70%\n",
+    "swap": "vm.swapusage: total = 3072.00M  used = 1632.38M  free = 1439.62M  (encrypted)\n",
+    "process": "",
+    "rusage": null,
+    "free_percent": 70,
+    "swap_used_mib": 1632.38,
+    "swapouts": 4528759,
+    "swapins": 3197623,
+    "pageouts": 1294648,
+    "rss_kib": null
+  },
+  "inference_processes": ""
+}

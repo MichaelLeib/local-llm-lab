@@ -1,0 +1,61 @@
+{
+  "experiment": "EXP-002",
+  "status": "primary_ladder_complete_with_8bit_load_stability_failure",
+  "scope": "Official Ornith-1.5-9B MLX 4/6/8-bit variants under one representative live Mac workload; one warm-up and one standardized active request per stable model.",
+  "ladder": [
+    {
+      "quantization": "4-bit",
+      "repo": "ornith-ai/Ornith-1.5-9B-MLX-4bit",
+      "revision": "a48173b246ac705be75c05bedf1a0666db522d53",
+      "idle_os_footprint_mb": 5750,
+      "active_peak_os_footprint_mb": 6282,
+      "rapid_mlx_metal_peak_gb_decimal": 6.81,
+      "decode_tok_s": 7.891,
+      "idle_rating": 0,
+      "active_rating": 0,
+      "result": "stable and fully responsive in this session"
+    },
+    {
+      "quantization": "6-bit",
+      "repo": "ornith-ai/Ornith-1.5-9B-MLX-6bit",
+      "revision": "538eb2e517a3adf8691e77cc20232ef1a3af39f3",
+      "idle_os_footprint_mb": 7884,
+      "active_peak_os_footprint_mb": 8694,
+      "rapid_mlx_metal_peak_gb_decimal": 9.05,
+      "decode_tok_s": 4.32,
+      "idle_rating": 0,
+      "active_rating": 0,
+      "result": "stable and fully responsive subjectively, but objectively high pressure"
+    },
+    {
+      "quantization": "8-bit",
+      "repo": "ornith-ai/Ornith-1.5-9B-MLX-8bit",
+      "revision": "b4b70543d60c81e7c418a001b74cd4352212bd44",
+      "idle_os_footprint_mb": null,
+      "active_peak_os_footprint_mb": null,
+      "rapid_mlx_metal_peak_gb_decimal": null,
+      "decode_tok_s": null,
+      "idle_rating": null,
+      "active_rating": null,
+      "result": "warm-up completed, but server received SIGTERM before stable idle checkpoint; rapid-mlx estimated 13.3 GB working set and warned of 142% utilization"
+    }
+  ],
+  "conclusions": {
+    "comfortable_real_llm_footprint": "The largest measured configuration with 0/5 idle and active degradation was official 6-bit: 7.884 GB idle OS footprint, 8.694 GB active OS footprint, and 9.05 GB rapid-mlx Metal peak. This is a session-specific observed maximum, not a universal safe budget.",
+    "normal_use_maximum": "Official 6-bit is the largest tested stable model with 0/5 subjective degradation in this session, but its 11% simulated pressure-free sample and 6.61 GiB post-generation swap make it a high-risk normal configuration rather than a recommended default.",
+    "heavy_work_budget": "No rating-3 boundary was reached. The largest deliberately tolerated configuration was again official 6-bit; 8-bit was not stable enough to classify.",
+    "practical_ceiling": "The practical ceiling was not numerically isolated. It lies below the official 8-bit configuration under this launcher/workload because 8-bit failed stable-server validation. The nearest measured stable point is 9.05 GB Metal peak; the 8-bit warning projected 13.3 GB working set, but those values are not a calibrated threshold pair.",
+    "base_workload_reserve_required": "Not promoted as a single GB number. The live baseline, compression, swap, and process composition varied substantially, and VM categories overlap. A simple 16 GB minus model-file-size calculation is invalid.",
+    "main_bottleneck": "Resident Metal/unified-memory working set and resulting compression/swap pressure, not ordinary RSS. The 4-to-6-bit step added 2,412 MB to active OS footprint and reduced measured decode speed from 7.891 to 4.32 tok/s. The 8-bit configuration crossed rapid-mlx's memory-safety warning regime.",
+    "confidence": "Moderate for relative 4/6/8-bit behavior and the user's ratings in this session; low-to-moderate for generalizing a universal RAM threshold.",
+    "remaining_uncertainty": [
+      "The SIGTERM source during 8-bit warm-up is not proven to be OOM, kernel action, or rapid-mlx self-protection.",
+      "Each stable quantization had one warm-up and one active run, not repeated trials.",
+      "Swap state was dynamic and not a clean low-load baseline.",
+      "The user's live workload may differ across days and application states.",
+      "No separate context/KV growth sweep was performed.",
+      "No quality or Hermes tool-call evaluation was part of EXP-002."
+    ]
+  },
+  "recommended_next_smallest_experiment": "Do not retry 8-bit blindly. First preserve EXP-002 as complete for the primary ladder and, if needed, run a separately approved diagnostic to identify the SIGTERM source with stricter safety limits. For practical Hermes use, treat 4-bit as the robust default and 6-bit as the largest observed high-memory option, pending repeated trials and end-to-end quality/tool-use validation."
+}

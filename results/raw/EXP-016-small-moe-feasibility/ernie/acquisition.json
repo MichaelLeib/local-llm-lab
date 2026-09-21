@@ -1,0 +1,52 @@
+{
+  "experiment": "EXP-016",
+  "candidate": "baidu/ERNIE-4.5-21B-A3B-Thinking",
+  "source_repo": "qurk41/ERNIE-4.5-21B-A3B-Thinking-mlx-4Bit",
+  "revision": "b59122f1fbe19df1fe939ad4de46763265fc297",
+  "download_mode": "hf download --revision with explicit model/config/tokenizer include",
+  "files": [
+    {
+      "name": "config.json",
+      "bytes": 1056,
+      "sha256": "8956f11f47e21a03dc7fcf2416a9c46f6c1c17300debbe6ee1f68fbb09700851"
+    },
+    {
+      "name": "generation_config.json",
+      "bytes": 205,
+      "sha256": "fef4cb7d9d0f486629dbb12a54ff158fb343d4cb99d35c0cbe72627fe56f25e9"
+    },
+    {
+      "name": "model-00001-of-00003.safetensors",
+      "bytes": 5277255394,
+      "sha256": "7fbdfe7f79a0e1c4fac6b18b4e033fe1a059c6f924604c9e6e6258c37707c32e"
+    },
+    {
+      "name": "model-00002-of-00003.safetensors",
+      "bytes": 5362779392,
+      "sha256": "50fea6ed52be0d7eb980764436a2eae43f3065ca9d052205988a7333c0e94cb4"
+    },
+    {
+      "name": "model-00003-of-00003.safetensors",
+      "bytes": 1637098876,
+      "sha256": "4c519390384e3d1d8e92e716954535b05b0e23d0443e49ec2fadac40d8768ec7"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "bytes": 1000,
+      "sha256": "a0040579a92f5a5cb549b720b5b2d04c4d9cf3c327fc49b76d5e80b5d075782a"
+    },
+    {
+      "name": "tokenizer.json",
+      "bytes": 10999541,
+      "sha256": "93a291ef6e5c89e6c0f2d5d004734ff429faa8ab925e39d71d2374b3d0daf49e"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "bytes": 6278,
+      "sha256": "0ea15f56c2625ff0ea5d0d83c36d5ab6c43b66792c5740e7e981d465464864d2"
+    }
+  ],
+  "total_bytes": 12288141742,
+  "expected_weight_bytes": 12277133662,
+  "verified_local_files": true
+}

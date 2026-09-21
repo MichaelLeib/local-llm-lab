@@ -1,0 +1,276 @@
+=== EXP-006 TinyTitan build ===
+Thu Sep 17 15:19:12 UTC 2026
+ProductName:		macOS
+ProductVersion:		27.0
+BuildVersion:		26A428
+swift-driver version: 1.168.6 Apple Swift version 6.4 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
+Target: arm64-apple-macosx27.0.0
+008510e2753cc16a674cb75169ba3133cf56fa4e
+--- swift build -c release ---
+Fetching https://github.com/apple/swift-collections.git from cache
+Fetching https://github.com/ibireme/yyjson.git from cache
+Fetching https://github.com/apple/swift-system.git from cache
+Fetching https://github.com/apple/swift-atomics.git from cache
+Fetching https://github.com/apple/swift-crypto.git from cache
+Fetching https://github.com/huggingface/swift-transformers from cache
+Fetched https://github.com/apple/swift-collections.git from cache (0.58s)
+Fetched https://github.com/apple/swift-atomics.git from cache (0.60s)
+Fetched https://github.com/apple/swift-system.git from cache (0.60s)
+Fetched https://github.com/ibireme/yyjson.git from cache (0.60s)
+Fetching https://github.com/apple/swift-asn1.git from cache
+Fetching https://github.com/huggingface/swift-jinja.git from cache
+Fetching https://github.com/mattt/EventSource.git from cache
+Fetching https://github.com/huggingface/swift-huggingface.git from cache
+Fetched https://github.com/huggingface/swift-transformers from cache (0.91s)
+Fetched https://github.com/apple/swift-crypto.git from cache (0.93s)
+Fetching https://github.com/apple/swift-nio.git from cache
+Fetched https://github.com/apple/swift-asn1.git from cache (0.48s)
+Fetched https://github.com/huggingface/swift-huggingface.git from cache (0.56s)
+Fetched https://github.com/huggingface/swift-jinja.git from cache (0.57s)
+Fetched https://github.com/mattt/EventSource.git from cache (0.57s)
+Fetched https://github.com/apple/swift-nio.git from cache (0.90s)
+Computing version for https://github.com/apple/swift-nio.git
+Computed https://github.com/apple/swift-nio.git at 2.99.0 (2.38s)
+Computing version for https://github.com/huggingface/swift-transformers
+Computed https://github.com/huggingface/swift-transformers at 1.3.3 (0.43s)
+Computing version for https://github.com/apple/swift-system.git
+Computed https://github.com/apple/swift-system.git at 1.6.4 (0.43s)
+Computing version for https://github.com/apple/swift-collections.git
+Computed https://github.com/apple/swift-collections.git at 1.5.1 (0.36s)
+Computing version for https://github.com/apple/swift-atomics.git
+Computed https://github.com/apple/swift-atomics.git at 1.3.0 (0.26s)
+Computing version for https://github.com/ibireme/yyjson.git
+Computed https://github.com/ibireme/yyjson.git at 0.12.0 (0.55s)
+Computing version for https://github.com/apple/swift-crypto.git
+Computed https://github.com/apple/swift-crypto.git at 4.5.0 (0.59s)
+Computing version for https://github.com/huggingface/swift-huggingface.git
+Computed https://github.com/huggingface/swift-huggingface.git at 0.9.0 (0.45s)
+Computing version for https://github.com/huggingface/swift-jinja.git
+Computed https://github.com/huggingface/swift-jinja.git at 2.3.6 (0.40s)
+Computing version for https://github.com/apple/swift-asn1.git
+Computed https://github.com/apple/swift-asn1.git at 1.7.0 (0.46s)
+Computing version for https://github.com/mattt/EventSource.git
+Computed https://github.com/mattt/EventSource.git at 1.4.1 (0.41s)
+Creating working copy for https://github.com/apple/swift-collections.git
+Working copy of https://github.com/apple/swift-collections.git resolved at 1.5.1
+Creating working copy for https://github.com/huggingface/swift-huggingface.git
+Working copy of https://github.com/huggingface/swift-huggingface.git resolved at 0.9.0
+Creating working copy for https://github.com/apple/swift-nio.git
+Working copy of https://github.com/apple/swift-nio.git resolved at 2.99.0
+Creating working copy for https://github.com/ibireme/yyjson.git
+Working copy of https://github.com/ibireme/yyjson.git resolved at 0.12.0
+Creating working copy for https://github.com/apple/swift-asn1.git
+Working copy of https://github.com/apple/swift-asn1.git resolved at 1.7.0
+Creating working copy for https://github.com/huggingface/swift-transformers
+Working copy of https://github.com/huggingface/swift-transformers resolved at 1.3.3
+Creating working copy for https://github.com/apple/swift-crypto.git
+Working copy of https://github.com/apple/swift-crypto.git resolved at 4.5.0
+Creating working copy for https://github.com/mattt/EventSource.git
+Working copy of https://github.com/mattt/EventSource.git resolved at 1.4.1
+Creating working copy for https://github.com/apple/swift-system.git
+Working copy of https://github.com/apple/swift-system.git resolved at 1.6.4
+Creating working copy for https://github.com/apple/swift-atomics.git
+Working copy of https://github.com/apple/swift-atomics.git resolved at 1.3.0
+Creating working copy for https://github.com/huggingface/swift-jinja.git
+Working copy of https://github.com/huggingface/swift-jinja.git resolved at 2.3.6
+Building for production...
+[Computing dependencies]
+[Pre-planning 1 / 1597]
+[Planning deferred tasks]
+[Starting]
+[88 / 573] TinyTitan_TinyTitanRepackTests
+[304 / 573]
+[315 / 581] _AtomicsShims
+[320 / 601] Atomics
+[322 / 613]
+[329 / 635] CNIOWindows
+[335 / 635]
+[342 / 651]
+[352 / 695]
+[361 / 729]
+[371 / 729]
+[386 / 729]
+[402 / 729] CNIOLinux
+[412 / 739] _AtomicsShims
+[417 / 739]
+[423 / 739]
+[428 / 739]
+[435 / 739]
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanKernelsC: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[445 / 739] CNIOPosix
+[456 / 749] CNIODarwin
+[460 / 749]
+[465 / 762]
+[468 / 762]
+[476 / 762]
+[481 / 762]
+[485 / 762] CNIOLLHTTP
+[489 / 764]
+[495 / 764]
+[497 / 764] CNIOLLHTTP
+[502 / 764]
+[503 / 764] CNIOAtomics
+[504 / 764] yyjson
+[505 / 764]
+[511 / 764]
+[512 / 764]
+[520 / 764]
+[521 / 764]
+[528 / 764]
+[530 / 764]
+[532 / 764]
+[536 / 764] _NIODataStructures
+[548 / 764] _NIOBase64
+[554 / 764] InternalCollectionsUtilities
+[563 / 766] ContainersPreview
+[569 / 768]
+[578 / 769]
+[581 / 770]
+[583 / 770]
+[584 / 770] Atomics
+[590 / 770] OrderedCollections
+[597 / 771] DequeModule
+[604 / 772] Jinja
+[606 / 790] NIOCore
+[609 / 792]
+[611 / 792]
+[613 / 792]
+[614 / 792] Crypto
+[620 / 792] TinyTitanFormat
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanFormat: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[628 / 793] TinyTitanRepackCore
+[630 / 797]
+[632 / 797]
+[633 / 797] ContinuityCore
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: ContinuityCore: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[642 / 799] ContinuityCore-product
+[642 / 799] ContinuityDemo-product
+[646 / 801] NIOCore
+[655 / 804] NIOEmbedded
+[657 / 805] EventSource
+[659 / 806] NIOPosix
+[664 / 812]
+[666 / 812] ContinuityDemo-product
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: ContinuityDemo-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: ContinuityDemo-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[668 / 812] ContinuityDemo-product
+[669 / 812] ContinuityDemo-product
+[670 / 812] EventSource
+[677 / 813] HuggingFace
+[682 / 867]
+[687 / 867]
+[688 / 867]
+[691 / 867]
+[696 / 867]
+[697 / 867]
+[699 / 867]
+[708 / 867]
+[710 / 867]
+[711 / 867]
+[711 / 867] TinyTitanMemory
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanMemory: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[718 / 868] tinytitan-memory-product
+[726 / 869]
+[728 / 869]
+[729 / 869]
+[734 / 869]
+[737 / 869] tinytitan-memory-product
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: tinytitan-memory-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: tinytitan-memory-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[739 / 869] tinytitan-memory-product
+[740 / 869]
+[742 / 869]
+[744 / 869]
+[745 / 869] TinyTitanRepackCore
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanRepackCore: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[752 / 870] TinyTitanRepack-product
+[754 / 871]
+[754 / 871] TinyTitanRepack-product
+[756 / 871] TinyTitanRepack-product
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanRepack-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanRepack-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[757 / 871] TinyTitanRepack-product
+[758 / 871]
+[765 / 871]
+[770 / 871]
+[774 / 871]
+[778 / 871]
+[778 / 871] NIOPosix
+[785 / 872] NIO
+[794 / 874] NIOHTTP1
+[797 / 876]
+[798 / 876]
+[799 / 876]
+[800 / 876] NIOHTTP1
+[806 / 876] Jinja
+[812 / 876] HuggingFace
+[819 / 877] Hub
+[830 / 972]
+[834 / 972]
+[835 / 972]
+[848 / 972]
+[851 / 972]
+[852 / 972]
+[855 / 972]
+[862 / 972]
+[864 / 972]
+[867 / 972]
+[870 / 972]
+[872 / 972]
+[884 / 972]
+[886 / 972]
+[887 / 972]
+[890 / 972]
+[891 / 972]
+[892 / 972]
+[902 / 972]
+[904 / 972]
+[908 / 972]
+[912 / 972]
+[913 / 972]
+[914 / 972]
+[915 / 972] Hub
+[922 / 973] Tokenizers
+[924 / 974] Tokenizers
+[931 / 975] TinyTitan
+[942 / 1008]
+[946 / 1008]
+[950 / 1008]
+[951 / 1008]
+[952 / 1008]
+[956 / 1008]
+[957 / 1008]
+[961 / 1008]
+[962 / 1008]
+[963 / 1008]
+[964 / 1008]
+[965 / 1008] TinyTitan
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitan: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[976 / 1012] TinyTitan-product
+[976 / 1012] TinyTitanCLICore
+[984 / 1018]
+[985 / 1018] TinyTitanCLICore
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanCLICore: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[992 / 1019] TinyTitanCLI-product
+[994 / 1020] TinyTitanCLI-product
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanCLI-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanCLI-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[996 / 1020] TinyTitanCLI-product
+[997 / 1020] TinyTitanBench-product
+[999 / 1020] TinyTitanBench-product
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanBench-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanBench-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[1000 / 1020] TinyTitanCLI-product
+[1001 / 1020] TinyTitanBench-product
+[1002 / 1020]
+[1003 / 1020] TinyTitanValidationSupport
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanValidationSupport: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[1009 / 1020] TinyTitanServerCore
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanServerCore: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[1016 / 1021] TinyTitanServer-product
+[1018 / 1022] TinyTitanServer-product
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanServer-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanServer-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[1020 / 1022] TinyTitanServer-product
+[1021 / 1022] TinyTitanServer-product
+Build complete! (134,09 sec)

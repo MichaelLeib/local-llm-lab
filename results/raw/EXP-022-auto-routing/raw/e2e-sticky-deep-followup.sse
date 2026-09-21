@@ -1,0 +1,196 @@
+: keepalive
+
+: keepalive
+
+: keepalive
+
+: keepalive
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916969.451396, "delta": "I"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916969.451715, "delta": " replied"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916969.45211, "delta": " with"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916969.453442, "delta": " exactly"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916969.4537091, "delta": " \""}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916969.454577, "delta": "DE"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916969.4563332, "delta": "EP"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916969.4581912, "delta": "_E"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916969.458642, "delta": "2"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916969.648588, "delta": "E"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916969.64891, "delta": "_OK"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916969.746984, "delta": "\""}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916969.84522, "delta": " because"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916969.9440582, "delta": " your"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916970.0461671, "delta": " most"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916970.144355, "delta": " recent"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916970.262176, "delta": " message"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916970.403098, "delta": " was"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916970.525131, "delta": " an"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916970.64468, "delta": " explicit"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916970.7367449, "delta": " instruction"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916970.831512, "delta": " to"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916970.932102, "delta": " do"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916971.025153, "delta": " so"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916971.120619, "delta": "."}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916971.2166212, "delta": " It"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916971.3117461, "delta": " wasn"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916971.4076421, "delta": "'t"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916971.504406, "delta": " a"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916971.633405, "delta": " design"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916971.745206, "delta": " choice"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916971.884269, "delta": " on"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916971.9817111, "delta": " my"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916972.074027, "delta": " part"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916972.172245, "delta": " \u2014"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916972.269621, "delta": " it"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916972.369118, "delta": " was"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916972.469004, "delta": " a"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916972.565989, "delta": " direct"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916972.655052, "delta": " command"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916972.749393, "delta": ","}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916972.8667352, "delta": " and"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916973.084291, "delta": " I"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916973.088771, "delta": " followed"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916973.1755981, "delta": " it"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916973.2706969, "delta": " ver"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916973.369619, "delta": "batim"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916973.4743922, "delta": "."}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916973.590286, "delta": "\n\n"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916973.6884632, "delta": "If"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916973.779047, "delta": " you"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916973.870487, "delta": "'re"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916973.9680278, "delta": " asking"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916974.071177, "delta": " something"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916974.167882, "delta": " else"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916974.270678, "delta": " ("}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916974.465426, "delta": "e"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916974.4659588, "delta": ".g"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916974.566407, "delta": ".,"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916974.6614132, "delta": " why"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916974.7568629, "delta": " the"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916974.855086, "delta": " system"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916974.9601762, "delta": " routes"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916975.081163, "delta": " this"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916975.1773639, "delta": " session"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916975.268903, "delta": " to"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916975.363293, "delta": " the"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916975.467957, "delta": " \""}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916975.570403, "delta": "DE"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916975.673246, "delta": "EP"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916975.778164, "delta": "\""}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916975.892264, "delta": " model"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916976.012979, "delta": ","}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916976.154797, "delta": " or"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916976.265811, "delta": " what"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916976.358347, "delta": " design"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916976.456831, "delta": " decisions"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916976.5638149, "delta": " under"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916976.660946, "delta": "lie"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916976.756462, "delta": " something"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916976.8742578, "delta": " specific"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916976.977747, "delta": "),"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916977.113097, "delta": " let"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916977.224618, "delta": " me"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916977.327515, "delta": " know"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916977.470625, "delta": " and"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916977.6874712, "delta": " I"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916977.689919, "delta": "'ll"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916977.78797, "delta": " answer"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916977.8898702, "delta": " that"}
+
+data: {"event": "message.delta", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916977.996158, "delta": "."}
+
+data: {"event": "reasoning.available", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916978.1642811, "text": "I replied with exactly \"DEEP_E2E_OK\" because your most recent message was an explicit instruction to do so. It wasn't a design choice on my part \u2014 it was a direct command, and I followed it verbatim.\n\nIf you're asking something else (e.g., why the system routes this session to the \"DEEP\" model, or what design decisions underlie something specific), let me know and I'll answer that."}
+
+data: {"event": "run.completed", "run_id": "run_00c7265511da402b90ed833830b77213", "timestamp": 1789916978.233994, "output": "I replied with exactly \"DEEP_E2E_OK\" because your most recent message was an explicit instruction to do so. It wasn't a design choice on my part \u2014 it was a direct command, and I followed it verbatim.\n\nIf you're asking something else (e.g., why the system routes this session to the \"DEEP\" model, or what design decisions underlie something specific), let me know and I'll answer that.", "usage": {"input_tokens": 14453, "output_tokens": 280, "total_tokens": 14733}}
+
+: stream closed
+

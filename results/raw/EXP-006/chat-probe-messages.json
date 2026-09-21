@@ -1,0 +1,4 @@
+[
+  {"role":"system", "content":"Reply with exactly READY. Do not explain."},
+  {"role":"user", "content":"Reply with exactly READY."}
+]

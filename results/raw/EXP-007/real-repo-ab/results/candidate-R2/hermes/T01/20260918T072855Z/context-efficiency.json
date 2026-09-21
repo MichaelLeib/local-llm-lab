@@ -1,0 +1,41 @@
+{
+  "completion_allowance": 4096,
+  "completion_tokens": 1702,
+  "context_limit": 16384,
+  "context_limit_approached": true,
+  "cumulative_tool_result_tokens": 10281,
+  "initial_prompt_tokens": 4070,
+  "maximum_accumulated_prompt_tokens": 16190,
+  "policy": "EXP-007-context-safe-v1",
+  "repeated_file_ranges": 0,
+  "repeated_unrefined_searches": 0,
+  "server_request_count": 24,
+  "tool_calls_by_name": {
+    "read_file": 8,
+    "terminal": 12
+  },
+  "tool_calls_made": 20,
+  "tool_result_tokens": [
+    800,
+    800,
+    79,
+    800,
+    16,
+    221,
+    359,
+    318,
+    188,
+    800,
+    800,
+    800,
+    194,
+    800,
+    291,
+    800,
+    800,
+    800,
+    283,
+    332
+  ],
+  "truncated_tool_outputs": 10
+}

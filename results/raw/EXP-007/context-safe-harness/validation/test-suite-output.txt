@@ -1,0 +1,32 @@
+=== deterministic context-safe harness test suite ===
+test_file_read_is_bounded_and_paginates (__main__.ContextSafeOutputTests.test_file_read_is_bounded_and_paginates) ... ok
+test_search_caps_match_records_and_reports_omission (__main__.ContextSafeOutputTests.test_search_caps_match_records_and_reports_omission) ... ok
+test_search_files_list_is_capped_like_matches (__main__.ContextSafeOutputTests.test_search_files_list_is_capped_like_matches) ... ok
+test_small_result_is_unchanged_but_instrumented (__main__.ContextSafeOutputTests.test_small_result_is_unchanged_but_instrumented) ... ok
+test_terminal_preserves_head_tail_exit_and_explicit_omission (__main__.ContextSafeOutputTests.test_terminal_preserves_head_tail_exit_and_explicit_omission) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.448s
+
+OK
+test_aggregates_tool_cost_repeats_and_server_telemetry (__main__.ContextMetricsTests.test_aggregates_tool_cost_repeats_and_server_telemetry) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.003s
+
+OK
+test_scored_chat_exports_metrics_path_and_writes_summary (__main__.RunnerTelemetryContractTests.test_scored_chat_exports_metrics_path_and_writes_summary) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+test_plugin_registers_only_transform_hook (__main__.HookOnlyRegistrationTests.test_plugin_registers_only_transform_hook) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+=== syntax ===
+=== hook admission ===
+hook loaded; hook-only plugin schema invariant verified by test

@@ -1,0 +1,41 @@
+2026-09-18T05:13:39Z
+=== lane status before ===
+FAST: up   (port 8901)
+DEEP: down
+  vm.swapusage: total = 1024.00M  used = 0.25M  free = 1023.75M  (encrypted)
+=== memory pressure ===
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 67810 
+Pages purgeable: 5075 
+Pages purged: 1775555 
+
+Swap I/O:
+Swapins: 8 
+Swapouts: 16 
+
+Page Q counts:
+Pages active: 286468 
+Pages inactive: 278582 
+Pages speculative: 7984 
+Pages throttled: 0 
+Pages wired down: 141217 
+
+Compressor Stats:
+Pages used by compressor: 229086 
+Pages decompressed: 3567623 
+Pages compressed: 4706043 
+
+File I/O:
+Pageins: 36168685 
+Pageouts: 5949 
+
+System-wide memory free percentage: 63%
+=== swap ===
+vm.swapusage: total = 1024.00M  used = 0.25M  free = 1023.75M  (encrypted)
+=== disk ===
+Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s5   460Gi   388Gi    47Gi    90%    2.8M  488M    1%   /System/Volumes/Data
+=== candidate receipt ===
+e5212c31b76ceb11b733f98e98d8c11bd425303d0c11a1f816b57121099e8a2c  /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/carnice-hybrid/Carnice-Qwen3.6-MoE-35B-A3B.gturbo/verified-install.json

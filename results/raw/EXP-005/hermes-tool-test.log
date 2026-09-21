@@ -1,0 +1,6 @@
+exit_code=1
+--- stdout ---
+HTTP 400: reasoning_effort is not supported
+--- stderr ---
+
+session_id: 20260917_152203_6265d2

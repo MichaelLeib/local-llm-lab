@@ -1,0 +1,303 @@
+{
+  "arm": {
+    "name": "1b-64k-q4",
+    "model": "models/minicpm5-1b/MiniCPM5-1B-Q4_K_M.gguf",
+    "context": 65536,
+    "kv_k": "q4_0",
+    "kv_v": "q4_0"
+  },
+  "load_seconds": 3.139,
+  "results": [
+    {
+      "name": "factual",
+      "seconds": 0.2989,
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "Paris"
+            }
+          }
+        ],
+        "created": 1789921048,
+        "model": "minicpm5-2b",
+        "system_fingerprint": "b10964-b29c606e2",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 25,
+          "total_tokens": 27,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "id": "chatcmpl-Jq3H6LWmu8n8HynnmMa0mQt0gsWlpBdl",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 25,
+          "prompt_ms": 277.959,
+          "prompt_per_token_ms": 11.118360000000001,
+          "prompt_per_second": 89.94132228134364,
+          "predicted_n": 2,
+          "predicted_ms": 17.147,
+          "predicted_per_token_ms": 17.147,
+          "predicted_per_second": 58.3192395171167
+        }
+      }
+    },
+    {
+      "name": "no_think",
+      "seconds": 0.0532,
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "56"
+            }
+          }
+        ],
+        "created": 1789921048,
+        "model": "minicpm5-2b",
+        "system_fingerprint": "b10964-b29c606e2",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 27,
+          "total_tokens": 29,
+          "prompt_tokens_details": {
+            "cached_tokens": 6
+          }
+        },
+        "id": "chatcmpl-7mHAnE7tnkLXS6UdMVsh6i662J5Grt63",
+        "timings": {
+          "cache_n": 6,
+          "prompt_n": 21,
+          "prompt_ms": 32.36,
+          "prompt_per_token_ms": 1.5409523809523809,
+          "prompt_per_second": 648.9493201483313,
+          "predicted_n": 2,
+          "predicted_ms": 16.124,
+          "predicted_per_token_ms": 16.124,
+          "predicted_per_second": 62.019350037211616
+        }
+      }
+    },
+    {
+      "name": "think",
+      "seconds": 2.2716,
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "length",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "",
+              "reasoning_content": "We are asked: \"What is 7 times 8? Briefly reason then give the answer.\" So we need to compute 7 \u00d7 8. The answer is 56. We should reason: 7 times 8 means 7 added to itself 8 times, or 8 added to itself 7 times. So 7 \u00d7 8 = 56. We'll give the answer: 56.\n\nThe instruction says: \"Briefly reason then give the answer.\" So we should explain briefly: 7 times 8 is 56 because 7 \u00d7 8 = 56.\n\nI'll write: 7 times 8 is 56. Reason: 7 \u00d7 8 = 56.\n\nBut maybe they want just the answer? The prompt says: \"What is 7 times 8? Briefly reason then give the answer.\" So I'll"
+            }
+          }
+        ],
+        "created": 1789921050,
+        "model": "minicpm5-2b",
+        "system_fingerprint": "b10964-b29c606e2",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 180,
+          "prompt_tokens": 26,
+          "total_tokens": 206,
+          "prompt_tokens_details": {
+            "cached_tokens": 12
+          }
+        },
+        "id": "chatcmpl-ZD47BNQ4dCQaKj97UaQzt0rSqhteRPHY",
+        "timings": {
+          "cache_n": 12,
+          "prompt_n": 14,
+          "prompt_ms": 32.674,
+          "prompt_per_token_ms": 2.3338571428571426,
+          "prompt_per_second": 428.4752402521883,
+          "predicted_n": 180,
+          "predicted_ms": 2234.179,
+          "predicted_per_token_ms": 12.481446927374302,
+          "predicted_per_second": 80.11891616562505
+        }
+      }
+    },
+    {
+      "name": "tool",
+      "seconds": 0.3147,
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "tool_calls",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "",
+              "tool_calls": [
+                {
+                  "type": "function",
+                  "function": {
+                    "name": "get_git_status",
+                    "arguments": "{}"
+                  },
+                  "id": "YmJnJD9pdk6f5gBp3zI93tUrSfquVP0j"
+                }
+              ]
+            }
+          }
+        ],
+        "created": 1789921050,
+        "model": "minicpm5-2b",
+        "system_fingerprint": "b10964-b29c606e2",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 10,
+          "prompt_tokens": 205,
+          "total_tokens": 215,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "id": "chatcmpl-BqtN29INJPTZlM8TGP7UaSZlTUWPyREt",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 205,
+          "prompt_ms": 202.687,
+          "prompt_per_token_ms": 0.9887170731707318,
+          "prompt_per_second": 1011.4116840251224,
+          "predicted_n": 10,
+          "predicted_ms": 107.3,
+          "predicted_per_token_ms": 11.922222222222222,
+          "predicted_per_second": 83.87698042870457
+        }
+      }
+    },
+    {
+      "name": "structured",
+      "seconds": 0.1678,
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"route\":\"FAST\",\"confidence\":0.9}"
+            }
+          }
+        ],
+        "created": 1789921050,
+        "model": "minicpm5-2b",
+        "system_fingerprint": "b10964-b29c606e2",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 12,
+          "prompt_tokens": 29,
+          "total_tokens": 41,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "id": "chatcmpl-vzW29h8ugmV2DVCg5RQgZUuyR3p4hvWM",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 29,
+          "prompt_ms": 49.969,
+          "prompt_per_token_ms": 1.7230689655172413,
+          "prompt_per_second": 580.359823090316,
+          "predicted_n": 12,
+          "predicted_ms": 111.073,
+          "predicted_per_token_ms": 10.097545454545454,
+          "predicted_per_second": 99.03396865124738
+        }
+      }
+    },
+    {
+      "name": "compression",
+      "seconds": 3.6365,
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "The error `EADDRINUSE 8901` indicates that the server cannot bind to the specified address. This is a network connectivity issue, not a model constraint. The `TODO` and `COMMAND` sections suggest you need to test the application and fix the error.\n\nHere is the revised code:\n\n```python\nimport os\nimport subprocess\nimport json\n\ndef compress():\n    # TODO: test /srv/app/a.py\n    # Command: git status\n    # Error: EADDRINUSE 8901\n    # Constraint: never run two models\n    # User prefers concise reports\n    # Measurement: 47 tok/s and 1.56GB\n\n    # Compress the file\n    with open('file.txt', 'rb') as f:\n        content = f.read()\n    compressed_content = content.encode('latin1').hex()\n\n    # Write the compressed content to a new file\n    with open('file.txt', 'ab') as f:\n        f.write(compressed_content)\n\n    return compressed_content\n\nif __name__ == '__main__':\n    compressed_content = compress()\n    print(compressed_content)\n```\n\nThis code compresses the file `file.txt` to a new file `file.txt` by converting the content to a binary and then to a hexadecimal string. The `compress` function is called when the `TODO` and `COMMAND` sections are executed."
+            }
+          }
+        ],
+        "created": 1789921054,
+        "model": "minicpm5-2b",
+        "system_fingerprint": "b10964-b29c606e2",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 305,
+          "prompt_tokens": 79,
+          "total_tokens": 384,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "id": "chatcmpl-G1JeFSeB3zLewHCH9lt96MZIc31Rrc7T",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 79,
+          "prompt_ms": 65.603,
+          "prompt_per_token_ms": 0.8304177215189873,
+          "prompt_per_second": 1204.213221956313,
+          "predicted_n": 305,
+          "predicted_ms": 3563.915,
+          "predicted_per_token_ms": 11.723404605263157,
+          "predicted_per_second": 85.29945298919868
+        }
+      }
+    },
+    {
+      "name": "populated_context",
+      "seconds": 40.6986,
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "item7"
+            }
+          }
+        ],
+        "created": 1789921095,
+        "model": "minicpm5-2b",
+        "system_fingerprint": "b10964-b29c606e2",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 3,
+          "prompt_tokens": 22849,
+          "total_tokens": 22852,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "id": "chatcmpl-pQuBH20evoIAD2HVJ3hBS6GPr7KZAQ7A",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 22849,
+          "prompt_ms": 40350.373,
+          "prompt_per_token_ms": 1.7659579412665762,
+          "prompt_per_second": 566.2649016900042,
+          "predicted_n": 3,
+          "predicted_ms": 307.169,
+          "predicted_per_token_ms": 153.5845,
+          "predicted_per_second": 6.511073708609919
+        }
+      }
+    }
+  ]
+}

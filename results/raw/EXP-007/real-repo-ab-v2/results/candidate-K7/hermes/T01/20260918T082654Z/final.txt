@@ -1,0 +1,80 @@
+Query: You are working in an isolated benchmark fixture of HermesMobile.
+
+**Goal:** Fix the reported mobile layout regression.
+
+On narrow iPhones:
+
+1. Focusing any user-editable text input must not trigger Safari's automatic 
+page zoom. This includes the chat composer, model-picker search, and dialog text
+input.
+2. Wide assistant Markdown content (especially comparison tables and long code) 
+must never let the entire chat/thread pane pan horizontally. Wide content may 
+scroll **inside its own intended container**.
+
+Work directly in the repository. Inspect relevant code before editing. Make the 
+smallest maintainable fix, add or adjust deterministic tests if appropriate, and
+run the relevant project checks. Do not start services or change dependencies. 
+Finish with a concise summary of the files changed and exact verification 
+commands/results.
+
+Initializing agent...
+────────────────────────────────────────
+
+  ┊ 💻 $         find /Users/<user> -maxdepth 4 -type d -name 'HermesMobile' -o -type d -name 'hermes-mobile' -o -type d -name 'hermes_mobile' 2>/dev/null  2.8s
+  ┊ 💻 $         ls /Users/<user>/  0.0s
+  ┊ 💻 $         ls -la /Users/<user>/HermesProjects/HermesMobile/  0.0s
+  ┊ 💻 $         find /Users/<user>/HermesProjects/HermesMobile/src -type f  0.0s
+  ┊ 💻 $         cat /Users/<user>/HermesProjects/HermesMobile/package.json  0.0s
+  ┊ 💻 $         find /Users/<user>/HermesProjects/HermesMobile/src -type f  0.0s
+  ┊ 📖 read      out-1789720215-33628-6ed0.log L1-100  0.0s
+  ┊ 📖 read      index.html  0.0s
+  ┊ 📖 read      styles.scss  0.0s
+  ┊ 📖 read      app.ts  0.0s
+  ┊ 📖 read      styles.scss L243  0.0s
+  ┊ 📖 read      app.routes.ts  0.0s
+  ┊ 💻 $         find /Users/<user>/HermesProjects/HermesMobile/src -type f -name '*.ts' -o -name '*.scss' -o -name '*.html'  0.0s
+  ┊ 📖 read      out-1789720408-33628-ab90.log L1-80  0.0s
+  ┊ 📖 read      out-1789720408-33628-ab90.log L5-64  0.0s
+  ┊ 📖 read      out-1789720408-33628-ab90.log L9-63  0.0s
+  ┊ 📖 read      shell.component.ts  0.0s
+  ┊ 📖 read      shell.component.html  0.0s
+  ┊ 📖 read      shell.component.scss  0.0s
+  ┊ 📖 read      thread.component.ts  0.1s
+  ┊ 📖 read      thread.component.html  0.1s
+  ┊ 📖 read      thread.component.scss  0.1s
+  ┊ 📖 read      thread.component.scss L251  0.1s
+  ┊ 📖 read      composer.component.ts  0.0s
+  ┊ 📖 read      composer.component.html  0.1s
+  ┊ 📖 read      composer.component.scss  0.1s
+  ┊ 📖 read      model-picker.component.ts  0.1s [File not found: model-picker.component.ts]
+  ┊ 📖 read      model-picker.component.html  0.1s [File not found: model-picker.component.html]
+  ┊ 📖 read      model-picker.component.scss  0.1s [error]
+  ┊ 📖 read      model-picker-sheet.component.ts  0.0s
+  ┊ 📖 read      model-picker-sheet.component.html  0.0s
+  ┊ 📖 read      model-picker-sheet.component.scss  0.0s
+  ┊ 📖 read      dialog.component.ts  0.1s [File not found: dialog.component.ts]
+  ┊ 📖 read      dialog.component.html  0.1s [File not found: dialog.component.html]
+  ┊ 📖 read      dialog.component.scss  0.1s [error]
+⚠️  API call failed (attempt 1/3): BadRequestError [HTTP 400]
+   🔌 Provider: custom  Model: candidate-K7
+   🌐 Endpoint: http://127.0.0.1:8997/v1
+   📝 Error: HTTP 400: prompt exceeds the configured context
+   📋 Details: {'param': 'messages', 'message': 'prompt exceeds the configured context', 'type': 'invalid_request_error', 'code': 'context_length_exceeded'}
+   ⏱️  Elapsed: 0.10s  Context: 51 msgs, ~12,773 tokens
+❌ Non-retryable error (HTTP 400): HTTP 400: prompt exceeds the configured context
+❌ Non-retryable client error (HTTP 400). Aborting.
+   🔌 Provider: custom  Model: candidate-K7
+   🌐 Endpoint: http://127.0.0.1:8997/v1
+   💡 This type of error won't be fixed by retrying.
+ ─  ☤ Hermes  ───────────────────────────────────────────────────────────────── 
+                                                                                
+ HTTP 400: prompt exceeds the configured context                                
+                                                                                
+ ────────────────────────────────────────────────────────────────────────────── 
+
+Resume this session with:
+  hermes --resume 20260918_102657_7a5d1f -p exp007benchv2
+
+Session:        20260918_102657_7a5d1f
+Duration:       15m 45s
+Messages:       50 (1 user, 49 tool calls)

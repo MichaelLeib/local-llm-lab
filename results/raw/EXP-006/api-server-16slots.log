@@ -1,0 +1,19 @@
+[2026-09-17T18:06:22Z] watchdogs=off
+[2026-09-17T18:06:40Z] request chatcmpl-0a8a96a374154de1aa812f681a6f931b accepted streaming=false
+[2026-09-17T18:06:40Z] request chatcmpl-0a8a96a374154de1aa812f681a6f931b generating
+[2026-09-17T18:06:47Z] request chatcmpl-0a8a96a374154de1aa812f681a6f931b completed in 6.645s prompt=31 cached=0 completion=2 finish=stop
+[2026-09-17T18:07:13Z] request chatcmpl-1872927b63cc474f9ae8012ca60ae108 accepted streaming=false
+[2026-09-17T18:07:13Z] request chatcmpl-1872927b63cc474f9ae8012ca60ae108 generating
+[2026-09-17T18:07:49Z] request chatcmpl-1872927b63cc474f9ae8012ca60ae108 completed in 35.947s prompt=292 cached=0 completion=38 finish=tool_calls
+[2026-09-17T18:08:54Z] request qwen3.8-flash-next-mtp_4-Bit reasoning: a JSON response format constrains every token, so thinking is off for this request
+[2026-09-17T18:08:54Z] request chatcmpl-86b47e40243944e286f6bedd7b6312de accepted streaming=false
+[2026-09-17T18:08:54Z] request chatcmpl-86b47e40243944e286f6bedd7b6312de generating
+[2026-09-17T18:08:54Z] request chatcmpl-20fc042e7ec848c5ad71c52c8c611e80 accepted streaming=true
+[2026-09-17T18:08:54Z] request chatcmpl-20fc042e7ec848c5ad71c52c8c611e80 queued
+[2026-09-17T18:09:14Z] request chatcmpl-86b47e40243944e286f6bedd7b6312de completed in 20.354s prompt=262 cached=0 completion=7 finish=stop
+[2026-09-17T18:09:14Z] request chatcmpl-20fc042e7ec848c5ad71c52c8c611e80 generating
+[2026-09-17T18:09:14Z] request chatcmpl-20fc042e7ec848c5ad71c52c8c611e80 failed phase=generating status=400 error=TinyTitanServerCore.ServerRequestError.invalid(message: "prompt exceeds the configured context", param: Optional("messages"), code: "context_length_exceeded")
+TinyTitanServer 5.7 ready at http://127.0.0.1:8092 model=qwen3.8-flash-next-mtp_4-Bit context=4096 concurrency=1 prefill_chunk=4096 expert_slots=16 prompt_cache=off prompt_cache_memory_mib=0 prompt_cache_disk=off thinking=off mtp=off
+TinyTitan generation prefill_s=5.930 decode_s=0.709 decode_tok_s=2.819
+TinyTitan generation prefill_s=20.329 decode_s=15.587 decode_tok_s=2.438
+TinyTitan generation prefill_s=17.460 decode_s=2.761 decode_tok_s=2.536

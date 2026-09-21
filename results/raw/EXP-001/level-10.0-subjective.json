@@ -1,0 +1,9 @@
+{
+  "experiment": "EXP-001",
+  "level_gib": 10.0,
+  "rating": 0,
+  "assessment": "Still all good. 0/5",
+  "continue_explicit": true,
+  "recorded_at": "2026-09-17",
+  "notes": "User reported no issues at 10 GiB and explicitly instructed going higher. This is an exploratory extension beyond the original 6–10 GiB sequence."
+}

@@ -1,0 +1,61 @@
+{
+  "experiment": "EXP-003",
+  "test": "Hermes streaming bridge with official Ornith-1.5-35B-A3B Q4_K_M",
+  "status": "native_tool_call_verified",
+  "date": "2026-09-17",
+  "backend": {
+    "runtime": "isolated llama.cpp moe-expert-residency fork",
+    "commit": "41ec4c4e94fd5ff6c258691f35f2fcd0d3dde892",
+    "port": 8901,
+    "moe_slots": 8,
+    "context": 8192,
+    "model": "Ornith-1.5-35B-A3B-Q4_K_M"
+  },
+  "bridge": {
+    "artifact": "tools/exp003_capture_proxy.py",
+    "listen_port": 8905,
+    "upstream": "http://127.0.0.1:8901",
+    "injected": {
+      "chat_template_kwargs.enable_thinking": false
+    },
+    "test_only_constraints": {
+      "HERMES_BRIDGE_TOOLS": "terminal",
+      "HERMES_BRIDGE_MAX_TOKENS": 256
+    },
+    "streaming": "SSE forwarded close-delimited; no false Content-Length header"
+  },
+  "hermes": {
+    "profile": "temporary exp003bridge; deleted after test",
+    "provider": "custom:exp003-local",
+    "api_mode": "chat_completions",
+    "request_timeout_seconds": 600,
+    "stale_timeout_seconds": 300,
+    "prompt": "Use your terminal tool to execute the command `date`. Report the exact command output and nothing else.",
+    "requested_tool": "terminal",
+    "requested_arguments": {
+      "command": "date"
+    },
+    "exit_code": 0,
+    "final_output": "`date` output:\n\n```\nThu Sep 17 14:02:17 CEST 2026\n```",
+    "native_tool_execution": true
+  },
+  "timing": {
+    "title_request_total_ms": 62189.84,
+    "main_prompt_tokens": 3332,
+    "main_prompt_eval_ms": 773510.0,
+    "main_prompt_tokens_per_second": 4.31,
+    "tool_followup_total_ms": 13690.01,
+    "final_followup_total_ms": 34050.88,
+    "note": "The main prompt required approximately 12.9 minutes because the full Hermes system/tool prompt was reprocessed through SSD-backed expert residency."
+  },
+  "cleanup": {
+    "server_stopped": true,
+    "proxy_stopped": true,
+    "port_8901_closed": true,
+    "port_8905_closed": true,
+    "fast_changed": false,
+    "deep_changed": false,
+    "hermes_defaults_changed": false
+  },
+  "decision": "Retain llama.cpp as a protocol-compatible backend candidate, but do not promote this 35B lane for interactive Hermes use without reducing prompt/tool overhead or improving prefill performance."
+}

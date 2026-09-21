@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "verdict": {
+    "mode": "streaming",
+    "runnable": true,
+    "needs_wired_bump": false
+  },
+  "checks": [
+    [
+      "model.remote",
+      "warn",
+      "manjunathshiva/Laguna-S-2.1-tqTe-g64 planned from remote headers \u2014 not downloaded, so on-disk checks are skipped"
+    ],
+    [
+      "model.turboquant",
+      "pass",
+      "quantization: turboquant"
+    ],
+    [
+      "env.mlx",
+      "pass",
+      "mlx 0.32.2"
+    ],
+    [
+      "env.mlx_lm",
+      "pass",
+      "mlx-lm 0.31.3"
+    ],
+    [
+      "machine.wss",
+      "pass",
+      "Metal working set 12.71 GB"
+    ],
+    [
+      "fit.projection",
+      "pass",
+      "placement: streaming \u2014 peak 30.32 GB vs working set 12.71 GB"
+    ]
+  ],
+  "flags": [
+    "--streaming   (weights exceed even the raised cap; experts page from disk)",
+    "--cache-budget-gb auto   (~7.4 GB here, peaking near 10.8 GB)",
+    "--prefill-step-size 128   (the default 2048 needs 2.28 GB of transient workspace at this context)"
+  ]
+}

@@ -1,0 +1,9 @@
+
+
+<think>
+Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Question:** "What is the purpose of a checksum?"
+   - **Constraint:** "Answer in exactly one sentence."
+

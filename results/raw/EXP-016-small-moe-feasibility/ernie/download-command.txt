@@ -1,0 +1,1 @@
+hf download --revision b59122f1fbe19df1fe939ad4de46763265fc297 --local-dir results/raw/EXP-016-small-moe-feasibility/ernie/model --include *.safetensors config.json tokenizer\* generation_config.json special_tokens_map.json qurk41/ERNIE-4.5-21B-A3B-Thinking-mlx-4Bit

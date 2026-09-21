@@ -1,0 +1,12 @@
+{
+  "timestamp_utc": "2026-09-19T09:34:53Z",
+  "status": "runtime-gate-failure",
+  "failure_class": "metal-insufficient-memory-on-q3",
+  "evidence": [
+    "GGUF Q3_K_M loaded far enough to begin CLI but Metal command buffer status 5 / Insufficient Memory",
+    "llama_decode and graph compute failed",
+    "no response token emitted",
+    "fresh run with GGML_METAL_LAZY_TENSOR_MAP=1 reproduced the failure"
+  ],
+  "retry": "CPU-only n-gpu-layers=0 probe to distinguish Metal allocation from total runtime infeasibility"
+}

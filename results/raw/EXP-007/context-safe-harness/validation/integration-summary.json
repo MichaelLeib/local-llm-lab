@@ -1,0 +1,13 @@
+{
+  "read_marker": true,
+  "terminal_marker": true,
+  "read_total_lines": 900,
+  "terminal_exit_code": 0,
+  "schema_tool_names": [
+    "terminal",
+    "tool_search",
+    "tool_describe",
+    "tool_call"
+  ],
+  "schema_has_context_safe_tool": false
+}

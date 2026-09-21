@@ -1,0 +1,51 @@
+TurboFieldfareCLI — Gemma 4 26B-A4B / Qwen3.6 35B-A3B text generation
+
+usage: TurboFieldfareCLI --model <dir> (--prompt <string> | --messages-file <path>) [options]
+
+required:
+  --model <dir>             Path to a .gturbo model directory.
+  --prompt <string>         Raw-completion prompt.
+  --messages-file <path>    JSON chat messages with role and content fields.
+
+options:
+  --max-new <int>           Generated-token limit (default 1024).
+  --max-context <int>       Context limit in tokens (default 4096).
+  --temperature <float>     Sampling temperature (default 0.2; 0 = greedy).
+  --top-k <int>             Top-k truncation, 1...256 (default 64; 0 = off).
+  --top-p <float>           Nucleus truncation (default 0.95).
+  --repetition-penalty <f>  Repetition penalty (default 1.0).
+  --seed <uint64>           Deterministic sampling seed (default off).
+  --stop <string>           Stop substring (repeatable).
+  --rdadvise <mode>         Expert read-ahead advice: off, default,
+                            bounded, or adaptive (default off).
+  --gpu-clock-hold <mode>   Keep the GPU clocked across decode's expert
+                            read gaps: auto (default; off under macOS
+                            Low Power Mode), on, or off. Measured on a
+                            24 GB M5 at 16 slots with every expert read
+                            from the SSD: 9.5 -> 12.6 tok/s, output
+                            byte-identical.
+  --expert-cache-slots <n>  Routed-expert cache slots per layer, one
+                            slot per expert (default 64 of this model's
+                            256). Allowed: 8, 16, 24, 32, 48, 64, 96,
+                            128, 192, 256. More slots raise the hit
+                            rate and cost RAM, and past ~128 they evict
+                            the OS page cache: measured on a 24 GB M5
+                            at a 3k prompt (2026-09-06), 16 -> 64 -> 128
+                            slots is 27.1 -> 31.1 -> 31.9 tok/s and 192
+                            slots is 25.2.
+  --expert-cache-policy <p> Slot replacement: lfu-aging (default), lfu,
+                            or lru. Aging halves LFU's use counts every
+                            32 tokens. On a recorded ten-turn coding
+                            session, replayed offline at 64 slots, lfu
+                            hit 69.1%, lru 75.9%, lfu-aging 77.6%.
+  --prefill-chunk <n|auto>  Prefill chunk tokens (default auto). Every
+                            chunk re-reads most of the expert pool, so
+                            auto sizes the chunk to the prompt: prefill
+                            of a 2,940-token prompt went 63.3 -> 18.5 s
+                            against 128-token chunks. Allowed: 32, 64,
+                            128, 256, 512, 1024, 2048, 4096.
+  --kv-snapshot <path>      Whole-state KV snapshot file: saved after a
+                            fresh prefill, restored (skipping prefill)
+                            when the file matches the exact prompt.
+  --quiet                   Suppress the timing footer.
+  --help                    Show this message.

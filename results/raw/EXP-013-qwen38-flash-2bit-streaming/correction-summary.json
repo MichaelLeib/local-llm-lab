@@ -1,0 +1,41 @@
+{
+  "experiment": "EXP-013-qwen38-flash-2bit-streaming",
+  "status": "memory_feasible_on_paper__blocked_before_download_by_disk_reserve",
+  "correction": {
+    "prior_error": "treated ngram_bytes as disjoint from resident_bytes",
+    "verified_relationships": {
+      "resident_equals_total_minus_experts": true,
+      "ngram_is_subset_of_resident": true,
+      "wired_resident_after_ngram_offload_bytes": 2664831544
+    }
+  },
+  "pinned": {
+    "model_revision": "9e5c4343ab3a3917100c94e1b0dd39dea617faab",
+    "runtime_commit": "d1c34c63bc99f5744f409868b198cc692b84b65c"
+  },
+  "corrected_memory": {
+    "total_text_bytes": 55838786104,
+    "expert_bytes": 33973862400,
+    "resident_including_ngram_bytes": 21864923704,
+    "ngram_bytes": 19200092160,
+    "wired_resident_after_ngram_offload_bytes": 2664831544,
+    "one_gb_cache_peak_bytes": 5049257784,
+    "two_gb_cache_peak_bytes": 6049257784,
+    "auto_cache_peak_conservative_bytes": 9438713661
+  },
+  "planner": {
+    "context": 8192,
+    "remote_headers_only": true,
+    "verdict": "streaming runnable",
+    "planner_projection_peak_bytes_is_not_streaming_consistent": true,
+    "reason": "peak_at uses total minus ngram rather than bounded cache plus wired_resident"
+  },
+  "disk_gate": {
+    "live_free_bytes": 64361140224,
+    "candidate_tree_bytes_including_vision": 56757557995,
+    "remaining_after_direct_bytes": 7603582229,
+    "remaining_after_direct_gib": 7.081388,
+    "shortfall_to_10_gib_reserve_bytes": 3133836011,
+    "result": "blocked"
+  }
+}

@@ -1,0 +1,26 @@
+data: {"event": "message.delta", "run_id": "run_73f6519685364598bd1d73a6fe71b250", "timestamp": 1789921345.3123178, "delta": "https"}
+
+data: {"event": "message.delta", "run_id": "run_73f6519685364598bd1d73a6fe71b250", "timestamp": 1789921345.860476, "delta": "://"}
+
+data: {"event": "message.delta", "run_id": "run_73f6519685364598bd1d73a6fe71b250", "timestamp": 1789921345.861351, "delta": "her"}
+
+data: {"event": "message.delta", "run_id": "run_73f6519685364598bd1d73a6fe71b250", "timestamp": 1789921345.8617651, "delta": "mes"}
+
+data: {"event": "message.delta", "run_id": "run_73f6519685364598bd1d73a6fe71b250", "timestamp": 1789921345.8627179, "delta": "-agent"}
+
+data: {"event": "message.delta", "run_id": "run_73f6519685364598bd1d73a6fe71b250", "timestamp": 1789921345.863446, "delta": ".n"}
+
+data: {"event": "message.delta", "run_id": "run_73f6519685364598bd1d73a6fe71b250", "timestamp": 1789921345.864118, "delta": "ous"}
+
+data: {"event": "message.delta", "run_id": "run_73f6519685364598bd1d73a6fe71b250", "timestamp": 1789921345.864776, "delta": "research"}
+
+data: {"event": "message.delta", "run_id": "run_73f6519685364598bd1d73a6fe71b250", "timestamp": 1789921345.865055, "delta": ".com"}
+
+data: {"event": "message.delta", "run_id": "run_73f6519685364598bd1d73a6fe71b250", "timestamp": 1789921345.865601, "delta": "/docs"}
+
+data: {"event": "reasoning.available", "run_id": "run_73f6519685364598bd1d73a6fe71b250", "timestamp": 1789921345.8707619, "text": "https://hermes-agent.nousresearch.com/docs"}
+
+data: {"event": "run.completed", "run_id": "run_73f6519685364598bd1d73a6fe71b250", "timestamp": 1789921345.8850188, "output": "https://hermes-agent.nousresearch.com/docs", "usage": {"input_tokens": 14403, "output_tokens": 11, "total_tokens": 14414}}
+
+: stream closed
+

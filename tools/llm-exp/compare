@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+import json,sys
+from pathlib import Path
+if len(sys.argv)!=2: raise SystemExit('usage: compare RESULTS_JSONL')
+rows=[json.loads(x) for x in Path(sys.argv[1]).read_text().splitlines() if x.strip()]
+print('experiment                 context  prompt  decode_tps  ttft_s  correctness  classification')
+for r in rows:
+ print(f"{r['experiment_id'][:25]:25} {str(r['context_allocation']):8} {str(r['prompt_tokens']):7} {str(r['decode_tps']):11} {str(r['ttft_seconds']):7} {str(r['correctness'])[:11]:11} {r['classification']}")

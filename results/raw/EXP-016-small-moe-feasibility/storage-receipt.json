@@ -1,0 +1,15 @@
+{
+  "experiment": "EXP-016",
+  "storage_root": "results/raw/EXP-016-small-moe-feasibility/",
+  "host_volume": {"filesystem": "/dev/disk3s1s1", "initial_campaign_avail": "215Gi", "instella_pre_download_avail": "201Gi", "north_pre_download_avail": "188Gi", "final_observed_avail": "174Gi", "final_observed_used": "13Gi"},
+  "acquired_model_payloads": [
+    {"candidate": "ERNIE", "representation": "community MLX 4-bit", "bytes": 12288141742, "weights_bytes": 12277133662, "revision": "b59122f1fbe19df1fe939ad4de46763265fc297", "sha256_manifest": "ernie/acquisition/files-and-hashes.txt"},
+    {"candidate": "ERNIE", "representation": "GGUF Q4_K_M", "bytes": 13331018624, "revision": "b1fa62d9e5864da596c78a0fb5cc02e5ffba336c", "sha256": "9cd7c60d3c30f46e7f539043ec19c7ec8953153f65dd9a2a2748b8e3f589d015"},
+    {"candidate": "Instella", "representation": "GGUF Q4_K_M", "bytes": 10470249600, "revision": "987ee1648d7e4bcb33ab98dfbf4e910b2230c30a", "sha256": "f776ddfee5dc6c808265c3f0a9c1b384c98058bfa551fe5df656fe712eb4c7f3"},
+    {"candidate": "North", "representation": "GGUF UD-Q3_K_M", "bytes": 14213013600, "revision": "e306bb4bf0df610f5471d97a01de2b6e0b24d356", "sha256": "145e185430e31c43221995ac52aed7efbd91f043dbfcdcf297a986f06f7dcee7"}
+  ],
+  "not_acquired": [{"candidate": "North", "representation": "4-bit MXFP4_MOE", "bytes": 18662121568, "reason": "practical-memory gate"}, {"candidate": "North", "representation": "4-bit UD-Q4_K_M", "bytes": 19203186784, "reason": "practical-memory gate"}],
+  "source_and_evidence_tree_observed": "50G",
+  "cleanup": "No campaign model payloads or raw evidence were deleted; only temporary/incomplete transfer state was finalized by hf download.",
+  "final_runtime_state": {"FAST": "down", "DEEP": "down", "custom_model_processes": "none", "north_port_8926": "unreachable", "swap_used": "2406.50M", "memory_pressure_free": "77%"}
+}

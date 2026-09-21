@@ -1,0 +1,19 @@
+[dry-run] Will download 15 files (out of 17) totalling 28.7G.
+file	size
+.gitattributes	1.5K
+LICENSE.md	2.6K
+README.md	13.9K
+chat_template.jinja	4.0K
+config.json	-
+configuration_laguna.py	13.1K
+generation_config.json	479.0
+model-00001-of-00006.safetensors	5.2G
+model-00002-of-00006.safetensors	5.3G
+model-00003-of-00006.safetensors	5.3G
+model-00004-of-00006.safetensors	5.3G
+model-00005-of-00006.safetensors	5.3G
+model-00006-of-00006.safetensors	2.2G
+model.safetensors.index.json	-
+modeling_laguna.py	40.9K
+tokenizer.json	7.3M
+tokenizer_config.json	460.0

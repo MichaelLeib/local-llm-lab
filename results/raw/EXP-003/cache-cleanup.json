@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-09-17",
+  "operation": "remove obsolete EXP-002 model caches before EXP-003 download",
+  "removed": [
+    {
+      "repo_id": "ornith-ai/Ornith-1.5-9B-MLX-6bit",
+      "cache_target": "model/ornith-ai/Ornith-1.5-9B-MLX-6bit",
+      "reason": "EXP-002-only checkpoint; no active HF ref; raw results preserved",
+      "reported_size": "7.3G"
+    },
+    {
+      "repo_id": "ornith-ai/Ornith-1.5-9B-MLX-8bit",
+      "cache_target": "model/ornith-ai/Ornith-1.5-9B-MLX-8bit",
+      "reason": "EXP-002-only failed-stability checkpoint; no active HF ref; raw results preserved",
+      "reported_size": "9.5G"
+    }
+  ],
+  "cache_command": "hf cache rm model/ornith-ai/Ornith-1.5-9B-MLX-6bit model/ornith-ai/Ornith-1.5-9B-MLX-8bit --yes",
+  "freed_reported": "16.8G",
+  "free_space_after": "70 GiB"
+}

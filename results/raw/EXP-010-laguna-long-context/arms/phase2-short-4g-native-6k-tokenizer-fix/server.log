@@ -1,0 +1,21 @@
+TurboQuant-MLX serve  ·  OpenAI-compatible HTTP server (backend: mlx_lm.server, TurboQuant-aware loader)
+[turboquant-serve] Expert streaming: cache_budget=4.0 GB, max_active_experts=0, page_cache=off (single-user; use --prompt-concurrency 1)
+[turboquant-serve] Prompt-cache byte cap: auto (caps only when working-set headroom is tight) — bounds retained per-conversation KV states; evicted states restore from --disk-cache when enabled
+[turboquant-serve] Prefill-redundancy stats: ON (per-request + exit summary; jsonl -> /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-010-laguna-long-context/arms/phase2-short-4g-native-6k-tokenizer-fix/prefill-stats.jsonl). Pair with --prompt-concurrency 1 for clean single-conversation numbers.
+[turboquant-serve] Streaming TurboQuant model from /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-010-laguna-long-context/model/laguna-s21-tqTe-g64 (cache_budget=4.0 GB)
+[INFO] Replaced 526 layers with PolarQuantized versions
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-010-laguna-long-context/.venv/lib/python3.13/site-packages/mlx_lm/server.py:1723: UserWarning: mlx_lm.server is not recommended for production as it only implements basic security checks.
+  warnings.warn(
+2026-09-18 15:36:32,035 - INFO - Starting httpd at 127.0.0.1 on port 8910...
+[transformers] The tokenizer you are loading from '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-010-laguna-long-context/model/laguna-s21-tqTe-g64' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+[INFO] Added EOS from generation_config.json: 24 ('</assistant>')
+[stream] learning expert usage -> /Users/<user>/.cache/turboquant-mlx/usage/laguna-s21-tqTe-g64-452d5c1e.json (0/20,000 routings; pins from this profile once mature)
+[stream] swapped 141 expert projections to streaming (budget 4.0 GB)
+[turboquant-serve] Metal buffer-cache limit: off — ample headroom (working set 11.8 GiB, resident 0.0 GiB)
+127.0.0.1 - - [18/Sep/2026 15:36:33] "GET /v1/models HTTP/1.1" 200 -
+2026-09-18 15:36:33,415 - INFO - Prompt Cache: 0 sequences, 0.00 GB
+2026-09-18 15:36:33,415 - INFO - - assistant: 0 sequences, 0.00 GB
+2026-09-18 15:36:33,415 - INFO - - user: 0 sequences, 0.00 GB
+2026-09-18 15:36:33,415 - INFO - - system: 0 sequences, 0.00 GB
+[prefill-stats] req#1 prompt=6158 tok | reused=0 (0.0%) fresh=6158 | prev-LCP=0 (0.0%) | recoverable=0 (0.0% of prompt)
+127.0.0.1 - - [18/Sep/2026 15:36:33] "POST /v1/chat/completions HTTP/1.1" 200 -

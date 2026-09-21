@@ -1,0 +1,54 @@
+{
+  "tables": [
+    "schema_version",
+    "system_prompts",
+    "sessions",
+    "messages",
+    "sqlite_sequence",
+    "session_model_usage",
+    "state_meta",
+    "gateway_routing",
+    "gateway_hygiene_state",
+    "conversation_generations",
+    "gateway_heartbeats",
+    "compression_locks",
+    "session_turn_leases",
+    "async_delegations",
+    "messages_fts",
+    "messages_fts_data",
+    "messages_fts_idx",
+    "messages_fts_docsize",
+    "messages_fts_config",
+    "messages_fts_trigram",
+    "messages_fts_trigram_data",
+    "messages_fts_trigram_idx",
+    "messages_fts_trigram_docsize",
+    "messages_fts_trigram_config"
+  ],
+  "system_prompt_columns": [
+    "hash",
+    "prompt"
+  ],
+  "system_prompts": [
+    {
+      "hash": 64,
+      "prompt": 21580
+    },
+    {
+      "hash": 64,
+      "prompt": 21582
+    },
+    {
+      "hash": 64,
+      "prompt": 33748
+    },
+    {
+      "hash": 64,
+      "prompt": 33747
+    },
+    {
+      "hash": 64,
+      "prompt": 26215
+    }
+  ]
+}

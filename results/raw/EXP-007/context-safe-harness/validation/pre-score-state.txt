@@ -1,0 +1,46 @@
+=== pre-score state ===
+vm.swapusage: total = 2048.00M  used = 763.56M  free = 1284.44M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 46937 
+Pages purgeable: 7357 
+Pages purged: 6586435 
+
+Swap I/O:
+Swapins: 9127 
+Swapouts: 57572 
+
+Page Q counts:
+Pages active: 262904 
+Pages inactive: 244273 
+Pages speculative: 18842 
+Pages throttled: 0 
+Pages wired down: 239377 
+
+Compressor Stats:
+Pages used by compressor: 198814 
+Pages decompressed: 17878089 
+Pages compressed: 22864970 
+
+File I/O:
+Pageins: 83947692 
+Pageouts: 19996 
+
+System-wide memory free percentage: 56%
+=== fixture and candidate worktree diffs (excluding dependency symlink) ===
+--- /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/fixtures/T01-ios-layout
+--- /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/worktrees/candidate-K7-hermes-T01-20260918T055353Z
+--- /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/worktrees/candidate-K7-hermes-T01-20260918T055839Z
+--- /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/worktrees/candidate-K7-hermes-T01-20260918T055933Z
+--- /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/worktrees/candidate-K7-hermes-T01-20260918T060101Z
+--- /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/worktrees/candidate-K7-hermes-T01-20260918T060333Z
+--- /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/worktrees/candidate-K7-hermes-T01-20260918T060522Z
+--- /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/worktrees/candidate-K7-hermes-T01-20260918T060840Z
+--- /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/worktrees/candidate-K7-hermes-T01-20260918T061001Z
+--- /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/worktrees/candidate-K7-hermes-T01-20260918T062406Z
+--- /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/worktrees/candidate-K7-hermes-T01-20260918T062718Z
+--- /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/worktrees/candidate-K7-hermes-T01-20260918T063059Z
+--- /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/worktrees/candidate-K7-hermes-T01-20260918T063215Z
+--- /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/worktrees/candidate-K7-hermes-T01-20260918T064204Z
+--- /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/worktrees/candidate-K7-hermes-T01-20260918T064434Z

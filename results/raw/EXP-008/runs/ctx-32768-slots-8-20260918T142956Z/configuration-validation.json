@@ -1,0 +1,49 @@
+{
+  "schema": "exp008.configuration-validation.v1",
+  "experiment": "EXP-008",
+  "run_summary": "summary.json",
+  "classification": "invalid_configuration",
+  "requested_change": {
+    "expert_cache_slots": {
+      "baseline": 16,
+      "attempted": 8
+    }
+  },
+  "preserved_workload": {
+    "context": 32768,
+    "fill_fraction": 0.78,
+    "max_new_tokens": 64,
+    "prefill_chunk": "auto",
+    "temperature": 0,
+    "seed": 12345,
+    "kv": "FP16"
+  },
+  "observed_failure": {
+    "returncode": 1,
+    "wall_seconds": 6.87,
+    "stderr": "error: prefill routed tile depth 1 with 8 experts/tile needs 16 slots, has 8"
+  },
+  "runtime_constraint": {
+    "source_path": "Sources/TurboFieldfare/Runtime/Inference/RealForwardRunner.swift:2159-2166",
+    "scheduler": {
+      "max_pending_depth": 1,
+      "tile_experts": 8,
+      "minimum_slots": 16
+    },
+    "meaning": "The pinned runtime needs two 8-expert prefill tiles resident concurrently. An 8-slot configuration is listed by the CLI but is not valid for this auto-prefill workload."
+  },
+  "measurement_disposition": {
+    "kv_or_expert_cache_allocation_completed": false,
+    "memory_reduction_measured": false,
+    "swap_guard_triggered": false,
+    "correctness_measured": false,
+    "eligible_for_64k_escalation": false
+  },
+  "machine_state": {
+    "baseline_swap_mib": 1315.12,
+    "post_run_swap_mib": 1307.12,
+    "baseline_free_percent": 48.0,
+    "post_run_free_percent": 45.0
+  },
+  "source_commit": "3a892465729406944778a24064664d817617f558"
+}

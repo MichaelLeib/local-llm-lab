@@ -1,0 +1,53 @@
+{
+  "experiment": "EXP-013-qwen38-flash-2bit-streaming",
+  "status": "stopped_before_download_and_inference",
+  "measured_at": "2026-09-18",
+  "host": {
+    "unified_memory_bytes": 17179869184,
+    "apfs_immediate_free_bytes": 61603139584,
+    "apfs_immediate_free_gib": 57.372395,
+    "fast_lane": "down",
+    "deep_lane": "down",
+    "candidate_model_processes": 0
+  },
+  "model": {
+    "repo": "manjunathshiva/Qwen3.8-Flash-Next-tq4a-tq2e-g64",
+    "revision": "9e5c4343ab3a3917100c94e1b0dd39dea617faab",
+    "tree_total_bytes": 56757557995,
+    "tree_total_gib": 52.859595,
+    "text_shards": 11,
+    "vision_tower_bytes": 897899165,
+    "quantization": {
+      "attention_core_lm_head": "TurboQuant 4-bit codebook, group 64",
+      "routed_experts": "TurboQuant 2-bit codebook, group 64",
+      "token_and_ple_ngram": "2-bit affine, group 32",
+      "protected": ["MoE routers", "QSA block indexer", "hyper-connection gating"],
+      "mtp": "dropped"
+    },
+    "architecture": {
+      "model_type": "qwen4_exp",
+      "layers": 48,
+      "routed_experts": 512,
+      "native_top_k": 10,
+      "hybrid": ["Gated DeltaNet", "Qwen Sparse Attention"]
+    }
+  },
+  "runtime": {
+    "repo": "https://github.com/manjunathshiva/turboquant-mlx",
+    "commit": "d1c34c63bc99f5744f409868b198cc692b84b65c",
+    "package_version": "0.27.0",
+    "qwen4_exp_support": true,
+    "ngram_offload": "HostShardedEmbedding, memory-mapped page-cache-backed table",
+    "expert_streaming": "StreamingSwitchLinear for switch_mlp gate/up/down projections; byte-budgeted LRU; os.pread; F_NOCACHE auto for oversized model; coalescing and telemetry",
+    "native_top_k_flag": "--max-active-experts 0"
+  },
+  "gates": {
+    "direct_download_remaining_bytes": 4845581589,
+    "direct_download_remaining_gib": 4.5128,
+    "shortfall_to_10_gib_reserve_bytes": 5891836651,
+    "shortfall_to_10_gib_reserve_gib": 5.4865,
+    "published_nonexpert_resident_gb_with_ngram_offload": 21.86,
+    "published_streamed_peak_gb_with_12gb_expert_cache": 34.4,
+    "result": "fail_disk_and_resident_memory"
+  }
+}

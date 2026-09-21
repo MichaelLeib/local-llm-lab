@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "ok": true,
+    "elapsed": 35.968,
+    "prompt_tokens": 55,
+    "gen_tokens": 445,
+    "decode_tps": 12.37,
+    "finish": "stop",
+    "has_reasoning": true,
+    "content_head": "Unified memory matters because the CPU, GPU, and Neural Engine all draw from a single shared memory pool, so the entire model can stay resident without being split or copied across separate device memories. This lets you load models far larger than any single component's dedicated memory would allow",
+    "tool_calls": null
+  },
+  "raw": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Unified memory matters because the CPU, GPU, and Neural Engine all draw from a single shared memory pool, so the entire model can stay resident without being split or copied across separate device memories. This lets you load models far larger than any single component's dedicated memory would allow, which is essential for running full-weight LLMs locally. It also avoids expensive data round-trips between separate memory spaces, keeping the inference pipeline efficient.\n\nConcrete number: Apple Silicon supports up to **1 TB** of unified memory (M2 Ultra), enabling local inference of large models like 70B-parameter weights.",
+          "reasoning_content": "The user wants a concise explanation in 3 sentences about why unified memory matters for local LLM inference on Apple Silicon, plus one concrete number.\n\nLet me think about unified memory on Apple Silicon (M1, M2, M3, M4 chips with the unified memory architecture).\n\nKey reasons unified memory matters for local LLM inference:\n1. CPU and GPU/NPU share the same memory pool, so the model doesn't need to be split across separate device memories.\n2. This allows loading much larger models than the GPU's own VRAM would allow (e.g., 16GB, 32GB, up to 1TB).\n3. Memory bandwidth is shared but the unified pool means you can keep the full model resident.\n\nOne concrete number: Apple Silicon supports up to 1TB of unified memory (M2 Ultra), or 32GB base, or the M1 supports up to 16GB. Let me pick a solid concrete number.\n\nThe M2 Ultra supports up to 1TB unified memory. The M1 supports up to 16GB. For LLM inference specifically, you can run 70B models. Let me give a concrete number that's well-known.\n\nI'll give the 1TB max unified memory for M2 Ultra, or perhaps the practical number that you can run a 70B model. Actually, let me think about what's most relevant and concrete.\n\nThe 3 sentences should be tight. Then one concrete number.\n\nLet me write it.\n"
+        }
+      }
+    ],
+    "created": 1789845994,
+    "model": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-019-ornith-gguf/models/Ornith-1.5-9B-Q5_K_M.gguf",
+    "system_fingerprint": "b10964-b29c606e2",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 445,
+      "prompt_tokens": 55,
+      "total_tokens": 500,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "id": "chatcmpl-rwnwNxMOFUJ34LDhLNyfaQDrC6y4g8GH",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 55,
+      "prompt_ms": 1196.312,
+      "prompt_per_token_ms": 21.75112727272727,
+      "prompt_per_second": 45.97462869218064,
+      "predicted_n": 445,
+      "predicted_ms": 34750.523,
+      "predicted_per_token_ms": 78.26694369369369,
+      "predicted_per_second": 12.776786122039084
+    }
+  }
+}

@@ -1,0 +1,13 @@
+Query: Use a terminal tool to run 'date'. Then use a terminal tool to run 'pwd'.
+In the final answer quote both actual tool outputs exactly. Do not fabricate 
+either result.
+Initializing agent...
+Failed to initialize agent: Model 
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-019-ornith-gguf/
+models/Ornith-1.5-9B-Q5_K_M.gguf has a context window of 32,768 tokens, which is
+below the minimum 64,000 required by Hermes Agent.  Choose a model with at least
+64K context.  If your server reports a window smaller than the model's true 
+window, set model.context_length in config.yaml to the real value (this must be 
+at least 64K).
+
+Goodbye! ☤

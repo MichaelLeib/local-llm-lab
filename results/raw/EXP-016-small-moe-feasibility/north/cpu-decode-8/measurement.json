@@ -1,0 +1,12 @@
+{
+  "timestamp_utc": "2026-09-19T09:37:23Z",
+  "status": "standalone-cpu-runtime-pass",
+  "output_excerpt": "b1-7e1e28cae\nmodel      : /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-016-small-moe-feasibility/north/model/North-Mini-Code-1.0-UD-Q3_K_M.gguf\nftype      : Q3_K - Medium\nmodalities : text\n\navailable commands:\n  /exit or Ctrl+C     stop or exit\n  /regen              regenerate the last response\n  /clear              clear the chat history\n  /read <file>        add a text file\n  /glob <pattern>     add text files using globbing pattern\n\n\n\n> Reply with exactly READY.\n\n[Start thinking]\n\nThe user asks: \"Reply with exactly\n\n[ Prompt: 6.7 t/s | Generation: 11.2 t/s ]\n\n\nExiting...\n",
+  "observed_prompt_toks_per_s": 6.7,
+  "observed_generation_toks_per_s": 11.2,
+  "token_limit": 8,
+  "ctx_size": 256,
+  "gpu_layers": 0,
+  "cpu_moe": true,
+  "decision": "qualified for persistent API/tool smoke as a practical CPU-only candidate; Metal path failed separately"
+}

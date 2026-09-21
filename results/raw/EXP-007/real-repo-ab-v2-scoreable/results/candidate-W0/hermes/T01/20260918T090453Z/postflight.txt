@@ -1,0 +1,29 @@
+vm.swapusage: total = 2048.00M  used = 1038.25M  free = 1009.75M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 258264 
+Pages purgeable: 4705 
+Pages purged: 16170386 
+
+Swap I/O:
+Swapins: 49901 
+Swapouts: 116124 
+
+Page Q counts:
+Pages active: 191269 
+Pages inactive: 172190 
+Pages speculative: 29965 
+Pages throttled: 0 
+Pages wired down: 139578 
+
+Compressor Stats:
+Pages used by compressor: 219689 
+Pages decompressed: 81851494 
+Pages compressed: 95057570 
+
+File I/O:
+Pageins: 273879295 
+Pageouts: 105337 
+
+System-wide memory free percentage: 64%

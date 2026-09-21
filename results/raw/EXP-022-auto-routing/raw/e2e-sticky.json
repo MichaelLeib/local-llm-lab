@@ -1,0 +1,24 @@
+[
+  {
+    "name": "anchor",
+    "run_id": "run_0f4b24422dac4db2a9b0c687723daba4",
+    "seconds": 42.427,
+    "final": {
+      "event": "run.failed",
+      "run_id": "run_0f4b24422dac4db2a9b0c687723daba4",
+      "timestamp": 1789917276.0545468,
+      "error": "Compute error."
+    }
+  },
+  {
+    "name": "followup",
+    "run_id": "run_6926e26505ce45a5a7497b5846843007",
+    "seconds": 8.951,
+    "final": {
+      "event": "run.failed",
+      "run_id": "run_6926e26505ce45a5a7497b5846843007",
+      "timestamp": 1789917285.001187,
+      "error": "Compute error."
+    }
+  }
+]

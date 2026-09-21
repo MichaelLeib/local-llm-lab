@@ -1,0 +1,77 @@
+0.12.425.440 E ggml_metal_synchronize: error: command buffer 0 failed with status 5
+0.12.425.443 E error: Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory)
+0.12.425.443 E ggml_metal_synchronize: error: command buffer 0 failed with status 5
+0.12.425.445 E error: Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory)
+0.12.425.446 E ggml_metal_synchronize: error: command buffer 0 failed with status 5
+0.12.425.446 E error: Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory)
+0.12.425.446 E ggml_metal_synchronize: error: command buffer 0 failed with status 5
+0.12.425.446 E error: Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory)
+0.12.425.446 E ggml_metal_synchronize: error: command buffer 0 failed with status 5
+0.12.425.446 E error: Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory)
+0.12.425.447 E ggml_metal_synchronize: error: command buffer 0 failed with status 5
+0.12.425.447 E error: Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory)
+0.12.425.447 E ggml_metal_synchronize: error: command buffer 0 failed with status 5
+0.12.425.447 E error: Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory)
+0.12.425.448 E ggml_metal_graph_compute: backend is in error state from a previous command buffer failure - recreate the backend to recover
+0.12.425.448 E graph_compute: ggml_backend_sched_graph_compute_async failed with error -1
+0.12.425.448 E process_ubatch: failed to compute graph, compute status: -1
+0.12.425.451 E llama_decode: failed to decode, ret = -3
+0.12.425.451 E cmn  common_conte: llama_decode() failed: -3
+0.12.425.765 E ggml_metal_synchronize: error: command buffer 0 failed with status 5
+0.12.425.765 E error: Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory)
+0.12.640.019 E ggml_metal_synchronize: error: command buffer 0 failed with status 5
+0.12.640.025 E error: Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory)
+0.12.640.025 E ggml_metal_synchronize: error: command buffer 0 failed with status 5
+0.12.640.026 E error: Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory)
+0.12.640.027 E ggml_metal_synchronize: error: command buffer 0 failed with status 5
+0.12.640.028 E error: Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory)
+0.12.640.030 E ggml_metal_synchronize: error: command buffer 0 failed with status 5
+0.12.640.030 E error: Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory)
+0.12.640.030 E ggml_metal_synchronize: error: command buffer 0 failed with status 5
+0.12.640.031 E error: Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory)
+0.12.640.031 E ggml_metal_synchronize: error: command buffer 0 failed with status 5
+0.12.640.031 E error: Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory)
+0.12.640.031 E ggml_metal_synchronize: error: command buffer 0 failed with status 5
+0.12.640.031 E error: Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory)
+0.12.640.032 E ggml_metal_graph_compute: backend is in error state from a previous command buffer failure - recreate the backend to recover
+0.12.640.032 E graph_compute: ggml_backend_sched_graph_compute_async failed with error -1
+0.12.640.033 E process_ubatch: failed to compute graph, compute status: -1
+0.12.640.039 E llama_decode: failed to decode, ret = -3
+0.12.640.040 E srv        decode: Compute error. off = 0, n_batch = 512, ret = -3
+0.12.640.041 E srv    send_error: task id = 0, error: Compute error.
+0.12.640.276 E srv  update_slots: decode() failed: Compute error.
+0.12.640.425 E ggml_metal_synchronize: error: command buffer 0 failed with status 5
+0.12.640.427 E error: Insufficient Memory (00000008:kIOGPUCommandBufferCallbackErrorOutOfMemory)
+
+
+Loading model... 
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b1-7e1e28cae
+model      : /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-016-small-moe-feasibility/ernie/gguf/model/ERNIE-4.5-21B-A3B-Thinking-Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> Reply with exactly READY.
+Error: Compute error.
+
+[ Prompt: 0.0 t/s | Generation: 0.0 t/s ]
+
+
+Exiting...

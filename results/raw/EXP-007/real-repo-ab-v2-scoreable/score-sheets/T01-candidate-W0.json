@@ -1,0 +1,75 @@
+{
+  "score_sheet_version": "EXP-007-T01-v2-scoreable-v1",
+  "status": "locked_blind_row",
+  "blind_candidate": "candidate-W0",
+  "task": "T01",
+  "run_directory": "results/raw/EXP-007/real-repo-ab-v2-scoreable/results/candidate-W0/hermes/T01/20260918T090453Z",
+  "fixture_commit": "a43d24cb624dee4e5ddfb4b0c8f788fd9fd6c8c9",
+  "prompt_sha256": "d8635752d0f2d41b65aa03126e1eb782e8515cc29e3fc2fb4c186fbeca8cd695",
+  "policy": "EXP-007-context-safe-v2",
+  "frozen_v2_harness_manifest_sha256": "587572903b789eea1ce2693c2bb7d33b394cab07a947363da3572434f9dc0d35",
+  "sealed_assignment_sha256": "3f6647f0835e639fdb2038e97ef5c807b3c892b207a264e2342144b9beb18b0d",
+  "coding_outcome": {
+    "score": 0,
+    "maximum": 70,
+    "acceptance_exit_code": 1,
+    "acceptance": "failed: five unmet T01 checks",
+    "regression_exit_code": 0,
+    "build_exit_code": 0,
+    "candidate_diff_bytes": 0,
+    "classification": "unsolved; generation failed before agent tool use or edit"
+  },
+  "agent_execution": {
+    "score": 0,
+    "maximum": 30,
+    "inspection_before_edit": 0,
+    "relevant_efficient_tool_use": 0,
+    "avoided_speculative_edits": 0,
+    "recovered_from_failed_hypothesis": 0,
+    "verified_final_state": 0,
+    "concise_accurate_final_response": 0,
+    "classification": "no agent trajectory: first model generation returned HTTP 500 before any tool call"
+  },
+  "context_and_retrieval_discipline": {
+    "initial_prompt_tokens": 0,
+    "maximum_accumulated_prompt_tokens": 0,
+    "context_limit": 16384,
+    "completion_allowance": 4096,
+    "context_limit_approached": false,
+    "tool_calls_made": 0,
+    "tool_calls_by_name": {},
+    "cumulative_tool_result_tokens": 0,
+    "truncated_tool_outputs": 0,
+    "repeated_file_ranges": 0,
+    "repeated_unrefined_searches": 0,
+    "classification": "not applicable: no model-generated tool trajectory"
+  },
+  "retrieval_refinement_posthoc": {
+    "bounded_results": 0,
+    "explicit_file_offset_followup": 0,
+    "search_narrowing_followup": 0,
+    "unrefined_repeat": 0,
+    "no_classified_followup": 0,
+    "interpretation": "not applicable: no tool result"
+  },
+  "resource_and_transport_reliability": {
+    "wall_seconds": 625.8639800548553,
+    "server_request_count": 0,
+    "completion_tokens": 0,
+    "agent_process_exit_code": 0,
+    "natural_task_completion": false,
+    "api_error": "HTTP 500 generation failed after server readiness",
+    "pre_swap_mib": 1038.25,
+    "post_swap_mib": 1038.25,
+    "swap_delta_mib": 0.0,
+    "swapins_delta": 92,
+    "swapouts_delta": 0,
+    "post_run_model_ports_clear": true,
+    "classification": "candidate runtime/generation failure before first response; transport endpoint was ready and cleanup verified"
+  },
+  "unblinding": {
+    "model_identity": "sealed",
+    "eligible_for_unblinding": true,
+    "reason": "both fresh-ID T01-v2 score rows are locked; unblinding gate still requires pair receipt validation"
+  }
+}

@@ -1,0 +1,25 @@
+command=/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-017-ernie-streamed-gguf/source/llama.cpp-moe-streaming/build-exp017/bin/llama-cli -m /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-016-small-moe-feasibility/ernie/gguf/model/ERNIE-4.5-21B-A3B-Thinking-Q4_K_M.gguf --moe-stream-cache 6s --moe-stream-io-threads 2 --moe-stream-direct --no-mmap --no-warmup -ngl 99 -c 512 -b 1 -ub 1 -n 8 --temp 0 --seed 1234 --single-turn --simple-io -p Reply with exactly READY.
+
+Loading model... /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-017-ernie-streamed-gguf/source/llama.cpp-moe-streaming/src/llama-graph.cpp:1987: MoE expert streaming: multi-pass expert GEMMs need an expert cache of at least 3*n_expert_used slots (have 6, need 18); increase --moe-stream-cache or reduce -ub
+WARNING: Using native backtrace. Set GGML_BACKTRACE_LLDB for more info.
+WARNING: GGML_BACKTRACE_LLDB may cause native MacOS Terminal.app to crash.
+See: https://github.com/ggml-org/llama.cpp/pull/17869
+0   libggml-base.0.15.3.dylib           0x00000001010893d0 ggml_print_backtrace + 276
+1   libggml-base.0.15.3.dylib           0x00000001010f51f4 ggml_abort + 156
+2   libllama.0.0.9881.dylib             0x0000000101878fc8 _ZZNK17llm_graph_context13build_moe_ffnEP11ggml_tensorS1_S1_S1_S1_S1_S1_S1_S1_S1_xx15llm_ffn_op_typebf29llama_expert_gating_func_typeiS1_S1_S1_S1_S1_S1_S1_ENK3$_0clES1_S1_ + 0
+3   libllama.0.0.9881.dylib             0x000000010187812c _ZNK17llm_graph_context13build_moe_ffnEP11ggml_tensorS1_S1_S1_S1_S1_xx15llm_ffn_op_typebf29llama_expert_gating_func_typeiS1_S1_S1_S1_S1_S1_ + 108
+4   libllama.0.0.9881.dylib             0x0000000101955514 _ZN24llama_model_ernie4_5_moe5graphC2ERK11llama_modelRK16llm_graph_params + 1132
+5   libllama.0.0.9881.dylib             0x0000000101955080 _ZNK24llama_model_ernie4_5_moe16build_arch_graphERK16llm_graph_params + 52
+6   libllama.0.0.9881.dylib             0x00000001018daff0 _ZNK11llama_model11build_graphERK16llm_graph_params + 40
+7   libllama.0.0.9881.dylib             0x000000010184fc08 _ZN13llama_context13graph_reserveEjjjPK22llama_memory_context_ibPm + 404
+8   libllama.0.0.9881.dylib             0x000000010184ea3c _ZN13llama_context13sched_reserveEv + 1384
+9   libllama.0.0.9881.dylib             0x000000010184d2d0 _ZN13llama_contextC2ERK11llama_model20llama_context_params + 4068
+10  libllama.0.0.9881.dylib             0x0000000101857bec llama_init_from_model + 588
+11  libllama-common.0.0.9881.dylib      0x0000000101447b88 _ZL34common_get_device_memory_data_implPKcPK18llama_model_paramsPK20llama_context_paramsRNSt3__16vectorIP19ggml_backend_deviceNS7_9allocatorISA_EEEERjSF_SF_14ggml_log_level + 256
+12  libllama-common.0.0.9881.dylib      0x0000000101448374 _ZL22common_params_fit_implPKcP18llama_model_paramsP20llama_context_paramsPfP32llama_model_tensor_buft_overridePmj14ggml_log_level + 188
+13  libllama-common.0.0.9881.dylib      0x0000000101448110 _Z17common_fit_paramsPKcP18llama_model_paramsP20llama_context_paramsPfP32llama_model_tensor_buft_overridePmj14ggml_log_level + 108
+14  libllama-common.0.0.9881.dylib      0x000000010142ad34 _ZN18common_init_resultC2ER13common_paramsb + 312
+15  libllama-common.0.0.9881.dylib      0x000000010142c290 _Z23common_init_from_paramsR13common_paramsb + 68
+16  libllama-cli-impl.dylib             0x0000000100d3e62c _ZN19server_context_impl10load_modelER13common_params + 3472
+17  libllama-cli-impl.dylib             0x0000000100ca7694 _Z9llama_cliiPPc + 388
+18  dyld                                0x00000001977d3e80 start + 6688

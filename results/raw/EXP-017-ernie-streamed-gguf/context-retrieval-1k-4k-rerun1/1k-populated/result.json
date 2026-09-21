@@ -1,0 +1,10 @@
+{
+  "label": "1k-populated",
+  "input_tokens": 1023,
+  "ctx": 2048,
+  "exit_code": 0,
+  "aborted": null,
+  "secret": "ORBIT-271",
+  "secret_visible_in_output": true,
+  "minimum_free_percent": 42
+}

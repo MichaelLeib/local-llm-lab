@@ -1,0 +1,40 @@
+2026-09-18T08:46:20Z
+blind_candidate=candidate-S6
+harness=hermes
+task=T01
+assignment_mode=fresh-v2-sealed-pair
+3f6647f0835e639fdb2038e97ef5c807b3c892b207a264e2342144b9beb18b0d  /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab-v2-scoreable/private/assignment.json
+d8635752d0f2d41b65aa03126e1eb782e8515cc29e3fc2fb4c186fbeca8cd695  /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/prompts/T01/task.md
+9ae740bf64142a8acc57925ece3438e5610b1ea55b7054e852186cd8eacdebb8  /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/context-safe-harness/v2/POLICY.md
+a43d24cb624dee4e5ddfb4b0c8f788fd9fd6c8c9
+vm.swapusage: total = 2048.00M  used = 1054.25M  free = 993.75M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 36881 
+Pages purgeable: 8420 
+Pages purged: 15238380 
+
+Swap I/O:
+Swapins: 49037 
+Swapouts: 116124 
+
+Page Q counts:
+Pages active: 337579 
+Pages inactive: 302514 
+Pages speculative: 39880 
+Pages throttled: 0 
+Pages wired down: 147025 
+
+Compressor Stats:
+Pages used by compressor: 147268 
+Pages decompressed: 68587204 
+Pages compressed: 79956798 
+
+File I/O:
+Pageins: 178338002 
+Pageouts: 53415 
+
+System-wide memory free percentage: 70%
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi    44Gi    23%    484k  458M    0%   /

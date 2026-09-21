@@ -1,0 +1,52 @@
+{
+  "carnice": {
+    "api_sha": "d86a0cea3cd6794a294ad72a08598294249c761e",
+    "repo": "samuelcardillo/Carnice-Qwen3.6-MoE-35B-A3B",
+    "revision": "d86a0cea3cd6794a294ad72a08598294249c761e",
+    "safetensor_files": [
+      "fp8/model.safetensors",
+      "model-00001-of-00026.safetensors",
+      "model-00002-of-00026.safetensors",
+      "model-00003-of-00026.safetensors",
+      "model-00004-of-00026.safetensors",
+      "model-00005-of-00026.safetensors",
+      "model-00006-of-00026.safetensors",
+      "model-00007-of-00026.safetensors",
+      "model-00008-of-00026.safetensors",
+      "model-00009-of-00026.safetensors",
+      "model-00010-of-00026.safetensors",
+      "model-00011-of-00026.safetensors",
+      "model-00012-of-00026.safetensors",
+      "model-00013-of-00026.safetensors",
+      "model-00014-of-00026.safetensors",
+      "model-00015-of-00026.safetensors",
+      "model-00016-of-00026.safetensors",
+      "model-00017-of-00026.safetensors",
+      "model-00018-of-00026.safetensors",
+      "model-00019-of-00026.safetensors",
+      "model-00020-of-00026.safetensors",
+      "model-00021-of-00026.safetensors",
+      "model-00022-of-00026.safetensors",
+      "model-00023-of-00026.safetensors",
+      "model-00024-of-00026.safetensors",
+      "model-00025-of-00026.safetensors",
+      "model-00026-of-00026.safetensors"
+    ]
+  },
+  "header_errors": {},
+  "headers_obtained": {
+    "carnice": 27,
+    "stock": 4
+  },
+  "stock": {
+    "api_sha": "38740b847e4cb78f352aba30aa41c76e08e6eb46",
+    "repo": "mlx-community/Qwen3.6-35B-A3B-4bit",
+    "revision": "38740b847e4cb78f352aba30aa41c76e08e6eb46",
+    "safetensor_files": [
+      "model-00001-of-00004.safetensors",
+      "model-00002-of-00004.safetensors",
+      "model-00003-of-00004.safetensors",
+      "model-00004-of-00004.safetensors"
+    ]
+  }
+}

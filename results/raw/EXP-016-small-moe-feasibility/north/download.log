@@ -1,0 +1,6 @@
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Downloading 'North-Mini-Code-1.0-UD-Q3_K_M.gguf' to 'results/raw/EXP-016-small-moe-feasibility/north/model/.cache/huggingface/download/JbXOAhFeXEBpsGIGPFls6u-76PA=.145e185430e31c43221995ac52aed7efbd91f043dbfcdcf297a986f06f7dcee7.incomplete'
+Downloading 'README.md' to 'results/raw/EXP-016-small-moe-feasibility/north/model/.cache/huggingface/download/Xn7B-BWUGOee2Y6hCZtEhtFu4BE=.ae4f4b1e7cacb5125c4ffa7fad147cacc5ec82e3.incomplete'
+Download complete. Moving file to results/raw/EXP-016-small-moe-feasibility/north/model/README.md
+Download complete. Moving file to results/raw/EXP-016-small-moe-feasibility/north/model/North-Mini-Code-1.0-UD-Q3_K_M.gguf
+Fetching 2 files:  50%|█████     | 1/2 [02:05<02:05, 125.35s/it]Fetching 2 files: 100%|██████████| 2/2 [02:05<00:00, 62.68s/it] 
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-016-small-moe-feasibility/north/model

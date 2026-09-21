@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-09-19T09:17:29Z",
+  "status": "runtime-gate-failure",
+  "exit_observed": "process exited before collection; shell wrapper rc unavailable",
+  "failure_class": "metal-insufficient-memory",
+  "model_response": "none",
+  "evidence": [
+    "llama.cpp log reports repeated ggml_metal_synchronize status 5 / Insufficient Memory",
+    "graph compute and llama_decode failed",
+    "server-style prompt exited with Error: Compute error",
+    "no READY output"
+  ],
+  "log_bytes": 4988
+}

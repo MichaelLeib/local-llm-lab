@@ -1,0 +1,1 @@
+{"ok":true,"elapsed":181.335,"prompt_tokens":26579,"gen_tokens":74,"decode_tps":0.41,"finish":"stop","has_reasoning":true,"content_head":"LAGUNA_ORNITH_QUARTZ_7391","tool_calls":null,"needle_correct":true,"target_tokens_approx":24000}

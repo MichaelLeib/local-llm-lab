@@ -1,0 +1,268 @@
+{"app_name":"llama-cli","timestamp":"2026-09-19 11:33:06.00 +0200","app_version":"","slice_uuid":"7ac3a411-fc4e-3052-899f-dcdae4f730b8","build_version":"","platform":1,"share_with_app_devs":0,"is_first_party":1,"bug_type":"309","os_version":"macOS 27.0 (26A428)","roots_installed":0,"incident_id":"08908856-470D-46F7-924C-3DA04D5BDA1A","name":"llama-cli"}
+{
+  "uptime" : 95000,
+  "procRole" : "Unspecified",
+  "version" : 2,
+  "userID" : 501,
+  "deployVersion" : 210,
+  "modelCode" : "Mac15,13",
+  "coalitionID" : 759,
+  "osVersion" : {
+    "train" : "macOS 27.0",
+    "build" : "26A428",
+    "releaseType" : "User"
+  },
+  "captureTime" : "2026-09-19 11:32:54.6901 +0200",
+  "codeSigningMonitor" : 2,
+  "incident" : "08908856-470D-46F7-924C-3DA04D5BDA1A",
+  "pid" : 61166,
+  "translated" : false,
+  "cpuType" : "ARM-64",
+  "procLaunch" : "2026-09-19 11:32:39.3463 +0200",
+  "procStartAbsTime" : 2288553968500,
+  "procExitAbsTime" : 2288919682575,
+  "procName" : "llama-cli",
+  "procPath" : "\/Users\/USER\/*\/llama-cli",
+  "parentProc" : "python",
+  "parentPid" : 41152,
+  "coalitionName" : "com.nousresearch.hermes",
+  "crashReporterKey" : "7A59CC23-7735-F2DB-5BA2-D015EDF137DA",
+  "chargingStatus" : {"externalSourceConnected":true},
+  "developerMode" : 1,
+  "bootProgressRegister" : "0x2f000000",
+  "responsiblePid" : 711,
+  "responsibleProc" : "Hermes",
+  "codeSigningID" : "llama-cli",
+  "codeSigningTeamID" : "",
+  "codeSigningFlags" : 570556929,
+  "codeSigningValidationCategory" : 10,
+  "codeSigningTrustLevel" : 4294967295,
+  "codeSigningAuxiliaryInfo" : 0,
+  "instructionByteStream" : {"beforePC":"yX5A+epXQPlKeUCSzC5DqQ0AgNLuAwmqzwGAudBGQakQfg+bEH4Rmw==","atPC":"cXpv+JAPEIsQDhGLDSIAKTAGAJFwei\/4rQUAkc4BDItfAQ3rYf7\/VA=="},
+  "bootSessionUUID" : "CE3B9FFF-65BE-43C9-BE19-DD6071E41775",
+  "wakeTime" : 59053,
+  "sleepWakeUUID" : "9E7B483B-EBC8-4A81-9EED-B95D1FCF22C8",
+  "sip" : "enabled",
+  "vmRegionInfo" : "0x782c773b28 is in 0x7627800000-0x7926000000;  bytes after start: 8673245992  bytes before end: 4186490071\n      REGION TYPE                    START - END         [ VSIZE] PRT\/MAX SHRMOD  REGION DETAIL\n      Malloc Small               7627400000-7627800000   [ 4096K] rw-\/rwx SM=PRV  \n--->  commpage (reserved)        7627800000-7926000000   [ 12.0G] ---\/--- SM=NUL  reserved VM address space (unallocated)\n      GAP OF 0x1ee000000 BYTES\n      Malloc Small               7b14000000-7b14400000   [ 4096K] rw-\/rwx SM=PRV  ",
+  "exception" : {"codes":"0x0000000000000002, 0x000000782c773b28","rawCodes":[2,516142086952],"type":"EXC_BAD_ACCESS","signal":"SIGBUS","subtype":"KERN_PROTECTION_FAILURE at 0x000000782c773b28"},
+  "termination" : {"flags":0,"code":10,"namespace":"SIGNAL","indicator":"Bus error: 10","byProc":"exc handler","byPid":61166},
+  "vmregioninfo" : "0x782c773b28 is in 0x7627800000-0x7926000000;  bytes after start: 8673245992  bytes before end: 4186490071\n      REGION TYPE                    START - END         [ VSIZE] PRT\/MAX SHRMOD  REGION DETAIL\n      Malloc Small               7627400000-7627800000   [ 4096K] rw-\/rwx SM=PRV  \n--->  commpage (reserved)        7627800000-7926000000   [ 12.0G] ---\/--- SM=NUL  reserved VM address space (unallocated)\n      GAP OF 0x1ee000000 BYTES\n      Malloc Small               7b14000000-7b14400000   [ 4096K] rw-\/rwx SM=PRV  ",
+  "extMods" : {"caller":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"system":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"targeted":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"warnings":0},
+  "faultingThread" : 4,
+  "threads" : [{"id":3319907,"threadState":{"x":[{"value":4},{"value":0},{"value":1},{"value":1},{"value":0},{"value":200000000},{"value":52},{"value":0},{"value":8546804680,"symbolLocation":0,"symbol":"clock_sem"},{"value":16387},{"value":17},{"value":6126871968},{"value":5},{"value":1},{"value":1109071451102324},{"value":0},{"value":334},{"value":8576365888},{"value":0},{"value":6126871632},{"value":6126871632},{"value":1886680168},{"value":9223372036854775798},{"value":3328210909095473713},{"value":6126872008},{"value":47},{"value":22},{"value":49},{"value":9}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6839070804},"cpsr":{"value":1610616832},"fp":{"value":6126871616},"sp":{"value":6126871568},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":6840288008},"far":{"value":0}},"queue":"com.apple.main-thread","frames":[{"imageOffset":17160,"symbol":"__semwait_signal","symbolLocation":8,"imageIndex":13},{"imageOffset":57428,"symbol":"nanosleep","symbolLocation":220,"imageIndex":14},{"imageOffset":36484,"symbol":"std::__1::this_thread::sleep_for(std::__1::chrono::duration<long long, std::__1::ratio<1l, 1000000000l>> const&)","symbolLocation":84,"imageIndex":15},{"imageOffset":56292,"symbol":"cli_server::wait_ready(std::__1::function<bool ()>)","symbolLocation":4596,"imageIndex":1},{"imageOffset":49412,"symbol":"cli_context::init()","symbolLocation":1164,"imageIndex":1},{"imageOffset":19172,"symbol":"llama_cli(int, char**)","symbolLocation":188,"imageIndex":1},{"imageOffset":204416,"symbol":"start","symbolLocation":6688,"imageIndex":16}]},{"id":3319915,"frames":[{"imageOffset":19432,"symbol":"__write_nocancel","symbolLocation":8,"imageIndex":13},{"imageOffset":205460,"symbol":"__swrite","symbolLocation":24,"imageIndex":14},{"imageOffset":76144,"symbol":"_swrite","symbolLocation":108,"imageIndex":14},{"imageOffset":67260,"symbol":"__sflush","symbolLocation":232,"imageIndex":14},{"imageOffset":75848,"symbol":"__xvprintf","symbolLocation":296,"imageIndex":14},{"imageOffset":75520,"symbol":"vfprintf_l","symbolLocation":144,"imageIndex":14},{"imageOffset":75364,"symbol":"fprintf","symbolLocation":68,"imageIndex":14},{"imageOffset":1392864,"symbol":"common_log_entry::print(__sFILE*) const","symbolLocation":584,"imageIndex":6},{"imageOffset":1392132,"symbol":"common_log::resume()::'lambda'()::operator()() const","symbolLocation":300,"imageIndex":6},{"imageOffset":1391764,"symbol":"void* std::__1::__thread_proxy[abi:nqe220106]<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, common_log::resume()::'lambda'()>>(void*)","symbolLocation":52,"imageIndex":6},{"imageOffset":27904,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":18},{"imageOffset":7404,"symbol":"thread_start","symbolLocation":8,"imageIndex":18}],"threadState":{"x":[{"value":2},{"value":0},{"value":2},{"value":6127446410},{"value":4365195630},{"value":6127447776},{"value":32},{"value":0},{"value":6839218812,"symbolLocation":0,"symbol":"__swrite"},{"value":1832479114},{"value":1024},{"value":24},{"value":4365195636},{"value":0},{"value":4365195632},{"value":0},{"value":397},{"value":8576371208},{"value":0},{"value":6127446256},{"value":2},{"value":6127446408},{"value":8546796144,"symbolLocation":0,"symbol":"__global_locale"},{"value":1},{"value":48},{"value":12297829382473034411},{"value":1},{"value":0},{"value":5}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6839218836},"cpsr":{"value":4096},"fp":{"value":6127446144},"sp":{"value":6127446144},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":6840290280},"far":{"value":0}}},{"id":3319918,"frames":[],"threadState":{"x":[{"value":6128021504},{"value":4099},{"value":6127484928},{"value":0},{"value":409603},{"value":18446744073709551615},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":0},"cpsr":{"value":4096},"fp":{"value":0},"sp":{"value":6128021504},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":6840536280},"far":{"value":0}}},{"id":3319919,"threadState":{"x":[{"value":4},{"value":0},{"value":1},{"value":1},{"value":0},{"value":5000000},{"value":0},{"value":0},{"value":8546804680,"symbolLocation":0,"symbol":"clock_sem"},{"value":3},{"value":17},{"value":1099511628034},{"value":1},{"value":507460648512},{"value":72057602584874785,"symbolLocation":72057594037927937,"symbol":"OBJC_CLASS_$_NSLock"},{"value":8546946848,"symbolLocation":0,"symbol":"OBJC_CLASS_$_NSLock"},{"value":334},{"value":8576365888},{"value":0},{"value":0},{"value":6128594432},{"value":4294967295},{"value":1000},{"value":6128595168},{"value":8546783424,"symbolLocation":1536,"symbol":"_dispatch_root_queues"},{"value":1535},{"value":8513489096,"symbolLocation":0,"symbol":"_dispatch_continuation_cache_limit"},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6839070804},"cpsr":{"value":2684358656},"fp":{"value":6128594416},"sp":{"value":6128594368},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":6840288008},"far":{"value":0}},"queue":"com.apple.root.default-qos","frames":[{"imageOffset":17160,"symbol":"__semwait_signal","symbolLocation":8,"imageIndex":13},{"imageOffset":57428,"symbol":"nanosleep","symbolLocation":220,"imageIndex":14},{"imageOffset":57196,"symbol":"usleep","symbolLocation":68,"imageIndex":14},{"imageOffset":24208,"symbol":"__ggml_metal_rsets_init_block_invoke","symbolLocation":100,"imageIndex":11},{"imageOffset":6708,"symbol":"_dispatch_call_block_and_release","symbolLocation":32,"imageIndex":19},{"imageOffset":112032,"symbol":"_dispatch_client_callout","symbolLocation":16,"imageIndex":19},{"imageOffset":230972,"symbol":"_dispatch_queue_override_invoke.cold.3","symbolLocation":112,"imageIndex":19},{"imageOffset":24140,"symbol":"_dispatch_queue_override_invoke","symbolLocation":848,"imageIndex":19},{"imageOffset":80556,"symbol":"_dispatch_root_queue_drain","symbolLocation":360,"imageIndex":19},{"imageOffset":82504,"symbol":"_dispatch_worker_thread2","symbolLocation":184,"imageIndex":19},{"imageOffset":12128,"symbol":"_pthread_wqthread","symbolLocation":232,"imageIndex":18},{"imageOffset":7392,"symbol":"start_wqthread","symbolLocation":8,"imageIndex":18}]},{"triggered":true,"id":3319924,"threadState":{"x":[{"value":507462125856},{"value":0},{"value":18446744073709551584},{"value":507462126816},{"value":507462125952},{"value":19},{"value":0},{"value":0},{"value":0},{"value":4445224960},{"value":8},{"value":512},{"value":4},{"value":0},{"value":4445224960},{"value":1084995137},{"value":8679961096},{"value":1},{"value":0},{"value":507462125856},{"value":6129104520},{"value":4},{"value":542898328256},{"value":0},{"value":1},{"value":2336},{"value":4346344700,"symbolLocation":0,"symbol":"quantize_row_q8_K"},{"value":2048},{"value":507462126880}],"flavor":"ARM_THREAD_STATE64","lr":{"value":4345688784},"cpsr":{"value":536875008},"fp":{"value":6129104496},"sp":{"value":6129103920},"esr":{"value":2449473542,"description":"(Data Abort) byte read Translation fault"},"pc":{"value":4345688852,"matchesCrashFrame":1},"far":{"value":516142086952}},"frames":[{"imageOffset":29460,"symbol":"ggml_compute_forward_mul_mat_id","symbolLocation":1008,"imageIndex":9},{"imageOffset":24776,"symbol":"ggml_graph_compute_thread","symbolLocation":1424,"imageIndex":9},{"imageOffset":21212,"symbol":"ggml_graph_compute","symbolLocation":440,"imageIndex":9},{"imageOffset":34012,"symbol":"ggml_backend_cpu_graph_compute(ggml_backend*, ggml_cgraph*)","symbolLocation":120,"imageIndex":9},{"imageOffset":121368,"symbol":"ggml_backend_sched_graph_compute_async","symbolLocation":2508,"imageIndex":12},{"imageOffset":123364,"symbol":"llama_context::graph_compute(ggml_cgraph*, bool)","symbolLocation":164,"imageIndex":7},{"imageOffset":122236,"symbol":"llama_context::process_ubatch(llama_ubatch const&, llm_graph_type, llama_memory_context_i*, ggml_status&)","symbolLocation":292,"imageIndex":7},{"imageOffset":128852,"symbol":"llama_context::decode(llama_batch const&)","symbolLocation":2284,"imageIndex":7},{"imageOffset":150832,"symbol":"llama_decode","symbolLocation":20,"imageIndex":7},{"imageOffset":1062044,"symbol":"common_context_can_seq_rm(llama_context*)","symbolLocation":116,"imageIndex":6},{"imageOffset":888852,"symbol":"server_context_impl::load_model(common_params&)","symbolLocation":4468,"imageIndex":2},{"imageOffset":39096,"symbol":"llama_server(common_params&, int, char**)","symbolLocation":20488,"imageIndex":2},{"imageOffset":122756,"symbol":"void* std::__1::__thread_proxy[abi:nqe220106]<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, cli_server::start(common_params&)::'lambda'()>>(void*)","symbolLocation":64,"imageIndex":1},{"imageOffset":27904,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":18},{"imageOffset":7404,"symbol":"thread_start","symbolLocation":8,"imageIndex":18}]},{"id":3319925,"frames":[{"imageOffset":38708,"symbol":"__accept","symbolLocation":8,"imageIndex":13},{"imageOffset":1509644,"symbol":"httplib::Server::listen_internal()","symbolLocation":328,"imageIndex":2},{"imageOffset":193316,"symbol":"void* std::__1::__thread_proxy[abi:nqe220106]<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, server_http_context::start()::$_0>>(void*)","symbolLocation":60,"imageIndex":2},{"imageOffset":27904,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":18},{"imageOffset":7404,"symbol":"thread_start","symbolLocation":8,"imageIndex":18}],"threadState":{"x":[{"value":4},{"value":0},{"value":0},{"value":18176},{"value":76965813964032},{"value":78065325591808},{"value":0},{"value":0},{"value":507458110504},{"value":4355739944,"symbolLocation":16,"symbol":"vtable for std::__1::__function::__func<httplib::Server::listen_internal()::$_1, void ()>"},{"value":4373171668},{"value":4373171672},{"value":256},{"value":1},{"value":19712},{"value":17920},{"value":30},{"value":76965813964032},{"value":0},{"value":4373171488},{"value":507458110464},{"value":9},{"value":1},{"value":1},{"value":1000},{"value":2361183241434822607},{"value":6129741552},{"value":4355739944,"symbolLocation":16,"symbol":"vtable for std::__1::__function::__func<httplib::Server::listen_internal()::$_1, void ()>"},{"value":9}],"flavor":"ARM_THREAD_STATE64","lr":{"value":4351953164},"cpsr":{"value":2684358656},"fp":{"value":6129741712},"sp":{"value":6129741520},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":6840309556},"far":{"value":0}}},{"id":3319926,"frames":[{"imageOffset":17676,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":13},{"imageOffset":29136,"symbol":"_pthread_cond_wait","symbolLocation":980,"imageIndex":18},{"imageOffset":26556,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":32,"imageIndex":15},{"imageOffset":1480296,"symbol":"httplib::ThreadPool::worker(bool)","symbolLocation":436,"imageIndex":2},{"imageOffset":1774936,"symbol":"void* std::__1::__thread_proxy[abi:nqe220106]<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, httplib::ThreadPool::ThreadPool(unsigned long, unsigned long, unsigned long, long)::$_0>>(void*)","symbolLocation":56,"imageIndex":2},{"imageOffset":27904,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":18},{"imageOffset":7404,"symbol":"thread_start","symbolLocation":8,"imageIndex":18}],"threadState":{"x":[{"value":4},{"value":0},{"value":18176},{"value":0},{"value":0},{"value":160},{"value":0},{"value":0},{"value":6130314824},{"value":0},{"value":0},{"value":2},{"value":2},{"value":0},{"value":0},{"value":0},{"value":305},{"value":8576365768},{"value":0},{"value":4373171688},{"value":4373171640},{"value":6130315488},{"value":0},{"value":0},{"value":18176},{"value":19968},{"value":18176},{"value":6130315032},{"value":9223372036854775}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6840558032},"cpsr":{"value":1610616832},"fp":{"value":6130314944},"sp":{"value":6130314800},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":6840288524},"far":{"value":0}}},{"id":3319927,"frames":[{"imageOffset":17676,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":13},{"imageOffset":29136,"symbol":"_pthread_cond_wait","symbolLocation":980,"imageIndex":18},{"imageOffset":26556,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":32,"imageIndex":15},{"imageOffset":1480296,"symbol":"httplib::ThreadPool::worker(bool)","symbolLocation":436,"imageIndex":2},{"imageOffset":1774936,"symbol":"void* std::__1::__thread_proxy[abi:nqe220106]<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, httplib::ThreadPool::ThreadPool(unsigned long, unsigned long, unsigned long, long)::$_0>>(void*)","symbolLocation":56,"imageIndex":2},{"imageOffset":27904,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":18},{"imageOffset":7404,"symbol":"thread_start","symbolLocation":8,"imageIndex":18}],"threadState":{"x":[{"value":4},{"value":0},{"value":16640},{"value":0},{"value":0},{"value":160},{"value":0},{"value":0},{"value":6130888264},{"value":0},{"value":0},{"value":2},{"value":2},{"value":0},{"value":0},{"value":0},{"value":305},{"value":8576365768},{"value":0},{"value":4373171688},{"value":4373171640},{"value":6130888928},{"value":0},{"value":0},{"value":16640},{"value":18432},{"value":16640},{"value":6130888472},{"value":9223372036854775}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6840558032},"cpsr":{"value":1610616832},"fp":{"value":6130888384},"sp":{"value":6130888240},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":6840288524},"far":{"value":0}}},{"id":3319928,"frames":[{"imageOffset":17676,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":13},{"imageOffset":29136,"symbol":"_pthread_cond_wait","symbolLocation":980,"imageIndex":18},{"imageOffset":26556,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":32,"imageIndex":15},{"imageOffset":1480296,"symbol":"httplib::ThreadPool::worker(bool)","symbolLocation":436,"imageIndex":2},{"imageOffset":1774936,"symbol":"void* std::__1::__thread_proxy[abi:nqe220106]<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, httplib::ThreadPool::ThreadPool(unsigned long, unsigned long, unsigned long, long)::$_0>>(void*)","symbolLocation":56,"imageIndex":2},{"imageOffset":27904,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":18},{"imageOffset":7404,"symbol":"thread_start","symbolLocation":8,"imageIndex":18}],"threadState":{"x":[{"value":4},{"value":0},{"value":16896},{"value":0},{"value":0},{"value":160},{"value":0},{"value":0},{"value":6131461704},{"value":0},{"value":0},{"value":2},{"value":2},{"value":0},{"value":0},{"value":0},{"value":305},{"value":8576365768},{"value":0},{"value":4373171688},{"value":4373171640},{"value":6131462368},{"value":0},{"value":0},{"value":16896},{"value":18688},{"value":16896},{"value":6131461912},{"value":9223372036854775}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6840558032},"cpsr":{"value":1610616832},"fp":{"value":6131461824},"sp":{"value":6131461680},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":6840288524},"far":{"value":0}}},{"id":3319929,"frames":[{"imageOffset":17676,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":13},{"imageOffset":29136,"symbol":"_pthread_cond_wait","symbolLocation":980,"imageIndex":18},{"imageOffset":26556,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":32,"imageIndex":15},{"imageOffset":1480296,"symbol":"httplib::ThreadPool::worker(bool)","symbolLocation":436,"imageIndex":2},{"imageOffset":1774936,"symbol":"void* std::__1::__thread_proxy[abi:nqe220106]<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, httplib::ThreadPool::ThreadPool(unsigned long, unsigned long, unsigned long, long)::$_0>>(void*)","symbolLocation":56,"imageIndex":2},{"imageOffset":27904,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":18},{"imageOffset":7404,"symbol":"thread_start","symbolLocation":8,"imageIndex":18}],"threadState":{"x":[{"value":4},{"value":0},{"value":17152},{"value":0},{"value":0},{"value":160},{"value":0},{"value":0},{"value":6132035144},{"value":0},{"value":0},{"value":2},{"value":2},{"value":0},{"value":0},{"value":0},{"value":305},{"value":8576365768},{"value":0},{"value":4373171688},{"value":4373171640},{"value":6132035808},{"value":0},{"value":0},{"value":17152},{"value":18944},{"value":17152},{"value":6132035352},{"value":9223372036854775}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6840558032},"cpsr":{"value":1610616832},"fp":{"value":6132035264},"sp":{"value":6132035120},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":6840288524},"far":{"value":0}}},{"id":3319930,"frames":[{"imageOffset":17676,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":13},{"imageOffset":29136,"symbol":"_pthread_cond_wait","symbolLocation":980,"imageIndex":18},{"imageOffset":26556,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":32,"imageIndex":15},{"imageOffset":1480296,"symbol":"httplib::ThreadPool::worker(bool)","symbolLocation":436,"imageIndex":2},{"imageOffset":1774936,"symbol":"void* std::__1::__thread_proxy[abi:nqe220106]<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, httplib::ThreadPool::ThreadPool(unsigned long, unsigned long, unsigned long, long)::$_0>>(void*)","symbolLocation":56,"imageIndex":2},{"imageOffset":27904,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":18},{"imageOffset":7404,"symbol":"thread_start","symbolLocation":8,"imageIndex":18}],"threadState":{"x":[{"value":4},{"value":0},{"value":17408},{"value":0},{"value":0},{"value":160},{"value":0},{"value":0},{"value":6132608584},{"value":0},{"value":0},{"value":2},{"value":2},{"value":0},{"value":0},{"value":0},{"value":305},{"value":8576365768},{"value":0},{"value":4373171688},{"value":4373171640},{"value":6132609248},{"value":0},{"value":0},{"value":17408},{"value":19200},{"value":17408},{"value":6132608792},{"value":9223372036854775}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6840558032},"cpsr":{"value":1610616832},"fp":{"value":6132608704},"sp":{"value":6132608560},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":6840288524},"far":{"value":0}}},{"id":3319931,"frames":[{"imageOffset":17676,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":13},{"imageOffset":29136,"symbol":"_pthread_cond_wait","symbolLocation":980,"imageIndex":18},{"imageOffset":26556,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":32,"imageIndex":15},{"imageOffset":1480296,"symbol":"httplib::ThreadPool::worker(bool)","symbolLocation":436,"imageIndex":2},{"imageOffset":1774936,"symbol":"void* std::__1::__thread_proxy[abi:nqe220106]<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, httplib::ThreadPool::ThreadPool(unsigned long, unsigned long, unsigned long, long)::$_0>>(void*)","symbolLocation":56,"imageIndex":2},{"imageOffset":27904,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":18},{"imageOffset":7404,"symbol":"thread_start","symbolLocation":8,"imageIndex":18}],"threadState":{"x":[{"value":4},{"value":0},{"value":17664},{"value":0},{"value":0},{"value":160},{"value":0},{"value":0},{"value":6133182024},{"value":0},{"value":0},{"value":2},{"value":2},{"value":0},{"value":0},{"value":0},{"value":305},{"value":8576365768},{"value":0},{"value":4373171688},{"value":4373171640},{"value":6133182688},{"value":0},{"value":0},{"value":17664},{"value":19456},{"value":17664},{"value":6133182232},{"value":9223372036854775}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6840558032},"cpsr":{"value":1610616832},"fp":{"value":6133182144},"sp":{"value":6133182000},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":6840288524},"far":{"value":0}}},{"id":3319932,"frames":[{"imageOffset":17676,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":13},{"imageOffset":29136,"symbol":"_pthread_cond_wait","symbolLocation":980,"imageIndex":18},{"imageOffset":26556,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":32,"imageIndex":15},{"imageOffset":1480296,"symbol":"httplib::ThreadPool::worker(bool)","symbolLocation":436,"imageIndex":2},{"imageOffset":1774936,"symbol":"void* std::__1::__thread_proxy[abi:nqe220106]<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct>>, httplib::ThreadPool::ThreadPool(unsigned long, unsigned long, unsigned long, long)::$_0>>(void*)","symbolLocation":56,"imageIndex":2},{"imageOffset":27904,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":18},{"imageOffset":7404,"symbol":"thread_start","symbolLocation":8,"imageIndex":18}],"threadState":{"x":[{"value":260},{"value":0},{"value":17920},{"value":0},{"value":0},{"value":160},{"value":0},{"value":0},{"value":6133755464},{"value":0},{"value":0},{"value":2},{"value":2},{"value":0},{"value":0},{"value":0},{"value":305},{"value":8576365768},{"value":0},{"value":4373171688},{"value":4373171640},{"value":6133756128},{"value":0},{"value":0},{"value":17920},{"value":19712},{"value":17920},{"value":6133755672},{"value":9223372036854775}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6840558032},"cpsr":{"value":1610616832},"fp":{"value":6133755584},"sp":{"value":6133755440},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":6840288524},"far":{"value":0}}},{"id":3320411,"frames":[],"threadState":{"x":[{"value":6134329344},{"value":16399},{"value":6133792768},{"value":0},{"value":409604},{"value":18446744073709551615},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":0},"cpsr":{"value":4096},"fp":{"value":0},"sp":{"value":6134329344},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":6840536280},"far":{"value":0}}},{"id":3321002,"frames":[],"threadState":{"x":[{"value":6134902784},{"value":20995},{"value":6134366208},{"value":0},{"value":409604},{"value":18446744073709551615},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":0},"cpsr":{"value":4096},"fp":{"value":0},"sp":{"value":6134902784},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":6840536280},"far":{"value":0}}},{"id":3321144,"frames":[{"imageOffset":31068,"symbol":"ggml_compute_forward_mul_mat_id","symbolLocation":2616,"imageIndex":9},{"imageOffset":24776,"symbol":"ggml_graph_compute_thread","symbolLocation":1424,"imageIndex":9},{"imageOffset":28324,"symbol":"ggml_graph_compute_secondary_thread","symbolLocation":468,"imageIndex":9},{"imageOffset":27904,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":18},{"imageOffset":7404,"symbol":"thread_start","symbolLocation":8,"imageIndex":18}],"threadState":{"x":[{"value":4445239520},{"value":507462124104},{"value":512},{"value":4445913632},{"value":6135476224},{"value":419432703},{"value":0},{"value":0},{"value":4372725760},{"value":0},{"value":0},{"value":1},{"value":1},{"value":128},{"value":4},{"value":0},{"value":4367956248,"symbolLocation":0,"symbol":"quantize_row_q8_K_ref"},{"value":8576365984},{"value":0},{"value":507462125856},{"value":6135475944},{"value":4},{"value":542898328256},{"value":0},{"value":1},{"value":2336},{"value":4346344700,"symbolLocation":0,"symbol":"quantize_row_q8_K"},{"value":4096},{"value":507462126880}],"flavor":"ARM_THREAD_STATE64","lr":{"value":4345688700},"cpsr":{"value":1610616832},"fp":{"value":6135475920},"sp":{"value":6135475344},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":4345690460},"far":{"value":0}}},{"id":3321145,"frames":[{"imageOffset":31068,"symbol":"ggml_compute_forward_mul_mat_id","symbolLocation":2616,"imageIndex":9},{"imageOffset":24776,"symbol":"ggml_graph_compute_thread","symbolLocation":1424,"imageIndex":9},{"imageOffset":28324,"symbol":"ggml_graph_compute_secondary_thread","symbolLocation":468,"imageIndex":9},{"imageOffset":27904,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":18},{"imageOffset":7404,"symbol":"thread_start","symbolLocation":8,"imageIndex":18}],"threadState":{"x":[{"value":4445241568},{"value":507462124688},{"value":512},{"value":4445914176},{"value":6136049664},{"value":419432703},{"value":0},{"value":0},{"value":4372725760},{"value":0},{"value":0},{"value":1},{"value":0},{"value":128},{"value":4},{"value":0},{"value":4367956248,"symbolLocation":0,"symbol":"quantize_row_q8_K_ref"},{"value":8576365984},{"value":0},{"value":507462125856},{"value":6136049384},{"value":4},{"value":542898328256},{"value":0},{"value":1},{"value":2336},{"value":4346344700,"symbolLocation":0,"symbol":"quantize_row_q8_K"},{"value":6144},{"value":507462126880}],"flavor":"ARM_THREAD_STATE64","lr":{"value":4345688700},"cpsr":{"value":1610616832},"fp":{"value":6136049360},"sp":{"value":6136048784},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":4345690460},"far":{"value":0}}},{"id":3321146,"frames":[{"imageOffset":31080,"symbol":"ggml_compute_forward_mul_mat_id","symbolLocation":2628,"imageIndex":9},{"imageOffset":24776,"symbol":"ggml_graph_compute_thread","symbolLocation":1424,"imageIndex":9},{"imageOffset":28324,"symbol":"ggml_graph_compute_secondary_thread","symbolLocation":468,"imageIndex":9},{"imageOffset":27904,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":18},{"imageOffset":7404,"symbol":"thread_start","symbolLocation":8,"imageIndex":18}],"threadState":{"x":[{"value":4445243616},{"value":507462125272},{"value":512},{"value":4445914720},{"value":6136623104},{"value":419432703},{"value":0},{"value":0},{"value":4372725760},{"value":0},{"value":0},{"value":1},{"value":2},{"value":128},{"value":4},{"value":0},{"value":4367956248,"symbolLocation":0,"symbol":"quantize_row_q8_K_ref"},{"value":8576365984},{"value":0},{"value":507462125856},{"value":6136622824},{"value":4},{"value":542898328256},{"value":0},{"value":1},{"value":2336},{"value":4346344700,"symbolLocation":0,"symbol":"quantize_row_q8_K"},{"value":8192},{"value":507462126880}],"flavor":"ARM_THREAD_STATE64","lr":{"value":4345688700},"cpsr":{"value":1610616832},"fp":{"value":6136622800},"sp":{"value":6136622224},"esr":{"value":1442840704,"description":"(Syscall)"},"pc":{"value":4345690472},"far":{"value":0}}}],
+  "usedImages" : [
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4339990528,
+    "size" : 32768,
+    "uuid" : "7ac3a411-fc4e-3052-899f-dcdae4f730b8",
+    "path" : "\/Users\/USER\/*\/llama-cli",
+    "name" : "llama-cli"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4340465664,
+    "size" : 245760,
+    "uuid" : "cb9c08d1-343c-3a6c-bbf6-32b1acb29618",
+    "path" : "\/Users\/USER\/*\/libllama-cli-impl.dylib",
+    "name" : "libllama-cli-impl.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4350443520,
+    "size" : 5259264,
+    "uuid" : "c26a7d90-6b7f-354f-98cf-0cce6e1aa081",
+    "path" : "\/Users\/USER\/*\/libllama-server-impl.dylib",
+    "name" : "libllama-server-impl.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4343545856,
+    "size" : 917504,
+    "uuid" : "5bbc3a47-262d-34ee-af6b-47652c0c2e1c",
+    "path" : "\/Users\/USER\/*\/libmtmd.0.0.1.dylib",
+    "name" : "libmtmd.0.0.1.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4341776384,
+    "size" : 606208,
+    "uuid" : "1b8ab7a7-ad95-3b41-85f2-fb21b66b6423",
+    "path" : "\/opt\/homebrew\/*\/libssl.3.dylib",
+    "name" : "libssl.3.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4357357568,
+    "size" : 3424256,
+    "uuid" : "b5fb28db-1ac6-383c-9ddd-585812a35ce8",
+    "path" : "\/opt\/homebrew\/*\/libcrypto.3.dylib",
+    "name" : "libcrypto.3.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4362240000,
+    "size" : 3031040,
+    "uuid" : "8bb66696-4a77-3781-9368-cdf081325894",
+    "path" : "\/Users\/USER\/*\/libllama-common.0.0.1.dylib",
+    "name" : "libllama-common.0.0.1.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4347527168,
+    "size" : 1982464,
+    "uuid" : "81a659ee-f750-37e1-8c58-161836d35213",
+    "path" : "\/Users\/USER\/*\/libllama.0.0.1.dylib",
+    "name" : "libllama.0.0.1.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4340121600,
+    "size" : 32768,
+    "uuid" : "110f0e15-1560-3644-a942-b7925588e18a",
+    "path" : "\/Users\/USER\/*\/libggml.0.17.0.dylib",
+    "name" : "libggml.0.17.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4345659392,
+    "size" : 835584,
+    "uuid" : "760f57bf-ca70-3980-816e-904759ce0461",
+    "path" : "\/Users\/USER\/*\/libggml-cpu.0.17.0.dylib",
+    "name" : "libggml-cpu.0.17.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4340203520,
+    "size" : 16384,
+    "uuid" : "e959a0f1-5213-3945-84f4-8b43349a726f",
+    "path" : "\/Users\/USER\/*\/libggml-blas.0.17.0.dylib",
+    "name" : "libggml-blas.0.17.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4344692736,
+    "size" : 147456,
+    "uuid" : "6d063d7e-3df0-3efb-a1d1-56cf75dff69a",
+    "path" : "\/Users\/USER\/*\/libggml-metal.0.17.0.dylib",
+    "name" : "libggml-metal.0.17.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4367646720,
+    "size" : 573440,
+    "uuid" : "f2366a70-1132-349a-9b6e-dcbdb5a4c3c8",
+    "path" : "\/Users\/USER\/*\/libggml-base.0.17.0.dylib",
+    "name" : "libggml-base.0.17.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6840270848,
+    "size" : 256428,
+    "uuid" : "f63bf418-8f75-34a4-aaf1-8caf2b9b6a05",
+    "path" : "\/usr\/lib\/system\/libsystem_kernel.dylib",
+    "name" : "libsystem_kernel.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6839013376,
+    "size" : 535716,
+    "uuid" : "fba7b23e-aa60-3a90-9aa4-a7a2e0ad63ee",
+    "path" : "\/usr\/lib\/system\/libsystem_c.dylib",
+    "name" : "libsystem_c.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6839549952,
+    "size" : 610356,
+    "uuid" : "1e9ba4aa-b5da-3cf3-80ac-4b880049573f",
+    "path" : "\/usr\/lib\/libc++.1.dylib",
+    "name" : "libc++.1.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6836330496,
+    "size" : 784100,
+    "uuid" : "d341ddcb-7969-3a9c-8e03-0cf4751398a9",
+    "path" : "\/usr\/lib\/dyld",
+    "name" : "dyld"
+  },
+  {
+    "size" : 0,
+    "source" : "A",
+    "base" : 0,
+    "uuid" : "00000000-0000-0000-0000-000000000000"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6840528896,
+    "size" : 51484,
+    "uuid" : "5a1828c3-cbc2-3b85-bd07-c8ed10021a41",
+    "path" : "\/usr\/lib\/system\/libsystem_pthread.dylib",
+    "name" : "libsystem_pthread.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6838710272,
+    "size" : 287136,
+    "uuid" : "022bf08f-0b3a-3225-9e65-16d1553ce90d",
+    "path" : "\/usr\/lib\/system\/libdispatch.dylib",
+    "name" : "libdispatch.dylib"
+  }
+],
+  "sharedCache" : {
+  "base" : 6831587328,
+  "size" : 7410352128,
+  "uuid" : "ea2c265e-297c-39c2-8646-7d8a2dff648a"
+},
+  "vmSummary" : "ReadOnly portion of Libraries: Total=2.0G resident=0K(0%) swapped_out_or_unallocated=2.0G(100%)\nWritable regions: Total=711.7M written=7547K(1%) resident=7547K(1%) swapped_out=0K(0%) unallocated=704.4M(99%)\n\n                                VIRTUAL   REGION \nREGION TYPE                        SIZE    COUNT (non-coalesced) \n===========                     =======  ======= \nActivity Tracing                   256K        1 \nDeferred Reclaim                  64.0M        1 \nDispatch Continuations            64.0M        1 \nGuard                            385.0G        1 \nMalloc                           191.2M       32 \nMalloc Guard Page                 3440K        4 \nOS Alloc Once                       32K        1 \nStack                             17.0M       18 \nStack Guard                       56.3M       18 \nUntagged                         367.2M       16 \n__AUTH                            1996K      221 \n__AUTH_CONST                      34.0M      399 \n__CTF                               824        1 \n__DATA                            8419K      420 \n__DATA_CONST                      24.5M      409 \n__DATA_DIRTY                      2145K      351 \n__FONT_DATA                        2352        1 \n__LINKEDIT                         1.6G       14 \n__OBJC_RO                        118.0M        1 \n__OBJC_RW                         2735K        1 \n__TEXT                           404.7M      482 \n__TPRO_CONST                       132K        4 \nmapped file                       13.4G        8 \npage table in kernel              7547K        1 \nshared memory                      720K       12 \n===========                     =======  ======= \nTOTAL                            401.3G     2418 \n",
+  "legacyInfo" : {
+  "threadTriggered" : {
+
+  }
+},
+  "logWritingSignature" : "2694d253e013f0d2e0df3e8f0e1d9aadf3a6cc65",
+  "roots_installed" : 0,
+  "bug_type" : "309",
+  "trmStatus" : 1,
+  "trialInfo" : {
+  "rollouts" : [
+    {
+      "rolloutId" : "6785b622614dbd65bffd025a",
+      "factorPackIds" : [
+        "6a51d2d31dc10533c5e59c7a"
+      ],
+      "deploymentId" : 240000017
+    },
+    {
+      "rolloutId" : "6813dc6e1e50e5344eb573e9",
+      "factorPackIds" : [
+
+      ],
+      "deploymentId" : 240000021
+    }
+  ],
+  "experiments" : [
+
+  ]
+}
+}

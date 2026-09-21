@@ -1,0 +1,23 @@
+=== EXP-006 TinyTitan native Qwen3.8-Flash-Next 4-bit install ===
+Thu Sep 17 15:22:10 UTC 2026
+source_commit=008510e2753cc16a674cb75169ba3133cf56fa4e
+output=/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/model/qwen3.8-flash-next_125B_A6B_4Bit
+optional_mtp=deferred
+--- initial disk ---
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi    35Gi    27%    484k  366M    0%   /
+--- install ---
+install failed: insufficient disk space for /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/model: required 178265077776, available 39169024000
+--- final disk ---
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi    36Gi    26%    484k  383M    0%   /
+
+=== retry after supported snapshot thinning ===
+Thu Sep 17 15:24:53 UTC 2026
+Installed Qwen3.8-Flash-Next 125B-A6B 4-bit
+Source revision: 478474da92599ad0cf9f8bd447e658b29cb8480a
+Model: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/model/qwen3.8-flash-next_125B_A6B_4Bit
+repack_exit=0
+--- disk after retry ---
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi    50Gi    21%    484k  520M    0%   /

@@ -1,0 +1,23 @@
+
+
+<think>
+Thinking Process:
+
+1.  **Deconstruct the user's request:**
+    *   Topic: Why stable prompt prefixes matter for local tool-using language models.
+    *   Constraint: Exactly four concise sentences.
+
+2.  **Brainstorm key concepts:**
+    *   *Local models
+[phases over 64 tokens, decode 8539 ms]
+  cb1 encode+commit: 167.7 ms
+  expert io await:   0.0 ms
+    io overlapped w/ GPU: 0.0 ms
+    io exposed (GPU idle): 0.0 ms
+  cb2 encode+commit: 54.8 ms
+  all-hit layer steps: 194/2520 (7.7%)
+  gpu busy: 3821.7 ms, span: 8533.4 ms, gap: 4711.7 ms
+  spec prefetch: predicted 0, issued 0, confirmed 0 (recall 0.0%, 0.0 MB)
+  unaccounted (GPU waits): 8316.7 ms
+
+[stop=maxTokens prefill=19tok/2.34s new=64tok decode=8.54s tok/s=7.495]

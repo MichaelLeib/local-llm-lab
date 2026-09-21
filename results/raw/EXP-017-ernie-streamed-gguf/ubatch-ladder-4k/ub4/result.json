@@ -1,0 +1,20 @@
+{
+  "ubatch": 4,
+  "input_tokens": 3982,
+  "context": 8192,
+  "logical_batch": 512,
+  "generated_token_cap": 128,
+  "exit_code": 0,
+  "protective_stop": null,
+  "wall_seconds": 1103.2717051506042,
+  "minimum_free_percent": 38,
+  "peak_rss_kib": 4863376,
+  "swap_delta_mib": 0.0,
+  "swapouts_delta": 0,
+  "swapins_delta": 140,
+  "pageouts_delta": 4468,
+  "retrieval_needle_in_visible_output": false,
+  "visible_output_ended_at_cap": true,
+  "prompt_tok_s": 3.8,
+  "decode_tok_s": 4.0
+}

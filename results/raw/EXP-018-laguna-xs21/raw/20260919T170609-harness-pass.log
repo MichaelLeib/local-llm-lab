@@ -1,0 +1,11 @@
+LABEL: harness-pass
+COMMAND: sh -c printf\ \"METRIC\ decode_tps=7.25\\nhello\ harness\\n\"
+START: 2026-09-19T15:06:09Z
+--- stdout/stderr ---
+METRIC decode_tps=7.25
+hello harness
+
+--- end ---
+EXIT: 0
+END: 2026-09-19T15:06:09Z
+ELAPSED_SECONDS: 0

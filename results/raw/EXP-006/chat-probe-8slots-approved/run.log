@@ -1,0 +1,8 @@
+Thu Sep 17 18:03:56 UTC 2026
+expert_cache_slots=8
+vm.swapusage: total = 5120.00M  used = 4058.62M  free = 1061.38M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+System-wide memory free percentage: 76%
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi    44Gi    23%    484k  466M    0%   /
+READYerror: expert cache cannot place requested experts: 10 experts do not fit in 8 cache slots (policy lfu, avoiding 0 slots)

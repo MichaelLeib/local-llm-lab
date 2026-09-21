@@ -1,0 +1,42 @@
+diff --git a/Sources/TurboFieldfare/Kernels/Prefill/MoE/PrefillRoutedTileScheduler.swift b/Sources/TurboFieldfare/Kernels/Prefill/MoE/PrefillRoutedTileScheduler.swift
+index 38c5d75..785257f 100644
+--- a/Sources/TurboFieldfare/Kernels/Prefill/MoE/PrefillRoutedTileScheduler.swift
++++ b/Sources/TurboFieldfare/Kernels/Prefill/MoE/PrefillRoutedTileScheduler.swift
+@@ -31,8 +31,10 @@ struct PrefillRoutedTileSchedulerConfig: Sendable, Equatable {
+     let maxPendingDepth: Int
+     let tileExperts: Int
+ 
+-    init(maxPendingDepth: Int = 1, tileExperts: Int = 8) {
+-        self.maxPendingDepth = max(1, maxPendingDepth)
++    // EXP-008 isolated 8-slot arm: no lookahead keeps one 8-expert tile
++    // resident, permitting the minimum legal cache while preserving tile width.
++    init(maxPendingDepth: Int = 0, tileExperts: Int = 8) {
++        self.maxPendingDepth = max(0, maxPendingDepth)
+         self.tileExperts = max(1, min(16, tileExperts))
+     }
+ 
+diff --git a/Tests/TurboFieldfare/Core/Kernels/Prefill/PrefillRoutedTileSchedulerTests.swift b/Tests/TurboFieldfare/Core/Kernels/Prefill/PrefillRoutedTileSchedulerTests.swift
+index 7179510..b4319da 100644
+--- a/Tests/TurboFieldfare/Core/Kernels/Prefill/PrefillRoutedTileSchedulerTests.swift
++++ b/Tests/TurboFieldfare/Core/Kernels/Prefill/PrefillRoutedTileSchedulerTests.swift
+@@ -62,6 +62,20 @@ import Testing
+         #expect(decision == .drainBeforeIssue(reason: .maxPendingDepthReached))
+     }
+ 
++    @Test func zeroDepthSchedulerDrainsBeforePrefetching() {
++        let scheduler = PrefillRoutedTileScheduler(
++            config: PrefillRoutedTileSchedulerConfig(maxPendingDepth: 0, tileExperts: 8))
++
++        let decision = scheduler.decide(PrefillRoutedTileSchedulerInput(
++            hasPendingTile: true,
++            pendingDepth: 1,
++            pendingAssignedSlots: [1, 2, 3, 4, 5, 6, 7, 8],
++            avoidingSlotPlanAvailable: true))
++
++        #expect(decision == .drainBeforeIssue(reason: .maxPendingDepthReached))
++        #expect(scheduler.config.fitsSlotBudget(slotCount: 8))
++    }
++
+     @Test func schedulerConfigValidatesSlotBudget() {
+         let defaultConfig = PrefillRoutedTileSchedulerConfig()
+         let depthTwoFourExperts = PrefillRoutedTileSchedulerConfig(maxPendingDepth: 2, tileExperts: 4)

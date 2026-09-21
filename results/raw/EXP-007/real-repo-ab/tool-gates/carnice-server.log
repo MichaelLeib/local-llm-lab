@@ -1,0 +1,20 @@
+2026-09-18T05:15:20Z request prompt=16 cached=0 new_prompt=16 completion=116 ttft=8.70s prefill=1.8tok/s decode=8.5tok/s total=22.28s stop=stop cache_miss=noEntry render=0.001s match=0.000s prepare=0.001s expert_hit=49.7% expert_miss=18511 io_await=8.75s reasoning=111
+--- reasoning 111 tokens ---
+Thinking Process:
+
+1.  **Analyze the User's Request:** The user wants me to reply with *exactly* "PONG".
+2.  **Check Constraints:** The user specified "Reply with exactly: PONG". This means no extra text, no greetings, no explanations. Just the word "PONG".
+3.  **Formulate Response:** The response should be "PONG".
+4.  **Final Verification:** Does the response match the user's request exactly? Yes.
+
+Output: PONG
+
+--- end reasoning ---
+2026-09-18T05:15:35Z request prompt=289 cached=0 new_prompt=289 completion=68 ttft=7.46s prefill=38.8tok/s decode=8.6tok/s total=15.37s stop=tool_calls cache_miss=toolsChanged render=0.023s match=0.000s prepare=0.004s expert_hit=46.7% expert_miss=11422 io_await=5.07s reasoning=36
+--- reasoning 36 tokens ---
+The user wants me to run a specific command using the terminal tool and report the exact output.
+
+Let me use the terminal tool to run `printf AGENT_TOOL_OK`.
+
+--- end reasoning ---
+TurboFieldfareServer ready at http://127.0.0.1:8997 model=carnice-exp007 context=8192 prompt_cache=single-prefix

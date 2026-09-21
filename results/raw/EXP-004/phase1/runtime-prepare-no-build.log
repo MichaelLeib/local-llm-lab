@@ -1,0 +1,13 @@
+npm notice run @amos-labs/expertcache@0.1.0 runtime:prepare
+npm notice run node scripts/prepareExpertCacheRuntime.js --no-build --dir /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/expertcache/../llama.cpp-expertcache
+From https://github.com/ggml-org/llama.cpp
+ * branch                7e1e28cae36d41fe7bbe9dae7c9625de6565c063 -> FETCH_HEAD
+HEAD is now at 7e1e28cae mtmd : add Nemotron 3 Nano Omni support (parakeet) (#22520)
+{
+  "checkout": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache",
+  "revision": "7e1e28cae36d41fe7bbe9dae7c9625de6565c063",
+  "metalStrategy": "unified-memory-working-set",
+  "expertCachePatch": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/expertcache/runtime/llama-expert-cache-runtime.patch",
+  "patchApplied": false,
+  "built": false
+}

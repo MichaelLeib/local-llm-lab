@@ -1,0 +1,37 @@
+2026-09-18T06:30:59Z
+blind_candidate=candidate-K7
+harness=hermes
+task=T01
+d8635752d0f2d41b65aa03126e1eb782e8515cc29e3fc2fb4c186fbeca8cd695  /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/prompts/T01/task.md
+a43d24cb624dee4e5ddfb4b0c8f788fd9fd6c8c9
+vm.swapusage: total = 0.00M  used = 0.00M  free = 0.00M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 44585 
+Pages purgeable: 27468 
+Pages purged: 2299975 
+
+Swap I/O:
+Swapins: 0 
+Swapouts: 0 
+
+Page Q counts:
+Pages active: 268302 
+Pages inactive: 255648 
+Pages speculative: 14640 
+Pages throttled: 0 
+Pages wired down: 233989 
+
+Compressor Stats:
+Pages used by compressor: 193983 
+Pages decompressed: 8521179 
+Pages compressed: 10637600 
+
+File I/O:
+Pageins: 62441318 
+Pageouts: 11330 
+
+System-wide memory free percentage: 57%
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi    47Gi    22%    484k  493M    0%   /

@@ -1,0 +1,12 @@
+LABEL: install-mlx-optiq
+COMMAND: uv venv results/raw/EXP-018-laguna-xs21/venv --python 3.11
+START: 2026-09-19T15:13:15Z
+--- stdout/stderr ---
+Using CPython 3.11.16
+Creating virtual environment at: results/raw/EXP-018-laguna-xs21/venv
+Activate with: source results/raw/EXP-018-laguna-xs21/venv/bin/activate
+
+--- end ---
+EXIT: 0
+END: 2026-09-19T15:13:15Z
+ELAPSED_SECONDS: 0

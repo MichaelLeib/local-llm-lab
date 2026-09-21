@@ -1,0 +1,70 @@
+Query: You are working in an isolated benchmark fixture of HermesMobile.
+
+**Goal:** Fix the reported mobile layout regression.
+
+On narrow iPhones:
+
+1. Focusing any user-editable text input must not trigger Safari's automatic 
+page zoom. This includes the chat composer, model-picker search, and dialog text
+input.
+2. Wide assistant Markdown content (especially comparison tables and long code) 
+must never let the entire chat/thread pane pan horizontally. Wide content may 
+scroll **inside its own intended container**.
+
+Work directly in the repository. Inspect relevant code before editing. Make the 
+smallest maintainable fix, add or adjust deterministic tests if appropriate, and
+run the relevant project checks. Do not start services or change dependencies. 
+Finish with a concise summary of the files changed and exact verification 
+commands/results.
+
+Initializing agent...
+────────────────────────────────────────
+
+  ┊ ⚡ tool_sear   0.0s [queries is required and must be an array of s...]
+  ┊ ⚡ tool_sear   0.0s [error]
+  ┊ ⚡ tool_sear   0.0s [error]
+  ┊ ⚡ tool_sear   0.0s
+  ┊ 💻 $         ls -la  0.4s
+  ┊ 💻 $         find . -name "*mobile*" -type d 2>/dev/null  10.0s
+  ┊ 💻 $         find . -name "hermes-mobile" -type d 2>/dev/null | grep -v dist | grep -v node_modules  31.0s
+  (tip) That tool ran for a while. Use /verbose to cycle tool-progress display modes (all -> new -> off -> verbose). This tip only shows once.
+  ┊ 💻 $         ls -la ./HermesProjects/HermesMobile/  0.0s
+  ┊ 💻 $         find ./HermesProjects/HermesMobile/src -name "*mobile*" -o -name "*ios*" -o -name "*phone*" 2>/dev/null  0.0s
+  ┊ 💻 $         ls -la ./HermesProjects/HermesMobile/src/  0.0s
+  ┊ 💻 $         ls -la ./HermesProjects/HermesMobile/src/app/  0.0s
+  ┊ 💻 $         ls -la ./HermesProjects/HermesMobile/src/app/features/  0.0s
+  ┊ 💻 $         ls -la ./HermesProjects/HermesMobile/src/app/features/composer/  0.1s
+  ┊ 📖 read      composer.component.ts  0.0s
+  ┊ 📖 read      composer.component.html  0.0s
+  ┊ 📖 read      composer.component.scss  0.0s
+  ┊ 💻 $         ls -la ./HermesProjects/HermesMobile/src/app/features/model-picker/  0.1s
+  ┊ 📖 read      model-picker-sheet.component.scss  0.0s
+  ┊ 💻 $         ls -la ./HermesProjects/HermesMobile/src/app/features/thread/  0.0s
+  ┊ 📖 read      thread.component.scss  0.0s
+  ┊ 📖 read      thread.component.scss L251  0.0s
+  ┊ 📖 read      styles.scss  0.0s
+  ┊ 📖 read      styles.scss L251  0.0s
+  ┊ 💻 $         find ./HermesProjects/HermesMobile -name "*.spec.ts" -type f | grep -i mobile  0.6s
+⚠️  API call failed (attempt 1/3): BadRequestError [HTTP 400]
+   🔌 Provider: custom  Model: candidate-R2
+   🌐 Endpoint: http://127.0.0.1:8997/v1
+   📝 Error: HTTP 400: effective prompt exceeds the configured context
+   📋 Details: {'message': 'effective prompt exceeds the configured context', 'type': 'invalid_request_error', 'code': 'context_length_exceeded', 'param': 'messages'}
+   ⏱️  Elapsed: 0.25s  Context: 50 msgs, ~10,816 tokens
+❌ Non-retryable error (HTTP 400): HTTP 400: effective prompt exceeds the configured context
+❌ Non-retryable client error (HTTP 400). Aborting.
+   🔌 Provider: custom  Model: candidate-R2
+   🌐 Endpoint: http://127.0.0.1:8997/v1
+   💡 This type of error won't be fixed by retrying.
+ ─  ☤ Hermes  ───────────────────────────────────────────────────────────────── 
+                                                                                
+ HTTP 400: effective prompt exceeds the configured context                      
+                                                                                
+ ────────────────────────────────────────────────────────────────────────────── 
+
+Resume this session with:
+  hermes --resume 20260918_092859_0af785 -p exp007bench
+
+Session:        20260918_092859_0af785
+Duration:       19m 6s
+Messages:       49 (1 user, 48 tool calls)

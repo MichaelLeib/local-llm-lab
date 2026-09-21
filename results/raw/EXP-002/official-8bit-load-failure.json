@@ -1,0 +1,42 @@
+{
+  "experiment": "EXP-002",
+  "model": "ornith-ai/Ornith-1.5-9B-MLX-8bit",
+  "revision": "b4b70543d60c81e7c418a001b74cd4352212bd44",
+  "repository_bytes": 9536343460,
+  "runtime": "rapid-mlx 0.14.1 / MLX 0.32.1 / mlx-lm 0.31.3",
+  "stage_reached": "warmup completed, stable idle checkpoint not reached",
+  "status": "load_stability_failure",
+  "warmup": {
+    "http_status": 200,
+    "elapsed_seconds": 82.228,
+    "time_to_first_event_seconds": 54.988,
+    "completion_tokens": 1,
+    "artifact": "official-8bit-warmup.json"
+  },
+  "rapid_mlx_warning": {
+    "model_on_disk_gb": 8.9,
+    "estimated_working_set_gb": 13.3,
+    "currently_used_by_os_gb": 9.4,
+    "projected_system_ram_utilization_percent": 142,
+    "warning_text": "Memory pressure warning: this model is likely too large for your hardware. Continuing may trigger a macOS kernel panic."
+  },
+  "failure_evidence": {
+    "server_log": "/Users/<user>/.hermes/logs/local-llm/fast-20260917_095902.log",
+    "observed_event": "rapid-mlx received SIGTERM during/after lazy model loading; server subsequently completed the warm-up response and shut down cleanly",
+    "confirmed_oom": false,
+    "confirmed_kernel_panic": false,
+    "stable_idle_snapshot": false,
+    "active_inference_run": false,
+    "user_idle_rating": null,
+    "user_active_rating": null
+  },
+  "after_failure": {
+    "captured_at": "2026-09-17T08:01:27.980542+00:00",
+    "server_process_present": false,
+    "memory_pressure_free_percent": 71.0,
+    "swap_used_mb": 3650.75,
+    "artifacts": ["official-8bit-post-warmup-failure.json"]
+  },
+  "interpretation": "The official 8-bit model is not promoted as a usable EXP-002 configuration under the current rapid-mlx 0.14.1 launcher and normal workload. It reached warm-up completion but did not remain available long enough for a valid idle or active usability measurement. The warning and projected working set are evidence of a severe memory-safety margin, but the SIGTERM source is not proven to be OOM.",
+  "next_action": "Do not retry blindly. Analyze the complete 4/6/8-bit results and only attempt a separately approved diagnostic retry if identifying the SIGTERM source is necessary."
+}

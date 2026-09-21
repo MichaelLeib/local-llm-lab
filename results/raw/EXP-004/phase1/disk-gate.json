@@ -1,0 +1,15 @@
+{
+  "experiment": "EXP-004",
+  "gate": "disk_before_download",
+  "date": "2026-09-17",
+  "free_disk_gib_binary_approx": 20,
+  "model_bytes": 63387346208,
+  "model_gib_binary": 59.038,
+  "documented_minimum_free_gb": 80,
+  "temporary_build_space": "not yet measured; no model or full build started",
+  "model_present_locally": false,
+  "download_started": false,
+  "decision": "blocked",
+  "reason": "Insufficient internal SSD free space for the exact checkpoint plus temporary download/build headroom and safe reserve.",
+  "approval_needed_before_download": true
+}

@@ -1,0 +1,147 @@
+label=post-work
+pid=28505
+vm.swapusage: total = 2048.00M  used = 1161.81M  free = 886.19M  (encrypted)
+Mach Virtual Memory Statistics: (page size of 16384 bytes)
+Pages free:                                    66187.
+Pages active:                                 301253.
+Pages inactive:                               301183.
+Pages speculative:                              3669.
+Pages throttled:                                   0.
+Pages wired down:                             281782.
+Pages purgeable:                               14482.
+"Translation faults":                     1019837482.
+Pages copy-on-write:                        42021901.
+Pages zero filled:                         519758121.
+Pages reactivated:                         221123039.
+Pages purged:                               35080692.
+File-backed pages:                            315744.
+Anonymous pages:                              290361.
+Pages stored in compressor:                   124393.
+Pages occupied by compressor:                  57071.
+Decompressions:                            201976851.
+Compressions:                              224983193.
+Pageins:                                   126260412.
+Pageouts:                                     181119.
+Swapins:                                     3789413.
+Swapouts:                                    5001505.
+
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 66145 
+Pages purgeable: 14482 
+Pages purged: 35080692 
+
+Swap I/O:
+Swapins: 3789413 
+Swapouts: 5001505 
+
+Page Q counts:
+Pages active: 301256 
+Pages inactive: 301224 
+Pages speculative: 3669 
+Pages throttled: 0 
+Pages wired down: 281782 
+
+Compressor Stats:
+Pages used by compressor: 57071 
+Pages decompressed: 201976851 
+Pages compressed: 224983193 
+
+File I/O:
+Pageins: 126260417 
+Pageouts: 181119 
+
+System-wide memory free percentage: 66%
+
+28505 2472256 00:47 /opt/homebrew/bin/llama-server -m models/minicpm5-1b/MiniCPM5-1B-Q4_K_M.gguf --host 127.0.0.1 --port 8901 -ngl 99 -c 65536 --cache-type-k f16 --cache-type-v f16 --jinja --flash-attn on --no-warmup --no-reasoning-preserve -rea off --metrics --alias minicpm5-2b
+
+======================================================================
+llama-server [28505]: 64-bit    Footprint: 1736 MB (16384 bytes per page)
+======================================================================
+
+  Dirty      Clean  Reclaimable    Regions    Category
+    ---        ---          ---        ---    ---
+1588 MB        0 B          0 B         34    Untagged
+  65 MB        0 B          0 B         15    Malloc Large
+  40 MB        0 B          0 B         20    Owned physical footprint (unmapped) (graphics)
+  34 MB        0 B        27 MB         20    Malloc Small
+3456 KB        0 B       192 KB        104    IOAccelerator (graphics)
+1875 KB        0 B          0 B          1    page table
+1053 KB    1776 KB          0 B        420    __DATA
+ 816 KB        0 B        80 KB         10    Malloc Metadata
+ 557 KB        0 B          0 B        351    __DATA_DIRTY
+ 496 KB        0 B          0 B         34    Stack
+ 272 KB        0 B          0 B          1    Malloc Tiny
+ 167 KB        0 B          0 B       1164    unused dyld shared cache area
+ 128 KB        0 B          0 B          1    Dispatch Continuations
+  75 KB     288 KB          0 B        409    __DATA_CONST
+  70 KB        0 B          0 B        221    __AUTH
+  64 KB        0 B          0 B          2    IOAccelerator
+  64 KB        0 B          0 B          4    IOKit
+  48 KB        0 B          0 B          4    __TPRO_CONST
+  47 KB        0 B          0 B          1    __OBJC_RW
+  32 KB        0 B          0 B          1    Deferred Reclaim
+  32 KB        0 B          0 B          1    Activity Tracing
+  16 KB        0 B          0 B          1    OS Alloc Once
+    0 B     674 MB          0 B          9    mapped file
+    0 B    5552 KB          0 B        482    __TEXT
+    0 B     704 KB          0 B         14    __LINKEDIT
+    0 B        0 B          0 B          1    __CTF
+    0 B        0 B          0 B        399    __AUTH_CONST
+    0 B        0 B          0 B          1    __FONT_DATA
+    0 B        0 B          0 B          1    IOSurface
+    0 B        0 B          0 B          1    __OBJC_RO
+    ---        ---          ---        ---    ---
+1736 MB     682 MB        28 MB       3729    TOTAL
+
+Auxiliary data:
+    phys_footprint: 1736 MB
+    phys_footprint_peak: 1736 MB
+
+
+# HELP llamacpp:prompt_tokens_total Number of prompt tokens processed, excluding cached tokens
+# TYPE llamacpp:prompt_tokens_total counter
+llamacpp:prompt_tokens_total 23222
+# HELP llamacpp:prompt_tokens_cached_total Number of prompt tokens reused from the cache
+# TYPE llamacpp:prompt_tokens_cached_total counter
+llamacpp:prompt_tokens_cached_total 18
+# HELP llamacpp:prompt_seconds_total Total time spent processing prompts
+# TYPE llamacpp:prompt_seconds_total counter
+llamacpp:prompt_seconds_total 40.8037
+# HELP llamacpp:tokens_predicted_total Number of generation tokens processed
+# TYPE llamacpp:tokens_predicted_total counter
+llamacpp:tokens_predicted_total 355
+# HELP llamacpp:tokens_predicted_seconds_total Total time spent generating tokens
+# TYPE llamacpp:tokens_predicted_seconds_total counter
+llamacpp:tokens_predicted_seconds_total 4.09484
+# HELP llamacpp:n_decode_total Total number of llama_decode() calls, excluding speculative decoding and multimodal decoding
+# TYPE llamacpp:n_decode_total counter
+llamacpp:n_decode_total 366
+# HELP llamacpp:n_tokens_max Largest observed sequence length (prompt + generation)
+# TYPE llamacpp:n_tokens_max counter
+llamacpp:n_tokens_max 22851
+# HELP llamacpp:spec_decode_num_draft_tokens_total Speculative: Total draft tokens generated
+# TYPE llamacpp:spec_decode_num_draft_tokens_total counter
+llamacpp:spec_decode_num_draft_tokens_total 0
+# HELP llamacpp:spec_decode_num_accepted_tokens_total Speculative: Total draft tokens accepted by the target model
+# TYPE llamacpp:spec_decode_num_accepted_tokens_total counter
+llamacpp:spec_decode_num_accepted_tokens_total 0
+# HELP llamacpp:spec_decode_num_drafts_total Speculative: Total speculative decoding verification steps
+# TYPE llamacpp:spec_decode_num_drafts_total counter
+llamacpp:spec_decode_num_drafts_total 0
+# HELP llamacpp:prompt_tokens_seconds Average prompt throughput in tokens/s
+# TYPE llamacpp:prompt_tokens_seconds gauge
+llamacpp:prompt_tokens_seconds 569.115
+# HELP llamacpp:predicted_tokens_seconds Average generation throughput in tokens/s
+# TYPE llamacpp:predicted_tokens_seconds gauge
+llamacpp:predicted_tokens_seconds 84.985
+# HELP llamacpp:requests_processing Number of requests processing
+# TYPE llamacpp:requests_processing gauge
+llamacpp:requests_processing 0
+# HELP llamacpp:requests_deferred Number of requests deferred
+# TYPE llamacpp:requests_deferred gauge
+llamacpp:requests_deferred 0
+# HELP llamacpp:n_busy_slots_per_decode Average number of busy slots per llama_decode() call
+# TYPE llamacpp:n_busy_slots_per_decode gauge
+llamacpp:n_busy_slots_per_decode 1

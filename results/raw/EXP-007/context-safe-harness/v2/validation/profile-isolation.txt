@@ -1,0 +1,4 @@
+=== prompt-relevant profile equivalence ===
+config_equal_after_only_plugin_identifier_substitution
+=== profile/plugin isolation ===
+isolated_plugin_paths_confirmed

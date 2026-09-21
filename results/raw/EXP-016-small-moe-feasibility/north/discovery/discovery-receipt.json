@@ -1,0 +1,15 @@
+{
+  "timestamp_utc": "2026-09-19T09:26:05Z",
+  "source_repo": "CohereLabs/North-Mini-Code-1.0",
+  "source_revision": "d11e61a842617a22dc328552fa5bb86231ee4f37",
+  "gguf_repo": "unsloth/North-Mini-Code-1.0-GGUF",
+  "gguf_revision": "e306bb4bf0df610f5471d97a01de2b6e0b24d356",
+  "primary_4bit_options": {
+    "MXFP4_MOE.gguf": 18662121568,
+    "UD-Q4_K_M.gguf": 19203186784
+  },
+  "chosen_fallback": "North-Mini-Code-1.0-UD-Q3_K_M.gguf",
+  "chosen_fallback_size_bytes": 14213013600,
+  "chosen_representation": "GGUF UD-Q3_K_M",
+  "reason": "campaign requires 4-bit first; available 4-bit artifacts exceed practical 16 GiB memory envelope based on ERNIE and Instella measured gates; strongest available 3-bit fallback selected"
+}

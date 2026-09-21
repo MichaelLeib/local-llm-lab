@@ -1,0 +1,16 @@
+{
+  "completion_allowance": 4096,
+  "context_limit": 16384,
+  "initial_prompt_tokens": 4070,
+  "method": "conservative token-budget replay: sum(min(v1 exact original token count, v2 cap)); raw pre-hook text was not persisted",
+  "original_pre_hook_tool_result_tokens": 25250,
+  "pre_hook_to_v2_projected_reduction_tokens": 19399,
+  "projected_tool_budget_headroom": 2367,
+  "projected_v2_serialized_tool_tokens_upper_bound": 5851,
+  "tool_result_budget_after_initial_and_reserve": 8218,
+  "tool_results": 17,
+  "trace": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/results/candidate-K7/hermes/T01/20260918T070937Z/context-safe-tool-results.jsonl",
+  "v1_model_visible_tool_result_tokens": 11907,
+  "v1_to_v2_projected_reduction_tokens": 6056,
+  "v2_cap_tokens": 350
+}

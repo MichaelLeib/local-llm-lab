@@ -1,0 +1,61 @@
+{
+  "experiment": "EXP-003",
+  "checkpoint": "16_slot_comparison",
+  "status": "successful_text_generation_with_no_clear_speed_win",
+  "subjective_prerequisite": {"eight_slot_primary": 0, "eight_slot_transient_possible": 1, "sixteen_slot_primary": 0, "sixteen_slot_transient_possible": 1, "sixteen_slot_attribution": "possibly unrelated", "accepted_for_comparison": true},
+  "server": {
+    "pid": 41501,
+    "port": 18903,
+    "flags": {
+      "moe_n_slots": 16,
+      "moe_n_layers": 40,
+      "context": 2048,
+      "batch_size": 2048,
+      "ubatch_size": 1,
+      "no_mmap": true,
+      "no_warmup": true,
+      "gpu_layers": 99
+    },
+    "idle": {
+      "footprint_bytes": 3580776024,
+      "footprint_peak_bytes": 3636842072,
+      "ioaccelerator_alloc_bytes": 8728166400,
+      "ioaccelerator_in_use_bytes": 5197987840,
+      "simulated_free_percent": 40,
+      "swap_used_mb": 2158.12,
+      "artifact": "results/raw/EXP-003/16slot-idle.json"
+    },
+    "cleanup": {"endpoint_unreachable": true, "fast_down": true, "deep_down": true, "pid_after_stop": "defunct_only"}
+  },
+  "request": {
+    "artifact": "results/raw/EXP-003/16slot-request.json",
+    "metrics_artifact": "results/raw/EXP-003/16slot-metrics.jsonl",
+    "prompt_tokens": 45,
+    "generated_tokens": 128,
+    "prompt_tokens_per_second": 4.203497478041631,
+    "decode_tokens_per_second": 4.43446674030422,
+    "time_to_first_content_s": 10.725104093551636,
+    "elapsed_s": 39.58978796005249,
+    "content_chars": 661,
+    "finish_reason": "length",
+    "coherent_output": true,
+    "errors": []
+  },
+  "active_memory": {
+    "process_footprint_peak_bytes": 4203843232,
+    "process_footprint_peak_gb_decimal": 4.203843232,
+    "system_ioaccelerator_alloc_peak_bytes": 8866365440,
+    "system_ioaccelerator_in_use_peak_bytes": 5896142848,
+    "system_ioaccelerator_scope": "system-wide; compare against no-model baseline, not solely attributable to llama-server",
+    "simulated_free_percent_min": 31,
+    "swap_used_mb_min": 2142.12,
+    "swap_used_mb_max": 2150.12
+  },
+  "comparison_to_8_slots": {
+    "decode_tok_per_s": {"8slot_repeat_128": 4.317085039425105, "16slot": 4.43446674030422, "delta_percent": 2.72},
+    "active_process_footprint_gb": {"8slot_peak": 3.862547888, "16slot_peak": 4.203843232, "delta_gb": 0.341295344},
+    "system_gpu_alloc_peak_gb": {"8slot": 9.718710272, "16slot": 8.86636544, "delta_gb": -0.852344832, "interpretation": "global allocator variance; not a reliable slot-pool delta without repeated baselines"}
+  },
+  "correctness": {"http_200": true, "coherent_output": true, "no_missing_tensor_errors": true, "no_nan_or_gpu_errors": true, "reference_equivalence": "not yet tested"},
+  "decision": "16 slots generated successfully but has no meaningful measured speed advantage over 8 slots; do not automatically proceed to 24 or 32 slots."
+}

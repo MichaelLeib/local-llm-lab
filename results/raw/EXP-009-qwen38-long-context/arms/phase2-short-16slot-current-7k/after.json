@@ -1,0 +1,48 @@
+{
+  "at": "2026-09-18T13:11:17.577179+00:00",
+  "compression_pages": 96386,
+  "memory_pressure": {
+    "command": [
+      "memory_pressure",
+      "-Q"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "The system has 17179869184 (1048576 pages with a page size of 16384).\nSystem-wide memory free percentage: 69%\n"
+  },
+  "pageouts": 116604,
+  "swap_mib": 4315.06,
+  "swapouts": 357072,
+  "vm_pages": {
+    "\"Translation faults\"": 441761551,
+    "Anonymous pages": 107533,
+    "Compressions": 116755538,
+    "Decompressions": 100073111,
+    "File-backed pages": 89166,
+    "Pageins": 300292911,
+    "Pageouts": 116604,
+    "Pages active": 1272,
+    "Pages copy-on-write": 14990084,
+    "Pages free": 509287,
+    "Pages inactive": 182939,
+    "Pages occupied by compressor": 96386,
+    "Pages purgeable": 846,
+    "Pages purged": 22302115,
+    "Pages reactivated": 57502704,
+    "Pages speculative": 12488,
+    "Pages stored in compressor": 247650,
+    "Pages throttled": 0,
+    "Pages wired down": 208583,
+    "Pages zero filled": 354969242,
+    "Swapins": 81091,
+    "Swapouts": 357072
+  },
+  "vm_stat": {
+    "command": [
+      "vm_stat"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                   509287.\nPages active:                                   1272.\nPages inactive:                               182939.\nPages speculative:                             12488.\nPages throttled:                                   0.\nPages wired down:                             208583.\nPages purgeable:                                 846.\n\"Translation faults\":                      441761551.\nPages copy-on-write:                        14990084.\nPages zero filled:                         354969242.\nPages reactivated:                          57502704.\nPages purged:                               22302115.\nFile-backed pages:                             89166.\nAnonymous pages:                              107533.\nPages stored in compressor:                   247650.\nPages occupied by compressor:                  96386.\nDecompressions:                            100073111.\nCompressions:                              116755538.\nPageins:                                   300292911.\nPageouts:                                     116604.\nSwapins:                                       81091.\nSwapouts:                                     357072.\n"
+  }
+}

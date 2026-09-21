@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+import re, sys
+from pathlib import Path
+if len(sys.argv) != 3:
+    raise SystemExit('usage: summarize-failure RAW_LOG OUTPUT')
+lines=Path(sys.argv[1]).read_text(errors='replace').splitlines()
+rx=re.compile(r'error|exception|traceback|abort|oom|metal|assert|signal|failure',re.I)
+hits=[i for i,line in enumerate(lines) if rx.search(line)]
+selected=set()
+for i in hits:
+    selected.update(range(max(0,i-4),min(len(lines),i+6)))
+if not hits: selected=set(range(max(0,len(lines)-20),len(lines)))
+out=[]; last=-2
+for i in sorted(selected):
+    if i>last+1: out.append('...')
+    out.append(f'{i+1}: {lines[i]}'); last=i
+Path(sys.argv[2]).write_text('\n'.join(out[-50:])+'\n')
+print(f'matches={len(hits)} lines_written={min(50,len(out))}')

@@ -1,0 +1,509 @@
+=== build start ===
+2026-09-17T14:42:34+02:00
+swift-driver version: 1.168.6 Apple Swift version 6.4 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
+Target: arm64-apple-macosx27.0.0
+Fetching https://github.com/ibireme/yyjson.git
+Fetching https://github.com/huggingface/swift-transformers
+Fetching https://github.com/huggingface/swift-jinja.git
+Fetching https://github.com/apple/swift-asn1.git
+Fetching https://github.com/apple/swift-nio.git
+Fetching https://github.com/huggingface/swift-huggingface.git
+[1/1983] Fetching swift-asn1
+[41/8984] Fetching swift-asn1, swift-transformers
+[539/11608] Fetching swift-asn1, swift-transformers, swift-huggingface
+[750/12968] Fetching swift-asn1, swift-transformers, swift-huggingface, swift-jinja
+[6809/17867] Fetching swift-asn1, swift-transformers, swift-huggingface, swift-jinja, yyjson
+[11198/103838] Fetching swift-asn1, swift-transformers, swift-huggingface, swift-jinja, yyjson, swift-nio
+Fetched https://github.com/ibireme/yyjson.git (1.67s)
+Fetched https://github.com/huggingface/swift-huggingface.git (1.67s)
+[29258/96315] Fetching swift-asn1, swift-transformers, swift-jinja, swift-nio
+Fetching https://github.com/apple/swift-collections.git
+Fetching https://github.com/apple/swift-crypto.git
+[69665/114846] Fetching swift-asn1, swift-transformers, swift-jinja, swift-nio, swift-crypto
+[73239/142120] Fetching swift-asn1, swift-transformers, swift-jinja, swift-nio, swift-crypto, swift-collections
+Fetched https://github.com/apple/swift-collections.git (1.85s)
+Fetched https://github.com/apple/swift-crypto.git (1.85s)
+Fetching https://github.com/apple/swift-system.git
+Fetching https://github.com/apple/swift-atomics.git
+Fetched https://github.com/apple/swift-nio.git (4.22s)
+Fetched https://github.com/huggingface/swift-jinja.git (4.22s)
+Fetched https://github.com/huggingface/swift-transformers (4.22s)
+Computing version for https://github.com/apple/swift-nio.git
+Fetched https://github.com/apple/swift-asn1.git (4.22s)
+Fetching https://github.com/mattt/EventSource.git
+[1/1875] Fetching swift-atomics
+[1876/8773] Fetching swift-atomics, swift-system
+Computed https://github.com/apple/swift-nio.git at 2.99.0 (4.77s)
+Fetched https://github.com/apple/swift-system.git (1.20s)
+Fetched https://github.com/apple/swift-atomics.git (1.20s)
+Computing version for https://github.com/huggingface/swift-transformers
+[1/303] Fetching eventsource
+Fetched https://github.com/mattt/EventSource.git (0.73s)
+Computed https://github.com/huggingface/swift-transformers at 1.3.3 (0.45s)
+Computing version for https://github.com/apple/swift-system.git
+Computed https://github.com/apple/swift-system.git at 1.6.4 (0.45s)
+Computing version for https://github.com/apple/swift-collections.git
+Computed https://github.com/apple/swift-collections.git at 1.5.1 (0.47s)
+Computing version for https://github.com/apple/swift-atomics.git
+Computed https://github.com/apple/swift-atomics.git at 1.3.0 (0.42s)
+Computing version for https://github.com/ibireme/yyjson.git
+Computed https://github.com/ibireme/yyjson.git at 0.12.0 (7.05s)
+Computing version for https://github.com/apple/swift-crypto.git
+Computed https://github.com/apple/swift-crypto.git at 4.5.0 (1.41s)
+Computing version for https://github.com/huggingface/swift-huggingface.git
+Computed https://github.com/huggingface/swift-huggingface.git at 0.9.0 (0.40s)
+Computing version for https://github.com/huggingface/swift-jinja.git
+Computed https://github.com/huggingface/swift-jinja.git at 2.3.6 (0.29s)
+Computing version for https://github.com/apple/swift-asn1.git
+Computed https://github.com/apple/swift-asn1.git at 1.7.0 (0.33s)
+Computing version for https://github.com/mattt/EventSource.git
+Computed https://github.com/mattt/EventSource.git at 1.4.1 (0.38s)
+Creating working copy for https://github.com/apple/swift-crypto.git
+Working copy of https://github.com/apple/swift-crypto.git resolved at 4.5.0
+Creating working copy for https://github.com/ibireme/yyjson.git
+Working copy of https://github.com/ibireme/yyjson.git resolved at 0.12.0
+Creating working copy for https://github.com/huggingface/swift-transformers
+Working copy of https://github.com/huggingface/swift-transformers resolved at 1.3.3
+Creating working copy for https://github.com/apple/swift-atomics.git
+Working copy of https://github.com/apple/swift-atomics.git resolved at 1.3.0
+Creating working copy for https://github.com/apple/swift-asn1.git
+Working copy of https://github.com/apple/swift-asn1.git resolved at 1.7.0
+Creating working copy for https://github.com/huggingface/swift-jinja.git
+Working copy of https://github.com/huggingface/swift-jinja.git resolved at 2.3.6
+Creating working copy for https://github.com/mattt/EventSource.git
+Working copy of https://github.com/mattt/EventSource.git resolved at 1.4.1
+Creating working copy for https://github.com/apple/swift-collections.git
+Working copy of https://github.com/apple/swift-collections.git resolved at 1.5.1
+Creating working copy for https://github.com/huggingface/swift-huggingface.git
+Working copy of https://github.com/huggingface/swift-huggingface.git resolved at 0.9.0
+Creating working copy for https://github.com/apple/swift-nio.git
+Working copy of https://github.com/apple/swift-nio.git resolved at 2.99.0
+Creating working copy for https://github.com/apple/swift-system.git
+Working copy of https://github.com/apple/swift-system.git resolved at 1.6.4
+Building for production...
+[Computing dependencies]
+[Pre-planning 1 / 1509]
+[Planning deferred tasks]
+[284 / 557]
+[302 / 557]
+[315 / 565] InternalCollectionsUtilities
+[318 / 592] CNIOWindows
+[322 / 593] CNIOWASI
+[330 / 631]
+[333 / 631]
+[340 / 638]
+[348 / 684]
+[358 / 717]
+[367 / 717]
+[377 / 717]
+[396 / 717] CNIOLinux
+[412 / 727]
+[421 / 727] _AtomicsShims
+[425 / 740] CNIOLLHTTP
+[431 / 740]
+[438 / 740]
+[442 / 742]
+[446 / 742]
+[452 / 742]
+[456 / 742]
+[463 / 742]
+[466 / 742]
+[468 / 742]
+[471 / 742]
+[473 / 742]
+[477 / 742]
+[481 / 742]
+[482 / 742]
+[483 / 742]
+[484 / 742]
+[485 / 742] CNIOAtomics
+[486 / 742] yyjson
+[487 / 742]
+[495 / 742]
+[501 / 742]
+[502 / 742]
+[503 / 742]
+[511 / 742] NIOConcurrencyHelpers
+[514 / 742]
+[516 / 742] _NIOBase64
+[527 / 742]
+[529 / 742] _NIOBase64
+[536 / 742]
+[547 / 744]
+[551 / 746]
+[554 / 746]
+[561 / 747] DequeModule
+[565 / 748]
+[567 / 748] Atomics
+[573 / 748] OrderedCollections
+[580 / 749] DequeModule
+[587 / 750] Jinja
+[589 / 768] NIOCore
+[592 / 770]
+[594 / 770]
+[597 / 770]
+[598 / 770] Crypto
+[605 / 770] TurboFieldfareDecodeProtocol
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Package.swift: TurboFieldfareDecodeProtocol: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[611 / 770] NIOCore
+[620 / 773] NIOEmbedded
+[624 / 775] NIOPosix
+[630 / 781]
+[631 / 781] EventSource
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Package.swift: TurboFieldfareRepackCore: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[645 / 783] slipstream-repack-product
+[647 / 784] HuggingFace
+[653 / 838]
+[658 / 838]
+[663 / 838]
+[669 / 838]
+[671 / 838]
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Package.swift: slipstream-repack-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Package.swift: slipstream-repack-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[674 / 838]
+[676 / 838]
+[683 / 838]
+[684 / 838]
+[685 / 838]
+[691 / 838]
+[694 / 838]
+[699 / 838]
+[700 / 838]
+[701 / 838]
+[704 / 838]
+[706 / 838]
+[715 / 838]
+[716 / 838]
+[718 / 838]
+[722 / 838]
+[724 / 838]
+[726 / 838] NIOPosix
+[733 / 839] NIO
+[742 / 841] NIOHTTP1
+[745 / 843]
+[746 / 843]
+[747 / 843]
+[748 / 843] NIOHTTP1
+[754 / 843] Jinja
+[760 / 843] HuggingFace
+[767 / 844] Hub
+[778 / 939]
+[783 / 939]
+[796 / 939]
+[799 / 939]
+[800 / 939]
+[804 / 939]
+[810 / 939]
+[813 / 939]
+[815 / 939]
+[819 / 939]
+[820 / 939]
+[828 / 939]
+[834 / 939]
+[835 / 939]
+[839 / 939]
+[840 / 939]
+[849 / 939]
+[852 / 939]
+[856 / 939]
+[860 / 939]
+[861 / 939]
+[862 / 939]
+[863 / 939] Hub
+[870 / 940] Tokenizers
+[872 / 941] Tokenizers
+[879 / 942] TurboFieldfare
+[889 / 972]
+[893 / 972]
+[895 / 972]
+[902 / 972]
+[904 / 972]
+[906 / 972]
+[907 / 972]
+[908 / 972]
+[909 / 972]
+[910 / 972] TurboFieldfare
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Package.swift: TurboFieldfare: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[921 / 976] TurboFieldfare-product
+[921 / 976] TurboFieldfareCLICore
+[929 / 982]
+[930 / 982] TurboFieldfareCLICore
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Package.swift: TurboFieldfareCLICore: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[937 / 983] slipstream-product
+[939 / 984] slipstream-product
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Package.swift: slipstream-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Package.swift: slipstream-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[941 / 984] slipstream-product
+[942 / 984] TurboFieldfareAppCore
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Package.swift: TurboFieldfareAppCore: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[950 / 986] slipstream-product
+[951 / 986] TurboFieldfareMacPresentation
+[957 / 995]
+[959 / 995]
+[960 / 995] slipstream-decode-service-product
+[962 / 995]
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Package.swift: slipstream-decode-service-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Package.swift: slipstream-decode-service-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[964 / 995] slipstream-decode-service-product
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareServer/Core/ClientDisconnectWatcher.swift:44:41: [1;33mwarning: [1;39mcapture of 'context' with non-Sendable type 'ChannelHandlerContext' in a '@Sendable' closure[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures\SendableClosureCaptures]8;;\]
+[0;36m42 |[0;0m             // Hop to the event loop: the generation starts from a Task, not
+[0;36m43 |[0;0m             // from the loop that owns this channel.
+[0;36m44 |[0;0m             context.eventLoop.execute { context.read() }
+   [0;36m|[0;0m                                         `- [1;33mwarning: [1;39mcapture of 'context' with non-Sendable type 'ChannelHandlerContext' in a '@Sendable' closure[0;0m [#]8;;https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures\SendableClosureCaptures]8;;\]
+[0;36m45 |[0;0m         }
+[0;36m46 |[0;0m     }
+
+NIOCore.ChannelHandlerContext:1:20: [1;39mnote: [1;39mclass 'ChannelHandlerContext' does not conform to the 'Sendable' protocol[0;0m
+ [0;36m1 |[0;0m final public class ChannelHandlerContext : NIOCore.ChannelInvoker {
+   [0;36m|[0;0m                    `- [1;39mnote: [1;39mclass 'ChannelHandlerContext' does not conform to the 'Sendable' protocol[0;0m
+ [0;36m2 |[0;0m     public let pipeline: NIOCore.ChannelPipeline
+ [0;36m3 |[0;0m     public var channel: any NIOCore.Channel { get }
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareServer/Core/HTTPServer.swift:56:21: [1;33mwarning: [1;39mtype 'ClientDisconnectWatcher' does not conform to the 'Sendable' protocol[0;0m
+ [0;36m54 |[0;0m                 let cancellation = GenerationCancellation()
+ [0;36m55 |[0;0m                 return channel.pipeline.addHandler(
+ [0;36m56 |[0;0m                     ClientDisconnectWatcher(cancellation: cancellation)
+    [0;36m|[0;0m                     `- [1;33mwarning: [1;39mtype 'ClientDisconnectWatcher' does not conform to the 'Sendable' protocol[0;0m
+ [0;36m57 |[0;0m                 ).flatMap {
+ [0;36m58 |[0;0m                     channel.pipeline.configureHTTPServerPipeline(
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareServer/Core/ClientDisconnectWatcher.swift:27:13: [1;39mnote: [1;39mclass 'ClientDisconnectWatcher' does not conform to the 'Sendable' protocol[0;0m
+[0;36m25 |[0;0m /// `ChannelEvent.inputClosed` (the channel is configured with
+[0;36m26 |[0;0m /// `allowRemoteHalfClosure`) or as `channelInactive` on a full close.
+[0;36m27 |[0;0m final class ClientDisconnectWatcher: ChannelInboundHandler {
+   [0;36m|[0;0m             `- [1;39mnote: [1;39mclass 'ClientDisconnectWatcher' does not conform to the 'Sendable' protocol[0;0m
+[0;36m28 |[0;0m     typealias InboundIn = ByteBuffer
+[0;36m29 |[0;0m     typealias InboundOut = ByteBuffer
+
+[#SendableClosureCaptures]: <https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures>
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Package.swift: TurboFieldfareServerCore: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[972 / 996] slipstream-server-product
+[974 / 997] TurboFieldfareValidationSupport
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Package.swift: TurboFieldfareValidationSupport: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Package.swift: slipstream-server-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Package.swift: slipstream-server-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[983 / 997] slipstream-server-product
+[984 / 997] slipstream-server-product
+[985 / 997]
+[986 / 997] TurboFieldfareMacPresentation
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Package.swift: TurboFieldfareMacPresentation: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+[993 / 998] slipstream-mac-product
+error: SwiftCompile normal arm64 failed with a nonzero exit code. Command line:     cd /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source
+    
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/App/RootView.swift:7:24: [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+  [0;36m5 |[0;0m struct RootView: View {
+  [0;36m6 |[0;0m     let model: AppModel
+  [0;36m7 |[0;0m     @State private var conversationChromeHeight: CGFloat = 0
+    [0;36m|[0;0m                        `- [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+  [0;36m8 |[0;0m 
+  [0;36m9 |[0;0m     var body: some View {
+
+SwiftUI.State:1:145: [1;39mnote: [1;39m'State()' declared here[0;0m
+[0;36m1 |[0;0m @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  [0;36m|[0;0m                                                                                                                                                 `- [1;39mnote: [1;39m'State()' declared here[0;0m
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/App/RootView.swift:7:24: [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+  [0;36m5 |[0;0m struct RootView: View {
+  [0;36m6 |[0;0m     let model: AppModel
+  [0;36m7 |[0;0m     @State private var conversationChromeHeight: CGFloat = 0
+    [0;36m|[0;0m                        `- [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+  [0;36m8 |[0;0m 
+  [0;36m9 |[0;0m     var body: some View {
+
+SwiftUI.State:1:145: [1;39mnote: [1;39m'State()' declared here[0;0m
+[0;36m1 |[0;0m @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  [0;36m|[0;0m                                                                                                                                                 `- [1;39mnote: [1;39m'State()' declared here[0;0m
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Installation/ModelInstallView.swift:7:24: [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+  [0;36m5 |[0;0m struct ModelInstallView: View {
+  [0;36m6 |[0;0m     let model: AppModel
+  [0;36m7 |[0;0m     @State private var showingDiscardConfirmation = false
+    [0;36m|[0;0m                        `- [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+  [0;36m8 |[0;0m 
+  [0;36m9 |[0;0m     var body: some View {
+
+SwiftUI.State:1:145: [1;39mnote: [1;39m'State()' declared here[0;0m
+[0;36m1 |[0;0m @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  [0;36m|[0;0m                                                                                                                                                 `- [1;39mnote: [1;39m'State()' declared here[0;0m
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Installation/ModelInstallView.swift:7:24: [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+  [0;36m5 |[0;0m struct ModelInstallView: View {
+  [0;36m6 |[0;0m     let model: AppModel
+  [0;36m7 |[0;0m     @State private var showingDiscardConfirmation = false
+    [0;36m|[0;0m                        `- [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+  [0;36m8 |[0;0m 
+  [0;36m9 |[0;0m     var body: some View {
+
+SwiftUI.State:1:145: [1;39mnote: [1;39m'State()' declared here[0;0m
+[0;36m1 |[0;0m @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  [0;36m|[0;0m                                                                                                                                                 `- [1;39mnote: [1;39m'State()' declared here[0;0m
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Generation/OutputPaneView.swift:8:24: [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+  [0;36m6 |[0;0m struct OutputPaneView: View {
+  [0;36m7 |[0;0m     let model: AppModel
+  [0;36m8 |[0;0m     @State private var responseCopyFeedbackID: UUID?
+    [0;36m|[0;0m                        `- [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+  [0;36m9 |[0;0m 
+ [0;36m10 |[0;0m     var body: some View {
+
+SwiftUI.State:1:145: [1;39mnote: [1;39m'State()' declared here[0;0m
+[0;36m1 |[0;0m @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  [0;36m|[0;0m                                                                                                                                                 `- [1;39mnote: [1;39m'State()' declared here[0;0m
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Generation/OutputPaneView.swift:8:24: [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+  [0;36m6 |[0;0m struct OutputPaneView: View {
+  [0;36m7 |[0;0m     let model: AppModel
+  [0;36m8 |[0;0m     @State private var responseCopyFeedbackID: UUID?
+    [0;36m|[0;0m                        `- [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+  [0;36m9 |[0;0m 
+ [0;36m10 |[0;0m     var body: some View {
+
+SwiftUI.State:1:145: [1;39mnote: [1;39m'State()' declared here[0;0m
+[0;36m1 |[0;0m @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  [0;36m|[0;0m                                                                                                                                                 `- [1;39mnote: [1;39m'State()' declared here[0;0m
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/App/RootView.swift:84:21: [1;31merror: [1;39mcannot assign to property: 'self' is immutable[0;0m
+ [0;36m82 |[0;0m                 transaction.disablesAnimations = true
+ [0;36m83 |[0;0m                 withTransaction(transaction) {
+ [0;36m84 |[0;0m                     [4;39mconversationChromeHeight[0;0m = height
+    [0;36m|[0;0m                     `- [1;31merror: [1;39mcannot assign to property: 'self' is immutable[0;0m
+ [0;36m85 |[0;0m                 }
+ [0;36m86 |[0;0m             }
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Generation/PromptComposerView.swift:7:24: [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+  [0;36m5 |[0;0m     @Bindable var model: AppModel
+  [0;36m6 |[0;0m     @FocusState private var promptFocused: Bool
+  [0;36m7 |[0;0m     @State private var showingPromptTips = false
+    [0;36m|[0;0m                        `- [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+  [0;36m8 |[0;0m 
+  [0;36m9 |[0;0m     var body: some View {
+
+SwiftUI.State:1:145: [1;39mnote: [1;39m'State()' declared here[0;0m
+[0;36m1 |[0;0m @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  [0;36m|[0;0m                                                                                                                                                 `- [1;39mnote: [1;39m'State()' declared here[0;0m
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Generation/PromptComposerView.swift:7:24: [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+  [0;36m5 |[0;0m     @Bindable var model: AppModel
+  [0;36m6 |[0;0m     @FocusState private var promptFocused: Bool
+  [0;36m7 |[0;0m     @State private var showingPromptTips = false
+    [0;36m|[0;0m                        `- [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+  [0;36m8 |[0;0m 
+  [0;36m9 |[0;0m     var body: some View {
+
+SwiftUI.State:1:145: [1;39mnote: [1;39m'State()' declared here[0;0m
+[0;36m1 |[0;0m @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  [0;36m|[0;0m                                                                                                                                                 `- [1;39mnote: [1;39m'State()' declared here[0;0m
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/App/TurboFieldfareMacApp.swift:29:24: [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+[0;36m27 |[0;0m struct TurboFieldfareMacApp: App {
+[0;36m28 |[0;0m     @NSApplicationDelegateAdaptor private var appDelegate: ForegroundAppDelegate
+[0;36m29 |[0;0m     @State private var model: AppModel
+   [0;36m|[0;0m                        `- [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+[0;36m30 |[0;0m 
+[0;36m31 |[0;0m     init() {
+
+SwiftUI.State:1:145: [1;39mnote: [1;39m'State()' declared here[0;0m
+[0;36m1 |[0;0m @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  [0;36m|[0;0m                                                                                                                                                 `- [1;39mnote: [1;39m'State()' declared here[0;0m
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/App/TurboFieldfareMacApp.swift:29:24: [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+[0;36m27 |[0;0m struct TurboFieldfareMacApp: App {
+[0;36m28 |[0;0m     @NSApplicationDelegateAdaptor private var appDelegate: ForegroundAppDelegate
+[0;36m29 |[0;0m     @State private var model: AppModel
+   [0;36m|[0;0m                        `- [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+[0;36m30 |[0;0m 
+[0;36m31 |[0;0m     init() {
+
+SwiftUI.State:1:145: [1;39mnote: [1;39m'State()' declared here[0;0m
+[0;36m1 |[0;0m @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  [0;36m|[0;0m                                                                                                                                                 `- [1;39mnote: [1;39m'State()' declared here[0;0m
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/App/TurboFieldfareMacApp.swift:32:9: [1;31merror: [1;39mcannot find '_model' in scope[0;0m
+[0;36m30 |[0;0m 
+[0;36m31 |[0;0m     init() {
+[0;36m32 |[0;0m         [4;39m_model[0;0m = State(initialValue: AppModel(
+   [0;36m|[0;0m         `- [1;31merror: [1;39mcannot find '_model' in scope[0;0m
+[0;36m33 |[0;0m             client: DecodeServiceInferenceClient(),
+[0;36m34 |[0;0m             settingsPersistenceEnabled: true))
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Generation/OutputPaneView.swift:235:24: [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+[0;36m233 |[0;0m private struct LoadingModelText: View {
+[0;36m234 |[0;0m     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+[0;36m235 |[0;0m     @State private var animationStart = Date()
+    [0;36m|[0;0m                        `- [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+[0;36m236 |[0;0m 
+[0;36m237 |[0;0m     var body: some View {
+
+SwiftUI.State:1:145: [1;39mnote: [1;39m'State()' declared here[0;0m
+[0;36m1 |[0;0m @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  [0;36m|[0;0m                                                                                                                                                 `- [1;39mnote: [1;39m'State()' declared here[0;0m
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Generation/OutputPaneView.swift:235:24: [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+[0;36m233 |[0;0m private struct LoadingModelText: View {
+[0;36m234 |[0;0m     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+[0;36m235 |[0;0m     @State private var animationStart = Date()
+    [0;36m|[0;0m                        `- [1;31merror: [1;39mexternal macro implementation type 'SwiftUIMacros.StateMacro' could not be found for macro 'State()'; plugin for module 'SwiftUIMacros' not found[0;0m
+[0;36m236 |[0;0m 
+[0;36m237 |[0;0m     var body: some View {
+
+SwiftUI.State:1:145: [1;39mnote: [1;39m'State()' declared here[0;0m
+[0;36m1 |[0;0m @attached(accessor, names: named(init), named(get), named(set)) @attached(peer, names: prefixed(`_`), prefixed(__), prefixed(`$`)) public macro State() = #externalMacro(module: "SwiftUIMacros", type: "StateMacro")
+  [0;36m|[0;0m                                                                                                                                                 `- [1;39mnote: [1;39m'State()' declared here[0;0m
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Generation/OutputPaneView.swift:23:17: [1;31merror: [1;39mcannot assign to property: 'self' is immutable[0;0m
+ [0;36m21 |[0;0m             guard !Task.isCancelled, responseCopyFeedbackID == feedbackID else { return }
+ [0;36m22 |[0;0m             withAnimation(.easeOut(duration: 0.15)) {
+ [0;36m23 |[0;0m                 [4;39mresponseCopyFeedbackID[0;0m = nil
+    [0;36m|[0;0m                 `- [1;31merror: [1;39mcannot assign to property: 'self' is immutable[0;0m
+ [0;36m24 |[0;0m             }
+ [0;36m25 |[0;0m         }
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Generation/OutputPaneView.swift:180:13: [1;31merror: [1;39mcannot assign to property: 'self' is immutable[0;0m
+[0;36m175 |[0;0m     }
+[0;36m176 |[0;0m 
+[0;36m177 |[0;0m     private func copyResponse() {
+    [0;36m|[0;0m             `- [1;39mnote: [1;39mmark method 'mutating' to make 'self' mutable[0;0m
+[0;36m178 |[0;0m         copy(model.outputResponsePlainText)
+[0;36m179 |[0;0m         withAnimation(.easeIn(duration: 0.15)) {
+[0;36m180 |[0;0m             [4;39mresponseCopyFeedbackID[0;0m = UUID()
+    [0;36m|[0;0m             `- [1;31merror: [1;39mcannot assign to property: 'self' is immutable[0;0m
+[0;36m181 |[0;0m         }
+[0;36m182 |[0;0m     }
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Generation/PromptComposerView.swift:70:31: [1;31merror: [1;39mcannot find '$showingPromptTips' in scope[0;0m
+ [0;36m68 |[0;0m         .foregroundStyle(.secondary)
+ [0;36m69 |[0;0m         .help("Prompt tips")
+ [0;36m70 |[0;0m         .popover(isPresented: [4;39m$showingPromptTips[0;0m,
+    [0;36m|[0;0m                               `- [1;31merror: [1;39mcannot find '$showingPromptTips' in scope[0;0m
+ [0;36m71 |[0;0m                  attachmentAnchor: .point(.top),
+ [0;36m72 |[0;0m                  arrowEdge: .top) {
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Generation/PromptComposerView.swift:60:31: [1;31merror: [1;39mcannot use mutating member on immutable value: 'self' is immutable[0;0m
+ [0;36m58 |[0;0m     private var promptTips: some View {
+ [0;36m59 |[0;0m         Button {
+ [0;36m60 |[0;0m             [4;39mshowingPromptTips[0;0m.toggle()
+    [0;36m|[0;0m                               `- [1;31merror: [1;39mcannot use mutating member on immutable value: 'self' is immutable[0;0m
+ [0;36m61 |[0;0m         } label: {
+ [0;36m62 |[0;0m             Label("Prompt tips", systemImage: "questionmark.circle")
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Installation/ModelInstallView.swift:24:26: [1;31merror: [1;39mcannot find '$showingDiscardConfirmation' in scope[0;0m
+ [0;36m22 |[0;0m         .confirmationDialog(
+ [0;36m23 |[0;0m             "Discard the saved model download?",
+ [0;36m24 |[0;0m             isPresented: [4;39m$showingDiscardConfirmation[0;0m,
+    [0;36m|[0;0m                          `- [1;31merror: [1;39mcannot find '$showingDiscardConfirmation' in scope[0;0m
+ [0;36m25 |[0;0m             titleVisibility: .visible
+ [0;36m26 |[0;0m         ) {
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Installation/ModelInstallView.swift:170:25: [1;31merror: [1;39mcannot assign to property: 'self' is immutable[0;0m
+[0;36m168 |[0;0m                 if model.hasPartialModelDownload {
+[0;36m169 |[0;0m                     Button("Discard Download", role: .destructive) {
+[0;36m170 |[0;0m                         [4;39mshowingDiscardConfirmation[0;0m = true
+    [0;36m|[0;0m                         `- [1;31merror: [1;39mcannot assign to property: 'self' is immutable[0;0m
+[0;36m171 |[0;0m                     }
+[0;36m172 |[0;0m                     .buttonStyle(.bordered)
+Failed frontend command:
+/Library/Developer/CommandLineTools/usr/bin/swift-frontend -frontend -c /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/DerivedSources/resource_bundle_accessor.swift /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/App/RootView.swift /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/App/TurboFieldfareMacApp.swift /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Components/ErrorBanner.swift /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Components/GenerateControl.swift /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Components/HUDMetricView.swift /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Components/ModelStatusBadge.swift /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Diagnostics/InspectorView.swift /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Diagnostics/MetricFormat.swift /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Diagnostics/RunnerDiagnosticsSection.swift /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Diagnostics/StatusHUDView.swift /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Generation/OutputPaneView.swift /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Generation/PromptComposerView.swift /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Generation/PromptExamplesView.swift /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/Sources/TurboFieldfareApp/Mac/Installation/ModelInstallView.swift -supplementary-output-file-map /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/supplementaryOutputs-26 -target arm64-apple-macos26.0 -disable-cross-import-overlay-search -load-resolved-plugin /Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/libObservationMacros.dylib\#\#ObservationMacros -load-resolved-plugin /Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/libSwiftMacros.dylib\#\#SwiftMacros -disable-implicit-swift-modules -Xcc -fno-implicit-modules -Xcc -fno-implicit-module-maps -explicit-swift-module-map-file /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/TurboFieldfareMac-dependencies-1.json -Xllvm -aarch64-use-tbi -enable-objc-interop -stack-check -sdk /Library/Developer/CommandLineTools/SDKs/MacOSX27.0.sdk -I /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Products/Release -Isystem /Library/Developer/CommandLineTools/Developer/usr/lib -F /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Products/Release/PackageFrameworks -F /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Products/Release -F /Library/Developer/CommandLineTools/Library/Developer/Frameworks -F /Library/Developer/CommandLineTools/Developer/Library/Frameworks -module-cache-path /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -color-diagnostics -Xcc -fcolor-diagnostics -g -debug-info-format\=dwarf -dwarf-version\=5 -swift-version 6 -O -D SWIFT_PACKAGE -D SWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE -D Xcode -serialize-debugging-options -enable-experimental-feature DebugDescriptionMacro -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source -file-compilation-dir /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source -Xcc -fmodule-map-file\=/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/checkouts/swift-atomics/Sources/_AtomicsShims/include/module.modulemap -Xcc -fmodule-map-file\=/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/GeneratedModuleMaps/CNIOWASI.modulemap -Xcc -fmodule-map-file\=/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/checkouts/swift-nio/Sources/CNIOWindows/include/module.modulemap -Xcc -fmodule-map-file\=/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/GeneratedModuleMaps/CNIOLinux.modulemap -Xcc -fmodule-map-file\=/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/GeneratedModuleMaps/CNIODarwin.modulemap -Xcc -fmodule-map-file\=/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/GeneratedModuleMaps/CNIOOpenBSD.modulemap -Xcc -fmodule-map-file\=/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/GeneratedModuleMaps/CNIOAtomics.modulemap -Xcc -fmodule-map-file\=/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/GeneratedModuleMaps/yyjson.modulemap -Xcc -ivfsstatcache -Xcc /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/SDKStatCaches.noindex/macosx27.0-26A425-a0facfad118c1a7a18f0aad9463f6549ffd68ff603bdaacc80b00cb8898de72d.sdkstatcache -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -Xcc -I/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/checkouts/swift-atomics/Sources/_AtomicsShims/include -Xcc -I/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/checkouts/swift-nio/Sources/CNIOWASI/include -Xcc -I/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/checkouts/swift-nio/Sources/CNIOWindows/include -Xcc -I/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/checkouts/swift-nio/Sources/CNIOLinux/include -Xcc -I/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/checkouts/swift-nio/Sources/CNIODarwin/include -Xcc -I/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/checkouts/swift-nio/Sources/CNIOOpenBSD/include -Xcc -I/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/checkouts/swift-nio/Sources/CNIOAtomics/include -Xcc -I/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/checkouts/yyjson/src -Xcc -I/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Products/Release/include -Xcc -I/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/DerivedSources-normal/arm64 -Xcc -I/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/DerivedSources/arm64 -Xcc -I/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/DerivedSources -Xcc -DSWIFT_PACKAGE -no-auto-bridging-header-chaining -module-name TurboFieldfareMac -package-name slipstream -const-gather-protocols-file /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/slipstream-mac_const_extract_protocols.json -disable-clang-spi -clang-target arm64-apple-macos27.0 -target-sdk-version 27.0 -target-sdk-name macosx27.0 -in-process-plugin-server-path /Library/Developer/CommandLineTools/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -enable-default-cmo -parse-as-library -num-threads 8 -o /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/resource_bundle_accessor.o -o /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/RootView.o -o /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/TurboFieldfareMacApp.o -o /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/ErrorBanner.o -o /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/GenerateControl.o -o /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/HUDMetricView.o -o /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/ModelStatusBadge.o -o /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/InspectorView.o -o /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/MetricFormat.o -o /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/RunnerDiagnosticsSection.o -o /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/StatusHUDView.o -o /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/OutputPaneView.o -o /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/PromptComposerView.o -o /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/PromptExamplesView.o -o /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/ModelInstallView.o -debug-module-path /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Intermediates.noindex/TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/TurboFieldfareMac.swiftmodule -index-unit-output-path /TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/resource_bundle_accessor.o -index-unit-output-path /TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/RootView.o -index-unit-output-path /TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/TurboFieldfareMacApp.o -index-unit-output-path /TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/ErrorBanner.o -index-unit-output-path /TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/GenerateControl.o -index-unit-output-path /TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/HUDMetricView.o -index-unit-output-path /TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/ModelStatusBadge.o -index-unit-output-path /TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/InspectorView.o -index-unit-output-path /TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/MetricFormat.o -index-unit-output-path /TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/RunnerDiagnosticsSection.o -index-unit-output-path /TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/StatusHUDView.o -index-unit-output-path /TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/OutputPaneView.o -index-unit-output-path /TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/PromptComposerView.o -index-unit-output-path /TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/PromptExamplesView.o -index-unit-output-path /TurboFieldfare.build/Release/slipstream-mac-p.build/Objects-normal/arm64/ModelInstallView.o
+error: Build failed
+=== build exit ===
+2026-09-17T14:44:59+02:00
+build_exit=0

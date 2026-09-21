@@ -1,0 +1,350 @@
+npm notice run @amos-labs/expertcache@0.1.0 runtime:prepare
+npm notice run node scripts/prepareExpertCacheRuntime.js --dir /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/expertcache/../llama.cpp-expertcache
+From https://github.com/ggml-org/llama.cpp
+ * branch                7e1e28cae36d41fe7bbe9dae7c9625de6565c063 -> FETCH_HEAD
+HEAD is now at 7e1e28cae mtmd : add Nemotron 3 Nano Omni support (parakeet) (#22520)
+CMAKE_BUILD_TYPE=Release
+CMake Warning at ggml/src/CMakeLists.txt:231 (message):
+  OpenMP not found
+
+
+CMake Warning at ggml/src/ggml-cpu/CMakeLists.txt:138 (message):
+  ARM -march/-mcpu not found, -mcpu=native will be used
+Call Stack (most recent call first):
+  ggml/src/CMakeLists.txt:470 (ggml_add_cpu_backend_variant_impl)
+
+
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/ggml/src/ggml-metal/ggml-metal-device.m:842:63: warning: 'location' is deprecated: first deprecated in macOS 27.0 - Not applicable on Apple Silicon [-Wdeprecated-declarations]
+  842 |             dev->props.use_shared_buffers |= [dev->mtl_device location] == MTLDeviceLocationExternal;
+      |                                                               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLDevice.h:530:40: note: property 'location' is declared deprecated here
+  530 | @property (readonly) MTLDeviceLocation location API_DEPRECATED("Not applicable on Apple Silicon", macos(10.15, 27.0)) API_UNAVAILABLE(ios);
+      |                                        ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLDevice.h:530:40: note: 'location' has been explicitly marked deprecated here
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/ggml/src/ggml-metal/ggml-metal-device.m:842:76: warning: 'MTLDeviceLocationExternal' is deprecated: first deprecated in macOS 27.0 - Not applicable on Apple Silicon [-Wdeprecated-declarations]
+  842 |             dev->props.use_shared_buffers |= [dev->mtl_device location] == MTLDeviceLocationExternal;
+      |                                                                            ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLDevice.h:263:29: note: 'MTLDeviceLocation' has been explicitly marked deprecated here
+  263 | typedef NS_ENUM(NSUInteger, MTLDeviceLocation)
+      |                             ^
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/ggml/src/ggml-metal/ggml-metal-device.m:893:30: warning: 'MTLGPUFamilyCommon1' is deprecated: first deprecated in macOS 27.0 [-Wdeprecated-declarations]
+  893 |                 for (int i = MTLGPUFamilyCommon1 + 5; i >= MTLGPUFamilyCommon1; --i) {
+      |                              ^~~~~~~~~~~~~~~~~~~
+      |                              MTLGPUFamilyApple1
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLDevice.h:248:5: note: 'MTLGPUFamilyCommon1' has been explicitly marked deprecated here
+  248 |     MTLGPUFamilyCommon1 API_DEPRECATED_WITH_REPLACEMENT("MTLGPUFamilyApple1", macos(10.15, 27.0), ios(13.0, 27.0)) = 3001,
+      |     ^
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/ggml/src/ggml-metal/ggml-metal-device.m:893:60: warning: 'MTLGPUFamilyCommon1' is deprecated: first deprecated in macOS 27.0 [-Wdeprecated-declarations]
+  893 |                 for (int i = MTLGPUFamilyCommon1 + 5; i >= MTLGPUFamilyCommon1; --i) {
+      |                                                            ^~~~~~~~~~~~~~~~~~~
+      |                                                            MTLGPUFamilyApple1
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLDevice.h:248:5: note: 'MTLGPUFamilyCommon1' has been explicitly marked deprecated here
+  248 |     MTLGPUFamilyCommon1 API_DEPRECATED_WITH_REPLACEMENT("MTLGPUFamilyApple1", macos(10.15, 27.0), ios(13.0, 27.0)) = 3001,
+      |     ^
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/ggml/src/ggml-metal/ggml-metal-device.m:895:106: warning: 'MTLGPUFamilyCommon1' is deprecated: first deprecated in macOS 27.0 [-Wdeprecated-declarations]
+  895 |                         GGML_LOG_INFO("%s: GPU family: MTLGPUFamilyCommon%d (%d)\n", __func__, i - (int) MTLGPUFamilyCommon1 + 1, i);
+      |                                                                                                          ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLDevice.h:248:5: note: 'MTLGPUFamilyCommon1' has been explicitly marked deprecated here
+  248 |     MTLGPUFamilyCommon1 API_DEPRECATED_WITH_REPLACEMENT("MTLGPUFamilyApple1", macos(10.15, 27.0), ios(13.0, 27.0)) = 3001,
+      |     ^
+5 warnings generated.
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/ggml/src/ggml-metal/ggml-metal-ops.cpp:241:16: warning: function 'run' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+  241 |     void run() {
+      |                ^
+1 warning generated.
+
+current asset files:
+    _app/env.js
+    _app/immutable/assets/bundle.D7LDmMTE.css
+    _app/immutable/bundle.JiNVdvZy.js
+    apple-splash-landscape-dark-2388x1668.png
+    apple-splash-landscape-dark-2532x1170.png
+    apple-splash-landscape-dark-2556x1179.png
+    apple-splash-landscape-dark-2622x1206.png
+    apple-splash-landscape-dark-2732x2048.png
+    apple-splash-landscape-dark-2778x1284.png
+    apple-splash-landscape-dark-2796x1290.png
+    apple-splash-landscape-dark-2868x1320.png
+    apple-splash-portrait-1170x2532.png
+    apple-splash-portrait-1179x2556.png
+    apple-splash-portrait-1206x2622.png
+    apple-splash-portrait-1284x2778.png
+    apple-splash-portrait-1290x2796.png
+    apple-splash-portrait-1320x2868.png
+    apple-splash-portrait-1488x2266.png
+    apple-splash-portrait-1640x2360.png
+    apple-splash-portrait-1668x2388.png
+    apple-splash-portrait-2048x2732.png
+    apple-splash-portrait-640x1136.png
+    apple-splash-portrait-750x1334.png
+    apple-splash-portrait-dark-1170x2532.png
+    apple-splash-portrait-dark-1179x2556.png
+    apple-splash-portrait-dark-1206x2622.png
+    apple-splash-portrait-dark-1284x2778.png
+    apple-splash-portrait-dark-1290x2796.png
+    apple-splash-portrait-dark-1320x2868.png
+    apple-splash-portrait-dark-1488x2266.png
+    apple-splash-portrait-dark-1640x2360.png
+    apple-splash-portrait-dark-1668x2388.png
+    apple-splash-portrait-dark-2048x2732.png
+    apple-splash-portrait-dark-640x1136.png
+    apple-splash-portrait-dark-750x1334.png
+    apple-touch-icon-180x180.png
+    build.json
+    favicon-dark.ico
+    favicon-dark.svg
+    favicon.ico
+    favicon.svg
+    index.html
+    manifest.webmanifest
+    maskable-icon-512x512.png
+    pwa-192x192.png
+    pwa-512x512.png
+    pwa-64x64.png
+    recommended-mcp/context7.png
+    recommended-mcp/exa.ico
+    recommended-mcp/github-dark.png
+    recommended-mcp/github-light.png
+    recommended-mcp/huggingface.ico
+    sw.js
+    workbox-b3c04f83.js
+missing required asset(s):
+    version.json
+hint: try cleaning your build directory: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/dist/_gzip
+CMake Error at /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/scripts/ui-assets.cmake:291 (message):
+  UI: llama-ui-embed failed (1)
+Call Stack (most recent call first):
+  /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/scripts/ui-assets.cmake:367 (emit_files)
+
+
+make[3]: *** [tools/ui/CMakeFiles/llama-ui-assets] Error 1
+make[2]: *** [tools/ui/CMakeFiles/llama-ui-assets.dir/all] Error 2
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [tools/server/CMakeFiles/llama-server.dir/rule] Error 2
+make: *** [llama-server] Error 2
+node:internal/errors:999
+  const err = new Error(message);
+              ^
+
+Error: Command failed: cmake --build /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal --config Release --target llama-cli llama-server llama-bench test-backend-ops -j 4
+    at genericNodeError (node:internal/errors:999:15)
+    at wrappedFn (node:internal/errors:544:14)
+    at checkExecSyncError (node:child_process:942:11)
+    at execFileSync (node:child_process:978:15)
+    at run (file:///Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/expertcache/scripts/prepareExpertCacheRuntime.js:120:10)
+    at file:///Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/expertcache/scripts/prepareExpertCacheRuntime.js:80:3 {
+  status: 2,
+  signal: null,
+  output: [
+    null,
+    '[  3%] Building CXX object vendor/cpp-httplib/CMakeFiles/cpp-httplib.dir/httplib.cpp.o\n' +
+      '[  3%] Building CXX object tools/ui/CMakeFiles/llama-ui-embed.dir/embed.cpp.o\n' +
+      '[  3%] Building CXX object common/CMakeFiles/llama-common-base.dir/build-info.cpp.o\n' +
+      '[  3%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o\n' +
+      '[  3%] Linking CXX static library libllama-common-base.a\n' +
+      '[  3%] Built target llama-common-base\n' +
+      '[  3%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.o\n' +
+      '[  3%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o\n' +
+      '[  3%] Linking CXX executable llama-ui-embed\n' +
+      '[  3%] Built target llama-ui-embed\n' +
+      '[  3%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o\n' +
+      '[  3%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-backend-meta.cpp.o\n' +
+      '[  3%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o\n' +
+      '[  5%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o\n' +
+      '[  5%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o\n' +
+      '[  5%] Provisioning UI assets\n' +
+      '-- UI: running npm install\n' +
+      '[  5%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o\n' +
+      '[  5%] Linking CXX shared library ../../bin/libggml-base.dylib\n' +
+      '[  5%] Built target ggml-base\n' +
+      '[  7%] Generate assembly for embedded Metal library\n' +
+      'Embedding Metal library\n' +
+      '[  7%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o\n' +
+      '[  7%] Building CXX object ggml/src/ggml-metal/CMakeFiles/ggml-metal.dir/ggml-metal.cpp.o\n' +
+      '[  7%] Building C object ggml/src/ggml-metal/CMakeFiles/ggml-metal.dir/ggml-metal-device.m.o\n' +
+      '[  7%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.o\n' +
+      '[  7%] Building CXX object ggml/src/ggml-metal/CMakeFiles/ggml-metal.dir/ggml-metal-device.cpp.o\n' +
+      '[  7%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/repack.cpp.o\n' +
+      '[  7%] Building CXX object ggml/src/ggml-metal/CMakeFiles/ggml-metal.dir/ggml-metal-common.cpp.o\n' +
+      '[  7%] Building C object ggml/src/ggml-metal/CMakeFiles/ggml-metal.dir/ggml-metal-context.m.o\n' +
+      '[  8%] Building CXX object ggml/src/ggml-metal/CMakeFiles/ggml-metal.dir/ggml-metal-ops.cpp.o\n' +
+      '[  8%] Linking CXX static library libcpp-httplib.a\n' +
+      '[  8%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/hbm.cpp.o\n' +
+      '[  8%] Built target cpp-httplib\n' +
+      '[  8%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/quants.c.o\n' +
+      '[  8%] Building CXX object ggml/src/ggml-blas/CMakeFiles/ggml-blas.dir/ggml-blas.cpp.o\n' +
+      '[  8%] Building ASM object ggml/src/ggml-metal/CMakeFiles/ggml-metal.dir/autogenerated/ggml-metal-embed.s.o\n' +
+      '[  8%] Linking CXX shared library ../../../bin/libggml-metal.dylib\n' +
+      '[  8%] Built target ggml-metal\n' +
+      '[ 10%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/traits.cpp.o\n' +
+      '[ 10%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o\n' +
+      '[ 10%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o\n' +
+      '[ 12%] Linking CXX shared library ../../../bin/libggml-blas.dylib\n' +
+      '[ 12%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/binary-ops.cpp.o\n' +
+      '[ 12%] Built target ggml-blas\n' +
+      '[ 12%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/unary-ops.cpp.o\n' +
+      '[ 14%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/vec.cpp.o\n' +
+      '\n' +
+      'added 1032 packages, and audited 1033 packages in 11s\n' +
+      '\n' +
+      '348 packages are looking for funding\n' +
+      '  run `npm fund` for details\n' +
+      '\n' +
+      '26 vulnerabilities (3 low, 8 moderate, 10 high, 5 critical)\n' +
+      '\n' +
+      'To address issues that do not require attention, run:\n' +
+      '  npm audit fix\n' +
+      '\n' +
+      'To address all issues, run:\n' +
+      '  npm audit fix --force\n' +
+      '\n' +
+      'Run `npm audit` for details.\n' +
+      '-- UI: running npm run build, output -> /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/dist\n' +
+      '[ 14%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.o\n' +
+      '[ 14%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/llamafile/sgemm.cpp.o\n' +
+      '[ 14%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/arm/quants.c.o\n' +
+      '[ 14%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/arm/repack.cpp.o\n' +
+      'Zero Config PWA Assets Generator v1.0.2\n' +
+      '◐ Preparing to generate PWA assets...\n' +
+      '◐ Resolving instructions...\n' +
+      '✔ PWA assets ready to be generated, instructions resolved\n' +
+      '◐ Generating PWA assets from static/favicon.svg image\n' +
+      '◐ Generating assets for static/favicon.svg...\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/pwa-64x64.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/pwa-192x192.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/pwa-512x512.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/maskable-icon-512x512.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-touch-icon-180x180.png\n' +
+      '✔ Generated ICO file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/favicon.ico\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-1170x2532.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-landscape-2532x1170.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-landscape-2778x1284.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-1284x2778.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-landscape-2556x1179.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-1179x2556.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-landscape-2796x1290.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-1290x2796.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-640x1136.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-landscape-2622x1206.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-1206x2622.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-landscape-1136x640.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-1320x2868.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-landscape-2868x1320.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-750x1334.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-landscape-1334x750.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-1640x2360.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-landscape-2360x1640.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-1668x2388.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-2048x2732.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-1488x2266.png\n' +
+      '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-landscape-2388x1668.png\n' +
+      '✔ Generated PNG file: /Users/<user>/Herm'... 49017 more characters,
+    null
+  ],
+  pid: 1400,
+  stdout: '[  3%] Building CXX object vendor/cpp-httplib/CMakeFiles/cpp-httplib.dir/httplib.cpp.o\n' +
+    '[  3%] Building CXX object tools/ui/CMakeFiles/llama-ui-embed.dir/embed.cpp.o\n' +
+    '[  3%] Building CXX object common/CMakeFiles/llama-common-base.dir/build-info.cpp.o\n' +
+    '[  3%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o\n' +
+    '[  3%] Linking CXX static library libllama-common-base.a\n' +
+    '[  3%] Built target llama-common-base\n' +
+    '[  3%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.o\n' +
+    '[  3%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o\n' +
+    '[  3%] Linking CXX executable llama-ui-embed\n' +
+    '[  3%] Built target llama-ui-embed\n' +
+    '[  3%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o\n' +
+    '[  3%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-backend-meta.cpp.o\n' +
+    '[  3%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o\n' +
+    '[  5%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o\n' +
+    '[  5%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o\n' +
+    '[  5%] Provisioning UI assets\n' +
+    '-- UI: running npm install\n' +
+    '[  5%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o\n' +
+    '[  5%] Linking CXX shared library ../../bin/libggml-base.dylib\n' +
+    '[  5%] Built target ggml-base\n' +
+    '[  7%] Generate assembly for embedded Metal library\n' +
+    'Embedding Metal library\n' +
+    '[  7%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o\n' +
+    '[  7%] Building CXX object ggml/src/ggml-metal/CMakeFiles/ggml-metal.dir/ggml-metal.cpp.o\n' +
+    '[  7%] Building C object ggml/src/ggml-metal/CMakeFiles/ggml-metal.dir/ggml-metal-device.m.o\n' +
+    '[  7%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.o\n' +
+    '[  7%] Building CXX object ggml/src/ggml-metal/CMakeFiles/ggml-metal.dir/ggml-metal-device.cpp.o\n' +
+    '[  7%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/repack.cpp.o\n' +
+    '[  7%] Building CXX object ggml/src/ggml-metal/CMakeFiles/ggml-metal.dir/ggml-metal-common.cpp.o\n' +
+    '[  7%] Building C object ggml/src/ggml-metal/CMakeFiles/ggml-metal.dir/ggml-metal-context.m.o\n' +
+    '[  8%] Building CXX object ggml/src/ggml-metal/CMakeFiles/ggml-metal.dir/ggml-metal-ops.cpp.o\n' +
+    '[  8%] Linking CXX static library libcpp-httplib.a\n' +
+    '[  8%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/hbm.cpp.o\n' +
+    '[  8%] Built target cpp-httplib\n' +
+    '[  8%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/quants.c.o\n' +
+    '[  8%] Building CXX object ggml/src/ggml-blas/CMakeFiles/ggml-blas.dir/ggml-blas.cpp.o\n' +
+    '[  8%] Building ASM object ggml/src/ggml-metal/CMakeFiles/ggml-metal.dir/autogenerated/ggml-metal-embed.s.o\n' +
+    '[  8%] Linking CXX shared library ../../../bin/libggml-metal.dylib\n' +
+    '[  8%] Built target ggml-metal\n' +
+    '[ 10%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/traits.cpp.o\n' +
+    '[ 10%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o\n' +
+    '[ 10%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o\n' +
+    '[ 12%] Linking CXX shared library ../../../bin/libggml-blas.dylib\n' +
+    '[ 12%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/binary-ops.cpp.o\n' +
+    '[ 12%] Built target ggml-blas\n' +
+    '[ 12%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/unary-ops.cpp.o\n' +
+    '[ 14%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/vec.cpp.o\n' +
+    '\n' +
+    'added 1032 packages, and audited 1033 packages in 11s\n' +
+    '\n' +
+    '348 packages are looking for funding\n' +
+    '  run `npm fund` for details\n' +
+    '\n' +
+    '26 vulnerabilities (3 low, 8 moderate, 10 high, 5 critical)\n' +
+    '\n' +
+    'To address issues that do not require attention, run:\n' +
+    '  npm audit fix\n' +
+    '\n' +
+    'To address all issues, run:\n' +
+    '  npm audit fix --force\n' +
+    '\n' +
+    'Run `npm audit` for details.\n' +
+    '-- UI: running npm run build, output -> /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/dist\n' +
+    '[ 14%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.o\n' +
+    '[ 14%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/llamafile/sgemm.cpp.o\n' +
+    '[ 14%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/arm/quants.c.o\n' +
+    '[ 14%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/arm/repack.cpp.o\n' +
+    'Zero Config PWA Assets Generator v1.0.2\n' +
+    '◐ Preparing to generate PWA assets...\n' +
+    '◐ Resolving instructions...\n' +
+    '✔ PWA assets ready to be generated, instructions resolved\n' +
+    '◐ Generating PWA assets from static/favicon.svg image\n' +
+    '◐ Generating assets for static/favicon.svg...\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/pwa-64x64.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/pwa-192x192.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/pwa-512x512.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/maskable-icon-512x512.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-touch-icon-180x180.png\n' +
+    '✔ Generated ICO file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/favicon.ico\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-1170x2532.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-landscape-2532x1170.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-landscape-2778x1284.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-1284x2778.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-landscape-2556x1179.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-1179x2556.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-landscape-2796x1290.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-1290x2796.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-640x1136.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-landscape-2622x1206.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-1206x2622.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-landscape-1136x640.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-1320x2868.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-landscape-2868x1320.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-750x1334.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-landscape-1334x750.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-1640x2360.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-landscape-2360x1640.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-1668x2388.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-2048x2732.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-portrait-1488x2266.png\n' +
+    '✔ Generated PNG file: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-004/source/llama.cpp-expertcache/build-expertcache-metal/tools/ui/ui-src/static/apple-splash-landscape-2388x1668.png\n' +
+    '✔ Generated PNG file: /Users/<user>/Herm'... 49017 more characters,
+  stderr: null
+}
+
+Node.js v26.8.1

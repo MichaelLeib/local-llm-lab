@@ -1,0 +1,12 @@
+{
+  "experiment":"EXP-022",
+  "title":"Ornith MLX-4bit vs GGUF-Q6_K deterministic quality/performance A/B",
+  "decision":"MLX4_REJECTED_FOR_Q6_REPLACEMENT_UNDER_5PP_GATE",
+  "quality_gate":{"tolerance_percentage_points":5.0,"q6_score_percent":87.5,"mlx4_score_percent":68.75,"mlx4_minus_q6_percentage_points":-18.75,"q6_passed":14,"mlx4_passed":11,"total":16},
+  "subgroups":{"q6":{"arithmetic_logic":100.0,"data_code":60.0,"instruction":100.0},"mlx4":{"arithmetic_logic":77.78,"data_code":60.0,"instruction":50.0}},
+  "latency":{"q6_mean_wall_seconds":13.48,"q6_median_wall_seconds":14.095,"mlx4_mean_wall_seconds":11.115,"mlx4_median_wall_seconds":9.949},
+  "native_hermes":{"mlx4":{"result":"PASS","session":"20260920_092058_689643","duration_seconds":107,"tool_calls":8,"verified_output":"native-output-mlx4.txt","normal_final_response":true,"note":"The first model response hit its output cap after initial tools, but the agent recovered, reread the output, and finished normally."},"q6":{"result":"INCONCLUSIVE_FRESH_RERUN","verified_partial_artifact":"native-output-q6.txt","note":"The first run created the correct output and reread it, but the outer foreground wrapper interrupted before final response. A background retry stalled at initialization while the Q6 64K server reached 8% free memory; it was stopped for host safety. EXP-019 remains the valid prior Q6 native-tool reference (cold 78.5 s, warm 4.7 s, real executor completion)."}},
+  "resource_notes":{"q6":"Direct-suite resource telemetry began at only 15% free memory and ended at 7%, with swap/pageout growth. It is recorded but not used as an arm-to-arm resource comparison.","mlx4":"Direct suite began at 70% free and ended at 36%; swapouts did not increase in that arm. Conditions were not matched, so this is not a promotion performance claim."},
+  "cleanup":{"fast":"stopped","deep":"stopped","q6_server":"stopped","temporary_profile":"deleted","ports_checked":[8901,8902,8919]},
+  "artifacts":{"protocol":"README.md","direct_q6":"direct-q6.json","direct_mlx4":"direct-mlx4.json","native_mlx4_transcript":"native-mlx4.out","native_q6_transcript":"native-q6.out","native_q6_background_transcript":"native-q6-rerun.out"}
+}

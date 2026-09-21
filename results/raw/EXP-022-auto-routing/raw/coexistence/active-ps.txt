@@ -1,0 +1,2 @@
+ 9614   2688 06:37 /opt/homebrew/bin/llama-server -m models/minicpm/MiniCPM5-2B-Q4_K_M.gguf --host 127.0.0.1 --port 8921 -ngl 99 -c 8192 --jinja --flash-attn on --no-warmup --metrics --alias minicpm5-2b-q4km
+10678 2580848 00:38 /opt/homebrew/bin/llama-server -m /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-019-ornith-gguf/models/Ornith-1.5-9B-Q6_K.gguf --host 127.0.0.1 --port 8919 -c 65536 --cache-type-k q8_0 --cache-type-v q8_0

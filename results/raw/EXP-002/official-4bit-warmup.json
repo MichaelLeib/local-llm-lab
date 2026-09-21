@@ -1,0 +1,91 @@
+{
+  "schema": "local-llm-lab.exp002-inference.v1",
+  "experiment": "EXP-002",
+  "captured_at": "2026-09-17T07:37:18.001649+00:00",
+  "request": {
+    "model": "hermes-fast",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a careful senior software engineer. Follow the user's requested format."
+      },
+      {
+        "role": "user",
+        "content": "Reply with exactly OK and nothing else."
+      }
+    ],
+    "max_tokens": 1,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "stream": true,
+    "stream_options": {
+      "include_usage": true
+    }
+  },
+  "prompt_file": "results/raw/EXP-002/warmup-prompt.txt",
+  "http_status": 200,
+  "error": null,
+  "timing": {
+    "elapsed_seconds": 18.99693174999993,
+    "time_to_first_event_seconds": 17.897133499995107
+  },
+  "usage_from_server": {
+    "prompt_tokens": 40,
+    "completion_tokens": 1,
+    "total_tokens": 41
+  },
+  "text": "OK",
+  "stream_event_count": 3,
+  "stream_events": [
+    {
+      "received_seconds": 17.897133499995107,
+      "event": {
+        "id": "chatcmpl-724fb78d5d284a678bf932f12e653c46",
+        "object": "chat.completion.chunk",
+        "created": 1789630655,
+        "model": "hermes-fast",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "role": "assistant"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "received_seconds": 18.74008866699296,
+      "event": {
+        "id": "chatcmpl-724fb78d5d284a678bf932f12e653c46",
+        "object": "chat.completion.chunk",
+        "created": 1789630655,
+        "model": "hermes-fast",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "OK"
+            },
+            "finish_reason": "length"
+          }
+        ]
+      }
+    },
+    {
+      "received_seconds": 18.74106504199881,
+      "event": {
+        "id": "chatcmpl-724fb78d5d284a678bf932f12e653c46",
+        "object": "chat.completion.chunk",
+        "created": 1789630655,
+        "model": "hermes-fast",
+        "choices": [],
+        "usage": {
+          "prompt_tokens": 40,
+          "completion_tokens": 1,
+          "total_tokens": 41
+        }
+      }
+    }
+  ]
+}

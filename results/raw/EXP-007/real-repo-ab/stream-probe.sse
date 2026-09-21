@@ -1,0 +1,12 @@
+data: {"id":"chatcmpl-ca1e3283269f4db19869855892e60fbe","object":"chat.completion.chunk","created":1789713491,"model":"stream-probe","choices":[{"delta":{"role":"assistant"},"finish_reason":null,"index":0}]}
+
+: ping
+
+: ping
+
+: ping
+
+data: {"id":"chatcmpl-ca1e3283269f4db19869855892e60fbe","object":"chat.completion.chunk","created":1789713491,"model":"stream-probe","choices":[{"index":0,"delta":{},"finish_reason":"length"}]}
+
+data: [DONE]
+

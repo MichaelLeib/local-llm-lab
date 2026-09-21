@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "ok": true,
+    "elapsed": 73.611,
+    "prompt_tokens": 68,
+    "gen_tokens": 931,
+    "decode_tps": 12.65,
+    "finish": "stop",
+    "has_reasoning": true,
+    "content_head": "# FIFO Scheduling Solution\n\nIn FIFO order, jobs are processed in arrival order. The server becomes free when it finishes the current job.\n\n## Tracking Each Job\n\n**Job 1** \u2014 arrives t=0, duration 4s\n- Server idle \u2192 starts at t=0, finishes at t=4\n- Waiting time = 0 \u2212 0 = **0**\n\n**Job 2** \u2014 arrives t=3",
+    "tool_calls": null
+  },
+  "raw": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "# FIFO Scheduling Solution\n\nIn FIFO order, jobs are processed in arrival order. The server becomes free when it finishes the current job.\n\n## Tracking Each Job\n\n**Job 1** \u2014 arrives t=0, duration 4s\n- Server idle \u2192 starts at t=0, finishes at t=4\n- Waiting time = 0 \u2212 0 = **0**\n\n**Job 2** \u2014 arrives t=3, duration 2s\n- Server busy until t=4 \u2192 starts at t=4, finishes at t=6\n- Waiting time = 4 \u2212 3 = **1**\n\n**Job 3** \u2014 arrives t=5, duration 7s\n- Server busy until t=6 \u2192 starts at t=6, finishes at t=13\n- Waiting time = 6 \u2212 5 = **1**\n\n**Job 4** \u2014 arrives t=9, duration 1s\n- Server busy until t=13 \u2192 starts at t=13, finishes at t=14\n- Waiting time = 13 \u2212 9 = **4**\n\n**Job 5** \u2014 arrives t=12, duration 3s\n- Server busy until t=14 \u2192 starts at t=14, finishes at t=17\n- Waiting time = 14 \u2212 12 = **2**\n\n## Computing the Average\n\n$$\\text{Average} = \\frac{0 + 1 + 1 + 4 + 2}{5} = \\frac{8}{5} = 1.6$$\n\n**Average waiting time = 1.6 seconds**",
+          "reasoning_content": "Let me work through this FIFO scheduling problem.\n\nJobs arrive at:\n- t=0, takes 4 seconds\n- t=3, takes 2 seconds\n- t=5, takes 7 seconds\n- t=9, takes 1 seconds\n- t=12, takes 3 seconds\n\nFIFO order means jobs are processed in the order they arrive.\n\nLet me track when each job starts and finishes.\n\nJob 1: arrives t=0, takes 4 seconds\n- Server is idle, starts at t=0\n- Finishes at t=0+4 = 4\n- Waiting time = start time - arrival time = 0 - 0 = 0\n\nJob 2: arrives t=3, takes 2 seconds\n- Server is busy until t=4, so starts at t=4\n- Finishes at t=4+2 = 6\n- Waiting time = 4 - 3 = 1\n\nJob 3: arrives t=5, takes 7 seconds\n- Server is busy until t=6, so starts at t=6\n- Finishes at t=6+7 = 13\n- Waiting time = 6 - 5 = 1\n\nJob 4: arrives t=9, takes 1 second\n- Server is busy until t=13, so starts at t=13\n- Finishes at t=13+1 = 14\n- Waiting time = 13 - 9 = 4\n\nJob 5: arrives t=12, takes 3 seconds\n- Server is busy until t=14, so starts at t=14\n- Finishes at t=14+3 = 17\n- Waiting time = 14 - 12 = 2\n\nAverage waiting time = (0 + 1 + 1 + 4 + 2) / 5 = 8/5 = 1.6 seconds\n\nLet me double-check the waiting times.\n\nWaiting time = time job spends waiting in queue before starting service = start time - arrival time.\n\nJob 1: arrival 0, start 0, wait 0 \u2713\nJob 2: arrival 3, start 4, wait 1 \u2713\nJob 3: arrival 5, start 6, wait 1 \u2713\nJob 4: arrival 9, start 13, wait 4 \u2713\nJob 5: arrival 12, start 14, wait 2 \u2713\n\nSum = 0 + 1 + 1 + 4 + 2 = 8\nAverage = 8/5 = 1.6\n\nThe average waiting time is 1.6 seconds.\n"
+        }
+      }
+    ],
+    "created": 1789840084,
+    "model": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-019-ornith-gguf/models/Ornith-1.5-9B-Q6_K.gguf",
+    "system_fingerprint": "b10964-b29c606e2",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 931,
+      "prompt_tokens": 68,
+      "total_tokens": 999,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "id": "chatcmpl-ySjKVCGfB70IhjI6KG2q6snnmjU67IRH",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 68,
+      "prompt_ms": 608.081,
+      "prompt_per_token_ms": 8.942367647058823,
+      "prompt_per_second": 111.82720723061564,
+      "predicted_n": 931,
+      "predicted_ms": 72930.436,
+      "predicted_per_token_ms": 78.41982365591399,
+      "predicted_per_second": 12.751877693422813
+    }
+  }
+}

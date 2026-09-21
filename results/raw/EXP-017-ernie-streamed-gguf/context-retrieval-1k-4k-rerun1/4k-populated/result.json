@@ -1,0 +1,10 @@
+{
+  "label": "4k-populated",
+  "input_tokens": 3982,
+  "ctx": 8192,
+  "exit_code": 0,
+  "aborted": null,
+  "secret": "CEDAR-914",
+  "secret_visible_in_output": false,
+  "minimum_free_percent": 38
+}

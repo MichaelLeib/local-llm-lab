@@ -1,0 +1,7 @@
+
+  Pulling ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit from HuggingFace ...
+  Note: this path does not resume — interrupting it restarts the
+  files still in flight from the beginning.
+Fetching 14 files:   0%|          | 0/14 [00:00<?, ?it/s]Fetching 14 files:   7%|▋         | 1/14 [00:00<00:02,  5.28it/s]Fetching 14 files:  43%|████▎     | 6/14 [00:00<00:00, 14.65it/s]Fetching 14 files:  57%|█████▋    | 8/14 [00:01<00:01,  5.61it/s]Fetching 14 files:  71%|███████▏  | 10/14 [00:01<00:00,  7.12it/s]Fetching 14 files:  71%|███████▏  | 10/14 [00:20<00:00,  7.12it/s]Fetching 14 files:  79%|███████▊  | 11/14 [02:17<01:16, 25.56s/it]Fetching 14 files:  86%|████████▌ | 12/14 [02:45<00:52, 26.10s/it]Fetching 14 files: 100%|██████████| 14/14 [02:46<00:00, 16.53s/it]Fetching 14 files: 100%|██████████| 14/14 [02:46<00:00, 11.90s/it]
+  Cached at: /Users/<user>/.cache/huggingface/hub/models--ornith-ai--Ornith-1.5-35B-A3B-MLX-4bit/snapshots/19504d912fa8fc7622bf6b1de3db5d5d890b1f02
+  Downloaded ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit — 18.2 GiB in 2m 52s

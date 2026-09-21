@@ -1,0 +1,20 @@
+LABEL: optiq-stream-startup-diagnostic
+COMMAND: results/raw/EXP-018-laguna-xs21/venv/bin/optiq serve --model results/raw/EXP-018-laguna-xs21/model-mlx3 --host 127.0.0.1 --port 8918 --max-tokens 32 --max-concurrent 1 --max-context 8192 --kv-bits 4 --stream-experts --stream-experts-cache 0 --idle-timeout 0 --on-generation-death exit
+START: 2026-09-19T15:17:44Z
+--- stdout/stderr ---
+[optiq.serve] generation watchdog installed (on death: exit)
+[optiq.serve] rotating-cache merge fix installed (upstream crashes batching-with-history on a zero-length cache)
+[optiq.serve] streaming per-layer KV-cache conversion enabled (prevents fp16+quantized cache co-residency OOM)
+[optiq.serve] fused quantized SDPA enabled (FlashAttention-2 N-tiling, never materializes the full scores matrix)
+[optiq.serve] uniform QuantizedKVCache (bits=4, group_size=64, start=0)
+[optiq.serve] Anthropic /v1/messages endpoint enabled (set ANTHROPIC_BASE_URL=http://host:port to use from Claude Code / OpenClaw)
+[optiq.serve] OpenAI /v1/responses endpoint enabled (point Codex / Cursor / Continue / Cline at http://host:port/v1)
+[optiq.serve] auth: requires Bearer sk-optiq-* tokens (missing header allowed for local-dev)
+[optiq.serve] thinking variants: request `<model>:no-think` / `:think` to control chain-of-thought per session
+[optiq.serve] mlx cleanup threshold: 1.60 GB (clears MLX reuse pool when it grows past this)
+[optiq.serve] mlx prompt-cache cap: 0.50 GB (--prompt-cache-bytes; override with the same flag)
+[optiq.serve] concurrency cap: 1 decode / 1 prefill in parallel (--max-concurrent; excess requests queue)
+[optiq.serve] single-model: the request 'model' field is a label (any value serves --model; --allow-model-switch to hot-swap)
+[optiq.serve] applying model-recommended sampler: temperature=1.0, top_p=1.0, min_p=0.0
+[optiq.serve] SSD expert streaming: on
+[moe_stream] expert scales/biases 2.0 GB vs budget 2.0 GB -> resident

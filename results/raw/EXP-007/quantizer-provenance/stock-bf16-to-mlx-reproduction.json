@@ -1,0 +1,931 @@
+{
+  "all_components_exact": false,
+  "created_at_utc": "2026-09-17T19:58:21.372925+00:00",
+  "experiment": "EXP-007",
+  "gate": "stock_bf16_to_mlx_affine_reproduction",
+  "interpretation": "Exact match establishes only the selected tensor/sample conversion contract. A mismatch does not invalidate EXP-007; it requires the Stock Hybrid Control branch before Carnice acquisition.",
+  "official_base": {
+    "index_sha256": "41b9356101ebf8e7519e150dc811f80c4226e727301fbb032b890f006ed0be83",
+    "repo": "Qwen/Qwen3.6-35B-A3B",
+    "revision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+    "selected_shards": [
+      "model-00003-of-00026.safetensors",
+      "model-00025-of-00026.safetensors",
+      "model-00026-of-00026.safetensors"
+    ]
+  },
+  "pinned_environment": {
+    "mlx": "0.32.1",
+    "mlx_lm": "0.31.3",
+    "mlx_vlm": "0.4.4",
+    "wheel_sha256": "3ff86ea738ab1914dc1b07e4fa5d4cc34bec5909e540692cfad0af808af13c11"
+  },
+  "reference_mlx": {
+    "repo": "mlx-community/Qwen3.6-35B-A3B-4bit",
+    "revision": "38740b847e4cb78f352aba30aa41c76e08e6eb46"
+  },
+  "rows": [
+    {
+      "all_components_exact": false,
+      "base_transport": {
+        "attempt": 1,
+        "content_range": null,
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/cdf848f3c60b4ae60a0c3a722fb32cd4980e2e5c8d21fda1de743a938a60e1a1?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00003-of-00026.safetensors%3B+filename%3D%22model-00003-of-00026.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789678673&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2NkZjg0OGYzYzYwYjRhZTYwYTBjM2E3MjJmYjMyY2Q0OTgwZTJlNWM4ZDIxZmRhMWRlNzQzYTkzOGE2MGUxYTFcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4NjczfX19XX0_&Signature=MEQCIBWWlEUfdcmgP8lKu4noNLLK9KSkKPcjZCnITa79ABLkAiAQqby90vz%7ErCSjDSlHwXM8Y6HPbJdkYZ4B0mmsluT1%7Eg__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      },
+      "bf16_bytes": 33554432,
+      "bf16_file": "results/raw/EXP-007/quantizer-provenance/stock-bf16-reproduction-gate/base-model_language_model_layers_3_self_attn_q_proj_weight.bf16",
+      "bf16_sha256": "0e91002fe4cfb6d097b441e86dfdc0e27d89009a0fe888d25d3e721932c4bae4",
+      "category": "attention",
+      "components": [
+        {
+          "component": "weight",
+          "exact_bytes_equal": false,
+          "generated_bytes": 8388608,
+          "generated_sha256": "83d9fc7d41ec15a6e9d410e11d74f5426a183f3c7d37cd355a5683fcc2a7ef34",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/cc12d0240a91cb7e28543f40b09a9e79b3c5e1cfda1cb2fb197196415a0916a6?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00001-of-00004.safetensors%3B+filename%3D%22model-00001-of-00004.safetensors%22%3B&Expires=1789678674&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhL2NjMTJkMDI0MGE5MWNiN2UyODU0M2Y0MGIwOWE5ZTc5YjNjNWUxY2ZkYTFjYjJmYjE5NzE5NjQxNWEwOTE2YTZcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDEtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njc0fX19XX0_&Signature=MEUCIAIkvP8Jro90r-VBj2OV950lQbL1zpj6LFFeNnhqaY-sAiEA1ako2HLQYpf19kKPKgy1d4PCBy2Z-UYOdJGn2jI%7EGa8_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "b304dd8fa733c18a0d058d2a37715db2ad680ef34ae3672c09a3cbb2420644c9",
+          "stock_mlx_safetensors_offsets": [
+            4897739328,
+            4906127936
+          ],
+          "stock_mlx_shard": "model-00001-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.3.self_attn.q_proj.weight"
+        },
+        {
+          "component": "scales",
+          "exact_bytes_equal": false,
+          "generated_bytes": 524288,
+          "generated_sha256": "bc1fed9ecf0867932631fb75e207f714cb6edf8fea6761ea759687884fe2ab0d",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/cc12d0240a91cb7e28543f40b09a9e79b3c5e1cfda1cb2fb197196415a0916a6?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00001-of-00004.safetensors%3B+filename%3D%22model-00001-of-00004.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789678675&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhL2NjMTJkMDI0MGE5MWNiN2UyODU0M2Y0MGIwOWE5ZTc5YjNjNWUxY2ZkYTFjYjJmYjE5NzE5NjQxNWEwOTE2YTZcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDEtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njc1fX19XX0_&Signature=MEYCIQCFFe-kJKnZGcbLvhwc-LA5c2aEW5m3uLdXrSghvKKnXwIhALVZPAWfRP5qAJCAePbM7J6Fll2lJyxU2P%7ETqiAa3afg&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "0be85198ccafe1aa03ef3e258e0fb0700f278865c1598d34851524828d72e861",
+          "stock_mlx_safetensors_offsets": [
+            4906127936,
+            4906652224
+          ],
+          "stock_mlx_shard": "model-00001-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.3.self_attn.q_proj.scales"
+        },
+        {
+          "component": "biases",
+          "exact_bytes_equal": true,
+          "generated_bytes": 524288,
+          "generated_sha256": "e050ce6f3529ca394c45aa9b2fbac1a262ef59dde165795e46bec57bf6725033",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/cc12d0240a91cb7e28543f40b09a9e79b3c5e1cfda1cb2fb197196415a0916a6?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00001-of-00004.safetensors%3B+filename%3D%22model-00001-of-00004.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789678675&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhL2NjMTJkMDI0MGE5MWNiN2UyODU0M2Y0MGIwOWE5ZTc5YjNjNWUxY2ZkYTFjYjJmYjE5NzE5NjQxNWEwOTE2YTZcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDEtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njc1fX19XX0_&Signature=MEQCIDJ0w1Ngktzf56Mja2xr3tN%7E4G72JLZrGqMpWDwNZwZnAiB99klA47q2rkjm1q2wkz8D12-t5V%7EtEFV8BUOBJ6qRbQ__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "e050ce6f3529ca394c45aa9b2fbac1a262ef59dde165795e46bec57bf6725033",
+          "stock_mlx_safetensors_offsets": [
+            3674222688,
+            3674746976
+          ],
+          "stock_mlx_shard": "model-00001-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.3.self_attn.q_proj.biases"
+        }
+      ],
+      "official_base_shard": "model-00003-of-00026.safetensors",
+      "official_bf16_tensor": "model.language_model.layers.3.self_attn.q_proj.weight",
+      "official_shape": [
+        8192,
+        2048
+      ],
+      "quantizer": {
+        "bits": 4,
+        "group_size": 64,
+        "implementation": "mlx.core.quantize",
+        "mode": "affine"
+      }
+    },
+    {
+      "all_components_exact": false,
+      "base_transport": {
+        "attempt": 1,
+        "content_range": null,
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/cdf848f3c60b4ae60a0c3a722fb32cd4980e2e5c8d21fda1de743a938a60e1a1?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00003-of-00026.safetensors%3B+filename%3D%22model-00003-of-00026.safetensors%22%3B&user_id=public&Expires=1789678676&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2NkZjg0OGYzYzYwYjRhZTYwYTBjM2E3MjJmYjMyY2Q0OTgwZTJlNWM4ZDIxZmRhMWRlNzQzYTkzOGE2MGUxYTFcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njc2fX19XX0_&Signature=MEQCIHssanZ7E4xF5DybhA3SXjNlSFZs3mWCH3HBIDjirDgwAiBLMiYXgQzbvx98yEIGHgQObcKm6j1xmw61weHnqp7D7A__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      },
+      "bf16_bytes": 2097152,
+      "bf16_file": "results/raw/EXP-007/quantizer-provenance/stock-bf16-reproduction-gate/base-model_language_model_layers_3_self_attn_k_proj_weight.bf16",
+      "bf16_sha256": "ffe19844b38ec0e79144415e251a7b7c14712108a7e1c2ccd5cd6f15f0f340e0",
+      "category": "attention",
+      "components": [
+        {
+          "component": "weight",
+          "exact_bytes_equal": false,
+          "generated_bytes": 524288,
+          "generated_sha256": "f094155347f914de8defde9289af4d82bfad28d853b8a47c1b19d66e9f3ef5b4",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/cc12d0240a91cb7e28543f40b09a9e79b3c5e1cfda1cb2fb197196415a0916a6?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00001-of-00004.safetensors%3B+filename%3D%22model-00001-of-00004.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789678677&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhL2NjMTJkMDI0MGE5MWNiN2UyODU0M2Y0MGIwOWE5ZTc5YjNjNWUxY2ZkYTFjYjJmYjE5NzE5NjQxNWEwOTE2YTZcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDEtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njc3fX19XX0_&Signature=MEUCIQDlHfQZX-lzo9mhdIU%7EM87UhVxNZlqx9irpKQGZYK0HPwIgZJFLZBxK1woBJ8loLFQ-MAmO1tJnFI6DQ16di3poQ8c_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "1047c9b8a487911bec1c92a11d91bee65bfcbf6ecaf2c5ac9df8d9ab6707ed8e",
+          "stock_mlx_safetensors_offsets": [
+            4906652224,
+            4907176512
+          ],
+          "stock_mlx_shard": "model-00001-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.3.self_attn.k_proj.weight"
+        },
+        {
+          "component": "scales",
+          "exact_bytes_equal": false,
+          "generated_bytes": 32768,
+          "generated_sha256": "4ec614660170cc25f24d05c8c231a6faa2ce532c907a3b65190adea536e927b4",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/cc12d0240a91cb7e28543f40b09a9e79b3c5e1cfda1cb2fb197196415a0916a6?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00001-of-00004.safetensors%3B+filename%3D%22model-00001-of-00004.safetensors%22%3B&user_id=public&Expires=1789678678&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhL2NjMTJkMDI0MGE5MWNiN2UyODU0M2Y0MGIwOWE5ZTc5YjNjNWUxY2ZkYTFjYjJmYjE5NzE5NjQxNWEwOTE2YTZcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDEtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njc4fX19XX0_&Signature=MEQCIG5k9ThQEAM7HfhXAnKVNHv6uF5up8EQi%7Egkxaf-7xvwAiBk1iVGuo9NLhC9VPEu5Qm0ZTWnvIaZvUIEnJDO6ynIeg__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "ef89f74493529348310193891dc3585e4d4a69e91eed1d17cd23a30fea293881",
+          "stock_mlx_safetensors_offsets": [
+            4907178816,
+            4907211584
+          ],
+          "stock_mlx_shard": "model-00001-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.3.self_attn.k_proj.scales"
+        },
+        {
+          "component": "biases",
+          "exact_bytes_equal": true,
+          "generated_bytes": 32768,
+          "generated_sha256": "cdef676700651773b7b2c047d4ab21a8eb41f007a81f38bb0088ad70dbab2945",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/cc12d0240a91cb7e28543f40b09a9e79b3c5e1cfda1cb2fb197196415a0916a6?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00001-of-00004.safetensors%3B+filename%3D%22model-00001-of-00004.safetensors%22%3B&Expires=1789678678&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhL2NjMTJkMDI0MGE5MWNiN2UyODU0M2Y0MGIwOWE5ZTc5YjNjNWUxY2ZkYTFjYjJmYjE5NzE5NjQxNWEwOTE2YTZcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDEtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njc4fX19XX0_&Signature=MEQCICvSFWZEcS%7Ee586nXAHHbWp4cqO8awsskO8McCBauTV3AiBWR%7E5lvDXl%7E11j4PLjBP45E6%7E5TH2cf9QAh%7E%7EfkG-UDg__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "cdef676700651773b7b2c047d4ab21a8eb41f007a81f38bb0088ad70dbab2945",
+          "stock_mlx_safetensors_offsets": [
+            1789887232,
+            1789920000
+          ],
+          "stock_mlx_shard": "model-00001-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.3.self_attn.k_proj.biases"
+        }
+      ],
+      "official_base_shard": "model-00003-of-00026.safetensors",
+      "official_bf16_tensor": "model.language_model.layers.3.self_attn.k_proj.weight",
+      "official_shape": [
+        512,
+        2048
+      ],
+      "quantizer": {
+        "bits": 4,
+        "group_size": 64,
+        "implementation": "mlx.core.quantize",
+        "mode": "affine"
+      }
+    },
+    {
+      "all_components_exact": false,
+      "base_transport": {
+        "attempt": 1,
+        "content_range": null,
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/cdf848f3c60b4ae60a0c3a722fb32cd4980e2e5c8d21fda1de743a938a60e1a1?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00003-of-00026.safetensors%3B+filename%3D%22model-00003-of-00026.safetensors%22%3B&Expires=1789678679&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2NkZjg0OGYzYzYwYjRhZTYwYTBjM2E3MjJmYjMyY2Q0OTgwZTJlNWM4ZDIxZmRhMWRlNzQzYTkzOGE2MGUxYTFcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njc5fX19XX0_&Signature=MEQCIChSA0pvGVaOzUfFZ0lBYad1PNlE3mxy0abnz%7ElMWWfqAiA1ZNn9PKS6Ly2dAX5SE8fl87486yAYfbGdUIa0GTMozA__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      },
+      "bf16_bytes": 2097152,
+      "bf16_file": "results/raw/EXP-007/quantizer-provenance/stock-bf16-reproduction-gate/base-model_language_model_layers_3_self_attn_v_proj_weight.bf16",
+      "bf16_sha256": "8e286b6d992a97a47845e6cb4b86f2a7895ed87495e3bd1130cd146bc1cac95d",
+      "category": "attention",
+      "components": [
+        {
+          "component": "weight",
+          "exact_bytes_equal": false,
+          "generated_bytes": 524288,
+          "generated_sha256": "8c9753cb2ae6905ee37d8d92d9e4961a4df7d7b486d0f5ccbd95718a3889a46e",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/cc12d0240a91cb7e28543f40b09a9e79b3c5e1cfda1cb2fb197196415a0916a6?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00001-of-00004.safetensors%3B+filename%3D%22model-00001-of-00004.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789678680&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhL2NjMTJkMDI0MGE5MWNiN2UyODU0M2Y0MGIwOWE5ZTc5YjNjNWUxY2ZkYTFjYjJmYjE5NzE5NjQxNWEwOTE2YTZcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDEtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4NjgwfX19XX0_&Signature=MEUCIQCYD4qP3lt9jBfOZjd0STkzMU7jnaU9rMHKdgOKXBD4JwIgD6cjXMzgZ1DgYWu0erK9D34lY7vwxgZMmavhmHge-zE_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "7608440904af885fb93f62ddf3604d58cc6a364ba01f1dc36c7a34b6eb9a0f53",
+          "stock_mlx_safetensors_offsets": [
+            2517681568,
+            2518205856
+          ],
+          "stock_mlx_shard": "model-00001-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.3.self_attn.v_proj.weight"
+        },
+        {
+          "component": "scales",
+          "exact_bytes_equal": false,
+          "generated_bytes": 32768,
+          "generated_sha256": "b46398bdae6157d20328c098c755113b8f88788e6f89c0156cb986fff3ef7865",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/cc12d0240a91cb7e28543f40b09a9e79b3c5e1cfda1cb2fb197196415a0916a6?user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00001-of-00004.safetensors%3B+filename%3D%22model-00001-of-00004.safetensors%22%3B&X-Xet-Cas-Uid=public&Expires=1789678680&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhL2NjMTJkMDI0MGE5MWNiN2UyODU0M2Y0MGIwOWE5ZTc5YjNjNWUxY2ZkYTFjYjJmYjE5NzE5NjQxNWEwOTE2YTZcXD91c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDEtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4NjgwfX19XX0_&Signature=MEUCIQDZQcln3QSLupP5ZoLXEn66xKcojc1xA8Qpsfrr502plgIgXrUUr6Db5eYrMJglaoNdyeBl07kDCClDxsdoXRkulH0_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "2c88ff4620e32c5f0c45080f00e773014c1579b1eefca911184882a7aab1cf79",
+          "stock_mlx_safetensors_offsets": [
+            1392508704,
+            1392541472
+          ],
+          "stock_mlx_shard": "model-00001-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.3.self_attn.v_proj.scales"
+        },
+        {
+          "component": "biases",
+          "exact_bytes_equal": true,
+          "generated_bytes": 32768,
+          "generated_sha256": "0937463cadc8896445b2bc14cafbe4b52ef9041a22154ec0a3e0b7ac91854a1c",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/cc12d0240a91cb7e28543f40b09a9e79b3c5e1cfda1cb2fb197196415a0916a6?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00001-of-00004.safetensors%3B+filename%3D%22model-00001-of-00004.safetensors%22%3B&Expires=1789678681&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhL2NjMTJkMDI0MGE5MWNiN2UyODU0M2Y0MGIwOWE5ZTc5YjNjNWUxY2ZkYTFjYjJmYjE5NzE5NjQxNWEwOTE2YTZcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDEtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4NjgxfX19XX0_&Signature=MEQCIBybGdlIOyjIlk1BDqWN9mJDLXDD9PypKfWQmUlQsHTRAiAjGuP8mXVK9z1VsCKWff5dnKG%7ETbLl0%7Ed0iazNHVRBkA__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "0937463cadc8896445b2bc14cafbe4b52ef9041a22154ec0a3e0b7ac91854a1c",
+          "stock_mlx_safetensors_offsets": [
+            4907211584,
+            4907244352
+          ],
+          "stock_mlx_shard": "model-00001-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.3.self_attn.v_proj.biases"
+        }
+      ],
+      "official_base_shard": "model-00003-of-00026.safetensors",
+      "official_bf16_tensor": "model.language_model.layers.3.self_attn.v_proj.weight",
+      "official_shape": [
+        512,
+        2048
+      ],
+      "quantizer": {
+        "bits": 4,
+        "group_size": 64,
+        "implementation": "mlx.core.quantize",
+        "mode": "affine"
+      }
+    },
+    {
+      "all_components_exact": false,
+      "base_transport": {
+        "attempt": 1,
+        "content_range": null,
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/cdf848f3c60b4ae60a0c3a722fb32cd4980e2e5c8d21fda1de743a938a60e1a1?user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00003-of-00026.safetensors%3B+filename%3D%22model-00003-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&Expires=1789678682&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2NkZjg0OGYzYzYwYjRhZTYwYTBjM2E3MjJmYjMyY2Q0OTgwZTJlNWM4ZDIxZmRhMWRlNzQzYTkzOGE2MGUxYTFcXD91c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4NjgyfX19XX0_&Signature=MEQCIA%7EFAub%7EUIsbXRt6oIK%7EIMS07NAIEw7sK2nMhNcowWdSAiBrjbQzVuh4r3IRKcolVC5b1MwB9abs9DolE%7ElW8Zv%7Elw__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      },
+      "bf16_bytes": 16777216,
+      "bf16_file": "results/raw/EXP-007/quantizer-provenance/stock-bf16-reproduction-gate/base-model_language_model_layers_3_self_attn_o_proj_weight.bf16",
+      "bf16_sha256": "f4cb470eeff400e05add65afc846ca49ae934455237609da4e3a2d58380f02ab",
+      "category": "attention",
+      "components": [
+        {
+          "component": "weight",
+          "exact_bytes_equal": false,
+          "generated_bytes": 4194304,
+          "generated_sha256": "65a9886496c9db23bbdd166ad4d87792a7dc828715b5cb11e8edcda56226565d",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/cc12d0240a91cb7e28543f40b09a9e79b3c5e1cfda1cb2fb197196415a0916a6?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00001-of-00004.safetensors%3B+filename%3D%22model-00001-of-00004.safetensors%22%3B&X-Xet-Cas-Uid=public&user_id=public&Expires=1789678683&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhL2NjMTJkMDI0MGE5MWNiN2UyODU0M2Y0MGIwOWE5ZTc5YjNjNWUxY2ZkYTFjYjJmYjE5NzE5NjQxNWEwOTE2YTZcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDEtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4NjgzfX19XX0_&Signature=MEQCICDbY7EXKgSZWQhBAYXo9XJygTt7mX7bd9-tduGE9VMOAiB8UqVDg0YV3GY0pNaqzBkydwp6KzKKLyTUM2o5WLo97w__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "622d06697a13d02e1ead0f292158a0f792f050709a724432b3ba5a8dce4b0827",
+          "stock_mlx_safetensors_offsets": [
+            4907244352,
+            4911438656
+          ],
+          "stock_mlx_shard": "model-00001-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.3.self_attn.o_proj.weight"
+        },
+        {
+          "component": "scales",
+          "exact_bytes_equal": false,
+          "generated_bytes": 262144,
+          "generated_sha256": "ed30a35e3fdcdd4eaa6c66508df9925c4e5b785c1ad535f298338ec40195ada8",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/cc12d0240a91cb7e28543f40b09a9e79b3c5e1cfda1cb2fb197196415a0916a6?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00001-of-00004.safetensors%3B+filename%3D%22model-00001-of-00004.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789678684&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhL2NjMTJkMDI0MGE5MWNiN2UyODU0M2Y0MGIwOWE5ZTc5YjNjNWUxY2ZkYTFjYjJmYjE5NzE5NjQxNWEwOTE2YTZcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDEtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njg0fX19XX0_&Signature=MEYCIQCDan1XFlmnNUWK5j%7EC6oqPTYDq19g-9LCaLHTAX8gjhAIhAOZ9k7vPdThvTGox8PmTEspQutlAfx%7EFCVevZjCf%7ElZU&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "9b4ef51e17408670b6609f22c1a10c80a26f434a5ae84701d59dc84782d9cc97",
+          "stock_mlx_safetensors_offsets": [
+            4911438656,
+            4911700800
+          ],
+          "stock_mlx_shard": "model-00001-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.3.self_attn.o_proj.scales"
+        },
+        {
+          "component": "biases",
+          "exact_bytes_equal": true,
+          "generated_bytes": 262144,
+          "generated_sha256": "5d46b860f0008aa1f39032ba908ee1c08ab208e2baa4f76749af84c00f2e658a",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/cc12d0240a91cb7e28543f40b09a9e79b3c5e1cfda1cb2fb197196415a0916a6?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00001-of-00004.safetensors%3B+filename%3D%22model-00001-of-00004.safetensors%22%3B&X-Xet-Cas-Uid=public&user_id=public&Expires=1789678684&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhL2NjMTJkMDI0MGE5MWNiN2UyODU0M2Y0MGIwOWE5ZTc5YjNjNWUxY2ZkYTFjYjJmYjE5NzE5NjQxNWEwOTE2YTZcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDEtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njg0fX19XX0_&Signature=MEUCIQCT-7qgrzAVr3S9oqTgDsrnZZh1EXXhahAE-QDF-mqdTgIgaiS9y8wcq9QvQl31taSAYP42SsWXwtKIuHbzLn1Jfb8_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "5d46b860f0008aa1f39032ba908ee1c08ab208e2baa4f76749af84c00f2e658a",
+          "stock_mlx_safetensors_offsets": [
+            4919672032,
+            4919934176
+          ],
+          "stock_mlx_shard": "model-00001-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.3.self_attn.o_proj.biases"
+        }
+      ],
+      "official_base_shard": "model-00003-of-00026.safetensors",
+      "official_bf16_tensor": "model.language_model.layers.3.self_attn.o_proj.weight",
+      "official_shape": [
+        2048,
+        4096
+      ],
+      "quantizer": {
+        "bits": 4,
+        "group_size": 64,
+        "implementation": "mlx.core.quantize",
+        "mode": "affine"
+      }
+    },
+    {
+      "all_components_exact": false,
+      "base_transport": {
+        "attempt": 1,
+        "content_range": null,
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/cdf848f3c60b4ae60a0c3a722fb32cd4980e2e5c8d21fda1de743a938a60e1a1?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00003-of-00026.safetensors%3B+filename%3D%22model-00003-of-00026.safetensors%22%3B&user_id=public&Expires=1789678685&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2NkZjg0OGYzYzYwYjRhZTYwYTBjM2E3MjJmYjMyY2Q0OTgwZTJlNWM4ZDIxZmRhMWRlNzQzYTkzOGE2MGUxYTFcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njg1fX19XX0_&Signature=MEUCIB6QEk1HhtSMwvN47HRQPRAlPNxHF8z19QMwM5Wq8mR1AiEA0C9vIGcAR91CGHvJTwzWpUtWBsmT4zP9ak2XiULvmy4_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      },
+      "bf16_bytes": 2097152,
+      "bf16_container_slice_bytes": 4194304,
+      "bf16_file": "results/raw/EXP-007/quantizer-provenance/stock-bf16-reproduction-gate/base-layer03-expert000-gate_up_proj.bf16",
+      "bf16_sha256": "c06a904477a91c5c26eedf7e29f899ecdb5ee269cdd6a6cb744f1cf977a4c8a1",
+      "category": "routed_expert",
+      "components": [
+        {
+          "component": "weight",
+          "exact_bytes_equal": false,
+          "generated_bytes": 524288,
+          "generated_sha256": "627647e2017cbfe90a2712ea6f5c8499b853f8adec5d58f6952d358803fe9fa7",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/cc12d0240a91cb7e28543f40b09a9e79b3c5e1cfda1cb2fb197196415a0916a6?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00001-of-00004.safetensors%3B+filename%3D%22model-00001-of-00004.safetensors%22%3B&X-Xet-Cas-Uid=public&user_id=public&Expires=1789678686&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhL2NjMTJkMDI0MGE5MWNiN2UyODU0M2Y0MGIwOWE5ZTc5YjNjNWUxY2ZkYTFjYjJmYjE5NzE5NjQxNWEwOTE2YTZcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDEtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njg2fX19XX0_&Signature=MEUCIA490zTQx3-kFakjIgxBk9aSdJnvZ-8aSJ0rGLGhmWMdAiEA0eBSj9Sv%7EiArFVkLqF6QKD1AHQ%7ESjwlBzm91tFSxTz4_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "c3ff4c598470de42e2aa581b11aba35464faa152aef773b0be721cbb493ed38d",
+          "stock_mlx_safetensors_offsets": [
+            1598928480,
+            1599452768
+          ],
+          "stock_mlx_shard": "model-00001-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.3.mlp.switch_mlp.gate_proj.weight"
+        },
+        {
+          "component": "scales",
+          "exact_bytes_equal": false,
+          "generated_bytes": 32768,
+          "generated_sha256": "221f341156aafdcc2703289dcd4590b6410cea337c17e6bab9db29f864fe7a84",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/cc12d0240a91cb7e28543f40b09a9e79b3c5e1cfda1cb2fb197196415a0916a6?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00001-of-00004.safetensors%3B+filename%3D%22model-00001-of-00004.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789678687&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhL2NjMTJkMDI0MGE5MWNiN2UyODU0M2Y0MGIwOWE5ZTc5YjNjNWUxY2ZkYTFjYjJmYjE5NzE5NjQxNWEwOTE2YTZcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDEtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njg3fX19XX0_&Signature=MEUCIQCSiZDhYpTQF5ZuLVfaQRyZrkU22XaPcLpBlIgmfWviWAIgIp4PjikYxVAb2BdFLc0t5L7RQHphttjoT2AK16uKlS8_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "2f0c0ea1184b69dd581a1840c6b95ca9b268a4ac61eaa8dc989c6e29c66a2f9a",
+          "stock_mlx_safetensors_offsets": [
+            4929891872,
+            4929924640
+          ],
+          "stock_mlx_shard": "model-00001-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.3.mlp.switch_mlp.gate_proj.scales"
+        },
+        {
+          "component": "biases",
+          "exact_bytes_equal": true,
+          "generated_bytes": 32768,
+          "generated_sha256": "3de4053507c9d89e9eea792e9388a73c13b6712707fefe79a9431c4e53c4458f",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/cc12d0240a91cb7e28543f40b09a9e79b3c5e1cfda1cb2fb197196415a0916a6?user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00001-of-00004.safetensors%3B+filename%3D%22model-00001-of-00004.safetensors%22%3B&X-Xet-Cas-Uid=public&Expires=1789678687&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhL2NjMTJkMDI0MGE5MWNiN2UyODU0M2Y0MGIwOWE5ZTc5YjNjNWUxY2ZkYTFjYjJmYjE5NzE5NjQxNWEwOTE2YTZcXD91c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDEtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njg3fX19XX0_&Signature=MEQCIAD3coGa8DaEOFrYErg2orjHO2o8fDo8kWRw4LMfWKn7AiBja672fhKvSBNplnTc0vWQb0azS6CnDjetzwj6wXBnnw__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "3de4053507c9d89e9eea792e9388a73c13b6712707fefe79a9431c4e53c4458f",
+          "stock_mlx_safetensors_offsets": [
+            1840718560,
+            1840751328
+          ],
+          "stock_mlx_shard": "model-00001-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.3.mlp.switch_mlp.gate_proj.biases"
+        }
+      ],
+      "official_base_shard": "model-00003-of-00026.safetensors",
+      "official_bf16_slice": {
+        "expert": 0,
+        "projection": "gate_proj",
+        "source_layout": [
+          256,
+          1024,
+          2048
+        ]
+      },
+      "official_bf16_tensor": "model.language_model.layers.3.mlp.experts.gate_up_proj",
+      "official_shape": [
+        512,
+        2048
+      ],
+      "quantizer": {
+        "bits": 4,
+        "group_size": 64,
+        "implementation": "mlx.core.quantize",
+        "mode": "affine"
+      }
+    },
+    {
+      "all_components_exact": false,
+      "base_transport": {
+        "attempt": 1,
+        "content_range": null,
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/cdf848f3c60b4ae60a0c3a722fb32cd4980e2e5c8d21fda1de743a938a60e1a1?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00003-of-00026.safetensors%3B+filename%3D%22model-00003-of-00026.safetensors%22%3B&user_id=public&Expires=1789678685&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2NkZjg0OGYzYzYwYjRhZTYwYTBjM2E3MjJmYjMyY2Q0OTgwZTJlNWM4ZDIxZmRhMWRlNzQzYTkzOGE2MGUxYTFcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njg1fX19XX0_&Signature=MEUCIB6QEk1HhtSMwvN47HRQPRAlPNxHF8z19QMwM5Wq8mR1AiEA0C9vIGcAR91CGHvJTwzWpUtWBsmT4zP9ak2XiULvmy4_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      },
+      "bf16_bytes": 2097152,
+      "bf16_container_slice_bytes": 4194304,
+      "bf16_file": "results/raw/EXP-007/quantizer-provenance/stock-bf16-reproduction-gate/base-layer03-expert000-gate_up_proj.bf16",
+      "bf16_sha256": "c06a904477a91c5c26eedf7e29f899ecdb5ee269cdd6a6cb744f1cf977a4c8a1",
+      "category": "routed_expert",
+      "components": [
+        {
+          "component": "weight",
+          "exact_bytes_equal": false,
+          "generated_bytes": 524288,
+          "generated_sha256": "d7b87d1dd84f05e6e88c5c75b50d9a46553fb91bbfcc7fe3a6cbd1cc90fe0048",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/cc12d0240a91cb7e28543f40b09a9e79b3c5e1cfda1cb2fb197196415a0916a6?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00001-of-00004.safetensors%3B+filename%3D%22model-00001-of-00004.safetensors%22%3B&Expires=1789678688&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhL2NjMTJkMDI0MGE5MWNiN2UyODU0M2Y0MGIwOWE5ZTc5YjNjNWUxY2ZkYTFjYjJmYjE5NzE5NjQxNWEwOTE2YTZcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDEtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njg4fX19XX0_&Signature=MEYCIQCknxMqZxEfS1jqs-3DGtrnocg2N3jKePZCc-UxzJhgVwIhAIzmbAosH6qRmM26wp3BL3M3aac2ESNs9OzUwIDuUY4x&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "e84024f20d69909bd57f046d66a12860252b145d8778a6e0e14f22789aa5aa14",
+          "stock_mlx_safetensors_offsets": [
+            4938280480,
+            4938804768
+          ],
+          "stock_mlx_shard": "model-00001-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.3.mlp.switch_mlp.up_proj.weight"
+        },
+        {
+          "component": "scales",
+          "exact_bytes_equal": false,
+          "generated_bytes": 32768,
+          "generated_sha256": "3649f2a39802bc1b56bc2ddc85c08bde714b8d0f2cc47291ca2b7cab81d6bd1c",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/cc12d0240a91cb7e28543f40b09a9e79b3c5e1cfda1cb2fb197196415a0916a6?user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00001-of-00004.safetensors%3B+filename%3D%22model-00001-of-00004.safetensors%22%3B&X-Xet-Cas-Uid=public&Expires=1789678689&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhL2NjMTJkMDI0MGE5MWNiN2UyODU0M2Y0MGIwOWE5ZTc5YjNjNWUxY2ZkYTFjYjJmYjE5NzE5NjQxNWEwOTE2YTZcXD91c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDEtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njg5fX19XX0_&Signature=MEQCIHM48q%7E6SnlBJ1UzhPsadwq51DTOfGyGqtkYDHyc24ARAiBF6Jud85TEAyBlIO-IgY5SBG3U8PGg9UlqqYemT3lLIw__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "92c65d6493042ab56684e3940a357db6a25a455bc982608293cd57b3906fdd27",
+          "stock_mlx_safetensors_offsets": [
+            3963319648,
+            3963352416
+          ],
+          "stock_mlx_shard": "model-00001-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.3.mlp.switch_mlp.up_proj.scales"
+        },
+        {
+          "component": "biases",
+          "exact_bytes_equal": true,
+          "generated_bytes": 32768,
+          "generated_sha256": "6c63fc83625f609e0f998e1b1bfc0ffd7156b8b1f3440f1279c4250d0d498b54",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/cc12d0240a91cb7e28543f40b09a9e79b3c5e1cfda1cb2fb197196415a0916a6?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00001-of-00004.safetensors%3B+filename%3D%22model-00001-of-00004.safetensors%22%3B&Expires=1789678689&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhL2NjMTJkMDI0MGE5MWNiN2UyODU0M2Y0MGIwOWE5ZTc5YjNjNWUxY2ZkYTFjYjJmYjE5NzE5NjQxNWEwOTE2YTZcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDEtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njg5fX19XX0_&Signature=MEUCIH5eBjuCenam6LhFAwHqkxje9Jue4ATmd%7EaXJm%7EYS3nIAiEA2BWvG18wmJ7YzLKo8qFFo1GNwuuWkP7znBUxGWyJyIg_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "6c63fc83625f609e0f998e1b1bfc0ffd7156b8b1f3440f1279c4250d0d498b54",
+          "stock_mlx_safetensors_offsets": [
+            5072498208,
+            5072530976
+          ],
+          "stock_mlx_shard": "model-00001-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.3.mlp.switch_mlp.up_proj.biases"
+        }
+      ],
+      "official_base_shard": "model-00003-of-00026.safetensors",
+      "official_bf16_slice": {
+        "expert": 0,
+        "projection": "up_proj",
+        "source_layout": [
+          256,
+          1024,
+          2048
+        ]
+      },
+      "official_bf16_tensor": "model.language_model.layers.3.mlp.experts.gate_up_proj",
+      "official_shape": [
+        512,
+        2048
+      ],
+      "quantizer": {
+        "bits": 4,
+        "group_size": 64,
+        "implementation": "mlx.core.quantize",
+        "mode": "affine"
+      }
+    },
+    {
+      "all_components_exact": false,
+      "base_transport": {
+        "attempt": 1,
+        "content_range": null,
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/cdf848f3c60b4ae60a0c3a722fb32cd4980e2e5c8d21fda1de743a938a60e1a1?user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00003-of-00026.safetensors%3B+filename%3D%22model-00003-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&Expires=1789678690&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2NkZjg0OGYzYzYwYjRhZTYwYTBjM2E3MjJmYjMyY2Q0OTgwZTJlNWM4ZDIxZmRhMWRlNzQzYTkzOGE2MGUxYTFcXD91c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4NjkwfX19XX0_&Signature=MEYCIQD6Gd7McW9s-xy8p4B3SNyKfbiluqB5jNEyAlUS55dIeAIhAPYW-wn5IYuZc%7ERJeFRUhE38KhrY7Z6K3RF76ZfC336w&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      },
+      "bf16_bytes": 2097152,
+      "bf16_container_slice_bytes": 2097152,
+      "bf16_file": "results/raw/EXP-007/quantizer-provenance/stock-bf16-reproduction-gate/base-layer03-expert000-down_proj.bf16",
+      "bf16_sha256": "078c9f8fe001b59e6cb8afa3b3ec2ab67cde426f9eb52ce13442e9c1cdeea350",
+      "category": "routed_expert",
+      "components": [
+        {
+          "component": "weight",
+          "exact_bytes_equal": false,
+          "generated_bytes": 524288,
+          "generated_sha256": "323d267c2898378eec9274f30005271040d473f31906c3411459a38355e03746",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/cc12d0240a91cb7e28543f40b09a9e79b3c5e1cfda1cb2fb197196415a0916a6?user_id=public&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00001-of-00004.safetensors%3B+filename%3D%22model-00001-of-00004.safetensors%22%3B&Expires=1789678691&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhL2NjMTJkMDI0MGE5MWNiN2UyODU0M2Y0MGIwOWE5ZTc5YjNjNWUxY2ZkYTFjYjJmYjE5NzE5NjQxNWEwOTE2YTZcXD91c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDEtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4NjkxfX19XX0_&Signature=MEUCIQCecz5lxvYxuVLGzJZVwvgloXbTQH%7ECTOXlgPdq4ncTOQIgQ40XBmoeeMv6md8N647-0OJCFUqDiIpL5H3bi4HX38w_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "e0bdd2abae044890b70b66f4c408b81cce5754bc2ed99e9ba4d84371697419e5",
+          "stock_mlx_safetensors_offsets": [
+            5080886816,
+            5081411104
+          ],
+          "stock_mlx_shard": "model-00001-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.3.mlp.switch_mlp.down_proj.weight"
+        },
+        {
+          "component": "scales",
+          "exact_bytes_equal": false,
+          "generated_bytes": 32768,
+          "generated_sha256": "a8dae85f35c41c3af241f506b575fab6ca5c179b2e21df1aca94983470982db2",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/cc12d0240a91cb7e28543f40b09a9e79b3c5e1cfda1cb2fb197196415a0916a6?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00001-of-00004.safetensors%3B+filename%3D%22model-00001-of-00004.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789678692&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhL2NjMTJkMDI0MGE5MWNiN2UyODU0M2Y0MGIwOWE5ZTc5YjNjNWUxY2ZkYTFjYjJmYjE5NzE5NjQxNWEwOTE2YTZcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDEtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4NjkyfX19XX0_&Signature=MEUCIQDhOqqSsmGu9cD8BOnTzUHlGCzBIO7ZF%7EuxQaYp-oUGUgIgGvgfYs61gnprzzzFIAk2opmhzY3GoD8V5hqjxoDPY9M_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "97812617555ded86d134dd0d36445f1840df5561440fddb4688b339c5a441c23",
+          "stock_mlx_safetensors_offsets": [
+            5215104608,
+            5215137376
+          ],
+          "stock_mlx_shard": "model-00001-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.3.mlp.switch_mlp.down_proj.scales"
+        },
+        {
+          "component": "biases",
+          "exact_bytes_equal": true,
+          "generated_bytes": 32768,
+          "generated_sha256": "f108c7500fbcc368ca9e2ae755b9811412c5826eddb1aaac3bde46d6673bfafd",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/cc12d0240a91cb7e28543f40b09a9e79b3c5e1cfda1cb2fb197196415a0916a6?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00001-of-00004.safetensors%3B+filename%3D%22model-00001-of-00004.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789678692&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhL2NjMTJkMDI0MGE5MWNiN2UyODU0M2Y0MGIwOWE5ZTc5YjNjNWUxY2ZkYTFjYjJmYjE5NzE5NjQxNWEwOTE2YTZcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDEtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMS1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4NjkyfX19XX0_&Signature=MEQCIEEMITRXVevVpkk1H%7E7pNaQZPdLbkwy%7ELtPNYdeWYQ0gAiBDiTpx7fkLhjyc86Duc9aUO4kQPuXojSNu5%7EdxWxMnEw__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "f108c7500fbcc368ca9e2ae755b9811412c5826eddb1aaac3bde46d6673bfafd",
+          "stock_mlx_safetensors_offsets": [
+            2230517152,
+            2230549920
+          ],
+          "stock_mlx_shard": "model-00001-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.3.mlp.switch_mlp.down_proj.biases"
+        }
+      ],
+      "official_base_shard": "model-00003-of-00026.safetensors",
+      "official_bf16_slice": {
+        "expert": 0,
+        "projection": "down_proj",
+        "source_layout": [
+          256,
+          2048,
+          512
+        ]
+      },
+      "official_bf16_tensor": "model.language_model.layers.3.mlp.experts.down_proj",
+      "official_shape": [
+        2048,
+        512
+      ],
+      "quantizer": {
+        "bits": 4,
+        "group_size": 64,
+        "implementation": "mlx.core.quantize",
+        "mode": "affine"
+      }
+    },
+    {
+      "all_components_exact": false,
+      "base_transport": {
+        "attempt": 1,
+        "content_range": null,
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/325942025fec1254950a91f8107dee2cfe4c0dce052a6f16ceb156b3c316469c?user_id=public&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00025-of-00026.safetensors%3B+filename%3D%22model-00025-of-00026.safetensors%22%3B&Expires=1789678693&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1LzMyNTk0MjAyNWZlYzEyNTQ5NTBhOTFmODEwN2RlZTJjZmU0YzBkY2UwNTJhNmYxNmNlYjE1NmIzYzMxNjQ2OWNcXD91c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjUtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyNS1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4NjkzfX19XX0_&Signature=MEUCIB7gIVQWEQSVlCFEG3sCl6X7H4E7ofOztBE6TjWfWaKiAiEAkm0ZcLZBDw2y%7EoLoHezj4aKQVLdR4IApQpBkUSwGOI4_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      },
+      "bf16_bytes": 2097152,
+      "bf16_container_slice_bytes": 4194304,
+      "bf16_file": "results/raw/EXP-007/quantizer-provenance/stock-bf16-reproduction-gate/base-layer39-expert255-gate_up_proj.bf16",
+      "bf16_sha256": "7af831824aac24947fc9966c0e7609b1486e04d038a56b571e35089c923d3bea",
+      "category": "routed_expert",
+      "components": [
+        {
+          "component": "weight",
+          "exact_bytes_equal": false,
+          "generated_bytes": 524288,
+          "generated_sha256": "5f7696d8f412a4a51091dee8da54cc7ba8d7fa48e0c45e8b6940058e25efdcdb",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/40e6a54bd9c762a10449605ba173e80f6661dd969df27eedd67231e64e91ea73?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00004-of-00004.safetensors%3B+filename%3D%22model-00004-of-00004.safetensors%22%3B&Expires=1789678694&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhLzQwZTZhNTRiZDljNzYyYTEwNDQ5NjA1YmExNzNlODBmNjY2MWRkOTY5ZGYyN2VlZGQ2NzIzMWU2NGU5MWVhNzNcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDQtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwNC1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njk0fX19XX0_&Signature=MEUCIQDSr2c9CyEkWQDvOZuE6%7ERXQI85-yAMgapygypm-jl2qQIgY8ts8jWdEhgRM%7Eb3p7jxvxaagijf5b6nFmQ0YzqFHZk_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "ce3cd707bc9e5ffaa1efe3c495608ae9c46e737075415daa357f5947f65b1906",
+          "stock_mlx_safetensors_offsets": [
+            579213312,
+            579737600
+          ],
+          "stock_mlx_shard": "model-00004-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.39.mlp.switch_mlp.gate_proj.weight"
+        },
+        {
+          "component": "scales",
+          "exact_bytes_equal": false,
+          "generated_bytes": 32768,
+          "generated_sha256": "b9617e1afdbb38300753af9afbba852f3804d73bced0bff745dcb32af6a9a9ea",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/40e6a54bd9c762a10449605ba173e80f6661dd969df27eedd67231e64e91ea73?user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00004-of-00004.safetensors%3B+filename%3D%22model-00004-of-00004.safetensors%22%3B&X-Xet-Cas-Uid=public&Expires=1789678695&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhLzQwZTZhNTRiZDljNzYyYTEwNDQ5NjA1YmExNzNlODBmNjY2MWRkOTY5ZGYyN2VlZGQ2NzIzMWU2NGU5MWVhNzNcXD91c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDQtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwNC1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njk1fX19XX0_&Signature=MEUCIQCkBfCJTWL80O0J8OSrQ%7EO-IcvkoVvA7THD1C5nrtui%7EQIgM4pbRl6X1oqXDtTlKgh8P46UyuaiaGSSu81BNF8RWPI_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "0ccc750485dd656a1baff55c19cb6e2ccaf19d77672b18bd0b92fd3f9863627d",
+          "stock_mlx_safetensors_offsets": [
+            1544813824,
+            1544846592
+          ],
+          "stock_mlx_shard": "model-00004-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.39.mlp.switch_mlp.gate_proj.scales"
+        },
+        {
+          "component": "biases",
+          "exact_bytes_equal": true,
+          "generated_bytes": 32768,
+          "generated_sha256": "9f9d451291b4a98276bf7f6511b7fd3e90038c3735650675d6c986b62f1ada56",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/40e6a54bd9c762a10449605ba173e80f6661dd969df27eedd67231e64e91ea73?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00004-of-00004.safetensors%3B+filename%3D%22model-00004-of-00004.safetensors%22%3B&Expires=1789678695&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhLzQwZTZhNTRiZDljNzYyYTEwNDQ5NjA1YmExNzNlODBmNjY2MWRkOTY5ZGYyN2VlZGQ2NzIzMWU2NGU5MWVhNzNcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDQtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwNC1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njk1fX19XX0_&Signature=MEUCIQCLks-zvp5-Va1c6QSdy8dSEO2ZVQnpnxkhQQCm4xoB5AIgbby53t21-DpjHexM6rRBQXkWc8PhMnb1Y-de2qboO6I_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "9f9d451291b4a98276bf7f6511b7fd3e90038c3735650675d6c986b62f1ada56",
+          "stock_mlx_safetensors_offsets": [
+            1485573312,
+            1485606080
+          ],
+          "stock_mlx_shard": "model-00004-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.39.mlp.switch_mlp.gate_proj.biases"
+        }
+      ],
+      "official_base_shard": "model-00025-of-00026.safetensors",
+      "official_bf16_slice": {
+        "expert": 255,
+        "projection": "gate_proj",
+        "source_layout": [
+          256,
+          1024,
+          2048
+        ]
+      },
+      "official_bf16_tensor": "model.language_model.layers.39.mlp.experts.gate_up_proj",
+      "official_shape": [
+        512,
+        2048
+      ],
+      "quantizer": {
+        "bits": 4,
+        "group_size": 64,
+        "implementation": "mlx.core.quantize",
+        "mode": "affine"
+      }
+    },
+    {
+      "all_components_exact": false,
+      "base_transport": {
+        "attempt": 1,
+        "content_range": null,
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/325942025fec1254950a91f8107dee2cfe4c0dce052a6f16ceb156b3c316469c?user_id=public&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00025-of-00026.safetensors%3B+filename%3D%22model-00025-of-00026.safetensors%22%3B&Expires=1789678693&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1LzMyNTk0MjAyNWZlYzEyNTQ5NTBhOTFmODEwN2RlZTJjZmU0YzBkY2UwNTJhNmYxNmNlYjE1NmIzYzMxNjQ2OWNcXD91c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjUtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyNS1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4NjkzfX19XX0_&Signature=MEUCIB7gIVQWEQSVlCFEG3sCl6X7H4E7ofOztBE6TjWfWaKiAiEAkm0ZcLZBDw2y%7EoLoHezj4aKQVLdR4IApQpBkUSwGOI4_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      },
+      "bf16_bytes": 2097152,
+      "bf16_container_slice_bytes": 4194304,
+      "bf16_file": "results/raw/EXP-007/quantizer-provenance/stock-bf16-reproduction-gate/base-layer39-expert255-gate_up_proj.bf16",
+      "bf16_sha256": "7af831824aac24947fc9966c0e7609b1486e04d038a56b571e35089c923d3bea",
+      "category": "routed_expert",
+      "components": [
+        {
+          "component": "weight",
+          "exact_bytes_equal": false,
+          "generated_bytes": 524288,
+          "generated_sha256": "fcaeef9540421bb4f3090559be9efaee4efbc21d70811471bdc02716106ed331",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/40e6a54bd9c762a10449605ba173e80f6661dd969df27eedd67231e64e91ea73?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00004-of-00004.safetensors%3B+filename%3D%22model-00004-of-00004.safetensors%22%3B&Expires=1789678696&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhLzQwZTZhNTRiZDljNzYyYTEwNDQ5NjA1YmExNzNlODBmNjY2MWRkOTY5ZGYyN2VlZGQ2NzIzMWU2NGU5MWVhNzNcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDQtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwNC1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njk2fX19XX0_&Signature=MEQCIClKJo49-bYBwSTOOB5S1cE29un2PiDmkxZBbeJF6VDoAiAwWC6HZJbZ--ow0qIHqhyoHLf6uKTq3wjuK-GcSBCptA__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "072f8ae263faffb76f56739ccaabd6a0e8b3204cbb7ce2eac88a09ff002fc559",
+          "stock_mlx_safetensors_offsets": [
+            444995584,
+            445519872
+          ],
+          "stock_mlx_shard": "model-00004-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.39.mlp.switch_mlp.up_proj.weight"
+        },
+        {
+          "component": "scales",
+          "exact_bytes_equal": false,
+          "generated_bytes": 32768,
+          "generated_sha256": "c4db3dd7414d1acbb26ba638fb8474762e4a0b25b62d538eee1adc4d55f1f036",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/40e6a54bd9c762a10449605ba173e80f6661dd969df27eedd67231e64e91ea73?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00004-of-00004.safetensors%3B+filename%3D%22model-00004-of-00004.safetensors%22%3B&user_id=public&Expires=1789678697&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhLzQwZTZhNTRiZDljNzYyYTEwNDQ5NjA1YmExNzNlODBmNjY2MWRkOTY5ZGYyN2VlZGQ2NzIzMWU2NGU5MWVhNzNcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDQtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwNC1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njk3fX19XX0_&Signature=MEUCIQCaY0FGbZ0oKnvdMmfICmM5J2nxOVA1oPzjmBDYX5eJMQIgKhGMcCa5p6wLSTh2kM9RvogCp6Rg8vq5fqmhhyZN3Gg_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "b72e1536d56e9f53dafb4d9e66ae848545c8c9943ca6809e150e1701d7d26a6a",
+          "stock_mlx_safetensors_offsets": [
+            311269376,
+            311302144
+          ],
+          "stock_mlx_shard": "model-00004-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.39.mlp.switch_mlp.up_proj.scales"
+        },
+        {
+          "component": "biases",
+          "exact_bytes_equal": true,
+          "generated_bytes": 32768,
+          "generated_sha256": "8b781615e8f1cb8de162d83126d1e4e3863c2438b591e7541426d4cfcfd37c50",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/40e6a54bd9c762a10449605ba173e80f6661dd969df27eedd67231e64e91ea73?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00004-of-00004.safetensors%3B+filename%3D%22model-00004-of-00004.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789678697&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhLzQwZTZhNTRiZDljNzYyYTEwNDQ5NjA1YmExNzNlODBmNjY2MWRkOTY5ZGYyN2VlZGQ2NzIzMWU2NGU5MWVhNzNcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDQtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwNC1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njk3fX19XX0_&Signature=MEYCIQCyGlFUyd6sjxC7kDctr5vBCpr20WLLqfVRbmGQi4eAnAIhAO-gIatT5W8yUW9QSy3F-khjV4h1WNJ4Hs4-JIbTzQk4&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "8b781615e8f1cb8de162d83126d1e4e3863c2438b591e7541426d4cfcfd37c50",
+          "stock_mlx_safetensors_offsets": [
+            302880768,
+            302913536
+          ],
+          "stock_mlx_shard": "model-00004-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.39.mlp.switch_mlp.up_proj.biases"
+        }
+      ],
+      "official_base_shard": "model-00025-of-00026.safetensors",
+      "official_bf16_slice": {
+        "expert": 255,
+        "projection": "up_proj",
+        "source_layout": [
+          256,
+          1024,
+          2048
+        ]
+      },
+      "official_bf16_tensor": "model.language_model.layers.39.mlp.experts.gate_up_proj",
+      "official_shape": [
+        512,
+        2048
+      ],
+      "quantizer": {
+        "bits": 4,
+        "group_size": 64,
+        "implementation": "mlx.core.quantize",
+        "mode": "affine"
+      }
+    },
+    {
+      "all_components_exact": false,
+      "base_transport": {
+        "attempt": 1,
+        "content_range": null,
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/0041d53066f98695453aba3f0240867f6261814bbb8b8861a9696f84fb8d2a23?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00026-of-00026.safetensors%3B+filename%3D%22model-00026-of-00026.safetensors%22%3B&user_id=public&Expires=1789678698&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1LzAwNDFkNTMwNjZmOTg2OTU0NTNhYmEzZjAyNDA4NjdmNjI2MTgxNGJiYjhiODg2MWE5Njk2Zjg0ZmI4ZDJhMjNcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjYtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyNi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njk4fX19XX0_&Signature=MEYCIQCC3dLJl6B4muZpx2kcxh251akmhZD2P3SS86PsodquqAIhAOwd5opj5nrHLeP425pTcKibqfuCaeTNtbFqZZ5W6nNF&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      },
+      "bf16_bytes": 2097152,
+      "bf16_container_slice_bytes": 2097152,
+      "bf16_file": "results/raw/EXP-007/quantizer-provenance/stock-bf16-reproduction-gate/base-layer39-expert255-down_proj.bf16",
+      "bf16_sha256": "c52a2f50f9668656b6aa9ef8f997a267f759aa195d8fd7fddd1a1b02a29f781d",
+      "category": "routed_expert",
+      "components": [
+        {
+          "component": "weight",
+          "exact_bytes_equal": false,
+          "generated_bytes": 524288,
+          "generated_sha256": "cc69242335265d6262419d317000c47d28f5c52b3b412bc96bad55c9f40cdbef",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/40e6a54bd9c762a10449605ba173e80f6661dd969df27eedd67231e64e91ea73?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00004-of-00004.safetensors%3B+filename%3D%22model-00004-of-00004.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789678699&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhLzQwZTZhNTRiZDljNzYyYTEwNDQ5NjA1YmExNzNlODBmNjY2MWRkOTY5ZGYyN2VlZGQ2NzIzMWU2NGU5MWVhNzNcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDQtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwNC1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4Njk5fX19XX0_&Signature=MEUCIELjg23EZFo3cm4I8Mz1jpUGn9kZAeIqa3018TPzj54qAiEAggrb0%7EcmxPw2yRHVDMmNyc%7EjcqbXXUTha7vzMLfP0j0_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "268beb9948f20d8f74fc2b30f38f5eeab03e4d9da37c6e8dacb8f90a67a8de05",
+          "stock_mlx_safetensors_offsets": [
+            2247264640,
+            2247788928
+          ],
+          "stock_mlx_shard": "model-00004-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.39.mlp.switch_mlp.down_proj.weight"
+        },
+        {
+          "component": "scales",
+          "exact_bytes_equal": false,
+          "generated_bytes": 32768,
+          "generated_sha256": "82c311b10bd599c247c97fccdaf6e205c7ca311cad9c47263a61470e568bd33c",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/40e6a54bd9c762a10449605ba173e80f6661dd969df27eedd67231e64e91ea73?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00004-of-00004.safetensors%3B+filename%3D%22model-00004-of-00004.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789678700&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhLzQwZTZhNTRiZDljNzYyYTEwNDQ5NjA1YmExNzNlODBmNjY2MWRkOTY5ZGYyN2VlZGQ2NzIzMWU2NGU5MWVhNzNcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDQtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwNC1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4NzAwfX19XX0_&Signature=MEYCIQD8Tuqa7hNeuvwTfSZ46yM25q%7ED3pwxGxX5pek1c4daMwIhAK4ZnamwwU58Bjb%7E98PUyCr368OUrU1XkDH0ouwsh4Sw&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "a546f3eba36c21d491145e59625bf31dca84e721cd6b590d35502079c45e8e32",
+          "stock_mlx_safetensors_offsets": [
+            1725554112,
+            1725586880
+          ],
+          "stock_mlx_shard": "model-00004-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.39.mlp.switch_mlp.down_proj.scales"
+        },
+        {
+          "component": "biases",
+          "exact_bytes_equal": true,
+          "generated_bytes": 32768,
+          "generated_sha256": "32ec7a8aec932f9881c046a4a58601bd3c0d1071bc6692651a9904b4c9f0d729",
+          "range_transport": {
+            "attempt": 1,
+            "content_range": null,
+            "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e10daa7f46485a3e9b552a/40e6a54bd9c762a10449605ba173e80f6661dd969df27eedd67231e64e91ea73?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00004-of-00004.safetensors%3B+filename%3D%22model-00004-of-00004.safetensors%22%3B&user_id=public&Expires=1789678700&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllMTBkYWE3ZjQ2NDg1YTNlOWI1NTJhLzQwZTZhNTRiZDljNzYyYTEwNDQ5NjA1YmExNzNlODBmNjY2MWRkOTY5ZGYyN2VlZGQ2NzIzMWU2NGU5MWVhNzNcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDQtb2YtMDAwMDQuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwNC1vZi0wMDAwNC5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4NzAwfX19XX0_&Signature=MEYCIQD4nbt-bwNjw-EnSQ6hgSNVtqjoNZHVf6fLJaLbHr%7EW9gIhAO-zaTm7B6231zBtyPN%7EGnfoHYDwdhFLhCxBjXoeZxwv&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+            "status": 206
+          },
+          "reference_sha256": "32ec7a8aec932f9881c046a4a58601bd3c0d1071bc6692651a9904b4c9f0d729",
+          "stock_mlx_safetensors_offsets": [
+            278599680,
+            278632448
+          ],
+          "stock_mlx_shard": "model-00004-of-00004.safetensors",
+          "stock_mlx_tensor": "language_model.model.layers.39.mlp.switch_mlp.down_proj.biases"
+        }
+      ],
+      "official_base_shard": "model-00026-of-00026.safetensors",
+      "official_bf16_slice": {
+        "expert": 255,
+        "projection": "down_proj",
+        "source_layout": [
+          256,
+          2048,
+          512
+        ]
+      },
+      "official_bf16_tensor": "model.language_model.layers.39.mlp.experts.down_proj",
+      "official_shape": [
+        2048,
+        512
+      ],
+      "quantizer": {
+        "bits": 4,
+        "group_size": 64,
+        "implementation": "mlx.core.quantize",
+        "mode": "affine"
+      }
+    }
+  ],
+  "selected_bf16_bytes": 67108864,
+  "selected_tensor_count": 10
+}

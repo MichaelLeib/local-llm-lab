@@ -1,0 +1,28 @@
+{
+  "started_at": "2026-09-17T14:37:26.973531+00:00",
+  "command": [
+    "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/release/slipstream",
+    "--model",
+    "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/model/qwen36.gturbo",
+    "--prompt",
+    "Reply with exactly READY.",
+    "--max-new",
+    "8",
+    "--max-context",
+    "4096",
+    "--temperature",
+    "0",
+    "--seed",
+    "12345",
+    "--expert-cache-slots",
+    "16",
+    "--prefill-chunk",
+    "auto"
+  ],
+  "cwd": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream",
+  "pid": 3721,
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "uid": 501,
+  "finished_at": "2026-09-17T14:37:44.222191+00:00",
+  "exit_code": 0
+}

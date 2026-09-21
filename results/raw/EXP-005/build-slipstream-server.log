@@ -1,0 +1,10 @@
+
+=== slipstream-server ===
+Building for production...
+[Computing dependencies]
+[Pre-planning 1 / 1073]
+[Planning deferred tasks]
+[5 / 75] swift-transformers_Hub
+[5 / 77]
+Build complete! (1,43 sec)
+build_exit=0

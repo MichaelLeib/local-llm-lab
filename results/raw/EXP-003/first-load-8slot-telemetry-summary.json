@@ -1,0 +1,7 @@
+{
+  "samples": 2,
+  "footprint_max_mb": null,
+  "footprint_peak_max_mb": null,
+  "gpu_alloc_max_bytes": 8751382528,
+  "gpu_inuse_max_bytes": 4766547968
+}

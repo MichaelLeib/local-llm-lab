@@ -1,0 +1,67 @@
+{
+  "server_command": [
+    "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-010-laguna-long-context/.venv/bin/python",
+    "-m",
+    "turboquant_mlx.serve",
+    "--model",
+    "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-010-laguna-long-context/model/laguna-s21-tqTe-g64",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8910",
+    "--temp",
+    "0",
+    "--top-p",
+    "0.9",
+    "--max-tokens",
+    "256",
+    "--chat-template-args",
+    "{\"enable_thinking\":false}",
+    "--prompt-concurrency",
+    "1",
+    "--prefill-step-size",
+    "128",
+    "--prompt-cache-size",
+    "1",
+    "--cache-budget-gb",
+    "4.0",
+    "--max-active-experts",
+    "0",
+    "--prefetch-workers",
+    "8",
+    "--no-page-cache",
+    "--no-hotlist",
+    "--prefill-stats",
+    "--prefill-stats-file",
+    "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-010-laguna-long-context/arms/phase2-short-4g-native-6k-tokenizer-fix/prefill-stats.jsonl"
+  ],
+  "request": {
+    "model": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-010-laguna-long-context/model/laguna-s21-tqTe-g64",
+    "messages": [
+      {
+        "role": "user",
+        "content": "<prompt in prompt.txt>"
+      }
+    ],
+    "stream": true,
+    "max_tokens": 256,
+    "temperature": 0
+  },
+  "configuration": {
+    "native_top_k": 10,
+    "dflash": "off",
+    "kv": "fp16",
+    "prefill_step_size": 128,
+    "cache_budget_gb": 4.0,
+    "swap_limit_mib": 512.0,
+    "memory_free_limit_pct": 20
+  },
+  "prompt": {
+    "target_tokens": 6144,
+    "actual_rendered_tokens": 6159,
+    "record_units": 87,
+    "rendered_chars": 25311,
+    "user_prompt_chars": 25107,
+    "tokenizer_class": "Tokenizer"
+  }
+}

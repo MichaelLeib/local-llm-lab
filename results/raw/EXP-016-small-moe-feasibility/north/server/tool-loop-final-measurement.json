@@ -1,0 +1,65 @@
+{
+  "timestamp_utc": "2026-09-19T09:46:44.156222+00:00",
+  "wall_seconds": 30.92648645900772,
+  "http_status": 200,
+  "tool_result": "2026-09-19T09:45:55Z",
+  "request": {
+    "model": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-016-small-moe-feasibility/north/model/North-Mini-Code-1.0-UD-Q3_K_M.gguf",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a local runtime compatibility probe. Use native tool calls when requested."
+      },
+      {
+        "role": "user",
+        "content": "Use the terminal tool to execute exactly: date -u +%Y-%m-%dT%H:%M:%SZ. Call the tool before answering; do not invent output."
+      },
+      {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "terminal",
+              "arguments": "{\"command\":\"date -u +%Y-%m-%dT%H:%M:%SZ\"}"
+            },
+            "id": "0"
+          }
+        ]
+      },
+      {
+        "role": "tool",
+        "tool_call_id": "0",
+        "content": "2026-09-19T09:45:55Z"
+      }
+    ],
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "terminal",
+          "description": "Execute one safe shell command and return exact stdout.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "command": {
+                "type": "string",
+                "description": "The shell command to execute."
+              }
+            },
+            "required": [
+              "command"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    ],
+    "tool_choice": "auto",
+    "temperature": 0,
+    "seed": 12345,
+    "max_tokens": 128,
+    "stream": false
+  }
+}

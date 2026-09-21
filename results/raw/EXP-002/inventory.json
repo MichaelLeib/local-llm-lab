@@ -1,0 +1,109 @@
+{
+  "experiment": "EXP-002",
+  "phase": "phase-1-inventory",
+  "observed_at_utc": "2026-09-17T07:14:30Z",
+  "actions_not_taken": [
+    "no local model launched",
+    "no model downloaded",
+    "no model replaced or converted",
+    "no runtime or system configuration changed"
+  ],
+  "machine": {
+    "model": "MacBook Air Mac15,13",
+    "soc": "Apple M3",
+    "cpu_cores": 8,
+    "unified_memory_bytes": 17179869184,
+    "unified_memory_gib": 16,
+    "macos_version": "27.0",
+    "macos_build": "26A428",
+    "root_volume_total_gib": 460,
+    "root_volume_available_gib": 73,
+    "thermal_design": "fanless MacBook Air"
+  },
+  "serving": {
+    "lane_manager": "/Users/<user>/.hermes/bin/hermes-local-model",
+    "runtime": "rapid-mlx",
+    "runtime_version": "0.14.1",
+    "binary": "/opt/homebrew/bin/rapid-mlx",
+    "fast_model_default": "ornith-ai/Ornith-1.5-9B-MLX-4bit",
+    "fast_bind": "127.0.0.1:8901",
+    "deep_bind": "127.0.0.1:8902",
+    "fast_status": "down",
+    "deep_status": "down",
+    "fast_flags": [
+      "--gpu-memory-utilization 0.85",
+      "--cache-memory-mb 3072",
+      "--lazy-load",
+      "--idle-unload-seconds 1800",
+      "--no-thinking",
+      "--enable-auto-tool-choice",
+      "--tool-call-parser hermes",
+      "--reasoning-parser qwen3"
+    ]
+  },
+  "python_environment": {
+    "executable": "/opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/bin/python",
+    "version": "3.14.7",
+    "mlx": "0.32.1",
+    "mlx_lm": "0.31.3",
+    "huggingface_hub": "1.31.0",
+    "optiq": "not-installed",
+    "mlx_optiq": "not-installed"
+  },
+  "local_models": [
+    {
+      "repo": "ornith-ai/Ornith-1.5-9B-MLX-4bit",
+      "status": "present",
+      "revision": "a48173b246ac705be75c05bedf1a0666db522d53",
+      "snapshot": "/Users/<user>/.cache/huggingface/hub/models--ornith-ai--Ornith-1.5-9B-MLX-4bit/snapshots/a48173b246ac705be75c05bedf1a0666db522d53",
+      "repository_bytes": 5059958637,
+      "repository_gib": 4.712,
+      "repository_gb_decimal": 5.06,
+      "weight_bytes": 5038161163,
+      "quantization": "uniform affine 4-bit, group size 64",
+      "config_model_type": "qwen3_5",
+      "config_architecture": "Qwen3_5ForConditionalGeneration"
+    },
+    {
+      "repo": "mlx-community/Ornith-1.5-9B-OptiQ-4bit",
+      "status": "present-but-not-primary-ladder",
+      "revision": "15fa783d15b32f030b7bf2356940ba5cfb55c8ec",
+      "snapshot": "/Users/<user>/.cache/huggingface/hub/models--mlx-community--Ornith-1.5-9B-OptiQ-4bit/snapshots/15fa783d15b32f030b7bf2356940ba5cfb55c8ec",
+      "repository_bytes": 7120899829,
+      "repository_gib": 6.632,
+      "repository_gb_decimal": 7.121,
+      "weight_bytes": 7100710126,
+      "quantization": "OptiQ mixed precision, per-layer 4/8-bit, group size 64",
+      "runtime_status": "optiq/mlx-optiq not installed; not launched"
+    }
+  ],
+  "remote_candidates_not_downloaded": [
+    {
+      "repo": "ornith-ai/Ornith-1.5-9B-MLX-6bit",
+      "revision": "538eb2e517a3adf8691e77cc20232ef1a3af39f3",
+      "repository_bytes": 7298157745,
+      "repository_gib": 6.797,
+      "repository_gb_decimal": 7.298,
+      "quantization": "official uniform 6-bit"
+    },
+    {
+      "repo": "ornith-ai/Ornith-1.5-9B-MLX-8bit",
+      "revision": "b4b70543d60c81e7c418a001b74cd4352212bd44",
+      "repository_bytes": 9536343460,
+      "repository_gib": 8.881,
+      "repository_gb_decimal": 9.536,
+      "quantization": "official uniform 8-bit"
+    }
+  ],
+  "proposed_primary_ladder": [
+    "ornith-ai/Ornith-1.5-9B-MLX-4bit (already present)",
+    "ornith-ai/Ornith-1.5-9B-MLX-6bit (download after approval)",
+    "ornith-ai/Ornith-1.5-9B-MLX-8bit (download after approval)"
+  ],
+  "estimated_new_repository_data_gib": 15.678,
+  "source_notes": [
+    "Local sizes were measured from unique files in each HF snapshot.",
+    "Remote revisions and sizes were queried from Hugging Face model metadata without downloading files.",
+    "Repository size is not the same as runtime MLX/Metal physical footprint."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "experiment": "EXP-005",
+  "test": "Hermes_one_shot_terminal_tool_call_clean_post_reboot",
+  "profile": "exp005",
+  "server_context": 8192,
+  "expert_cache_slots": 16,
+  "hermes_exit_code": 0,
+  "tool": "terminal",
+  "tool_command": "date",
+  "tool_output": "Thu Sep 17 16:46:37 CEST 2026",
+  "baseline_swap_mib": 0.0,
+  "post_test_swap_mib": 84.38,
+  "provider_requests": [
+    {
+      "prompt_tokens": 5003,
+      "cached_prompt_tokens": 0,
+      "new_prompt_tokens": 5003,
+      "completion_tokens": 50,
+      "ttft_seconds": 107.87,
+      "prefill_tok_s": 46.4,
+      "decode_tok_s": 6.9,
+      "total_seconds": 115.10,
+      "stop": "tool_calls",
+      "reasoning_tokens": 22
+    },
+    {
+      "prompt_tokens": 5106,
+      "cached_prompt_tokens": 5052,
+      "new_prompt_tokens": 54,
+      "completion_tokens": 111,
+      "ttft_seconds": 4.50,
+      "prefill_tok_s": 12.0,
+      "decode_tok_s": 7.1,
+      "total_seconds": 20.22,
+      "stop": "stop",
+      "reasoning_tokens": 67
+    }
+  ],
+  "prefix_reuse": {
+    "cached_tokens": 5052,
+    "second_prompt_tokens": 5106,
+    "cached_fraction": 0.9894
+  },
+  "artifacts": "hermes-tool-test-clean-reboot.log and hermes-server-clean-reboot.log"
+}

@@ -1,0 +1,11 @@
+Preparing EXP-017: pinned streamed-ERNIE runtime.
+started_utc=2026-09-19T10:19:20Z
+lanes_before:
+FAST: down
+DEEP: down
+  vm.swapusage: total = 3072.00M  used = 2028.19M  free = 1043.81M  (encrypted)
+Cloning into '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-017-ernie-streamed-gguf/source/llama.cpp-moe-streaming'...
+From https://github.com/freedomljc/llama.cpp
+ * branch                1248fd8fa8cfebaece5ea992e4d951c1e18bb9d5 -> FETCH_HEAD
+HEAD is now at 1248fd8fa Merge remote-tracking branch 'upstream/master' into feat/moe-streaming-core
+finished_utc=2026-09-19T10:21:36Z

@@ -1,0 +1,1 @@
+53107f530aa52eb00912263ab1ee29bd199261c87cd7b4ad4ca1318c1fe33ee3  /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-020-bonsai2/models/Ternary-Bonsai-2-27B-PTQ1_0.gguf

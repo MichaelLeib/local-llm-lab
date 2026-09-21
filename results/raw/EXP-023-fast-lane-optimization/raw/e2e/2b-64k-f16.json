@@ -1,0 +1,1214 @@
+{
+  "label": "2b-64k-f16",
+  "created_at": 1789921295.193235,
+  "runs": [
+    {
+      "name": "simple",
+      "run_id": "run_eaca7d8c857b4aa1a4faf5b5e7945b2b",
+      "request_admission_seconds": 0.1032,
+      "total_seconds": 45.1817,
+      "first_event": {
+        "event": "reasoning.available",
+        "run_id": "run_eaca7d8c857b4aa1a4faf5b5e7945b2b",
+        "timestamp": 1789921340.358867,
+        "text": "Paris"
+      },
+      "final": {
+        "event": "run.completed",
+        "run_id": "run_eaca7d8c857b4aa1a4faf5b5e7945b2b",
+        "timestamp": 1789921340.373667,
+        "output": "Paris",
+        "usage": {
+          "input_tokens": 14397,
+          "output_tokens": 2,
+          "total_tokens": 14399
+        }
+      },
+      "events": [
+        {
+          "event": "message.delta",
+          "run_id": "run_eaca7d8c857b4aa1a4faf5b5e7945b2b",
+          "timestamp": 1789921339.488765,
+          "delta": "Paris"
+        },
+        {
+          "event": "reasoning.available",
+          "run_id": "run_eaca7d8c857b4aa1a4faf5b5e7945b2b",
+          "timestamp": 1789921340.358867,
+          "text": "Paris"
+        },
+        {
+          "event": "run.completed",
+          "run_id": "run_eaca7d8c857b4aa1a4faf5b5e7945b2b",
+          "timestamp": 1789921340.373667,
+          "output": "Paris",
+          "usage": {
+            "input_tokens": 14397,
+            "output_tokens": 2,
+            "total_tokens": 14399
+          }
+        }
+      ],
+      "raw_sse_path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-023-fast-lane-optimization/raw/e2e/2b-64k-f16-simple.sse"
+    },
+    {
+      "name": "terminal",
+      "run_id": "run_8417197f4edb4166a564628e2698e40b",
+      "request_admission_seconds": 0.0853,
+      "total_seconds": 4.1442,
+      "first_event": {
+        "event": "tool.started",
+        "run_id": "run_8417197f4edb4166a564628e2698e40b",
+        "timestamp": 1789921341.927829,
+        "tool": "terminal",
+        "preview": "git status"
+      },
+      "final": {
+        "event": "run.completed",
+        "run_id": "run_8417197f4edb4166a564628e2698e40b",
+        "timestamp": 1789921344.518173,
+        "output": "The working tree is not in a git repository \u2014 there is no `.git` directory (or any parent directory) on this file system, so `git status` fails with exit code 128. No changes are detectable because git cannot operate at all on this path.",
+        "usage": {
+          "input_tokens": 28869,
+          "output_tokens": 76,
+          "total_tokens": 28945
+        }
+      },
+      "events": [
+        {
+          "event": "tool.started",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921341.927829,
+          "tool": "terminal",
+          "preview": "git status"
+        },
+        {
+          "event": "tool.completed",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921342.045119,
+          "tool": "terminal",
+          "duration": 0.123,
+          "error": true
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921342.52367,
+          "delta": "\n\nThe"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921342.567811,
+          "delta": " working"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921342.605493,
+          "delta": " tree"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921342.639945,
+          "delta": " is"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921342.676237,
+          "delta": " not"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921342.712973,
+          "delta": " in"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921342.748907,
+          "delta": " a"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921342.787306,
+          "delta": " git"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921342.822827,
+          "delta": " repository"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921342.857554,
+          "delta": " \u2014"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921342.894578,
+          "delta": " there"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921342.931811,
+          "delta": " is"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921342.96964,
+          "delta": " no"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.004982,
+          "delta": " `."
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.039558,
+          "delta": "git"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.076386,
+          "delta": "`"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.113537,
+          "delta": " directory"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.150903,
+          "delta": " ("
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.186904,
+          "delta": "or"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.221897,
+          "delta": " any"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.2568672,
+          "delta": " parent"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.292149,
+          "delta": " directory"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.329039,
+          "delta": ")"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.365736,
+          "delta": " on"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.401272,
+          "delta": " this"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.43809,
+          "delta": " file"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.472638,
+          "delta": " system"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.508688,
+          "delta": ","
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.5460851,
+          "delta": " so"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.5825222,
+          "delta": " `"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.62061,
+          "delta": "git"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.656487,
+          "delta": " status"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.693426,
+          "delta": "`"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.728276,
+          "delta": " fails"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.765087,
+          "delta": " with"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.802529,
+          "delta": " exit"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.838538,
+          "delta": " code"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.874772,
+          "delta": " "
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.9116108,
+          "delta": "128"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.948137,
+          "delta": "."
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921343.986204,
+          "delta": " No"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921344.021374,
+          "delta": " changes"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921344.0560708,
+          "delta": " are"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921344.090613,
+          "delta": " detectable"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921344.127297,
+          "delta": " because"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921344.168336,
+          "delta": " git"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921344.203967,
+          "delta": " cannot"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921344.2387378,
+          "delta": " operate"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921344.273298,
+          "delta": " at"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921344.307668,
+          "delta": " all"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921344.3446321,
+          "delta": " on"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921344.38296,
+          "delta": " this"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921344.4156952,
+          "delta": " path"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921344.453482,
+          "delta": "."
+        },
+        {
+          "event": "reasoning.available",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921344.494988,
+          "text": "The working tree is not in a git repository \u2014 there is no `.git` directory (or any parent directory) on this file system, so `git status` fails with exit code 128. No changes are detectable because git cannot operate at all on this path."
+        },
+        {
+          "event": "run.completed",
+          "run_id": "run_8417197f4edb4166a564628e2698e40b",
+          "timestamp": 1789921344.518173,
+          "output": "The working tree is not in a git repository \u2014 there is no `.git` directory (or any parent directory) on this file system, so `git status` fails with exit code 128. No changes are detectable because git cannot operate at all on this path.",
+          "usage": {
+            "input_tokens": 28869,
+            "output_tokens": 76,
+            "total_tokens": 28945
+          }
+        }
+      ],
+      "raw_sse_path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-023-fast-lane-optimization/raw/e2e/2b-64k-f16-terminal.sse"
+    },
+    {
+      "name": "web",
+      "run_id": "run_73f6519685364598bd1d73a6fe71b250",
+      "request_admission_seconds": 0.087,
+      "total_seconds": 1.3668,
+      "first_event": {
+        "event": "reasoning.available",
+        "run_id": "run_73f6519685364598bd1d73a6fe71b250",
+        "timestamp": 1789921345.8707619,
+        "text": "https://hermes-agent.nousresearch.com/docs"
+      },
+      "final": {
+        "event": "run.completed",
+        "run_id": "run_73f6519685364598bd1d73a6fe71b250",
+        "timestamp": 1789921345.8850188,
+        "output": "https://hermes-agent.nousresearch.com/docs",
+        "usage": {
+          "input_tokens": 14403,
+          "output_tokens": 11,
+          "total_tokens": 14414
+        }
+      },
+      "events": [
+        {
+          "event": "message.delta",
+          "run_id": "run_73f6519685364598bd1d73a6fe71b250",
+          "timestamp": 1789921345.3123178,
+          "delta": "https"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_73f6519685364598bd1d73a6fe71b250",
+          "timestamp": 1789921345.860476,
+          "delta": "://"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_73f6519685364598bd1d73a6fe71b250",
+          "timestamp": 1789921345.861351,
+          "delta": "her"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_73f6519685364598bd1d73a6fe71b250",
+          "timestamp": 1789921345.8617651,
+          "delta": "mes"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_73f6519685364598bd1d73a6fe71b250",
+          "timestamp": 1789921345.8627179,
+          "delta": "-agent"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_73f6519685364598bd1d73a6fe71b250",
+          "timestamp": 1789921345.863446,
+          "delta": ".n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_73f6519685364598bd1d73a6fe71b250",
+          "timestamp": 1789921345.864118,
+          "delta": "ous"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_73f6519685364598bd1d73a6fe71b250",
+          "timestamp": 1789921345.864776,
+          "delta": "research"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_73f6519685364598bd1d73a6fe71b250",
+          "timestamp": 1789921345.865055,
+          "delta": ".com"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_73f6519685364598bd1d73a6fe71b250",
+          "timestamp": 1789921345.865601,
+          "delta": "/docs"
+        },
+        {
+          "event": "reasoning.available",
+          "run_id": "run_73f6519685364598bd1d73a6fe71b250",
+          "timestamp": 1789921345.8707619,
+          "text": "https://hermes-agent.nousresearch.com/docs"
+        },
+        {
+          "event": "run.completed",
+          "run_id": "run_73f6519685364598bd1d73a6fe71b250",
+          "timestamp": 1789921345.8850188,
+          "output": "https://hermes-agent.nousresearch.com/docs",
+          "usage": {
+            "input_tokens": 14403,
+            "output_tokens": 11,
+            "total_tokens": 14414
+          }
+        }
+      ],
+      "raw_sse_path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-023-fast-lane-optimization/raw/e2e/2b-64k-f16-web.sse"
+    },
+    {
+      "name": "think",
+      "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+      "request_admission_seconds": 0.0775,
+      "total_seconds": 4.7083,
+      "first_event": {
+        "event": "reasoning.available",
+        "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+        "timestamp": 1789921350.5785222,
+        "text": "The first command to diagnose connection refused from a local HTTP server is:\n\n```bash\nnc -vz <host> <port>\n```\n\nThat runs against the real network path and reports the specific reason if the socket cannot be established.\n\nA second, more useful diagnostic is:\n\n```bash\nss -tlnp | grep <host>:<port>\n```\n\nThat confirms whether the process is bound to the interface, listening on TCP, and which PID owns it \u2014 a prerequisite before a connection can be refused."
+      },
+      "final": {
+        "event": "run.completed",
+        "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+        "timestamp": 1789921350.593076,
+        "output": "The first command to diagnose connection refused from a local HTTP server is:\n\n```bash\nnc -vz <host> <port>\n```\n\nThat runs against the real network path and reports the specific reason if the socket cannot be established.\n\nA second, more useful diagnostic is:\n\n```bash\nss -tlnp | grep <host>:<port>\n```\n\nThat confirms whether the process is bound to the interface, listening on TCP, and which PID owns it \u2014 a prerequisite before a connection can be refused.",
+        "usage": {
+          "input_tokens": 14407,
+          "output_tokens": 107,
+          "total_tokens": 14514
+        }
+      },
+      "events": [
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921346.560946,
+          "delta": "The"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921346.623171,
+          "delta": " first"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921346.676864,
+          "delta": " command"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921346.732125,
+          "delta": " to"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921346.787636,
+          "delta": " diagnose"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921346.842129,
+          "delta": " connection"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921346.896016,
+          "delta": " refused"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921346.950926,
+          "delta": " from"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.004649,
+          "delta": " a"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.048594,
+          "delta": " local"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.086085,
+          "delta": " HTTP"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.121829,
+          "delta": " server"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.15623,
+          "delta": " is"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.262192,
+          "delta": ":\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.262979,
+          "delta": "\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.263579,
+          "delta": "```"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.300887,
+          "delta": "bash"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.3382359,
+          "delta": "\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.37261,
+          "delta": "nc"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.4076219,
+          "delta": " -"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.444875,
+          "delta": "vz"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.482212,
+          "delta": " "
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.520719,
+          "delta": "<host"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.556059,
+          "delta": ">"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.590226,
+          "delta": " "
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.6266172,
+          "delta": "<port"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.663998,
+          "delta": ">\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.700941,
+          "delta": "```\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.7369332,
+          "delta": "\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.771277,
+          "delta": "That"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.806508,
+          "delta": " runs"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.842464,
+          "delta": " against"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.878989,
+          "delta": " the"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.915461,
+          "delta": " real"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.953393,
+          "delta": " network"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921347.988501,
+          "delta": " path"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.023156,
+          "delta": " and"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.060159,
+          "delta": " reports"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.0978181,
+          "delta": " the"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.136574,
+          "delta": " specific"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.173374,
+          "delta": " reason"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.208411,
+          "delta": " if"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.245844,
+          "delta": " the"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.2814631,
+          "delta": " socket"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.317951,
+          "delta": " cannot"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.3541918,
+          "delta": " be"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.3892732,
+          "delta": " established"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.4235892,
+          "delta": ".\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.460287,
+          "delta": "\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.498488,
+          "delta": "A"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.535069,
+          "delta": " second"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.571568,
+          "delta": ","
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.6059892,
+          "delta": " more"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.64003,
+          "delta": " useful"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.675519,
+          "delta": " diagnostic"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.712654,
+          "delta": " is"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.822811,
+          "delta": ":\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.823222,
+          "delta": "\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.8233972,
+          "delta": "```"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.859624,
+          "delta": "bash"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.896571,
+          "delta": "\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.9334028,
+          "delta": "ss"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921348.9708622,
+          "delta": " -"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.005933,
+          "delta": "t"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.04164,
+          "delta": "ln"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.078509,
+          "delta": "p"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.114282,
+          "delta": " |"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.151708,
+          "delta": " grep"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.188069,
+          "delta": " "
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.2228339,
+          "delta": "<host"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.258552,
+          "delta": ">:"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.332705,
+          "delta": "<port"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.369361,
+          "delta": ">\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.40495,
+          "delta": "```\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.4404821,
+          "delta": "\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.4739342,
+          "delta": "That"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.511393,
+          "delta": " confirms"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.54774,
+          "delta": " whether"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.5850072,
+          "delta": " the"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.621834,
+          "delta": " process"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.657058,
+          "delta": " is"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.6947358,
+          "delta": " bound"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.731978,
+          "delta": " to"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.7699149,
+          "delta": " the"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.804617,
+          "delta": " interface"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.8394802,
+          "delta": ","
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.8754702,
+          "delta": " listening"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.911053,
+          "delta": " on"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.9483688,
+          "delta": " TCP"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921349.986057,
+          "delta": ","
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921350.0219781,
+          "delta": " and"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921350.0587468,
+          "delta": " which"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921350.096649,
+          "delta": " PID"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921350.13434,
+          "delta": " owns"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921350.171958,
+          "delta": " it"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921350.206593,
+          "delta": " \u2014"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921350.243305,
+          "delta": " a"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921350.2806442,
+          "delta": " prerequisite"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921350.317485,
+          "delta": " before"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921350.3544161,
+          "delta": " a"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921350.389368,
+          "delta": " connection"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921350.425148,
+          "delta": " can"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921350.4621,
+          "delta": " be"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921350.499147,
+          "delta": " refused"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921350.537078,
+          "delta": "."
+        },
+        {
+          "event": "reasoning.available",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921350.5785222,
+          "text": "The first command to diagnose connection refused from a local HTTP server is:\n\n```bash\nnc -vz <host> <port>\n```\n\nThat runs against the real network path and reports the specific reason if the socket cannot be established.\n\nA second, more useful diagnostic is:\n\n```bash\nss -tlnp | grep <host>:<port>\n```\n\nThat confirms whether the process is bound to the interface, listening on TCP, and which PID owns it \u2014 a prerequisite before a connection can be refused."
+        },
+        {
+          "event": "run.completed",
+          "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123",
+          "timestamp": 1789921350.593076,
+          "output": "The first command to diagnose connection refused from a local HTTP server is:\n\n```bash\nnc -vz <host> <port>\n```\n\nThat runs against the real network path and reports the specific reason if the socket cannot be established.\n\nA second, more useful diagnostic is:\n\n```bash\nss -tlnp | grep <host>:<port>\n```\n\nThat confirms whether the process is bound to the interface, listening on TCP, and which PID owns it \u2014 a prerequisite before a connection can be refused.",
+          "usage": {
+            "input_tokens": 14407,
+            "output_tokens": 107,
+            "total_tokens": 14514
+          }
+        }
+      ],
+      "raw_sse_path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-023-fast-lane-optimization/raw/e2e/2b-64k-f16-think.sse"
+    }
+  ]
+}

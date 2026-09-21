@@ -1,0 +1,13 @@
+{
+  "command": "HERMES_HOME=\"$HOME/.hermes\" hermes send --to 'matrix:development' --subject '[EXP-017 ERNIE expert-slot ladder]' '<measured summary>' --json",
+  "target": "matrix:development",
+  "subject": "[EXP-017 ERNIE expert-slot ladder]",
+  "result": {
+    "success": true,
+    "platform": "matrix",
+    "chat_id": "!pSzAyLfbGBPQWiizxH:localhost",
+    "message_id": "$LFuMEwLWdnQJLgUsui1GJ3Xx8-eTSb_nRYEZNtpiGrM",
+    "mirrored": true
+  },
+  "verification": "hermes send returned success=true, Matrix room id, event id, and mirrored=true; this CLI exposes no message-read subcommand for an additional target readback."
+}

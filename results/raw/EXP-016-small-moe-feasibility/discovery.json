@@ -1,0 +1,48 @@
+{
+  "experiment": "EXP-016",
+  "title": "Small-active MoE feasibility tournament",
+  "captured_at_utc": "2026-09-19T08:53:19Z",
+  "machine": {"model": "MacBook Air Mac15,13", "soc": "Apple M3", "unified_memory_bytes": 17179869184, "os": "macOS 27.0", "os_build": "26A428"},
+  "baseline": {"fast": "down", "deep": "down", "swap_used_mib": 1699.44, "memory_pressure_free_percent": 77, "root_available_df": "227Gi", "archive_available_df": "117Gi"},
+  "candidates": [
+    {
+      "priority": 1,
+      "name": "baidu/ERNIE-4.5-21B-A3B-Thinking",
+      "revision": "4341bb42644d5422859509fa25d41544c57181f8",
+      "architecture": {"model_type": "ernie4_5_moe", "layers": 28, "hidden_size": 2560, "attention_heads": 20, "kv_heads": 4, "routed_experts": 64, "shared_experts": 2, "experts_per_token": 6, "max_position_embeddings": 131072},
+      "source_total_bytes": 43660408368,
+      "representations": [
+        {"kind": "GGUF", "repo": "unsloth/ERNIE-4.5-21B-A3B-Thinking-GGUF", "revision": "b1fa62d9e5864da596c78a0fb5cc02e5ffba336c", "file": "ERNIE-4.5-21B-A3B-Thinking-Q4_K_M.gguf", "bytes": 13331018624, "quantization": "Q4_K_M"},
+        {"kind": "MLX", "repo": "qurk41/ERNIE-4.5-21B-A3B-Thinking-mlx-4Bit", "revision": "b59122f1fbe19df1fe939ad4de46763265fc297", "tree_bytes_selected_weights_and_metadata": 12277133662, "quantization": "4-bit (community)"},
+        {"kind": "MLX", "repo": "nightmedia/ERNIE-4.5-21B-A3B-Thinking-mxfp4-mlx", "revision": "773f937278405a617359afd9e204d28f0f0a5254", "tree_bytes_selected_weights_and_metadata": 11607746262, "quantization": "MXFP4 (community)"}
+      ],
+      "runtime_support": {"llama_cpp_expertcache": "native ernie4_5-moe model implementation present at pinned 7e1e28cae36d41fe7bbe9dae7c9625de6565c063", "rapid_mlx": "native ernie4_5_moe module present; disk-stream registry has no ernie4_5_moe adapter"}
+    },
+    {
+      "priority": 2,
+      "name": "amd/Instella-MoE-16B-A3B-Think",
+      "revision": "74d28c1a8425583d7805b58e2caa9c13d6b62929",
+      "architecture": {"model_type": "deepseek_v3", "layers": 27, "hidden_size": 2048, "attention_heads": 16, "kv_heads": 16, "routed_experts": 64, "shared_experts": 2, "experts_per_token": 6, "max_position_embeddings": 32768, "gated_attention": true, "farskip": true},
+      "source_total_bytes": 31726245240,
+      "representations": [
+        {"kind": "GGUF", "repo": "DevQuasar/amd.Instella-MoE-16B-A3B-Think-GGUF", "revision": "987ee1648d7e4bcb33ab98dfbf4e910b2230c30a", "file": "Q4_K_M/amd.Instella-MoE-16B-A3B-Think.f16.gguf.Q4_K_M.gguf", "bytes": 10470249600, "quantization": "Q4_K_M"},
+        {"kind": "GGUF", "repo": "NANI-Nithin/Instella-MoE-16B-A3B-Think-GGUF", "revision": "ab2a3b5142326252013d6f8cd99d6443c7d2d43d", "file": "Instella-MoE-16B-A3B-Think-Q4_K_M.gguf", "bytes": 10470249472, "quantization": "Q4_K_M"}
+      ],
+      "runtime_support": {"llama_cpp_expertcache": "deepseek2/deepseek_v3 family support present; exact custom Instella contract requires smoke validation", "rapid_mlx": "model_type dispatch may use deepseek_v3; no disk-stream adapter and custom model code means not primary first path"}
+    },
+    {
+      "priority": 3,
+      "name": "CohereLabs/North-Mini-Code-1.0",
+      "revision": "d11e61a842617a22dc328552fa5bb86231ee4f37",
+      "architecture": {"model_type": "cohere2_moe", "layers": 49, "hidden_size": 2048, "attention_heads": 32, "kv_heads": 4, "routed_experts": 128, "shared_experts": 0, "experts_per_token": 8, "max_position_embeddings": 500000, "sliding_window": 4096, "full_attention_layers": 12},
+      "source_total_bytes": 60970901384,
+      "representations": [
+        {"kind": "MLX", "repo": "mlx-community/North-Mini-Code-1.0-4bit", "revision": "dfbe084dfa26e241345af99ca32848f38fd865f9", "tree_bytes_selected_weights_and_metadata": 18495219875, "quantization": "4-bit"},
+        {"kind": "GGUF", "repo": "unsloth/North-Mini-Code-1.0-GGUF", "revision": "e306bb4bf0df610f5471d97a01de2b6e0b24d356", "file": "North-Mini-Code-1.0-MXFP4_MOE.gguf", "bytes": 18662121568, "quantization": "MXFP4_MOE"},
+        {"kind": "GGUF", "repo": "bartowski/North-Mini-Code-1.0-GGUF", "revision": "6ff6563002170723a6f7a672bf4c99775be6c0dd0", "file": "North-Mini-Code-1.0-Q4_K_M.gguf", "bytes": 18744024640, "quantization": "Q4_K_M"}
+      ],
+      "runtime_support": {"llama_cpp_expertcache": "native cohere2moe implementation present at pinned 7e1e28cae36d41fe7bbe9dae7c9625de6565c063", "rapid_mlx": "mlx_lm cohere2 module present but no cohere2_moe module observed; standard MLX conversion may not be supported"}
+    }
+  ],
+  "selection_policy": "Use a 4-bit representation first when the runtime path is credible. Use a strong 3-bit only after a 4-bit path fails the practical memory/runtime gate. Do not run coding or research-quality evaluations."
+}

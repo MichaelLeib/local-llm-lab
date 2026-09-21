@@ -1,0 +1,4 @@
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Products/Release/slipstream
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Products/Release/slipstream-decode-service
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Products/Release/slipstream-repack
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Products/Release/slipstream-server

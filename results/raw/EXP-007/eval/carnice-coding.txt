@@ -1,0 +1,32 @@
+We are debugging a Python function `merge_sorted(a, b)` that merges two sorted lists `a` and `b` into a single sorted list. The function currently has a bug: it drops data and fails a stability requirement. Specifically, when there are equal elements in `a` and `b`, the function does not preserve the order (stability) where elements from `a` should precede elements from `b`.
+
+Let's analyze the current function:
+
+```python
+def merge_sorted(a, b):
+    i = j = 0
+    out = []
+    while i < len(a) and j < len(b):
+        if a[i] < b[j]:
+            out.append(a[i]); i += 1
+        else:
+            out.append(b[j]); j += 1
+    return out
+```
+
+The issue is in the condition `if a[i] < b[j]`. When `a[i]` is equal to `b[j]`, the function appends `b[j]` and increments `j`. This means that for equal elements, elements from `b` are added before elements from `a`, which violates the stability requirement.
+
+To fix this, we need to ensure that when `a[i]` is equal to `b[j]`, we append `a[i]` first and then increment `i`. This way, elements from `a` will precede elements from `b` when they are equal, maintaining stability.
+
+Here is the corrected function:
+
+```python
+def merge_sorted(a, b):
+    i = j = 0
+    out = []
+    while i < len(a) and j < len(b):
+        if a[i] < b[j]:
+            out.append(a[i]); i += 1
+        else:
+            out.append(b[j
+[stop=maxTokens prefill=127tok/10.12s new=384tok decode=42.43s tok/s=9.051]

@@ -1,0 +1,8 @@
+data: {"event": "message.delta", "run_id": "run_8ff8e5e1d98a4cb28a3192b8a2a8f908", "timestamp": 1789921398.1592052, "delta": "C"}
+
+data: {"event": "reasoning.available", "run_id": "run_8ff8e5e1d98a4cb28a3192b8a2a8f908", "timestamp": 1789921398.1940238, "text": "C"}
+
+data: {"event": "run.completed", "run_id": "run_8ff8e5e1d98a4cb28a3192b8a2a8f908", "timestamp": 1789921398.2075012, "output": "C", "usage": {"input_tokens": 14397, "output_tokens": 2, "total_tokens": 14399}}
+
+: stream closed
+

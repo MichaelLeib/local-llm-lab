@@ -1,0 +1,36 @@
+2026-09-18T19:48:03Z request prompt=4998 cached=0 new_prompt=4998 completion=50 ttft=115.94s prefill=43.1tok/s decode=7.0tok/s total=123.08s stop=tool_calls cache_miss=noEntry render=0.046s match=0.000s prepare=0.004s expert_hit=41.6% expert_miss=9160 io_await=4.12s reasoning=22
+--- reasoning 22 tokens ---
+The user wants me to run the `date` command using the terminal tool and report the exact output.
+
+--- end reasoning ---
+2026-09-18T19:49:53Z request prompt=4588 cached=0 new_prompt=4588 completion=46 ttft=103.39s prefill=44.4tok/s decode=6.9tok/s total=110.06s stop=tool_calls cache_miss=toolsChanged render=0.039s match=0.000s prepare=0.004s expert_hit=41.7% expert_miss=8400 io_await=3.92s reasoning=18
+--- reasoning 18 tokens ---
+The user wants me to run the `date` command and return the exact output.
+
+--- end reasoning ---
+2026-09-18T19:53:01Z request prompt=5763 cached=0 new_prompt=5763 completion=46 ttft=143.30s prefill=40.2tok/s decode=7.0tok/s total=149.88s stop=tool_calls cache_miss=noEntry render=0.039s match=0.000s prepare=0.005s expert_hit=43.1% expert_miss=8197 io_await=3.82s reasoning=18
+--- reasoning 18 tokens ---
+The user wants me to run the `date` command and return the exact output.
+
+--- end reasoning ---
+2026-09-18T19:55:47Z request prompt=5302 cached=0 new_prompt=5302 completion=46 ttft=126.53s prefill=41.9tok/s decode=6.9tok/s total=133.15s stop=tool_calls cache_miss=toolsChanged render=0.046s match=0.000s prepare=0.005s expert_hit=42.9% expert_miss=8222 io_await=3.85s reasoning=18
+--- reasoning 18 tokens ---
+The user wants me to run the `date` command and return the exact output.
+
+--- end reasoning ---
+2026-09-18T19:55:57Z request prompt=5401 cached=5347 new_prompt=54 completion=37 ttft=4.34s prefill=12.5tok/s decode=6.9tok/s total=9.69s stop=stop render=0.043s match=0.069s prepare=0.000s expert_hit=42.6% expert_miss=6610 io_await=3.14s reasoning=13
+--- reasoning 13 tokens ---
+The user asked for the exact command output and nothing else.
+
+--- end reasoning ---
+2026-09-18T19:56:17Z request prompt=5465 cached=5437 new_prompt=28 completion=45 ttft=3.12s prefill=9.0tok/s decode=6.3tok/s total=10.30s stop=tool_calls render=0.037s match=0.000s prepare=0.000s expert_hit=36.8% expert_miss=8896 io_await=4.35s reasoning=17
+--- reasoning 17 tokens ---
+The user wants me to run `pwd` and return only the exact output.
+
+--- end reasoning ---
+2026-09-18T19:56:24Z request prompt=5547 cached=5509 new_prompt=38 completion=18 ttft=3.77s prefill=10.1tok/s decode=6.1tok/s total=6.72s stop=stop render=0.043s match=0.070s prepare=0.000s expert_hit=40.6% expert_miss=3229 io_await=1.86s reasoning=10
+--- reasoning 10 tokens ---
+The user asked for only the exact output.
+
+--- end reasoning ---
+TurboFieldfareServer ready at http://127.0.0.1:8901 model=qwen3.6-35b-a3b context=8192 prompt_cache=single-prefix

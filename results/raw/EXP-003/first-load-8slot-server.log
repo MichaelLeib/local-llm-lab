@@ -1,0 +1,29 @@
+0.00.025.372 I log_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.025.374 I device_info:
+0.00.025.378 I   - MTL0    : Apple M3 (12124 MiB, 12123 MiB free)
+0.00.025.379 I   - BLAS    : Accelerate (0 MiB, 0 MiB free)
+0.00.025.384 I   - CPU     : Apple M3 (16384 MiB, 16384 MiB free)
+0.00.025.394 I system_info: n_threads = 4 (n_threads_batch = 4) / 8 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | ACCELERATE = 1 | REPACK = 1 | 
+0.00.025.989 I srv          init: running without SSL
+0.00.027.181 I srv          init: using 7 threads for HTTP server
+0.00.027.193 I srv          init: The UI is disabled
+0.00.027.193 I srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+0.00.027.754 I srv         start: binding port with default address family
+0.00.029.178 I srv  llama_server: loading model
+0.00.029.193 I srv    load_model: loading model '/Users/<user>/.cache/huggingface/hub/models--ornith-ai--Ornith-1.5-35B-A3B-GGUF/snapshots/12393612fd4f730ff5aadc23e9b8f9648aa49ceb/Ornith-1.5-35B-Q4_K_M.gguf'
+0.00.029.492 I common_init_result: fitting params to device memory ...
+0.00.029.493 I common_init_result: (for bugs during this step try to reproduce them with -fit off, or provide --verbose logs if the bug only occurs with -fit on)
+0.01.768.285 W llama_context: n_ctx_seq (2048) < n_ctx_train (262144) -- the full capacity of the model will not be utilized
+0.01.875.480 I srv    load_model: initializing slots, n_slots = 1
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-003/source/llama.cpp-moe-expert-residency/src/llama-context.cpp:1717: GGML_ASSERT(n_tokens_all <= cparams.n_batch) failed
+WARNING: Using native backtrace. Set GGML_BACKTRACE_LLDB for more info.
+WARNING: GGML_BACKTRACE_LLDB may cause native MacOS Terminal.app to crash.
+See: https://github.com/ggml-org/llama.cpp/pull/17869
+0   libggml-base.0.13.0.dylib           0x0000000102ddd3d0 ggml_print_backtrace + 276
+1   libggml-base.0.13.0.dylib           0x0000000102e4924c ggml_abort + 156
+2   libllama.0.0.1.dylib                0x0000000103283750 _ZN13llama_context6decodeERK11llama_batch + 5716
+3   libllama.0.0.1.dylib                0x0000000103287c94 llama_decode + 20
+4   libllama-common.0.0.1.dylib         0x0000000104135f3c _Z25common_context_can_seq_rmP13llama_context + 116
+5   libllama-server-impl.dylib          0x000000010388091c _ZN19server_context_impl10load_modelER13common_params + 5004
+6   libllama-server-impl.dylib          0x00000001037bc0d0 _Z12llama_serveriPPc + 14720
+7   dyld                                0x0000000194debe80 start + 6688

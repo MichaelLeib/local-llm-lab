@@ -1,0 +1,12 @@
+data: {"id":"chatcmpl-0546694657c941868ad0834ab8590b51","object":"chat.completion.chunk","created":1789713529,"model":"stream-probe","choices":[{"delta":{"role":"assistant"},"finish_reason":null,"index":0}]}
+
+: ping
+
+: ping
+
+data: {"id":"chatcmpl-0546694657c941868ad0834ab8590b51","model":"stream-probe","choices":[{"delta":{"tool_calls":[{"id":"call_1af5bc0129744db415e9965e","function":{"arguments":"{\"command\":\"printf STREAM_TOOL_OK\"}","name":"terminal"},"type":"function","index":0}]},"finish_reason":null,"index":0}],"object":"chat.completion.chunk","created":1789713529}
+
+data: {"id":"chatcmpl-0546694657c941868ad0834ab8590b51","object":"chat.completion.chunk","created":1789713529,"model":"stream-probe","choices":[{"delta":{},"finish_reason":"tool_calls","index":0}]}
+
+data: [DONE]
+

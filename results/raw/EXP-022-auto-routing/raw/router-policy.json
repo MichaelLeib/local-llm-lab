@@ -1,0 +1,38 @@
+{
+  "simple": {
+    "route": "fast",
+    "reason": "policy-fast",
+    "provider": "local-minicpm",
+    "model": "minicpm5-2b"
+  },
+  "diagnosis": {
+    "route": "think",
+    "reason": "policy-think",
+    "provider": "local-minicpm",
+    "model": "minicpm5-2b"
+  },
+  "architecture": {
+    "route": "deep",
+    "reason": "policy-deep",
+    "provider": "local-ornith",
+    "model": "ornith-q6"
+  },
+  "deep-anchor": {
+    "route": "deep",
+    "reason": "manual-deep",
+    "provider": "local-ornith",
+    "model": "ornith-q6"
+  },
+  "deep-followup": {
+    "route": "deep",
+    "reason": "sticky-or-policy-deep",
+    "provider": "local-ornith",
+    "model": "ornith-q6"
+  },
+  "unrelated-fast": {
+    "route": "fast",
+    "reason": "policy-fast",
+    "provider": "local-minicpm",
+    "model": "minicpm5-2b"
+  }
+}

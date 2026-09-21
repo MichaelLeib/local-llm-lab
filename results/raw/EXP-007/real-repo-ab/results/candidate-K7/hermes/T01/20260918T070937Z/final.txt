@@ -1,0 +1,62 @@
+Query: You are working in an isolated benchmark fixture of HermesMobile.
+
+**Goal:** Fix the reported mobile layout regression.
+
+On narrow iPhones:
+
+1. Focusing any user-editable text input must not trigger Safari's automatic 
+page zoom. This includes the chat composer, model-picker search, and dialog text
+input.
+2. Wide assistant Markdown content (especially comparison tables and long code) 
+must never let the entire chat/thread pane pan horizontally. Wide content may 
+scroll **inside its own intended container**.
+
+Work directly in the repository. Inspect relevant code before editing. Make the 
+smallest maintainable fix, add or adjust deterministic tests if appropriate, and
+run the relevant project checks. Do not start services or change dependencies. 
+Finish with a concise summary of the files changed and exact verification 
+commands/results.
+
+Initializing agent...
+────────────────────────────────────────
+
+  ┊ 🔎 find      .*  0.5s
+  ┊ 💻 $         ls -la  0.1s
+  ┊ 🔎 grep      HermesMobile  3.7s
+  ┊ 🔎 grep      hermes-mobile  2.6s
+  ┊ 🔎 grep      package\.json  0.3s
+  ┊ 💻 $         ls -la ./HermesProjects/HermesMobile/  0.1s
+  ┊ 📖 read      README.md  0.0s
+  ┊ 💻 $         find ./HermesProjects/HermesMobile/src -type f -name "*.ts" -o -name "*.scss" -o -name "*.html"  0.1s
+  ┊ 🔎 grep      viewport|user-scalable|maximum-scale|zoom  0.0s
+  ┊ 📖 read      index.html  0.1s
+  ┊ 📖 read      styles.scss  0.1s
+  ┊ 📖 read      composer.component.scss  0.1s
+  ┊ 📖 read      model-picker-sheet.component.scss  0.0s
+  ┊ 📖 read      thread.component.scss  0.1s
+  ┊ 📖 read      thread.component.scss L251  0.0s
+  ┊ 📖 read      styles.scss L225  0.0s
+  ┊ 📖 read      model-picker-sheet.component.scss L135  0.0s
+⚠️  API call failed (attempt 1/3): BadRequestError [HTTP 400]
+   🔌 Provider: custom  Model: candidate-K7
+   🌐 Endpoint: http://127.0.0.1:8997/v1
+   📝 Error: HTTP 400: prompt exceeds the configured context
+   📋 Details: {'param': 'messages', 'message': 'prompt exceeds the configured context', 'code': 'context_length_exceeded', 'type': 'invalid_request_error'}
+   ⏱️  Elapsed: 0.10s  Context: 25 msgs, ~11,274 tokens
+❌ Non-retryable error (HTTP 400): HTTP 400: prompt exceeds the configured context
+❌ Non-retryable client error (HTTP 400). Aborting.
+   🔌 Provider: custom  Model: candidate-K7
+   🌐 Endpoint: http://127.0.0.1:8997/v1
+   💡 This type of error won't be fixed by retrying.
+ ─  ☤ Hermes  ───────────────────────────────────────────────────────────────── 
+                                                                                
+ HTTP 400: prompt exceeds the configured context                                
+                                                                                
+ ────────────────────────────────────────────────────────────────────────────── 
+
+Resume this session with:
+  hermes --resume 20260918_090942_da13f7 -p exp007bench
+
+Session:        20260918_090942_da13f7
+Duration:       13m 24s
+Messages:       24 (1 user, 23 tool calls)

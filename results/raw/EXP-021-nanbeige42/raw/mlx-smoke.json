@@ -1,0 +1,15 @@
+{
+  "model": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-021-nanbeige42/models/mlx-optiq",
+  "load_s": 4.869047164916992,
+  "generation_s": 4.475828170776367,
+  "output_tokens": 62,
+  "decode_tok_s": 13.852185033556733,
+  "output": "As **Nanbeige4.2-3B**, I identify myself clearly, and in this single sentence: **9.8 is bigger than 9.11** because comparing decimal place values, 9.8 equals 9.80, which surpasses 9.11.",
+  "prompt_chars": 227,
+  "prompt_tokens": 70,
+  "after": {
+    "rss": "3289328",
+    "swap": "total = 3072.00M  used = 1527.94M  free = 1544.06M  (encrypted)",
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 189845 \nPages purgeable: 182 \nPages purged: 12879148 \n\nSwap I/O:\nSwapins: 2201869 \nSwapouts: 2840615 \n\nPage Q counts:\nPages active: 225349 \nPages inactive: 224342 \nPages speculative: 255 \nPages throttled: 0 \nPages wired down: 323743 \n\nCompressor Stats:\nPages used by compressor: 47613 \nPages decompressed: 52462925 \nPages compressed: 62562475 \n\nFile I/O:\nPageins: 32983150 \nPageouts: 42894 \n\nSystem-wide memory free percentage: 63%"
+  }
+}

@@ -1,0 +1,1 @@
+HEAD is now at d1c34c6 perf: 2-token forwards use per-row polar_qmv (MTP 0.6x -> 0.85-0.9x greedy); plan suggests --ngram-offload past the 85% RAM warning (#108)

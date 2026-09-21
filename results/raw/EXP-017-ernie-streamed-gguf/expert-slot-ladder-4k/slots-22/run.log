@@ -1,0 +1,64 @@
+input_tokens_verified=3982
+expert_slots=22
+log_verbosity=3 (pre-existing info-level diagnostic; captures emitted moe-stream stats)
+command=/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-017-ernie-streamed-gguf/source/llama.cpp-moe-streaming/build-exp017/bin/llama-cli -m /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-016-small-moe-feasibility/ernie/gguf/model/ERNIE-4.5-21B-A3B-Thinking-Q4_K_M.gguf --moe-stream-cache 22s --moe-stream-io-threads 2 --moe-stream-direct --no-mmap --no-warmup --fit off -ngl 99 -c 8192 -b 512 -ub 2 --log-verbosity 3 -n 128 --temp 0 --seed 1234 --single-turn --simple-io -f /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-017-ernie-streamed-gguf/context-retrieval-1k-4k-rerun1/4k-populated/prompt.txt
+0.00.021.645 I srv    load_model: loading model '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-016-small-moe-feasibility/ernie/gguf/model/ERNIE-4.5-21B-A3B-Thinking-Q4_K_M.gguf'
+0.01.037.837 W open_files: O_DIRECT not usable, falling back to buffered streaming reads
+0.02.291.295 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 8192, kv_unified = 'false'
+0.02.307.351 I slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+0.02.307.377 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+1.24.599.831 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =    512, progress = 0.13, t =  82.29 s / 6.22 tokens per second
+2.49.718.775 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   1024, progress = 0.26, t = 167.41 s / 6.12 tokens per second
+4.14.903.282 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   1536, progress = 0.38, t = 252.60 s / 6.08 tokens per second
+5.37.090.857 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   2048, progress = 0.51, t = 334.78 s / 6.12 tokens per second
+7.00.406.373 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   2560, progress = 0.64, t = 418.10 s / 6.12 tokens per second
+8.27.438.372 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   3072, progress = 0.77, t = 505.13 s / 6.08 tokens per second
+9.53.823.021 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   3584, progress = 0.89, t = 591.51 s / 6.06 tokens per second
+
+Loading model... 
+
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b9881-1248fd8fa
+model      : /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-016-small-moe-feasibility/ernie/gguf/model/ERNIE-4.5-21B-A3B-Thinking-Q4_K_M.gguf
+ftype      : Q4_K - Medium
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+> A quiet archive contains ordinary records about rivers, maps, stones, and weather.
+A quiet archive contains ordinary records about rivers, maps, stones, and weather.
+A quiet archive contains ordinary records about rivers, maps, stones, and weather.
+A quiet archive contains ordinary records about rivers, maps, stones, and weather.
+A quiet archive contains ordinary records about rivers, maps, stones, and weather.
+A quiet archive contains ordinary records about rivers, maps, stones, and weather.
+A  ... (truncated)
+
+The user provided a long list of records about rivers, maps, stones, and weather in a quiet archive. then they mentioned that the secret code is cedar-914. the question is asking for the secret code, and the answer should be only the code.
+
+first, i need to check if there's any connection between the records mentioned and the code "cedar-914". the records are about rivers, maps, stones, and weather. the code has11.26.495.677 I slot print_timing: id  0 | task 0 | n_decoded =    100, tg =   4.70 t/s, tg_3s =   4.70 t/s
+ "cedar" which might relate to a type of11.29.576.678 I slot print_timing: id  0 | task 0 | n_decoded =    112, tg =   4.60 t/s, tg_3s =   3.89 t/s
+ tree or a map symbol. maybe "cedar" is a code word11.32.695.551 I slot print_timing: id  0 | task 0 | n_decoded =    127, tg =   4.62 t/s, tg_3s =   4.81 t/s
+ for11.32.917.186 I slot print_timing: id  0 | task 0 | prompt eval time =  662924.93 ms /  4011 tokens (  165.28 ms per token,     6.05 tokens per second)
+ something11.32.917.189 I slot print_timing: id  0 | task 0 |        eval time =   27684.82 ms /   128 tokens (  216.29 ms per token,     4.62 tokens per second)
+11.32.917.189 I slot print_timing: id  0 | task 0 |       total time =  690609.74 ms /  4139 tokens
+11.32.917.190 I slot print_timing: id  0 | task 0 |    graphs reused =       2115
+11.32.917.416 I slot      release: id  0 | task 0 | stop processing: n_tokens = 4138, truncated = 0
+
+
+[ Prompt: 6.1 t/s | Generation: 4.6 t/s ]
+
+Exiting...

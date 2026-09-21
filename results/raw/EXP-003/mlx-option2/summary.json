@@ -1,0 +1,80 @@
+{
+  "experiment": "EXP-003-option-2",
+  "option": "MLX-native runtime",
+  "status": "blocked_by_missing_qwen3_5_moe_disk_stream_adapter",
+  "date": "2026-09-17",
+  "machine": {
+    "model": "MacBook Air Mac15,13",
+    "chip": "Apple M3",
+    "unified_memory_gib": 16,
+    "runtime": "macOS 27.0"
+  },
+  "model": {
+    "repository": "ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit",
+    "snapshot": "19504d912fa8fc7622bf6b1de3db5d5d890b1f02",
+    "model_type": "qwen3_5_moe",
+    "architecture": "Qwen3_5MoeForConditionalGeneration",
+    "shards": 4,
+    "repository_bytes": 19530936278,
+    "repository_approx_gib": 18.19,
+    "config_bits": 4,
+    "config_group_size": 64,
+    "cache_path": "~/.cache/huggingface/hub/models--ornith-ai--Ornith-1.5-35B-A3B-MLX-4bit/snapshots/19504d912fa8fc7622bf6b1de3db5d5d890b1f02"
+  },
+  "runtime": {
+    "name": "rapid-mlx",
+    "installed_version": "0.14.1",
+    "mlx": "0.32.1",
+    "mlx_lm": "0.31.3",
+    "disk_stream_cache_gb": 1.0,
+    "server_port": 8904,
+    "server_flags": [
+      "--disk-stream",
+      "--disk-stream-cache-gb 1",
+      "--lazy-load",
+      "--max-num-seqs 1",
+      "--max-concurrent-requests 1",
+      "--gpu-memory-utilization 0.45",
+      "--resident-memory-limit-gb 7",
+      "--no-thinking",
+      "--no-reasoning-parser"
+    ]
+  },
+  "observations": {
+    "server_startup": "success",
+    "health_before_request": "healthy; model_loaded=false; standby",
+    "request_http_status": 503,
+    "request_response": "Configured model failed to load; retry after the delay.",
+    "load_duration_seconds": 1.0971726249990752,
+    "resident_process_rss_peak_observed_mb": 550,
+    "model_generation": "not reached",
+    "tool_call_test": "not reached",
+    "normal_workload_subjective_rating": "not collected; no model weights were loaded",
+    "server_cleanup": "completed; port 8904 closed; FAST and DEEP remained down"
+  },
+  "root_cause": {
+    "exception": "UnsupportedModelTypeError",
+    "message": "disk-streaming MoE weight loading does not support model_type='qwen3_5_moe': no StreamingAdapter is registered for it in vllm_mlx.registry; falling back to resident loading is not done automatically."
+  },
+  "safety_observation": {
+    "rapid_mlx_estimated_working_set_gb": 27.3,
+    "rapid_mlx_warning": "model is likely too large for this hardware; continuing may trigger a macOS kernel panic",
+    "resident_load_not_attempted": true,
+    "reason": "A resident 18.2 GiB checkpoint exceeds the 16 GiB unified-memory machine's measured safety envelope; no useful evidence would justify risking an unbounded load."
+  },
+  "version_check": {
+    "latest_checked": "rapid-mlx 0.14.2",
+    "qwen3_5_moe_in_disk_stream_registry": false,
+    "qwen3_next_in_disk_stream_registry": true,
+    "upgrade_expected_to_change_result": false
+  },
+  "artifacts": [
+    "pull.log",
+    "disk-stream-start.log",
+    "server.log",
+    "request-response.json",
+    "request-time.txt",
+    "request-metrics.txt",
+    "summary.json"
+  ]
+}

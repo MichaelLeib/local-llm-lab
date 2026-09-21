@@ -1,0 +1,3 @@
+ec2d5801640099e97d8d7e8003ad4d81f336e757811f03a26173dddf386602fd  /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-022-auto-routing/models/minicpm/MiniCPM5-2B-Q4_K_M.gguf
+7da8ac6219b0aaa21b58cb26c1ec6826b478449215a3b0448742e1cda60fa2b4  /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-022-auto-routing/models/neohorse/NeoHorse-1-4B-Q4_K_M.gguf
+bded502d869de683af2a2fd87e60603fba81c31edd2e1c950d2886978aa4fe2e  /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-022-auto-routing/models/spark/Spark-X2.5-1.7B-Q4_K.gguf

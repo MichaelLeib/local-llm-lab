@@ -1,0 +1,89 @@
+{
+  "experiment": "EXP-003",
+  "checkpoint": "first_load_8_slots",
+  "status": "first_load_and_text_generation_success_with_system_gpu_pressure_caveat",
+  "server": {
+    "binary": "results/raw/EXP-003/source/llama.cpp-moe-expert-residency/build/bin/llama-server",
+    "pid": 35943,
+    "port": 18903,
+    "model": "/Users/<user>/.cache/huggingface/hub/models--ornith-ai--Ornith-1.5-35B-A3B-GGUF/snapshots/12393612fd4f730ff5aadc23e9b8f9648aa49ceb/Ornith-1.5-35B-Q4_K_M.gguf",
+    "flags": {
+      "moe_n_slots": 8,
+      "moe_n_layers": 40,
+      "context": 2048,
+      "batch_size": 2048,
+      "ubatch_size": 1,
+      "gpu_layers": 99,
+      "no_mmap": true,
+      "no_warmup": true,
+      "parallel": 1
+    },
+    "cleanup": {
+      "endpoint_18903_unreachable": true,
+      "fast_down": true,
+      "deep_down": true,
+      "model_process_resources_released": true,
+      "pid_after_stop": "defunct_only"
+    }
+  },
+  "configuration_failure_preserved": "results/raw/EXP-003/first-load-8slot-configuration-failure.json",
+  "load": {
+    "server_ready": true,
+    "server_log": "results/raw/EXP-003/first-load-8slot-server-retry.log",
+    "note": "Initial b=1/ub=1 attempt aborted at a llama-context assertion before readiness; retry with b=2048/ub=1 succeeded."
+  },
+  "cold_request": {
+    "artifact": "results/raw/EXP-003/first-load-8slot-no-thinking-request.json",
+    "chat_template_kwargs": {"enable_thinking": false},
+    "prompt_tokens": 43,
+    "generated_tokens": 64,
+    "prompt_tokens_per_second": 5.019561698876493,
+    "decode_tokens_per_second": 4.94770737155829,
+    "time_to_first_content_s": 1.5183968544006348,
+    "elapsed_s": 14.452758073806763,
+    "finish_reason": "length",
+    "content_chars": 319,
+    "coherent_output_prefix": true,
+    "errors": []
+  },
+  "repeat_request": {
+    "artifact": "results/raw/EXP-003/first-load-8slot-repeat-128-request.json",
+    "metrics_artifact": "results/raw/EXP-003/first-load-8slot-repeat-128-metrics.jsonl",
+    "chat_template_kwargs": {"enable_thinking": false},
+    "prompt_cache_tokens": 39,
+    "prompt_tokens": 6,
+    "generated_tokens": 128,
+    "prompt_tokens_per_second": 4.400688561070189,
+    "decode_tokens_per_second": 4.317085039425105,
+    "time_to_first_content_s": 1.4171199798583984,
+    "elapsed_s": 31.065564155578613,
+    "finish_reason": "length",
+    "content_chars": 661,
+    "coherent_output": true,
+    "errors": []
+  },
+  "memory": {
+    "idle_process_footprint_mb": 3307,
+    "idle_process_footprint_peak_mb": 3361,
+    "active_process_footprint_peak_mb": 3862.547888,
+    "active_process_footprint_samples": "results/raw/EXP-003/first-load-8slot-no-thinking-metrics.jsonl and first-load-8slot-repeat-128-metrics.jsonl",
+    "active_rss_kib_range": [2608448, 2711264],
+    "system_ioaccelerator_alloc_peak_bytes": 9718710272,
+    "system_ioaccelerator_in_use_peak_bytes": 6270566400,
+    "system_ioaccelerator_scope": "system-wide IOAccelerator registry; not attributable solely to llama-server",
+    "simulated_free_percent_min": 25,
+    "swap_used_mb_range": [2294.12, 2366.12],
+    "interpretation": "Per-process footprint is below the EXP-002 8.5 GiB acceptable target. System-wide GPU allocation reached approximately 9.72 GB during the repeat request and requires a clean baseline/delta before treating it as model working-set memory."
+  },
+  "correctness": {
+    "model_loaded": true,
+    "text_generated": true,
+    "deterministic_temperature": 0.0,
+    "no_missing_tensor_errors": true,
+    "no_nan_or_gpu_failure_observed": true,
+    "repeated_request_stable": true,
+    "expert_streaming_exactness": "initial feasibility evidence only; token-for-token reference comparison remains pending"
+  },
+  "subjective_rating": {"primary": 0, "transient_possible": 1, "transient_duration": "a few seconds", "attribution": "possibly unrelated"},
+  "next_step": "Clean no-model GPU/system baseline, then controlled 16-slot comparison; do not start 24/32 automatically."
+}

@@ -1,0 +1,6 @@
+=== qwen repack start ===
+2026-09-17T14:56:28+02:00
+free_kib=59214768
+Installed Qwen3.6 35B-A3B 4-bit
+Source revision: 38740b847e4cb78f352aba30aa41c76e08e6eb46
+Model: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/model/qwen36.gturbo

@@ -1,0 +1,93 @@
+{
+  "purpose": "protocol minimization",
+  "captured_at_unix": 1789760760.407365,
+  "cases": [
+    {
+      "name": "exp005_captured_4_tools",
+      "system_chars": 14362,
+      "tool_names": [
+        "terminal",
+        "tool_search",
+        "tool_describe",
+        "tool_call"
+      ],
+      "payload_sha256": "467a2925804d4204f566568445a672ff278279d63a96e5376d468ace00dd61e7",
+      "ok": true,
+      "elapsed_s": 123.16,
+      "finish_reason": "tool_calls",
+      "content": null,
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "name": "terminal",
+            "arguments": "{\"command\":\"date\"}"
+          },
+          "id": "call_e8d97f6140f2ebd5a7a0dd93"
+        }
+      ],
+      "usage": {
+        "completion_tokens": 50,
+        "prompt_tokens": 4998,
+        "total_tokens": 5048,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "localdev_system_terminal_only",
+      "system_chars": 15748,
+      "tool_names": [
+        "terminal"
+      ],
+      "payload_sha256": "5779ade0a606415ec60217d05eb5b6f1f2cf1aef0199c69a9025a17446f3248e",
+      "ok": true,
+      "elapsed_s": 110.11,
+      "finish_reason": "tool_calls",
+      "content": null,
+      "tool_calls": [
+        {
+          "type": "function",
+          "function": {
+            "arguments": "{\"command\":\"date\"}",
+            "name": "terminal"
+          },
+          "id": "call_b1014f41c04993b26bcb50b4"
+        }
+      ],
+      "usage": {
+        "completion_tokens": 46,
+        "prompt_tokens": 4588,
+        "total_tokens": 4634,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      }
+    },
+    {
+      "name": "localdev_captured_13_tools",
+      "system_chars": 15748,
+      "tool_names": [
+        "clarify",
+        "memory",
+        "patch",
+        "read_file",
+        "search_files",
+        "skill_manage",
+        "skill_view",
+        "skills_list",
+        "terminal",
+        "write_file",
+        "tool_search",
+        "tool_describe",
+        "tool_call"
+      ],
+      "payload_sha256": "eae6cf3d855a68a8ef6fb3ec787e42435dc4ca70cd7eb7d2fbde2a608db80337",
+      "ok": false,
+      "elapsed_s": 0.07,
+      "http_status": 400,
+      "error": "{\"error\":{\"code\":\"context_length_exceeded\",\"param\":\"messages\",\"message\":\"prompt exceeds the configured context\",\"type\":\"invalid_request_error\"}}"
+    }
+  ]
+}

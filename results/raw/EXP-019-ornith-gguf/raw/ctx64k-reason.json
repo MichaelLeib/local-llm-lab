@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "ok": true,
+    "elapsed": 143.548,
+    "prompt_tokens": 68,
+    "gen_tokens": 1704,
+    "decode_tps": 11.87,
+    "finish": "stop",
+    "has_reasoning": true,
+    "content_head": "# FIFO Scheduling Analysis\n\n## Setting Up the Jobs\n\n| Job | Arrival Time | Service Time |\n|-----|-------------|--------------|\n| 1 | t=0 | 4 sec |\n| 2 | t=3 | 2 sec |\n| 3 | t=5 | 7 sec |\n| 4 | t=9 | 1 sec |\n| 5 | t=12 | 3 sec |\n\n**Waiting time = (time job starts) \u2212 (time job arrives)**\n\n## Tracing t",
+    "tool_calls": null
+  },
+  "raw": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "# FIFO Scheduling Analysis\n\n## Setting Up the Jobs\n\n| Job | Arrival Time | Service Time |\n|-----|-------------|--------------|\n| 1 | t=0 | 4 sec |\n| 2 | t=3 | 2 sec |\n| 3 | t=5 | 7 sec |\n| 4 | t=9 | 1 sec |\n| 5 | t=12 | 3 sec |\n\n**Waiting time = (time job starts) \u2212 (time job arrives)**\n\n## Tracing the Timeline\n\n**t=0:** Job 1 arrives, server idle \u2192 **starts immediately**, runs until t=4\n- Job 1 wait = 0 \u2212 0 = **0**\n\n**t=3:** Job 2 arrives, server busy \u2192 waits\n\n**t=4:** Job 1 finishes \u2192 Job 2 **starts**, runs until t=6\n- Job 2 wait = 4 \u2212 3 = **1**\n\n**t=5:** Job 3 arrives, server busy \u2192 waits\n\n**t=6:** Job 2 finishes \u2192 Job 3 **starts**, runs until t=13\n- Job 3 wait = 6 \u2212 5 = **1**\n\n**t=9:** Job 4 arrives, server busy \u2192 waits\n\n**t=12:** Job 5 arrives, server busy \u2192 waits (queue now: Job 4, Job 5)\n\n**t=13:** Job 3 finishes \u2192 Job 4 (FIFO first) **starts**, runs until t=14\n- Job 4 wait = 13 \u2212 9 = **4**\n\n**t=14:** Job 4 finishes \u2192 Job 5 **starts**, runs until t=17\n- Job 5 wait = 14 \u2212 12 = **2**\n\n## Computing the Average\n\n$$\\text{Average} = \\frac{0 + 1 + 1 + 4 + 2}{5} = \\frac{8}{5} = 1.6 \\text{ seconds}$$\n\n**Final Answer: 1.6 seconds**",
+          "reasoning_content": "Let me work through this problem carefully.\n\nJobs arrive at times:\n- Job 1: arrives at t=0, takes 4 seconds\n- Job 2: arrives at t=3, takes 2 seconds\n- Job 3: arrives at t=5, takes 7 seconds\n- Job 4: arrives at t=9, takes 1 seconds\n- Job 5: arrives at t=12, takes 3 seconds\n\nThe server processes jobs in FIFO order.\n\nWait time = time job spends waiting in queue before starting service.\n\nLet me trace through the timeline.\n\nJob 1 arrives at t=0. Server is idle, so it starts immediately at t=0. It takes 4 seconds, so it finishes at t=4.\n- Job 1 waiting time = 0 - 0 = 0\n\nJob 2 arrives at t=3. Server is busy with Job 1 (until t=4). So Job 2 waits from t=3 until t=4 when Job 1 finishes. Then Job 2 starts at t=4.\n- Job 2 waiting time = 4 - 3 = 1\n\nJob 2 takes 2 seconds, finishes at t=6.\n\nJob 3 arrives at t=5. Server is busy with Job 2 (until t=6). So Job 3 waits from t=5 until t=6. Then Job 3 starts at t=6.\n- Job 3 waiting time = 6 - 5 = 1\n\nJob 3 takes 7 seconds, finishes at t=13.\n\nJob 4 arrives at t=9. Server is busy with Job 3 (until t=13). So Job 4 waits from t=9 until t=13. Then Job 4 starts at t=13.\n- Job 4 waiting time = 13 - 9 = 4\n\nJob 4 takes 1 second, finishes at t=14.\n\nJob 5 arrives at t=12. Server is busy with Job 3 (until t=13). So Job 5 waits from t=12 until t=13. Then Job 5 starts at t=13.\n- Job 5 waiting time = 13 - 12 = 1\n\nWait, let me reconsider. Job 4 and Job 5 both arrive while Job 3 is running. In FIFO order, Job 4 (arrived at t=9) is served before Job 5 (arrived at t=12).\n\nWhen Job 3 finishes at t=13, Job 4 starts (it's next in FIFO queue). Job 4 takes 1 second, finishes at t=14. Then Job 5 starts at t=14.\n\nWait, I need to recompute Job 5's waiting time.\n\nJob 5 arrives at t=12. It waits until it starts service. After Job 3 finishes at t=13, Job 4 starts at t=13 and finishes at t=14 (takes 1 second). Then Job 5 starts at t=14.\n\nJob 5 waiting time = 14 - 12 = 2\n\nLet me redo this.\n\nTimeline:\n- t=0: Job 1 arrives, server idle, starts Job 1. Job 1 runs from t=0 to t=4.\n- t=3: Job 2 arrives, waits. Queue: [Job 2]\n- t=4: Job 1 finishes. Job 2 starts. Job 2 runs from t=4 to t=6.\n- t=5: Job 3 arrives, waits. Queue: [Job 3]\n- t=6: Job 2 finishes. Job 3 starts. Job 3 runs from t=6 to t=13.\n- t=9: Job 4 arrives, waits. Queue: [Job 4]\n- t=12: Job 5 arrives, waits. Queue: [Job 4, Job 5]\n- t=13: Job 3 finishes. Job 4 starts (FIFO). Job 4 runs from t=13 to t=14.\n- t=14: Job 4 finishes. Job 5 starts. Job 5 runs from t=14 to t=17.\n\nWaiting times:\n- Job 1: starts at 0, arrived at 0. Waiting = 0\n- Job 2: starts at 4, arrived at 3. Waiting = 1\n- Job 3: starts at 6, arrived at 5. Waiting = 1\n- Job 4: starts at 13, arrived at 9. Waiting = 4\n- Job 5: starts at 14, arrived at 12. Waiting = 2\n\nAverage waiting time = (0 + 1 + 1 + 4 + 2) / 5 = 8 / 5 = 1.6 seconds\n\nSo the average waiting time is 1.6 seconds.\n\nLet me double-check the waiting times.\n\nJob 1: arrival 0, start 0, wait 0. \u2713\nJob 2: arrival 3, start 4, wait 1. \u2713\nJob 3: arrival 5, start 6, wait 1. \u2713\nJob 4: arrival 9, start 13, wait 4. \u2713\nJob 5: arrival 12, start 14, wait 2. \u2713\n\nSum = 0 + 1 + 1 + 4 + 2 = 8\nAverage = 8/5 = 1.6 seconds.\n\nThe answer is 1.6 seconds.\n"
+        }
+      }
+    ],
+    "created": 1789844407,
+    "model": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-019-ornith-gguf/models/Ornith-1.5-9B-Q6_K.gguf",
+    "system_fingerprint": "b10964-b29c606e2",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 1704,
+      "prompt_tokens": 68,
+      "total_tokens": 1772,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "id": "chatcmpl-mAqFKPqYvihpFbDVSP8gazTD9Q3tJpgw",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 68,
+      "prompt_ms": 704.951,
+      "prompt_per_token_ms": 10.366926470588236,
+      "prompt_per_second": 96.46060506333063,
+      "predicted_n": 1704,
+      "predicted_ms": 141444.908,
+      "predicted_per_token_ms": 83.05631708749266,
+      "predicted_per_second": 12.040023384935145
+    }
+  }
+}

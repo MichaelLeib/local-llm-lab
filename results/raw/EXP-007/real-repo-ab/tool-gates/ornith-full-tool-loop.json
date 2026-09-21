@@ -1,0 +1,69 @@
+{
+  "first_wall_seconds": 28.644,
+  "first_response": {
+    "id": "chatcmpl-39ed5b1b",
+    "object": "chat.completion",
+    "created": 1789709148,
+    "model": "hermes-fast",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "id": "call_2b8afa28",
+              "type": "function",
+              "function": {
+                "name": "terminal",
+                "arguments": "{\"command\": \"printf AGENT_TOOL_OK\"}"
+              }
+            }
+          ],
+          "content": ""
+        },
+        "finish_reason": "tool_calls"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 470,
+      "completion_tokens": 24,
+      "total_tokens": 494
+    }
+  },
+  "executed_tools": [
+    {
+      "id": "call_2b8afa28",
+      "args": {
+        "command": "printf AGENT_TOOL_OK"
+      },
+      "stdout": "AGENT_TOOL_OK",
+      "returncode": 0
+    }
+  ],
+  "second_wall_seconds": 1.285,
+  "second_response": {
+    "id": "chatcmpl-8a791d13",
+    "object": "chat.completion",
+    "created": 1789709149,
+    "model": "hermes-fast",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "AGENT_TOOL_OK"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 520,
+      "completion_tokens": 4,
+      "total_tokens": 524,
+      "prompt_tokens_details": {
+        "cached_tokens": 470
+      }
+    }
+  }
+}

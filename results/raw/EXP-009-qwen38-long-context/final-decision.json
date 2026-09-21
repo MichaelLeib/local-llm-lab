@@ -1,0 +1,41 @@
+{
+  "experiment": "EXP-009-qwen38-long-context",
+  "decision": "not_qualified_for_primary_local_Hermes_model",
+  "status": "stopped_for_swap",
+  "tested_runtime": {
+    "repo": "https://github.com/Pummelchen/TinyTitan",
+    "commit": "9c03db58d86e7ac35917ee3f05cf58fbab97f666",
+    "build": "Swift 6.4 release arm64"
+  },
+  "model": {
+    "source": "RockTalk/Qwen3.8-Flash-Next-MLX-4bit",
+    "revision": "478474da92599ad0cf9f8bd447e658b29cb8480a",
+    "representation": "native 4-bit GTURBO",
+    "receipt": "../EXP-006/model/qwen3.8-flash-next_125B_A6B_4Bit/verified-install.json"
+  },
+  "phase2_7k_shaped_arm": {
+    "configured_context_tokens": 8192,
+    "expert_cache_slots": 16,
+    "configured_prefill_chunk_tokens": 4096,
+    "generation_started": false,
+    "timing_footer_available": false,
+    "baseline_swap_mib": 1585.56,
+    "peak_swap_mib": 4387.06,
+    "peak_incremental_swap_mib": 2801.5,
+    "peak_incremental_swap_gib": 2.73583984375,
+    "process_rss_kib_at_stop": 5749856,
+    "process_physical_footprint_bytes_at_stop": 8251153152,
+    "process_physical_footprint_peak_bytes_at_stop": 8650545896,
+    "stop_reason": "Swap and memory pressure became unsafe during prefill; no decode result is claimed."
+  },
+  "not_run": [
+    "32K populated context",
+    "64K populated context",
+    "128K populated context",
+    "prefix reuse",
+    "Hermes tool loop",
+    "coding qualification",
+    "general/research spot check"
+  ],
+  "rationale": "The first real multi-thousand-token prefill exceeded the prior EXP-006 24-slot unacceptable-swap envelope despite using only 16 slots. Advancing to long context would violate the experiment safety gate rather than qualify the model."
+}

@@ -1,0 +1,64 @@
+{
+  "experiment": "EXP-005",
+  "probe": "first_standalone_qwen36_short_prompt",
+  "status": "success",
+  "started_at": "2026-09-17T13:09:37.797150+00:00",
+  "finished_at": "2026-09-17T13:09:51.552487+00:00",
+  "exit_code": 0,
+  "command": [
+    "slipstream",
+    "--model",
+    "results/raw/EXP-005/model/qwen36.gturbo",
+    "--prompt",
+    "Reply with exactly READY.",
+    "--max-new",
+    "8",
+    "--max-context",
+    "4096",
+    "--temperature",
+    "0",
+    "--seed",
+    "12345",
+    "--expert-cache-slots",
+    "16",
+    "--prefill-chunk",
+    "auto"
+  ],
+  "output": "READY.",
+  "timing_footer": {
+    "stop": "eos",
+    "prompt_tokens": 5,
+    "prefill_seconds": 8.81,
+    "new_tokens": 8,
+    "decode_seconds": 0.96,
+    "decode_tok_s": 8.325
+  },
+  "sampled_resources": {
+    "samples": 13,
+    "sample_window_seconds": 12.674,
+    "peak_process_footprint_mb": 1445.0,
+    "peak_rss_mb": 363.859375,
+    "max_cpu_percent": 99.3,
+    "memory_pressure_free_before_percent": 58,
+    "memory_pressure_free_after_percent": 51,
+    "swap_used_before_mib": 2310.38,
+    "swap_used_after_mib": 2310.38,
+    "swap_growth_mib": 0.0
+  },
+  "interpretation": {
+    "standalone_correctness": "passed",
+    "cold_prefill_is_not_stable_throughput": true,
+    "memory_baseline_clean": false,
+    "reason": "Swap was already 2310.38 MiB before the probe; no additional swap growth was observed."
+  },
+  "artifacts": [
+    "first-probe/stdout.txt",
+    "first-probe/stderr.txt",
+    "first-probe/samples.jsonl",
+    "first-probe/memory-before.txt",
+    "first-probe/memory-after.txt",
+    "first-probe/swap-before.txt",
+    "first-probe/swap-after.txt",
+    "first-probe-command.json"
+  ]
+}

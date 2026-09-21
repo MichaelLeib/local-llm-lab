@@ -1,0 +1,58 @@
+{
+  "source_session": "20260918_084438_eaeee8",
+  "historic_initial_prompt_tokens": 4070,
+  "historic_second_prompt_tokens": 10251,
+  "tool_results": [
+    {
+      "index": 1,
+      "tool_name": "search_files",
+      "before_tokens": 1171,
+      "after_tokens": 760,
+      "before_chars": 3072,
+      "after_chars": 2178,
+      "truncated": true
+    },
+    {
+      "index": 2,
+      "tool_name": "terminal",
+      "before_tokens": 4818,
+      "after_tokens": 800,
+      "before_chars": 9584,
+      "after_chars": 1784,
+      "truncated": true
+    },
+    {
+      "index": 3,
+      "tool_name": "search_files",
+      "before_tokens": 2101,
+      "after_tokens": 799,
+      "before_chars": 5137,
+      "after_chars": 2298,
+      "truncated": true
+    },
+    {
+      "index": 4,
+      "tool_name": "search_files",
+      "before_tokens": 2267,
+      "after_tokens": 797,
+      "before_chars": 5886,
+      "after_chars": 2579,
+      "truncated": true
+    },
+    {
+      "index": 5,
+      "tool_name": "search_files",
+      "before_tokens": 1927,
+      "after_tokens": 782,
+      "before_chars": 4967,
+      "after_chars": 2302,
+      "truncated": true
+    }
+  ],
+  "historic_tool_result_tokens": 12284,
+  "simulated_bounded_tool_result_tokens": 3938,
+  "simulated_reduction_tokens": 8346,
+  "projected_7_tool_turn_total_with_completion_reservation": 13766,
+  "fixed_context_limit": 16384,
+  "headroom_tokens": 2618
+}

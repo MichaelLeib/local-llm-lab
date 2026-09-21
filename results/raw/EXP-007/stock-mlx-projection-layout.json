@@ -1,0 +1,1547 @@
+{
+  "all_training_targets": 44,
+  "missing_or_out_of_scope": [
+    {
+      "carnice": "mtp.layers.0.self_attn.k_proj.weight",
+      "reason": "MTP tensor: absent from frozen stock MLX source/runtime scope"
+    },
+    {
+      "carnice": "mtp.layers.0.self_attn.o_proj.weight",
+      "reason": "MTP tensor: absent from frozen stock MLX source/runtime scope"
+    },
+    {
+      "carnice": "mtp.layers.0.self_attn.q_proj.weight",
+      "reason": "MTP tensor: absent from frozen stock MLX source/runtime scope"
+    },
+    {
+      "carnice": "mtp.layers.0.self_attn.v_proj.weight",
+      "reason": "MTP tensor: absent from frozen stock MLX source/runtime scope"
+    }
+  ],
+  "note": "MLX stock representation is a packed U32 weight plus sibling `.scales`/`.biases`; this is the exact target layout used by the frozen importer, but the importer copies this representation and does not quantize BF16 itself.",
+  "rows": [
+    {
+      "carnice_tensor": "model.language_model.layers.3.self_attn.k_proj.weight",
+      "mlx_base": "language_model.model.layers.3.self_attn.k_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 524288,
+          "dtype": "U32",
+          "name": "language_model.model.layers.3.self_attn.k_proj.weight",
+          "shape": [
+            512,
+            256
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.3.self_attn.k_proj.scales",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.3.self_attn.k_proj.biases",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 589824,
+      "source_bf16_bytes": 2097152
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.3.self_attn.o_proj.weight",
+      "mlx_base": "language_model.model.layers.3.self_attn.o_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 4194304,
+          "dtype": "U32",
+          "name": "language_model.model.layers.3.self_attn.o_proj.weight",
+          "shape": [
+            2048,
+            512
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        },
+        {
+          "bytes": 262144,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.3.self_attn.o_proj.scales",
+          "shape": [
+            2048,
+            64
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        },
+        {
+          "bytes": 262144,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.3.self_attn.o_proj.biases",
+          "shape": [
+            2048,
+            64
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 4718592,
+      "source_bf16_bytes": 16777216
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.3.self_attn.q_proj.weight",
+      "mlx_base": "language_model.model.layers.3.self_attn.q_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 8388608,
+          "dtype": "U32",
+          "name": "language_model.model.layers.3.self_attn.q_proj.weight",
+          "shape": [
+            8192,
+            256
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        },
+        {
+          "bytes": 524288,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.3.self_attn.q_proj.scales",
+          "shape": [
+            8192,
+            32
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        },
+        {
+          "bytes": 524288,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.3.self_attn.q_proj.biases",
+          "shape": [
+            8192,
+            32
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 9437184,
+      "source_bf16_bytes": 33554432
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.3.self_attn.v_proj.weight",
+      "mlx_base": "language_model.model.layers.3.self_attn.v_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 524288,
+          "dtype": "U32",
+          "name": "language_model.model.layers.3.self_attn.v_proj.weight",
+          "shape": [
+            512,
+            256
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.3.self_attn.v_proj.scales",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.3.self_attn.v_proj.biases",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 589824,
+      "source_bf16_bytes": 2097152
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.7.self_attn.k_proj.weight",
+      "mlx_base": "language_model.model.layers.7.self_attn.k_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 524288,
+          "dtype": "U32",
+          "name": "language_model.model.layers.7.self_attn.k_proj.weight",
+          "shape": [
+            512,
+            256
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.7.self_attn.k_proj.scales",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.7.self_attn.k_proj.biases",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 589824,
+      "source_bf16_bytes": 2097152
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.7.self_attn.o_proj.weight",
+      "mlx_base": "language_model.model.layers.7.self_attn.o_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 4194304,
+          "dtype": "U32",
+          "name": "language_model.model.layers.7.self_attn.o_proj.weight",
+          "shape": [
+            2048,
+            512
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        },
+        {
+          "bytes": 262144,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.7.self_attn.o_proj.scales",
+          "shape": [
+            2048,
+            64
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        },
+        {
+          "bytes": 262144,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.7.self_attn.o_proj.biases",
+          "shape": [
+            2048,
+            64
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 4718592,
+      "source_bf16_bytes": 16777216
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.7.self_attn.q_proj.weight",
+      "mlx_base": "language_model.model.layers.7.self_attn.q_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 8388608,
+          "dtype": "U32",
+          "name": "language_model.model.layers.7.self_attn.q_proj.weight",
+          "shape": [
+            8192,
+            256
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        },
+        {
+          "bytes": 524288,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.7.self_attn.q_proj.scales",
+          "shape": [
+            8192,
+            32
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        },
+        {
+          "bytes": 524288,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.7.self_attn.q_proj.biases",
+          "shape": [
+            8192,
+            32
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 9437184,
+      "source_bf16_bytes": 33554432
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.7.self_attn.v_proj.weight",
+      "mlx_base": "language_model.model.layers.7.self_attn.v_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 524288,
+          "dtype": "U32",
+          "name": "language_model.model.layers.7.self_attn.v_proj.weight",
+          "shape": [
+            512,
+            256
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.7.self_attn.v_proj.scales",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.7.self_attn.v_proj.biases",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00001-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 589824,
+      "source_bf16_bytes": 2097152
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.11.self_attn.k_proj.weight",
+      "mlx_base": "language_model.model.layers.11.self_attn.k_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 524288,
+          "dtype": "U32",
+          "name": "language_model.model.layers.11.self_attn.k_proj.weight",
+          "shape": [
+            512,
+            256
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.11.self_attn.k_proj.scales",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.11.self_attn.k_proj.biases",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 589824,
+      "source_bf16_bytes": 2097152
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.11.self_attn.o_proj.weight",
+      "mlx_base": "language_model.model.layers.11.self_attn.o_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 4194304,
+          "dtype": "U32",
+          "name": "language_model.model.layers.11.self_attn.o_proj.weight",
+          "shape": [
+            2048,
+            512
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 262144,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.11.self_attn.o_proj.scales",
+          "shape": [
+            2048,
+            64
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 262144,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.11.self_attn.o_proj.biases",
+          "shape": [
+            2048,
+            64
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 4718592,
+      "source_bf16_bytes": 16777216
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.11.self_attn.q_proj.weight",
+      "mlx_base": "language_model.model.layers.11.self_attn.q_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 8388608,
+          "dtype": "U32",
+          "name": "language_model.model.layers.11.self_attn.q_proj.weight",
+          "shape": [
+            8192,
+            256
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 524288,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.11.self_attn.q_proj.scales",
+          "shape": [
+            8192,
+            32
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 524288,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.11.self_attn.q_proj.biases",
+          "shape": [
+            8192,
+            32
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 9437184,
+      "source_bf16_bytes": 33554432
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.11.self_attn.v_proj.weight",
+      "mlx_base": "language_model.model.layers.11.self_attn.v_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 524288,
+          "dtype": "U32",
+          "name": "language_model.model.layers.11.self_attn.v_proj.weight",
+          "shape": [
+            512,
+            256
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.11.self_attn.v_proj.scales",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.11.self_attn.v_proj.biases",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 589824,
+      "source_bf16_bytes": 2097152
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.15.self_attn.k_proj.weight",
+      "mlx_base": "language_model.model.layers.15.self_attn.k_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 524288,
+          "dtype": "U32",
+          "name": "language_model.model.layers.15.self_attn.k_proj.weight",
+          "shape": [
+            512,
+            256
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.15.self_attn.k_proj.scales",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.15.self_attn.k_proj.biases",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 589824,
+      "source_bf16_bytes": 2097152
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.15.self_attn.o_proj.weight",
+      "mlx_base": "language_model.model.layers.15.self_attn.o_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 4194304,
+          "dtype": "U32",
+          "name": "language_model.model.layers.15.self_attn.o_proj.weight",
+          "shape": [
+            2048,
+            512
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 262144,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.15.self_attn.o_proj.scales",
+          "shape": [
+            2048,
+            64
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 262144,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.15.self_attn.o_proj.biases",
+          "shape": [
+            2048,
+            64
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 4718592,
+      "source_bf16_bytes": 16777216
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.15.self_attn.q_proj.weight",
+      "mlx_base": "language_model.model.layers.15.self_attn.q_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 8388608,
+          "dtype": "U32",
+          "name": "language_model.model.layers.15.self_attn.q_proj.weight",
+          "shape": [
+            8192,
+            256
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 524288,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.15.self_attn.q_proj.scales",
+          "shape": [
+            8192,
+            32
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 524288,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.15.self_attn.q_proj.biases",
+          "shape": [
+            8192,
+            32
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 9437184,
+      "source_bf16_bytes": 33554432
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.15.self_attn.v_proj.weight",
+      "mlx_base": "language_model.model.layers.15.self_attn.v_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 524288,
+          "dtype": "U32",
+          "name": "language_model.model.layers.15.self_attn.v_proj.weight",
+          "shape": [
+            512,
+            256
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.15.self_attn.v_proj.scales",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.15.self_attn.v_proj.biases",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 589824,
+      "source_bf16_bytes": 2097152
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.19.self_attn.k_proj.weight",
+      "mlx_base": "language_model.model.layers.19.self_attn.k_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 524288,
+          "dtype": "U32",
+          "name": "language_model.model.layers.19.self_attn.k_proj.weight",
+          "shape": [
+            512,
+            256
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.19.self_attn.k_proj.scales",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.19.self_attn.k_proj.biases",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 589824,
+      "source_bf16_bytes": 2097152
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.19.self_attn.o_proj.weight",
+      "mlx_base": "language_model.model.layers.19.self_attn.o_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 4194304,
+          "dtype": "U32",
+          "name": "language_model.model.layers.19.self_attn.o_proj.weight",
+          "shape": [
+            2048,
+            512
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 262144,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.19.self_attn.o_proj.scales",
+          "shape": [
+            2048,
+            64
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 262144,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.19.self_attn.o_proj.biases",
+          "shape": [
+            2048,
+            64
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 4718592,
+      "source_bf16_bytes": 16777216
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.19.self_attn.q_proj.weight",
+      "mlx_base": "language_model.model.layers.19.self_attn.q_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 8388608,
+          "dtype": "U32",
+          "name": "language_model.model.layers.19.self_attn.q_proj.weight",
+          "shape": [
+            8192,
+            256
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 524288,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.19.self_attn.q_proj.scales",
+          "shape": [
+            8192,
+            32
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 524288,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.19.self_attn.q_proj.biases",
+          "shape": [
+            8192,
+            32
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 9437184,
+      "source_bf16_bytes": 33554432
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.19.self_attn.v_proj.weight",
+      "mlx_base": "language_model.model.layers.19.self_attn.v_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 524288,
+          "dtype": "U32",
+          "name": "language_model.model.layers.19.self_attn.v_proj.weight",
+          "shape": [
+            512,
+            256
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.19.self_attn.v_proj.scales",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.19.self_attn.v_proj.biases",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00002-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 589824,
+      "source_bf16_bytes": 2097152
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.23.self_attn.k_proj.weight",
+      "mlx_base": "language_model.model.layers.23.self_attn.k_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 524288,
+          "dtype": "U32",
+          "name": "language_model.model.layers.23.self_attn.k_proj.weight",
+          "shape": [
+            512,
+            256
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.23.self_attn.k_proj.scales",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.23.self_attn.k_proj.biases",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 589824,
+      "source_bf16_bytes": 2097152
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.23.self_attn.o_proj.weight",
+      "mlx_base": "language_model.model.layers.23.self_attn.o_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 4194304,
+          "dtype": "U32",
+          "name": "language_model.model.layers.23.self_attn.o_proj.weight",
+          "shape": [
+            2048,
+            512
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 262144,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.23.self_attn.o_proj.scales",
+          "shape": [
+            2048,
+            64
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 262144,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.23.self_attn.o_proj.biases",
+          "shape": [
+            2048,
+            64
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 4718592,
+      "source_bf16_bytes": 16777216
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.23.self_attn.q_proj.weight",
+      "mlx_base": "language_model.model.layers.23.self_attn.q_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 8388608,
+          "dtype": "U32",
+          "name": "language_model.model.layers.23.self_attn.q_proj.weight",
+          "shape": [
+            8192,
+            256
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 524288,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.23.self_attn.q_proj.scales",
+          "shape": [
+            8192,
+            32
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 524288,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.23.self_attn.q_proj.biases",
+          "shape": [
+            8192,
+            32
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 9437184,
+      "source_bf16_bytes": 33554432
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.23.self_attn.v_proj.weight",
+      "mlx_base": "language_model.model.layers.23.self_attn.v_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 524288,
+          "dtype": "U32",
+          "name": "language_model.model.layers.23.self_attn.v_proj.weight",
+          "shape": [
+            512,
+            256
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.23.self_attn.v_proj.scales",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.23.self_attn.v_proj.biases",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 589824,
+      "source_bf16_bytes": 2097152
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.27.self_attn.k_proj.weight",
+      "mlx_base": "language_model.model.layers.27.self_attn.k_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 524288,
+          "dtype": "U32",
+          "name": "language_model.model.layers.27.self_attn.k_proj.weight",
+          "shape": [
+            512,
+            256
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.27.self_attn.k_proj.scales",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.27.self_attn.k_proj.biases",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 589824,
+      "source_bf16_bytes": 2097152
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.27.self_attn.o_proj.weight",
+      "mlx_base": "language_model.model.layers.27.self_attn.o_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 4194304,
+          "dtype": "U32",
+          "name": "language_model.model.layers.27.self_attn.o_proj.weight",
+          "shape": [
+            2048,
+            512
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 262144,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.27.self_attn.o_proj.scales",
+          "shape": [
+            2048,
+            64
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 262144,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.27.self_attn.o_proj.biases",
+          "shape": [
+            2048,
+            64
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 4718592,
+      "source_bf16_bytes": 16777216
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.27.self_attn.q_proj.weight",
+      "mlx_base": "language_model.model.layers.27.self_attn.q_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 8388608,
+          "dtype": "U32",
+          "name": "language_model.model.layers.27.self_attn.q_proj.weight",
+          "shape": [
+            8192,
+            256
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 524288,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.27.self_attn.q_proj.scales",
+          "shape": [
+            8192,
+            32
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 524288,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.27.self_attn.q_proj.biases",
+          "shape": [
+            8192,
+            32
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 9437184,
+      "source_bf16_bytes": 33554432
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.27.self_attn.v_proj.weight",
+      "mlx_base": "language_model.model.layers.27.self_attn.v_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 524288,
+          "dtype": "U32",
+          "name": "language_model.model.layers.27.self_attn.v_proj.weight",
+          "shape": [
+            512,
+            256
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.27.self_attn.v_proj.scales",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.27.self_attn.v_proj.biases",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 589824,
+      "source_bf16_bytes": 2097152
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.31.self_attn.k_proj.weight",
+      "mlx_base": "language_model.model.layers.31.self_attn.k_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 524288,
+          "dtype": "U32",
+          "name": "language_model.model.layers.31.self_attn.k_proj.weight",
+          "shape": [
+            512,
+            256
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.31.self_attn.k_proj.scales",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.31.self_attn.k_proj.biases",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 589824,
+      "source_bf16_bytes": 2097152
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.31.self_attn.o_proj.weight",
+      "mlx_base": "language_model.model.layers.31.self_attn.o_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 4194304,
+          "dtype": "U32",
+          "name": "language_model.model.layers.31.self_attn.o_proj.weight",
+          "shape": [
+            2048,
+            512
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 262144,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.31.self_attn.o_proj.scales",
+          "shape": [
+            2048,
+            64
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 262144,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.31.self_attn.o_proj.biases",
+          "shape": [
+            2048,
+            64
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 4718592,
+      "source_bf16_bytes": 16777216
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.31.self_attn.q_proj.weight",
+      "mlx_base": "language_model.model.layers.31.self_attn.q_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 8388608,
+          "dtype": "U32",
+          "name": "language_model.model.layers.31.self_attn.q_proj.weight",
+          "shape": [
+            8192,
+            256
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 524288,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.31.self_attn.q_proj.scales",
+          "shape": [
+            8192,
+            32
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 524288,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.31.self_attn.q_proj.biases",
+          "shape": [
+            8192,
+            32
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 9437184,
+      "source_bf16_bytes": 33554432
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.31.self_attn.v_proj.weight",
+      "mlx_base": "language_model.model.layers.31.self_attn.v_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 524288,
+          "dtype": "U32",
+          "name": "language_model.model.layers.31.self_attn.v_proj.weight",
+          "shape": [
+            512,
+            256
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.31.self_attn.v_proj.scales",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.31.self_attn.v_proj.biases",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00003-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 589824,
+      "source_bf16_bytes": 2097152
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.35.self_attn.k_proj.weight",
+      "mlx_base": "language_model.model.layers.35.self_attn.k_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 524288,
+          "dtype": "U32",
+          "name": "language_model.model.layers.35.self_attn.k_proj.weight",
+          "shape": [
+            512,
+            256
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.35.self_attn.k_proj.scales",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.35.self_attn.k_proj.biases",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 589824,
+      "source_bf16_bytes": 2097152
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.35.self_attn.o_proj.weight",
+      "mlx_base": "language_model.model.layers.35.self_attn.o_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 4194304,
+          "dtype": "U32",
+          "name": "language_model.model.layers.35.self_attn.o_proj.weight",
+          "shape": [
+            2048,
+            512
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        },
+        {
+          "bytes": 262144,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.35.self_attn.o_proj.scales",
+          "shape": [
+            2048,
+            64
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        },
+        {
+          "bytes": 262144,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.35.self_attn.o_proj.biases",
+          "shape": [
+            2048,
+            64
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 4718592,
+      "source_bf16_bytes": 16777216
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.35.self_attn.q_proj.weight",
+      "mlx_base": "language_model.model.layers.35.self_attn.q_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 8388608,
+          "dtype": "U32",
+          "name": "language_model.model.layers.35.self_attn.q_proj.weight",
+          "shape": [
+            8192,
+            256
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        },
+        {
+          "bytes": 524288,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.35.self_attn.q_proj.scales",
+          "shape": [
+            8192,
+            32
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        },
+        {
+          "bytes": 524288,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.35.self_attn.q_proj.biases",
+          "shape": [
+            8192,
+            32
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 9437184,
+      "source_bf16_bytes": 33554432
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.35.self_attn.v_proj.weight",
+      "mlx_base": "language_model.model.layers.35.self_attn.v_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 524288,
+          "dtype": "U32",
+          "name": "language_model.model.layers.35.self_attn.v_proj.weight",
+          "shape": [
+            512,
+            256
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.35.self_attn.v_proj.scales",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.35.self_attn.v_proj.biases",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 589824,
+      "source_bf16_bytes": 2097152
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.39.self_attn.k_proj.weight",
+      "mlx_base": "language_model.model.layers.39.self_attn.k_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 524288,
+          "dtype": "U32",
+          "name": "language_model.model.layers.39.self_attn.k_proj.weight",
+          "shape": [
+            512,
+            256
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.39.self_attn.k_proj.scales",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.39.self_attn.k_proj.biases",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 589824,
+      "source_bf16_bytes": 2097152
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.39.self_attn.o_proj.weight",
+      "mlx_base": "language_model.model.layers.39.self_attn.o_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 4194304,
+          "dtype": "U32",
+          "name": "language_model.model.layers.39.self_attn.o_proj.weight",
+          "shape": [
+            2048,
+            512
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        },
+        {
+          "bytes": 262144,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.39.self_attn.o_proj.scales",
+          "shape": [
+            2048,
+            64
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        },
+        {
+          "bytes": 262144,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.39.self_attn.o_proj.biases",
+          "shape": [
+            2048,
+            64
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 4718592,
+      "source_bf16_bytes": 16777216
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.39.self_attn.q_proj.weight",
+      "mlx_base": "language_model.model.layers.39.self_attn.q_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 8388608,
+          "dtype": "U32",
+          "name": "language_model.model.layers.39.self_attn.q_proj.weight",
+          "shape": [
+            8192,
+            256
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        },
+        {
+          "bytes": 524288,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.39.self_attn.q_proj.scales",
+          "shape": [
+            8192,
+            32
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        },
+        {
+          "bytes": 524288,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.39.self_attn.q_proj.biases",
+          "shape": [
+            8192,
+            32
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 9437184,
+      "source_bf16_bytes": 33554432
+    },
+    {
+      "carnice_tensor": "model.language_model.layers.39.self_attn.v_proj.weight",
+      "mlx_base": "language_model.model.layers.39.self_attn.v_proj.weight",
+      "mlx_records": [
+        {
+          "bytes": 524288,
+          "dtype": "U32",
+          "name": "language_model.model.layers.39.self_attn.v_proj.weight",
+          "shape": [
+            512,
+            256
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.39.self_attn.v_proj.scales",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        },
+        {
+          "bytes": 32768,
+          "dtype": "BF16",
+          "name": "language_model.model.layers.39.self_attn.v_proj.biases",
+          "shape": [
+            512,
+            32
+          ],
+          "shard": "model-00004-of-00004.safetensors"
+        }
+      ],
+      "mlx_total_bytes": 589824,
+      "source_bf16_bytes": 2097152
+    }
+  ],
+  "runtime_applicable_targets": 40,
+  "source_bf16_bytes_runtime_scope": 545259520,
+  "stock_mlx_quantized_record_bytes": 153354240
+}

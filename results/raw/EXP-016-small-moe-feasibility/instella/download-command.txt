@@ -1,0 +1,1 @@
+hf download --repo-type model DevQuasar/amd.Instella-MoE-16B-A3B-Think-GGUF --revision 987ee1648d7e4bcb33ab98dfbf4e910b2230c30a --include Q4_K_M/amd.Instella-MoE-16B-A3B-Think.f16.gguf.Q4_K_M.gguf README.md --local-dir results/raw/EXP-016-small-moe-feasibility/instella/model

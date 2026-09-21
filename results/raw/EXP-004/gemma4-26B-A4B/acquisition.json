@@ -1,0 +1,49 @@
+{
+  "experiment": "EXP-004",
+  "target": "Gemma 4 26B-A4B-it",
+  "status": "downloaded_verified_probe_deferred_swap_baseline",
+  "repository": "unsloth/gemma-4-26B-A4B-it-GGUF",
+  "revision": "c099eb48e663fd284577b04978a94ffccb261841",
+  "filename": "gemma-4-26B-A4B-it-MXFP4_MOE.gguf",
+  "path": "results/raw/EXP-004/gemma4-26B-A4B/model/gemma-4-26B-A4B-it-MXFP4_MOE.gguf",
+  "bytes": 16551048928,
+  "sha256": "a8908250f2a72a5824382d488158f12b65effa24e6c6b1244e5b4818ac0a1459",
+  "quantization": "MXFP4 MoE",
+  "mmproj_downloaded": false,
+  "mtp_drafter_downloaded": false,
+  "runtime": {
+    "repository": "https://github.com/amos-labs/expertcache",
+    "expertcache_commit": "e6a3b940a8cd8465be0cd8cdf0f39829ebfa6ade",
+    "llama_cpp_commit": "7e1e28cae36d41fe7bbe9dae7c9625de6565c063",
+    "patch_sha256": "6bb978ab189ded46b131edea81fbe0740d7d527797be553f91312e4704f76a63",
+    "metal_operation_test": "supported=1 on Apple M3",
+    "build_log": "results/raw/EXP-004/gemma4-runtime-build-rerun.log",
+    "build_verification_log": "results/raw/EXP-004/gemma4-build-verification.log"
+  },
+  "architecture": {
+    "model_type": "gemma4",
+    "architecture": "Gemma4ForConditionalGeneration",
+    "layers": 30,
+    "hidden_size": 2816,
+    "moe_intermediate_size": 704,
+    "num_experts": 128,
+    "experts_per_token": 8,
+    "shared_expert": true,
+    "context_length": 262144,
+    "sliding_window": 1024,
+    "source": "https://huggingface.co/google/gemma-4-26B-A4B-it/raw/main/config.json"
+  },
+  "probe_gate": {
+    "intended_context": 4096,
+    "batch": 4,
+    "ubatch": 1,
+    "expert_cache_slots": 128,
+    "cpu_fill": true,
+    "zero_copy": true,
+    "grouped": false,
+    "prefetch": false,
+    "current_swap_used_gib": 2.3265,
+    "required_swap_used_gib_max": 2.0,
+    "decision": "defer until clean reboot or equivalent swap reset; no model server launched"
+  }
+}

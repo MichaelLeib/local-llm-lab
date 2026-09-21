@@ -1,0 +1,118 @@
+{
+  "footprint": {
+    "expert_bytes": 33973862400,
+    "ngram_bytes": 19200092160,
+    "resident_bytes": 21864923704,
+    "total_bytes": 55838786104
+  },
+  "loader_projection": {
+    "auto_cache_bytes": 5673882117,
+    "auto_cache_peak_bytes_conservative_reserve": 9438713661,
+    "note": "fixed-cache projection = wired_resident_after_ngram_offload + cache + runtime_overhead + actual_8192_kv + 128-token_prefill_workspace; cache_budget helper uses its conservative 1.9GB KV reserve when auto-sizing",
+    "one_gb_cache_peak_bytes": 5049257784,
+    "two_gb_cache_peak_bytes": 6049257784,
+    "wss_bytes": 11338713661
+  },
+  "planner_remote_at_16gb_8192": {
+    "flags": [
+      "--streaming   (weights exceed even the raised cap; experts page from disk)",
+      "--cache-budget-gb auto   (~5.7 GB here, peaking near 9.4 GB)",
+      "--prefill-step-size 128   (the default 2048 needs 1.33 GB of transient workspace at this context)"
+    ],
+    "machine": {
+      "assumed": true,
+      "ram_bytes": 17179869184.0,
+      "wss_bytes": 11338713661.44,
+      "wss_estimated": true
+    },
+    "model": {
+      "bits": 4,
+      "expert_bytes": 33973862400,
+      "expert_down_bits": null,
+      "experts_per_tok": 10,
+      "group_size": 64,
+      "is_moe": true,
+      "n_experts": 512,
+      "n_layers": 48,
+      "name": "manjunathshiva/Qwen3.8-Flash-Next-tq4a-tq2e-g64",
+      "ngram_bytes": 19200092160,
+      "path": "manjunathshiva/Qwen3.8-Flash-Next-tq4a-tq2e-g64",
+      "quantization": "turboquant",
+      "resident_bytes": 21864923704,
+      "source": "huggingface",
+      "total_bytes": 55838786104,
+      "type": "qwen4_exp"
+    },
+    "projection": {
+      "ceiling_bytes": 15461882265.6,
+      "context": 8192,
+      "headroom_bytes": -22461237918.4,
+      "kv_bits": null,
+      "kv_bytes": 201326592.0,
+      "kv_bytes_per_token": 24576.0,
+      "kv_note": "hybrid: 12/48 full-attention",
+      "ngram_offload": true,
+      "ngram_offloaded_bytes": 19200092160,
+      "peak_bytes": 37923120184.0,
+      "prefill_step_size": 128,
+      "prefill_workspace_bytes": 83099648.0,
+      "ram_share": 2.2074161204509437,
+      "runtime_reserve_bytes": 1000000000.0
+    },
+    "schema": 1,
+    "verdict": {
+      "mode": "streaming",
+      "needs_wired_bump": false,
+      "runnable": true
+    },
+    "warnings": []
+  },
+  "relationships": {
+    "ngram_is_subset_of_resident_by_bytes": true,
+    "resident_equals_total_minus_experts": true,
+    "wired_resident_after_ngram_offload_bytes": 2664831544
+  },
+  "repo": "manjunathshiva/Qwen3.8-Flash-Next-tq4a-tq2e-g64",
+  "unit_views": {
+    "auto_cache_peak_conservative": {
+      "GB_decimal": 9.438713661,
+      "GiB_binary": 8.790487107820809,
+      "bytes": 9438713661
+    },
+    "experts": {
+      "GB_decimal": 33.9738624,
+      "GiB_binary": 31.640625,
+      "bytes": 33973862400
+    },
+    "ngram_subset": {
+      "GB_decimal": 19.20009216,
+      "GiB_binary": 17.881479263305664,
+      "bytes": 19200092160
+    },
+    "one_gb_cache_peak": {
+      "GB_decimal": 5.049257784,
+      "GiB_binary": 4.702487759292126,
+      "bytes": 5049257784
+    },
+    "resident_including_ngram": {
+      "GB_decimal": 21.864923704,
+      "GiB_binary": 20.363297037780285,
+      "bytes": 21864923704
+    },
+    "total": {
+      "GB_decimal": 55.838786104,
+      "GiB_binary": 52.003922037780285,
+      "bytes": 55838786104
+    },
+    "two_gb_cache_peak": {
+      "GB_decimal": 6.049257784,
+      "GiB_binary": 5.633810333907604,
+      "bytes": 6049257784
+    },
+    "wired_resident_after_offload": {
+      "GB_decimal": 2.664831544,
+      "GiB_binary": 2.481817774474621,
+      "bytes": 2664831544
+    }
+  }
+}

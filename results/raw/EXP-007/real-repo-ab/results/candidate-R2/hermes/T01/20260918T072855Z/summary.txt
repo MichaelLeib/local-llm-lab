@@ -1,0 +1,1 @@
+completed blind_candidate=candidate-R2 task=T01 hermes_exit=0

@@ -1,0 +1,2237 @@
+
+--- 2026-09-17T12:59:57+0200 ---
+68481 81528 146912 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python /opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/bin/rapid-mlx --no-banner serve ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit --host 127.0.0.1 --port 8904 --disk-stream --disk-stream-cache-gb 1 --lazy-load --max-num-seqs 1 --max-concurrent-requests 1 --gpu-memory-utilization 0.45 --resident-memory-limit-gb 7 --no-thinking --no-reasoning-parser --log-level INFO
+68585 81528   1744 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2224 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68609 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 6969 
+Pages purgeable: 19644 
+Pages purged: 43715302 
+
+Swap I/O:
+Swapins: 5678354 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 288942 
+Pages inactive: 286802 
+
+--- 2026-09-17T13:00:00+0200 ---
+68481 81528 146912 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python /opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/bin/rapid-mlx --no-banner serve ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit --host 127.0.0.1 --port 8904 --disk-stream --disk-stream-cache-gb 1 --lazy-load --max-num-seqs 1 --max-concurrent-requests 1 --gpu-memory-utilization 0.45 --resident-memory-limit-gb 7 --no-thinking --no-reasoning-parser --log-level INFO
+68585 81528   1744 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2240 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68658 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 16570 
+Pages purgeable: 21438 
+Pages purged: 43715494 
+
+Swap I/O:
+Swapins: 5678354 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 298258 
+Pages inactive: 293621 
+
+--- 2026-09-17T13:00:03+0200 ---
+68481 81528 146848 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python /opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/bin/rapid-mlx --no-banner serve ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit --host 127.0.0.1 --port 8904 --disk-stream --disk-stream-cache-gb 1 --lazy-load --max-num-seqs 1 --max-concurrent-requests 1 --gpu-memory-utilization 0.45 --resident-memory-limit-gb 7 --no-thinking --no-reasoning-parser --log-level INFO
+68585 81528   1744 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2272 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68672 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 15548 
+Pages purgeable: 14673 
+Pages purged: 43722719 
+
+Swap I/O:
+Swapins: 5678458 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 298343 
+Pages inactive: 291428 
+
+--- 2026-09-17T13:00:06+0200 ---
+68481 81528 563536 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python /opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/bin/rapid-mlx --no-banner serve ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit --host 127.0.0.1 --port 8904 --disk-stream --disk-stream-cache-gb 1 --lazy-load --max-num-seqs 1 --max-concurrent-requests 1 --gpu-memory-utilization 0.45 --resident-memory-limit-gb 7 --no-thinking --no-reasoning-parser --log-level INFO
+68585 81528   1744 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2304 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68700 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 93173 
+Pages purgeable: 16717 
+Pages purged: 43722780 
+
+Swap I/O:
+Swapins: 5678462 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 262425 
+Pages inactive: 257329 
+
+--- 2026-09-17T13:00:09+0200 ---
+68481 81528 563536 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python /opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/bin/rapid-mlx --no-banner serve ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit --host 127.0.0.1 --port 8904 --disk-stream --disk-stream-cache-gb 1 --lazy-load --max-num-seqs 1 --max-concurrent-requests 1 --gpu-memory-utilization 0.45 --resident-memory-limit-gb 7 --no-thinking --no-reasoning-parser --log-level INFO
+68585 81528   1744 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2304 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68716 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 90257 
+Pages purgeable: 15399 
+Pages purged: 43723697 
+
+Swap I/O:
+Swapins: 5678462 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 266759 
+Pages inactive: 258105 
+
+--- 2026-09-17T13:00:12+0200 ---
+68481 81528 563536 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python /opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/bin/rapid-mlx --no-banner serve ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit --host 127.0.0.1 --port 8904 --disk-stream --disk-stream-cache-gb 1 --lazy-load --max-num-seqs 1 --max-concurrent-requests 1 --gpu-memory-utilization 0.45 --resident-memory-limit-gb 7 --no-thinking --no-reasoning-parser --log-level INFO
+68585 81528   1744 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68730 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 75999 
+Pages purgeable: 10748 
+Pages purged: 43723721 
+
+Swap I/O:
+Swapins: 5678466 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 267618 
+Pages inactive: 256388 
+
+--- 2026-09-17T13:00:15+0200 ---
+68481 81528 563536 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python /opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/bin/rapid-mlx --no-banner serve ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit --host 127.0.0.1 --port 8904 --disk-stream --disk-stream-cache-gb 1 --lazy-load --max-num-seqs 1 --max-concurrent-requests 1 --gpu-memory-utilization 0.45 --resident-memory-limit-gb 7 --no-thinking --no-reasoning-parser --log-level INFO
+68585 81528   1744 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68757 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 83255 
+Pages purgeable: 13498 
+Pages purged: 43723721 
+
+Swap I/O:
+Swapins: 5678467 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 264590 
+Pages inactive: 253380 
+
+--- 2026-09-17T13:00:19+0200 ---
+68481 81528 563536 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python /opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/bin/rapid-mlx --no-banner serve ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit --host 127.0.0.1 --port 8904 --disk-stream --disk-stream-cache-gb 1 --lazy-load --max-num-seqs 1 --max-concurrent-requests 1 --gpu-memory-utilization 0.45 --resident-memory-limit-gb 7 --no-thinking --no-reasoning-parser --log-level INFO
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2304 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68789 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 74688 
+Pages purgeable: 15285 
+Pages purged: 43723722 
+
+Swap I/O:
+Swapins: 5678467 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 273050 
+Pages inactive: 260162 
+
+--- 2026-09-17T13:00:22+0200 ---
+68481 81528 563536 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python /opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/bin/rapid-mlx --no-banner serve ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit --host 127.0.0.1 --port 8904 --disk-stream --disk-stream-cache-gb 1 --lazy-load --max-num-seqs 1 --max-concurrent-requests 1 --gpu-memory-utilization 0.45 --resident-memory-limit-gb 7 --no-thinking --no-reasoning-parser --log-level INFO
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2304 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68812 68605    192 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 14926 
+Pages purgeable: 13002 
+Pages purged: 43723722 
+
+Swap I/O:
+Swapins: 5678796 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 304895 
+Pages inactive: 277946 
+
+--- 2026-09-17T13:00:25+0200 ---
+68481 81528 563536 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python /opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/bin/rapid-mlx --no-banner serve ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit --host 127.0.0.1 --port 8904 --disk-stream --disk-stream-cache-gb 1 --lazy-load --max-num-seqs 1 --max-concurrent-requests 1 --gpu-memory-utilization 0.45 --resident-memory-limit-gb 7 --no-thinking --no-reasoning-parser --log-level INFO
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2304 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68825 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 15284 
+Pages purgeable: 15302 
+Pages purged: 43723843 
+
+Swap I/O:
+Swapins: 5678824 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 307695 
+Pages inactive: 280882 
+
+--- 2026-09-17T13:00:28+0200 ---
+68481 81528 563536 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python /opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/bin/rapid-mlx --no-banner serve ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit --host 127.0.0.1 --port 8904 --disk-stream --disk-stream-cache-gb 1 --lazy-load --max-num-seqs 1 --max-concurrent-requests 1 --gpu-memory-utilization 0.45 --resident-memory-limit-gb 7 --no-thinking --no-reasoning-parser --log-level INFO
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2304 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68840 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 12969 
+Pages purgeable: 13027 
+Pages purged: 43723847 
+
+Swap I/O:
+Swapins: 5678828 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 305580 
+Pages inactive: 279639 
+
+--- 2026-09-17T13:00:31+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2304 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68890 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 37984 
+Pages purgeable: 14899 
+Pages purged: 43723847 
+
+Swap I/O:
+Swapins: 5678832 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 296427 
+Pages inactive: 271273 
+
+--- 2026-09-17T13:00:34+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2304 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68905 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 32772 
+Pages purgeable: 19967 
+Pages purged: 43723847 
+
+Swap I/O:
+Swapins: 5678832 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 304812 
+Pages inactive: 274707 
+
+--- 2026-09-17T13:00:37+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68919 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 40188 
+Pages purgeable: 13687 
+Pages purged: 43723847 
+
+Swap I/O:
+Swapins: 5678832 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 287403 
+Pages inactive: 259508 
+
+--- 2026-09-17T13:00:40+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68935 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 40470 
+Pages purgeable: 18635 
+Pages purged: 43723862 
+
+Swap I/O:
+Swapins: 5678832 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 303755 
+Pages inactive: 273290 
+
+--- 2026-09-17T13:00:43+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68950 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 7331 
+Pages purgeable: 12101 
+Pages purged: 43723990 
+
+Swap I/O:
+Swapins: 5678832 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 291859 
+Pages inactive: 261513 
+
+--- 2026-09-17T13:00:46+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68976 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 36625 
+Pages purgeable: 24174 
+Pages purged: 43723990 
+
+Swap I/O:
+Swapins: 5678832 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 306412 
+Pages inactive: 276001 
+
+--- 2026-09-17T13:00:49+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68992 68605    144 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 31205 
+Pages purgeable: 21981 
+Pages purged: 43723991 
+
+Swap I/O:
+Swapins: 5678832 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 309697 
+Pages inactive: 277490 
+
+--- 2026-09-17T13:00:52+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69007 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 18662 
+Pages purgeable: 14836 
+Pages purged: 43723991 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 306860 
+Pages inactive: 275635 
+
+--- 2026-09-17T13:00:56+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69022 81528   2384 /bin/bash        /bin/bash -c source /var/folders/y0/g1szp20x4pl86bgz0w_w9_280000gn/T/hermes-snap-e0b3d1972492.sh >/dev/null 2>&1 || true\012export AI_AGENT="${AI_AGENT:-hermes-agent}" HERMES_AGENT="${HERMES_AGENT:-true}"\012export GIT_PAGER="${GIT_PAGER:-cat}" PAGER="${PAGER:-cat}"\012builtin cd -- /Users/<user>/HermesProjects/Local-LLM-Lab || exit 126\012eval 'brew fetch --force --quiet rapid-mlx 2>&1; brew info --json=v2 rapid-mlx | python3 -c '\''import json,sys; d=json.load(sys.stdin)["formulae"][0]; print(json.dumps({k:d.get(k) for k in ("name","versions","revision","urls")},indent=2))'\'''\012__hermes_ec=$?\012umask 077\012__hermes_snap_tmp=$(mktemp /var/folders/y0/g1szp20x4pl86bgz0w_w9_280000gn/T/hermes-snap-e0b3d1972492.sh.tmp.XXXXXXXXXX) && { { ( unset ${!HERMES_SESSION_*} ${!HERMES_CRON_AUTO_DELIVER_*} ${!HERMES_BROWSER_CONTROL_*} AI_AGENT HERMES_AGENT HERMES_UI_SESSION_ID 2>/dev/null; export -p; ) || true; } > "$__hermes_snap_tmp" && mv -f "$__hermes_snap_tmp" /var/folders/y0/g1szp20x4pl86bgz0w_w9_280000gn/T/hermes-snap-e0b3d1972492.sh; } 2>/dev/null || rm -f "$__hermes_snap_tmp" 2>/dev/null || true\012printf '\n__HERMES_CWD_e0b3d1972492__%s__HERMES_CWD_e0b3d1972492__\n' "$(pwd -P)"\012exit $__hermes_ec
+69023 69022  85120 /opt/homebrew/Li /opt/homebrew/Library/Homebrew/vendor/portable-ruby/current/bin/ruby -W1 --disable=gems,rubyopt /opt/homebrew/Library/Homebrew/brew.rb fetch --force --quiet rapid-mlx
+69110 69023   6864 /usr/bin/curl    /usr/bin/curl --disable --cookie /dev/null --globoff --show-error --user-agent Homebrew/7.0.3 (Macintosh; arm64 Mac OS X 27.0) curl/8.7.1 --header Accept-Language: en --fail --progress-bar --silent --retry 3 --header Authorization: Bearer QQ== --remote-time --output /Users/<user>/Library/Caches/Homebrew/downloads/23503276c03cbb0cfe4bc44a4b15c48f50bd0a94afcf1845a5be018a76bde7ee--rapid-mlx--0.14.2.arm64_golden_gate.bottle.tar.gz.incomplete --location https://ghcr.io/v2/homebrew/core/rapid-mlx/blobs/sha256:48de88f7236901a063367a6d6fb63283963a3bc53d502cd78d44eb29b46e3e81
+69146 68605    144 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 8063 
+Pages purgeable: 13359 
+Pages purged: 43725764 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 330461 
+Pages inactive: 300924 
+
+--- 2026-09-17T13:00:59+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69242 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 23745 
+Pages purgeable: 13529 
+Pages purged: 43725766 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 324745 
+Pages inactive: 294057 
+
+--- 2026-09-17T13:01:02+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69276 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 20032 
+Pages purgeable: 18429 
+Pages purged: 43725766 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 312655 
+Pages inactive: 281562 
+
+--- 2026-09-17T13:01:05+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69291 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 16765 
+Pages purgeable: 14649 
+Pages purged: 43725766 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 327404 
+Pages inactive: 295752 
+
+--- 2026-09-17T13:01:08+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69307 68605    144 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 20736 
+Pages purgeable: 12893 
+Pages purged: 43725813 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 297411 
+Pages inactive: 272910 
+
+--- 2026-09-17T13:01:11+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69321 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 20916 
+Pages purgeable: 19589 
+Pages purged: 43725813 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 323109 
+Pages inactive: 291539 
+
+--- 2026-09-17T13:01:14+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69337 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 12735 
+Pages purgeable: 17491 
+Pages purged: 43725828 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 322395 
+Pages inactive: 290626 
+
+--- 2026-09-17T13:01:17+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69365 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 21300 
+Pages purgeable: 16232 
+Pages purged: 43725837 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 317751 
+Pages inactive: 286318 
+
+--- 2026-09-17T13:01:20+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69385 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 21345 
+Pages purgeable: 19787 
+Pages purged: 43725837 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 321626 
+Pages inactive: 290901 
+
+--- 2026-09-17T13:01:23+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69402 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 16497 
+Pages purgeable: 13198 
+Pages purged: 43725849 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 314412 
+Pages inactive: 285364 
+
+--- 2026-09-17T13:01:26+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69415 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 13771 
+Pages purgeable: 19052 
+Pages purged: 43725849 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 324860 
+Pages inactive: 294489 
+
+--- 2026-09-17T13:01:30+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69446 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 19825 
+Pages purgeable: 14141 
+Pages purged: 43725849 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 312402 
+Pages inactive: 283640 
+
+--- 2026-09-17T13:01:33+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69478 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 20011 
+Pages purgeable: 16224 
+Pages purged: 43725849 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 310290 
+Pages inactive: 278527 
+
+--- 2026-09-17T13:01:36+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69492 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 13954 
+Pages purgeable: 20209 
+Pages purged: 43725849 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 320177 
+Pages inactive: 288248 
+
+--- 2026-09-17T13:01:39+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69505 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 23426 
+Pages purgeable: 17913 
+Pages purged: 43725849 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 312778 
+Pages inactive: 283702 
+
+--- 2026-09-17T13:01:42+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69520 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 24275 
+Pages purgeable: 18176 
+Pages purged: 43725849 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 313195 
+Pages inactive: 283150 
+
+--- 2026-09-17T13:01:45+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69535 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 18090 
+Pages purgeable: 13828 
+Pages purged: 43725849 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 313825 
+Pages inactive: 281916 
+
+--- 2026-09-17T13:01:48+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69563 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 15305 
+Pages purgeable: 17023 
+Pages purged: 43725850 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 325348 
+Pages inactive: 293560 
+
+--- 2026-09-17T13:01:51+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69577 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 22732 
+Pages purgeable: 17707 
+Pages purged: 43725850 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 322842 
+Pages inactive: 290967 
+
+--- 2026-09-17T13:01:54+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69639 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 7623 
+Pages purgeable: 17323 
+Pages purged: 43725850 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 322708 
+Pages inactive: 290773 
+
+--- 2026-09-17T13:01:57+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69654 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 8060 
+Pages purgeable: 16064 
+Pages purged: 43728157 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 322236 
+Pages inactive: 292316 
+
+--- 2026-09-17T13:02:00+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69684 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 16435 
+Pages purgeable: 12328 
+Pages purged: 43728157 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 316138 
+Pages inactive: 287011 
+
+--- 2026-09-17T13:02:04+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69701 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 17268 
+Pages purgeable: 15411 
+Pages purged: 43728157 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 318343 
+Pages inactive: 288152 
+
+--- 2026-09-17T13:02:07+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69718 68605    144 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 7740 
+Pages purgeable: 17381 
+Pages purged: 43728157 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 325537 
+Pages inactive: 293968 
+
+--- 2026-09-17T13:02:10+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69733 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 17037 
+Pages purgeable: 17400 
+Pages purged: 43728157 
+
+Swap I/O:
+Swapins: 5678836 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 323939 
+Pages inactive: 292456 
+
+--- 2026-09-17T13:02:13+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69747 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 14787 
+Pages purgeable: 15574 
+Pages purged: 43728157 
+
+Swap I/O:
+Swapins: 5678840 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 319535 
+Pages inactive: 287769 
+
+--- 2026-09-17T13:02:16+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69776 68605    224 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 10393 
+Pages purgeable: 14887 
+Pages purged: 43728172 
+
+Swap I/O:
+Swapins: 5678840 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 324021 
+Pages inactive: 292782 
+
+--- 2026-09-17T13:02:19+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69797 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 9057 
+Pages purgeable: 17266 
+Pages purged: 43728176 
+
+Swap I/O:
+Swapins: 5678840 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 328307 
+Pages inactive: 296289 
+
+--- 2026-09-17T13:02:22+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69811 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 17296 
+Pages purgeable: 13759 
+Pages purged: 43728180 
+
+Swap I/O:
+Swapins: 5678840 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 321186 
+Pages inactive: 289830 
+
+--- 2026-09-17T13:02:25+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69825 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 19593 
+Pages purgeable: 16191 
+Pages purged: 43728182 
+
+Swap I/O:
+Swapins: 5678840 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 323688 
+Pages inactive: 291926 
+
+--- 2026-09-17T13:02:28+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69840 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 12071 
+Pages purgeable: 16914 
+Pages purged: 43728182 
+
+Swap I/O:
+Swapins: 5678843 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 327868 
+Pages inactive: 295546 
+
+--- 2026-09-17T13:02:31+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69887 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 17239 
+Pages purgeable: 14007 
+Pages purged: 43728184 
+
+Swap I/O:
+Swapins: 5678843 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 303166 
+Pages inactive: 271672 
+
+--- 2026-09-17T13:02:34+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69899 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 15643 
+Pages purgeable: 15528 
+Pages purged: 43728184 
+
+Swap I/O:
+Swapins: 5678843 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 307720 
+Pages inactive: 275598 
+
+--- 2026-09-17T13:02:37+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69916 68605    224 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 5679 
+Pages purgeable: 11646 
+Pages purged: 43729024 
+
+Swap I/O:
+Swapins: 5678843 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 312317 
+Pages inactive: 283737 
+
+--- 2026-09-17T13:02:41+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69928 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 8282 
+Pages purgeable: 14734 
+Pages purged: 43729047 
+
+Swap I/O:
+Swapins: 5678843 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 310642 
+Pages inactive: 286178 
+
+--- 2026-09-17T13:02:44+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+69945 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 14488 
+Pages purgeable: 15883 
+Pages purged: 43729047 
+
+Swap I/O:
+Swapins: 5678847 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 308343 
+Pages inactive: 282557 
+
+--- 2026-09-17T13:02:47+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70269 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 14627 
+Pages purgeable: 17793 
+Pages purged: 43729047 
+
+Swap I/O:
+Swapins: 5678851 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 316900 
+Pages inactive: 290947 
+
+--- 2026-09-17T13:02:50+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70284 68605    224 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 8775 
+Pages purgeable: 18169 
+Pages purged: 43729047 
+
+Swap I/O:
+Swapins: 5678851 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 315812 
+Pages inactive: 291440 
+
+--- 2026-09-17T13:02:53+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70299 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 9963 
+Pages purgeable: 13080 
+Pages purged: 43729047 
+
+Swap I/O:
+Swapins: 5678851 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 305610 
+Pages inactive: 279700 
+
+--- 2026-09-17T13:02:56+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70357 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 10659 
+Pages purgeable: 17743 
+Pages purged: 43729047 
+
+Swap I/O:
+Swapins: 5678851 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 317980 
+Pages inactive: 292836 
+
+--- 2026-09-17T13:02:59+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70372 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 8835 
+Pages purgeable: 17820 
+Pages purged: 43729047 
+
+Swap I/O:
+Swapins: 5678851 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 314342 
+Pages inactive: 288262 
+
+--- 2026-09-17T13:03:02+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70405 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 5943 
+Pages purgeable: 16876 
+Pages purged: 43729047 
+
+Swap I/O:
+Swapins: 5678851 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 313973 
+Pages inactive: 288909 
+
+--- 2026-09-17T13:03:05+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70423 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 15841 
+Pages purgeable: 16611 
+Pages purged: 43729284 
+
+Swap I/O:
+Swapins: 5678851 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 306678 
+Pages inactive: 284957 
+
+--- 2026-09-17T13:03:08+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70457 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 10659 
+Pages purgeable: 15010 
+Pages purged: 43729284 
+
+Swap I/O:
+Swapins: 5678851 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 311697 
+Pages inactive: 288848 
+
+--- 2026-09-17T13:03:11+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70472 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 6879 
+Pages purgeable: 17859 
+Pages purged: 43729284 
+
+Swap I/O:
+Swapins: 5678851 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 321363 
+Pages inactive: 298291 
+
+--- 2026-09-17T13:03:15+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70485 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 8304 
+Pages purgeable: 12478 
+Pages purged: 43729290 
+
+Swap I/O:
+Swapins: 5678851 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 305437 
+Pages inactive: 286248 
+
+--- 2026-09-17T13:03:18+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70513 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 5473 
+Pages purgeable: 15627 
+Pages purged: 43729300 
+
+Swap I/O:
+Swapins: 5678851 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 309512 
+Pages inactive: 292331 
+
+--- 2026-09-17T13:03:21+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70533 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 6016 
+Pages purgeable: 18102 
+Pages purged: 43729352 
+
+Swap I/O:
+Swapins: 5678851 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 314886 
+Pages inactive: 312712 
+
+--- 2026-09-17T13:03:24+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70555 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 17101 
+Pages purgeable: 13514 
+Pages purged: 43732276 
+
+Swap I/O:
+Swapins: 5678895 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 304322 
+Pages inactive: 299379 
+
+--- 2026-09-17T13:03:27+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70567 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 19955 
+Pages purgeable: 17178 
+Pages purged: 43732306 
+
+Swap I/O:
+Swapins: 5678895 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 321192 
+Pages inactive: 316168 
+
+--- 2026-09-17T13:03:30+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70583 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 50462 
+Pages purgeable: 11912 
+Pages purged: 43732308 
+
+Swap I/O:
+Swapins: 5678895 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 296938 
+Pages inactive: 291859 
+
+--- 2026-09-17T13:03:33+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70620 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 46793 
+Pages purgeable: 16253 
+Pages purged: 43732325 
+
+Swap I/O:
+Swapins: 5678895 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 308149 
+Pages inactive: 301521 
+
+--- 2026-09-17T13:03:36+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70634 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 55099 
+Pages purgeable: 17151 
+Pages purged: 43732325 
+
+Swap I/O:
+Swapins: 5678895 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 301521 
+Pages inactive: 294929 
+
+--- 2026-09-17T13:03:39+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70648 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 56213 
+Pages purgeable: 15797 
+Pages purged: 43732325 
+
+Swap I/O:
+Swapins: 5678895 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 299616 
+Pages inactive: 293473 
+
+--- 2026-09-17T13:03:42+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70663 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 47229 
+Pages purgeable: 15703 
+Pages purged: 43733605 
+
+Swap I/O:
+Swapins: 5678895 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 301632 
+Pages inactive: 295211 
+
+--- 2026-09-17T13:03:45+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70691 68605    224 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 54609 
+Pages purgeable: 13723 
+Pages purged: 43733605 
+
+Swap I/O:
+Swapins: 5678895 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 304515 
+Pages inactive: 298016 
+
+--- 2026-09-17T13:03:48+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70717 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 40173 
+Pages purgeable: 12268 
+Pages purged: 43733605 
+
+Swap I/O:
+Swapins: 5678899 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 290792 
+Pages inactive: 283492 
+
+--- 2026-09-17T13:03:52+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70733 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 38587 
+Pages purgeable: 22097 
+Pages purged: 43733605 
+
+Swap I/O:
+Swapins: 5678899 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 310866 
+Pages inactive: 303489 
+
+--- 2026-09-17T13:03:55+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70747 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 37086 
+Pages purgeable: 19472 
+Pages purged: 43733605 
+
+Swap I/O:
+Swapins: 5678899 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 310485 
+Pages inactive: 303026 
+
+--- 2026-09-17T13:03:58+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70762 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 43154 
+Pages purgeable: 17376 
+Pages purged: 43733781 
+
+Swap I/O:
+Swapins: 5678899 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 308379 
+Pages inactive: 300796 
+
+--- 2026-09-17T13:04:01+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70808 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 42577 
+Pages purgeable: 15817 
+Pages purged: 43733781 
+
+Swap I/O:
+Swapins: 5678899 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 307597 
+Pages inactive: 300619 
+
+--- 2026-09-17T13:04:04+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70823 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 37794 
+Pages purgeable: 19913 
+Pages purged: 43733781 
+
+Swap I/O:
+Swapins: 5678899 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 309489 
+Pages inactive: 301866 
+
+--- 2026-09-17T13:04:07+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70841 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 44681 
+Pages purgeable: 15649 
+Pages purged: 43733781 
+
+Swap I/O:
+Swapins: 5678899 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 302764 
+Pages inactive: 296295 
+
+--- 2026-09-17T13:04:10+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70854 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 51269 
+Pages purgeable: 12773 
+Pages purged: 43733781 
+
+Swap I/O:
+Swapins: 5678899 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 297774 
+Pages inactive: 295383 
+
+--- 2026-09-17T13:04:13+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70870 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 34731 
+Pages purgeable: 16429 
+Pages purged: 43733781 
+
+Swap I/O:
+Swapins: 5678903 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 307525 
+Pages inactive: 300006 
+
+--- 2026-09-17T13:04:16+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70897 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 31761 
+Pages purgeable: 18088 
+Pages purged: 43733781 
+
+Swap I/O:
+Swapins: 5678903 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 315030 
+Pages inactive: 307119 
+
+--- 2026-09-17T13:04:19+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70932 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 32373 
+Pages purgeable: 10104 
+Pages purged: 43733781 
+
+Swap I/O:
+Swapins: 5678903 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 296825 
+Pages inactive: 288912 
+
+--- 2026-09-17T13:04:22+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70947 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 6271 
+Pages purgeable: 7765 
+Pages purged: 43737940 
+
+Swap I/O:
+Swapins: 5678928 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 294430 
+Pages inactive: 286716 
+
+--- 2026-09-17T13:04:26+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+70973 68605    224 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 18210 
+Pages purgeable: 17769 
+Pages purged: 43737957 
+
+Swap I/O:
+Swapins: 5678928 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 304826 
+Pages inactive: 296609 
+
+--- 2026-09-17T13:04:29+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71003 68605    224 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 23456 
+Pages purgeable: 11847 
+Pages purged: 43737963 
+
+Swap I/O:
+Swapins: 5678928 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 303943 
+Pages inactive: 296216 
+
+--- 2026-09-17T13:04:32+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71034 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 30780 
+Pages purgeable: 18826 
+Pages purged: 43737963 
+
+Swap I/O:
+Swapins: 5678928 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 312491 
+Pages inactive: 304500 
+
+--- 2026-09-17T13:04:35+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71049 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 26556 
+Pages purgeable: 15208 
+Pages purged: 43738603 
+
+Swap I/O:
+Swapins: 5678928 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 310275 
+Pages inactive: 303391 
+
+--- 2026-09-17T13:04:38+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71065 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 20762 
+Pages purgeable: 12388 
+Pages purged: 43738603 
+
+Swap I/O:
+Swapins: 5678928 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 308245 
+Pages inactive: 301273 
+
+--- 2026-09-17T13:04:41+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71078 68605    224 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 36457 
+Pages purgeable: 17003 
+Pages purged: 43738603 
+
+Swap I/O:
+Swapins: 5678928 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 316862 
+Pages inactive: 309208 
+
+--- 2026-09-17T13:04:44+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71095 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 30334 
+Pages purgeable: 16666 
+Pages purged: 43738603 
+
+Swap I/O:
+Swapins: 5678928 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 317918 
+Pages inactive: 310076 
+
+--- 2026-09-17T13:04:47+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71122 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 24947 
+Pages purgeable: 14962 
+Pages purged: 43738603 
+
+Swap I/O:
+Swapins: 5678928 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 312321 
+Pages inactive: 305133 
+
+--- 2026-09-17T13:04:50+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71139 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 32313 
+Pages purgeable: 15368 
+Pages purged: 43738603 
+
+Swap I/O:
+Swapins: 5678928 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 309633 
+Pages inactive: 301926 
+
+--- 2026-09-17T13:04:53+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71156 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 29302 
+Pages purgeable: 15546 
+Pages purged: 43738603 
+
+Swap I/O:
+Swapins: 5678928 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 309896 
+Pages inactive: 301693 
+
+--- 2026-09-17T13:04:56+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71169 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 21416 
+Pages purgeable: 16534 
+Pages purged: 43738603 
+
+Swap I/O:
+Swapins: 5678932 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 314350 
+Pages inactive: 306970 
+
+--- 2026-09-17T13:05:00+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71185 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 27993 
+Pages purgeable: 12329 
+Pages purged: 43738603 
+
+Swap I/O:
+Swapins: 5678936 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 314413 
+Pages inactive: 310818 
+
+--- 2026-09-17T13:05:03+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71216 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 27553 
+Pages purgeable: 15289 
+Pages purged: 43738603 
+
+Swap I/O:
+Swapins: 5678936 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 311230 
+Pages inactive: 303360 
+
+--- 2026-09-17T13:05:06+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71236 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 22918 
+Pages purgeable: 19552 
+Pages purged: 43738603 
+
+Swap I/O:
+Swapins: 5678936 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 324745 
+Pages inactive: 316563 
+
+--- 2026-09-17T13:05:09+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71249 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 19057 
+Pages purgeable: 16199 
+Pages purged: 43738603 
+
+Swap I/O:
+Swapins: 5678936 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 315242 
+Pages inactive: 308491 
+
+--- 2026-09-17T13:05:12+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71263 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 28088 
+Pages purgeable: 16754 
+Pages purged: 43738603 
+
+Swap I/O:
+Swapins: 5678940 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 311828 
+Pages inactive: 303931 
+
+--- 2026-09-17T13:05:15+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71279 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 26770 
+Pages purgeable: 16216 
+Pages purged: 43738603 
+
+Swap I/O:
+Swapins: 5678940 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 314884 
+Pages inactive: 306976 
+
+--- 2026-09-17T13:05:18+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71316 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 16172 
+Pages purgeable: 16093 
+Pages purged: 43738603 
+
+Swap I/O:
+Swapins: 5678940 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 314663 
+Pages inactive: 306765 
+
+--- 2026-09-17T13:05:21+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71337 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 24105 
+Pages purgeable: 17986 
+Pages purged: 43738603 
+
+Swap I/O:
+Swapins: 5678940 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 316465 
+Pages inactive: 310736 
+
+--- 2026-09-17T13:05:24+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71366 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 26300 
+Pages purgeable: 19532 
+Pages purged: 43738603 
+
+Swap I/O:
+Swapins: 5678948 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 318179 
+Pages inactive: 309922 
+
+--- 2026-09-17T13:05:27+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71382 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 20485 
+Pages purgeable: 19980 
+Pages purged: 43738603 
+
+Swap I/O:
+Swapins: 5678948 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 320504 
+Pages inactive: 313236 
+
+--- 2026-09-17T13:05:30+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71395 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 21050 
+Pages purgeable: 16177 
+Pages purged: 43738622 
+
+Swap I/O:
+Swapins: 5678948 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 320161 
+Pages inactive: 313055 
+
+--- 2026-09-17T13:05:34+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71427 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 25972 
+Pages purgeable: 18302 
+Pages purged: 43738648 
+
+Swap I/O:
+Swapins: 5678948 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 317369 
+Pages inactive: 310481 
+
+--- 2026-09-17T13:05:37+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71441 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 20359 
+Pages purgeable: 15215 
+Pages purged: 43738648 
+
+Swap I/O:
+Swapins: 5678948 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 318625 
+Pages inactive: 309236 
+
+--- 2026-09-17T13:05:40+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71456 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 17059 
+Pages purgeable: 18130 
+Pages purged: 43738648 
+
+Swap I/O:
+Swapins: 5678948 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 322727 
+Pages inactive: 313739 
+
+--- 2026-09-17T13:05:43+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71469 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 22829 
+Pages purgeable: 19012 
+Pages purged: 43738648 
+
+Swap I/O:
+Swapins: 5678948 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 320927 
+Pages inactive: 311790 
+
+--- 2026-09-17T13:05:46+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71497 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 25625 
+Pages purgeable: 17745 
+Pages purged: 43738648 
+
+Swap I/O:
+Swapins: 5678948 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 317708 
+Pages inactive: 310239 
+
+--- 2026-09-17T13:05:49+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71513 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 17858 
+Pages purgeable: 18905 
+Pages purged: 43738649 
+
+Swap I/O:
+Swapins: 5678948 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 322719 
+Pages inactive: 313430 
+
+--- 2026-09-17T13:05:52+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71527 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 13110 
+Pages purgeable: 15269 
+Pages purged: 43738649 
+
+Swap I/O:
+Swapins: 5678952 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 321963 
+Pages inactive: 312823 
+
+--- 2026-09-17T13:05:55+0200 ---
+68585 81528   1728 timeout          timeout 360 sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+68605 68585   2320 sh               sh -c while kill -0 68481 2>/dev/null; do printf "\n--- %s ---\n" "$(date +%Y-%m-%dT%H:%M:%S%z)"; ps -axo pid,ppid,rss,comm,args | python3 -c 'import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]'; memory_pressure 2>&1 | python3 -c 'import sys; print("".join(sys.stdin.readlines()[:14]),end="")'; sleep 3; done
+71541 68605    240 /opt/homebrew/Ce /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python -c import sys; [print(x,end="") for x in sys.stdin if "rapid-mlx" in x or "vllm_mlx" in x]
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 21280 
+Pages purgeable: 19748 
+Pages purged: 43738667 
+
+Swap I/O:
+Swapins: 5678952 
+Swapouts: 6558074 
+
+Page Q counts:
+Pages active: 322043 
+Pages inactive: 311626 

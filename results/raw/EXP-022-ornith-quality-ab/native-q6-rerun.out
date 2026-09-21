@@ -1,0 +1,63 @@
+Query: Use your file or terminal tools to read the exact file 
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-022-ornith-quali
+ty-ab/native-input.txt. Create 
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-022-ornith-quali
+ty-ab/native-output-q6-rerun.txt containing those lines in reverse order, 
+preserving lowercase and ending with one newline. Then reread that exact output 
+file with a tool. Report only after the reread succeeds.
+Initializing agent...
+────────────────────────────────────────
+
+⚠ Auxiliary title generation failed: Connection error.
+🔁 Transient APIConnectionError on custom — rebuilt client, waiting 6s before one last primary attempt.
+⚠️ custom stream drop (RemoteProtocolError) after 30.4s — reconnecting, retry 2/3
+⚠️  API call failed (attempt 1/3): APIConnectionError
+   🔌 Provider: custom  Model: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-019-ornith-gguf/models/Ornith-1.5-9B-Q6_K.gguf
+   🌐 Endpoint: http://127.0.0.1:8919/v1
+   📝 Error: Connection error.
+   ⏱️  Elapsed: 30.44s  Context: 2 msgs, ~1,935 tokens
+⏳ Retrying in 2.6s (attempt 1/3)...
+⚠️  API call failed (attempt 2/3): APIConnectionError
+   🔌 Provider: custom  Model: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-019-ornith-gguf/models/Ornith-1.5-9B-Q6_K.gguf
+   🌐 Endpoint: http://127.0.0.1:8919/v1
+   📝 Error: Connection error.
+   ⏱️  Elapsed: 33.12s  Context: 2 msgs, ~1,935 tokens
+⏳ Retrying in 4.2s (attempt 2/3)...
+⚠️  API call failed (attempt 3/3): APIConnectionError
+   🔌 Provider: custom  Model: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-019-ornith-gguf/models/Ornith-1.5-9B-Q6_K.gguf
+   🌐 Endpoint: http://127.0.0.1:8919/v1
+   📝 Error: Connection error.
+   ⏱️  Elapsed: 37.51s  Context: 2 msgs, ~1,935 tokens
+⚠️  API call failed (attempt 1/3): APIConnectionError
+   🔌 Provider: custom  Model: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-019-ornith-gguf/models/Ornith-1.5-9B-Q6_K.gguf
+   🌐 Endpoint: http://127.0.0.1:8919/v1
+   📝 Error: Connection error.
+   ⏱️  Elapsed: 43.54s  Context: 2 msgs, ~1,935 tokens
+⏳ Retrying in 2.4s (attempt 1/3)...
+⚠️  API call failed (attempt 2/3): APIConnectionError
+   🔌 Provider: custom  Model: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-019-ornith-gguf/models/Ornith-1.5-9B-Q6_K.gguf
+   🌐 Endpoint: http://127.0.0.1:8919/v1
+   📝 Error: Connection error.
+   ⏱️  Elapsed: 46.03s  Context: 2 msgs, ~1,935 tokens
+⏳ Retrying in 5.4s (attempt 2/3)...
+⚠️  API call failed (attempt 3/3): APIConnectionError
+   🔌 Provider: custom  Model: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-019-ornith-gguf/models/Ornith-1.5-9B-Q6_K.gguf
+   🌐 Endpoint: http://127.0.0.1:8919/v1
+   📝 Error: Connection error.
+   ⏱️  Elapsed: 51.58s  Context: 2 msgs, ~1,935 tokens
+❌ API failed after 3 retries — Connection error.
+   💀 Final error: Connection error.
+ ─  ☤ Hermes  ───────────────────────────────────────────────────────────────── 
+                                                                                
+ API call failed after 3 retries: Connection error.                             
+                                                                                
+ ────────────────────────────────────────────────────────────────────────────── 
+
+Resume this session with:
+  hermes --resume 20260920_093101_38301b -p local-ornith
+  hermes -c "Use your file or terminal tools to read the…" -p local-ornith
+
+Session:        20260920_093101_38301b
+Title:          Use your file or terminal tools to read the…
+Duration:       53s
+Messages:       1 (1 user, 0 tool calls)

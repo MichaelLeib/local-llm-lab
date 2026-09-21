@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+import json, subprocess, sys, time, statistics
+from pathlib import Path
+if len(sys.argv)<3: raise SystemExit('usage: sysmon OUTPUT_JSONL DURATION_SECONDS [PID]')
+out=Path(sys.argv[1]); duration=float(sys.argv[2]); pid=sys.argv[3] if len(sys.argv)>3 else None
+end=time.time()+duration; rows=[]
+def cmd(s):
+ try:return subprocess.check_output(s,text=True,stderr=subprocess.DEVNULL).strip()
+ except:return None
+while time.time()<end:
+ row={'ts':time.time(),'swap':cmd(['sysctl','-n','vm.swapusage']),'pressure':cmd(['memory_pressure','-Q']), 'vm_stat':cmd(['vm_stat']), 'disk_free_kb':cmd(['df','-k','/'])}
+ if pid: row['ps']=cmd(['ps','-o','pid=,rss=,%cpu=,etime=','-p',pid])
+ rows.append(row); time.sleep(1)
+out.parent.mkdir(parents=True,exist_ok=True)
+with out.open('a') as f:
+ for row in rows:f.write(json.dumps(row)+'\n')
+# Compact only; raw strings retained in jsonl.
+summary={'samples':len(rows),'start':rows[0]['ts'] if rows else None,'end':rows[-1]['ts'] if rows else None,'swap_first':rows[0]['swap'] if rows else None,'swap_last':rows[-1]['swap'] if rows else None,'pressure_last':rows[-1]['pressure'] if rows else None,'pid':pid}
+out.with_suffix('.stats.json').write_text(json.dumps(summary,indent=2)+'\n')
+print(json.dumps(summary,separators=(',',':')))

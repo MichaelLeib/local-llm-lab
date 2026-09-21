@@ -1,0 +1,48 @@
+{
+  "experiment": "EXP-005",
+  "test": "Hermes_one_shot_terminal_tool_call",
+  "profile": "exp005",
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8091,
+    "max_context": 8192,
+    "expert_cache_slots": 16,
+    "prompt_cache_mode": "single-prefix"
+  },
+  "hermes_result": "provider_turn_completed_with_tool_call_and_follow_up",
+  "tool": "terminal",
+  "tool_command": "date",
+  "tool_output": "Thu Sep 17 15:28:50 CEST 2026",
+  "server_requests": [
+    {
+      "prompt_tokens": 5003,
+      "cached_prompt_tokens": 0,
+      "new_prompt_tokens": 5003,
+      "completion_tokens": 50,
+      "ttft_seconds": 111.77,
+      "prefill_tok_s": 44.8,
+      "decode_tok_s": 7.1,
+      "total_seconds": 118.84,
+      "stop": "tool_calls",
+      "reasoning_tokens": 22
+    },
+    {
+      "prompt_tokens": 5106,
+      "cached_prompt_tokens": 5052,
+      "new_prompt_tokens": 54,
+      "completion_tokens": 168,
+      "ttft_seconds": 4.31,
+      "prefill_tok_s": 12.5,
+      "decode_tok_s": 7.6,
+      "total_seconds": 26.56,
+      "stop": "stop",
+      "reasoning_tokens": 81
+    }
+  ],
+  "prefix_reuse": {
+    "cached_tokens": 5052,
+    "second_prompt_tokens": 5106,
+    "cached_fraction": 0.9894
+  },
+  "wrapper_note": "The shell wrapper attempted to assign zsh's read-only variable 'status' after Hermes completed, so its process exit was 1; the captured Hermes response and server logs prove the provider/tool turn completed."
+}

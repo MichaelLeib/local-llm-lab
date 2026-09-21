@@ -1,0 +1,113 @@
+LABEL: install-mlx-optiq-v2
+COMMAND: uv pip install --python results/raw/EXP-018-laguna-xs21/venv/bin/python mlx-optiq\>=0.4.7
+START: 2026-09-19T15:13:26Z
+--- stdout/stderr ---
+Using Python 3.11.16 environment at: results/raw/EXP-018-laguna-xs21/venv
+Resolved 70 packages in 932ms
+Downloading openai (2.0MiB)
+Downloading tokenizers (2.8MiB)
+Downloading pillow (4.6MiB)
+Downloading pygments (1.2MiB)
+Downloading numpy (5.2MiB)
+Downloading mlx-optiq (2.0MiB)
+Downloading lxml (8.2MiB)
+Downloading sentencepiece (1.3MiB)
+Downloading pydantic-core (1.8MiB)
+Downloading pygame (11.8MiB)
+Downloading hf-xet (3.7MiB)
+Downloading mlx-metal (61.4MiB)
+Downloading cryptography (3.8MiB)
+Downloading transformers (10.6MiB)
+Downloading primp (5.7MiB)
+ Downloaded pygments
+ Downloaded sentencepiece
+ Downloaded pydantic-core
+ Downloaded mlx-optiq
+ Downloaded openai
+ Downloaded tokenizers
+ Downloaded hf-xet
+ Downloaded cryptography
+ Downloaded pillow
+ Downloaded numpy
+ Downloaded primp
+ Downloaded lxml
+ Downloaded pygame
+ Downloaded transformers
+ Downloaded mlx-metal
+Prepared 70 packages in 3.03s
+Installed 70 packages in 110ms
+ + annotated-doc==0.0.5
+ + annotated-types==0.8.0
+ + anyio==4.15.1
+ + argon2-cffi==25.1.0
+ + argon2-cffi-bindings==26.1.0
+ + blinker==1.9.0
+ + certifi==2026.7.22
+ + cffi==2.1.1
+ + click==8.5.0
+ + cryptography==50.0.1
+ + ddgs==9.16.0
+ + docx2txt==0.9
+ + filelock==4.0.1
+ + flask==3.1.3
+ + fsspec==2026.9.0
+ + h11==0.16.0
+ + hf-xet==1.6.0
+ + html2text==2025.4.15
+ + httpcore==1.0.9
+ + httpcore2==2.13.0
+ + httpx==0.28.1
+ + httpx2==2.13.0
+ + huggingface-hub==1.32.0
+ + idna==3.20
+ + interegular==0.3.3
+ + itsdangerous==2.2.0
+ + jinja2==3.1.6
+ + jiter==0.17.0
+ + linkify-it-py==2.2.0
+ + lm-format-enforcer==0.11.3
+ + lxml==6.1.3
+ + markdown-it-py==4.2.0
+ + markupsafe==3.0.3
+ + mdit-py-plugins==0.6.1
+ + mdurl==0.1.2
+ + mlx==0.32.2
+ + mlx-lm==0.31.3
+ + mlx-metal==0.32.2
+ + mlx-optiq==0.5.12
+ + numpy==2.4.6
+ + openai==3.16.2
+ + packaging==26.3
+ + pillow==12.3.0
+ + platformdirs==4.11.11
+ + primp==2.0.1
+ + protobuf==7.36.2
+ + psutil==7.2.2
+ + pycparser==3.0
+ + pydantic==2.13.5
+ + pydantic-core==2.46.5
+ + pygame==2.6.1
+ + pygments==2.21.0
+ + pyjwt==2.14.0
+ + pypdf==6.19.0
+ + pyyaml==6.0.3
+ + regex==2026.9.10
+ + rich==15.0.0
+ + safetensors==0.8.0
+ + sentencepiece==0.2.2
+ + shellingham==1.5.4
+ + sniffio==1.3.1
+ + textual==8.2.8
+ + tokenizers==0.22.2
+ + tqdm==4.70.1
+ + transformers==5.12.1
+ + truststore==0.10.4
+ + typer==0.27.2
+ + typing-extensions==4.16.0
+ + typing-inspection==0.4.4
+ + werkzeug==3.1.8
+
+--- end ---
+EXIT: 0
+END: 2026-09-19T15:13:30Z
+ELAPSED_SECONDS: 4

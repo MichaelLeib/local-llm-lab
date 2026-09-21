@@ -1,0 +1,1964 @@
+{
+  "label": "2b-64k-q4",
+  "created_at": 1789921898.195759,
+  "runs": [
+    {
+      "name": "simple",
+      "run_id": "run_04207896d72449e7bcf760e240c9d183",
+      "request_admission_seconds": 0.0679,
+      "total_seconds": 43.0242,
+      "first_event": {
+        "event": "reasoning.available",
+        "run_id": "run_04207896d72449e7bcf760e240c9d183",
+        "timestamp": 1789921941.2043588,
+        "text": "Paris"
+      },
+      "final": {
+        "event": "run.completed",
+        "run_id": "run_04207896d72449e7bcf760e240c9d183",
+        "timestamp": 1789921941.2187688,
+        "output": "Paris",
+        "usage": {
+          "input_tokens": 14397,
+          "output_tokens": 2,
+          "total_tokens": 14399
+        }
+      },
+      "events": [
+        {
+          "event": "message.delta",
+          "run_id": "run_04207896d72449e7bcf760e240c9d183",
+          "timestamp": 1789921941.109972,
+          "delta": "Paris"
+        },
+        {
+          "event": "reasoning.available",
+          "run_id": "run_04207896d72449e7bcf760e240c9d183",
+          "timestamp": 1789921941.2043588,
+          "text": "Paris"
+        },
+        {
+          "event": "run.completed",
+          "run_id": "run_04207896d72449e7bcf760e240c9d183",
+          "timestamp": 1789921941.2187688,
+          "output": "Paris",
+          "usage": {
+            "input_tokens": 14397,
+            "output_tokens": 2,
+            "total_tokens": 14399
+          }
+        }
+      ],
+      "raw_sse_path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-023-fast-lane-optimization/raw/e2e/2b-64k-q4-simple.sse"
+    },
+    {
+      "name": "terminal",
+      "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+      "request_admission_seconds": 0.0756,
+      "total_seconds": 5.6334,
+      "first_event": {
+        "event": "tool.started",
+        "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+        "timestamp": 1789921942.6965199,
+        "tool": "terminal",
+        "preview": "git status"
+      },
+      "final": {
+        "event": "run.completed",
+        "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+        "timestamp": 1789921946.852418,
+        "output": "The working tree is not clean in the sense that there is no git repository here. Running `git status` returns `fatal: not a git repository` \u2014 there is no `.git` directory (or git parent directories) at the current location, so `git status` cannot execute. If this is intended to be a git workspace, you may need to initialize it (`git init`), but only if you have a git repository to work within.",
+        "usage": {
+          "input_tokens": 28869,
+          "output_tokens": 114,
+          "total_tokens": 28983
+        }
+      },
+      "events": [
+        {
+          "event": "tool.started",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921942.6965199,
+          "tool": "terminal",
+          "preview": "git status"
+        },
+        {
+          "event": "tool.completed",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921942.8460228,
+          "tool": "terminal",
+          "duration": 0.15,
+          "error": true
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921943.28913,
+          "delta": "\n\nThe"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921943.3266392,
+          "delta": " working"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921943.366383,
+          "delta": " tree"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921943.403627,
+          "delta": " is"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921943.4385421,
+          "delta": " not"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921943.4780748,
+          "delta": " clean"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921943.515599,
+          "delta": " in"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921943.5531242,
+          "delta": " the"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921943.590689,
+          "delta": " sense"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921943.627321,
+          "delta": " that"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921943.665309,
+          "delta": " there"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921943.704264,
+          "delta": " is"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921943.74106,
+          "delta": " no"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921943.7798889,
+          "delta": " git"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921943.8169541,
+          "delta": " repository"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921943.8551219,
+          "delta": " here"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921943.896805,
+          "delta": "."
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921943.936005,
+          "delta": " Running"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921943.973751,
+          "delta": " `"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921944.011727,
+          "delta": "git"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921944.0502222,
+          "delta": " status"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921944.0863302,
+          "delta": "`"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921944.1249,
+          "delta": " returns"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921944.161682,
+          "delta": " `"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921944.202902,
+          "delta": "f"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921944.240321,
+          "delta": "atal"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.808626,
+          "delta": ":"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8089468,
+          "delta": " not"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8093839,
+          "delta": " a"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.80964,
+          "delta": " git"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.809852,
+          "delta": " repository"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8100412,
+          "delta": "`"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.810252,
+          "delta": " \u2014"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.810474,
+          "delta": " there"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.810729,
+          "delta": " is"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8108811,
+          "delta": " no"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.811031,
+          "delta": " `."
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.811135,
+          "delta": "git"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.811293,
+          "delta": "`"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8114939,
+          "delta": " directory"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.811666,
+          "delta": " ("
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.81184,
+          "delta": "or"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8120131,
+          "delta": " git"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.812219,
+          "delta": " parent"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.812366,
+          "delta": " directories"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.812499,
+          "delta": ")"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8126621,
+          "delta": " at"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8128262,
+          "delta": " the"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.813052,
+          "delta": " current"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.81328,
+          "delta": " location"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.81348,
+          "delta": ","
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.813707,
+          "delta": " so"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.813885,
+          "delta": " `"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.814086,
+          "delta": "git"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.814382,
+          "delta": " status"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8146062,
+          "delta": "`"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.814827,
+          "delta": " cannot"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.814972,
+          "delta": " execute"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8151748,
+          "delta": "."
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8153229,
+          "delta": " If"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.815478,
+          "delta": " this"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.815638,
+          "delta": " is"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.81585,
+          "delta": " intended"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.816056,
+          "delta": " to"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.816166,
+          "delta": " be"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8163142,
+          "delta": " a"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.816434,
+          "delta": " git"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.816664,
+          "delta": " workspace"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8168168,
+          "delta": ","
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.816961,
+          "delta": " you"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.81712,
+          "delta": " may"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8172932,
+          "delta": " need"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8174431,
+          "delta": " to"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.817661,
+          "delta": " initialize"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.818035,
+          "delta": " it"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8182771,
+          "delta": " (`"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8186162,
+          "delta": "git"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8190038,
+          "delta": " init"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.81937,
+          "delta": "`"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8196979,
+          "delta": "),"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8201091,
+          "delta": " but"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.82031,
+          "delta": " only"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.820786,
+          "delta": " if"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8210602,
+          "delta": " you"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8214211,
+          "delta": " have"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8218071,
+          "delta": " a"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.822322,
+          "delta": " git"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.822588,
+          "delta": " repository"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8228621,
+          "delta": " to"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.823084,
+          "delta": " work"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.8233001,
+          "delta": " within"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.823429,
+          "delta": "."
+        },
+        {
+          "event": "reasoning.available",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.837452,
+          "text": "The working tree is not clean in the sense that there is no git repository here. Running `git status` returns `fatal: not a git repository` \u2014 there is no `.git` directory (or git parent directories) at the current location, so `git status` cannot execute. If this is intended to be a git workspace, you may need to initialize it (`git init`), but only if you have a git repository to work within."
+        },
+        {
+          "event": "run.completed",
+          "run_id": "run_b7cb15ca058f487c8b468e4efe8d2997",
+          "timestamp": 1789921946.852418,
+          "output": "The working tree is not clean in the sense that there is no git repository here. Running `git status` returns `fatal: not a git repository` \u2014 there is no `.git` directory (or git parent directories) at the current location, so `git status` cannot execute. If this is intended to be a git workspace, you may need to initialize it (`git init`), but only if you have a git repository to work within.",
+          "usage": {
+            "input_tokens": 28869,
+            "output_tokens": 114,
+            "total_tokens": 28983
+          }
+        }
+      ],
+      "raw_sse_path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-023-fast-lane-optimization/raw/e2e/2b-64k-q4-terminal.sse"
+    },
+    {
+      "name": "web",
+      "run_id": "run_80815f42e4bf4cbdaa4fc3f51ed66f83",
+      "request_admission_seconds": 0.081,
+      "total_seconds": 1.2786,
+      "first_event": {
+        "event": "reasoning.available",
+        "run_id": "run_80815f42e4bf4cbdaa4fc3f51ed66f83",
+        "timestamp": 1789921948.122748,
+        "text": "https://hermes-agent.nousresearch.com/docs"
+      },
+      "final": {
+        "event": "run.completed",
+        "run_id": "run_80815f42e4bf4cbdaa4fc3f51ed66f83",
+        "timestamp": 1789921948.13142,
+        "output": "https://hermes-agent.nousresearch.com/docs",
+        "usage": {
+          "input_tokens": 14403,
+          "output_tokens": 11,
+          "total_tokens": 14414
+        }
+      },
+      "events": [
+        {
+          "event": "message.delta",
+          "run_id": "run_80815f42e4bf4cbdaa4fc3f51ed66f83",
+          "timestamp": 1789921947.572256,
+          "delta": "https"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_80815f42e4bf4cbdaa4fc3f51ed66f83",
+          "timestamp": 1789921948.118016,
+          "delta": "://"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_80815f42e4bf4cbdaa4fc3f51ed66f83",
+          "timestamp": 1789921948.1185431,
+          "delta": "her"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_80815f42e4bf4cbdaa4fc3f51ed66f83",
+          "timestamp": 1789921948.118847,
+          "delta": "mes"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_80815f42e4bf4cbdaa4fc3f51ed66f83",
+          "timestamp": 1789921948.118948,
+          "delta": "-agent"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_80815f42e4bf4cbdaa4fc3f51ed66f83",
+          "timestamp": 1789921948.119012,
+          "delta": ".n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_80815f42e4bf4cbdaa4fc3f51ed66f83",
+          "timestamp": 1789921948.119139,
+          "delta": "ous"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_80815f42e4bf4cbdaa4fc3f51ed66f83",
+          "timestamp": 1789921948.1193862,
+          "delta": "research"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_80815f42e4bf4cbdaa4fc3f51ed66f83",
+          "timestamp": 1789921948.119722,
+          "delta": ".com"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_80815f42e4bf4cbdaa4fc3f51ed66f83",
+          "timestamp": 1789921948.119987,
+          "delta": "/docs"
+        },
+        {
+          "event": "reasoning.available",
+          "run_id": "run_80815f42e4bf4cbdaa4fc3f51ed66f83",
+          "timestamp": 1789921948.122748,
+          "text": "https://hermes-agent.nousresearch.com/docs"
+        },
+        {
+          "event": "run.completed",
+          "run_id": "run_80815f42e4bf4cbdaa4fc3f51ed66f83",
+          "timestamp": 1789921948.13142,
+          "output": "https://hermes-agent.nousresearch.com/docs",
+          "usage": {
+            "input_tokens": 14403,
+            "output_tokens": 11,
+            "total_tokens": 14414
+          }
+        }
+      ],
+      "raw_sse_path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-023-fast-lane-optimization/raw/e2e/2b-64k-q4-web.sse"
+    },
+    {
+      "name": "think",
+      "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+      "request_admission_seconds": 0.0759,
+      "total_seconds": 8.1671,
+      "first_event": {
+        "event": "reasoning.available",
+        "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+        "timestamp": 1789921956.286238,
+        "text": "The two most common reasons a local HTTP server returns connection refused are:\n\n1. **The server process died** \u2014 the process bound the port but exited, so nothing listens on it.\n2. **The port is actually closed** \u2014 the binding happened but then the socket was never released/closed, so the OS doesn't accept new connections.\n\nThe first command to run is:\n\n```bash\nss -tlnp | grep <port>\n```\n\nThis shows which processes have a listening socket on the given port. If nothing is listening, the server h"
+      },
+      "final": {
+        "event": "run.completed",
+        "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+        "timestamp": 1789921956.2981918,
+        "output": "The two most common reasons a local HTTP server returns connection refused are:\n\n1. **The server process died** \u2014 the process bound the port but exited, so nothing listens on it.\n2. **The port is actually closed** \u2014 the binding happened but then the socket was never released/closed, so the OS doesn't accept new connections.\n\nThe first command to run is:\n\n```bash\nss -tlnp | grep <port>\n```\n\nThis shows which processes have a listening socket on the given port. If nothing is listening, the server has died; if the port is open but nothing shows, the process likely crashed after binding.\n\nThen verify the process is alive:\n\n```bash\npgrep -f <server-lang-or-command>\n```\n\nIf you want, I can also check the full socket state with `lsof -i:<port>` or inspect `/proc` for the process holding the port.",
+        "usage": {
+          "input_tokens": 14407,
+          "output_tokens": 193,
+          "total_tokens": 14600
+        }
+      },
+      "events": [
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921948.800609,
+          "delta": "The"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921948.864182,
+          "delta": " two"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921948.924625,
+          "delta": " most"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921948.9784162,
+          "delta": " common"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.031929,
+          "delta": " reasons"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.086792,
+          "delta": " a"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.146015,
+          "delta": " local"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.2026439,
+          "delta": " HTTP"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.2574358,
+          "delta": " server"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.305794,
+          "delta": " returns"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.3467798,
+          "delta": " connection"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.3905149,
+          "delta": " refused"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.433804,
+          "delta": " are"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.5478752,
+          "delta": ":\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.54867,
+          "delta": "\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.5492768,
+          "delta": "1"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.585999,
+          "delta": "."
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.625951,
+          "delta": " **"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.792507,
+          "delta": "The"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.792898,
+          "delta": " server"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.793052,
+          "delta": " process"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.793308,
+          "delta": " died"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.8279,
+          "delta": "**"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.8662531,
+          "delta": " \u2014"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.90281,
+          "delta": " the"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.936478,
+          "delta": " process"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921949.9713259,
+          "delta": " bound"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.004392,
+          "delta": " the"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.037941,
+          "delta": " port"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.0720909,
+          "delta": " but"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.106417,
+          "delta": " exited"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.140001,
+          "delta": ","
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.174329,
+          "delta": " so"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.213737,
+          "delta": " nothing"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.255151,
+          "delta": " listens"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.29654,
+          "delta": " on"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.3384352,
+          "delta": " it"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.381558,
+          "delta": ".\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.423219,
+          "delta": "2"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.461982,
+          "delta": "."
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.50245,
+          "delta": " **"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.5391538,
+          "delta": "The"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.573376,
+          "delta": " port"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.611808,
+          "delta": " is"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.647403,
+          "delta": " actually"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.680296,
+          "delta": " closed"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.7159731,
+          "delta": "**"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.7520902,
+          "delta": " \u2014"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.7885718,
+          "delta": " the"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.824192,
+          "delta": " binding"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.8607209,
+          "delta": " happened"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.898483,
+          "delta": " but"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.9364648,
+          "delta": " then"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921950.9739761,
+          "delta": " the"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.012382,
+          "delta": " socket"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.050269,
+          "delta": " was"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.088793,
+          "delta": " never"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.1243808,
+          "delta": " released"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.158376,
+          "delta": "/"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.195445,
+          "delta": "closed"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.233066,
+          "delta": ","
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.2716448,
+          "delta": " so"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.308197,
+          "delta": " the"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.3458712,
+          "delta": " OS"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.386443,
+          "delta": " doesn"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.427705,
+          "delta": "'t"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.4680488,
+          "delta": " accept"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.511841,
+          "delta": " new"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.553847,
+          "delta": " connections"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.594054,
+          "delta": ".\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.632442,
+          "delta": "\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.671861,
+          "delta": "The"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.707541,
+          "delta": " first"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.746368,
+          "delta": " command"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.7837062,
+          "delta": " to"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.8213341,
+          "delta": " run"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.860735,
+          "delta": " is"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.972981,
+          "delta": ":\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.973695,
+          "delta": "\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921951.974102,
+          "delta": "```"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.0141811,
+          "delta": "bash"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.04971,
+          "delta": "\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.088602,
+          "delta": "ss"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.1259131,
+          "delta": " -"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.164984,
+          "delta": "t"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.207362,
+          "delta": "ln"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.242144,
+          "delta": "p"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.282349,
+          "delta": " |"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.320454,
+          "delta": " grep"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.357389,
+          "delta": " "
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.399791,
+          "delta": "<port"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.437423,
+          "delta": ">\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.474903,
+          "delta": "```\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.5131361,
+          "delta": "\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.549815,
+          "delta": "This"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.588159,
+          "delta": " shows"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.625669,
+          "delta": " which"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.6632278,
+          "delta": " processes"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.702199,
+          "delta": " have"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.739171,
+          "delta": " a"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.7725708,
+          "delta": " listening"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.811297,
+          "delta": " socket"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.849,
+          "delta": " on"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.883997,
+          "delta": " the"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.922555,
+          "delta": " given"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.958879,
+          "delta": " port"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921952.998276,
+          "delta": "."
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.036236,
+          "delta": " If"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.072418,
+          "delta": " nothing"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.110514,
+          "delta": " is"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.14933,
+          "delta": " listening"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.185175,
+          "delta": ","
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.224138,
+          "delta": " the"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.261704,
+          "delta": " server"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.300475,
+          "delta": " has"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.3389068,
+          "delta": " died"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.376557,
+          "delta": ";"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.4144151,
+          "delta": " if"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.453652,
+          "delta": " the"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.489148,
+          "delta": " port"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.5226638,
+          "delta": " is"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.562305,
+          "delta": " open"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.5994408,
+          "delta": " but"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.640644,
+          "delta": " nothing"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.679703,
+          "delta": " shows"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.719717,
+          "delta": ","
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.7560441,
+          "delta": " the"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.791817,
+          "delta": " process"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.829874,
+          "delta": " likely"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.8685062,
+          "delta": " crashed"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.907271,
+          "delta": " after"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.949506,
+          "delta": " binding"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921953.988888,
+          "delta": ".\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.026443,
+          "delta": "\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.063877,
+          "delta": "Then"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.1020648,
+          "delta": " verify"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.138675,
+          "delta": " the"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.177768,
+          "delta": " process"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.2138681,
+          "delta": " is"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.249414,
+          "delta": " alive"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.361072,
+          "delta": ":\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.362008,
+          "delta": "\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.3625002,
+          "delta": "```"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.399818,
+          "delta": "bash"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.43898,
+          "delta": "\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.476449,
+          "delta": "pg"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.5127711,
+          "delta": "rep"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.5512168,
+          "delta": " -"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.589557,
+          "delta": "f"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.624259,
+          "delta": " "
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.6631181,
+          "delta": "<server"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.70066,
+          "delta": "-l"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.736681,
+          "delta": "ang"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.778369,
+          "delta": "-or"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.816401,
+          "delta": "-"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.854157,
+          "delta": "command"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.8934321,
+          "delta": ">\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.931303,
+          "delta": "```\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921954.967971,
+          "delta": "\n"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921955.003755,
+          "delta": "If"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921955.042975,
+          "delta": " you"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921955.080817,
+          "delta": " want"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921955.118631,
+          "delta": ","
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921955.193706,
+          "delta": " I"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921955.194547,
+          "delta": " can"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921955.23916,
+          "delta": " also"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921955.275842,
+          "delta": " check"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921955.3162858,
+          "delta": " the"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921955.355752,
+          "delta": " full"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921955.400098,
+          "delta": " socket"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921955.438349,
+          "delta": " state"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921955.4731772,
+          "delta": " with"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921955.513418,
+          "delta": " `"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921955.5522208,
+          "delta": "l"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921955.5910459,
+          "delta": "sof"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921955.627871,
+          "delta": " -"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921956.275429,
+          "delta": "i"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921956.276261,
+          "delta": ":"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921956.276841,
+          "delta": "<port"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921956.277499,
+          "delta": ">`"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921956.2778502,
+          "delta": " or"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921956.278511,
+          "delta": " inspect"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921956.27906,
+          "delta": " `/"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921956.279225,
+          "delta": "proc"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921956.2795,
+          "delta": "`"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921956.2797241,
+          "delta": " for"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921956.280021,
+          "delta": " the"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921956.280202,
+          "delta": " process"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921956.280532,
+          "delta": " holding"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921956.280755,
+          "delta": " the"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921956.2812932,
+          "delta": " port"
+        },
+        {
+          "event": "message.delta",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921956.281536,
+          "delta": "."
+        },
+        {
+          "event": "reasoning.available",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921956.286238,
+          "text": "The two most common reasons a local HTTP server returns connection refused are:\n\n1. **The server process died** \u2014 the process bound the port but exited, so nothing listens on it.\n2. **The port is actually closed** \u2014 the binding happened but then the socket was never released/closed, so the OS doesn't accept new connections.\n\nThe first command to run is:\n\n```bash\nss -tlnp | grep <port>\n```\n\nThis shows which processes have a listening socket on the given port. If nothing is listening, the server h"
+        },
+        {
+          "event": "run.completed",
+          "run_id": "run_6770cd2acb4c4de79b1d90840b826869",
+          "timestamp": 1789921956.2981918,
+          "output": "The two most common reasons a local HTTP server returns connection refused are:\n\n1. **The server process died** \u2014 the process bound the port but exited, so nothing listens on it.\n2. **The port is actually closed** \u2014 the binding happened but then the socket was never released/closed, so the OS doesn't accept new connections.\n\nThe first command to run is:\n\n```bash\nss -tlnp | grep <port>\n```\n\nThis shows which processes have a listening socket on the given port. If nothing is listening, the server has died; if the port is open but nothing shows, the process likely crashed after binding.\n\nThen verify the process is alive:\n\n```bash\npgrep -f <server-lang-or-command>\n```\n\nIf you want, I can also check the full socket state with `lsof -i:<port>` or inspect `/proc` for the process holding the port.",
+          "usage": {
+            "input_tokens": 14407,
+            "output_tokens": 193,
+            "total_tokens": 14600
+          }
+        }
+      ],
+      "raw_sse_path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-023-fast-lane-optimization/raw/e2e/2b-64k-q4-think.sse"
+    }
+  ]
+}

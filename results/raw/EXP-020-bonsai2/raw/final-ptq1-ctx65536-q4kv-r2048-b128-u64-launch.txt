@@ -1,0 +1,1 @@
+pid=14152 port=8920 ctx=65536 log=/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-020-bonsai2/raw/server-final-ptq1-ctx65536-q4kv-r2048-b128-u64.log

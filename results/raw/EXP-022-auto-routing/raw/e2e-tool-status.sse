@@ -1,0 +1,78 @@
+data: {"event": "tool.started", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916482.416681, "tool": "terminal", "preview": "git status --short"}
+
+data: {"event": "tool.completed", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916482.540071, "tool": "terminal", "duration": 0.138, "error": true}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.003256, "delta": "\n\nThe"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.03915, "delta": " current"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.069427, "delta": " directory"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.0999649, "delta": " is"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.131765, "delta": " not"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.165683, "delta": " a"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.1985831, "delta": " Git"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.23011, "delta": " repository"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.262315, "delta": ","}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.2941282, "delta": " so"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.326452, "delta": " `"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.358347, "delta": "git"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.388578, "delta": " status"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.418945, "delta": "`"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.449974, "delta": " cannot"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.483597, "delta": " be"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.515367, "delta": " run"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.548852, "delta": "."}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.580699, "delta": " It"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.612315, "delta": " is"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.644737, "delta": " not"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.675603, "delta": " a"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.707725, "delta": " clean"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.7386281, "delta": " or"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.77223, "delta": " dirty"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.803338, "delta": " repository"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.834717, "delta": " \u2014"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.865263, "delta": " it"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.898893, "delta": " simply"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.93051, "delta": " has"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.962465, "delta": " no"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916483.994866, "delta": " Git"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916484.02767, "delta": " metadata"}
+
+data: {"event": "message.delta", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916484.059964, "delta": "."}
+
+data: {"event": "reasoning.available", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916484.0979478, "text": "The current directory is not a Git repository, so `git status` cannot be run. It is not a clean or dirty repository \u2014 it simply has no Git metadata."}
+
+data: {"event": "run.completed", "run_id": "run_b5bcc0b3649d4873b17987770b1a3890", "timestamp": 1789916484.11045, "output": "The current directory is not a Git repository, so `git status` cannot be run. It is not a clean or dirty repository \u2014 it simply has no Git metadata.", "usage": {"input_tokens": 28891, "output_tokens": 62, "total_tokens": 28953}}
+
+: stream closed
+

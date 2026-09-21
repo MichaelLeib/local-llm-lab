@@ -1,0 +1,33 @@
+2026-09-20T05:40:41Z
+  PID    RSS ELAPSED COMMAND
+27408 9491344   08:41 /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-021-nanbeige42/source/llama.cpp/build/bin/llama-server -m /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-021-nanbeige42/models/q6/Nanbeige4.2-3B-Q6_K.gguf --host 127.0.0.1 --port 8921 -c 65536 -np 1 -ngl 99 -b 128 -ub 64 -ctk q8_0 -ctv q8_0 --no-webui --metrics --jinja --reasoning off
+28129   2928   04:17 /opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-021-nanbeige42/scripts/context_probe.py /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-021-nanbeige42/raw/context64-q8 http://127.0.0.1:8921 32000 32k
+vm.swapusage: total = 3072.00M  used = 2307.31M  free = 764.69M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 4730 
+Pages purgeable: 0 
+Pages purged: 12680013 
+
+Swap I/O:
+Swapins: 2165717 
+Swapouts: 2820239 
+
+Page Q counts:
+Pages active: 53758 
+Pages inactive: 47914 
+Pages speculative: 4820 
+Pages throttled: 0 
+Pages wired down: 747496 
+
+Compressor Stats:
+Pages used by compressor: 152420 
+Pages decompressed: 50421371 
+Pages compressed: 60129399 
+
+File I/O:
+Pageins: 31806444 
+Pageouts: 41303 
+
+System-wide memory free percentage: 10%

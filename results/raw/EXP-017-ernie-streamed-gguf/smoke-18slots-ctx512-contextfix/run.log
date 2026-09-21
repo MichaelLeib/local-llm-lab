@@ -1,0 +1,14 @@
+command=/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-017-ernie-streamed-gguf/source/llama.cpp-moe-streaming/build-exp017/bin/llama-cli -m /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-016-small-moe-feasibility/ernie/gguf/model/ERNIE-4.5-21B-A3B-Thinking-Q4_K_M.gguf --moe-stream-cache 18s --moe-stream-io-threads 2 --moe-stream-direct --no-mmap --no-warmup --fit off -ngl 99 -c 512 -b 1 -ub 1 -n 8 --temp 0 --seed 1234 --single-turn --simple-io -p Reply with exactly READY.
+
+Loading model... /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-017-ernie-streamed-gguf/source/llama.cpp-moe-streaming/src/llama-context.cpp:1767: GGML_ASSERT(n_tokens_all <= cparams.n_batch) failed
+WARNING: Using native backtrace. Set GGML_BACKTRACE_LLDB for more info.
+WARNING: GGML_BACKTRACE_LLDB may cause native MacOS Terminal.app to crash.
+See: https://github.com/ggml-org/llama.cpp/pull/17869
+0   libggml-base.0.15.3.dylib           0x0000000104f013d0 ggml_print_backtrace + 276
+1   libggml-base.0.15.3.dylib           0x0000000104f6d1f4 ggml_abort + 156
+2   libllama.0.0.9881.dylib             0x0000000105d1843c _ZN13llama_context6decodeERK11llama_batch + 5652
+3   libllama.0.0.9881.dylib             0x0000000105d1cce8 llama_decode + 20
+4   libllama-common.0.0.9881.dylib      0x00000001058f1798 _Z25common_context_can_seq_rmP13llama_context + 116
+5   libllama-cli-impl.dylib             0x0000000105067074 _ZN19server_context_impl10load_modelER13common_params + 6104
+6   libllama-cli-impl.dylib             0x0000000104fcf694 _Z9llama_cliiPPc + 388
+7   dyld                                0x00000001977d3e80 start + 6688

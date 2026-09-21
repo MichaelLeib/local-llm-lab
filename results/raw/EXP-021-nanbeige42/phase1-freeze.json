@@ -1,0 +1,59 @@
+{
+  "experiment": "EXP-021",
+  "candidate": "Nanbeige4.2-3B",
+  "host": "MacBook Air M3, 16 GiB unified memory, macOS 27.0",
+  "official_model_repo": "Nanbeige/Nanbeige4.2-3B",
+  "official_model_revision": "b82e54bd609793562a75cbf9337970a93369eab5",
+  "official_architecture": {
+    "architecture": "NanbeigeForCausalLM",
+    "model_type": "nanbeige",
+    "total_parameters_bf16": 4169800704,
+    "non_embedding_parameters_claimed": "3B",
+    "physical_decoder_layers": 22,
+    "num_loops": 2,
+    "context_length_advertised": 262144,
+    "features": ["LoopSplit", "mHC with depth attention", "concatenated n-gram embeddings"],
+    "tokenizer": "tokenizer.json + tokenizer.model",
+    "chat_template": "official tokenizer_config.json; reasoning via <think>...</think>; XML tool calls by default or JSON tool_call_format",
+    "tool_call_format": "xml default, json selectable",
+    "reasoning_format": "<think>...</think>"
+  },
+  "runtime": {
+    "repository": "https://github.com/Nanbeige/llama.cpp",
+    "branch": "nanbeige42",
+    "commit": "c6640a1c0cf7b38df342b67021a3900b04d092e7",
+    "source": "official Nanbeige fork; required because stock llama.cpp 0.4.1 is not assumed to support nanbeige"
+  },
+  "candidate_quant_source": {
+    "repository": "Abiray/Nanbeige4.2-3B-GGUF",
+    "revision": "774a61f8217ad18e7e102107fb7abcfecfae6a99",
+    "selection": "Q6_K first; Q5_K_M bounded precision comparator if runtime gate passes",
+    "q6_file": "Nanbeige4.2-3B-Q6_K.gguf",
+    "q6_bytes": 3424947120,
+    "q5_file": "Nanbeige4.2-3B-Q5_K_M.gguf",
+    "q5_bytes": 2986996658
+  },
+  "mlx_option": {
+    "repository": "mlx-community/Nanbeige4.2-3B-OptiQ-4bit",
+    "revision": "e88d49fdd9cd67629c712fc2b4d845ad403ae9b4",
+    "size_bytes": 3322095261,
+    "runtime_requirement": "mlx-optiq >= 0.4.6; not installed at freeze",
+    "decision": "GGUF official fork is the primary path; MLX is a bounded comparator only if installation/runtime is practical"
+  },
+  "baseline_state": {
+    "fast": "down",
+    "deep": "down",
+    "ornith_port": 8919,
+    "candidate_port": 8921,
+    "root_free_gib_approx": 145,
+    "swap_used_mib_approx": 1346,
+    "note": "swap was non-zero before campaign; deltas are arm-local and baseline state is retained"
+  },
+  "source_urls": [
+    "https://huggingface.co/Nanbeige/Nanbeige4.2-3B",
+    "https://huggingface.co/api/models/Nanbeige/Nanbeige4.2-3B",
+    "https://github.com/Nanbeige/llama.cpp/tree/nanbeige42",
+    "https://huggingface.co/Abiray/Nanbeige4.2-3B-GGUF",
+    "https://huggingface.co/mlx-community/Nanbeige4.2-3B-OptiQ-4bit"
+  ]
+}

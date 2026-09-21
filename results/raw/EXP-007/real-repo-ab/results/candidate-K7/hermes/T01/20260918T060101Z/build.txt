@@ -1,0 +1,20 @@
+❯ Building...
+✔ Building...
+Initial chunk files | Names                  |  Raw size | Estimated transfer size
+main-DS5LTWXV.js    | main                   | 450.95 kB |               118.41 kB
+styles-RAPBLXTZ.css | styles                 |   4.23 kB |                 1.20 kB
+
+                    | Initial total          | 455.18 kB |               119.60 kB
+
+Lazy chunk files    | Names                  |  Raw size | Estimated transfer size
+chunk-ClK5uA2q.js   | thread-component       |  18.21 kB |                 4.86 kB
+chunk-BykXoeWV.js   | -                      |   8.06 kB |                 2.85 kB
+chunk-VwtvpGFi.js   | empty-thread-component |   2.88 kB |                 1.31 kB
+
+Application bundle generation complete. [1.730 seconds] - 2026-09-18T06:01:19.172Z
+
+▲ [WARNING] src/app/features/thread/thread.component.scss exceeded maximum budget. Budget 4.00 kB was not met by 956 bytes with a total of 4.96 kB.
+
+
+Output location: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/worktrees/candidate-K7-hermes-T01-20260918T060101Z/dist/hermes-mobile
+

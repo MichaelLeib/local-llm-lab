@@ -1,0 +1,15 @@
+{
+  "experiment": "EXP-016",
+  "candidate": "ERNIE",
+  "captured_at_utc": "2026-09-19T08:54:45Z",
+  "df_k": {
+    "filesystem": "/dev/disk3s1s1",
+    "blocks": 482797652,
+    "used_blocks": 13340996,
+    "available_blocks": 237946152,
+    "capacity": "6%"
+  },
+  "planned_representation_bytes": 12277133662,
+  "reserve_bytes": 10737418240,
+  "gate": "pass_if_available_exceeds_payload_plus_reserve"
+}

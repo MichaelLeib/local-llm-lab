@@ -1,0 +1,1 @@
+pid=69764 port=8920 ctx=8192 log=/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-020-bonsai2/raw/server-Ternary-Bonsai-2-27B-PTQ1_0-ctx8192.log

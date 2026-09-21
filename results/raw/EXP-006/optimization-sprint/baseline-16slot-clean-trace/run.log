@@ -1,0 +1,41 @@
+Thu Sep 17 19:04:52 UTC 2026
+arm=baseline-16slot-clean-trace
+vm.swapusage: total = 0.00M  used = 0.00M  free = 0.00M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+System-wide memory free percentage: 77%
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi    50Gi    21%    484k  520M    0%   /
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+2
+[decode expert io] hits 14964 misses 15276 (49.5% hit) 39.39 GiB = 630.3 MiB/token
+
+[stop=maxTokens prefill=238tok/15.30s new=64tok decode=27.02s tok/s=2.368]
+probe_exit=0
+vm.swapusage: total = 1024.00M  used = 400.88M  free = 623.12M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+System-wide memory free percentage: 71%
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi    49Gi    21%    484k  509M    0%   /

@@ -1,0 +1,1 @@
+[{"role": "user", "content": "Compare optimistic concurrency control with pessimistic locking for a collaborative document service. State the trade-off, identify a failure mode for each, and give a practical hybrid design. Be precise and concise."}]

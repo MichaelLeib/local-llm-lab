@@ -1,0 +1,82 @@
+{
+  "minicpm": {
+    "seconds": 2.3872724589999996,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "",
+            "reasoning_content": "We are asked to reply exactly \"FAST_OK\". The user says \"Reply exactly: FAST_OK\". So we must output exactly that string.\n"
+          }
+        }
+      ],
+      "created": 1789915232,
+      "model": "minicpm5-2b-q4km",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 32,
+        "prompt_tokens": 17,
+        "total_tokens": 49,
+        "prompt_tokens_details": {
+          "cached_tokens": 2
+        }
+      },
+      "id": "chatcmpl-6FecRNSbPVSfE9yDtHyD7FxlZ4ttZOoZ",
+      "timings": {
+        "cache_n": 2,
+        "prompt_n": 15,
+        "prompt_ms": 1478.552,
+        "prompt_per_token_ms": 98.57013333333333,
+        "prompt_per_second": 10.145060843311564,
+        "predicted_n": 32,
+        "predicted_ms": 851.521,
+        "predicted_per_token_ms": 27.46841935483871,
+        "predicted_per_second": 36.405443905669976
+      }
+    }
+  },
+  "ornith": {
+    "seconds": 4.233631125,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "",
+            "reasoning_content": "The user is asking me to reply exactly with \"DEEP_OK\". This is a simple instruction to output a specific string. I should comply with this request."
+          }
+        }
+      ],
+      "created": 1789915236,
+      "model": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-019-ornith-gguf/models/Ornith-1.5-9B-Q6_K.gguf",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 32,
+        "prompt_tokens": 16,
+        "total_tokens": 48,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "id": "chatcmpl-NDd5xclDVoTJMzLpMc3evxlKeXgykxKy",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 16,
+        "prompt_ms": 1143.636,
+        "prompt_per_token_ms": 71.47725,
+        "prompt_per_second": 13.990465497763275,
+        "predicted_n": 32,
+        "predicted_ms": 2967.493,
+        "predicted_per_token_ms": 95.72558064516129,
+        "predicted_per_second": 10.446528433259996
+      }
+    }
+  }
+}

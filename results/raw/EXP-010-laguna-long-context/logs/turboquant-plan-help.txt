@@ -1,0 +1,24 @@
+usage: turboquant-plan [-h] --model MODEL [--context CONTEXT]
+                       [--kv-bits KV_BITS]
+                       [--prefill-step-size PREFILL_STEP_SIZE]
+                       [--wired-gb WIRED_GB] [--ram-gb RAM_GB]
+                       [--ngram-offload] [--json]
+
+Will this model run on this Mac, and with what flags? Reads only safetensors
+headers — no tensors are loaded.
+
+options:
+  -h, --help            show this help message and exit
+  --model MODEL         local dir or HF repo id
+  --context CONTEXT     context length to plan for (default 16384)
+  --kv-bits KV_BITS     plan with TurboQuant KV quantization
+  --prefill-step-size PREFILL_STEP_SIZE
+                        force a chunk size instead of picking the largest safe
+                        one
+  --wired-gb WIRED_GB   assume this Metal working set (plan for another Mac)
+  --ram-gb RAM_GB       assume this much system RAM, as the machine is sold
+                        (--ram-gb 16 = a 16 GB Mac = 17.18e9 bytes)
+  --ngram-offload       project with the n-gram table served from disk
+                        (Qwen3.8-Flash-Next), as the loaders' --ngram-offload
+                        does
+  --json                machine-readable output

@@ -1,0 +1,21 @@
+❯ Building...
+✔ Building...
+Application bundle generation complete. [1.586 seconds] - 2026-09-18T06:31:07.762Z
+
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.11 [39m[90m/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/worktrees/candidate-K7-hermes-T01-20260918T063059Z[39m
+
+(node:14750) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14748) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14746) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14749) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[2m Test Files [22m [1m[32m10 passed[39m[22m[90m (10)[39m
+[2m      Tests [22m [1m[32m82 passed[39m[22m[90m (82)[39m
+[2m   Start at [22m 08:31:07
+[2m   Duration [22m 8.48s[2m (transform 504ms, setup 1.34s, import 691ms, tests 17.12s, environment 4.68s)[22m
+

@@ -1,0 +1,19 @@
+{
+  "run": 1,
+  "timestamp_utc": "2026-09-19T09:39:06.610805+00:00",
+  "wall_seconds": 19.572178000002168,
+  "http_status": 200,
+  "request": {
+    "model": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-016-small-moe-feasibility/north/model/North-Mini-Code-1.0-UD-Q3_K_M.gguf",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Reply with exactly READY."
+      }
+    ],
+    "temperature": 0,
+    "seed": 12345,
+    "max_tokens": 16,
+    "stream": false
+  }
+}

@@ -1,0 +1,7 @@
+Requirement already satisfied: pip in ./HermesProjects/Local-LLM-Lab/results/raw/EXP-021-nanbeige42/mlx-venv/lib/python3.9/site-packages (21.2.4)
+Collecting pip
+  Using cached pip-26.0.1-py3-none-any.whl (1.8 MB)
+ERROR: Could not find a version that satisfies the requirement mlx-optiq>=0.4.6 (from versions: none)
+ERROR: No matching distribution found for mlx-optiq>=0.4.6
+WARNING: You are using pip version 21.2.4; however, version 26.0.1 is available.
+You should consider upgrading via the '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-021-nanbeige42/mlx-venv/bin/python -m pip install --upgrade pip' command.

@@ -1,0 +1,5 @@
+{
+  "classification": "completed_but_unacceptable_latency",
+  "think_wall_seconds": 438.2212,
+  "reason": "The full MyChatty/Hermes THINK diagnostic completed, but took 438.2 s versus 4.7 s for the warm 2B control. The FAST lane was stopped immediately after event delivery to avoid leaving an unneeded rejected candidate resident."
+}

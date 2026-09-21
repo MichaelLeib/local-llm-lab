@@ -1,0 +1,44 @@
+{
+  "model": {
+    "repo": "ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+    "revision": "12393612fd4f730ff5aadc23e9b8f9648aa49ceb",
+    "file": "Ornith-1.5-35B-Q4_K_M.gguf",
+    "bytes": 21713463040,
+    "sha256": "42739874cc2ccfdb8523b23fbe52e29b2a7555c8176737ca9ca0b5d59859d41f"
+  },
+  "gguf_verified": {
+    "version": 3,
+    "architecture": "qwen35moe",
+    "tensor_count": 753,
+    "block_count": 41,
+    "expert_count": 256,
+    "expert_used_count": 8,
+    "expert_feed_forward_length": 512,
+    "expert_tensor_count": 123,
+    "expert_layers": "blk.0..blk.40",
+    "expert_types": {
+      "Q4_K": 103,
+      "Q6_K": 20
+    }
+  },
+  "calculation": {
+    "q4_k_bytes_per_256_weights": 144,
+    "q6_k_bytes_per_256_weights": 210,
+    "per_expert_per_layer_bytes": 2039808,
+    "per_expert_all_41_layers_bytes": 78225408,
+    "all_expert_payload_gib": 18.650390625,
+    "note": "Exact slot-pool estimate from GGUF tensor shapes/types; excludes non-expert resident weights, KV/cache, compute buffers and allocator overhead. Normal generation uses 40 main layers; 41-layer figure is conservative because the GGUF includes blk.40 MTP tensors."
+  },
+  "slots": [
+    {"slots": 8, "expert_pool_bytes": 625803264, "expert_pool_mib": 596.8125, "expert_pool_gib": 0.58282470703125, "source_level_ubatch_ceiling": 1, "risk": "preferred first load"},
+    {"slots": 16, "expert_pool_bytes": 1251606528, "expert_pool_mib": 1193.625, "expert_pool_gib": 1.1656494140625, "source_level_ubatch_ceiling": 2, "risk": "defer until correctness/safety"},
+    {"slots": 24, "expert_pool_bytes": 1877409792, "expert_pool_mib": 1790.4375, "expert_pool_gib": 1.74847412109375, "source_level_ubatch_ceiling": 3, "risk": "defer until measured"},
+    {"slots": 32, "expert_pool_bytes": 2503213056, "expert_pool_mib": 2387.25, "expert_pool_gib": 2.331298828125, "source_level_ubatch_ceiling": 4, "risk": "near memory ceiling; do not start automatically"}
+  ],
+  "caveats": [
+    "The GGUF header and tensor descriptors are verified; full inference is not yet run.",
+    "Exact Metal allocation may differ from descriptor bytes because pools are backend tensors with alignment/allocator overhead.",
+    "The offloader binds main generation layers; MTP blk.40 may not be used in the initial text-only path.",
+    "Non-expert weights, recurrent state, KV/cache and compute buffers remain unmeasured."
+  ]
+}

@@ -1,0 +1,22 @@
+error: unknown flag: --host
+
+usage: TurboFieldfareServer --model <completed .gturbo directory> [options]
+
+  --model <dir>          Required model directory.
+  --port <1...65535>     Loopback port (default 8080).
+  --model-id <id>        API model identifier (default derived from the
+                         installed model: gemma-4-26b-a4b-it or
+                         qwen3.6-35b-a3b).
+  --max-context <tokens> 4096, 8192, 16384, 32768, or 65536 (default 16384).
+  --queue-limit <count>  Maximum queued requests (default 4).
+  --prompt-cache-mode <off|single-prefix>
+                         Prompt KV reuse mode (default single-prefix).
+  --expert-cache-slots <n>
+                         Routed-expert slots per layer (default 64).
+                         More is not always faster: past the point where
+                         this cache starts evicting the OS page cache,
+                         throughput falls even as hit rate rises.
+  --expert-cache-policy <lfu-aging|lfu|lru>
+                         Replacement policy for the slots (default
+                         lfu-aging).
+  --help                 Show this help.

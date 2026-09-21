@@ -1,0 +1,8 @@
+{
+  "label": "harness-pass",
+  "start": "2026-09-19T15:06:09Z",
+  "end": "2026-09-19T15:06:09Z",
+  "elapsed_seconds": 0,
+  "exit_code": 0,
+  "raw_path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/raw/20260919T170609-harness-pass.log"
+}

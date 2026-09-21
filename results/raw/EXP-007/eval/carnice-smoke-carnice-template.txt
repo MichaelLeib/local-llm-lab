@@ -1,0 +1,13 @@
+Thinking Process:
+
+1.  **Analyze the Request:**
+    *   Goal: Answer the question "what is the purpose of a checksum?"
+    *   Constraint: "Answer in one concise sentence".
+    *   Output format: "Answer in one concise sentence: [content]".
+
+2.  **Identify the Core Concept:**
+    *   What is a checksum? It's a small block of data derived from a larger block of electronic data.
+    *   What is its purpose? To detect errors that may have occurred during data transmission or storage.
+
+3.  **Draft Initial Answers
+[stop=maxTokens prefill=24tok/8.42s new=128tok decode=13.62s tok/s=9.397]

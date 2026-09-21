@@ -1,0 +1,102 @@
+{
+  "returncode": 0,
+  "elapsed_s": 67.389,
+  "stdout_bytes": 2674,
+  "events": 9,
+  "tool_call_events": 5,
+  "content_chars": 0,
+  "finishes": [
+    "tool_calls"
+  ],
+  "event_preview": [
+    {
+      "finish": null,
+      "content": null,
+      "tool_calls": null,
+      "reasoning": null
+    },
+    {
+      "finish": null,
+      "content": null,
+      "tool_calls": [
+        {
+          "index": 0,
+          "id": "qCcLQ0rf58wSFxjgauglzy1UikNtlkDL",
+          "type": "function",
+          "function": {
+            "name": "terminal",
+            "arguments": "{"
+          }
+        }
+      ],
+      "reasoning": null
+    },
+    {
+      "finish": null,
+      "content": null,
+      "tool_calls": [
+        {
+          "index": 0,
+          "function": {
+            "arguments": "\"command\":\""
+          }
+        }
+      ],
+      "reasoning": null
+    },
+    {
+      "finish": null,
+      "content": null,
+      "tool_calls": [
+        {
+          "index": 0,
+          "function": {
+            "arguments": "date"
+          }
+        }
+      ],
+      "reasoning": null
+    },
+    {
+      "finish": null,
+      "content": null,
+      "tool_calls": [
+        {
+          "index": 0,
+          "function": {
+            "arguments": "\""
+          }
+        }
+      ],
+      "reasoning": null
+    },
+    {
+      "finish": null,
+      "content": null,
+      "tool_calls": [
+        {
+          "index": 0,
+          "function": {
+            "arguments": "}"
+          }
+        }
+      ],
+      "reasoning": null
+    },
+    {
+      "finish": "tool_calls",
+      "content": null,
+      "tool_calls": null,
+      "reasoning": null
+    },
+    {
+      "finish": null,
+      "content": null,
+      "tool_calls": null,
+      "reasoning": null
+    },
+    {
+      "done": true
+    }
+  ]
+}

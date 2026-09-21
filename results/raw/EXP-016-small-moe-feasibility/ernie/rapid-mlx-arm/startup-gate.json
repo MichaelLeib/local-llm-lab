@@ -1,0 +1,12 @@
+{
+  "candidate": "ERNIE",
+  "arm": "community MLX 4-bit resident rapid-mlx",
+  "runtime": "rapid-mlx 0.14.1",
+  "port": 8916,
+  "health_probe_http": 200,
+  "model_loaded": false,
+  "warning_observed": true,
+  "warning_excerpt": "!! Memory pressure warning: this model is likely too large for your hardware.\n  Continuing may trigger a macOS kernel panic (see issue #324).\n\n    Model on disk:             11.4 GB\n    Est. working set:          17.2 GB  (model x 1.5 \u2014 short-chat workload; long-context serving will use more)\n    Currently used by OS:       8.7 GB\n    Total system RAM:          16.0 GB  (162% projected utilization)\n\n  Apple Silicon firmware can panic the whole system rather than\n  raise an OOM error when unified-memory pressure exceeds the\n  iBoot AMCC threshold. Recommended actions:\n\n    - Close other apps to free RAM, or\n    - Pick a smaller model:    rapid-mlx models\n    - Or lower memory headroom: rapid-mlx serve <model> --gpu-memory-utilization 0.75",
+  "decision": "stop_before_inference_due_to_runtime_projected_working_set_above_physical_ram",
+  "inference_attempted": false
+}

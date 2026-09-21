@@ -1,0 +1,16 @@
+{
+  "seed": 12345,
+  "same_prompt": true,
+  "same_request_settings": true,
+  "eight_slot_content_sha256": "362239f568d44589166e74dfb06a56a250aace5cd2e18f132ca333b610fad82d",
+  "sixteen_slot_content_sha256": "362239f568d44589166e74dfb06a56a250aace5cd2e18f132ca333b610fad82d",
+  "exact_content_match": true,
+  "eight_slot_content_chars": 661,
+  "sixteen_slot_content_chars": 661,
+  "eight_slot_http_status": 200,
+  "sixteen_slot_http_status": 200,
+  "eight_slot_error": null,
+  "sixteen_slot_error": null,
+  "eight_slot_decode_tok_s_estimate": 5.590937362842002,
+  "sixteen_slot_decode_tok_s_estimate": 4.516227544262395
+}

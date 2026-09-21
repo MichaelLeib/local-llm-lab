@@ -1,0 +1,96 @@
+timestamp:
+2026-09-20T17:19:48+02:00
+hermes-version:
+Hermes Agent v0.21.3 (2026.9.14) · upstream cedf4a3d
+Install directory: /Users/<user>/.hermes/hermes-agent
+Install method: git
+Python: 3.11.16
+OpenAI SDK: 2.24.0
+Update available: 3858 commits behind — run 'hermes update'
+hermes-commit:
+cedf4a3d78675283fa93e4e6ea2d6212bf414667
+hermes-branch:
+main
+home:
+/Users/<user>/.hermes
+profiles:
+
+ Profile          Model                        Gateway      Alias        Distribution
+ ───────────────    ───────────────────────────    ───────────    ───────────    ────────────────────
+ ◆default         fast-local                   running      —            —
+  lllmtinkering   gpt-5.6-terra                running      lllmtinkering —
+  local-bonsai    bonsai-ptq1                  running      local-bonsai —
+  local-dev       fast-local                   running      local-dev    —
+  local-minimal   fast-local                   running      local-minimal —
+  local-nanbeige  nanbeige-q6                  running      —            —
+  local-ornith    ornith-q6                    running      local-ornith —
+  observatory     fast-local                   running      —            —
+  personal        fast-local                   running      —            —
+  workshop        fast-local                   running      —            —
+
+⚠ Profile 'observatory' shares its matrix credential with default: the bot can only belong to one profile. Give 'observatory' its own bot (hermes -p observatory setup, or the dashboard Messaging page) or remove the token from 'observatory'; a multiplexed gateway parks the duplicate and `hermes gateway migrate --multiplex` refuses until it is gone.
+⚠ Profile 'personal' shares its matrix credential with default: the bot can only belong to one profile. Give 'personal' its own bot (hermes -p personal setup, or the dashboard Messaging page) or remove the token from 'personal'; a multiplexed gateway parks the duplicate and `hermes gateway migrate --multiplex` refuses until it is gone.
+⚠ Profile 'workshop' shares its matrix credential with default: the bot can only belong to one profile. Give 'workshop' its own bot (hermes -p workshop setup, or the dashboard Messaging page) or remove the token from 'workshop'; a multiplexed gateway parks the duplicate and `hermes gateway migrate --multiplex` refuses until it is gone.
+
+gateway:
+Launchd plist: /Users/<user>/Library/LaunchAgents/ai.hermes.gateway.plist
+⚠ Service definition is stale relative to the current Hermes install
+  Run: hermes gateway start
+✓ Gateway is supervised by launchd (PID 14557)
+  Auto-start at login and auto-restart on crash are available.
+
+Inbound callback URLs on the shared listener:
+  lllmtinkering/api_server: http://127.0.0.1:8642/p/lllmtinkering/v1
+  local-bonsai/api_server: http://127.0.0.1:8642/p/local-bonsai/v1
+  local-dev/api_server: http://127.0.0.1:8642/p/local-dev/v1
+  local-minimal/api_server: http://127.0.0.1:8642/p/local-minimal/v1
+  local-nanbeige/api_server: http://127.0.0.1:8642/p/local-nanbeige/v1
+  local-ornith/api_server: http://127.0.0.1:8642/p/local-ornith/v1
+  observatory/api_server: http://127.0.0.1:8642/p/observatory/v1
+  personal/api_server: http://127.0.0.1:8642/p/personal/v1
+  workshop/api_server: http://127.0.0.1:8642/p/workshop/v1
+local-status:
+FAST: down
+DEEP: up (Ornith Q6, port 8919)
+vm.swapusage: total = 3072.00M  used = 2391.94M  free = 680.06M  (encrypted)
+ports:
+python    14558 <user>   54u  IPv4 0x9cfd40525c3ed38c      0t0  TCP 127.0.0.1:8642 (LISTEN)
+node      18812 <user>   12u  IPv4 0xc63fe9f9117f6fb6      0t0  TCP 100.x.x.x.51:9120 (LISTEN)
+llama-ser 19367 <user>    3u  IPv4 0x6ccdba6173efe1b3      0t0  TCP 127.0.0.1:8919 (LISTEN)
+processes:
+14557     1    480    21:28 /Users/<user>/.hermes/hermes-agent/venv/bin/python -m hermes_cli.stderr_timestamp --error-log /Users/<user>/.hermes/logs/gateway.error.log -- /Users/<user>/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main gateway run --external-supervisor
+14558 14557 289344    21:28 /Users/<user>/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main gateway run --external-supervisor
+18812     1  33136    06:37 /Users/<user>/.local/bin/node /Users/<user>/HermesProjects/HermesMobile/server/dist/index.js
+19367     1 8889184    04:18 /opt/homebrew/bin/llama-server -m /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-019-ornith-gguf/models/Ornith-1.5-9B-Q6_K.gguf --host 127.0.0.1 --port 8919 -c 65536 --cache-type-k q8_0 --cache-type-v q8_0
+19999  1127   2496    00:02 /bin/bash -c source /var/folders/y0/g1szp20x4pl86bgz0w_w9_280000gn/T/hermes-snap-0799c3f0ad73.sh >/dev/null 2>&1 || true\012export AI_AGENT="${AI_AGENT:-hermes-agent}" HERMES_AGENT="${HERMES_AGENT:-true}"\012export GIT_PAGER="${GIT_PAGER:-cat}" PAGER="${PAGER:-cat}"\012builtin cd -- /Users/<user> || exit 126\012eval 'set -e\012ROOT=/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-022-auto-routing\012{\012 echo '\''timestamp:'\''; date -Iseconds\012 echo '\''hermes-version:'\''; /Users/<user>/.hermes/hermes-agent/venv/bin/hermes --version || true\012 echo '\''hermes-commit:'\''; git -C /Users/<user>/.hermes/hermes-agent rev-parse HEAD\012 echo '\''hermes-branch:'\''; git -C /Users/<user>/.hermes/hermes-agent branch --show-current\012 echo '\''home:'\''; printf '\''%s\n'\'' /Users/<user>/.hermes\012 echo '\''profiles:'\''; env -u HERMES_HOME -u HERMES_PROFILE /Users/<user>/.hermes/hermes-agent/venv/bin/hermes profile list || true\012 echo '\''gateway:'\''; env -u HERMES_HOME -u HERMES_PROFILE /Users/<user>/.hermes/hermes-agent/venv/bin/hermes gateway status || true\012 echo '\''local-status:'\''; /Users/<user>/.hermes/bin/hermes-local-model status\012 echo '\''ports:'\''; lsof -nP -iTCP -sTCP:LISTEN | grep -E '\''(:8642|:8901|:8902|:8919|:9120)'\'' || true\012 echo '\''processes:'\''; ps -axo pid,ppid,rss,etime,command | grep -E '\''[l]lama-server|[h]ermes.*gateway|HermesMobile/server/dist'\'' || true\012 echo '\''memory:'\''; sysctl vm.swapusage; memory_pressure\012} > "$ROOT/raw/installed-inventory.txt"\012# Redacted structured profile inventory: no api keys / dashboard credentials.\012/Users/<user>/.hermes/hermes-agent/venv/bin/python - <<'\''PY'\'' > "$ROOT/raw/profile-inventory.json"\012from pathlib import Path\012import yaml,json\012paths=[Path('\''/Users/<user>/.hermes/config.yaml'\''),*sorted(Path('\''/Users/<user>/.hermes/profiles'\'').glob('\''*/config.yaml'\''))]\012out=[]\012for p in paths:\012 c=yaml.safe_load(p.read_text()) or {}; m=c.get('\''model'\'') or {}; aux=c.get('\''auxiliary'\'') or {}\012 out.append({'\''profile'\'':'\''default'\'' if p.parent.name=='\''.hermes'\'' else p.parent.name,\012 '\''main'\'':{k:m.get(k) for k in ['\''default'\'','\''provider'\'','\''base_url'\'','\''api_mode'\'','\''context_length'\'']},\012 '\''reasoning_effort'\'':(c.get('\''agent'\'') or {}).get('\''reasoning_effort'\''),\012 '\''compression'\'':c.get('\''compression'\''), '\''delegation'\'':{k:v for k,v in (c.get('\''delegation'\'') or {}).items() if k!='\''api_key'\''},\012 '\''auxiliary'\'':{t:{k:v for k,v in x.items() if k!='\''api_key'\''} for t,x in aux.items() if isinstance(x,dict)},\012 '\''custom_providers'\'':[{'\''name'\'':x.get('\''name'\''),'\''base_url'\'':x.get('\''base_url'\''),'\''models'\'':x.get('\''models'\'')} for x in c.get('\''custom_providers'\'',[]) if isinstance(x,dict)]})\012print(json.dumps(out,indent=2))\012PY\012wc -c "$ROOT/raw/installed-inventory.txt" "$ROOT/raw/profile-inventory.json"'\012__hermes_ec=$?\012umask 077\012__hermes_snap_tmp=$(mktemp /var/folders/y0/g1szp20x4pl86bgz0w_w9_280000gn/T/hermes-snap-0799c3f0ad73.sh.tmp.XXXXXXXXXX) && { { ( unset ${!HERMES_SESSION_*} ${!HERMES_CRON_AUTO_DELIVER_*} ${!HERMES_BROWSER_CONTROL_*} AI_AGENT HERMES_AGENT HERMES_UI_SESSION_ID 2>/dev/null; export -p; ) || true; } > "$__hermes_snap_tmp" && mv -f "$__hermes_snap_tmp" /var/folders/y0/g1szp20x4pl86bgz0w_w9_280000gn/T/hermes-snap-0799c3f0ad73.sh; } 2>/dev/null || rm -f "$__hermes_snap_tmp" 2>/dev/null || true\012printf '\n__HERMES_CWD_0799c3f0ad73__%s__HERMES_CWD_0799c3f0ad73__\n' "$(pwd -P)"\012exit $__hermes_ec
+20047 19999   1248    00:00 grep -E [l]lama-server|[h]ermes.*gateway|HermesMobile/server/dist
+memory:
+vm.swapusage: total = 3072.00M  used = 2391.94M  free = 680.06M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 7406 
+Pages purgeable: 5478 
+Pages purged: 32734270 
+
+Swap I/O:
+Swapins: 3676385 
+Swapouts: 4925838 
+
+Page Q counts:
+Pages active: 157451 
+Pages inactive: 155081 
+Pages speculative: 1767 
+Pages throttled: 0 
+Pages wired down: 674445 
+
+Compressor Stats:
+Pages used by compressor: 14997 
+Pages decompressed: 192167878 
+Pages compressed: 214296101 
+
+File I/O:
+Pageins: 120339490 
+Pageouts: 169866 
+
+System-wide memory free percentage: 31%

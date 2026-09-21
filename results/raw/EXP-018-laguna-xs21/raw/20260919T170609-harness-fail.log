@@ -1,0 +1,11 @@
+LABEL: harness-fail
+COMMAND: sh -c printf\ \"Traceback:\ deliberate\ failure\\nMetal\ OOM\ simulated\\n\"\ \>\&2\;\ exit\ 17
+START: 2026-09-19T15:06:09Z
+--- stdout/stderr ---
+Traceback: deliberate failure
+Metal OOM simulated
+
+--- end ---
+EXIT: 17
+END: 2026-09-19T15:06:09Z
+ELAPSED_SECONDS: 0

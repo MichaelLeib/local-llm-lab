@@ -1,0 +1,6 @@
+Still waiting to acquire lock on /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-019-ornith-gguf/models/.cache/huggingface/download/Ornith-1.5-9B-Q5_K_M.gguf.lock (elapsed: 10.1 seconds)
+Still waiting to acquire lock on /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-019-ornith-gguf/models/.cache/huggingface/download/Ornith-1.5-9B-Q5_K_M.gguf.lock (elapsed: 20.1 seconds)
+Still waiting to acquire lock on /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-019-ornith-gguf/models/.cache/huggingface/download/Ornith-1.5-9B-Q5_K_M.gguf.lock (elapsed: 30.1 seconds)
+Still waiting to acquire lock on /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-019-ornith-gguf/models/.cache/huggingface/download/Ornith-1.5-9B-Q5_K_M.gguf.lock (elapsed: 40.1 seconds)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+path=/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-019-ornith-gguf/models/Ornith-1.5-9B-Q5_K_M.gguf

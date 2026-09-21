@@ -1,0 +1,22 @@
+[
+  {
+    "label": "1k-populated",
+    "input_tokens": 1023,
+    "ctx": 2048,
+    "exit_code": 0,
+    "aborted": null,
+    "secret": "ORBIT-271",
+    "secret_visible_in_output": true,
+    "minimum_free_percent": 42
+  },
+  {
+    "label": "4k-populated",
+    "input_tokens": 3982,
+    "ctx": 8192,
+    "exit_code": 0,
+    "aborted": null,
+    "secret": "CEDAR-914",
+    "secret_visible_in_output": false,
+    "minimum_free_percent": 38
+  }
+]

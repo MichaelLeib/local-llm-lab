@@ -1,0 +1,1 @@
+Explain in one short paragraph what an MoE language model does when it selects a small subset of experts for each token. Use plain text and no bullet list.

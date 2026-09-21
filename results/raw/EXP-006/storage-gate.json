@@ -1,0 +1,35 @@
+{
+  "experiment": "EXP-006",
+  "phase": "phase2-storage-gate",
+  "target": "Qwen3.8-Flash-Next 125B-A6B 4-bit via TinyTitan",
+  "runtime_repository": "https://github.com/Pummelchen/TinyTitan",
+  "runtime_commit": "008510e2753cc16a674cb75169ba3133cf56fa4e",
+  "runtime_pinned_source_repository": "RockTalk/Qwen3.8-Flash-Next-MLX-4bit",
+  "runtime_pinned_source_revision": "478474da92599ad0cf9f8bd447e658b29cb8480a",
+  "hf_revision_total_bytes_including_mtp": 175293161716,
+  "tinytitan_approximate_main_download_bytes": 173825909304,
+  "tinytitan_installed_main_bytes": 174228562488,
+  "tinytitan_reserved_bytes": 4294967296,
+  "destination": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/model/qwen3.8-flash-next_125B_A6B_4Bit",
+  "macintosh_hd_settings_available_gb_reported_by_user": 228.88,
+  "macintosh_hd_apfs_container_free_gb_observed_by_diskutil": 40.8475,
+  "post_install_headroom_gb_using_settings_available": 50.3565,
+  "local_snapshots": {
+    "count": 3,
+    "purgeable": true,
+    "names": [
+      "com.apple.TimeMachine.2026-09-16-174350.local",
+      "com.apple.TimeMachine.2026-09-16-210630.local",
+      "com.apple.TimeMachine.2026-09-17-065741.local"
+    ],
+    "interpretation": "The difference between Settings available and diskutil immediate free space is reclaimable local APFS/Time Machine snapshot space. Do not manually delete snapshots for this experiment."
+  },
+  "gate": "PASS_WITH_RECLAIM",
+  "conditions": [
+    "Use the TinyTitan native streaming install, not the 360 GB official BF16 conversion path.",
+    "Download only the main 4-bit target initially; defer the optional 1.47 GB MTP draft.",
+    "Monitor free space during download and stop before the reserve is exhausted.",
+    "Keep at least the TinyTitan 4 GB reserve and preserve a substantial normal-use margin.",
+    "Do not place the model on /Volumes/Backup, which is a Time Machine destination and is not writable by the current user."
+  ]
+}

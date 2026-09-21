@@ -1,0 +1,12 @@
+2026-09-18T10:11:45Z request prompt=2167 cached=0 new_prompt=2167 completion=16 ttft=36.21s prefill=59.9tok/s decode=5.4tok/s total=39.18s stop=length cache_miss=noEntry render=0.009s match=0.000s prepare=0.001s expert_hit=46.8% expert_miss=2554 io_await=1.45s reasoning=16
+--- reasoning 16 tokens ---
+Here's a thinking process:
+
+1.  **Analyze User Input:**
+--- end reasoning ---
+2026-09-18T10:12:30Z request prompt=2167 cached=0 new_prompt=2167 completion=16 ttft=36.07s prefill=60.1tok/s decode=7.8tok/s total=38.13s stop=length cache_miss=historyDiverged render=0.009s match=0.000s prepare=0.005s expert_hit=50.4% expert_miss=2381 io_await=1.34s reasoning=16
+--- reasoning 16 tokens ---
+Here's a thinking process:
+
+1.  **Analyze User Input:**
+--- end reasoning ---

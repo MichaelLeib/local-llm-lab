@@ -1,0 +1,45 @@
+INFO:rapid_mlx.utils.mamba_cache:[MambaCache] Skipping _make_cache patch — mlx-lm ArraysCache has native batching support
+INFO:rapid_mlx.gdn_prefill:[gdn_prefill] blocked-seq GDN prefill kernel installed (prompt>=64 tokens, Dk=128)
+INFO:rapid_mlx.model_auto_config:Auto-detected model family '(?:^|[/\\])ornith[-_.]1[-_.]5[^/\\]*[-_.](35b|a3b|moe)(?=[-_.]|$)[^/\\]*$' → tool_call_parser=hermes, reasoning_parser=qwen3, is_hybrid=True, supports_spec_decode=False
+INFO:rapid_mlx.cli:Auto-configured --tool-call-parser hermes
+INFO:rapid_mlx.cli:Reasoning parser auto-detection disabled via --no-reasoning-parser
+INFO:rapid_mlx.server:CORS allow-origin defaulting to wildcard '*' (no RAPID_MLX_CORS_ALLOW_ORIGINS set). Set the env var to an explicit origin list (e.g. 'https://chat.openai.com,https://claude.ai') to lock down for production / multi-tenant deployments.
+INFO:rapid_mlx.kv_cache_dtype:KV cache dtype: bf16 (model=ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit) — bf16 selected (no QuantizedKVCache wrap)
+INFO:rapid_mlx.cli:Non-trimmable model cache detected with --enable-prefix-cache: auto-setting --hybrid-cache-entries=8 (pass --hybrid-cache-entries 0 to disable)
+INFO:rapid_mlx.model_auto_config:Auto-detected checkpoint metadata for '/Users/<user>/.cache/huggingface/hub/models--ornith-ai--Ornith-1.5-35B-A3B-MLX-4bit/snapshots/19504d912fa8fc7622bf6b1de3db5d5d890b1f02' → tool_call_parser=None, reasoning_parser=None, is_hybrid=True
+INFO:rapid_mlx.utils.generation_config:generation_config: loaded sampling defaults from /Users/<user>/.cache/huggingface/hub/models--ornith-ai--Ornith-1.5-35B-A3B-MLX-4bit/snapshots/19504d912fa8fc7622bf6b1de3db5d5d890b1f02/generation_config.json: {'temperature': 1.0, 'top_p': 0.95, 'top_k': 20}
+INFO:rapid_mlx.server:Preparing lazy BatchedEngine: ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit
+INFO:rapid_mlx.server:Model configured in standby; weights will load on the first inference request: ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit
+INFO:rapid_mlx.server:Native tool format enabled for parser: hermes
+INFO:rapid_mlx.server:Default max tokens: 32768
+INFO:rapid_mlx.runtime.model_registry:Registered model 'ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit' (aliases=none, default=True)
+⚠ rapid-mlx 0.14.1 is behind latest 0.14.2 — run `rapid-mlx upgrade` to pick up new model aliases / flags.
+INFO:     Started server process [67557]
+INFO:     Waiting for application startup.
+INFO:rapid_mlx.server:GC control enabled: thresholds set to (100000, 50, 50)
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8904 (Press CTRL+C to quit)
+WARNING:rapid_mlx._signal_observability:rapid-mlx received signal SIGTERM; thread stacks follow (faulthandler)
+Current thread 0x00000001facebf80 (most recent call first):
+  File "/opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/lib/python3.14/site-packages/vllm_mlx/_signal_observability.py", line 148 in _on_signal
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/selectors.py", line 548 in select
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 2019 in _run_once
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 678 in run_forever
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 707 in run_until_complete
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/runners.py", line 128 in run
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/runners.py", line 205 in run
+  File "/opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/lib/python3.14/site-packages/uvicorn/server.py", line 77 in run
+  File "/opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/lib/python3.14/site-packages/uvicorn/main.py", line 621 in run
+  File "/opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/lib/python3.14/site-packages/vllm_mlx/cli.py", line 455 in _run_uvicorn
+  File "/opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/lib/python3.14/site-packages/vllm_mlx/cli.py", line 5239 in serve_command
+  File "/opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/lib/python3.14/site-packages/vllm_mlx/cli.py", line 13744 in main
+  File "/opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/lib/python3.14/site-packages/vllm_mlx/cli.py", line 13859 in cli_entrypoint
+  File "/opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/bin/rapid-mlx", line 6 in <module>
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:rapid_mlx.runtime.cache:[lifespan] Saving prefix cache to /Users/<user>/.cache/rapid-mlx/prefix_cache/ornith-ai--Ornith-1.5-35B-A3B-MLX-4bit--a4c2ed55ba50bb68 (shutdown budget 3.5s, commit headroom 0.4s)
+INFO:rapid_mlx.runtime.cache:[lifespan] No cache to save
+INFO:rapid_mlx.engine.batched:BatchedEngine stopped
+INFO:rapid_mlx.server:Engine stopped
+INFO:     Application shutdown complete.
+INFO:     Finished server process [67557]

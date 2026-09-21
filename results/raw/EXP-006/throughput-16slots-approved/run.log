@@ -1,0 +1,39 @@
+Thu Sep 17 18:05:10 UTC 2026
+expert_cache_slots=16 max_new=64
+vm.swapusage: total = 5120.00M  used = 3458.00M  free = 1662.00M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+System-wide memory free percentage: 75%
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi    44Gi    23%    484k  466M    0%   /
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+2
+[stop=maxTokens prefill=238tok/14.79s new=64tok decode=24.34s tok/s=2.629]
+probe_exit=0
+vm.swapusage: total = 5120.00M  used = 3402.00M  free = 1718.00M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+System-wide memory free percentage: 74%
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi    44Gi    23%    484k  465M    0%   /

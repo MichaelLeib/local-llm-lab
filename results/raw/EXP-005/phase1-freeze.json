@@ -1,0 +1,81 @@
+{
+  "experiment": "EXP-005",
+  "title": "Slipstream + Qwen3.6-35B-A3B practical local Hermes model",
+  "status": "phase1_inspection_resource_gate_native_install_and_first_probe_complete",
+  "observed_at": "2026-09-17",
+  "preservation": {
+    "exp003_preserved": true,
+    "exp004_preserved": true,
+    "hermes_defaults_modified": false,
+    "fast_or_deep_modified": false,
+    "local_model_processes_running": false
+  },
+  "runtime": {
+    "repository": "https://github.com/dwijenpatel/slipstream",
+    "commit": "3a892465729406944778a24064664d817617f558",
+    "commit_date": "2026-09-06T22:04:54-07:00",
+    "source_path": "results/raw/EXP-005/source/slipstream",
+    "package_name": "TurboFieldfare",
+    "products_built": ["slipstream-repack", "slipstream", "slipstream-server"],
+    "source_build_log": "results/raw/EXP-005/build-source.log",
+    "product_build_logs": [
+      "results/raw/EXP-005/build-slipstream-repack.log",
+      "results/raw/EXP-005/build-slipstream.log",
+      "results/raw/EXP-005/build-slipstream-server.log"
+    ],
+    "build_result": "runtime_products_pass;_optional_swiftui_mac_app_fails_without_SwiftUIMacros_under_CLT_only",
+    "test_result": "not_green_under_CLT_only; Swift Testing macros unavailable",
+    "test_log": "results/raw/EXP-005/server-tests.log"
+  },
+  "machine": {
+    "model": "MacBook Air Mac15,13",
+    "soc": "Apple M3",
+    "unified_memory_bytes": 17179869184,
+    "os": "macOS 27.0",
+    "swift": "Apple Swift 6.4",
+    "xcodebuild": "unavailable; active developer directory is Command Line Tools",
+    "free_disk_df_h": "56 GiB",
+    "free_disk_blocks": 59243948,
+    "swap_used_mib": 2350.38,
+    "memory_pressure_free_percent": 60,
+    "model_processes": "none"
+  },
+  "model": {
+    "family": "Qwen3.6-35B-A3B",
+    "source_repo": "mlx-community/Qwen3.6-35B-A3B-4bit",
+    "source_revision": "38740b847e4cb78f352aba30aa41c76e08e6eb46",
+    "source_format": "MLX 4-bit affine safetensors checkpoint; streamed byte ranges",
+    "runtime_format": ".gturbo page-aligned expert layout",
+    "approximate_download_bytes": 19529025048,
+    "installed_bytes": 19546491213,
+    "reserve_bytes": 1073741824,
+    "download_started": true,
+    "download_completed": true,
+    "verification": "manifest_and_verified_install_records_present",
+    "architecture": {
+      "model_type": "qwen3_5_moe",
+      "layers": 40,
+      "experts": 256,
+      "experts_per_token": 8,
+      "hidden_size": 2048,
+      "expert_intermediate_size": 512,
+      "linear_attention_layers": 30,
+      "full_attention_layers": 10,
+      "quantization": "4-bit affine, group size 64; 8-bit router/shared gate tensors",
+      "max_position_embeddings": 262144
+    }
+  },
+  "gate": {
+    "disk": "install_complete_38_gib_free_after_install",
+    "disk_basis": "19.55 GB .gturbo installed; 38 GiB available after installation and source build",
+    "ram_baseline": "non_clean_probe_swap_above_2_gib_no_growth_observed",
+    "api": "OpenAI Chat Completions with SSE and function tools; loopback only",
+    "persistent_kv": "CLI disk snapshot supported; server single-prefix cache is in-process and invalidates on domain/tools/history mismatch",
+    "reuse_existing_qwen_or_ornith": false
+  },
+  "commands": {
+    "clone": "git clone --filter=blob:none --no-checkout https://github.com/dwijenpatel/slipstream.git results/raw/EXP-005/source/slipstream && git checkout --detach 3a892465729406944778a24064664d817617f558",
+    "build_runtime_products": "swift build -c release --product slipstream-repack; swift build -c release --product slipstream; swift build -c release --product slipstream-server",
+    "test_attempt": "swift test -c release --filter TurboFieldfareServerTests"
+  }
+}

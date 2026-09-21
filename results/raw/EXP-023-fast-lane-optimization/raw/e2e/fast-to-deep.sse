@@ -1,0 +1,18 @@
+: keepalive
+
+: keepalive
+
+: keepalive
+
+data: {"event": "message.delta", "run_id": "run_b82fb02d5d9846b086d5d6e29214551e", "timestamp": 1789922176.135628, "delta": "DE"}
+
+data: {"event": "message.delta", "run_id": "run_b82fb02d5d9846b086d5d6e29214551e", "timestamp": 1789922176.251754, "delta": "EP"}
+
+data: {"event": "message.delta", "run_id": "run_b82fb02d5d9846b086d5d6e29214551e", "timestamp": 1789922176.3745449, "delta": "_OK"}
+
+data: {"event": "reasoning.available", "run_id": "run_b82fb02d5d9846b086d5d6e29214551e", "timestamp": 1789922176.6294, "text": "DEEP_OK"}
+
+data: {"event": "run.completed", "run_id": "run_b82fb02d5d9846b086d5d6e29214551e", "timestamp": 1789922176.711275, "output": "DEEP_OK", "usage": {"input_tokens": 14423, "output_tokens": 40, "total_tokens": 14463}}
+
+: stream closed
+

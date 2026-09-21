@@ -1,0 +1,28 @@
+{
+  "command": [
+    "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-009-qwen38-long-context/source/tinytitan-current/.build/release/TinyTitanCLI",
+    "--model",
+    "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/model/qwen3.8-flash-next_125B_A6B_4Bit",
+    "--messages-file",
+    "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-009-qwen38-long-context/arms/phase2-short-16slot-current-7k/messages.json",
+    "--max-new",
+    "256",
+    "--max-context",
+    "8192",
+    "--temperature",
+    "0",
+    "--seed",
+    "12345",
+    "--thinking",
+    "off",
+    "--expert-cache-slots",
+    "16",
+    "--prefill-chunk",
+    "4096"
+  ],
+  "environment": {
+    "TINYTITAN_DECODE_IO_TRACE": "1",
+    "TINYTITAN_KEEP_WIRED": "1",
+    "TINYTITAN_RDADVISE_POLICY": "default"
+  }
+}

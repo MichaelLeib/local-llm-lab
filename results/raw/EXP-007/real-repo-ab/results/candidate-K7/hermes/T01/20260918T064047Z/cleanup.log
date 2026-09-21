@@ -1,0 +1,2 @@
+COMMAND     PID        USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+slipstrea 15858 <user>   10u  IPv4 0xcf7428d7ce4b80dd      0t0  TCP 127.0.0.1:8997 (LISTEN)

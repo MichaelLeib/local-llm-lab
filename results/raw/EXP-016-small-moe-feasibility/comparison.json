@@ -1,0 +1,68 @@
+{
+  "experiment": "EXP-016",
+  "title": "Small-active MoE feasibility tournament",
+  "timestamp_utc": "2026-09-19",
+  "host": {"os": "macOS 27.0 (26A428)", "machine": "Mac15,13 / Apple M3 / 16 GiB", "lanes_before_and_after": "FAST down; DEEP down"},
+  "scope": "Runtime feasibility only; coding and research-quality evaluations were not run.",
+  "candidates": [
+    {
+      "id": "ernie",
+      "source_repo": "baidu/ERNIE-4.5-21B-A3B-Thinking",
+      "source_revision": "4341bb42644d5422859509fa25d41544c57181f8",
+      "architecture": "ernie4_5_moe; 28 layers; hidden 2560; 20 Q / 4 KV heads; 64 routed + 2 shared; top-6",
+      "arms": [
+        {"representation": "community MLX 4-bit", "repo": "qurk41/ERNIE-4.5-21B-A3B-Thinking-mlx-4Bit", "revision": "b59122f1fbe19df1fe939ad4de46763265fc297", "selected_bytes": 12277133662, "status": "rejected-before-inference", "reason": "rapid-mlx projected 17.2 GB working set on 16 GB RAM (162%); warning cited kernel-panic risk"},
+        {"representation": "GGUF Q4_K_M", "repo": "unsloth/ERNIE-4.5-21B-A3B-Thinking-GGUF", "revision": "b1fa62d9e5864da596c78a0fb5cc02e5ffba336c", "file_bytes": 13331018624, "sha256": "9cd7c60d3c30f46e7f539043ec19c7ec8953153f65dd9a2a2748b8e3f589d015", "runtime_commit": "7e1e28cae36d41fe7bbe9dae7c9625de6565c063", "status": "failed-runtime-gate", "reason": "Metal command buffers repeatedly reported Insufficient Memory; llama_decode/graph compute failed; no response"}
+      ],
+      "best_configuration": "None; MLX stopped by projected working-set safety gate, GGUF Q4 stopped by Metal OOM.",
+      "prefill_decode": null,
+      "context": null,
+      "hermes_compatibility": "Not qualified; no API/tool smoke after runtime-gate failure.",
+      "survivor": false
+    },
+    {
+      "id": "instella",
+      "source_repo": "amd/Instella-MoE-16B-A3B-Think",
+      "source_revision": "74d28c1a8425583d7805b58e2caa9c13d6b62929",
+      "architecture": "InstellaMoEForCausalLM / deepseek_v3 model_type; 27 layers; hidden 2048; Gated MLA; FarSkip; 64 routed + 2 shared; top-6",
+      "representation": "GGUF Q4_K_M",
+      "repo": "DevQuasar/amd.Instella-MoE-16B-A3B-Think-GGUF",
+      "revision": "987ee1648d7e4bcb33ab98dfbf4e910b2230c30a",
+      "file_bytes": 10470249600,
+      "sha256": "f776ddfee5dc6c808265c3f0a9c1b384c98058bfa551fe5df656fe712eb4c7f3",
+      "runtime_commit": "7a3c74eb0b5e58bc8cc3949f416fbc2b3959774c",
+      "best_configuration": "llama.cpp instella-moe branch; --cpu-moe --n-gpu-layers 99 --ctx-size 512 --ubatch-size 1",
+      "prefill_decode": {"short_probe": "4-token standalone emitted '<think> First'; footer 0.5 prompt tok/s and 0.5 generation tok/s"},
+      "context": null,
+      "system_health": "A 32-token repeat reached RSS 7,402,672 KB, system free memory 9%, and swap used 9,438.19 MiB; safety-stopped before output.",
+      "hermes_compatibility": "Not qualified; no API/tool smoke after practical-memory failure.",
+      "status": "not-practically-feasible-q4",
+      "survivor": false
+    },
+    {
+      "id": "north",
+      "source_repo": "CohereLabs/North-Mini-Code-1.0",
+      "source_revision": "d11e61a842617a22dc328552fa5bb86231ee4f37",
+      "architecture": "Cohere2MoeForCausalLM / cohere2_moe; 49 layers; hidden 2048; 32 Q / 4 KV heads; 128 experts; top-8; sliding window 4096; source max position 500000",
+      "representation": "unsloth GGUF UD-Q3_K_M fallback after 4-bit gate",
+      "repo": "unsloth/North-Mini-Code-1.0-GGUF",
+      "revision": "e306bb4bf0df610f5471d97a01de2b6e0b24d356",
+      "file": "North-Mini-Code-1.0-UD-Q3_K_M.gguf",
+      "file_bytes": 14213013600,
+      "sha256": "145e185430e31c43221995ac52aed7efbd91f043dbfcdcf297a986f06f7dcee7",
+      "four_bit_gate": {"MXFP4_MOE_bytes": 18662121568, "UD-Q4_K_M_bytes": 19203186784, "decision": "not acquired; both exceed practical 16 GiB envelope observed in earlier arms"},
+      "runtime_commit": "7e1e28cae36d41fe7bbe9dae7c9625de6565c063",
+      "best_configuration": "llama-server --host 127.0.0.1 --port 8926 --no-webui --metrics --jinja -c 4096 -b 64 -ub 1 -np 1 -ngl 0 --cpu-moe --load-mode mmap --no-warmup",
+      "standalone": {"ctx": 256, "gpu_layers": 0, "cpu_moe": true, "prompt_tok_s": 6.7, "generation_tok_s": 11.2, "tokens": 8, "status": "pass"},
+      "server": {"health_http": 200, "idle_rss_observed_kb": 9279536, "first_chat_wall_seconds": 19.572178, "warm_chat_wall_seconds": 1.102300, "warm_cached_prompt_tokens": 116, "server_prompt_tok_s": 13.0999, "server_generation_tok_s": 8.3201},
+      "context": {"prompt_tokens": 2740, "cold_wall_seconds": 179.798339, "cold_completion_tokens": 8, "cold_text_prefix": "NORTH_NEEDLE_7F3", "warm_wall_seconds": 2.326874, "warm_cached_tokens": 2735, "warm_exact_needle": "NORTH_NEEDLE_7F3C", "classification": {"allocatable": true, "completable": true, "correct_on_warm_retry": true, "practically_usable_cold": false, "practically_usable_warm_cached": true}},
+      "hermes_compatibility": {"direct_native_tool_call": "pass", "tool_name": "terminal", "executor_result": "date -u +%Y-%m-%dT%H:%M:%SZ -> 2026-09-19T09:45:55Z", "final_finish_reason": "stop", "full_Hermes_realistic_prompt": "not run; no production configuration changed"},
+      "system_health": "CPU-only server stayed responsive in telemetry; post-stop port unreachable and FAST/DEEP down.",
+      "status": "runtime-survivor-experimental-cpu-only",
+      "survivor": true
+    }
+  ],
+  "survivor_set": ["north / UD-Q3_K_M / llama.cpp CPU-only"],
+  "raw_root": "results/raw/EXP-016-small-moe-feasibility/",
+  "notes": ["All local inference was single-resident and loopback-only.", "No coding or research-quality evaluations were run.", "The direct tool loop is an endpoint compatibility result, not a production Hermes promotion."]
+}

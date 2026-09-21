@@ -1,0 +1,44 @@
+{
+  "route": "deep",
+  "run_id": "run_5ab5fc75f231499b9d37bcffdb94f886",
+  "admission_seconds": 0.265,
+  "total_seconds": 5.179,
+  "events": [
+    {
+      "event": "message.delta",
+      "run_id": "run_5ab5fc75f231499b9d37bcffdb94f886",
+      "timestamp": 1789922225.357468,
+      "delta": "DE"
+    },
+    {
+      "event": "message.delta",
+      "run_id": "run_5ab5fc75f231499b9d37bcffdb94f886",
+      "timestamp": 1789922225.38977,
+      "delta": "EP"
+    },
+    {
+      "event": "message.delta",
+      "run_id": "run_5ab5fc75f231499b9d37bcffdb94f886",
+      "timestamp": 1789922225.500509,
+      "delta": "_OK"
+    },
+    {
+      "event": "reasoning.available",
+      "run_id": "run_5ab5fc75f231499b9d37bcffdb94f886",
+      "timestamp": 1789922225.692585,
+      "text": "DEEP_OK"
+    },
+    {
+      "event": "run.completed",
+      "run_id": "run_5ab5fc75f231499b9d37bcffdb94f886",
+      "timestamp": 1789922225.883601,
+      "output": "DEEP_OK",
+      "usage": {
+        "input_tokens": 14423,
+        "output_tokens": 32,
+        "total_tokens": 14455
+      }
+    }
+  ],
+  "raw_sse": "data: {\"event\": \"message.delta\", \"run_id\": \"run_5ab5fc75f231499b9d37bcffdb94f886\", \"timestamp\": 1789922225.357468, \"delta\": \"DE\"}\n\ndata: {\"event\": \"message.delta\", \"run_id\": \"run_5ab5fc75f231499b9d37bcffdb94f886\", \"timestamp\": 1789922225.38977, \"delta\": \"EP\"}\n\ndata: {\"event\": \"message.delta\", \"run_id\": \"run_5ab5fc75f231499b9d37bcffdb94f886\", \"timestamp\": 1789922225.500509, \"delta\": \"_OK\"}\n\ndata: {\"event\": \"reasoning.available\", \"run_id\": \"run_5ab5fc75f231499b9d37bcffdb94f886\", \"timestamp\": 1789922225.692585, \"text\": \"DEEP_OK\"}\n\ndata: {\"event\": \"run.completed\", \"run_id\": \"run_5ab5fc75f231499b9d37bcffdb94f886\", \"timestamp\": 1789922225.883601, \"output\": \"DEEP_OK\", \"usage\": {\"input_tokens\": 14423, \"output_tokens\": 32, \"total_tokens\": 14455}}\n\n: stream closed\n\n"
+}

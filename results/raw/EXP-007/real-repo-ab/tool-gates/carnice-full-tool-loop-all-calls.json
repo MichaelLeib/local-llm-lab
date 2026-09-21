@@ -1,0 +1,72 @@
+{
+  "first_wall_seconds": 20.7,
+  "first_response": {
+    "object": "chat.completion",
+    "id": "chatcmpl-15863f5c7a8e4290ad074f8bc666bc7e",
+    "choices": [
+      {
+        "finish_reason": "tool_calls",
+        "index": 0,
+        "message": {
+          "tool_calls": [
+            {
+              "function": {
+                "name": "terminal",
+                "arguments": "{\"command\":\"printf AGENT_TOOL_OK\"}"
+              },
+              "id": "call_3867008a3ad24fa0c7530512",
+              "type": "function"
+            }
+          ],
+          "role": "assistant",
+          "content": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 309,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens": 116,
+      "total_tokens": 425
+    },
+    "created": 1789708751,
+    "model": "carnice-exp007"
+  },
+  "executed_tools": [
+    {
+      "id": "call_3867008a3ad24fa0c7530512",
+      "args": {
+        "command": "printf AGENT_TOOL_OK"
+      },
+      "stdout": "AGENT_TOOL_OK",
+      "returncode": 0
+    }
+  ],
+  "second_wall_seconds": 6.657,
+  "second_response": {
+    "object": "chat.completion",
+    "id": "chatcmpl-64ad50bc94544ac4ad11b5112d7a97fe",
+    "choices": [
+      {
+        "message": {
+          "content": "AGENT_TOOL_OK",
+          "role": "assistant"
+        },
+        "finish_reason": "stop",
+        "index": 0
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 443,
+      "prompt_tokens_details": {
+        "cached_tokens": 424
+      },
+      "completion_tokens": 44,
+      "total_tokens": 487
+    },
+    "created": 1789708772,
+    "model": "carnice-exp007"
+  }
+}

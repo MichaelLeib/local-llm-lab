@@ -1,0 +1,108 @@
+=== binaries ===
+
+--- .build/release/TinyTitanRepack ---
+arm64
+Usage:
+  TinyTitanRepack [--model <qwen36|qwen36-8bit|ornith15|ornith15-8bit|qwen36-mtp|qwen38flash|qwen38flash-mtp>] --output <model.gturbo> [--overwrite] [--resume]
+  TinyTitanRepack --input-snapshot <affine-safetensors-dir> --model-id <id> --output <model.gturbo> [--overwrite]
+  TinyTitanRepack --discard-partial --output <model.gturbo>
+  TinyTitanRepack --verify-install --input-gturbo <model.gturbo>
+  TinyTitanRepack --help
+
+The installer streams the selected Qwen 3.6 or text-only Ornith 1.5 checkpoint
+(default: Ornith 8-bit) from Hugging Face and repackages it without materializing
+the source checkpoint on disk. Set HF_TOKEN only if Hugging Face requests
+authentication. A cancelled or interrupted download can be continued with
+--resume or removed with --discard-partial.
+
+--input-snapshot imports a completed local MLX-affine safetensors snapshot.
+It is intended for reproducibly derived sidecars such as Ornith's native MTP
+draft and does not support --resume because no network payload is involved.
+
+--- .build/release/TinyTitanCLI ---
+arm64
+TinyTitanCLI — Qwen3.5-MoE 35B-A3B text generation
+
+usage: TinyTitanCLI --model <dir> (--prompt <string> | --messages-file <path>) [options]
+
+required:
+  --model <dir>             Path to a .gturbo model directory.
+  --prompt <string>         Raw-completion prompt.
+  --messages-file <path>    JSON chat messages with role and content fields.
+
+options:
+  --max-new <int>           Generated-token limit (default 1024).
+  --max-context <int>       Native context limit, 1...262144 (default 262144).
+                            With YaRN: 524288 or 1048576 (default 1048576).
+  --rope-scaling <mode>     Context scaling: none or yarn (default none).
+  --temperature <float>     Sampling temperature (0 = greedy). Default is
+                            the family's: 1.0 for Qwen3.8-Flash-Next,
+                            0.6 elsewhere.
+  --top-k <int>             Top-k truncation, 1...256 (default 20; 0 = off).
+  --top-p <float>           Nucleus truncation (default 0.95).
+  --repetition-penalty <f>  Repetition penalty (default 1.0).
+  --seed <uint64>           Deterministic sampling seed (default off).
+  --stop <string>           Stop substring (repeatable).
+  --rdadvise <mode>         Expert read-ahead advice: off, default,
+                            bounded, or adaptive. The default is
+
+--- .build/release/TinyTitanServer ---
+arm64
+usage: TinyTitanServer --model <completed .gturbo directory> [options]
+       TinyTitanServer --models-dir <dir> --model <id or dir> [options]
+       TinyTitanServer --catalog --models-dir <dir>
+
+  --model <dir>          Required model directory. With --models-dir, the
+                         model loaded first: a catalog id or a directory.
+  --models-dir <dir>     Serve every model under dir -- GPU installs and
+                         CPU snapshots alike -- keeping one resident. A
+                         request naming another catalog model waits for
+                         in-flight generations, unloads the resident model
+                         and loads the named one. /v1/models lists them.
+  --catalog              With --models-dir: print the catalog as JSON and
+                         exit without loading anything.
+  --reasoning <level>    Server-wide reasoning level: off, on, minimal, low,
+                         medium, high, xhigh or max, applied to whichever
+                         model is loaded. A model without that level gets
+                         the closest it has: an effort on an on/off model
+                         is on, on for an effort model is its template's
+                         default effort (extra high for Qwen3.8), off is
+                         always off. Replaces --thinking and
+                         --reasoning-effort, which keep working.
+  --mtp-model <dir>      Optional native Qwen/Ornith MTP sidecar directory.
+  --mtp-memory-mib <MiB> Strict incremental MTP budget, 256...512
+                         (default 384).
+
+--- .build/release/TinyTitanBench ---
+arm64
+/bin/bash: line 31:  8936 Trace/BPT trap: 5       "$p" --help > /tmp/exp006-help-$b.txt 2>&1
+Swift/ErrorType.swift:254: Fatal error: Error raised at top level: Metal function missing in library: dequant_int4_qkv_gemv_simd_--help
+
+=== build warnings ===
+21
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: ContinuityCore: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: ContinuityDemo-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: ContinuityDemo-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitan: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanBench-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanBench-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanCLI-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanCLI-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanCLICore: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanFormat: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanKernelsC: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanMemory: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanRepack-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanRepack-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanRepackCore: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanServer-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanServer-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanServerCore: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: TinyTitanValidationSupport: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: tinytitan-memory-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/Library/Frameworks' not found
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-006/source/tinytitan/Package.swift: tinytitan-memory-product: ld: warning: search path '/Library/Developer/CommandLineTools/Developer/usr/lib' not found
+
+=== disk after build ===
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi    37Gi    26%    484k  389M    0%   /
+/dev/disk3s5     460Gi   399Gi    37Gi    92%    2.8M  389M    1%   /System/Volumes/Data

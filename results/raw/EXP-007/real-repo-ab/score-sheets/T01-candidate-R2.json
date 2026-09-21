@@ -1,0 +1,69 @@
+{
+  "score_sheet_version": "EXP-007-T01-v1",
+  "status": "locked_blind_row",
+  "blind_candidate": "candidate-R2",
+  "task": "T01",
+  "run_directory": "results/raw/EXP-007/real-repo-ab/results/candidate-R2/hermes/T01/20260918T072855Z",
+  "fixture_commit": "a43d24cb624dee4e5ddfb4b0c8f788fd9fd6c8c9",
+  "prompt_sha256": "d8635752d0f2d41b65aa03126e1eb782e8515cc29e3fc2fb4c186fbeca8cd695",
+  "policy": "EXP-007-context-safe-v1",
+  "policy_sha256": "69b37171d15e855ac7c9f5ff8c7096623931dc66242e9920d93d6ebf92a8ad04",
+  "coding_outcome": {
+    "score": 0,
+    "maximum": 70,
+    "acceptance_exit_code": 1,
+    "acceptance": "failed: five unmet T01 checks",
+    "regression_exit_code": 0,
+    "build_exit_code": 0,
+    "candidate_diff_bytes": 0,
+    "classification": "unsolved; no candidate edit"
+  },
+  "agent_execution": {
+    "score": 12,
+    "maximum": 30,
+    "inspection_before_edit": 6,
+    "relevant_efficient_tool_use": 1,
+    "avoided_speculative_edits": 5,
+    "recovered_from_failed_hypothesis": 0,
+    "verified_final_state": 0,
+    "concise_accurate_final_response": 0,
+    "classification": "inspected relevant sources and made no speculative edit, but began with four malformed tool calls, used broad repository discovery, then exhausted context before implementation or final verification"
+  },
+  "context_and_retrieval_discipline": {
+    "initial_prompt_tokens": 4070,
+    "maximum_accumulated_prompt_tokens": 16190,
+    "context_limit": 16384,
+    "completion_allowance": 4096,
+    "context_limit_approached": true,
+    "tool_calls_made": 20,
+    "tool_calls_by_name": {
+      "read_file": 8,
+      "terminal": 12
+    },
+    "cumulative_tool_result_tokens": 10281,
+    "truncated_tool_outputs": 10,
+    "repeated_file_ranges": 0,
+    "repeated_unrefined_searches": 0,
+    "classification": "candidate execution failure; independently exhibits the same context-exhaustion structural limitation as the paired blind arm under the frozen harness"
+  },
+  "resource_and_transport_reliability": {
+    "wall_seconds": 1148.1740601062775,
+    "server_request_count": 24,
+    "completion_tokens": 1702,
+    "agent_process_exit_code": 0,
+    "natural_task_completion": false,
+    "api_error": "HTTP 400 context_length_exceeded",
+    "pre_swap_mib": 1162.88,
+    "post_swap_mib": 1246.31,
+    "swap_delta_mib": 83.43,
+    "swapins_delta": 13129,
+    "swapouts_delta": 18660,
+    "post_run_model_ports_clear": true,
+    "classification": "transport admitted and tools executed, but task did not naturally complete; candidate server cleanup verified"
+  },
+  "unblinding": {
+    "model_identity": "sealed_pending_task_sheet_lock",
+    "eligible_for_unblinding": true,
+    "reason": "both paired blind T01 rows are now written; unblind only through the sealed assignment after the task score sheet is locked"
+  }
+}

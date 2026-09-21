@@ -1,0 +1,114 @@
+{
+  "enabled_toolsets": [
+    "browser",
+    "code_execution",
+    "connections",
+    "cronjob",
+    "delegation",
+    "file",
+    "image_gen",
+    "memory",
+    "session_search",
+    "skills",
+    "terminal",
+    "todo",
+    "vision",
+    "web"
+  ],
+  "schema_count": 23,
+  "schema_chars": 36953,
+  "schemas": [
+    {
+      "name": "delegate_task",
+      "chars": 4383
+    },
+    {
+      "name": "browser_exec",
+      "chars": 3495
+    },
+    {
+      "name": "terminal",
+      "chars": 3341
+    },
+    {
+      "name": "memory",
+      "chars": 3222
+    },
+    {
+      "name": "execute_code",
+      "chars": 3002
+    },
+    {
+      "name": "skill_manage",
+      "chars": 2334
+    },
+    {
+      "name": "search_files",
+      "chars": 2248
+    },
+    {
+      "name": "tool_search",
+      "chars": 1724
+    },
+    {
+      "name": "patch",
+      "chars": 1588
+    },
+    {
+      "name": "browser_vault_list",
+      "chars": 1140
+    },
+    {
+      "name": "read_file",
+      "chars": 1134
+    },
+    {
+      "name": "web_extract",
+      "chars": 1093
+    },
+    {
+      "name": "tool_call",
+      "chars": 963
+    },
+    {
+      "name": "skill_view",
+      "chars": 907
+    },
+    {
+      "name": "browser_vault_fill",
+      "chars": 901
+    },
+    {
+      "name": "write_file",
+      "chars": 878
+    },
+    {
+      "name": "browser_vault_save_login",
+      "chars": 868
+    },
+    {
+      "name": "browser_vault_enter_code",
+      "chars": 833
+    },
+    {
+      "name": "vision_analyze",
+      "chars": 816
+    },
+    {
+      "name": "web_search",
+      "chars": 766
+    },
+    {
+      "name": "browser_vault_unlock",
+      "chars": 551
+    },
+    {
+      "name": "tool_describe",
+      "chars": 476
+    },
+    {
+      "name": "skills_list",
+      "chars": 290
+    }
+  ]
+}

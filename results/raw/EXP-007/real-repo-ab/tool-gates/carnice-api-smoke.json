@@ -1,0 +1,39 @@
+{
+  "http_status": 200,
+  "wall_seconds": 22.289,
+  "request": {
+    "model": "carnice-exp007",
+    "temperature": 0,
+    "max_tokens": 128,
+    "messages": [
+      {
+        "role": "user",
+        "content": "Reply with exactly: PONG"
+      }
+    ]
+  },
+  "response": {
+    "id": "chatcmpl-cc937f3b304042c09b458ba0386d1a22",
+    "usage": {
+      "total_tokens": 132,
+      "prompt_tokens": 16,
+      "completion_tokens": 116,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "choices": [
+      {
+        "message": {
+          "role": "assistant",
+          "content": "PONG"
+        },
+        "index": 0,
+        "finish_reason": "stop"
+      }
+    ],
+    "model": "carnice-exp007",
+    "object": "chat.completion",
+    "created": 1789708498
+  }
+}

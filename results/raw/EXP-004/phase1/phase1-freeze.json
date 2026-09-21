@@ -1,0 +1,104 @@
+{
+  "experiment": "EXP-004",
+  "phase": "phase_1_freeze_and_phase_2_prerequisites",
+  "date": "2026-09-17",
+  "status": "blocked_at_disk_gate_before_model_download",
+  "host": {
+    "model": "MacBook Air Mac15,13",
+    "chip": "Apple M3",
+    "memory_gib": 16,
+    "os": "macOS 27.0 (26A428)",
+    "cores": 8,
+    "swap_used_mib_at_inventory": 1859.44,
+    "free_disk_gib_at_inventory": 20
+  },
+  "exp003_freeze": {
+    "runtime": "isolated kisasexypantera94/llama.cpp moe-expert-residency fork",
+    "runtime_commit": "41ec4c4e94fd5ff6c258691f35f2fcd0d3dde892",
+    "model_repository": "ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+    "model_revision": "12393612fd4f730ff5aadc23e9b8f9648aa49ceb",
+    "model_filename": "Ornith-1.5-35B-Q4_K_M.gguf",
+    "model_bytes": 21713463040,
+    "model_sha256": "42739874cc2ccfdb8523b23fbe52e29b2a7555c8176737ca9ca0b5d59859d41f",
+    "launch": "--host 127.0.0.1 --port 18903 --no-webui -ngl 99 -c 2048 -b 2048 -ub 1 --moe-n-slots 8 --moe-n-layers 40 --no-mmap --no-warmup --parallel 1 --metrics",
+    "eight_slot": {
+      "loaded_idle_gb": 3.307,
+      "active_peak_gb": 3.863,
+      "decode_tok_s": [4.32, 4.95],
+      "user_rating": "0/5 primary; possible brief unrelated 1/5"
+    },
+    "sixteen_slot": {
+      "active_peak_gb": 4.204,
+      "decode_tok_s": 4.43,
+      "user_rating": "Same 0-1/5"
+    },
+    "hermes": {
+      "bridge": "tools/exp003_capture_proxy.py",
+      "protocol": "chat_completions",
+      "native_tool_call": true,
+      "tool": "terminal",
+      "command": "date",
+      "result": "Thu Sep 17 14:02:17 CEST 2026",
+      "full_prompt_tokens": 3332,
+      "full_prompt_prefill_seconds": 773.51,
+      "full_prompt_prefill_tok_s": 4.31,
+      "promotion_decision": "not promoted; protocol correct but interactive latency impractical"
+    }
+  },
+  "expertcache": {
+    "repository": "https://github.com/amos-labs/expertcache",
+    "checkout": "results/raw/EXP-004/source/expertcache",
+    "commit": "e6a3b940a8cd8465be0cd8cdf0f39829ebfa6ade",
+    "manifest_runtime_repository": "https://github.com/ggml-org/llama.cpp.git",
+    "manifest_runtime_revision": "7e1e28cae36d41fe7bbe9dae7c9625de6565c063",
+    "runtime_checkout": "results/raw/EXP-004/source/llama.cpp-expertcache",
+    "runtime_patch_sha256": "6bb978ab189ded46b131edea81fbe0740d7d527797be553f91312e4704f76a63",
+    "runtime_patch_applied": true,
+    "runtime_prepared_without_build": true,
+    "documented_model_repository": "ggml-org/gpt-oss-120b-GGUF",
+    "documented_model_revision": "238abdd290bb874b90a5da1b4549881b7d05c091",
+    "documented_model_filename": "gpt-oss-120b-MXFP4.gguf",
+    "documented_model_bytes": 63387346208,
+    "documented_model_sha256": "582bd40f6886200101f4c4ed9f25f3fe80cc14c86e9e2b37746cd8904a0c622d"
+  },
+  "architecture": {
+    "source": "https://huggingface.co/openai/gpt-oss-120b/raw/main/config.json",
+    "model_type": "gpt_oss",
+    "architecture": "GptOssForCausalLM",
+    "layers": 36,
+    "hidden_size": 2880,
+    "intermediate_size": 2880,
+    "num_local_experts": 128,
+    "experts_per_token": 4,
+    "quant_method": "mxfp4",
+    "context_length": 131072,
+    "layer_pattern": "alternating sliding_attention/full_attention"
+  },
+  "toolchain": {
+    "node": "v26.8.1",
+    "npm": "12.0.2",
+    "python_system": "3.9.6",
+    "python_project": "3.11.16",
+    "numpy_project": "1.26.4",
+    "cmake": "4.4.3",
+    "clang": "Apple clang version 21.0.0",
+    "xcode_tools": "/Library/Developer/CommandLineTools",
+    "npm_check": "pass",
+    "npm_test": "29 passed after project-local .venv NumPy install"
+  },
+  "disk_gate": {
+    "free_gib": 20,
+    "checkpoint_gib_decimal": 63.387346208,
+    "checkpoint_gib_binary": 59.038,
+    "documented_minimum_free_gb": 80,
+    "additional_build_and_temp_space_needed": "not yet measured; runtime source is ~0.31 GiB before build",
+    "decision": "do not download; insufficient free space by approximately 60 GB against documented minimum"
+  },
+  "services_after_inventory": {
+    "fast": "down",
+    "deep": "down",
+    "llama_server": "none",
+    "rapid_mlx": "none",
+    "listeners": []
+  }
+}

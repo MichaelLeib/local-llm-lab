@@ -1,0 +1,10 @@
+hermes_exit_code=0
+--- stdout ---
+The `date` command was executed successfully. Here's the exact output:
+
+```
+Thu Sep 17 15:35:28 CEST 2026
+```
+--- stderr ---
+
+session_id: 20260917_153310_552b27

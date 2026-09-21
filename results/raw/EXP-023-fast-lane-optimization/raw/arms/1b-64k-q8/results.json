@@ -1,0 +1,303 @@
+{
+  "arm": {
+    "name": "1b-64k-q8",
+    "model": "models/minicpm5-1b/MiniCPM5-1B-Q4_K_M.gguf",
+    "context": 65536,
+    "kv_k": "q8_0",
+    "kv_v": "q8_0"
+  },
+  "load_seconds": 3.118,
+  "results": [
+    {
+      "name": "factual",
+      "seconds": 0.3499,
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "Paris"
+            }
+          }
+        ],
+        "created": 1789920999,
+        "model": "minicpm5-2b",
+        "system_fingerprint": "b10964-b29c606e2",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 25,
+          "total_tokens": 27,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "id": "chatcmpl-56xVc9wyNdydz7zFIdiLrTYWxWg8VgFb",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 25,
+          "prompt_ms": 328.297,
+          "prompt_per_token_ms": 13.13188,
+          "prompt_per_second": 76.15055879280041,
+          "predicted_n": 2,
+          "predicted_ms": 17.207,
+          "predicted_per_token_ms": 17.207,
+          "predicted_per_second": 58.11588307084326
+        }
+      }
+    },
+    {
+      "name": "no_think",
+      "seconds": 0.0522,
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "56"
+            }
+          }
+        ],
+        "created": 1789920999,
+        "model": "minicpm5-2b",
+        "system_fingerprint": "b10964-b29c606e2",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 27,
+          "total_tokens": 29,
+          "prompt_tokens_details": {
+            "cached_tokens": 6
+          }
+        },
+        "id": "chatcmpl-ekrPHpF15iyqxM5jeDLOa7zdtPuTSfNE",
+        "timings": {
+          "cache_n": 6,
+          "prompt_n": 21,
+          "prompt_ms": 31.883,
+          "prompt_per_token_ms": 1.5182380952380952,
+          "prompt_per_second": 658.6582191136342,
+          "predicted_n": 2,
+          "predicted_ms": 15.297,
+          "predicted_per_token_ms": 15.297,
+          "predicted_per_second": 65.37229522128521
+        }
+      }
+    },
+    {
+      "name": "think",
+      "seconds": 1.9929,
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "7 times 8 is 56.  \nReason: 7 \u00d7 8 = 56.",
+              "reasoning_content": "We are asked: \"What is 7 times 8? Briefly reason then give the answer.\" So we need to compute 7 \u00d7 8. The answer is 56. We should reason briefly: 7 times 8 means 7 added to itself 8 times, or 8 added to itself 7 times. So 7 \u00d7 8 = 56. We'll provide the answer.\n\nI'll write: 7 times 8 is 56. Reason: 7 \u00d7 8 = 56.\n\nBut the instruction says \"Briefly reason then give the answer.\" So I'll do that.\n\nFinal answer: 56.\n"
+            }
+          }
+        ],
+        "created": 1789921001,
+        "model": "minicpm5-2b",
+        "system_fingerprint": "b10964-b29c606e2",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 158,
+          "prompt_tokens": 26,
+          "total_tokens": 184,
+          "prompt_tokens_details": {
+            "cached_tokens": 12
+          }
+        },
+        "id": "chatcmpl-QVVimIDEDGosQBUWxibkCYD9HMgVw9m9",
+        "timings": {
+          "cache_n": 12,
+          "prompt_n": 14,
+          "prompt_ms": 32.024,
+          "prompt_per_token_ms": 2.2874285714285714,
+          "prompt_per_second": 437.172120909318,
+          "predicted_n": 158,
+          "predicted_ms": 1955.79,
+          "predicted_per_token_ms": 12.457261146496815,
+          "predicted_per_second": 80.27446709513804
+        }
+      }
+    },
+    {
+      "name": "tool",
+      "seconds": 0.6245,
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "tool_calls",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "",
+              "tool_calls": [
+                {
+                  "type": "function",
+                  "function": {
+                    "name": "get_git_status",
+                    "arguments": "{}"
+                  },
+                  "id": "8xnG1CbatFpxZBsHI5eBamQb4Q8JMr4l"
+                }
+              ]
+            }
+          }
+        ],
+        "created": 1789921002,
+        "model": "minicpm5-2b",
+        "system_fingerprint": "b10964-b29c606e2",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 10,
+          "prompt_tokens": 205,
+          "total_tokens": 215,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "id": "chatcmpl-bgQHuVDHPYza90TVyKwihbFXQCm41511",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 205,
+          "prompt_ms": 467.224,
+          "prompt_per_token_ms": 2.2791414634146343,
+          "prompt_per_second": 438.7617074465353,
+          "predicted_n": 10,
+          "predicted_ms": 148.392,
+          "predicted_per_token_ms": 16.488,
+          "predicted_per_second": 60.6501698204755
+        }
+      }
+    },
+    {
+      "name": "structured",
+      "seconds": 0.2111,
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"route\":\"FAST\",\"confidence\":0.9}"
+            }
+          }
+        ],
+        "created": 1789921002,
+        "model": "minicpm5-2b",
+        "system_fingerprint": "b10964-b29c606e2",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 12,
+          "prompt_tokens": 29,
+          "total_tokens": 41,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "id": "chatcmpl-mJOHdyCEPIDar6w3uOAzJdC4wCcUnp4C",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 29,
+          "prompt_ms": 69.368,
+          "prompt_per_token_ms": 2.392,
+          "prompt_per_second": 418.06020066889636,
+          "predicted_n": 12,
+          "predicted_ms": 134.984,
+          "predicted_per_token_ms": 12.271272727272729,
+          "predicted_per_second": 81.49113969062999
+        }
+      }
+    },
+    {
+      "name": "compression",
+      "seconds": 2.0183,
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "I cannot execute the `git status` command or run any system commands, including `git status`, because I am an AI assistant and do not have access to your local environment or the ability to interact with your machine.\n\nAdditionally, I cannot verify your system constraints (such as the \"never run two models\" rule) or check your measurement metrics (like the 47 tokens/s and 1.56GB size) because I do not have access to your specific system configuration or performance data.\n\nTo proceed, please:\n1. Run the `git status` command in your terminal to check your current status.\n2. Provide the details of your system environment (e.g., your operating system, hardware, or the specific Python interpreter you are using).\n\nOnce you provide the necessary information, I can assist you with the analysis or reporting you need."
+            }
+          }
+        ],
+        "created": 1789921004,
+        "model": "minicpm5-2b",
+        "system_fingerprint": "b10964-b29c606e2",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 173,
+          "prompt_tokens": 79,
+          "total_tokens": 252,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "id": "chatcmpl-Tl7PrkDAss2UisqCWFJbo6YclsC7ArjW",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 79,
+          "prompt_ms": 66.746,
+          "prompt_per_token_ms": 0.844886075949367,
+          "prompt_per_second": 1183.5915260839602,
+          "predicted_n": 173,
+          "predicted_ms": 1946.516,
+          "predicted_per_token_ms": 11.316953488372093,
+          "predicted_per_second": 88.36300343793731
+        }
+      }
+    },
+    {
+      "name": "populated_context",
+      "seconds": 39.7246,
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "item7"
+            }
+          }
+        ],
+        "created": 1789921044,
+        "model": "minicpm5-2b",
+        "system_fingerprint": "b10964-b29c606e2",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 3,
+          "prompt_tokens": 22849,
+          "total_tokens": 22852,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        },
+        "id": "chatcmpl-Ou7Jhvo4Hy6hctb1ZwzNsnonXGIt6O0P",
+        "timings": {
+          "cache_n": 0,
+          "prompt_n": 22849,
+          "prompt_ms": 39184.785,
+          "prompt_per_token_ms": 1.7149452930106353,
+          "prompt_per_second": 583.108979671574,
+          "predicted_n": 3,
+          "predicted_ms": 500.596,
+          "predicted_per_token_ms": 250.298,
+          "predicted_per_second": 3.9952376766893862
+        }
+      }
+    }
+  ]
+}

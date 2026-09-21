@@ -1,0 +1,38 @@
+{
+  "model-00001-of-00006.safetensors": {
+    "bytes": 5244130453,
+    "tensor_count": 376,
+    "first_tensor": "lm_head.codebook",
+    "last_tensor": "model.layers.47.self_attn.v_proj.weight"
+  },
+  "model-00002-of-00006.safetensors": {
+    "bytes": 5324823435,
+    "tensor_count": 396,
+    "first_tensor": "model.layers.30.mlp.experts.down_proj.codebook",
+    "last_tensor": "model.layers.39.self_attn.v_proj.weight"
+  },
+  "model-00003-of-00006.safetensors": {
+    "bytes": 5324823473,
+    "tensor_count": 396,
+    "first_tensor": "model.layers.21.mlp.experts.down_proj.codebook",
+    "last_tensor": "model.layers.30.self_attn.v_proj.weight"
+  },
+  "model-00004-of-00006.safetensors": {
+    "bytes": 5324823335,
+    "tensor_count": 396,
+    "first_tensor": "model.layers.12.mlp.experts.down_proj.codebook",
+    "last_tensor": "model.layers.21.self_attn.v_proj.weight"
+  },
+  "model-00005-of-00006.safetensors": {
+    "bytes": 5316638232,
+    "tensor_count": 396,
+    "first_tensor": "model.layers.10.mlp.experts.down_proj.codebook",
+    "last_tensor": "model.layers.9.self_attn.v_proj.weight"
+  },
+  "model-00006-of-00006.safetensors": {
+    "bytes": 2160148385,
+    "tensor_count": 432,
+    "first_tensor": "model.embed_tokens.weight",
+    "last_tensor": "model.norm.weight"
+  }
+}

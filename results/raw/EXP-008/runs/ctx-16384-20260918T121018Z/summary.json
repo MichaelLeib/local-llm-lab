@@ -1,0 +1,838 @@
+{
+  "schema": "exp008.phase1.v1",
+  "experiment": "EXP-008",
+  "started_at": "2026-09-18T10:10:18.254738+00:00",
+  "context": 16384,
+  "fill_fraction": 0.13,
+  "prompt_bytes": 4367,
+  "needle": "EXP008_NEEDLE_AURORA_7391",
+  "config": {
+    "expert_cache_slots": 16,
+    "expert_cache_policy": "lfu-aging",
+    "prefill_chunk": "auto",
+    "temperature": 0,
+    "seed": 12345,
+    "kv": "FP16",
+    "source_commit": "3a892465729406944778a24064664d817617f558"
+  },
+  "baseline": {
+    "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/baseline.json",
+    "collector": {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+        "--experiment",
+        "EXP-008",
+        "--label",
+        "baseline",
+        "--output",
+        "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/baseline.json"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "swap_mib": 990.25,
+    "free_percent": 60.0
+  },
+  "cli": {
+    "command": [
+      "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/source/slipstream/.build/release/slipstream",
+      "--model",
+      "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/model/qwen36.gturbo",
+      "--prompt",
+      " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x\n\nArchive verification marker: EXP008_NEEDLE_AURORA_7391\n\nReply with exactly the archive verification marker.",
+      "--max-new",
+      "16",
+      "--max-context",
+      "16384",
+      "--temperature",
+      "0",
+      "--seed",
+      "12345",
+      "--expert-cache-slots",
+      "16",
+      "--expert-cache-policy",
+      "lfu-aging",
+      "--prefill-chunk",
+      "auto"
+    ],
+    "started_at": "2026-09-18T10:10:18.255246+00:00",
+    "finished_at": "2026-09-18T10:11:02.726267+00:00",
+    "wall_seconds": 44.471,
+    "returncode": 0,
+    "stopped_for_swap": false,
+    "samples": [
+      {
+        "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/cli-sample-0000.json",
+        "collector": {
+          "command": [
+            "/Library/Developer/CommandLineTools/usr/bin/python3",
+            "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+            "--experiment",
+            "EXP-008",
+            "--label",
+            "cli-sample-0000",
+            "--output",
+            "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/cli-sample-0000.json",
+            "--pid",
+            "48865"
+          ],
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        "swap_mib": 990.25,
+        "free_percent": 60.0,
+        "captured_at": "2026-09-18T10:10:20.007721+00:00",
+        "swap_delta_mib": 0.0
+      },
+      {
+        "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/cli-sample-0001.json",
+        "collector": {
+          "command": [
+            "/Library/Developer/CommandLineTools/usr/bin/python3",
+            "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+            "--experiment",
+            "EXP-008",
+            "--label",
+            "cli-sample-0001",
+            "--output",
+            "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/cli-sample-0001.json",
+            "--pid",
+            "48865"
+          ],
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        "swap_mib": 990.25,
+        "free_percent": 40.0,
+        "captured_at": "2026-09-18T10:10:26.213790+00:00",
+        "swap_delta_mib": 0.0
+      },
+      {
+        "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/cli-sample-0002.json",
+        "collector": {
+          "command": [
+            "/Library/Developer/CommandLineTools/usr/bin/python3",
+            "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+            "--experiment",
+            "EXP-008",
+            "--label",
+            "cli-sample-0002",
+            "--output",
+            "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/cli-sample-0002.json",
+            "--pid",
+            "48865"
+          ],
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        "swap_mib": 990.25,
+        "free_percent": 37.0,
+        "captured_at": "2026-09-18T10:10:32.391511+00:00",
+        "swap_delta_mib": 0.0
+      },
+      {
+        "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/cli-sample-0003.json",
+        "collector": {
+          "command": [
+            "/Library/Developer/CommandLineTools/usr/bin/python3",
+            "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+            "--experiment",
+            "EXP-008",
+            "--label",
+            "cli-sample-0003",
+            "--output",
+            "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/cli-sample-0003.json",
+            "--pid",
+            "48865"
+          ],
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        "swap_mib": 990.25,
+        "free_percent": 38.0,
+        "captured_at": "2026-09-18T10:10:38.695401+00:00",
+        "swap_delta_mib": 0.0
+      },
+      {
+        "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/cli-sample-0004.json",
+        "collector": {
+          "command": [
+            "/Library/Developer/CommandLineTools/usr/bin/python3",
+            "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+            "--experiment",
+            "EXP-008",
+            "--label",
+            "cli-sample-0004",
+            "--output",
+            "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/cli-sample-0004.json",
+            "--pid",
+            "48865"
+          ],
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        "swap_mib": 990.25,
+        "free_percent": 33.0,
+        "captured_at": "2026-09-18T10:10:45.002122+00:00",
+        "swap_delta_mib": 0.0
+      },
+      {
+        "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/cli-sample-0005.json",
+        "collector": {
+          "command": [
+            "/Library/Developer/CommandLineTools/usr/bin/python3",
+            "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+            "--experiment",
+            "EXP-008",
+            "--label",
+            "cli-sample-0005",
+            "--output",
+            "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/cli-sample-0005.json",
+            "--pid",
+            "48865"
+          ],
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        "swap_mib": 990.25,
+        "free_percent": 33.0,
+        "captured_at": "2026-09-18T10:10:51.341162+00:00",
+        "swap_delta_mib": 0.0
+      },
+      {
+        "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/cli-sample-0006.json",
+        "collector": {
+          "command": [
+            "/Library/Developer/CommandLineTools/usr/bin/python3",
+            "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+            "--experiment",
+            "EXP-008",
+            "--label",
+            "cli-sample-0006",
+            "--output",
+            "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/cli-sample-0006.json",
+            "--pid",
+            "48865"
+          ],
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        "swap_mib": 990.25,
+        "free_percent": 34.0,
+        "captured_at": "2026-09-18T10:10:57.714539+00:00",
+        "swap_delta_mib": 0.0
+      }
+    ],
+    "footer": {
+      "stop": "maxTokens",
+      "prompt_tokens": 2157,
+      "prefill_seconds": 35.52,
+      "new_tokens": 16,
+      "decode_seconds": 2.9,
+      "decode_tok_s": 5.519
+    },
+    "correctness_contains_needle": false,
+    "stdout_path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/cli.stdout.txt",
+    "stderr_path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/cli.stderr.txt"
+  },
+  "server": {
+    "command": [
+      "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/source/slipstream/.build/release/slipstream-server",
+      "--model",
+      "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/model/qwen36.gturbo",
+      "--model-id",
+      "qwen3.6-35b-a3b-exp008",
+      "--port",
+      "18080",
+      "--max-context",
+      "16384",
+      "--queue-limit",
+      "1",
+      "--prompt-cache-mode",
+      "single-prefix",
+      "--expert-cache-slots",
+      "16",
+      "--expert-cache-policy",
+      "lfu-aging"
+    ],
+    "loaded_idle": {
+      "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-loaded-idle.json",
+      "collector": {
+        "command": [
+          "/Library/Developer/CommandLineTools/usr/bin/python3",
+          "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+          "--experiment",
+          "EXP-008",
+          "--label",
+          "server-loaded-idle",
+          "--output",
+          "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-loaded-idle.json",
+          "--pid",
+          "49017"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "swap_mib": 990.25,
+      "free_percent": 55.0
+    },
+    "requests": [
+      {
+        "request_index": 1,
+        "started_at": "2026-09-18T10:11:06.648136+00:00",
+        "finished_at": "2026-09-18T10:11:51.549050+00:00",
+        "wall_seconds": 44.901,
+        "before": {
+          "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-1-before.json",
+          "collector": {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/python3",
+              "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+              "--experiment",
+              "EXP-008",
+              "--label",
+              "server-request-1-before",
+              "--output",
+              "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-1-before.json",
+              "--pid",
+              "49017"
+            ],
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "swap_mib": 990.25,
+          "free_percent": 55.0
+        },
+        "after": {
+          "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-1-after.json",
+          "collector": {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/python3",
+              "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+              "--experiment",
+              "EXP-008",
+              "--label",
+              "server-request-1-after",
+              "--output",
+              "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-1-after.json",
+              "--pid",
+              "49017"
+            ],
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "swap_mib": 990.25,
+          "free_percent": 50.0
+        },
+        "samples": [
+          {
+            "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-1-sample-0000.json",
+            "collector": {
+              "command": [
+                "/Library/Developer/CommandLineTools/usr/bin/python3",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+                "--experiment",
+                "EXP-008",
+                "--label",
+                "server-request-1-sample-0000",
+                "--output",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-1-sample-0000.json",
+                "--pid",
+                "49017"
+              ],
+              "returncode": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "swap_mib": 990.25,
+            "free_percent": 44.0,
+            "captured_at": "2026-09-18T10:11:07.589731+00:00",
+            "swap_delta_mib": 0.0
+          },
+          {
+            "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-1-sample-0001.json",
+            "collector": {
+              "command": [
+                "/Library/Developer/CommandLineTools/usr/bin/python3",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+                "--experiment",
+                "EXP-008",
+                "--label",
+                "server-request-1-sample-0001",
+                "--output",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-1-sample-0001.json",
+                "--pid",
+                "49017"
+              ],
+              "returncode": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "swap_mib": 990.25,
+            "free_percent": 42.0,
+            "captured_at": "2026-09-18T10:11:13.872288+00:00",
+            "swap_delta_mib": 0.0
+          },
+          {
+            "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-1-sample-0002.json",
+            "collector": {
+              "command": [
+                "/Library/Developer/CommandLineTools/usr/bin/python3",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+                "--experiment",
+                "EXP-008",
+                "--label",
+                "server-request-1-sample-0002",
+                "--output",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-1-sample-0002.json",
+                "--pid",
+                "49017"
+              ],
+              "returncode": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "swap_mib": 990.25,
+            "free_percent": 37.0,
+            "captured_at": "2026-09-18T10:11:20.127642+00:00",
+            "swap_delta_mib": 0.0
+          },
+          {
+            "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-1-sample-0003.json",
+            "collector": {
+              "command": [
+                "/Library/Developer/CommandLineTools/usr/bin/python3",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+                "--experiment",
+                "EXP-008",
+                "--label",
+                "server-request-1-sample-0003",
+                "--output",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-1-sample-0003.json",
+                "--pid",
+                "49017"
+              ],
+              "returncode": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "swap_mib": 990.25,
+            "free_percent": 39.0,
+            "captured_at": "2026-09-18T10:11:26.658055+00:00",
+            "swap_delta_mib": 0.0
+          },
+          {
+            "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-1-sample-0004.json",
+            "collector": {
+              "command": [
+                "/Library/Developer/CommandLineTools/usr/bin/python3",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+                "--experiment",
+                "EXP-008",
+                "--label",
+                "server-request-1-sample-0004",
+                "--output",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-1-sample-0004.json",
+                "--pid",
+                "49017"
+              ],
+              "returncode": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "swap_mib": 990.25,
+            "free_percent": 33.0,
+            "captured_at": "2026-09-18T10:11:32.991774+00:00",
+            "swap_delta_mib": 0.0
+          },
+          {
+            "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-1-sample-0005.json",
+            "collector": {
+              "command": [
+                "/Library/Developer/CommandLineTools/usr/bin/python3",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+                "--experiment",
+                "EXP-008",
+                "--label",
+                "server-request-1-sample-0005",
+                "--output",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-1-sample-0005.json",
+                "--pid",
+                "49017"
+              ],
+              "returncode": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "swap_mib": 990.25,
+            "free_percent": 36.0,
+            "captured_at": "2026-09-18T10:11:39.189861+00:00",
+            "swap_delta_mib": 0.0
+          },
+          {
+            "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-1-sample-0006.json",
+            "collector": {
+              "command": [
+                "/Library/Developer/CommandLineTools/usr/bin/python3",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+                "--experiment",
+                "EXP-008",
+                "--label",
+                "server-request-1-sample-0006",
+                "--output",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-1-sample-0006.json",
+                "--pid",
+                "49017"
+              ],
+              "returncode": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "swap_mib": 990.25,
+            "free_percent": 35.0,
+            "captured_at": "2026-09-18T10:11:45.463223+00:00",
+            "swap_delta_mib": 0.0
+          }
+        ],
+        "stopped_for_swap": false,
+        "response": {
+          "status": 200,
+          "headers": {
+            "content-type": "application/json",
+            "content-length": "342"
+          },
+          "body": "{\"id\":\"chatcmpl-5c029160274e4d768ad0e900a80b7384\",\"model\":\"qwen3.6-35b-a3b-exp008\",\"usage\":{\"prompt_tokens_details\":{\"cached_tokens\":0},\"prompt_tokens\":2167,\"completion_tokens\":16,\"total_tokens\":2183},\"created\":1789726266,\"object\":\"chat.completion\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\"},\"finish_reason\":\"length\"}]}",
+          "json": {
+            "id": "chatcmpl-5c029160274e4d768ad0e900a80b7384",
+            "model": "qwen3.6-35b-a3b-exp008",
+            "usage": {
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "prompt_tokens": 2167,
+              "completion_tokens": 16,
+              "total_tokens": 2183
+            },
+            "created": 1789726266,
+            "object": "chat.completion",
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": ""
+                },
+                "finish_reason": "length"
+              }
+            ]
+          }
+        },
+        "usage": {
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_tokens": 2167,
+          "completion_tokens": 16,
+          "total_tokens": 2183
+        },
+        "correctness_contains_needle": false
+      },
+      {
+        "request_index": 2,
+        "started_at": "2026-09-18T10:11:52.529107+00:00",
+        "finished_at": "2026-09-18T10:12:37.709002+00:00",
+        "wall_seconds": 45.18,
+        "before": {
+          "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-2-before.json",
+          "collector": {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/python3",
+              "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+              "--experiment",
+              "EXP-008",
+              "--label",
+              "server-request-2-before",
+              "--output",
+              "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-2-before.json",
+              "--pid",
+              "49017"
+            ],
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "swap_mib": 990.25,
+          "free_percent": 50.0
+        },
+        "after": {
+          "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-2-after.json",
+          "collector": {
+            "command": [
+              "/Library/Developer/CommandLineTools/usr/bin/python3",
+              "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+              "--experiment",
+              "EXP-008",
+              "--label",
+              "server-request-2-after",
+              "--output",
+              "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-2-after.json",
+              "--pid",
+              "49017"
+            ],
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          },
+          "swap_mib": 990.25,
+          "free_percent": 53.0
+        },
+        "samples": [
+          {
+            "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-2-sample-0000.json",
+            "collector": {
+              "command": [
+                "/Library/Developer/CommandLineTools/usr/bin/python3",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+                "--experiment",
+                "EXP-008",
+                "--label",
+                "server-request-2-sample-0000",
+                "--output",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-2-sample-0000.json",
+                "--pid",
+                "49017"
+              ],
+              "returncode": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "swap_mib": 990.25,
+            "free_percent": 38.0,
+            "captured_at": "2026-09-18T10:11:53.561091+00:00",
+            "swap_delta_mib": 0.0
+          },
+          {
+            "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-2-sample-0001.json",
+            "collector": {
+              "command": [
+                "/Library/Developer/CommandLineTools/usr/bin/python3",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+                "--experiment",
+                "EXP-008",
+                "--label",
+                "server-request-2-sample-0001",
+                "--output",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-2-sample-0001.json",
+                "--pid",
+                "49017"
+              ],
+              "returncode": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "swap_mib": 990.25,
+            "free_percent": 36.0,
+            "captured_at": "2026-09-18T10:11:59.705349+00:00",
+            "swap_delta_mib": 0.0
+          },
+          {
+            "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-2-sample-0002.json",
+            "collector": {
+              "command": [
+                "/Library/Developer/CommandLineTools/usr/bin/python3",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+                "--experiment",
+                "EXP-008",
+                "--label",
+                "server-request-2-sample-0002",
+                "--output",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-2-sample-0002.json",
+                "--pid",
+                "49017"
+              ],
+              "returncode": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "swap_mib": 990.25,
+            "free_percent": 33.0,
+            "captured_at": "2026-09-18T10:12:05.946248+00:00",
+            "swap_delta_mib": 0.0
+          },
+          {
+            "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-2-sample-0003.json",
+            "collector": {
+              "command": [
+                "/Library/Developer/CommandLineTools/usr/bin/python3",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+                "--experiment",
+                "EXP-008",
+                "--label",
+                "server-request-2-sample-0003",
+                "--output",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-2-sample-0003.json",
+                "--pid",
+                "49017"
+              ],
+              "returncode": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "swap_mib": 990.25,
+            "free_percent": 34.0,
+            "captured_at": "2026-09-18T10:12:12.383635+00:00",
+            "swap_delta_mib": 0.0
+          },
+          {
+            "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-2-sample-0004.json",
+            "collector": {
+              "command": [
+                "/Library/Developer/CommandLineTools/usr/bin/python3",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+                "--experiment",
+                "EXP-008",
+                "--label",
+                "server-request-2-sample-0004",
+                "--output",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-2-sample-0004.json",
+                "--pid",
+                "49017"
+              ],
+              "returncode": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "swap_mib": 990.25,
+            "free_percent": 32.0,
+            "captured_at": "2026-09-18T10:12:18.725433+00:00",
+            "swap_delta_mib": 0.0
+          },
+          {
+            "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-2-sample-0005.json",
+            "collector": {
+              "command": [
+                "/Library/Developer/CommandLineTools/usr/bin/python3",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+                "--experiment",
+                "EXP-008",
+                "--label",
+                "server-request-2-sample-0005",
+                "--output",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-2-sample-0005.json",
+                "--pid",
+                "49017"
+              ],
+              "returncode": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "swap_mib": 990.25,
+            "free_percent": 35.0,
+            "captured_at": "2026-09-18T10:12:25.274309+00:00",
+            "swap_delta_mib": 0.0
+          },
+          {
+            "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-2-sample-0006.json",
+            "collector": {
+              "command": [
+                "/Library/Developer/CommandLineTools/usr/bin/python3",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+                "--experiment",
+                "EXP-008",
+                "--label",
+                "server-request-2-sample-0006",
+                "--output",
+                "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/server-request-2-sample-0006.json",
+                "--pid",
+                "49017"
+              ],
+              "returncode": 0,
+              "stdout": "",
+              "stderr": ""
+            },
+            "swap_mib": 990.25,
+            "free_percent": 39.0,
+            "captured_at": "2026-09-18T10:12:31.661623+00:00",
+            "swap_delta_mib": 0.0
+          }
+        ],
+        "stopped_for_swap": false,
+        "response": {
+          "status": 200,
+          "headers": {
+            "content-type": "application/json",
+            "content-length": "342"
+          },
+          "body": "{\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\"},\"finish_reason\":\"length\"}],\"usage\":{\"prompt_tokens_details\":{\"cached_tokens\":0},\"total_tokens\":2183,\"completion_tokens\":16,\"prompt_tokens\":2167},\"object\":\"chat.completion\",\"created\":1789726312,\"id\":\"chatcmpl-37be95359a324ded8a2bf17ae83e14eb\",\"model\":\"qwen3.6-35b-a3b-exp008\"}",
+          "json": {
+            "choices": [
+              {
+                "index": 0,
+                "message": {
+                  "role": "assistant",
+                  "content": ""
+                },
+                "finish_reason": "length"
+              }
+            ],
+            "usage": {
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "total_tokens": 2183,
+              "completion_tokens": 16,
+              "prompt_tokens": 2167
+            },
+            "object": "chat.completion",
+            "created": 1789726312,
+            "id": "chatcmpl-37be95359a324ded8a2bf17ae83e14eb",
+            "model": "qwen3.6-35b-a3b-exp008"
+          }
+        },
+        "usage": {
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "total_tokens": 2183,
+          "completion_tokens": 16,
+          "prompt_tokens": 2167
+        },
+        "correctness_contains_needle": false
+      }
+    ]
+  },
+  "status": "completed",
+  "finished_at": "2026-09-18T10:12:37.860301+00:00",
+  "post_run": {
+    "snapshot": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/post-run.json",
+    "collector": {
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/collect-memory-snapshot.py",
+        "--experiment",
+        "EXP-008",
+        "--label",
+        "post-run",
+        "--output",
+        "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-008/runs/ctx-16384-20260918T121018Z/post-run.json"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "swap_mib": 990.25,
+    "free_percent": 55.0
+  }
+}

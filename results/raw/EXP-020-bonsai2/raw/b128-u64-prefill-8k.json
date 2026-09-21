@@ -1,0 +1,39 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": "We need answer user's request. User"
+      }
+    }
+  ],
+  "created": 1789849239,
+  "model": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-020-bonsai2/models/Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+  "system_fingerprint": "b10709-9a9394a89",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 7537,
+    "total_tokens": 7545,
+    "prompt_tokens_details": {
+      "cached_tokens": 3949
+    }
+  },
+  "id": "chatcmpl-aMRxtAevg4vvfqWbqdeYuAiCvOEjBTwO",
+  "timings": {
+    "cache_n": 3949,
+    "prompt_n": 3588,
+    "prompt_ms": 89525.571,
+    "prompt_per_token_ms": 24.951385451505015,
+    "prompt_per_second": 40.07793482825147,
+    "predicted_n": 8,
+    "predicted_ms": 989.5,
+    "predicted_per_token_ms": 141.35714285714286,
+    "predicted_per_second": 7.074279939363315
+  },
+  "_client_wall_s": 90.532,
+  "_http_status": 200
+}

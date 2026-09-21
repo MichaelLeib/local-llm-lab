@@ -1,0 +1,1 @@
+587572903b789eea1ce2693c2bb7d33b394cab07a947363da3572434f9dc0d35  /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/context-safe-harness/v2/freeze-manifest.json

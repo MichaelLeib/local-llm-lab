@@ -1,0 +1,94 @@
+Query: You are working in an isolated benchmark fixture of HermesMobile.
+
+**Goal:** Fix the reported mobile layout regression.
+
+On narrow iPhones:
+
+1. Focusing any user-editable text input must not trigger Safari's automatic 
+page zoom. This includes the chat composer, model-picker search, and dialog text
+input.
+2. Wide assistant Markdown content (especially comparison tables and long code) 
+must never let the entire chat/thread pane pan horizontally. Wide content may 
+scroll **inside its own intended container**.
+
+Work directly in the repository. Inspect relevant code before editing. Make the 
+smallest maintainable fix, add or adjust deterministic tests if appropriate, and
+run the relevant project checks. Do not start services or change dependencies. 
+Finish with a concise summary of the files changed and exact verification 
+commands/results.
+
+Initializing agent...
+────────────────────────────────────────
+
+  ┊ 🔎 preparing search_files…
+  ┊ 💻 preparing terminal…
+  ┊ 🔎 find      .*  0.2s
+  ┊ 💻 $         ls -la  0.1s
+🔁 Transient RemoteProtocolError on custom — rebuilt client, waiting 6s before one last primary attempt.
+⚠️ custom stream drop (RemoteProtocolError) after 0.1s — reconnecting, retry 2/3
+⚠️ custom stream drop (RemoteProtocolError) after 0.1s — reconnecting, retry 3/3
+❌ Connection to provider failed after 3 attempts. The provider may be experiencing issues — try again in a moment.
+⚠️  API call failed (attempt 1/3): RemoteProtocolError
+   🔌 Provider: custom  Model: candidate-K7
+   🌐 Endpoint: http://127.0.0.1:8996/v1
+   📝 Error: peer closed connection without sending complete message body (incomplete chunked read)
+   ⏱️  Elapsed: 0.18s  Context: 5 msgs, ~4,781 tokens
+⏳ Retrying in 2.1s (attempt 1/3)...
+⚠️ custom stream drop (RemoteProtocolError) after 0.1s — reconnecting, retry 2/3
+⚠️ custom stream drop (RemoteProtocolError) after 0.1s — reconnecting, retry 3/3
+❌ Connection to provider failed after 3 attempts. The provider may be experiencing issues — try again in a moment.
+⚠️  API call failed (attempt 2/3): RemoteProtocolError
+   🔌 Provider: custom  Model: candidate-K7
+   🌐 Endpoint: http://127.0.0.1:8996/v1
+   📝 Error: peer closed connection without sending complete message body (incomplete chunked read)
+   ⏱️  Elapsed: 2.62s  Context: 5 msgs, ~4,781 tokens
+⏳ Retrying in 4.4s (attempt 2/3)...
+⚠️ custom stream drop (RemoteProtocolError) after 0.1s — reconnecting, retry 2/3
+⚠️ custom stream drop (RemoteProtocolError) after 0.1s — reconnecting, retry 3/3
+❌ Connection to provider failed after 3 attempts. The provider may be experiencing issues — try again in a moment.
+⚠️  API call failed (attempt 3/3): RemoteProtocolError
+   🔌 Provider: custom  Model: candidate-K7
+   🌐 Endpoint: http://127.0.0.1:8996/v1
+   📝 Error: peer closed connection without sending complete message body (incomplete chunked read)
+   ⏱️  Elapsed: 7.30s  Context: 5 msgs, ~4,781 tokens
+⚠️ custom stream drop (RemoteProtocolError) after 0.1s — reconnecting, retry 2/3
+⚠️ custom stream drop (RemoteProtocolError) after 0.1s — reconnecting, retry 3/3
+❌ Connection to provider failed after 3 attempts. The provider may be experiencing issues — try again in a moment.
+⚠️  API call failed (attempt 1/3): RemoteProtocolError
+   🔌 Provider: custom  Model: candidate-K7
+   🌐 Endpoint: http://127.0.0.1:8996/v1
+   📝 Error: peer closed connection without sending complete message body (incomplete chunked read)
+   ⏱️  Elapsed: 13.50s  Context: 5 msgs, ~4,781 tokens
+⏳ Retrying in 2.5s (attempt 1/3)...
+⚠️ custom stream drop (RemoteProtocolError) after 0.1s — reconnecting, retry 2/3
+⚠️ custom stream drop (RemoteProtocolError) after 0.1s — reconnecting, retry 3/3
+❌ Connection to provider failed after 3 attempts. The provider may be experiencing issues — try again in a moment.
+⚠️  API call failed (attempt 2/3): RemoteProtocolError
+   🔌 Provider: custom  Model: candidate-K7
+   🌐 Endpoint: http://127.0.0.1:8996/v1
+   📝 Error: peer closed connection without sending complete message body (incomplete chunked read)
+   ⏱️  Elapsed: 16.34s  Context: 5 msgs, ~4,781 tokens
+⏳ Retrying in 4.6s (attempt 2/3)...
+⚠️ custom stream drop (RemoteProtocolError) after 0.1s — reconnecting, retry 2/3
+⚠️ custom stream drop (RemoteProtocolError) after 0.1s — reconnecting, retry 3/3
+❌ Connection to provider failed after 3 attempts. The provider may be experiencing issues — try again in a moment.
+⚠️  API call failed (attempt 3/3): RemoteProtocolError
+   🔌 Provider: custom  Model: candidate-K7
+   🌐 Endpoint: http://127.0.0.1:8996/v1
+   📝 Error: peer closed connection without sending complete message body (incomplete chunked read)
+   ⏱️  Elapsed: 21.24s  Context: 5 msgs, ~4,781 tokens
+❌ API failed after 3 retries — peer closed connection without sending complete message body (incomplete chunked read)
+   💀 Final error: peer closed connection without sending complete message body (incomplete chunked read)
+ ─  ☤ Hermes  ───────────────────────────────────────────────────────────────── 
+                                                                                
+ API call failed after 3 retries: peer closed connection without sending        
+ complete message body (incomplete chunked read)                                
+                                                                                
+ ────────────────────────────────────────────────────────────────────────────── 
+
+Resume this session with:
+  hermes --resume 20260918_082410_e68260 -p exp007bench
+
+Session:        20260918_082410_e68260
+Duration:       1m 52s
+Messages:       4 (1 user, 3 tool calls)

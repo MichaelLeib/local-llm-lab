@@ -1,0 +1,4 @@
+data: {"event": "run.failed", "run_id": "run_e72f9a00c8dc4d8faa49ceda66c01478", "timestamp": 1789916185.544459, "error": "Model minicpm5-2b has a context window of 8,192 tokens, which is below the minimum 64,000 required by Hermes Agent.  Choose a model with at least 64K context.  If your server reports a window smaller than the model's true window, set model.context_length in config.yaml to the real value (this must be at least 64K)."}
+
+: stream closed
+

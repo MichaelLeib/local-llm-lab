@@ -1,0 +1,65 @@
+{
+  "experiment": "EXP-014",
+  "hypothesis": "Qwen3.6 cache slots/policy can beat 16-slot baseline without unsafe swap growth.",
+  "runtime_commit": "3a892465729406944778a24064664d817617f558",
+  "model": "mlx-community/Qwen3.6-35B-A3B-4bit@38740b847e4cb78f352aba30aa41c76e08e6eb46 / EXP-005 qwen36.gturbo",
+  "initial": {
+    "at": "2026-09-19T07:18:50.482566+00:00",
+    "label": "initial",
+    "swap_mib": 1811.25,
+    "free_percent": 27.74
+  },
+  "results": [
+    {
+      "slots": 16,
+      "policy": "lfu-aging",
+      "command": [
+        "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Products/Release/slipstream-server",
+        "--model",
+        "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/model/qwen36.gturbo",
+        "--port",
+        "8914",
+        "--max-context",
+        "8192",
+        "--prompt-cache-mode",
+        "off",
+        "--expert-cache-slots",
+        "16",
+        "--expert-cache-policy",
+        "lfu-aging"
+      ],
+      "before": {
+        "at": "2026-09-19T07:18:50.488653+00:00",
+        "label": "before",
+        "swap_mib": 1811.25,
+        "free_percent": 27.74
+      },
+      "after": {
+        "at": "2026-09-19T07:18:55.577920+00:00",
+        "label": "after-request",
+        "swap_mib": 1811.25,
+        "free_percent": 0.44
+      },
+      "server_ready": true,
+      "server_samples": [
+        {
+          "at": "2026-09-19T07:18:55.560552+00:00",
+          "label": "request-sample",
+          "swap_mib": 1811.25,
+          "free_percent": 0.41,
+          "ps": "  PID    RSS ELAPSED COMMAND\n29187 386016   00:05 /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/source/slipstream/.build/out/Products/Release/slipstream-server --model /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/model/qwen36.gturbo --port 8914 --max-context 8192 --prompt-cache-mode off --expert-cache-slots 16 --expert-cache-policy lfu-aging\n",
+          "elapsed_s": 3.022
+        }
+      ],
+      "curl_returncode": -15,
+      "stopped_by_guard": true,
+      "wall_s": 3.557,
+      "response": "",
+      "server_stderr": "cancelled in-flight generation: client closed the connection\n"
+    }
+  ],
+  "safety": {
+    "max_incremental_swap_mib": 256.0,
+    "minimum_free_percent": 15
+  }
+}

@@ -1,0 +1,2 @@
+f9cdf245fb7b832f1996dd776b321d4ae1f23b6d88c380100f636742c3a980ff  /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-020-bonsai2/raw/prism-llama-macos-arm64.tar.gz
+1ad69ebaada923760c52c1dc50daf198a22c2adb4a9dcccd25779fa7079f353b  /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-020-bonsai2/bin/llama-prism-b10709-9a9394a/llama-server

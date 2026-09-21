@@ -1,0 +1,10 @@
+HEAD=9c03db58d86e7ac35917ee3f05cf58fbab97f666
+.build/release/TinyTitanCLI: Mach-O 64-bit executable arm64
+arm64
+0a0d2983d4ae9f39888f21d1d390c6641dc7d7e84ce8fb0d6af283fe9fc39920  .build/release/TinyTitanCLI
+.build/release/TinyTitanServer: Mach-O 64-bit executable arm64
+arm64
+1ff5b1be9501b045d2014ca307204f30625f05bb8109c35ce8f873d2c721aed5  .build/release/TinyTitanServer
+.build/release/TinyTitanRepack: Mach-O 64-bit executable arm64
+arm64
+8ae06a03b02845759f3eeecc62e34d3d19bd01286e73a04eb936dc193be8d135  .build/release/TinyTitanRepack

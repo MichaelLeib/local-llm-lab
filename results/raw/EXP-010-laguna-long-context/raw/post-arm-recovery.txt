@@ -1,0 +1,9 @@
+Fri Sep 18 13:44:11 UTC 2026
+FAST: down
+DEEP: down
+  vm.swapusage: total = 5120.00M  used = 3406.94M  free = 1713.06M  (encrypted)
+vm.swapusage: total = 5120.00M  used = 3406.94M  free = 1713.06M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+System-wide memory free percentage: 71%
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi   4.2Gi    76%    484k   44M    1%   /

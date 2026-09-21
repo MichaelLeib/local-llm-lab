@@ -1,0 +1,527 @@
+[
+  {
+    "seconds": 0.103,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "Paris"
+          }
+        }
+      ],
+      "created": 1789914941,
+      "model": "minicpm5-2b-q4km",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 25,
+        "total_tokens": 27,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "id": "chatcmpl-fFUJAXocWNLg7w55bOzWYFNZaI4OOY8n",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 25,
+        "prompt_ms": 77.52,
+        "prompt_per_token_ms": 3.1008,
+        "prompt_per_second": 322.4974200206399,
+        "predicted_n": 2,
+        "predicted_ms": 20.352,
+        "predicted_per_token_ms": 20.352,
+        "predicted_per_second": 49.13522012578616
+      }
+    },
+    "name": "basic_capital",
+    "expect": "Paris",
+    "content": "Paris",
+    "tool_names": []
+  },
+  {
+    "seconds": 0.74,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "tool_calls",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "terminal",
+                  "arguments": "{\"command\":\"git branch\"}"
+                },
+                "id": "zjrNPIRX4TL6phd9qr4jjaMytMzEpagR"
+              }
+            ]
+          }
+        }
+      ],
+      "created": 1789914942,
+      "model": "minicpm5-2b-q4km",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 15,
+        "prompt_tokens": 281,
+        "total_tokens": 296,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "id": "chatcmpl-SQkg8LISXTCEQJ1UtWmtZqfWVhnPS90C",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 281,
+        "prompt_ms": 457.81,
+        "prompt_per_token_ms": 1.6292170818505338,
+        "prompt_per_second": 613.7917476682467,
+        "predicted_n": 15,
+        "predicted_ms": 278.756,
+        "predicted_per_token_ms": 19.911142857142856,
+        "predicted_per_second": 50.22313421056408
+      }
+    },
+    "name": "branch_tool",
+    "expect": "terminal",
+    "content": "",
+    "tool_names": [
+      "terminal"
+    ]
+  },
+  {
+    "seconds": 0.355,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "tool_calls",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "terminal",
+                  "arguments": "{\"command\":\"git status\"}"
+                },
+                "id": "yLoK4qKo1Ok7wY6PDkGpGUmeF0LfjYGM"
+              }
+            ]
+          }
+        }
+      ],
+      "created": 1789914942,
+      "model": "minicpm5-2b-q4km",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 15,
+        "prompt_tokens": 285,
+        "total_tokens": 300,
+        "prompt_tokens_details": {
+          "cached_tokens": 259
+        }
+      },
+      "id": "chatcmpl-ZMlwTcMNsczwvOsBvJEbzsxdXmft8cyB",
+      "timings": {
+        "cache_n": 259,
+        "prompt_n": 26,
+        "prompt_ms": 69.881,
+        "prompt_per_token_ms": 2.687730769230769,
+        "prompt_per_second": 372.06107525650754,
+        "predicted_n": 15,
+        "predicted_ms": 278.948,
+        "predicted_per_token_ms": 19.924857142857142,
+        "predicted_per_second": 50.18856561079485
+      }
+    },
+    "name": "status_tool",
+    "expect": "terminal",
+    "content": "",
+    "tool_names": [
+      "terminal"
+    ]
+  },
+  {
+    "seconds": 0.51,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "tool_calls",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "terminal",
+                  "arguments": "{\"command\":\"grep -r \\\"_handle_runs\\\" .\"}"
+                },
+                "id": "17Igj7wTsIeAZ0gOYNWVHKgFRgYhDADQ"
+              }
+            ]
+          }
+        }
+      ],
+      "created": 1789914943,
+      "model": "minicpm5-2b-q4km",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 23,
+        "prompt_tokens": 284,
+        "total_tokens": 307,
+        "prompt_tokens_details": {
+          "cached_tokens": 259
+        }
+      },
+      "id": "chatcmpl-HK9reKxoG4QvOiiWSBjXBZUYFUY1IBdQ",
+      "timings": {
+        "cache_n": 259,
+        "prompt_n": 25,
+        "prompt_ms": 69.583,
+        "prompt_per_token_ms": 2.78332,
+        "prompt_per_second": 359.28315824267423,
+        "predicted_n": 23,
+        "predicted_ms": 433.747,
+        "predicted_per_token_ms": 19.71577272727273,
+        "predicted_per_second": 50.72081190186906
+      }
+    },
+    "name": "symbol_tool",
+    "expect": "terminal",
+    "content": "",
+    "tool_names": [
+      "terminal"
+    ]
+  },
+  {
+    "seconds": 0.491,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "tool_calls",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "terminal",
+                  "arguments": "{\"command\":\"netstat -an | grep 8901\"}"
+                },
+                "id": "k2aamvFlprmj8bwCaCC3EYhceRjMMVpG"
+              }
+            ]
+          }
+        }
+      ],
+      "created": 1789914943,
+      "model": "minicpm5-2b-q4km",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 22,
+        "prompt_tokens": 282,
+        "total_tokens": 304,
+        "prompt_tokens_details": {
+          "cached_tokens": 259
+        }
+      },
+      "id": "chatcmpl-G8dX1h5y7H9CRfYWwLP72ydiS0xQE3jR",
+      "timings": {
+        "cache_n": 259,
+        "prompt_n": 23,
+        "prompt_ms": 69.567,
+        "prompt_per_token_ms": 3.024652173913043,
+        "prompt_per_second": 330.61652795147126,
+        "predicted_n": 22,
+        "predicted_ms": 415.678,
+        "predicted_per_token_ms": 19.794190476190476,
+        "predicted_per_second": 50.51987355597362
+      }
+    },
+    "name": "port_tool",
+    "expect": "terminal",
+    "content": "",
+    "tool_names": [
+      "terminal"
+    ]
+  },
+  {
+    "seconds": 2.129,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "A \"connection refused\" error means the server is not running or is not listening on the requested port. When you try to connect to a localhost HTTP server (usually on port 80) and get this error, it indicates that the operating system did not accept the connection because no process was actively listening on that port. Unlike a \"connection timeout,\" which means the server is down but you might still reach it, a \"refused\" connection means the server is up but not accepting connections on that specific port."
+          }
+        }
+      ],
+      "created": 1789914945,
+      "model": "minicpm5-2b-q4km",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 105,
+        "prompt_tokens": 29,
+        "total_tokens": 134,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "id": "chatcmpl-YoRVRHaVBSXuX7FHR4dm5VnZfMXfUpWz",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 29,
+        "prompt_ms": 69.896,
+        "prompt_per_token_ms": 2.410206896551724,
+        "prompt_per_second": 414.9021403227652,
+        "predicted_n": 105,
+        "predicted_ms": 2052.63,
+        "predicted_per_token_ms": 19.736826923076926,
+        "predicted_per_second": 50.66670564105562
+      }
+    },
+    "name": "error_explain",
+    "expect": "refused",
+    "content": "A \"connection refused\" error means the server is not running or is not listening on the requested port. When you try to connect to a localhost HTTP server (usually on port 80) and get this error, it indicates that the operating system did not accept the connection because no process was actively listening on that port. Unlike a \"connection timeout,\" which means the server is down but you might still reach it, a \"refused\" connection means the server is up but not accepting connections on that specific port.",
+    "tool_names": []
+  },
+  {
+    "seconds": 0.4,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "tool_calls",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "web_search",
+                  "arguments": "{\"query\":\"official current Python release\"}"
+                },
+                "id": "4fMktWAQe9bxHlL66XYSQYPKxRW5c1B9"
+              }
+            ]
+          }
+        }
+      ],
+      "created": 1789914946,
+      "model": "minicpm5-2b-q4km",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 18,
+        "prompt_tokens": 282,
+        "total_tokens": 300,
+        "prompt_tokens_details": {
+          "cached_tokens": 259
+        }
+      },
+      "id": "chatcmpl-L9sBdR4ZgBBKMeVhPnqOhpaLmVgQJQoX",
+      "timings": {
+        "cache_n": 259,
+        "prompt_n": 23,
+        "prompt_ms": 68.973,
+        "prompt_per_token_ms": 2.9988260869565218,
+        "prompt_per_second": 333.46381917561945,
+        "predicted_n": 18,
+        "predicted_ms": 325.748,
+        "predicted_per_token_ms": 19.16164705882353,
+        "predicted_per_second": 52.18758058376414
+      }
+    },
+    "name": "current_research_tool",
+    "expect": "web_search",
+    "content": "",
+    "tool_names": [
+      "web_search"
+    ]
+  },
+  {
+    "seconds": 0.189,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "FAST"
+          }
+        }
+      ],
+      "created": 1789914946,
+      "model": "minicpm5-2b-q4km",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 84,
+        "total_tokens": 86,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "id": "chatcmpl-pQ7eXi2oiant4ZLesA6UFMkPcSmE4vey",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 84,
+        "prompt_ms": 160.49,
+        "prompt_per_token_ms": 1.9105952380952382,
+        "prompt_per_second": 523.3970963922985,
+        "predicted_n": 2,
+        "predicted_ms": 23.387,
+        "predicted_per_token_ms": 23.387,
+        "predicted_per_second": 42.75879762261085
+      }
+    },
+    "name": "route_fast",
+    "content": "FAST"
+  },
+  {
+    "seconds": 0.096,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "FAST"
+          }
+        }
+      ],
+      "created": 1789914946,
+      "model": "minicpm5-2b-q4km",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 95,
+        "total_tokens": 97,
+        "prompt_tokens_details": {
+          "cached_tokens": 67
+        }
+      },
+      "id": "chatcmpl-qPZYAOOnqoelK2R5acR3ofkJiTJsw4Gg",
+      "timings": {
+        "cache_n": 67,
+        "prompt_n": 28,
+        "prompt_ms": 69.201,
+        "prompt_per_token_ms": 2.4714642857142857,
+        "prompt_per_second": 404.61843036950336,
+        "predicted_n": 2,
+        "predicted_ms": 22.861,
+        "predicted_per_token_ms": 22.861,
+        "predicted_per_second": 43.742618433139405
+      }
+    },
+    "name": "route_think",
+    "content": "FAST"
+  },
+  {
+    "seconds": 0.212,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "FAST"
+          }
+        }
+      ],
+      "created": 1789914946,
+      "model": "minicpm5-2b-q4km",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 99,
+        "total_tokens": 101,
+        "prompt_tokens_details": {
+          "cached_tokens": 67
+        }
+      },
+      "id": "chatcmpl-DlzIke0EvJrQWCLLxwIGGG1f9UhfcN4A",
+      "timings": {
+        "cache_n": 67,
+        "prompt_n": 32,
+        "prompt_ms": 188.301,
+        "prompt_per_token_ms": 5.88440625,
+        "prompt_per_second": 169.94068008135912,
+        "predicted_n": 2,
+        "predicted_ms": 20.713,
+        "predicted_per_token_ms": 20.713,
+        "predicted_per_second": 48.27885868778062
+      }
+    },
+    "name": "route_deep",
+    "content": "FAST"
+  },
+  {
+    "seconds": 3.917,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "- Keep gateway loopback-only.\n- Use port 8901 for FAST and port 8919 for Ornith.\n- Do not delete model files or alter production data.\n- Preserve X-Hermes-Session-Key when calling /v1/runs.\n- Unresolved TODO: test recovery after restarting fast server.\n- Command: hermes-local-model start fast.\n- Error: ECONNREFUSED 127.0.0.1:8901.\n- Measurement: Ornith Q6_K decode 12.4-12.7 tok/s; warm session 4.7 seconds at 99% cache.\n- Preference: user wants Auto default with Fast and Deep manual escape hatches.\n- Files: /Users/<user>/.hermes/bin/hermes-local-model and HermesMobile/src/app/core/run-gateway-impl.ts."
+          }
+        }
+      ],
+      "created": 1789914950,
+      "model": "minicpm5-2b-q4km",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 177,
+        "prompt_tokens": 238,
+        "total_tokens": 415,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "id": "chatcmpl-F3MuIyc7mbb90wk0z2ghsx7bYy8BMr64",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 238,
+        "prompt_ms": 406.198,
+        "prompt_per_token_ms": 1.7067142857142856,
+        "prompt_per_second": 585.9211517535783,
+        "predicted_n": 177,
+        "predicted_ms": 3507.554,
+        "predicted_per_token_ms": 19.929284090909093,
+        "predicted_per_second": 50.17741708324376
+      }
+    },
+    "name": "compression_preservation",
+    "content": "- Keep gateway loopback-only.\n- Use port 8901 for FAST and port 8919 for Ornith.\n- Do not delete model files or alter production data.\n- Preserve X-Hermes-Session-Key when calling /v1/runs.\n- Unresolved TODO: test recovery after restarting fast server.\n- Command: hermes-local-model start fast.\n- Error: ECONNREFUSED 127.0.0.1:8901.\n- Measurement: Ornith Q6_K decode 12.4-12.7 tok/s; warm session 4.7 seconds at 99% cache.\n- Preference: user wants Auto default with Fast and Deep manual escape hatches.\n- Files: /Users/<user>/.hermes/bin/hermes-local-model and HermesMobile/src/app/core/run-gateway-impl.ts."
+  }
+]

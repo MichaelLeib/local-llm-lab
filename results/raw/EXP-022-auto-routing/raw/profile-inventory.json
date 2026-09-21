@@ -1,0 +1,1396 @@
+[
+  {
+    "profile": "default",
+    "main": {
+      "default": "fast-local",
+      "provider": "local-fast",
+      "base_url": "https://chatgpt.com/backend-api/codex",
+      "api_mode": "codex_responses",
+      "context_length": null
+    },
+    "reasoning_effort": "medium",
+    "compression": {
+      "enabled": true,
+      "checkpoint_required": false,
+      "progress_notices": false,
+      "threshold": 0.35,
+      "target_ratio": 0.2,
+      "protect_last_n": 20,
+      "min_tail_user_messages": 1,
+      "max_attempts": 3,
+      "proactive_prune_tokens": 0,
+      "proactive_prune_min_result_chars": 8000,
+      "proactive_prune_min_reclaim_tokens": 4096,
+      "context_timeout_seconds": 240,
+      "context_total_ceiling_seconds": 900,
+      "protect_first_n": 3,
+      "codex_gpt55_autoraise": true,
+      "codex_app_server_auto": "native",
+      "codex_responses_native": false,
+      "codex_responses_compact_threshold": 200000,
+      "idle_compact_after_seconds": 0
+    },
+    "delegation": {
+      "max_iterations": 250
+    },
+    "auxiliary": {
+      "title_generation": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "compression": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "session_search": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "profile_describer": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "mcp": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      }
+    },
+    "custom_providers": [
+      {
+        "name": "local-fast",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "models": {
+          "hermes-fast": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-deep",
+        "base_url": "http://127.0.0.1:8902/v1",
+        "models": {
+          "hermes-deep": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-minicpm",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "models": {
+          "minicpm5-2b": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-ornith",
+        "base_url": "http://127.0.0.1:8919/v1",
+        "models": {
+          "ornith-q6": {
+            "context_length": 65536
+          }
+        }
+      }
+    ]
+  },
+  {
+    "profile": "lllmtinkering",
+    "main": {
+      "default": "gpt-5.6-terra",
+      "provider": "openai-codex",
+      "base_url": "https://chatgpt.com/backend-api/codex",
+      "api_mode": "codex_responses",
+      "context_length": null
+    },
+    "reasoning_effort": "high",
+    "compression": {
+      "enabled": true,
+      "checkpoint_required": false,
+      "progress_notices": false,
+      "threshold": 0.5,
+      "target_ratio": 0.2,
+      "protect_last_n": 20,
+      "min_tail_user_messages": 1,
+      "max_attempts": 3,
+      "proactive_prune_tokens": 0,
+      "proactive_prune_min_result_chars": 8000,
+      "proactive_prune_min_reclaim_tokens": 4096,
+      "context_timeout_seconds": 240,
+      "context_total_ceiling_seconds": 900,
+      "protect_first_n": 3,
+      "codex_gpt55_autoraise": true,
+      "codex_app_server_auto": "native",
+      "codex_responses_native": false,
+      "codex_responses_compact_threshold": 200000,
+      "idle_compact_after_seconds": 0
+    },
+    "delegation": {
+      "max_iterations": 250
+    },
+    "auxiliary": {
+      "title_generation": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "compression": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "session_search": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "profile_describer": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "mcp": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      }
+    },
+    "custom_providers": [
+      {
+        "name": "local-fast",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "models": {
+          "hermes-fast": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-deep",
+        "base_url": "http://127.0.0.1:8902/v1",
+        "models": {
+          "hermes-deep": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-minicpm",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "models": {
+          "minicpm5-2b": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-ornith",
+        "base_url": "http://127.0.0.1:8919/v1",
+        "models": {
+          "ornith-q6": {
+            "context_length": 65536
+          }
+        }
+      }
+    ]
+  },
+  {
+    "profile": "local-bonsai",
+    "main": {
+      "default": "bonsai-ptq1",
+      "provider": "custom",
+      "base_url": "http://127.0.0.1:8920/v1",
+      "api_mode": "chat_completions",
+      "context_length": 65536
+    },
+    "reasoning_effort": "medium",
+    "compression": {
+      "enabled": true,
+      "checkpoint_required": false,
+      "progress_notices": false,
+      "threshold": 0.5,
+      "target_ratio": 0.2,
+      "protect_last_n": 20,
+      "min_tail_user_messages": 1,
+      "max_attempts": 3,
+      "proactive_prune_tokens": 0,
+      "proactive_prune_min_result_chars": 8000,
+      "proactive_prune_min_reclaim_tokens": 4096,
+      "context_timeout_seconds": 240,
+      "context_total_ceiling_seconds": 900,
+      "protect_first_n": 3,
+      "codex_gpt55_autoraise": true,
+      "codex_app_server_auto": "native",
+      "codex_responses_native": false,
+      "codex_responses_compact_threshold": 200000,
+      "idle_compact_after_seconds": 0
+    },
+    "delegation": {
+      "max_iterations": 250
+    },
+    "auxiliary": {
+      "title_generation": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "compression": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "session_search": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "profile_describer": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "mcp": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      }
+    },
+    "custom_providers": [
+      {
+        "name": "local-fast",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "models": {
+          "hermes-fast": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-deep",
+        "base_url": "http://127.0.0.1:8902/v1",
+        "models": {
+          "hermes-deep": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-minicpm",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "models": {
+          "minicpm5-2b": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-ornith",
+        "base_url": "http://127.0.0.1:8919/v1",
+        "models": {
+          "ornith-q6": {
+            "context_length": 65536
+          }
+        }
+      }
+    ]
+  },
+  {
+    "profile": "local-dev",
+    "main": {
+      "default": "fast-local",
+      "provider": "custom",
+      "base_url": "http://127.0.0.1:8901/v1",
+      "api_mode": "codex_responses",
+      "context_length": 65536
+    },
+    "reasoning_effort": "medium",
+    "compression": {
+      "enabled": true,
+      "checkpoint_required": false,
+      "progress_notices": false,
+      "threshold": 0.35,
+      "target_ratio": 0.2,
+      "protect_last_n": 20,
+      "min_tail_user_messages": 1,
+      "max_attempts": 3,
+      "proactive_prune_tokens": 0,
+      "proactive_prune_min_result_chars": 8000,
+      "proactive_prune_min_reclaim_tokens": 4096,
+      "context_timeout_seconds": 240,
+      "context_total_ceiling_seconds": 900,
+      "protect_first_n": 3,
+      "codex_gpt55_autoraise": true,
+      "codex_app_server_auto": "native",
+      "codex_responses_native": false,
+      "codex_responses_compact_threshold": 200000,
+      "idle_compact_after_seconds": 0
+    },
+    "delegation": {
+      "max_iterations": 250
+    },
+    "auxiliary": {
+      "title_generation": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "compression": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "session_search": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "profile_describer": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "mcp": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      }
+    },
+    "custom_providers": [
+      {
+        "name": "local-fast",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "models": {
+          "hermes-fast": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-deep",
+        "base_url": "http://127.0.0.1:8902/v1",
+        "models": {
+          "hermes-deep": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-minicpm",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "models": {
+          "minicpm5-2b": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-ornith",
+        "base_url": "http://127.0.0.1:8919/v1",
+        "models": {
+          "ornith-q6": {
+            "context_length": 65536
+          }
+        }
+      }
+    ]
+  },
+  {
+    "profile": "local-minimal",
+    "main": {
+      "default": "fast-local",
+      "provider": "custom",
+      "base_url": "http://127.0.0.1:8901/v1",
+      "api_mode": "codex_responses",
+      "context_length": 65536
+    },
+    "reasoning_effort": "medium",
+    "compression": {
+      "enabled": true,
+      "checkpoint_required": false,
+      "progress_notices": false,
+      "threshold": 0.35,
+      "target_ratio": 0.2,
+      "protect_last_n": 20,
+      "min_tail_user_messages": 1,
+      "max_attempts": 3,
+      "proactive_prune_tokens": 0,
+      "proactive_prune_min_result_chars": 8000,
+      "proactive_prune_min_reclaim_tokens": 4096,
+      "context_timeout_seconds": 240,
+      "context_total_ceiling_seconds": 900,
+      "protect_first_n": 3,
+      "codex_gpt55_autoraise": true,
+      "codex_app_server_auto": "native",
+      "codex_responses_native": false,
+      "codex_responses_compact_threshold": 200000,
+      "idle_compact_after_seconds": 0
+    },
+    "delegation": {
+      "max_iterations": 250
+    },
+    "auxiliary": {
+      "title_generation": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "compression": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "session_search": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "profile_describer": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "mcp": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      }
+    },
+    "custom_providers": [
+      {
+        "name": "local-fast",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "models": {
+          "hermes-fast": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-deep",
+        "base_url": "http://127.0.0.1:8902/v1",
+        "models": {
+          "hermes-deep": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-minicpm",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "models": {
+          "minicpm5-2b": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-ornith",
+        "base_url": "http://127.0.0.1:8919/v1",
+        "models": {
+          "ornith-q6": {
+            "context_length": 65536
+          }
+        }
+      }
+    ]
+  },
+  {
+    "profile": "local-nanbeige",
+    "main": {
+      "default": "nanbeige-q6",
+      "provider": "custom",
+      "base_url": "http://127.0.0.1:8921/v1",
+      "api_mode": "chat_completions",
+      "context_length": 65536
+    },
+    "reasoning_effort": "medium",
+    "compression": {
+      "enabled": true,
+      "checkpoint_required": false,
+      "progress_notices": false,
+      "threshold": 0.5,
+      "target_ratio": 0.2,
+      "protect_last_n": 20,
+      "min_tail_user_messages": 1,
+      "max_attempts": 3,
+      "proactive_prune_tokens": 0,
+      "proactive_prune_min_result_chars": 8000,
+      "proactive_prune_min_reclaim_tokens": 4096,
+      "context_timeout_seconds": 240,
+      "context_total_ceiling_seconds": 900,
+      "protect_first_n": 3,
+      "codex_gpt55_autoraise": true,
+      "codex_app_server_auto": "native",
+      "codex_responses_native": false,
+      "codex_responses_compact_threshold": 200000,
+      "idle_compact_after_seconds": 0
+    },
+    "delegation": {
+      "max_iterations": 250
+    },
+    "auxiliary": {
+      "title_generation": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "compression": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "session_search": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "profile_describer": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "mcp": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      }
+    },
+    "custom_providers": [
+      {
+        "name": "local-fast",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "models": {
+          "hermes-fast": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-deep",
+        "base_url": "http://127.0.0.1:8902/v1",
+        "models": {
+          "hermes-deep": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-minicpm",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "models": {
+          "minicpm5-2b": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-ornith",
+        "base_url": "http://127.0.0.1:8919/v1",
+        "models": {
+          "ornith-q6": {
+            "context_length": 65536
+          }
+        }
+      }
+    ]
+  },
+  {
+    "profile": "local-ornith",
+    "main": {
+      "default": "ornith-q6",
+      "provider": "custom",
+      "base_url": "http://127.0.0.1:8919/v1",
+      "api_mode": "chat_completions",
+      "context_length": 65536
+    },
+    "reasoning_effort": "medium",
+    "compression": {
+      "enabled": true,
+      "checkpoint_required": false,
+      "progress_notices": false,
+      "threshold": 0.5,
+      "target_ratio": 0.2,
+      "protect_last_n": 20,
+      "min_tail_user_messages": 1,
+      "max_attempts": 3,
+      "proactive_prune_tokens": 0,
+      "proactive_prune_min_result_chars": 8000,
+      "proactive_prune_min_reclaim_tokens": 4096,
+      "context_timeout_seconds": 240,
+      "context_total_ceiling_seconds": 900,
+      "protect_first_n": 3,
+      "codex_gpt55_autoraise": true,
+      "codex_app_server_auto": "native",
+      "codex_responses_native": false,
+      "codex_responses_compact_threshold": 200000,
+      "idle_compact_after_seconds": 0
+    },
+    "delegation": {
+      "max_iterations": 250
+    },
+    "auxiliary": {
+      "title_generation": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "compression": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "session_search": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "profile_describer": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "mcp": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      }
+    },
+    "custom_providers": [
+      {
+        "name": "local-fast",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "models": {
+          "hermes-fast": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-deep",
+        "base_url": "http://127.0.0.1:8902/v1",
+        "models": {
+          "hermes-deep": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-minicpm",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "models": {
+          "minicpm5-2b": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-ornith",
+        "base_url": "http://127.0.0.1:8919/v1",
+        "models": {
+          "ornith-q6": {
+            "context_length": 65536
+          }
+        }
+      }
+    ]
+  },
+  {
+    "profile": "observatory",
+    "main": {
+      "default": "fast-local",
+      "provider": "custom",
+      "base_url": "http://127.0.0.1:8901/v1",
+      "api_mode": null,
+      "context_length": 65536
+    },
+    "reasoning_effort": "medium",
+    "compression": {
+      "enabled": true,
+      "checkpoint_required": false,
+      "progress_notices": false,
+      "threshold": 0.35,
+      "target_ratio": 0.2,
+      "protect_last_n": 20,
+      "min_tail_user_messages": 1,
+      "max_attempts": 3,
+      "proactive_prune_tokens": 0,
+      "proactive_prune_min_result_chars": 8000,
+      "proactive_prune_min_reclaim_tokens": 4096,
+      "protect_first_n": 3,
+      "codex_gpt55_autoraise": true,
+      "codex_app_server_auto": "native",
+      "codex_responses_native": false,
+      "codex_responses_compact_threshold": 200000,
+      "idle_compact_after_seconds": 0
+    },
+    "delegation": {
+      "max_iterations": 250
+    },
+    "auxiliary": {
+      "title_generation": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "compression": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "session_search": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "profile_describer": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "mcp": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      }
+    },
+    "custom_providers": [
+      {
+        "name": "local-fast",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "models": {
+          "hermes-fast": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-deep",
+        "base_url": "http://127.0.0.1:8902/v1",
+        "models": {
+          "hermes-deep": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-minicpm",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "models": {
+          "minicpm5-2b": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-ornith",
+        "base_url": "http://127.0.0.1:8919/v1",
+        "models": {
+          "ornith-q6": {
+            "context_length": 65536
+          }
+        }
+      }
+    ]
+  },
+  {
+    "profile": "personal",
+    "main": {
+      "default": "fast-local",
+      "provider": "custom",
+      "base_url": "http://127.0.0.1:8901/v1",
+      "api_mode": null,
+      "context_length": 65536
+    },
+    "reasoning_effort": "medium",
+    "compression": {
+      "enabled": true,
+      "checkpoint_required": false,
+      "progress_notices": false,
+      "threshold": 0.35,
+      "target_ratio": 0.2,
+      "protect_last_n": 20,
+      "min_tail_user_messages": 1,
+      "max_attempts": 3,
+      "proactive_prune_tokens": 0,
+      "proactive_prune_min_result_chars": 8000,
+      "proactive_prune_min_reclaim_tokens": 4096,
+      "protect_first_n": 3,
+      "codex_gpt55_autoraise": true,
+      "codex_app_server_auto": "native",
+      "codex_responses_native": false,
+      "codex_responses_compact_threshold": 200000,
+      "idle_compact_after_seconds": 0
+    },
+    "delegation": {
+      "max_iterations": 250
+    },
+    "auxiliary": {
+      "title_generation": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "compression": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "session_search": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "profile_describer": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "mcp": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      }
+    },
+    "custom_providers": [
+      {
+        "name": "local-fast",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "models": {
+          "hermes-fast": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-deep",
+        "base_url": "http://127.0.0.1:8902/v1",
+        "models": {
+          "hermes-deep": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-minicpm",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "models": {
+          "minicpm5-2b": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-ornith",
+        "base_url": "http://127.0.0.1:8919/v1",
+        "models": {
+          "ornith-q6": {
+            "context_length": 65536
+          }
+        }
+      }
+    ]
+  },
+  {
+    "profile": "workshop",
+    "main": {
+      "default": "fast-local",
+      "provider": "custom",
+      "base_url": "http://127.0.0.1:8901/v1",
+      "api_mode": null,
+      "context_length": 65536
+    },
+    "reasoning_effort": "medium",
+    "compression": {
+      "enabled": true,
+      "checkpoint_required": false,
+      "progress_notices": false,
+      "threshold": 0.35,
+      "target_ratio": 0.2,
+      "protect_last_n": 20,
+      "min_tail_user_messages": 1,
+      "max_attempts": 3,
+      "proactive_prune_tokens": 0,
+      "proactive_prune_min_result_chars": 8000,
+      "proactive_prune_min_reclaim_tokens": 4096,
+      "protect_first_n": 3,
+      "codex_gpt55_autoraise": true,
+      "codex_app_server_auto": "native",
+      "codex_responses_native": false,
+      "codex_responses_compact_threshold": 200000,
+      "idle_compact_after_seconds": 0
+    },
+    "delegation": {
+      "max_iterations": 250
+    },
+    "auxiliary": {
+      "title_generation": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "compression": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "session_search": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "profile_describer": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      },
+      "mcp": {
+        "provider": "local-minicpm",
+        "model": "minicpm5-2b",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "fallback_chain": [
+          {
+            "provider": "local-ornith",
+            "model": "ornith-q6",
+            "base_url": "http://127.0.0.1:8919/v1",
+            "api_key": "local"
+          }
+        ]
+      }
+    },
+    "custom_providers": [
+      {
+        "name": "local-fast",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "models": {
+          "hermes-fast": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-deep",
+        "base_url": "http://127.0.0.1:8902/v1",
+        "models": {
+          "hermes-deep": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-minicpm",
+        "base_url": "http://127.0.0.1:8901/v1",
+        "models": {
+          "minicpm5-2b": {
+            "context_length": 65536
+          }
+        }
+      },
+      {
+        "name": "local-ornith",
+        "base_url": "http://127.0.0.1:8919/v1",
+        "models": {
+          "ornith-q6": {
+            "context_length": 65536
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,1832 @@
+{
+  "artifact": "Carnice Hybrid",
+  "base_index_sha256": "41b9356101ebf8e7519e150dc811f80c4226e727301fbb032b890f006ed0be83",
+  "base_repo": "samuelcardillo/Carnice-Qwen3.6-MoE-35B-A3B",
+  "base_revision": "d86a0cea3cd6794a294ad72a08598294249c761e",
+  "changed_tensor_count": 40,
+  "control_manifest_sha256": "96cf1f09e247784c3b63ae06931fb54f2c736ba3bf5f751b11ea32667adaa834",
+  "control_model_weights_sha256": "ccc33e49e110509b3e8fdf676f20eb34096a9fe687f102acd64d4aca3d15ce84",
+  "control_path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/carnice-hybrid/Carnice-Qwen3.6-MoE-35B-A3B.gturbo",
+  "created_at_utc": "2026-09-17T20:10:22.565335+00:00",
+  "experiment": "EXP-007",
+  "inference_started": false,
+  "next_gate": "Reissue an isolated verified-install receipt, then require explicit approval before any local-model load/inference validation.",
+  "quantizer": {
+    "bits": 4,
+    "group_size": 64,
+    "mlx": "0.32.1",
+    "mlx_lm": "0.31.3",
+    "mlx_vlm": "0.4.4",
+    "mode": "affine",
+    "wheel_sha256": "3ff86ea738ab1914dc1b07e4fa5d4cc34bec5909e540692cfad0af808af13c11"
+  },
+  "retrieved_bf16_bytes": 545259520,
+  "reused_expert_hashes": {
+    "packed_experts/layer_00.bin": {
+      "actual_sha256": "f7e8fbd29d58b6073bcfaaf08ca1e3e8373e1b66861c82fa6c385026dc7005b8",
+      "exact": true,
+      "expected_sha256": "f7e8fbd29d58b6073bcfaaf08ca1e3e8373e1b66861c82fa6c385026dc7005b8"
+    },
+    "packed_experts/layer_01.bin": {
+      "actual_sha256": "d183602f0072355b327a212d065baf9c51210d0042c58187d3aeb53aa2653993",
+      "exact": true,
+      "expected_sha256": "d183602f0072355b327a212d065baf9c51210d0042c58187d3aeb53aa2653993"
+    },
+    "packed_experts/layer_02.bin": {
+      "actual_sha256": "d427407c248be3e24e0200580f62951abb2b2e83d7282ffa33c9568c30dfbce8",
+      "exact": true,
+      "expected_sha256": "d427407c248be3e24e0200580f62951abb2b2e83d7282ffa33c9568c30dfbce8"
+    },
+    "packed_experts/layer_03.bin": {
+      "actual_sha256": "511ea7859025c408a713546806f6d113310ff194a0da2f82016a6644515a7181",
+      "exact": true,
+      "expected_sha256": "511ea7859025c408a713546806f6d113310ff194a0da2f82016a6644515a7181"
+    },
+    "packed_experts/layer_04.bin": {
+      "actual_sha256": "45ebd70309e69f867d6ba3a0b734fe9d5eacbb5ae80725774c27b342212250f8",
+      "exact": true,
+      "expected_sha256": "45ebd70309e69f867d6ba3a0b734fe9d5eacbb5ae80725774c27b342212250f8"
+    },
+    "packed_experts/layer_05.bin": {
+      "actual_sha256": "7020f8d2f0948f0cd50a5679454aaf8d4121789a875e841836425eb928df9ec0",
+      "exact": true,
+      "expected_sha256": "7020f8d2f0948f0cd50a5679454aaf8d4121789a875e841836425eb928df9ec0"
+    },
+    "packed_experts/layer_06.bin": {
+      "actual_sha256": "7b926a76f23898b115fc79456c910a63ac19c814bca717a8e42b611743c3be2c",
+      "exact": true,
+      "expected_sha256": "7b926a76f23898b115fc79456c910a63ac19c814bca717a8e42b611743c3be2c"
+    },
+    "packed_experts/layer_07.bin": {
+      "actual_sha256": "64da0ad2e70daf037212c649bdd61d5f99ed0407d31ae616e48bed8591f1fa19",
+      "exact": true,
+      "expected_sha256": "64da0ad2e70daf037212c649bdd61d5f99ed0407d31ae616e48bed8591f1fa19"
+    },
+    "packed_experts/layer_08.bin": {
+      "actual_sha256": "2af661e63504476cb9a32fbca802d7c3b1cfa8e4d9c8476d3d4da34f38d1aa46",
+      "exact": true,
+      "expected_sha256": "2af661e63504476cb9a32fbca802d7c3b1cfa8e4d9c8476d3d4da34f38d1aa46"
+    },
+    "packed_experts/layer_09.bin": {
+      "actual_sha256": "acf1ca5d66e623bb04a4336d640859c46646067fe2ee434196a343d88bf0f766",
+      "exact": true,
+      "expected_sha256": "acf1ca5d66e623bb04a4336d640859c46646067fe2ee434196a343d88bf0f766"
+    },
+    "packed_experts/layer_10.bin": {
+      "actual_sha256": "ae796efde0efd7aaef03e6c559fa549bf2133a2042c38e0182e90d3c905dfb08",
+      "exact": true,
+      "expected_sha256": "ae796efde0efd7aaef03e6c559fa549bf2133a2042c38e0182e90d3c905dfb08"
+    },
+    "packed_experts/layer_11.bin": {
+      "actual_sha256": "9e2ff7c11641319eab071f5f7a6a6cbf2bd9c2545947430143da78bc50264c03",
+      "exact": true,
+      "expected_sha256": "9e2ff7c11641319eab071f5f7a6a6cbf2bd9c2545947430143da78bc50264c03"
+    },
+    "packed_experts/layer_12.bin": {
+      "actual_sha256": "40a7f06f5b3dcfe6a553da0f6ee3379fc095aea2999169e44a66b42960b87e3e",
+      "exact": true,
+      "expected_sha256": "40a7f06f5b3dcfe6a553da0f6ee3379fc095aea2999169e44a66b42960b87e3e"
+    },
+    "packed_experts/layer_13.bin": {
+      "actual_sha256": "a104e66266d0c2ed133de7ce84c0e3c6426f5f0eae4726fb71f980328af6cd01",
+      "exact": true,
+      "expected_sha256": "a104e66266d0c2ed133de7ce84c0e3c6426f5f0eae4726fb71f980328af6cd01"
+    },
+    "packed_experts/layer_14.bin": {
+      "actual_sha256": "76f92b6569cf881be0dda50b387c780e47c9701da077da50c651f592d317a406",
+      "exact": true,
+      "expected_sha256": "76f92b6569cf881be0dda50b387c780e47c9701da077da50c651f592d317a406"
+    },
+    "packed_experts/layer_15.bin": {
+      "actual_sha256": "a96a53c9b12c08dc2917525ea8a94d44de6aed6de367a3b4af4789294c4978d3",
+      "exact": true,
+      "expected_sha256": "a96a53c9b12c08dc2917525ea8a94d44de6aed6de367a3b4af4789294c4978d3"
+    },
+    "packed_experts/layer_16.bin": {
+      "actual_sha256": "f4d76fa5426083e70eeab25f3dd79a51e45f89cac281644a7df9087a4388e08f",
+      "exact": true,
+      "expected_sha256": "f4d76fa5426083e70eeab25f3dd79a51e45f89cac281644a7df9087a4388e08f"
+    },
+    "packed_experts/layer_17.bin": {
+      "actual_sha256": "e63130e7c71fa471ab0045d9effd775fcf2dfc0c7c142fb7f5809afc46d23f88",
+      "exact": true,
+      "expected_sha256": "e63130e7c71fa471ab0045d9effd775fcf2dfc0c7c142fb7f5809afc46d23f88"
+    },
+    "packed_experts/layer_18.bin": {
+      "actual_sha256": "218767d58654b465939825b0d5c3d365fb2ab2d1ff8f17174eb6d3484f4e2453",
+      "exact": true,
+      "expected_sha256": "218767d58654b465939825b0d5c3d365fb2ab2d1ff8f17174eb6d3484f4e2453"
+    },
+    "packed_experts/layer_19.bin": {
+      "actual_sha256": "52e214ef343f537d248fa37ccbb86b9216020851bc4ee3d6ab6f8300a2819491",
+      "exact": true,
+      "expected_sha256": "52e214ef343f537d248fa37ccbb86b9216020851bc4ee3d6ab6f8300a2819491"
+    },
+    "packed_experts/layer_20.bin": {
+      "actual_sha256": "3757d8a48ec46bb50e680f2a11db6351cfea01bd2cfba4201cc2ff1bc53f06c3",
+      "exact": true,
+      "expected_sha256": "3757d8a48ec46bb50e680f2a11db6351cfea01bd2cfba4201cc2ff1bc53f06c3"
+    },
+    "packed_experts/layer_21.bin": {
+      "actual_sha256": "553b822c5abc9ca8b60a1a38654a8ee689e96f1a00c1920c6f1dee204b237792",
+      "exact": true,
+      "expected_sha256": "553b822c5abc9ca8b60a1a38654a8ee689e96f1a00c1920c6f1dee204b237792"
+    },
+    "packed_experts/layer_22.bin": {
+      "actual_sha256": "74d22074126c03a97944eebb2fb8919dfc0cc0474d587f82c893b6d883040cd6",
+      "exact": true,
+      "expected_sha256": "74d22074126c03a97944eebb2fb8919dfc0cc0474d587f82c893b6d883040cd6"
+    },
+    "packed_experts/layer_23.bin": {
+      "actual_sha256": "f31bb79fec5656c55dcea7b47a5efb2f8755a643b4fd02da3b18ecb1aa11bf45",
+      "exact": true,
+      "expected_sha256": "f31bb79fec5656c55dcea7b47a5efb2f8755a643b4fd02da3b18ecb1aa11bf45"
+    },
+    "packed_experts/layer_24.bin": {
+      "actual_sha256": "df0c51ec7f7939768f32f94d1589da580a4adcbd7171edf885e2f71fca89d56d",
+      "exact": true,
+      "expected_sha256": "df0c51ec7f7939768f32f94d1589da580a4adcbd7171edf885e2f71fca89d56d"
+    },
+    "packed_experts/layer_25.bin": {
+      "actual_sha256": "b93b0587f381ba8abfe21f05ebb21197cf87557a12f5bb217fde0503bc3f7bd8",
+      "exact": true,
+      "expected_sha256": "b93b0587f381ba8abfe21f05ebb21197cf87557a12f5bb217fde0503bc3f7bd8"
+    },
+    "packed_experts/layer_26.bin": {
+      "actual_sha256": "1d5dec76c8675f2577c251a9f859c37fdf410f3cfa3a6aba01cf3803727268d7",
+      "exact": true,
+      "expected_sha256": "1d5dec76c8675f2577c251a9f859c37fdf410f3cfa3a6aba01cf3803727268d7"
+    },
+    "packed_experts/layer_27.bin": {
+      "actual_sha256": "3d594a093126ce33162e510f79b15254e742a6d8805940007ed091e2ea20057e",
+      "exact": true,
+      "expected_sha256": "3d594a093126ce33162e510f79b15254e742a6d8805940007ed091e2ea20057e"
+    },
+    "packed_experts/layer_28.bin": {
+      "actual_sha256": "27e752c2558ba291471d18b5a610e2b9e0618d41c6a9e1196770584a4ec8a0f6",
+      "exact": true,
+      "expected_sha256": "27e752c2558ba291471d18b5a610e2b9e0618d41c6a9e1196770584a4ec8a0f6"
+    },
+    "packed_experts/layer_29.bin": {
+      "actual_sha256": "6c6669210e90c49de64d03514cc1b8a940b962cb0178406b3be6f2298e961853",
+      "exact": true,
+      "expected_sha256": "6c6669210e90c49de64d03514cc1b8a940b962cb0178406b3be6f2298e961853"
+    },
+    "packed_experts/layer_30.bin": {
+      "actual_sha256": "9730968251b94ee8bd2f68e6766fdcb32931e2d385240860f3f3f8e9a8544ae5",
+      "exact": true,
+      "expected_sha256": "9730968251b94ee8bd2f68e6766fdcb32931e2d385240860f3f3f8e9a8544ae5"
+    },
+    "packed_experts/layer_31.bin": {
+      "actual_sha256": "68bb731a2d09cf452a9b5d0d11b87c9350ad36dc679e9d3433d94e444503d276",
+      "exact": true,
+      "expected_sha256": "68bb731a2d09cf452a9b5d0d11b87c9350ad36dc679e9d3433d94e444503d276"
+    },
+    "packed_experts/layer_32.bin": {
+      "actual_sha256": "fc335b49c0bb83667bd1037495c203e920bab6b5ce0e155c4e4f2d5580634a05",
+      "exact": true,
+      "expected_sha256": "fc335b49c0bb83667bd1037495c203e920bab6b5ce0e155c4e4f2d5580634a05"
+    },
+    "packed_experts/layer_33.bin": {
+      "actual_sha256": "d4d9af1c7b6397a67683758fbdc4180d566109319a01dfebb1bcddc470855f90",
+      "exact": true,
+      "expected_sha256": "d4d9af1c7b6397a67683758fbdc4180d566109319a01dfebb1bcddc470855f90"
+    },
+    "packed_experts/layer_34.bin": {
+      "actual_sha256": "8180d7efccbb9c0f28d13094e9bc46a113c7a852ba07613a145bcded7f72dac1",
+      "exact": true,
+      "expected_sha256": "8180d7efccbb9c0f28d13094e9bc46a113c7a852ba07613a145bcded7f72dac1"
+    },
+    "packed_experts/layer_35.bin": {
+      "actual_sha256": "e695e634c8c92e378e3221ba1240b1ae56a60357acba0dfdfbde4742ed61d57c",
+      "exact": true,
+      "expected_sha256": "e695e634c8c92e378e3221ba1240b1ae56a60357acba0dfdfbde4742ed61d57c"
+    },
+    "packed_experts/layer_36.bin": {
+      "actual_sha256": "300681b992213a9ae67d9de887fcfeb3c91d73d3e2625e4ff6e86d9bb3f73400",
+      "exact": true,
+      "expected_sha256": "300681b992213a9ae67d9de887fcfeb3c91d73d3e2625e4ff6e86d9bb3f73400"
+    },
+    "packed_experts/layer_37.bin": {
+      "actual_sha256": "01ba001da1ad2c41164c3d257dbf06f4701c319c8011dda772d83c16a6bc6902",
+      "exact": true,
+      "expected_sha256": "01ba001da1ad2c41164c3d257dbf06f4701c319c8011dda772d83c16a6bc6902"
+    },
+    "packed_experts/layer_38.bin": {
+      "actual_sha256": "1d439cecbc69ede60db7c08ed57dc5e67fdbc1f0d323cfe065de50af8288e2de",
+      "exact": true,
+      "expected_sha256": "1d439cecbc69ede60db7c08ed57dc5e67fdbc1f0d323cfe065de50af8288e2de"
+    },
+    "packed_experts/layer_39.bin": {
+      "actual_sha256": "e1fa9e70174ab328e52914906c5ad1e536c2ba78124eef2ce58d16a9ebbdffcf",
+      "exact": true,
+      "expected_sha256": "e1fa9e70174ab328e52914906c5ad1e536c2ba78124eef2ce58d16a9ebbdffcf"
+    }
+  },
+  "reused_experts_all_exact": true,
+  "reused_layout_sha256": "43419e62527915d1b6ac416b37131c3e7db1c61c5c95e7a7e03a4338abe7c9f7",
+  "rows": [
+    {
+      "bf16_bytes": 33554432,
+      "bf16_sha256": "6aa5ff6297a03105d2e7d2ea975cd94259582b7b290b571cf8f8c7f0ea23e318",
+      "components": [
+        {
+          "bytes": 8388608,
+          "component": "weight",
+          "file_offset": 350199296,
+          "sha256": "4f63f133bbbf931cf4ac8e23adbe0ab04b94d5907d58b7685dfd646739124157",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_3_self_attn_q_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "scales",
+          "file_offset": 358587904,
+          "sha256": "3bdf256ce68cb8ad02279c20311a0d5824b8d604aec079082b5eb02c83873c99",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_3_self_attn_q_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "biases",
+          "file_offset": 359112192,
+          "sha256": "bed95eb9cc5af94394fe288aab45dae9966a446b003fcc19aa378af55ca0a35c",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_3_self_attn_q_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.3.self_attn.q_proj.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.3.self_attn.q_proj.weight",
+      "source_shard": "model-00003-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3322246776-3355801207/3357898360",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/b4745308c1e86e05236513631dda8024d8e78d30b3b7a5fcd32374d2ea94aad0?user_id=public&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00003-of-00026.safetensors%3B+filename%3D%22model-00003-of-00026.safetensors%22%3B&Expires=1789679360&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2I0NzQ1MzA4YzFlODZlMDUyMzY1MTM2MzFkZGE4MDI0ZDhlNzhkMzBiM2I3YTVmY2QzMjM3NGQyZWE5NGFhZDBcXD91c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MzYwfX19XX0_&Signature=MEQCIEPHWcKGTu7pyjYiyY08UlT8qG3G6wToma5AzJNecmA9AiAb-B3mTNWeGGQ%7EMPi02kD43gwa5nda%7Ejd%7EbJTSJlOISg__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "a092c69620b32537783f347b45c82d7e1a16bf1c3c0b47457d98adc8604ad63f",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 359636480,
+          "sha256": "b33e0f947e610bf7385bd4357cefeb2078f8553078cc012cf8eea55879e485f4",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_3_self_attn_k_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 360160768,
+          "sha256": "80e8c251f7e5de1d57ec33aff3843b641175ad079a3edb8f071a7c465d959d76",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_3_self_attn_k_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 360193536,
+          "sha256": "43bc76937d9d671762c159e2ab0684676e086f9d1b3f3d215ee2794c4dc28624",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_3_self_attn_k_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.3.self_attn.k_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.3.self_attn.k_proj.weight",
+      "source_shard": "model-00003-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3303371896-3305469047/3357898360",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/b4745308c1e86e05236513631dda8024d8e78d30b3b7a5fcd32374d2ea94aad0?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00003-of-00026.safetensors%3B+filename%3D%22model-00003-of-00026.safetensors%22%3B&Expires=1789679364&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2I0NzQ1MzA4YzFlODZlMDUyMzY1MTM2MzFkZGE4MDI0ZDhlNzhkMzBiM2I3YTVmY2QzMjM3NGQyZWE5NGFhZDBcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MzY0fX19XX0_&Signature=MEYCIQDpD8LR0dogTOCROC-LaYG6R1ME6-EXf8T7ugJtldGqeQIhAN7FzSMqxKlHnEYCwcdhEcrmGCkYvXDJ%7ElweG4mwl0HE&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "125a7bdf1119b59c951b9dfb95c4a908193f29a7fb27128e8e8c7b6eac1b42b0",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 360226304,
+          "sha256": "21a0bff2aa3b0c00fed70d4c708c232887ac2de46e07f2e6dd76b8ed61a195cc",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_3_self_attn_v_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 360750592,
+          "sha256": "62f29ccd9905908168577286dc4e1545ff2857c4c0cde9a181731039ff978369",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_3_self_attn_v_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 360783360,
+          "sha256": "39a0f3c0145775d3ae62e7d37c7fdfe3f62ad25a8cc7a8b774ed95972e984d96",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_3_self_attn_v_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.3.self_attn.v_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.3.self_attn.v_proj.weight",
+      "source_shard": "model-00003-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3355801208-3357898359/3357898360",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/b4745308c1e86e05236513631dda8024d8e78d30b3b7a5fcd32374d2ea94aad0?user_id=public&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00003-of-00026.safetensors%3B+filename%3D%22model-00003-of-00026.safetensors%22%3B&Expires=1789679365&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2I0NzQ1MzA4YzFlODZlMDUyMzY1MTM2MzFkZGE4MDI0ZDhlNzhkMzBiM2I3YTVmY2QzMjM3NGQyZWE5NGFhZDBcXD91c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MzY1fX19XX0_&Signature=MEYCIQD4cqRE6DGYo4CXDNB-Zbol5SlHb0XpHX9JeOJUgpN2oQIhALsa5oA5v5SpML2ynRfROEHDBeEmRlCCstZVyegjSZnr&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 16777216,
+      "bf16_sha256": "b68d1bb52afdb4d788a7c95f0bd6b4dde1fb633b7a7fe077cd22556f395da732",
+      "components": [
+        {
+          "bytes": 4194304,
+          "component": "weight",
+          "file_offset": 360816128,
+          "sha256": "5d77d486e4d787c7bf236bc8aa23ef730758de19bf761ccaac0d254b3fa32d98",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_3_self_attn_o_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "scales",
+          "file_offset": 365010432,
+          "sha256": "0a25250c39e31c6bec666e546e77b85ca25922146931ad2b8e34a5507271693a",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_3_self_attn_o_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "biases",
+          "file_offset": 365272576,
+          "sha256": "9da111cb13bf02a194505d765471bbda95b01f3988434648598c04d0f5057fe8",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_3_self_attn_o_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.3.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        4096
+      ],
+      "source_bf16_tensor": "model.language_model.layers.3.self_attn.o_proj.weight",
+      "source_shard": "model-00003-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3305469048-3322246263/3357898360",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/b4745308c1e86e05236513631dda8024d8e78d30b3b7a5fcd32374d2ea94aad0?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00003-of-00026.safetensors%3B+filename%3D%22model-00003-of-00026.safetensors%22%3B&Expires=1789679366&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2I0NzQ1MzA4YzFlODZlMDUyMzY1MTM2MzFkZGE4MDI0ZDhlNzhkMzBiM2I3YTVmY2QzMjM3NGQyZWE5NGFhZDBcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MzY2fX19XX0_&Signature=MEUCIH5efq2WI6S5Ngv42pHqqg5aZ-D2K7vR6ZgxGa3iPcxcAiEAz4aOWbChI3iNLoZpffA%7ET0pg6-DBrYvdC0Bz6yIQJBo_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 33554432,
+      "bf16_sha256": "0ce497d6a287bbc031c2e5cc66f41a73f96e86e550ef211cafd2928437e05779",
+      "components": [
+        {
+          "bytes": 8388608,
+          "component": "weight",
+          "file_offset": 431925376,
+          "sha256": "81a5971a3db6d3457f02e50719515e240b03ec813d13f213de044cf0e819d7ed",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_7_self_attn_q_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "scales",
+          "file_offset": 440313984,
+          "sha256": "56dec78e956c433049ed175525e118a210da895c1ddbd2081cb28f7fc1b05c69",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_7_self_attn_q_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "biases",
+          "file_offset": 440838272,
+          "sha256": "50a1952cc13a49687d0a6a6f568a2669cad61781912abfc15b321e1fbf4db307",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_7_self_attn_q_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.7.self_attn.q_proj.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.7.self_attn.q_proj.weight",
+      "source_shard": "model-00005-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3322246776-3355801207/3357898360",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/7a136ab9ba47d0ce6e21961d03d98024d7988be618167f1bd82180ab14c8f0f8?user_id=public&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00005-of-00026.safetensors%3B+filename%3D%22model-00005-of-00026.safetensors%22%3B&Expires=1789679367&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzLzdhMTM2YWI5YmE0N2QwY2U2ZTIxOTYxZDAzZDk4MDI0ZDc5ODhiZTYxODE2N2YxYmQ4MjE4MGFiMTRjOGYwZjhcXD91c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDUtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwNS1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MzY3fX19XX0_&Signature=MEYCIQC06FBolpgogw9pOihNvnzH-EWZh%7ElBjmP9Z5qEOAdi3AIhANPfv-Rtw8lg5-AJ2%7E6r-5G3N6GYlURqjBKQE4vtOLRK&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "f37aed908892f67cafa6d2b41a2edec649e507fb28b0b35c2256e7224b1e2e17",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 441362560,
+          "sha256": "e31b5b85c296679bfa00664b8ea66e8f27bf3d23308e42aea0896c94783c3603",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_7_self_attn_k_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 441886848,
+          "sha256": "8bf4b8fcc118fcffb92aba703e49500bfb696aa68019a048cd5d1b08d8379036",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_7_self_attn_k_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 441919616,
+          "sha256": "9c04c1efc15d1cb00bdbb3b91d7e6f6b7b2b57fc75e2d90f0edd23f1f71bd767",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_7_self_attn_k_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.7.self_attn.k_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.7.self_attn.k_proj.weight",
+      "source_shard": "model-00005-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3303371896-3305469047/3357898360",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/7a136ab9ba47d0ce6e21961d03d98024d7988be618167f1bd82180ab14c8f0f8?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00005-of-00026.safetensors%3B+filename%3D%22model-00005-of-00026.safetensors%22%3B&Expires=1789679369&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzLzdhMTM2YWI5YmE0N2QwY2U2ZTIxOTYxZDAzZDk4MDI0ZDc5ODhiZTYxODE2N2YxYmQ4MjE4MGFiMTRjOGYwZjhcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDUtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwNS1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MzY5fX19XX0_&Signature=MEYCIQCSPaQFYKMTx3BHnD-ItHCk-sIMsqB4x3%7EjrBcmxUJRuwIhANROEW1jUdx23AxFmnF7-nX3QntRUC6Q3KZq3ebag-zM&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "3034f513dd04c9eca542a5c4bd0645c56d25a34ce0ec987c24426fc5cd403358",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 441952384,
+          "sha256": "c8d9afd472935c840482f536d623861e946a92ba9ca41293dec50086e2a262ec",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_7_self_attn_v_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 442476672,
+          "sha256": "bafd618ff6f37765df7ec9ba411326d9b941329e7260d1d77f8a88a37bb5ab96",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_7_self_attn_v_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 442509440,
+          "sha256": "5692d2727c46983c1bf02e7f87080d15c9a1912b215536dec2469d516576257a",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_7_self_attn_v_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.7.self_attn.v_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.7.self_attn.v_proj.weight",
+      "source_shard": "model-00005-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3355801208-3357898359/3357898360",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/7a136ab9ba47d0ce6e21961d03d98024d7988be618167f1bd82180ab14c8f0f8?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00005-of-00026.safetensors%3B+filename%3D%22model-00005-of-00026.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789679370&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzLzdhMTM2YWI5YmE0N2QwY2U2ZTIxOTYxZDAzZDk4MDI0ZDc5ODhiZTYxODE2N2YxYmQ4MjE4MGFiMTRjOGYwZjhcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDUtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwNS1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MzcwfX19XX0_&Signature=MEQCIDtM40kRDPHVn5jDPmaLi3f7zSQHO7-zWOAvP8JbULvgAiBiWcYRReX3EUp1xTFcFuCi5xNW8PLVO3Ow-BU8e-imGA__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 16777216,
+      "bf16_sha256": "404d2c0bde319659b9e4baa49939fa027d97afe941b69f1437d07e80616e6c55",
+      "components": [
+        {
+          "bytes": 4194304,
+          "component": "weight",
+          "file_offset": 442542208,
+          "sha256": "2dec027680e43f2a272a3ef151a5007dc8cb58f7ef4b53eeae7d9c9295655512",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_7_self_attn_o_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "scales",
+          "file_offset": 446736512,
+          "sha256": "2d292d0764b76ac5365f2afd7191e47067512083941e2a31b07cc4f75128c0aa",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_7_self_attn_o_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "biases",
+          "file_offset": 446998656,
+          "sha256": "8ff54960b3d7b60114ada4ba1c28205f9313ab4698af08a4f21703e7262b82d5",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_7_self_attn_o_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.7.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        4096
+      ],
+      "source_bf16_tensor": "model.language_model.layers.7.self_attn.o_proj.weight",
+      "source_shard": "model-00005-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3305469048-3322246263/3357898360",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/7a136ab9ba47d0ce6e21961d03d98024d7988be618167f1bd82180ab14c8f0f8?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00005-of-00026.safetensors%3B+filename%3D%22model-00005-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&user_id=public&Expires=1789679371&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzLzdhMTM2YWI5YmE0N2QwY2U2ZTIxOTYxZDAzZDk4MDI0ZDc5ODhiZTYxODE2N2YxYmQ4MjE4MGFiMTRjOGYwZjhcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDUtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwNS1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MzcxfX19XX0_&Signature=MEUCICJPI5%7E6GnAYlxiMm5pXjE40HBM2Nf7KV85BwXE5oXoXAiEAgoP97aAyPJytqoO6uHFYYedH5va6LEHSJp05KSaWISA_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 33554432,
+      "bf16_sha256": "8fe45a1a9236f8c6717c899d2265d4332c1afe8097fa9228b4bd6d2439492510",
+      "components": [
+        {
+          "bytes": 8388608,
+          "component": "weight",
+          "file_offset": 513651456,
+          "sha256": "77a1094e4867e7d5f931ad56b78ec8e560ff36f1bb253a5a43dfeeeb5bf1270a",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_11_self_attn_q_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "scales",
+          "file_offset": 522040064,
+          "sha256": "e00b8ed16833b91e80bf99e0c5b219c3c1c95788d48f7eb7ab97f2f8831b0aae",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_11_self_attn_q_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "biases",
+          "file_offset": 522564352,
+          "sha256": "c70937de43e22329be287be5c2a88ace135b056776847a504bf0502dbeda86dd",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_11_self_attn_q_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.11.self_attn.q_proj.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.11.self_attn.q_proj.weight",
+      "source_shard": "model-00008-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1092618136-1126172567/3946842008",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/85e10703cdcbde2dae5493e5698db612d5c6fa1f4b539fbe10ca2a60b3247e61?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00008-of-00026.safetensors%3B+filename%3D%22model-00008-of-00026.safetensors%22%3B&user_id=public&Expires=1789679372&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzLzg1ZTEwNzAzY2RjYmRlMmRhZTU0OTNlNTY5OGRiNjEyZDVjNmZhMWY0YjUzOWZiZTEwY2EyYTYwYjMyNDdlNjFcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDgtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwOC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MzcyfX19XX0_&Signature=MEYCIQCBg9kzxW3wZJ%7EJjBGQjhYoUdzQZuRiVkBh2gFW3A4ieAIhALq75e168Re6Jhoj-xCm4JHNsl30lXjRlC53cWOeNkB0&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "4bd7fa725e91d6f82169a041b9a6d9cfe4eab8757b7cb6ffe6a3f93f09f666ec",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 523088640,
+          "sha256": "9a3f0c05e142d6668c7534966303103b06f8f3e1639c326b8c27caee99b802ce",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_11_self_attn_k_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 523612928,
+          "sha256": "2a89dd4ca32db8f799db7f5465284bd50fd87c0ba59c5c8643f994cace4bd6ea",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_11_self_attn_k_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 523645696,
+          "sha256": "de26b8c10cbb308f6ccebf953e62359994a817249da57a94031ebe64bb2d62ca",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_11_self_attn_k_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.11.self_attn.k_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.11.self_attn.k_proj.weight",
+      "source_shard": "model-00008-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1073743768-1075840919/3946842008",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/85e10703cdcbde2dae5493e5698db612d5c6fa1f4b539fbe10ca2a60b3247e61?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00008-of-00026.safetensors%3B+filename%3D%22model-00008-of-00026.safetensors%22%3B&user_id=public&Expires=1789679374&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzLzg1ZTEwNzAzY2RjYmRlMmRhZTU0OTNlNTY5OGRiNjEyZDVjNmZhMWY0YjUzOWZiZTEwY2EyYTYwYjMyNDdlNjFcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDgtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwOC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5Mzc0fX19XX0_&Signature=MEQCIGysbSAhfNgWxqq-0QAvsL7dZNdfdeN2uWaUwZUg36plAiATcoqhEL13NGvQx4rVy3pnidSq9IKhk3casoSVSgbIYQ__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "690f21903cd270bb6caaf3d38764cb0fbeb4463da60519bd1bea428d0a51de99",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 523678464,
+          "sha256": "d8adf314c9c139026cdd31d7003bc441915ccae778f1ed5ab1e42eb2c58faa1f",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_11_self_attn_v_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 524202752,
+          "sha256": "2b40eb0ae1d9ac1a53595f49258b8d7d41d6f47a2c73fc3610c0e88a735edadc",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_11_self_attn_v_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 524235520,
+          "sha256": "78d3eeac7889099e57c44ac9f37634bc6cd9a96c5b9688a15073b0d96f971435",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_11_self_attn_v_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.11.self_attn.v_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.11.self_attn.v_proj.weight",
+      "source_shard": "model-00008-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1126172568-1128269719/3946842008",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/85e10703cdcbde2dae5493e5698db612d5c6fa1f4b539fbe10ca2a60b3247e61?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00008-of-00026.safetensors%3B+filename%3D%22model-00008-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&user_id=public&Expires=1789679374&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzLzg1ZTEwNzAzY2RjYmRlMmRhZTU0OTNlNTY5OGRiNjEyZDVjNmZhMWY0YjUzOWZiZTEwY2EyYTYwYjMyNDdlNjFcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDgtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwOC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5Mzc0fX19XX0_&Signature=MEUCIGkoyBwpTfW7BRIqOSYErIFnJ2uphNxFtmMStACRz45qAiEA5j3-rz6FkULJUqKcWQpWKEwHWaRhrReE0Ns90B07gwg_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 16777216,
+      "bf16_sha256": "6b51fbae336a9f5c7e96c85a78f91cccffe30d82a7fa03b6b980d73a5748296b",
+      "components": [
+        {
+          "bytes": 4194304,
+          "component": "weight",
+          "file_offset": 524268288,
+          "sha256": "84ee88a94b1fdf9e59c3b9f9f05e9dc443248f5c0fb90a3035bef0d4b3372eec",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_11_self_attn_o_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "scales",
+          "file_offset": 528462592,
+          "sha256": "b146fb18fe74c858872d2d4865d6e8b399078931441191be2070c796d0932b53",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_11_self_attn_o_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "biases",
+          "file_offset": 528724736,
+          "sha256": "651061fc8d3b5390ae304f668c8b151e1ad39425d03b019af087401787d43ea6",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_11_self_attn_o_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.11.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        4096
+      ],
+      "source_bf16_tensor": "model.language_model.layers.11.self_attn.o_proj.weight",
+      "source_shard": "model-00008-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1075840920-1092618135/3946842008",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/85e10703cdcbde2dae5493e5698db612d5c6fa1f4b539fbe10ca2a60b3247e61?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00008-of-00026.safetensors%3B+filename%3D%22model-00008-of-00026.safetensors%22%3B&user_id=public&Expires=1789679375&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzLzg1ZTEwNzAzY2RjYmRlMmRhZTU0OTNlNTY5OGRiNjEyZDVjNmZhMWY0YjUzOWZiZTEwY2EyYTYwYjMyNDdlNjFcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDgtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwOC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5Mzc1fX19XX0_&Signature=MEUCIB6AJ9COG78N7lOHUsJ4hXPktcWGcmWb3g5UOoWtjWmuAiEA3RuseNOnuBHE6rlCU-D6zqpYNJBse8QncjFvOUJom3w_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 33554432,
+      "bf16_sha256": "4689db284c34201b399bb56665a75d1d5e7c360adc58c2d7e7d5f3bfabf24f13",
+      "components": [
+        {
+          "bytes": 8388608,
+          "component": "weight",
+          "file_offset": 595377536,
+          "sha256": "2378ed5ab2294c8d292e89be35cbaa5756af14130889716f9c60d8042005c08b",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_15_self_attn_q_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "scales",
+          "file_offset": 603766144,
+          "sha256": "b3c5abfe64d24f7e28d62c71b05b8f1a732160d52d1710d2ba2d25d12aa0a510",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_15_self_attn_q_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "biases",
+          "file_offset": 604290432,
+          "sha256": "1f5b1bc436043821d6fb7ca80189149d42b3050c83475eb6a4f25ce3662209b8",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_15_self_attn_q_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.15.self_attn.q_proj.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.15.self_attn.q_proj.weight",
+      "source_shard": "model-00010-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 2770339720-2803894151/3946841992",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/4281cf9faffe2113b85cb027ec613ccf11907bb494f2fc44668c52167e8799ab?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00010-of-00026.safetensors%3B+filename%3D%22model-00010-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&user_id=public&Expires=1789679377&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzLzQyODFjZjlmYWZmZTIxMTNiODVjYjAyN2VjNjEzY2NmMTE5MDdiYjQ5NGYyZmM0NDY2OGM1MjE2N2U4Nzk5YWJcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTAtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxMC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5Mzc3fX19XX0_&Signature=MEQCIFE5rpgOXSS5dXGmPgWjtYgkTyC294MmMgFP%7EdVmKpO9AiA9dX4gH3fWGT7XQyhXU1VetmhH2COyniti%7ESTxyZAm9Q__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "24d7b40dec55f03e0fd48f25ff45e22e9b57089d00e28c5f85fc2fb6caaf46e5",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 604814720,
+          "sha256": "17b2244030d8317cc6e6d3e72f67c7003b6a52588ac8d2422d3ddebb29f497e1",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_15_self_attn_k_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 605339008,
+          "sha256": "e52adad9fec9a0d406102ac4abca45aac0fa00999c2e12a9f588eae084d2ac84",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_15_self_attn_k_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 605371776,
+          "sha256": "335a0e44cc101d7246aa609f38e821418e8cd277479cb1b9f4434fbdcc28264f",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_15_self_attn_k_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.15.self_attn.k_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.15.self_attn.k_proj.weight",
+      "source_shard": "model-00010-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 2751465352-2753562503/3946841992",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/4281cf9faffe2113b85cb027ec613ccf11907bb494f2fc44668c52167e8799ab?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00010-of-00026.safetensors%3B+filename%3D%22model-00010-of-00026.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789679378&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzLzQyODFjZjlmYWZmZTIxMTNiODVjYjAyN2VjNjEzY2NmMTE5MDdiYjQ5NGYyZmM0NDY2OGM1MjE2N2U4Nzk5YWJcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTAtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxMC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5Mzc4fX19XX0_&Signature=MEQCIBeT2z3kpW6O3BGKNV-zMfFHgb51EQWrBQy9DBLPknEKAiAn5tJH5QDwswpxrDZcscbqIdP%7EuFcCZTUF6qZ3lPq-Vg__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "3435f6e7a5db3e0bdbddf3f4c28ec853c82cdf861d607fb93ba6b835ecbca432",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 605404544,
+          "sha256": "993bd4c007117373e2b8a0ba095e7d40d9211c6b6928c8379cf2b1b47fad177c",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_15_self_attn_v_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 605928832,
+          "sha256": "c4de8523fe2a14db116aef347d3f5b7356e91cde31b00c6c92eed135a5bf6ffa",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_15_self_attn_v_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 605961600,
+          "sha256": "f03240d154c65c09958256f7f5ebbeaad1273b769389a9793168e96b354fb7fd",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_15_self_attn_v_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.15.self_attn.v_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.15.self_attn.v_proj.weight",
+      "source_shard": "model-00010-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 2803894152-2805991303/3946841992",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/4281cf9faffe2113b85cb027ec613ccf11907bb494f2fc44668c52167e8799ab?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00010-of-00026.safetensors%3B+filename%3D%22model-00010-of-00026.safetensors%22%3B&user_id=public&Expires=1789679379&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzLzQyODFjZjlmYWZmZTIxMTNiODVjYjAyN2VjNjEzY2NmMTE5MDdiYjQ5NGYyZmM0NDY2OGM1MjE2N2U4Nzk5YWJcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTAtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxMC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5Mzc5fX19XX0_&Signature=MEQCID8F%7E7ZiLGrpOWmdBcs-ES2A3Az%7EIUPUKz-uQ1Phk9iWAiBxt-FV70ulBQ4Jv4h-4DpWeESJRBLTuyQq7TjLDN%7EqiQ__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 16777216,
+      "bf16_sha256": "b6d9e37945a45b00134adbcd523fa358a474c1f5c0540d0c53353d00ed411fcc",
+      "components": [
+        {
+          "bytes": 4194304,
+          "component": "weight",
+          "file_offset": 605994368,
+          "sha256": "46eb81126910b3b121bdd40b81e1efea73b3993581d7ccee30d73da7e9f0c608",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_15_self_attn_o_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "scales",
+          "file_offset": 610188672,
+          "sha256": "5c41e11cd7b54c6ae438cc5d5ddf66bddd8b0e22719fb7b6ad8b6fa2cf576d8f",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_15_self_attn_o_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "biases",
+          "file_offset": 610450816,
+          "sha256": "061d24e22e574df74afd562021e570382be3227b40281eea8ebf1d1ca69b530d",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_15_self_attn_o_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.15.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        4096
+      ],
+      "source_bf16_tensor": "model.language_model.layers.15.self_attn.o_proj.weight",
+      "source_shard": "model-00010-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 2753562504-2770339719/3946841992",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/4281cf9faffe2113b85cb027ec613ccf11907bb494f2fc44668c52167e8799ab?user_id=public&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00010-of-00026.safetensors%3B+filename%3D%22model-00010-of-00026.safetensors%22%3B&Expires=1789679380&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzLzQyODFjZjlmYWZmZTIxMTNiODVjYjAyN2VjNjEzY2NmMTE5MDdiYjQ5NGYyZmM0NDY2OGM1MjE2N2U4Nzk5YWJcXD91c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTAtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxMC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MzgwfX19XX0_&Signature=MEUCIFZ9A6J9cOB69cIr5pwxOnxgerW1JOTiePIhvk0bncYSAiEA2S6uYsYSol4leSg1phpaObjBXeAY-amvrEXLviOC7JU_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 33554432,
+      "bf16_sha256": "f864b4fa693c8f733d060bfed758f70911c5e507b511093248606c6d972c1cf6",
+      "components": [
+        {
+          "bytes": 8388608,
+          "component": "weight",
+          "file_offset": 677103616,
+          "sha256": "bb3cba7fe7158913a9737a734b29ed447c810608c6bf53fc82574531009af9df",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_19_self_attn_q_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "scales",
+          "file_offset": 685492224,
+          "sha256": "fce48f8016b2ae548d99c2f93d71164acece3f7307ed10950bd44d8f7622e1d7",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_19_self_attn_q_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "biases",
+          "file_offset": 686016512,
+          "sha256": "dbf39d0db27903e6bec2d8b8c9a8ac1c57e092e8f01512514c4c65bdbc5e8f8e",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_19_self_attn_q_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.19.self_attn.q_proj.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.19.self_attn.q_proj.weight",
+      "source_shard": "model-00012-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3374319496-3407873927/3409971080",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/9106e9c5a1e25a859da992dd2e67ece836c8d0560da52086166c63eff8a0e73f?user_id=public&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00012-of-00026.safetensors%3B+filename%3D%22model-00012-of-00026.safetensors%22%3B&Expires=1789679381&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzLzkxMDZlOWM1YTFlMjVhODU5ZGE5OTJkZDJlNjdlY2U4MzZjOGQwNTYwZGE1MjA4NjE2NmM2M2VmZjhhMGU3M2ZcXD91c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTItb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxMi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MzgxfX19XX0_&Signature=MEQCIGIst9oOA4OBeWPppehNK6GcxhSNtJgQ1GANqJu8hBHEAiAPEPudhNqS9A9PfKMgcZhQbafWrl7WIrxCuP2q4p-X2w__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "af855ccac61629a45fbc258992045f54bbf1195a9ea8198f9817fa15d17d2a70",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 686540800,
+          "sha256": "f3ba198ccbdd3ddbe05b342f18c12ea1538944a1609ce193410d4747da8a9a33",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_19_self_attn_k_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 687065088,
+          "sha256": "6822db17a8c4ed81bf5e37387452404b82bcded8073047be2836d92bbe50dbf1",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_19_self_attn_k_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 687097856,
+          "sha256": "0df985d9b2f81edc65f995dbf76a52f1fbc15c7bb72ca71a25354f2a4e8e4579",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_19_self_attn_k_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.19.self_attn.k_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.19.self_attn.k_proj.weight",
+      "source_shard": "model-00012-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3355445128-3357542279/3409971080",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/9106e9c5a1e25a859da992dd2e67ece836c8d0560da52086166c63eff8a0e73f?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00012-of-00026.safetensors%3B+filename%3D%22model-00012-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&user_id=public&Expires=1789679383&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzLzkxMDZlOWM1YTFlMjVhODU5ZGE5OTJkZDJlNjdlY2U4MzZjOGQwNTYwZGE1MjA4NjE2NmM2M2VmZjhhMGU3M2ZcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTItb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxMi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MzgzfX19XX0_&Signature=MEYCIQDYbtCbxHmgym84Rx1YI8F1TLeRBk8G5sGObN2gGvsaoAIhAL8L-KiiKt98LFIadO6gHWxc1h1qLnxV1rnafOnbPDXz&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "fd2d6bf0d5d496298b2fe35c5abd869aa209b251e60a01452618e452f9c2f609",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 687130624,
+          "sha256": "9a7621fb9c715e65bf7058be5f4402a8aa2babd037cc690c99e142f62104e46a",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_19_self_attn_v_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 687654912,
+          "sha256": "1ac4bedc3d7be0beec9c71bcd6eb505b50a0ff07c08cb19f533e3e92ab32fcce",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_19_self_attn_v_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 687687680,
+          "sha256": "c620bf13f0ee964f42ef3bea5ae23ce59bb5ced3bb3aa7b6d1f4a743e8ecbcf4",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_19_self_attn_v_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.19.self_attn.v_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.19.self_attn.v_proj.weight",
+      "source_shard": "model-00012-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3407873928-3409971079/3409971080",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/9106e9c5a1e25a859da992dd2e67ece836c8d0560da52086166c63eff8a0e73f?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00012-of-00026.safetensors%3B+filename%3D%22model-00012-of-00026.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789679384&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzLzkxMDZlOWM1YTFlMjVhODU5ZGE5OTJkZDJlNjdlY2U4MzZjOGQwNTYwZGE1MjA4NjE2NmM2M2VmZjhhMGU3M2ZcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTItb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxMi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5Mzg0fX19XX0_&Signature=MEUCIQDp6w2vGlC1LZrQsEpBPkLliaU4XimDanGjiS89PI%7EOLAIgaK-XpTonQza%7EbAl9G4U7q3IrwbVBFqoicnfwOVx3n2Q_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 16777216,
+      "bf16_sha256": "c5e834bf2c982955efae1ee3429ea6daef75ea473d4ca5489a38eede49d1c8c0",
+      "components": [
+        {
+          "bytes": 4194304,
+          "component": "weight",
+          "file_offset": 687720448,
+          "sha256": "aac009c808e737ae79589fecfd3fd4d00c4bc2de30d331fa75ca70fe6eccb2f8",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_19_self_attn_o_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "scales",
+          "file_offset": 691914752,
+          "sha256": "e12189e1dbce4cc29e6fbd047390e8af534fc00ca334d748c9697b0cca044e32",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_19_self_attn_o_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "biases",
+          "file_offset": 692176896,
+          "sha256": "4f2aa23d1addf5fda03e26ae5568f365b0349a65847229d5f4a455b3f6c480a5",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_19_self_attn_o_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.19.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        4096
+      ],
+      "source_bf16_tensor": "model.language_model.layers.19.self_attn.o_proj.weight",
+      "source_shard": "model-00012-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3357542280-3374319495/3409971080",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/9106e9c5a1e25a859da992dd2e67ece836c8d0560da52086166c63eff8a0e73f?user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00012-of-00026.safetensors%3B+filename%3D%22model-00012-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&Expires=1789679385&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzLzkxMDZlOWM1YTFlMjVhODU5ZGE5OTJkZDJlNjdlY2U4MzZjOGQwNTYwZGE1MjA4NjE2NmM2M2VmZjhhMGU3M2ZcXD91c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTItb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxMi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5Mzg1fX19XX0_&Signature=MEUCIBw3ZOsUijP4cu%7EPqeajFBXvq-93NluEgC2jJPHz4txzAiEA-OCvFLec9ljmzK34khCLLpdIatYPETCb6lHs90oueg4_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 33554432,
+      "bf16_sha256": "2c6e9f78f72c6f7f3148e4b779a6298108927592ff8c9ad81025c664310e8cb6",
+      "components": [
+        {
+          "bytes": 8388608,
+          "component": "weight",
+          "file_offset": 758829696,
+          "sha256": "4de652811892a68f8324b8ddf7df3490f369978e6877caa42faca34f2f7899ad",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_23_self_attn_q_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "scales",
+          "file_offset": 767218304,
+          "sha256": "3e59f030a5d2686021ce842ac9db5b090eee8aa81e145379fca864a29834c7b5",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_23_self_attn_q_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "biases",
+          "file_offset": 767742592,
+          "sha256": "d70f3acd98cd873f00eecd56434893f5f5a2ffff4561678d108fe60b8029967e",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_23_self_attn_q_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.23.self_attn.q_proj.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.23.self_attn.q_proj.weight",
+      "source_shard": "model-00016-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1629489176-1663043607/3946842136",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/bf4054d5825c95ffd4484fe9d40f64b5134b8a8f017f128450db7348bb1c767f?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00016-of-00026.safetensors%3B+filename%3D%22model-00016-of-00026.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789679386&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2JmNDA1NGQ1ODI1Yzk1ZmZkNDQ4NGZlOWQ0MGY2NGI1MTM0YjhhOGYwMTdmMTI4NDUwZGI3MzQ4YmIxYzc2N2ZcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTYtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxNi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5Mzg2fX19XX0_&Signature=MEQCIFNiFJELiTI%7ERe%7EE0qkmDDTU-Luy70L-%7EGc-LhZab-WiAiAEl2Ixu4V-8vW6Z0ucPz74UsyIPIyh5mc0Q%7ESnvHvV9g__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "9f17ed587442939a0018ceaf68d5db8245ff8bd7cba48c81958881da9053aa07",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 768266880,
+          "sha256": "c4c104588a0f6228925011d8434a234b1a48a8c9c4380f147e7168f420e708b2",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_23_self_attn_k_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 768791168,
+          "sha256": "c998d44c9030ba3614d19cb5d2a0ce80838d71a067a9cd9003736f504347bcbf",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_23_self_attn_k_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 768823936,
+          "sha256": "f9868c844e748fc5a1386d03a2cd5bfc8a0173edfe6878de36c2c0dae4314b74",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_23_self_attn_k_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.23.self_attn.k_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.23.self_attn.k_proj.weight",
+      "source_shard": "model-00016-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1610614808-1612711959/3946842136",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/bf4054d5825c95ffd4484fe9d40f64b5134b8a8f017f128450db7348bb1c767f?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00016-of-00026.safetensors%3B+filename%3D%22model-00016-of-00026.safetensors%22%3B&Expires=1789679388&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2JmNDA1NGQ1ODI1Yzk1ZmZkNDQ4NGZlOWQ0MGY2NGI1MTM0YjhhOGYwMTdmMTI4NDUwZGI3MzQ4YmIxYzc2N2ZcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTYtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxNi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5Mzg4fX19XX0_&Signature=MEUCIFYCsTHyTavUchD6USeIAZtDhZWP6ZG1BzcL2D4vFYgEAiEAp677RjHygDi1i576E2i4pj215xQctEOesQ9vfq07aAg_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "0b13b25f75c827b12b3e5acfb2d24eb1ccce6bf6bf63fcea5c828cf7fa0be493",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 768856704,
+          "sha256": "bac3b63b97c9471626da8bb9c6035788e9ad9f935a6109c9d0c829b2b7dda607",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_23_self_attn_v_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 769380992,
+          "sha256": "591e1c26632fb700d35d72bfea5a89db64e48bb9dca35e65af606dee5f30e9bc",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_23_self_attn_v_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 769413760,
+          "sha256": "148a414226181e4563563947ba9c7ef6a58b55ba6235ed5dfb7271d9145c5fd7",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_23_self_attn_v_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.23.self_attn.v_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.23.self_attn.v_proj.weight",
+      "source_shard": "model-00016-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1663043608-1665140759/3946842136",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/bf4054d5825c95ffd4484fe9d40f64b5134b8a8f017f128450db7348bb1c767f?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00016-of-00026.safetensors%3B+filename%3D%22model-00016-of-00026.safetensors%22%3B&Expires=1789679389&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2JmNDA1NGQ1ODI1Yzk1ZmZkNDQ4NGZlOWQ0MGY2NGI1MTM0YjhhOGYwMTdmMTI4NDUwZGI3MzQ4YmIxYzc2N2ZcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTYtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxNi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5Mzg5fX19XX0_&Signature=MEYCIQD68MjnWoHMWg28t7icDSFBTNUmjhYYEzYOC3qIEwsYIgIhAMs7QOIRBUvIQ1PiAOQA%7EIXcy-le6rLVhhIrellNKgC8&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 16777216,
+      "bf16_sha256": "4e5678ad28a5dd4b4892decc0ae69c65248db14840c863acba72f28bfbcca29a",
+      "components": [
+        {
+          "bytes": 4194304,
+          "component": "weight",
+          "file_offset": 769446528,
+          "sha256": "70e012b86a35556a1e71324a63be84f104880003102b7bb068b226b72f9ab172",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_23_self_attn_o_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "scales",
+          "file_offset": 773640832,
+          "sha256": "25550a5dbecf4b027ad5f57700c1d02b97b5903ad464bcaaa55baddce598bee9",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_23_self_attn_o_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "biases",
+          "file_offset": 773902976,
+          "sha256": "8065364760d3c0a92c71c384cb382a4fa39e92b6ad6d54bbac5b73150569063d",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_23_self_attn_o_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.23.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        4096
+      ],
+      "source_bf16_tensor": "model.language_model.layers.23.self_attn.o_proj.weight",
+      "source_shard": "model-00016-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1612711960-1629489175/3946842136",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/bf4054d5825c95ffd4484fe9d40f64b5134b8a8f017f128450db7348bb1c767f?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00016-of-00026.safetensors%3B+filename%3D%22model-00016-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&user_id=public&Expires=1789679390&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2JmNDA1NGQ1ODI1Yzk1ZmZkNDQ4NGZlOWQ0MGY2NGI1MTM0YjhhOGYwMTdmMTI4NDUwZGI3MzQ4YmIxYzc2N2ZcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTYtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxNi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MzkwfX19XX0_&Signature=MEUCIHFSemDca-eVG-%7EMEkO-2QapMZNYkKXRuYWT5jeM9COjAiEAkGrF8H5vC2uPkuaTHWjD7PACUo5bHi1s%7ETpKdXGYmnY_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 33554432,
+      "bf16_sha256": "72db2246e6cd5b5315a4ae8f2b45047a94ac48adb3e5793d8d1a34990545ddc8",
+      "components": [
+        {
+          "bytes": 8388608,
+          "component": "weight",
+          "file_offset": 840555776,
+          "sha256": "f1d4126380a02ad942df071acb005f40dbde879ec0c3b60b8fb182f5dfce1666",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_27_self_attn_q_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "scales",
+          "file_offset": 848944384,
+          "sha256": "cb05dcb688b2aab873997e4d5aaaf30e330a37ce637d363da9f927cd6c6861c1",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_27_self_attn_q_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "biases",
+          "file_offset": 849468672,
+          "sha256": "44c127afe838b2d7919fa1c0e28643cbe8adabe8a3a4a90e88322ecb414eb83d",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_27_self_attn_q_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.27.self_attn.q_proj.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.27.self_attn.q_proj.weight",
+      "source_shard": "model-00018-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 2233468808-2267023239/3946841992",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/fed055ca33aed95c1b79a5c9912211210f3b1aa73ea5aed115d42ae38b99dd8a?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00018-of-00026.safetensors%3B+filename%3D%22model-00018-of-00026.safetensors%22%3B&user_id=public&Expires=1789679391&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2ZlZDA1NWNhMzNhZWQ5NWMxYjc5YTVjOTkxMjIxMTIxMGYzYjFhYTczZWE1YWVkMTE1ZDQyYWUzOGI5OWRkOGFcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTgtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxOC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MzkxfX19XX0_&Signature=MEUCIACF9Z8GUrMVwVPJ6RDw9m7T8l1yKWmNqDfUjIoj5gwIAiEAijvIkx19mYk9Zyk%7EeqWkCf8Sr6E9BhOq2ZhJHP2Fq24_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "bfa64e5009780c361cd20c304d5919e5e8e9a4318b8b00bee689da17898adca1",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 849992960,
+          "sha256": "2c8e9d5ee6cd6d01357ad3859f56613fc44f78ee963a20279ee6286eb9d2cf8c",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_27_self_attn_k_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 850517248,
+          "sha256": "4b8a86e5aa5bb34299b87931b0967176c6ea4c31d641bce5a3d283a3a8b8dbe1",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_27_self_attn_k_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 850550016,
+          "sha256": "96501fd022309d34973547b4b99f9dcdac753843f2598a0174e33d5cc3833a9e",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_27_self_attn_k_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.27.self_attn.k_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.27.self_attn.k_proj.weight",
+      "source_shard": "model-00018-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 2214594440-2216691591/3946841992",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/fed055ca33aed95c1b79a5c9912211210f3b1aa73ea5aed115d42ae38b99dd8a?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00018-of-00026.safetensors%3B+filename%3D%22model-00018-of-00026.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789679393&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2ZlZDA1NWNhMzNhZWQ5NWMxYjc5YTVjOTkxMjIxMTIxMGYzYjFhYTczZWE1YWVkMTE1ZDQyYWUzOGI5OWRkOGFcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTgtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxOC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MzkzfX19XX0_&Signature=MEUCIQCfRVFpENdZu13j%7ENNrVZLA7IssoeJpVzv6cUV30b3xfgIgf03Z2%7Erc8Z3ZDTkTxt0uug8ypgFxOt31J5oyjJVl%7E-g_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "f006ddce7124bab1f891be6d777be0b7a6ace64792bbf582f7fe2c661a4d30f7",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 850582784,
+          "sha256": "af1e2226ad66a0fda2e2d139ba58958f1826561c978ce8f2eaf9897af31cb908",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_27_self_attn_v_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 851107072,
+          "sha256": "112e5a9d857db714c673790b5d7dc8dc21a7707321501285c28d9ebdf0ce36b3",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_27_self_attn_v_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 851139840,
+          "sha256": "ef1b0e8ee32c9bb0fc6e338b1bd859b79866a9cfd4bb491a3643be0310274007",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_27_self_attn_v_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.27.self_attn.v_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.27.self_attn.v_proj.weight",
+      "source_shard": "model-00018-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 2267023240-2269120391/3946841992",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/fed055ca33aed95c1b79a5c9912211210f3b1aa73ea5aed115d42ae38b99dd8a?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00018-of-00026.safetensors%3B+filename%3D%22model-00018-of-00026.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789679394&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2ZlZDA1NWNhMzNhZWQ5NWMxYjc5YTVjOTkxMjIxMTIxMGYzYjFhYTczZWE1YWVkMTE1ZDQyYWUzOGI5OWRkOGFcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTgtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxOC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5Mzk0fX19XX0_&Signature=MEUCIGf1JSdpHxCOfhdkpeSNqUFUYifxQG6T2R5Odjqm1vuHAiEA39PSys0bHQ8mNfL9pNYrHKHX63gc4Yvg0kZkYx%7EbPj0_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 16777216,
+      "bf16_sha256": "53cefe73424c2c0b37038c0ccd96980354fef81b2181c00aab9d90beafc564e7",
+      "components": [
+        {
+          "bytes": 4194304,
+          "component": "weight",
+          "file_offset": 851172608,
+          "sha256": "c55762fff819b48fc92717e30bf3c8f64f70d6d971c3dd09522a28477e6a13f8",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_27_self_attn_o_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "scales",
+          "file_offset": 855366912,
+          "sha256": "481a4f8902ac5b2fa429ee23655303ccf94547685e41447529436a0e21c95b60",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_27_self_attn_o_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "biases",
+          "file_offset": 855629056,
+          "sha256": "d8f74611a2d59feb20bce5f4d9a0827854b1383b01047cead8552f84fed9975f",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_27_self_attn_o_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.27.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        4096
+      ],
+      "source_bf16_tensor": "model.language_model.layers.27.self_attn.o_proj.weight",
+      "source_shard": "model-00018-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 2216691592-2233468807/3946841992",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/fed055ca33aed95c1b79a5c9912211210f3b1aa73ea5aed115d42ae38b99dd8a?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00018-of-00026.safetensors%3B+filename%3D%22model-00018-of-00026.safetensors%22%3B&Expires=1789679395&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2ZlZDA1NWNhMzNhZWQ5NWMxYjc5YTVjOTkxMjIxMTIxMGYzYjFhYTczZWE1YWVkMTE1ZDQyYWUzOGI5OWRkOGFcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTgtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxOC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5Mzk1fX19XX0_&Signature=MEQCICMoPcAJzD-V9QHjisZ44z09hhfRBrROlWFn7U4pLk1jAiBqaNANWY09CfxQkxlp-hZSzrh28pAMeJPzoWUNqAOmGw__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 33554432,
+      "bf16_sha256": "ee836b7de3f8706440dbd62a5e2e43a0aa75a385a3b6a3b8592dbc2e71c60caa",
+      "components": [
+        {
+          "bytes": 8388608,
+          "component": "weight",
+          "file_offset": 922281856,
+          "sha256": "d528643f6556fb27366530a15e3459fd986efa59a9ab5fc1e740e6f7c41547ac",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_31_self_attn_q_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "scales",
+          "file_offset": 930670464,
+          "sha256": "a3de8f268538e6fe28667b28a46cd04a690b77a94c999da25f50eb77f17dfc91",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_31_self_attn_q_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "biases",
+          "file_offset": 931194752,
+          "sha256": "919a14c09bbe8f4c55683df8e9ecce45a01145572137d93007fefb408a9a5517",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_31_self_attn_q_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.31.self_attn.q_proj.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.31.self_attn.q_proj.weight",
+      "source_shard": "model-00020-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3374319488-3407873919/3409971072",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/a6f17b6074c1310c1f77026cf805e3c78d03ffe010cf535772fed5e3cd8235e2?user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00020-of-00026.safetensors%3B+filename%3D%22model-00020-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&Expires=1789679397&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2E2ZjE3YjYwNzRjMTMxMGMxZjc3MDI2Y2Y4MDVlM2M3OGQwM2ZmZTAxMGNmNTM1NzcyZmVkNWUzY2Q4MjM1ZTJcXD91c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjAtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyMC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5Mzk3fX19XX0_&Signature=MEQCIC3BPphdJcVBkcrhyVnddUIdcDcdUBx7CkFZdLRzKv8YAiAGryAYr6dZyCsgTBIc0qFqw-AwoHbDKZ3bmXGR6lIdAg__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "e402bcea27a72234e0fdd1eb16b816c70ede59637e9db48c480fdd02741d0779",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 931719040,
+          "sha256": "7aa56101ffe259fded13e0cf830b74a888d4733b830d367da6cd6ea9004370c1",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_31_self_attn_k_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 932243328,
+          "sha256": "bf74a21376c65f79f25906e7f36b3eb6af6769f9086ebf98747c303f97b6cd66",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_31_self_attn_k_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 932276096,
+          "sha256": "59bd095f12a16d295168217944bc257f4eef601c381d10369edc1fb5f6d7a6e2",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_31_self_attn_k_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.31.self_attn.k_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.31.self_attn.k_proj.weight",
+      "source_shard": "model-00020-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3355445120-3357542271/3409971072",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/a6f17b6074c1310c1f77026cf805e3c78d03ffe010cf535772fed5e3cd8235e2?user_id=public&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00020-of-00026.safetensors%3B+filename%3D%22model-00020-of-00026.safetensors%22%3B&Expires=1789679398&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2E2ZjE3YjYwNzRjMTMxMGMxZjc3MDI2Y2Y4MDVlM2M3OGQwM2ZmZTAxMGNmNTM1NzcyZmVkNWUzY2Q4MjM1ZTJcXD91c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjAtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyMC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5Mzk4fX19XX0_&Signature=MEYCIQCnhyE3lUusJEu6fYDtSNDu4gzbLMMfoiLUymDB6DIL8AIhANnWy1EVnZ4FTm2Lz7MfZJkVl7DZTo%7E0cz05X21tZjHD&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "432f3935e1cef0511c51a8f66530befc20f24f7035e72b492feed6d61c35c014",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 932308864,
+          "sha256": "863d4c097fb9f3c2368225e24a1754f6eb1ad8fe2fd703258014349c22965d98",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_31_self_attn_v_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 932833152,
+          "sha256": "d31be468ef91b17ccea29e60221c0836c3063f0ad2364d971f1987be84902652",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_31_self_attn_v_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 932865920,
+          "sha256": "e3bdbe36924ad885172ebe9a48188b205e1a41ba3b9fecf2e860e81146bcf3ff",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_31_self_attn_v_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.31.self_attn.v_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.31.self_attn.v_proj.weight",
+      "source_shard": "model-00020-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3407873920-3409971071/3409971072",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/a6f17b6074c1310c1f77026cf805e3c78d03ffe010cf535772fed5e3cd8235e2?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00020-of-00026.safetensors%3B+filename%3D%22model-00020-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&user_id=public&Expires=1789679400&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2E2ZjE3YjYwNzRjMTMxMGMxZjc3MDI2Y2Y4MDVlM2M3OGQwM2ZmZTAxMGNmNTM1NzcyZmVkNWUzY2Q4MjM1ZTJcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjAtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyMC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5NDAwfX19XX0_&Signature=MEYCIQDDmhFB9JZousZiGztxs9B4J9%7EtT%7EfmrFej3qBpVHllqwIhAM6FpIKKH5YVp0eS97EmoEPz1T6fvV%7Eq3nV9YPHNjOdj&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 16777216,
+      "bf16_sha256": "769806f1f0885d53b4c97cecb06d83971049d0b68e5d6e32f9723ff2e9697c96",
+      "components": [
+        {
+          "bytes": 4194304,
+          "component": "weight",
+          "file_offset": 932898688,
+          "sha256": "d86085ef328e014cce757bb044a2118e3274df74381fb3a141561413dd02fff4",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_31_self_attn_o_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "scales",
+          "file_offset": 937092992,
+          "sha256": "2e5dab19965bbc4be41b9ddb03ef71da65c4b874b4f5518bb40771603a031de0",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_31_self_attn_o_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "biases",
+          "file_offset": 937355136,
+          "sha256": "56f72dd0d622cf83b9aeef2cbcdae480c78a0154b2af7a714901cc031b5fba3f",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_31_self_attn_o_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.31.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        4096
+      ],
+      "source_bf16_tensor": "model.language_model.layers.31.self_attn.o_proj.weight",
+      "source_shard": "model-00020-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3357542272-3374319487/3409971072",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/a6f17b6074c1310c1f77026cf805e3c78d03ffe010cf535772fed5e3cd8235e2?user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00020-of-00026.safetensors%3B+filename%3D%22model-00020-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&Expires=1789679400&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2E2ZjE3YjYwNzRjMTMxMGMxZjc3MDI2Y2Y4MDVlM2M3OGQwM2ZmZTAxMGNmNTM1NzcyZmVkNWUzY2Q4MjM1ZTJcXD91c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjAtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyMC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5NDAwfX19XX0_&Signature=MEUCIQDx2pPlZjNVYm6moeLlJRxZr-UamXw-mIP8-dWwDMlLmAIgZXaET%7EWPaHtEgq%7Et6EVMcrBoQpet0R9WxgdOK%7EIKQzg_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 33554432,
+      "bf16_sha256": "907ccdce43111a9117f0992dfa9c8d99d0d28974274f10e7363162c88966ac82",
+      "components": [
+        {
+          "bytes": 8388608,
+          "component": "weight",
+          "file_offset": 1004007936,
+          "sha256": "0f46d96b36c9be23e2cde14310e605f5f17df92ebd56a14670665b988de1d52d",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_35_self_attn_q_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "scales",
+          "file_offset": 1012396544,
+          "sha256": "21bf8b7bc93c0e2e6a975a2f997fde2c395d7b732eef5035bd9ea81d9a551e66",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_35_self_attn_q_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "biases",
+          "file_offset": 1012920832,
+          "sha256": "faed7788c933395da9683ef2f804b5317402777aa824ced619ab2432f0838852",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_35_self_attn_q_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.35.self_attn.q_proj.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.35.self_attn.q_proj.weight",
+      "source_shard": "model-00023-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3322246808-3355801239/3357898392",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/6517ea3dbff7cfa9aff90f441a19f632c9e4d6ea9a444432f2f02bdf46eca135?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00023-of-00026.safetensors%3B+filename%3D%22model-00023-of-00026.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789679402&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzLzY1MTdlYTNkYmZmN2NmYTlhZmY5MGY0NDFhMTlmNjMyYzllNGQ2ZWE5YTQ0NDQzMmYyZjAyYmRmNDZlY2ExMzVcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5NDAyfX19XX0_&Signature=MEYCIQCwO6PsjQV20zWKGffIgJN9ACj9BCtBNHNbOY6UwBkVPAIhAJ7Nt0-YkRrE%7EI7Kt%7E8ipMhSr0REmwrL38eVh4QB%7E9Nc&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "9b3b194b87b669d22ab2f8eff2674a9c63e9b31eb25d4d098923ee5e1429860b",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 1013445120,
+          "sha256": "04dd747a6735bfe001057ba8f072afd66d4d5aca2e4a8b6093e15fe1b212a421",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_35_self_attn_k_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 1013969408,
+          "sha256": "35a7c609dcd148dd8b551f3fa291e239d31dd6ff37345b50e7aec187c0573742",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_35_self_attn_k_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 1014002176,
+          "sha256": "d384fc022ff18f61c18e28b819521df95528229cbd514f5ccfceefb636edcdd6",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_35_self_attn_k_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.35.self_attn.k_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.35.self_attn.k_proj.weight",
+      "source_shard": "model-00023-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3303371928-3305469079/3357898392",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/6517ea3dbff7cfa9aff90f441a19f632c9e4d6ea9a444432f2f02bdf46eca135?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00023-of-00026.safetensors%3B+filename%3D%22model-00023-of-00026.safetensors%22%3B&user_id=public&Expires=1789679403&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzLzY1MTdlYTNkYmZmN2NmYTlhZmY5MGY0NDFhMTlmNjMyYzllNGQ2ZWE5YTQ0NDQzMmYyZjAyYmRmNDZlY2ExMzVcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5NDAzfX19XX0_&Signature=MEUCIQCqivgXxr3z9WRvrJnGJ-O7yA9A6fpNLQxlrnnNE0bw%7EAIgAP8jG%7EyKo72XbAdxTIk6CpUbAwTVB4ZLHYE8wfwsRHI_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "ca15f2f9490573d15071f63105227016b594c04beb431269e24ef47c25f2717a",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 1014034944,
+          "sha256": "8f3f1354358e19c84c4f7201be99781f8ef2a71e3609802b221d7665bd520a76",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_35_self_attn_v_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 1014559232,
+          "sha256": "0183c2e8fa51a99b9cb69b473eff1107d3f40597fac3ba3bf2c92054549dc579",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_35_self_attn_v_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 1014592000,
+          "sha256": "eb21ac8aafc189bc0ff84b9ab7a247e6bb8173306ad0fb0561bada79bfc39f2b",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_35_self_attn_v_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.35.self_attn.v_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.35.self_attn.v_proj.weight",
+      "source_shard": "model-00023-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3355801240-3357898391/3357898392",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/6517ea3dbff7cfa9aff90f441a19f632c9e4d6ea9a444432f2f02bdf46eca135?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00023-of-00026.safetensors%3B+filename%3D%22model-00023-of-00026.safetensors%22%3B&Expires=1789679404&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzLzY1MTdlYTNkYmZmN2NmYTlhZmY5MGY0NDFhMTlmNjMyYzllNGQ2ZWE5YTQ0NDQzMmYyZjAyYmRmNDZlY2ExMzVcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5NDA0fX19XX0_&Signature=MEYCIQC5rjSXqiKRpUvKHxpxYCrtHVR%7ERoE6ot-wqsnA96FwMQIhALd-e0BLNVB1MWrcuF3QvpL-revBTzy1YpafYmHlb42z&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 16777216,
+      "bf16_sha256": "41983c1d83aa2b97f587f18e1819109d604ba275a44ba7104af8bfa94d5440e6",
+      "components": [
+        {
+          "bytes": 4194304,
+          "component": "weight",
+          "file_offset": 1014624768,
+          "sha256": "4d1be624770d09ab85ddda7b4e9157c1625654c00fcff4cdf31623636a427a71",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_35_self_attn_o_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "scales",
+          "file_offset": 1018819072,
+          "sha256": "c62e4daaff7ebf681103e8eef1b6a78efbe1fabe164e9d67b49f0a0f427d0d89",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_35_self_attn_o_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "biases",
+          "file_offset": 1019081216,
+          "sha256": "90bab150c8816856acc75bcc34f27330f49c0252cfebf9a5e076b0b15bce58c6",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_35_self_attn_o_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.35.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        4096
+      ],
+      "source_bf16_tensor": "model.language_model.layers.35.self_attn.o_proj.weight",
+      "source_shard": "model-00023-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3305469080-3322246295/3357898392",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/6517ea3dbff7cfa9aff90f441a19f632c9e4d6ea9a444432f2f02bdf46eca135?user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00023-of-00026.safetensors%3B+filename%3D%22model-00023-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&Expires=1789679405&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzLzY1MTdlYTNkYmZmN2NmYTlhZmY5MGY0NDFhMTlmNjMyYzllNGQ2ZWE5YTQ0NDQzMmYyZjAyYmRmNDZlY2ExMzVcXD91c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5NDA1fX19XX0_&Signature=MEQCIEu6%7EHmmLN6mIZIzHu2WhzVUa2ECO4Bo5TJXhI771UfeAiBjHjByjQO1npjsSoWd1qCsPBK0UiwkknHwoKoyWD-XcA__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 33554432,
+      "bf16_sha256": "87eac6269c354591d2957a83fea50bd7d1986308979262f6e636d2a3c359f0aa",
+      "components": [
+        {
+          "bytes": 8388608,
+          "component": "weight",
+          "file_offset": 1085734016,
+          "sha256": "7d5da60057ff015f0edfa8f377bd504f92aba6c1f4864caf703a29b40e9f5f10",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_39_self_attn_q_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "scales",
+          "file_offset": 1094122624,
+          "sha256": "73fa00751a833d43936bbed450c88dd1c46866f409c2f849460fdc0a0534f9bb",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_39_self_attn_q_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "biases",
+          "file_offset": 1094646912,
+          "sha256": "806870ab8a05b1730160a22e69a6ad05068dfa934daaf15cfd4f25b2227108eb",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_39_self_attn_q_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.39.self_attn.q_proj.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.39.self_attn.q_proj.weight",
+      "source_shard": "model-00026-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1580221456-1613775887/2231416848",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/b79fdbad35201ab082b8e60f41318999e903763627117e0b2571a8b6c992a23e?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00026-of-00026.safetensors%3B+filename%3D%22model-00026-of-00026.safetensors%22%3B&user_id=public&Expires=1789679406&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2I3OWZkYmFkMzUyMDFhYjA4MmI4ZTYwZjQxMzE4OTk5ZTkwMzc2MzYyNzExN2UwYjI1NzFhOGI2Yzk5MmEyM2VcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjYtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyNi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5NDA2fX19XX0_&Signature=MEQCIDrffjll49wWbXbk5QRD%7EmN6Bz75DkGj8nKi9%7E4yx1tPAiAmEhkvLY70T15ablkjFxq5ypHElqA%7EsBv-NcLAQbpBqw__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "132dd956728e25f5c1ab3c27015edc2e51deffa69a348f6721b915d7398d9e2e",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 1095171200,
+          "sha256": "c03ebc7f0f3a2a1d8127a271842164ccf7e8f0cde14f1fe2b80a5a5c889ae000",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_39_self_attn_k_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 1095695488,
+          "sha256": "59465231df627bdc3a420afeb5625a128ff5455933103d366599a884fa802352",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_39_self_attn_k_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 1095728256,
+          "sha256": "4d4d5b2f95fc3a4ea1837ab251681e29d23e6d521d2761e4d5a407d71212ed02",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_39_self_attn_k_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.39.self_attn.k_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.39.self_attn.k_proj.weight",
+      "source_shard": "model-00026-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1561346576-1563443727/2231416848",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/b79fdbad35201ab082b8e60f41318999e903763627117e0b2571a8b6c992a23e?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00026-of-00026.safetensors%3B+filename%3D%22model-00026-of-00026.safetensors%22%3B&Expires=1789679408&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2I3OWZkYmFkMzUyMDFhYjA4MmI4ZTYwZjQxMzE4OTk5ZTkwMzc2MzYyNzExN2UwYjI1NzFhOGI2Yzk5MmEyM2VcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjYtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyNi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5NDA4fX19XX0_&Signature=MEQCIBj43Gwf8V1FUUcP4Q-Qf8i6OJW01tOrGEhZI-ARaj-KAiBslmhpOh4et0jz5ZzjSmoxpT92ktv9Ecx0cNkMvWT-IA__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "ec002a2d6e799978792055da646f47374b608a1604d6430d3d4d75b585cc9bd0",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 1095761024,
+          "sha256": "49a241d0d6c4df59c0e53086701251fbc2289244f50446b9d2575436b1c7d0e4",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_39_self_attn_v_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 1096285312,
+          "sha256": "8fa2ca89980a75bdad4a172c4d5458ab8f4eab2671a8c981e7721678a150378b",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_39_self_attn_v_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 1096318080,
+          "sha256": "78e1c4825079ad91c73caa8250fd8456017e9c3297a39a90b29fb877a13f4fcc",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_39_self_attn_v_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.39.self_attn.v_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.39.self_attn.v_proj.weight",
+      "source_shard": "model-00026-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1613775888-1615873039/2231416848",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/b79fdbad35201ab082b8e60f41318999e903763627117e0b2571a8b6c992a23e?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00026-of-00026.safetensors%3B+filename%3D%22model-00026-of-00026.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789679409&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2I3OWZkYmFkMzUyMDFhYjA4MmI4ZTYwZjQxMzE4OTk5ZTkwMzc2MzYyNzExN2UwYjI1NzFhOGI2Yzk5MmEyM2VcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjYtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyNi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5NDA5fX19XX0_&Signature=MEUCIQCMsHGql%7EBmPbtNkuUOhx4vo5IZWEgyPBKG7h9IX63gOQIgdgukgr6jAFuyx5HjSKjNPP2sgNsp4L8jcCWylJLNt0s_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 16777216,
+      "bf16_sha256": "10c375b7629138da865dbcf33fac2d6f3a8ea2af4eb86fd1a8162b8daca72b42",
+      "components": [
+        {
+          "bytes": 4194304,
+          "component": "weight",
+          "file_offset": 1096350848,
+          "sha256": "bb3bad7f2b20f5bd20f9bcd5cc44ae46691b77f90c895f8f5cd02cee62eac055",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_39_self_attn_o_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "scales",
+          "file_offset": 1100545152,
+          "sha256": "df0286cc787c2e2b39c50d0a5eb81f68dc1631b85e1fc49d56b6ff998936f402",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_39_self_attn_o_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "biases",
+          "file_offset": 1100807296,
+          "sha256": "b3abf1998208fc5c120b2562cbfb57f7a3b020e90882dd80cc1db22c5707650b",
+          "staged_file": "results/raw/EXP-007/carnice-hybrid/generated-resident/language_model_model_layers_39_self_attn_o_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.39.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        4096
+      ],
+      "source_bf16_tensor": "model.language_model.layers.39.self_attn.o_proj.weight",
+      "source_shard": "model-00026-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1563443728-1580220943/2231416848",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/b79fdbad35201ab082b8e60f41318999e903763627117e0b2571a8b6c992a23e?user_id=public&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00026-of-00026.safetensors%3B+filename%3D%22model-00026-of-00026.safetensors%22%3B&Expires=1789679410&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2I3OWZkYmFkMzUyMDFhYjA4MmI4ZTYwZjQxMzE4OTk5ZTkwMzc2MzYyNzExN2UwYjI1NzFhOGI2Yzk5MmEyM2VcXD91c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjYtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyNi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5NDEwfX19XX0_&Signature=MEQCIF7i876fQYKX-eeFPsEt6NG6IGptnzWk666lOiwFTPcGAiAohbXQ9Mng4zVgp-JNhs1L23tjfeyFpQxjlJYoIRLrtw__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    }
+  ],
+  "source_control_path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/stock-hybrid-control/qwen36-stock-hybrid-control.gturbo",
+  "stock_artifact_modified": false
+}

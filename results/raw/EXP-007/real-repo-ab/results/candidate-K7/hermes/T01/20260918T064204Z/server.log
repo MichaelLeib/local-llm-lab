@@ -1,0 +1,12 @@
+2026-09-18T06:43:38Z request prompt=4070 cached=0 new_prompt=4070 completion=172 ttft=70.01s prefill=58.1tok/s decode=9.0tok/s total=89.19s stop=tool_calls cache_miss=noEntry render=0.033s match=0.000s prepare=0.001s expert_hit=48.3% expert_miss=28264 io_await=11.86s reasoning=92
+--- reasoning 92 tokens ---
+The user wants me to fix a mobile layout regression in a HermesMobile repository. Let me start by exploring the repository structure to understand what we're working with.
+
+Key issues to fix:
+1. Prevent Safari auto-zoom on text input focus (chat composer, model-picker search, dialog text input)
+2. Prevent horizontal panning of chat/thread pane with wide Markdown content (tables, code)
+
+Let me explore the codebase first.
+
+--- end reasoning ---
+TurboFieldfareServer ready at http://127.0.0.1:8997 model=candidate-K7 context=8192 prompt_cache=single-prefix

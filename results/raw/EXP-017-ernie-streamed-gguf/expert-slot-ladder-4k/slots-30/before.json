@@ -1,0 +1,16 @@
+{
+  "timestamp": 1789823805.811289,
+  "label": "before",
+  "model_pid": null,
+  "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                   419401.\nPages active:                                 149292.\nPages inactive:                               147372.\nPages speculative:                              1553.\nPages throttled:                                   0.\nPages wired down:                             154665.\nPages purgeable:                                 144.\n\"Translation faults\":                     1257778512.\nPages copy-on-write:                        61240265.\nPages zero filled:                         770469715.\nPages reactivated:                         111431405.\nPages purged:                               30865413.\nFile-backed pages:                            182873.\nAnonymous pages:                              115344.\nPages stored in compressor:                   312618.\nPages occupied by compressor:                 138864.\nDecompressions:                            264018077.\nCompressions:                              298768544.\nPageins:                                  1091385968.\nPageouts:                                    1294648.\nSwapins:                                     3197623.\nSwapouts:                                    4528759.\n",
+  "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 419401 \nPages purgeable: 144 \nPages purged: 30865413 \n\nSwap I/O:\nSwapins: 3197623 \nSwapouts: 4528759 \n\nPage Q counts:\nPages active: 149292 \nPages inactive: 147372 \nPages speculative: 1553 \nPages throttled: 0 \nPages wired down: 154665 \n\nCompressor Stats:\nPages used by compressor: 138864 \nPages decompressed: 264018079 \nPages compressed: 298768544 \n\nFile I/O:\nPageins: 1091385969 \nPageouts: 1294648 \n\nSystem-wide memory free percentage: 70%\n",
+  "swap": "vm.swapusage: total = 3072.00M  used = 1632.38M  free = 1439.62M  (encrypted)\n",
+  "process": "",
+  "rusage": null,
+  "free_percent": 70,
+  "swap_used_mib": 1632.38,
+  "swapouts": 4528759,
+  "swapins": 3197623,
+  "pageouts": 1294648,
+  "rss_kib": null
+}

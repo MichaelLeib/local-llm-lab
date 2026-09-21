@@ -1,0 +1,5 @@
+{
+  "smoke": [{"role":"user","content":"Answer in one concise sentence: what is the purpose of a checksum?"}],
+  "coding": [{"role":"user","content":"You are debugging this Python function:\n\ndef merge_sorted(a, b):\n    i = j = 0\n    out = []\n    while i < len(a) and j < len(b):\n        if a[i] < b[j]:\n            out.append(a[i]); i += 1\n        else:\n            out.append(b[j]); j += 1\n    return out\n\nIt drops data and fails a stability requirement: equal elements from a must precede equal elements from b. Explain the minimal fix and give corrected code plus two focused tests."}],
+  "technical": [{"role":"user","content":"Compare optimistic concurrency control with pessimistic locking for a collaborative document service. State the trade-off, identify a failure mode for each, and give a practical hybrid design. Be precise and concise."}]
+}

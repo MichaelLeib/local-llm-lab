@@ -1,0 +1,1 @@
+hf download --repo-type model unsloth/North-Mini-Code-1.0-GGUF --revision e306bb4bf0df610f5471d97a01de2b6e0b24d356 --include North-Mini-Code-1.0-UD-Q3_K_M.gguf README.md --local-dir results/raw/EXP-016-small-moe-feasibility/north/model

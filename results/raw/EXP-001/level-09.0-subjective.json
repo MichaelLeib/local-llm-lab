@@ -1,0 +1,9 @@
+{
+  "experiment": "EXP-001",
+  "level_gib": 9.0,
+  "rating": 0,
+  "assessment": "Still no problems. This is interesting :)",
+  "continue_explicit": true,
+  "recorded_at": "2026-09-17",
+  "notes": "User reported no problems and explicitly instructed continuation to 10 GiB."
+}

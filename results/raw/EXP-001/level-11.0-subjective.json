@@ -1,0 +1,9 @@
+{
+  "experiment": "EXP-001",
+  "level_gib": 11.0,
+  "rating": 0,
+  "assessment": "Still all smooth...weird yesterday I had less apps open and ornith loaded with 7-8 GB footprint - mac became really slow... Interesting.",
+  "continue_explicit": false,
+  "recorded_at": "2026-09-17",
+  "notes": "User reported no perceptible degradation at 11 GiB and requested complete-run analysis. User contrasted this with a prior real Ornith MLX run showing a 7-8 GiB footprint that made the Mac very slow."
+}

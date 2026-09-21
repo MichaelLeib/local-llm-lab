@@ -1,0 +1,2 @@
+
+[stop=maxTokens prefill=1196tok/0.04s new=16tok decode=10.45s tok/s=1.531]

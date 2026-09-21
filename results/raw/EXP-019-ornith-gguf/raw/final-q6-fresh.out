@@ -1,0 +1,23 @@
+Query: Use the terminal tool to run 'sw_vers'. Quote the exact tool output.
+Initializing agent...
+────────────────────────────────────────
+
+  ┊ 💻 preparing terminal…
+  ┊ 💻 $         sw_vers  0.1s
+
+╭─ ☤ Hermes ───────────────────────────────────────────────────────────────────╮
+
+ProductName:     macOS
+ProductVersion:  27.0
+BuildVersion:    26A428
+
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Resume this session with:
+  hermes --resume 20260919_221043_9e38f5 -p local-ornith
+  hermes -c "Run sw_vers and quote output" -p local-ornith
+
+Session:        20260919_221043_9e38f5
+Title:          Run sw_vers and quote output
+Duration:       1m 24s
+Messages:       4 (1 user, 2 tool calls)

@@ -1,0 +1,32 @@
+2026-09-20T05:31:18Z
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi   140Gi     9%    484k  1.5G    0%   /
+vm.swapusage: total = 2048.00M  used = 1306.44M  free = 741.56M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 111674 
+Pages purgeable: 5754 
+Pages purged: 12414603 
+
+Swap I/O:
+Swapins: 2113587 
+Swapouts: 2703955 
+
+Page Q counts:
+Pages active: 338548 
+Pages inactive: 337392 
+Pages speculative: 972 
+Pages throttled: 0 
+Pages wired down: 149810 
+
+Compressor Stats:
+Pages used by compressor: 72751 
+Pages decompressed: 45346476 
+Pages compressed: 54452416 
+
+File I/O:
+Pageins: 30029751 
+Pageouts: 36853 
+
+System-wide memory free percentage: 77%

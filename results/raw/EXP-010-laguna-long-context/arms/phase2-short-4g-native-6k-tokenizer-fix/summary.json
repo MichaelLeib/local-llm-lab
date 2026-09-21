@@ -1,0 +1,24 @@
+{
+  "status": "stopped_for_memory_pressure",
+  "stop_reason": "memory_free<20% (13%)",
+  "server_exit_code": -15,
+  "baseline_swap_mib": 3437.06,
+  "peak_swap_mib": 3470.94,
+  "max_incremental_swap_mib": 33.88000000000011,
+  "min_memory_free_pct": 13,
+  "request": {
+    "done": true,
+    "http_status": 200,
+    "safety_stop_during_request": true
+  },
+  "prompt": {
+    "target_tokens": 6144,
+    "actual_rendered_tokens": 6159,
+    "record_units": 87,
+    "rendered_chars": 25311,
+    "user_prompt_chars": 25107,
+    "tokenizer_class": "Tokenizer"
+  },
+  "lane_status_before": "FAST: down\nDEEP: down\n  vm.swapusage: total = 5120.00M  used = 3437.06M  free = 1682.94M  (encrypted)\n",
+  "lane_status_after": "FAST: down\nDEEP: down\n  vm.swapusage: total = 5120.00M  used = 3470.94M  free = 1649.06M  (encrypted)\n"
+}

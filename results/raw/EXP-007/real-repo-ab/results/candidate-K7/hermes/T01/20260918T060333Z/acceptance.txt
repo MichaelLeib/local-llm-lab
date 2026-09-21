@@ -1,0 +1,7 @@
+FAIL: composer uses a 16px focusable input
+FAIL: model picker search uses a 16px focusable input
+FAIL: dialog input uses a 16px focusable input
+FAIL: thread scroller horizontally contains wide children
+FAIL: assistant bubble is width-safe
+PASS: wide tables retain inner horizontal scrolling
+T01 acceptance failed: 5 unmet checks

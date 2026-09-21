@@ -1,0 +1,95 @@
+{
+  "experiment": "EXP-002",
+  "model": "ornith-ai/Ornith-1.5-9B-MLX-4bit",
+  "revision": "a48173b246ac705be75c05bedf1a0666db522d53",
+  "repository_bytes": 5059958637,
+  "process_pid": 11709,
+  "runtime": "rapid-mlx 0.14.1 / MLX 0.32.1 / mlx-lm 0.31.3",
+  "configuration": {
+    "gpu_memory_utilization": 0.85,
+    "cache_memory_mb": 3072,
+    "lazy_load": true,
+    "idle_unload_seconds": 1800,
+    "reasoning": "disabled",
+    "kv_cache_dtype": "bf16",
+    "prompt_tokens": 1958,
+    "max_generated_tokens": 512,
+    "temperature": 0.2,
+    "top_p": 0.95
+  },
+  "load": {
+    "load_duration_seconds": 17.7488618339994,
+    "warmup_time_to_first_event_seconds": 17.897,
+    "warmup_artifact": "official-4bit-warmup.json"
+  },
+  "checkpoints": {
+    "loaded_idle": {
+      "os_footprint_mb": 5750,
+      "os_footprint_peak_mb": 6027,
+      "ioaccelerator_mb": 5120,
+      "rapid_mlx_metal_active_gb_decimal": 5.33,
+      "rapid_mlx_metal_peak_gb_decimal": 5.72,
+      "rapid_mlx_metal_cache_gb_decimal": 0.03,
+      "memory_pressure_free_percent": 32.0,
+      "swap_used_mb": 3441.94,
+      "artifacts": ["official-4bit-idle-loaded.json", "official-4bit-idle-footprint.txt"]
+    },
+    "pre_inference": {
+      "os_footprint_mb": 5750,
+      "memory_pressure_free_percent": 36.0,
+      "swap_used_mb": 4205.88,
+      "artifacts": ["official-4bit-pre-inference.json", "official-4bit-pre-inference-footprint.txt", "official-4bit-pre-inference-metrics.txt"]
+    },
+    "active_peak": {
+      "os_footprint_mb": 6282,
+      "ioaccelerator_mb": 5606,
+      "rapid_mlx_metal_active_gb_decimal": 5.86,
+      "rapid_mlx_metal_peak_gb_decimal": 6.81,
+      "rapid_mlx_metal_cache_gb_decimal": 0.01,
+      "memory_pressure_free_percent": 26.0,
+      "swap_used_mb": 3781.88,
+      "artifacts": ["official-4bit-active-peak.json", "official-4bit-active-peak-footprint.txt", "official-4bit-active-peak-metrics.txt"]
+    },
+    "post_generation": {
+      "os_footprint_mb": 6227,
+      "ioaccelerator_mb": 5595,
+      "rapid_mlx_metal_active_gb_decimal": 5.70,
+      "rapid_mlx_metal_peak_gb_decimal": 6.81,
+      "rapid_mlx_metal_cache_gb_decimal": 0.16,
+      "memory_pressure_free_percent": 43.0,
+      "swap_used_mb": 3717.88,
+      "artifacts": ["official-4bit-post-generation.json", "official-4bit-post-generation-footprint.txt", "official-4bit-post-generation-metrics.txt"]
+    },
+    "post_release": {
+      "server_process_present": false,
+      "memory_pressure_free_percent": 70.0,
+      "swap_used_mb": 3812.06,
+      "artifacts": ["official-4bit-post-release.json"]
+    }
+  },
+  "performance": {
+    "prompt_tokens": 1958,
+    "completion_tokens": 512,
+    "time_to_first_stream_event_seconds": 0.5006615829988732,
+    "total_elapsed_seconds": 65.38294766600302,
+    "client_decode_tokens_per_second_approx": 7.891,
+    "client_end_to_end_tokens_per_second_approx": 7.831,
+    "prompt_tokens_per_second_approx": 3908.2,
+    "prompt_rate_note": "1958 / first-event time; first-event time includes scheduling and is not a pure prefill timer",
+    "inference_artifact": "official-4bit-active.json"
+  },
+  "subjective": {
+    "idle_degradation_rating": 0,
+    "active_degradation_rating": 0,
+    "symptoms": [],
+    "idle_artifact": "official-4bit-idle-subjective.json",
+    "active_artifact": "official-4bit-active-subjective.json"
+  },
+  "result": "Official 4-bit was fully responsive both loaded-idle and during active inference in this session. It produced a real approximately 5.75–6.28 GB OS footprint, 5.86 GB active Metal memory near peak, and increased swap relative to the pre-model baseline. Model release was verified after stopping the lane.",
+  "limitations": [
+    "One warm-up and one standardized active generation only.",
+    "Swap was already nonzero and fluctuated during the session.",
+    "No quality judgment is made from the coding output.",
+    "The subjective result applies to this workload and session state, not all future workloads."
+  ]
+}

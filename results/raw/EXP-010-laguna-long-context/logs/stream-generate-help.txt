@@ -1,0 +1,98 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+usage: stream_generate.py [-h] --model MODEL [--prompt PROMPT]
+                          [--max-tokens MAX_TOKENS] [--temp TEMP]
+                          [--cache-budget-gb CACHE_BUDGET_GB] [--wire-memory]
+                          [--prefetch-workers PREFETCH_WORKERS]
+                          [--prefetch-ahead PREFETCH_AHEAD] [--fanout]
+                          [--pin-file PIN_FILE] [--no-learn-experts]
+                          [--usage-file USAGE_FILE] [--no-hotlist]
+                          [--max-active-experts MAX_ACTIVE_EXPERTS]
+                          [--use-page-cache] [--no-page-cache] [--fast]
+                          [--ngram-offload] [--no-chat-template]
+                          [--top-p TOP_P] [--top-k TOP_K]
+                          [--rep-penalty REP_PENALTY] [--rep-ctx REP_CTX]
+                          [--no-think] [--multi-think]
+
+Stream-generate from a TurboQuant MoE model (experts paged from disk).
+
+options:
+  -h, --help            show this help message and exit
+  --model MODEL         Local path or HF repo id of a TurboQuant model.
+  --prompt PROMPT
+  --max-tokens MAX_TOKENS
+  --temp TEMP
+  --cache-budget-gb CACHE_BUDGET_GB
+                        Max resident expert memory (LRU-evicted). Lower = less
+                        RAM, more disk reads. Pass 'auto' to size it from the
+                        machine (80% of Metal's working set minus resident
+                        weights).
+  --wire-memory         Raise MLX's wired-memory limit so weights + expert
+                        cache stay resident under memory pressure (for
+                        constrained machines; roomy ones don't need it).
+  --prefetch-workers PREFETCH_WORKERS
+                        Threads for parallel per-layer expert reads. 1 =
+                        serial baseline.
+  --prefetch-ahead PREFETCH_AHEAD
+                        Speculatively prefetch this many upcoming layers'
+                        experts (predicted from the previous token's routing).
+                        0 = off (default; helps only on fast NVMe with spare
+                        bandwidth, ~neutral on a saturated USB bus). Set 1 to
+                        enable; it self-disables if the storage proves
+                        bandwidth-bound.
+  --fanout              Enable the same-layer read fan-out: submit a layer's
+                        known expert misses to the read pool at layer start so
+                        the other projections' reads overlap compute. Off by
+                        default; it trades away the coalesced serial read
+                        path, which wins on a fast internal SSD with spare
+                        bandwidth and loses on bandwidth-bound external
+                        storage. Unlike --prefetch-ahead it does not self-
+                        disable, so measure it on your storage.
+  --pin-file PIN_FILE   JSON {'pin': [[layer, expert], ...]} of hot experts to
+                        keep permanently resident (from calibrate_experts.py).
+                        Without it, a hot_experts.json shipped in the model
+                        directory is used automatically. Pins are preloaded at
+                        startup.
+  --no-learn-experts    don't record/reuse a per-user hot-expert profile
+                        (learning is on by default; it only pins once it has
+                        seen enough of your own traffic)
+  --usage-file USAGE_FILE
+                        where to keep the learned expert profile (default:
+                        ~/.cache/turboquant-mlx/usage/)
+  --no-hotlist          Ignore a hot_experts.json shipped in the model
+                        directory.
+  --max-active-experts MAX_ACTIVE_EXPERTS
+                        Cap router top_k to min(native, this) on every MoE
+                        block (Flash-MoE K-reduction: ~2x less streamed disk
+                        I/O at no quality cost up to K=4 on validated models).
+                        Default 4; 0 = native routing.
+  --use-page-cache      Force the OS page cache ON for expert reads ('trust
+                        the OS'; ~2.4x faster decode when the model fits in
+                        RAM). Default: auto by model-size-vs-RAM.
+  --no-page-cache       Force F_NOCACHE (page cache off). Default: auto by
+                        model-size-vs-RAM.
+  --fast                Disable QJL correction for faster decode.
+  --ngram-offload       Serve an n-gram embedding table (Qwen3.8-Flash-Next)
+                        from memory-mapped files on the CPU instead of GPU
+                        memory: ~17.9 GiB less resident on the 2-bit build,
+                        bit-identical output. Keep the model directory in
+                        place while the model is loaded. No effect on models
+                        without such a table.
+  --no-chat-template
+  --top-p TOP_P         Nucleus sampling threshold. Defaults to the model's
+                        generation_config.json value when present, else
+                        disabled. Pass 0 to force-disable.
+  --top-k TOP_K         Top-k truncation. Defaults to the model's
+                        generation_config.json value when present, else
+                        disabled. Pass 0 to force-disable.
+  --rep-penalty REP_PENALTY
+                        Repetition penalty (e.g. 1.05). Defaults to the
+                        model's generation_config.json value when present,
+                        else disabled. Pass 0 or 1 to force-disable.
+  --rep-ctx REP_CTX     Repetition penalty context window in tokens (default:
+                        256).
+  --no-think            Disable thinking mode via the chat template
+                        (enable_thinking=False). Much faster and immune to
+                        think-block loops on thinking-capable models.
+  --multi-think         Allow more than one </think> token per generation. By
+                        default a second </think> is masked once one has been
+                        emitted.

@@ -1,0 +1,72 @@
+{
+  "experiment": "EXP-021",
+  "decision": "NANBEIGE REJECTED",
+  "decision_basis": [
+    "Official Nanbeige llama.cpp fork loaded the Q6 and Q5 GGUFs correctly and produced coherent output.",
+    "GGUF native OpenAI tool parsing worked; full isolated Hermes read-transform-write-reread completed with real tool executor activity.",
+    "Best GGUF Q6_K + Q8_0 KV was 13.26 tok/s at ~1K and 11.49 tok/s at ~8K direct decode, slower first-turn behavior than the frozen Ornith Q5 control.",
+    "64K FP16 KV loaded unsafely: about 10.7 GB RSS during readiness and swap grew materially.",
+    "64K Q8 KV loaded but a real 32K populated retrieval arm was stopped at 10% free memory before completion; Q5 similarly stopped at 13% free memory.",
+    "A full Hermes tool turn completed in 229.48 s versus the inherited Ornith Q5 cold ~11K tool turn of 86.7 s.",
+    "The candidate did not demonstrate a reliable 32K+ practical envelope or an end-to-end speed advantage, so coding/research autonomy phases were correctly gated out."
+  ],
+  "quant_runtime_arms": {
+    "gguf_q6": {
+      "model_file_bytes": 3424947120,
+      "sha256": "05c1e5eb316d2a25659d5f2d61be549e789a1d64a053330957bf23ae83bc3713",
+      "runtime_commit": "c6640a1c0cf7b38df342b67021a3900b04d092e7",
+      "runtime": "Nanbeige/llama.cpp nanbeige42, Metal",
+      "context": 65536,
+      "kv": "Q8_0 K/V",
+      "direct_1k": {"actual_total_tokens": 972, "prefill_tok_s": 170.9973, "decode_tok_s": 13.2639, "elapsed_s": 6.8931, "retrieval_correct": true},
+      "direct_4k": {"actual_total_tokens": 3962, "prefill_tok_s": 147.6712, "decode_tok_s": 12.4488, "elapsed_s": 21.8859, "retrieval_correct": true},
+      "direct_8k": {"actual_total_tokens": 7966, "prefill_tok_s": 117.4317, "decode_tok_s": 11.4861, "elapsed_s": 35.9378, "retrieval_correct": true},
+      "direct_16k": {"actual_total_tokens": 15974, "prefill_tok_s": 72.5216, "decode_tok_s": 7.8071, "elapsed_s": 222.8616, "retrieval_correct": true},
+      "direct_32k": {"status": "stopped_for_pressure", "minimum_free_percent": 10, "completed": false},
+      "direct_64k_fp16": {"status": "unsafe_load", "rss_observed_gb_approx": 10.7, "swap_growth_gb_approx": 1.1},
+      "direct_64k_q8_idle": {"rss_observed_gb_approx": 9.52, "free_percent_observed": 23},
+      "native_hermes": {"status": "functional_pass", "wall_s": 229.48, "tool_calls": 7, "artifact_verified": true, "artifact": "hermes-sandbox/output.txt"}
+    },
+    "gguf_q5": {
+      "model_file_bytes": 2986996658,
+      "sha256": "d3c42b2f07dda05c95cf9bc23d0bdbcb9c10e9b169c074de0b716d6cb468ac68",
+      "direct_4k": {"actual_total_tokens": 3969, "prefill_tok_s": 132.6875, "decode_tok_s": 13.8498, "elapsed_s": 31.5144, "retrieval_correct": true},
+      "direct_8k": {"actual_total_tokens": 7965, "prefill_tok_s": 105.3235, "decode_tok_s": 11.7669, "elapsed_s": 77.1625, "retrieval_correct": true},
+      "direct_16k": {"actual_total_tokens": 15966, "prefill_tok_s": 72.4357, "decode_tok_s": 8.8723, "elapsed_s": 223.0384, "retrieval_correct": true},
+      "direct_32k": {"status": "stopped_for_pressure", "minimum_free_percent": 13, "completed": false},
+      "idle_64k_q8": {"rss_observed_gb_approx": 9.10, "free_percent_observed": 26}
+    },
+    "mlx_optiq_4bit": {
+      "repo_revision": "e88d49fdd9cd67629c712fc2b4d845ad403ae9b4",
+      "model_safetensors_bytes": 3303644285,
+      "sha256": "d80f969f9609ee53e5904f611a875c40ee5785c07594d3926200a66b78effca0",
+      "runtime": "mlx-optiq 0.5.12 / MLX 0.32.2 / mlx-lm 0.31.3",
+      "short_smoke": {"load_s": 4.8690, "prompt_tokens": 70, "output_tokens": 62, "decode_tok_s": 13.8522, "free_percent_observed": 63, "correct": true},
+      "api_and_native_hermes": "not advanced: bounded direct smoke was approximately tied with GGUF and the GGUF path had the verified OpenAI/native-Hermes integration"
+    }
+  },
+  "frozen_control": {
+    "model": "Ornith-1.5-9B-Q5_K_M",
+    "runtime": "llama.cpp 0.4.1 build 10964 commit b29c606e2",
+    "file_gb": 6.64,
+    "rss_64k_gb": 8.75,
+    "decode_tok_s": 11.94,
+    "prefill_tok_s_4_5k": 149.1,
+    "cold_hermes_s": 86.7,
+    "warm_hermes_s": 8.9,
+    "practical_context": "32K populated; 64K valid reserve"
+  },
+  "reasoning_smoke": {"status": "capped_without_final", "finish_reason": "length", "completion_tokens": 256, "reasoning_content_chars": 878, "final_content_chars": 0, "scored_arms_reasoning": "off"},
+  "coding_and_research": {"status": "not_run", "reason": "candidate failed runtime promotion gate before capability testing"},
+  "raw_evidence": [
+    "phase1-freeze.json",
+    "source/llama.cpp/",
+    "raw/context-8k/",
+    "raw/context64-q8/",
+    "raw/context64-q5/",
+    "raw/hermes-native-read-transform-write.txt",
+    "raw/hermes-sysmon.txt",
+    "raw/mlx-smoke.json",
+    "raw/launcher-models.json"
+  ]
+}

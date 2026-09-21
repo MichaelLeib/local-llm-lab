@@ -1,0 +1,4 @@
+[
+  {"role":"system", "content":"Be concise. Follow the requested output exactly."},
+  {"role":"user", "content":"Output the integers 1 through 64, one per line, with no explanation."}
+]

@@ -1,0 +1,27 @@
+{
+  "blind_completion_receipt_sha256": "f8b3dd9be342a980c03539896304d94ef4697e076675bed512a9589b3fd1a69e",
+  "invariant": "Locked score rows were read and verified before the sealed assignment was opened; no score row was modified during unblinding.",
+  "locked_score_sheets": {
+    "candidate-S6": "f0edbb32b9cafaa147060fac15a8b669db6240a8a3bd9e92b709d6d2136c2d36",
+    "candidate-W0": "4a8e77f5b0c05b10d9466858a2867f804cf0a166026493e141621c6336cb4552"
+  },
+  "pair": [
+    {
+      "agent_execution_score": 11,
+      "blind_candidate": "candidate-S6",
+      "classification": "transport and real tools worked; task did not naturally complete",
+      "coding_score": 0,
+      "model": "Stock Hybrid Control Qwen3.6"
+    },
+    {
+      "agent_execution_score": 0,
+      "blind_candidate": "candidate-W0",
+      "classification": "candidate runtime/generation failure before first response; transport endpoint was ready and cleanup verified",
+      "coding_score": 0,
+      "model": "Carnice Qwen3.6 MoE 35B A3B hybrid"
+    }
+  ],
+  "receipt_version": "EXP-007-v2-scoreable-T01-unblinding-v1",
+  "sealed_assignment_sha256": "3f6647f0835e639fdb2038e97ef5c807b3c892b207a264e2342144b9beb18b0d",
+  "unblinded_at_utc": "2026-09-18T09:17:12.388427+00:00"
+}

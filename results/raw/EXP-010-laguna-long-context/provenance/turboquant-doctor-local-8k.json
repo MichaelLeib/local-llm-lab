@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "verdict": {
+    "mode": "streaming",
+    "runnable": true,
+    "needs_wired_bump": false
+  },
+  "checks": [
+    [
+      "model.dir",
+      "pass",
+      "model directory model/laguna-s21-tqTe-g64"
+    ],
+    [
+      "model.config",
+      "pass",
+      "config.json present"
+    ],
+    [
+      "model.weights",
+      "pass",
+      "6 safetensors shard(s)"
+    ],
+    [
+      "model.tokenizer",
+      "pass",
+      "tokenizer files present"
+    ],
+    [
+      "model.turboquant",
+      "pass",
+      "quantization: turboquant"
+    ],
+    [
+      "env.mlx",
+      "pass",
+      "mlx 0.32.2"
+    ],
+    [
+      "env.mlx_lm",
+      "pass",
+      "mlx-lm 0.31.3"
+    ],
+    [
+      "machine.wss",
+      "pass",
+      "Metal working set 12.71 GB"
+    ],
+    [
+      "fit.projection",
+      "pass",
+      "placement: streaming \u2014 peak 30.32 GB vs working set 12.71 GB"
+    ],
+    [
+      "fit.hotlist",
+      "warn",
+      "hot_experts.json (warm-starts the streaming cache)"
+    ]
+  ],
+  "flags": [
+    "--streaming   (weights exceed even the raised cap; experts page from disk)",
+    "--cache-budget-gb auto   (~7.4 GB here, peaking near 10.8 GB)",
+    "--prefill-step-size 128   (the default 2048 needs 2.28 GB of transient workspace at this context)"
+  ]
+}

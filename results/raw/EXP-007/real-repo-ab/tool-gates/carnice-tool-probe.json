@@ -1,0 +1,75 @@
+{
+  "http_status": 200,
+  "wall_seconds": 15.403,
+  "request": {
+    "model": "carnice-exp007",
+    "temperature": 0,
+    "max_tokens": 512,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Use available tools when needed. Be concise."
+      },
+      {
+        "role": "user",
+        "content": "Use the terminal tool to run `printf AGENT_TOOL_OK`. Then report the exact output."
+      }
+    ],
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "terminal",
+          "description": "Run a shell command in the current project directory.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "command": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "command"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    ],
+    "tool_choice": "auto"
+  },
+  "response": {
+    "created": 1789708520,
+    "object": "chat.completion",
+    "model": "carnice-exp007",
+    "choices": [
+      {
+        "finish_reason": "tool_calls",
+        "index": 0,
+        "message": {
+          "tool_calls": [
+            {
+              "type": "function",
+              "function": {
+                "name": "terminal",
+                "arguments": "{\"command\":\"printf AGENT_TOOL_OK\"}"
+              },
+              "id": "call_b0745b2e0674f53061a173c7"
+            }
+          ],
+          "role": "assistant",
+          "content": null
+        }
+      }
+    ],
+    "id": "chatcmpl-ce793993a71b4341aa6b95f915bda3c8",
+    "usage": {
+      "total_tokens": 357,
+      "prompt_tokens": 289,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens": 68
+    }
+  }
+}

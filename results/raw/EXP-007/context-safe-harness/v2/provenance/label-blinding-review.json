@@ -1,0 +1,26 @@
+{
+  "determination_version": "EXP-007-v2-label-blinding-review-v1",
+  "status": "label-reuse-inferability-confirmed",
+  "v2_harness_status": "valid_and_frozen_unchanged",
+  "finding": "The v2 runner reads the exact v1 sealed assignment file. candidate-K7 and candidate-R2 were publicly unblinded in the completed v1 T01 receipt before v2 launch. Therefore reused labels are identity-inferable to any scorer with access to ordinary EXP-007 score artifacts.",
+  "evidence": {
+    "v2_runner": "context-safe-harness/v2/exp007_run_blind_hermes_task_v2.sh",
+    "runner_assignment_source": "results/raw/EXP-007/real-repo-ab/private/assignment.json",
+    "v1_assignment_sha256": "0e8b75544f810ead5e92e5538ca320f62eb6cb3d99ba65cb88ca2c6354198a7f",
+    "v1_public_unblinding_receipt": "results/raw/EXP-007/real-repo-ab/score-sheets/T01-unblinding.json",
+    "v1_public_unblinded_labels": ["candidate-K7", "candidate-R2"],
+    "new_v2_assignment_files_before_run": 0
+  },
+  "order": {
+    "v1_assignment_created_utc": "2026-09-18T05:53:52.911197+00:00",
+    "v1_unblinding_receipt_created_utc": "2026-09-18T07:50:10.463889+00:00",
+    "v2_reused_label_run_started_utc": "2026-09-18T08:26:54Z"
+  },
+  "current_run": {
+    "path": "results/raw/EXP-007/real-repo-ab-v2/results/candidate-K7/hermes/T01/20260918T082654Z",
+    "classification": "operational-diagnostic-nonblind-label-reuse",
+    "scoring_eligibility": "not eligible for the final blinded Stock-vs-Carnice task-level comparison",
+    "preservation": "finish without interruption if it remains running; retain raw trace unchanged"
+  },
+  "required_remediation": "Create one new sealed v2-only assignment with two new opaque identifiers before either final scoreable paired arm begins. Do not modify the frozen v2 harness or any v1 artifact."
+}

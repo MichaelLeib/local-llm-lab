@@ -1,0 +1,17 @@
+=== Hermes clean post-reboot verification server max-context=8192 ===
+2026-09-17T16:44:25+02:00
+2026-09-17T14:46:37Z request prompt=5003 cached=0 new_prompt=5003 completion=50 ttft=107.87s prefill=46.4tok/s decode=6.9tok/s total=115.10s stop=tool_calls cache_miss=noEntry render=0.042s match=0.000s prepare=0.003s expert_hit=41.4% expert_miss=9182 io_await=4.72s reasoning=22
+--- reasoning 22 tokens ---
+The user wants me to run the `date` command using the terminal tool and report the exact output.
+
+--- end reasoning ---
+2026-09-17T14:46:58Z request prompt=5106 cached=5052 new_prompt=54 completion=111 ttft=4.50s prefill=12.0tok/s decode=7.1tok/s total=20.22s stop=stop render=0.048s match=0.064s prepare=0.000s expert_hit=44.3% expert_miss=19596 io_await=10.21s reasoning=67
+--- reasoning 67 tokens ---
+The terminal tool executed the `date` command successfully. The output is:
+
+`Thu Sep 17 16:46:37 CEST 2026`
+
+This matches the timezone mentioned in the system prompt (Europe/Berlin, CEST, UTC+02:00).
+
+--- end reasoning ---
+TurboFieldfareServer ready at http://127.0.0.1:8091 model=qwen3.6-35b-a3b context=8192 prompt_cache=single-prefix

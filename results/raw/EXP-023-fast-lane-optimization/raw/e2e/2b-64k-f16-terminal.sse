@@ -1,0 +1,118 @@
+data: {"event": "tool.started", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921341.927829, "tool": "terminal", "preview": "git status"}
+
+data: {"event": "tool.completed", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921342.045119, "tool": "terminal", "duration": 0.123, "error": true}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921342.52367, "delta": "\n\nThe"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921342.567811, "delta": " working"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921342.605493, "delta": " tree"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921342.639945, "delta": " is"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921342.676237, "delta": " not"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921342.712973, "delta": " in"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921342.748907, "delta": " a"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921342.787306, "delta": " git"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921342.822827, "delta": " repository"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921342.857554, "delta": " \u2014"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921342.894578, "delta": " there"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921342.931811, "delta": " is"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921342.96964, "delta": " no"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.004982, "delta": " `."}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.039558, "delta": "git"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.076386, "delta": "`"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.113537, "delta": " directory"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.150903, "delta": " ("}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.186904, "delta": "or"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.221897, "delta": " any"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.2568672, "delta": " parent"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.292149, "delta": " directory"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.329039, "delta": ")"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.365736, "delta": " on"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.401272, "delta": " this"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.43809, "delta": " file"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.472638, "delta": " system"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.508688, "delta": ","}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.5460851, "delta": " so"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.5825222, "delta": " `"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.62061, "delta": "git"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.656487, "delta": " status"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.693426, "delta": "`"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.728276, "delta": " fails"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.765087, "delta": " with"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.802529, "delta": " exit"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.838538, "delta": " code"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.874772, "delta": " "}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.9116108, "delta": "128"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.948137, "delta": "."}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921343.986204, "delta": " No"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921344.021374, "delta": " changes"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921344.0560708, "delta": " are"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921344.090613, "delta": " detectable"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921344.127297, "delta": " because"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921344.168336, "delta": " git"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921344.203967, "delta": " cannot"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921344.2387378, "delta": " operate"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921344.273298, "delta": " at"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921344.307668, "delta": " all"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921344.3446321, "delta": " on"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921344.38296, "delta": " this"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921344.4156952, "delta": " path"}
+
+data: {"event": "message.delta", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921344.453482, "delta": "."}
+
+data: {"event": "reasoning.available", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921344.494988, "text": "The working tree is not in a git repository \u2014 there is no `.git` directory (or any parent directory) on this file system, so `git status` fails with exit code 128. No changes are detectable because git cannot operate at all on this path."}
+
+data: {"event": "run.completed", "run_id": "run_8417197f4edb4166a564628e2698e40b", "timestamp": 1789921344.518173, "output": "The working tree is not in a git repository \u2014 there is no `.git` directory (or any parent directory) on this file system, so `git status` fails with exit code 128. No changes are detectable because git cannot operate at all on this path.", "usage": {"input_tokens": 28869, "output_tokens": 76, "total_tokens": 28945}}
+
+: stream closed
+

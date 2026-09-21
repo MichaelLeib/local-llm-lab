@@ -1,0 +1,33 @@
+2026-09-18T05:27:00Z
+FAST: down
+DEEP: down
+  vm.swapusage: total = 3072.00M  used = 1824.06M  free = 1247.94M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 13059 
+Pages purgeable: 6265 
+Pages purged: 1930719 
+
+Swap I/O:
+Swapins: 1095 
+Swapouts: 117764 
+
+Page Q counts:
+Pages active: 160437 
+Pages inactive: 153889 
+Pages speculative: 5980 
+Pages throttled: 0 
+Pages wired down: 254263 
+
+Compressor Stats:
+Pages used by compressor: 423510 
+Pages decompressed: 6251742 
+Pages compressed: 8163155 
+
+File I/O:
+Pageins: 53886832 
+Pageouts: 8202 
+
+System-wide memory free percentage: 32%
+vm.swapusage: total = 3072.00M  used = 1824.06M  free = 1247.94M  (encrypted)

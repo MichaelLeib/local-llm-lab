@@ -1,0 +1,12 @@
+{
+  "experiment": "EXP-002",
+  "model": "ornith-ai/Ornith-1.5-9B-MLX-4bit",
+  "revision": "a48173b246ac705be75c05bedf1a0666db522d53",
+  "stage": "loaded-idle",
+  "captured_at_utc": "2026-09-17T07:38:02Z",
+  "raw_user_report": "idle fully responsive 5\nNo symptoms so far\nClarification: 0/5",
+  "reported_numeric_value": 0,
+  "degradation_rating": 0,
+  "symptoms": [],
+  "clarification": "User confirmed 0/5 on the experiment's degradation scale."
+}

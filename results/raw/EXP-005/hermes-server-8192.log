@@ -1,0 +1,17 @@
+=== Hermes test server start max-context=8192 ===
+2026-09-17T15:26:17+02:00
+2026-09-17T13:28:50Z request prompt=5003 cached=0 new_prompt=5003 completion=50 ttft=111.77s prefill=44.8tok/s decode=7.1tok/s total=118.84s stop=tool_calls cache_miss=noEntry render=0.046s match=0.000s prepare=0.001s expert_hit=41.4% expert_miss=9182 io_await=4.38s reasoning=22
+--- reasoning 22 tokens ---
+The user wants me to run the `date` command using the terminal tool and report the exact output.
+
+--- end reasoning ---
+2026-09-17T13:29:17Z request prompt=5106 cached=5052 new_prompt=54 completion=168 ttft=4.31s prefill=12.5tok/s decode=7.6tok/s total=26.56s stop=stop render=0.050s match=0.065s prepare=0.000s expert_hit=46.6% expert_miss=28556 io_await=13.87s reasoning=81
+--- reasoning 81 tokens ---
+The terminal tool executed the `date` command successfully. The output is:
+
+`Thu Sep 17 15:28:50 CEST 2026`
+
+This matches the session metadata which states the conversation started on Thursday, September 17, 2026 (Europe/Berlin, CEST, UTC+02:00).
+
+--- end reasoning ---
+TurboFieldfareServer ready at http://127.0.0.1:8091 model=qwen3.6-35b-a3b context=8192 prompt_cache=single-prefix

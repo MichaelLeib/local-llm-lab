@@ -1,0 +1,9 @@
+{
+  "samples": 532,
+  "start": 1789844419.002004,
+  "end": 1789845018.9429529,
+  "swap_first": "total = 3072.00M  used = 2191.19M  free = 880.81M  (encrypted)",
+  "swap_last": "total = 3072.00M  used = 2093.62M  free = 978.38M  (encrypted)",
+  "pressure_last": "The system has 17179869184 (1048576 pages with a page size of 16384).\nSystem-wide memory free percentage: 20%",
+  "pid": null
+}

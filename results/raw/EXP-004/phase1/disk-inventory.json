@@ -1,0 +1,24 @@
+{
+  "experiment": "EXP-004",
+  "phase": "phase_1_disk_inventory",
+  "date": "2026-09-17",
+  "root_free_gib": 20,
+  "deletion_performed": false,
+  "notes": "Read-only inventory only. No EXP-003, FAST, DEEP, or retained checkpoint was deleted.",
+  "largest_huggingface_cache_entries_reported": [
+    {"repository": "ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit", "approx_size": "18 GiB", "status": "retained; do not delete"},
+    {"repository": "ornith-ai/Ornith-1.5-35B-A3B-GGUF", "approx_size": "20 GiB", "status": "retained; EXP-003 artifact; do not delete"},
+    {"repository": "manjunathshiva/Qwen3.8-27B-tq3-mini-g64", "approx_size": "12 GiB", "status": "candidate for user review only"},
+    {"repository": "majentik/Qwen3.6-27B-MLX-3bit", "approx_size": "12 GiB", "status": "candidate for user review only"},
+    {"repository": "majentik/Qwen3.6-35B-A3B-RotorQuant-MLX-2bit", "approx_size": "11 GiB", "status": "candidate for user review only"},
+    {"repository": "mlx-community/gpt-oss-20b-OptiQ-4bit", "approx_size": "11 GiB", "status": "diagnostic control; do not delete without approval"},
+    {"repository": "prism-ml/Ternary-Bonsai-27B-mlx-2bit", "approx_size": "7.9 GiB", "status": "DEEP candidate; do not delete"}
+  ],
+  "other_cache_areas": {
+    "gguf": "5.4 GiB",
+    "library_caches": "16 GiB",
+    "rapid_mlx": "2.1 GiB",
+    "uv": "2.5 GiB"
+  },
+  "next_gate": "Reach at least 80 GB free internal disk, then obtain explicit approval before downloading the 63,387,346,208-byte GPT-OSS-120B checkpoint."
+}

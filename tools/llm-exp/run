@@ -1,0 +1,41 @@
+#!/bin/bash
+# Reusable low-token experiment command wrapper.
+set -u
+if [ "$#" -lt 3 ] || [ "$1" != "--label" ]; then
+  printf 'usage: %s --label LABEL -- command [args...]\n' "$0" >&2; exit 64
+fi
+label="$2"; shift 2
+[ "${1:-}" = "--" ] || { printf 'missing -- before command\n' >&2; exit 64; }
+shift
+root="${LLM_EXP_ROOT:-$(pwd)}"
+rawdir="$root/raw"
+mkdir -p "$rawdir"
+stamp="$(date +%Y%m%dT%H%M%S)"
+safe="$(printf '%s' "$label" | tr -cs 'A-Za-z0-9._-' '_')"
+raw="$rawdir/${stamp}-${safe}.log"
+meta="$rawdir/${stamp}-${safe}.json"
+start_iso="$(date -u +%Y-%m-%dT%H:%M:%SZ)"; start_epoch="$(date +%s)"
+printf 'LABEL: %s\nCOMMAND:' "$label" | tee "$raw" >/dev/null
+printf ' %q' "$@" | tee -a "$raw" >/dev/null
+printf '\nSTART: %s\n--- stdout/stderr ---\n' "$start_iso" >> "$raw"
+"$@" >> "$raw" 2>&1; code=$?
+end_iso="$(date -u +%Y-%m-%dT%H:%M:%SZ)"; end_epoch="$(date +%s)"; elapsed=$((end_epoch-start_epoch))
+printf '\n--- end ---\nEXIT: %s\nEND: %s\nELAPSED_SECONDS: %s\n' "$code" "$end_iso" "$elapsed" >> "$raw"
+python3 - "$meta" "$label" "$start_iso" "$end_iso" "$elapsed" "$code" "$raw" <<'PY'
+import json,sys
+p,label,start,end,elapsed,code,raw=sys.argv[1:]
+json.dump({'label':label,'start':start,'end':end,'elapsed_seconds':int(elapsed),'exit_code':int(code),'raw_path':raw},open(p,'w'),indent=2)
+PY
+if [ "$code" -eq 0 ]; then
+  useful="$(grep -vE '^(LABEL:|COMMAND:|START:|---|EXIT:|END:|ELAPSED)' "$raw" | tail -n 8)"
+  printf 'label=%s status=PASS elapsed=%ss raw=%s\n%s\n' "$label" "$elapsed" "$raw" "$useful"
+else
+  summary="${raw%.log}.failure.txt"
+  "$(dirname "$0")/summarize-failure" "$raw" "$summary"
+  printf 'label=%s status=FAIL exit=%s elapsed=%ss raw=%s failure_summary=%s\n' "$label" "$code" "$elapsed" "$raw" "$summary"
+  python3 - "$summary" <<'PY'
+from pathlib import Path
+print('\n'.join(Path(__import__('sys').argv[1]).read_text().splitlines()[:18]))
+PY
+fi
+exit "$code"

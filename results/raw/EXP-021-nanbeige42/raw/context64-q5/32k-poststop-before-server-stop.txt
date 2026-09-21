@@ -1,0 +1,32 @@
+2026-09-20T05:58:19Z
+  PID    RSS ELAPSED COMMAND
+31067 9051808   07:33 /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-021-nanbeige42/source/llama.cpp/build/bin/llama-server -m /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-021-nanbeige42/models/q5/Nanbeige4.2-3B-Q5_K_M.gguf --host 127.0.0.1 --port 8921 -c 65536 -np 1 -ngl 99 -b 128 -ub 64 -ctk q8_0 -ctv q8_0 --no-webui --metrics --jinja --reasoning off
+vm.swapusage: total = 3072.00M  used = 1567.94M  free = 1504.06M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+
+Stats: 
+Pages free: 5096 
+Pages purgeable: 2679 
+Pages purged: 12860170 
+
+Swap I/O:
+Swapins: 2198925 
+Swapouts: 2840615 
+
+Page Q counts:
+Pages active: 83984 
+Pages inactive: 82420 
+Pages speculative: 430 
+Pages throttled: 0 
+Pages wired down: 676916 
+
+Compressor Stats:
+Pages used by compressor: 162301 
+Pages decompressed: 52067319 
+Pages compressed: 61938717 
+
+File I/O:
+Pageins: 32085304 
+Pageouts: 42005 
+
+System-wide memory free percentage: 16%

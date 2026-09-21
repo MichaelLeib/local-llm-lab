@@ -1,0 +1,43 @@
+{
+  "experiment": "EXP-005",
+  "test": "Hermes_one_shot_terminal_tool_call_clean_wrapper",
+  "profile": "exp005",
+  "server_context": 8192,
+  "expert_cache_slots": 16,
+  "hermes_exit_code": 0,
+  "tool": "terminal",
+  "tool_command": "date",
+  "tool_output": "Thu Sep 17 15:35:28 CEST 2026",
+  "provider_requests": [
+    {
+      "prompt_tokens": 5003,
+      "cached_prompt_tokens": 0,
+      "new_prompt_tokens": 5003,
+      "completion_tokens": 50,
+      "ttft_seconds": 127.67,
+      "prefill_tok_s": 39.2,
+      "decode_tok_s": 5.5,
+      "total_seconds": 136.76,
+      "stop": "tool_calls",
+      "reasoning_tokens": 22
+    },
+    {
+      "prompt_tokens": 5106,
+      "cached_prompt_tokens": 5052,
+      "new_prompt_tokens": 54,
+      "completion_tokens": 111,
+      "ttft_seconds": 4.96,
+      "prefill_tok_s": 10.9,
+      "decode_tok_s": 6.5,
+      "total_seconds": 22.02,
+      "stop": "stop",
+      "reasoning_tokens": 67
+    }
+  ],
+  "prefix_reuse": {
+    "cached_tokens": 5052,
+    "second_prompt_tokens": 5106,
+    "cached_fraction": 0.9894
+  },
+  "artifact": "hermes-tool-test-clean.log"
+}

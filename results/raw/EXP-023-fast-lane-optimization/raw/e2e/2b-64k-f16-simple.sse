@@ -1,0 +1,10 @@
+: keepalive
+
+data: {"event": "message.delta", "run_id": "run_eaca7d8c857b4aa1a4faf5b5e7945b2b", "timestamp": 1789921339.488765, "delta": "Paris"}
+
+data: {"event": "reasoning.available", "run_id": "run_eaca7d8c857b4aa1a4faf5b5e7945b2b", "timestamp": 1789921340.358867, "text": "Paris"}
+
+data: {"event": "run.completed", "run_id": "run_eaca7d8c857b4aa1a4faf5b5e7945b2b", "timestamp": 1789921340.373667, "output": "Paris", "usage": {"input_tokens": 14397, "output_tokens": 2, "total_tokens": 14399}}
+
+: stream closed
+

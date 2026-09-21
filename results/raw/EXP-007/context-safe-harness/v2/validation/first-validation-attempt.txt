@@ -1,0 +1,16 @@
+=== syntax ===
+=== v2 unit tests ===
+test_file_read_is_bounded_and_paginates (results.raw.EXP-007.context-safe-harness.v2.tests.test_context_safe_output_v2.ContextSafeOutputTests.test_file_read_is_bounded_and_paginates) ... ok
+test_search_caps_match_records_and_reports_omission (results.raw.EXP-007.context-safe-harness.v2.tests.test_context_safe_output_v2.ContextSafeOutputTests.test_search_caps_match_records_and_reports_omission) ... ok
+test_search_files_list_is_capped_like_matches (results.raw.EXP-007.context-safe-harness.v2.tests.test_context_safe_output_v2.ContextSafeOutputTests.test_search_files_list_is_capped_like_matches) ... ok
+test_small_result_is_unchanged_but_instrumented (results.raw.EXP-007.context-safe-harness.v2.tests.test_context_safe_output_v2.ContextSafeOutputTests.test_small_result_is_unchanged_but_instrumented) ... ok
+test_terminal_preserves_head_tail_exit_and_explicit_omission (results.raw.EXP-007.context-safe-harness.v2.tests.test_context_safe_output_v2.ContextSafeOutputTests.test_terminal_preserves_head_tail_exit_and_explicit_omission) ... ok
+test_aggregates_tool_cost_repeats_and_server_telemetry (results.raw.EXP-007.context-safe-harness.v2.tests.test_context_metrics_v2.ContextMetricsTests.test_aggregates_tool_cost_repeats_and_server_telemetry) ... ok
+test_plugin_registers_only_transform_hook (results.raw.EXP-007.context-safe-harness.v2.tests.test_plugin_schema_safety_v2.HookOnlyRegistrationTests.test_plugin_registers_only_transform_hook) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.262s
+
+OK
+=== no-model hook load ===
+EXP-007 context-safe-v2 hook loaded

@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "ok": true,
+    "elapsed": 34.306,
+    "prompt_tokens": 55,
+    "gen_tokens": 425,
+    "decode_tps": 12.39,
+    "finish": "stop",
+    "has_reasoning": true,
+    "content_head": "Apple Silicon uses a unified memory architecture where the CPU, GPU, and Neural Engine share one memory pool, so a model's size is bounded by total system RAM rather than a separate, fixed VRAM chip. This lets you load very large models and keep activations in the same high-bandwidth memory the core",
+    "tool_calls": null
+  },
+  "raw": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "Apple Silicon uses a unified memory architecture where the CPU, GPU, and Neural Engine share one memory pool, so a model's size is bounded by total system RAM rather than a separate, fixed VRAM chip. This lets you load very large models and keep activations in the same high-bandwidth memory the cores read from, eliminating the data-copy bottleneck of discrete CPU/GPU setups. As a result, a single Mac can run models that would need a dedicated data-center GPU.\n\nConcrete number: the M2 Ultra supports up to **192 GB** of unified memory.",
+          "reasoning_content": "The user wants a concise explanation of why unified memory matters for local LLM inference on Apple Silicon, in 3 sentences, then one concrete number.\n\nLet me think about the actual technical facts:\n\nApple Silicon (M-series chips) uses a unified memory architecture where CPU, GPU (Neural Engine), and other cores share the same memory pool and memory bandwidth. This matters for LLM inference because:\n\n1. Large language models require substantial memory to hold weights and context. Unified memory means the model size isn't limited by separate VRAM but by the total system RAM (which can be up to 128GB on current Macs).\n\n2. Unified memory provides high bandwidth shared across all cores, avoiding the bottleneck of copying data between discrete CPU and GPU memory.\n\n3. This allows running larger models locally than would be possible on discrete GPU systems with fixed VRAM.\n\nOne concrete number: Apple Mac Studio with M2 Ultra has up to 192GB unified memory. The M1/M2/M3 Max can go up to 32GB, M3 Max up to 128GB. The M2 Ultra has 192GB unified memory.\n\nLet me pick a solid concrete number. The M2 Ultra supports up to 192GB unified memory. Or I could say the Neural Engine can do 17.8 trillion MACs/sec on M2 Ultra.\n\nLet me keep it tight \u2014 3 sentences plus one number.\n"
+        }
+      }
+    ],
+    "created": 1789840010,
+    "model": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-019-ornith-gguf/models/Ornith-1.5-9B-Q6_K.gguf",
+    "system_fingerprint": "b10964-b29c606e2",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 425,
+      "prompt_tokens": 55,
+      "total_tokens": 480,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "id": "chatcmpl-MXmjmIxjKBAdbkX5zXBttR0fybTdgVL2",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 55,
+      "prompt_ms": 822.054,
+      "prompt_per_token_ms": 14.946436363636364,
+      "prompt_per_second": 66.9055804119924,
+      "predicted_n": 425,
+      "predicted_ms": 33438.617,
+      "predicted_per_token_ms": 78.86466273584905,
+      "predicted_per_second": 12.679950250334816
+    }
+  }
+}

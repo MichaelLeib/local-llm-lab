@@ -1,0 +1,127 @@
+APFS Containers (6 found)
+|
++-- Container disk3 30B1820C-A3DC-4F55-9D12-E83E428E6C56
+|   ====================================================
+|   APFS Container Reference:     disk3
+|   Size (Capacity Ceiling):      494384795648 B (494.4 GB)
+|   Capacity In Use By Volumes:   490077564928 B (490.1 GB) (99.1% used)
+|   Capacity Not Allocated:       4307230720 B (4.3 GB) (0.9% free)
+|   |
+|   +-< Physical Store disk0s2 2D1698DD-3226-489C-AAA8-F37C225D4160
+|   |   -----------------------------------------------------------
+|   |   APFS Physical Store Disk:   disk0s2
+|   |   Size:                       494384795648 B (494.4 GB)
+|   |
+|   +-> Volume disk3s1 3576CFC4-C610-4A10-A49F-6BEC76279AB0
+|   |   ---------------------------------------------------
+|   |   APFS Volume Disk (Role):   disk3s1 (System)
+|   |   Name:                      Macintosh HD (Case-insensitive)
+|   |   Mount Point:               Not Mounted
+|   |   Capacity Consumed:         13661179904 B (13.7 GB)
+|   |   Sealed:                    Yes
+|   |   FileVault:                 Yes (Unlocked)
+|   |   Encrypted:                 No
+|   |   |
+|   |   Snapshot:                  08601971-644C-4597-9BDE-8B5160B494C4
+|   |   Snapshot Disk:             disk3s1s1
+|   |   Snapshot Mount Point:      /
+|   |   Snapshot Sealed:           Yes
+|   |
+|   +-> Volume disk3s2 3BC2C869-6B52-4747-93AA-42CAB8932CBD
+|   |   ---------------------------------------------------
+|   |   APFS Volume Disk (Role):   disk3s2 (Preboot)
+|   |   Name:                      Preboot (Case-insensitive)
+|   |   Mount Point:               /System/Volumes/Preboot
+|   |   Capacity Consumed:         10972094464 B (11.0 GB)
+|   |   Sealed:                    No
+|   |   FileVault:                 No
+|   |
+|   +-> Volume disk3s3 3F8D0FA2-DA18-42A0-9128-27204EAA5589
+|   |   ---------------------------------------------------
+|   |   APFS Volume Disk (Role):   disk3s3 (Recovery)
+|   |   Name:                      Recovery (Case-insensitive)
+|   |   Mount Point:               /Volumes/Recovery
+|   |   Capacity Consumed:         1531387904 B (1.5 GB)
+|   |   Sealed:                    No
+|   |   FileVault:                 No
+|   |
+|   +-> Volume disk3s5 8AAE62CD-FDC9-4EEE-9121-DCFD606A3EB6
+|   |   ---------------------------------------------------
+|   |   APFS Volume Disk (Role):   disk3s5 (Data)
+|   |   Name:                      Data (Case-insensitive)
+|   |   Mount Point:               /System/Volumes/Data
+|   |   Capacity Consumed:         458298241024 B (458.3 GB)
+|   |   Sealed:                    No
+|   |   FileVault:                 Yes (Unlocked)
+|   |
+|   +-> Volume disk3s6 7C521696-D619-4ED9-8A52-B6705ABEB57F
+|       ---------------------------------------------------
+|       APFS Volume Disk (Role):   disk3s6 (VM)
+|       Name:                      VM (Case-insensitive)
+|       Mount Point:               /System/Volumes/VM
+|       Capacity Consumed:         5370580992 B (5.4 GB)
+|       Sealed:                    No
+|       FileVault:                 No
+|
++-- Container disk8 3C96A4FE-F4E4-45FA-BCDC-9AD26D87926A
+|   ====================================================
+|   APFS Container Reference:     disk8
+|   Size (Capacity Ceiling):      128111046656 B (128.1 GB)
+|   Capacity In Use By Volumes:   127965147136 B (128.0 GB) (99.9% used)
+|   Capacity Not Allocated:       145899520 B (145.9 MB) (0.1% free)
+|   |
+|   +-< Physical Store disk7s2 6A564724-8E81-4B7E-A6FF-94613A5E7B0C
+|   |   -----------------------------------------------------------
+|   |   APFS Physical Store Disk:   disk7s2
+|   |   Size:                       128111046656 B (128.1 GB)
+|   |
+|   +-> Volume disk8s1 A1172BC4-C532-4056-90E7-EC44D279A4BD
+|       ---------------------------------------------------
+|       APFS Volume Disk (Role):   disk8s1 (No specific role)
+|       Name:                      ESP (Case-insensitive)
+|       Mount Point:               /Volumes/ESP
+|       Capacity Consumed:         127838732288 B (127.8 GB)
+|       Sealed:                    No
+|       FileVault:                 Yes (Unlocked)
+|
++-- Container disk10 2CF90696-59B7-47AD-9DC8-B5C086318C1C
+|   =====================================================
+|   APFS Container Reference:     disk10
+|   Size (Capacity Ceiling):      999860912128 B (999.9 GB)
+|   Capacity In Use By Volumes:   637714583552 B (637.7 GB) (63.8% used)
+|   Capacity Not Allocated:       362146328576 B (362.1 GB) (36.2% free)
+|   |
+|   +-< Physical Store disk9s2 51C2758F-F755-4B9D-B245-229DC3981180
+|   |   -----------------------------------------------------------
+|   |   APFS Physical Store Disk:   disk9s2
+|   |   Size:                       999860912128 B (999.9 GB)
+|   |
+|   +-> Volume disk10s2 E743E67D-E567-4EFC-8650-8AF59EFB9191
+|       ----------------------------------------------------
+|       APFS Volume Disk (Role):   disk10s2 (Backup)
+|       Name:                      Backup (Case-sensitive)
+|       Mount Point:               /Volumes/Backup
+|       Capacity Consumed:         637507354624 B (637.5 GB)
+|       Sealed:                    No
+|       FileVault:                 Yes (Unlocked)
+|
++-- Container disk5 5C779540-A683-405A-9F12-6218D9AF9D4C
+    ====================================================
+    APFS Container Reference:     disk5
+    Size (Capacity Ceiling):      18559795200 B (18.6 GB)
+    Capacity In Use By Volumes:   18056196096 B (18.1 GB) (97.3% used)
+    Capacity Not Allocated:       503599104 B (503.6 MB) (2.7% free)
+    |
+    +-< Physical Store disk4s1 32B95CEA-D4D7-48F1-BD4A-71B67E53AA2C
+    |   -----------------------------------------------------------
+    |   APFS Physical Store Disk:   disk4s1
+    |   Size:                       18559795200 B (18.6 GB)
+    |
+    +-> Volume disk5s1 C0B81AA8-8A69-4A06-AE40-431F3203E52F
+        ---------------------------------------------------
+        APFS Volume Disk (Role):   disk5s1 (No specific role)
+        Name:                      iOS 27.0 Simulator (Case-insensitive)
+        Mount Point:               /private/var/run/com.apple.security.cryptexd/mnt/com.apple.iPhoneOS.SimulatorRuntime-v24.1.434.0.XdBWLD
+        Capacity Consumed:         18008752128 B (18.0 GB)
+        Sealed:                    Yes
+        FileVault:                 No

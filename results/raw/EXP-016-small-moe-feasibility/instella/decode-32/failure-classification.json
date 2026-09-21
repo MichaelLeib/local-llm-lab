@@ -1,0 +1,12 @@
+{
+  "timestamp_utc": "2026-09-19T09:25:29Z",
+  "status": "stopped-safety-failure",
+  "failure_class": "severe-memory-pressure-during-q4-runtime-load",
+  "evidence": [
+    "process RSS reached 7,402,672 KB at 36 seconds",
+    "system-wide free memory fell to 9%",
+    "swap grew to 9,438.19 MiB used (10 GiB swapfile total)",
+    "no output was emitted before safety stop"
+  ],
+  "decision": "do not escalate Instella to Q3; Q4 representation can execute a short token but is not practically feasible on this 16 GiB host"
+}

@@ -1,0 +1,14 @@
+Thu Sep 17 18:02:11 UTC 2026
+vm.swapusage: total = 4096.00M  used = 3282.19M  free = 813.81M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+System-wide memory free percentage: 78%
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi    45Gi    22%    484k  476M    0%   /
+READY
+[stop=endOfTurn prefill=225tok/17.11s new=2tok decode=55.06s tok/s=0.036]
+probe_exit=0
+vm.swapusage: total = 7168.00M  used = 5445.19M  free = 1722.81M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+System-wide memory free percentage: 75%
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi    42Gi    24%    484k  445M    0%   /

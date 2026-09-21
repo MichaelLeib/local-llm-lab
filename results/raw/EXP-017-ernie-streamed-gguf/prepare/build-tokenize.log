@@ -1,0 +1,12 @@
+[  1%] Built target llama-common-base
+[  1%] Built target cpp-httplib
+[  5%] Built target ggml-base
+[  5%] Built target ggml-blas
+[  8%] Built target ggml-metal
+[ 16%] Built target ggml-cpu
+[ 17%] Built target ggml
+[ 86%] Built target llama
+[100%] Built target llama-common
+[100%] Building CXX object tools/tokenize/CMakeFiles/llama-tokenize.dir/tokenize.cpp.o
+[100%] Linking CXX executable ../../bin/llama-tokenize
+[100%] Built target llama-tokenize

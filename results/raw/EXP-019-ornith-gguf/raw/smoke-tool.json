@@ -1,0 +1,69 @@
+{
+  "summary": {
+    "ok": true,
+    "elapsed": 8.74,
+    "prompt_tokens": 426,
+    "gen_tokens": 72,
+    "decode_tps": 8.24,
+    "finish": "tool_calls",
+    "has_reasoning": true,
+    "content_head": "I'll use a shell command to find the number of CPU cores on this machine.\n\n",
+    "tool_calls": [
+      {
+        "type": "function",
+        "function": {
+          "name": "run_shell",
+          "arguments": "{\"command\":\"nproc\"}"
+        },
+        "id": "krfKIie2FGbguSfVelflkX4bim9VuJnS"
+      }
+    ]
+  },
+  "raw": {
+    "choices": [
+      {
+        "finish_reason": "tool_calls",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "I'll use a shell command to find the number of CPU cores on this machine.\n\n",
+          "reasoning_content": "The user wants to know how many CPU cores this machine has. Let me use a shell command to find out.\n",
+          "tool_calls": [
+            {
+              "type": "function",
+              "function": {
+                "name": "run_shell",
+                "arguments": "{\"command\":\"nproc\"}"
+              },
+              "id": "krfKIie2FGbguSfVelflkX4bim9VuJnS"
+            }
+          ]
+        }
+      }
+    ],
+    "created": 1789840093,
+    "model": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-019-ornith-gguf/models/Ornith-1.5-9B-Q6_K.gguf",
+    "system_fingerprint": "b10964-b29c606e2",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 72,
+      "prompt_tokens": 426,
+      "total_tokens": 498,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "id": "chatcmpl-wA0Xhg3KjPf3lqS1EMgkm5US8TftrRm3",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 426,
+      "prompt_ms": 2792.498,
+      "prompt_per_token_ms": 6.555159624413146,
+      "prompt_per_second": 152.55158642906815,
+      "predicted_n": 72,
+      "predicted_ms": 5873.856,
+      "predicted_per_token_ms": 82.7303661971831,
+      "predicted_per_second": 12.087460094357096
+    }
+  }
+}

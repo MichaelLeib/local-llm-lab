@@ -1,0 +1,14 @@
+
+[phases over 16 tokens, decode 2899 ms]
+  cb1 encode+commit: 20.3 ms
+  expert io await:   2118.7 ms
+  expert cache:      47.0% hit, 2542 miss of 4800
+  cb2 encode+commit: 11.3 ms
+  unaccounted (GPU waits): 748.6 ms
+  gpu cb1 (attn+norms+router): 474.8 ms
+  gpu cb2 (expert FFN):        0.0 ms
+  gpu head (norm+logits):      67.6 ms
+  cb1 wait wall:               635.7 ms
+  gpu clock hold:              auto, 2644 command buffers, 2.9 s active
+
+[stop=maxTokens prefill=2157tok/35.52s new=16tok decode=2.90s tok/s=5.519]

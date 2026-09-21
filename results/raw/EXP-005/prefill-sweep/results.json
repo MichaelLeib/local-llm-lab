@@ -1,0 +1,142 @@
+[
+  {
+    "arm": 5,
+    "started_at": "2026-09-17T13:13:18.275063+00:00",
+    "settings": {
+      "slots": 16,
+      "max_context": 4096,
+      "max_new": 16,
+      "temperature": 0,
+      "seed": 12345,
+      "prefill_chunk": "auto"
+    },
+    "swap_before": "vm.swapusage: total = 3072.00M  used = 2310.38M  free = 761.62M  (encrypted)",
+    "wall_seconds": 11.598,
+    "finished_at": "2026-09-17T13:13:29.879021+00:00",
+    "exit_code": 0,
+    "footer": {
+      "stop": "eos",
+      "prompt_tokens": 5,
+      "prefill_seconds": 8.68,
+      "new_tokens": 8,
+      "decode_seconds": 1.01,
+      "decode_tok_s": 7.946
+    },
+    "stdout": "\n\n<think>\n\n</think>\n\nREADY.",
+    "stderr": "\n[stop=eos prefill=5tok/8.68s new=8tok decode=1.01s tok/s=7.946]\n",
+    "swap_after": "vm.swapusage: total = 3072.00M  used = 2294.38M  free = 777.62M  (encrypted)",
+    "memory_after": "The system has 17179869184 (1048576 pages with a page size of 16384).\nSystem-wide memory free percentage: 44%"
+  },
+  {
+    "arm": 256,
+    "started_at": "2026-09-17T13:13:29.887374+00:00",
+    "settings": {
+      "slots": 16,
+      "max_context": 4096,
+      "max_new": 16,
+      "temperature": 0,
+      "seed": 12345,
+      "prefill_chunk": "auto"
+    },
+    "swap_before": "vm.swapusage: total = 3072.00M  used = 2294.38M  free = 777.62M  (encrypted)",
+    "wall_seconds": 13.533,
+    "finished_at": "2026-09-17T13:13:43.424545+00:00",
+    "exit_code": 0,
+    "footer": {
+      "stop": "maxTokens",
+      "prompt_tokens": 273,
+      "prefill_seconds": 9.88,
+      "new_tokens": 16,
+      "decode_seconds": 1.83,
+      "decode_tok_s": 8.756
+    },
+    "stdout": " alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu alpha beta gamma",
+    "stderr": "\n[stop=maxTokens prefill=273tok/9.88s new=16tok decode=1.83s tok/s=8.756]\n",
+    "swap_after": "vm.swapusage: total = 3072.00M  used = 2286.38M  free = 785.62M  (encrypted)",
+    "memory_after": "The system has 17179869184 (1048576 pages with a page size of 16384).\nSystem-wide memory free percentage: 46%"
+  },
+  {
+    "arm": 512,
+    "started_at": "2026-09-17T13:13:43.432475+00:00",
+    "settings": {
+      "slots": 16,
+      "max_context": 4096,
+      "max_new": 16,
+      "temperature": 0,
+      "seed": 12345,
+      "prefill_chunk": "auto"
+    },
+    "swap_before": "vm.swapusage: total = 3072.00M  used = 2286.38M  free = 785.62M  (encrypted)",
+    "wall_seconds": 15.271,
+    "finished_at": "2026-09-17T13:13:58.707686+00:00",
+    "exit_code": 0,
+    "footer": {
+      "stop": "maxTokens",
+      "prompt_tokens": 546,
+      "prefill_seconds": 11.46,
+      "new_tokens": 16,
+      "decode_seconds": 1.89,
+      "decode_tok_s": 8.469
+    },
+    "stdout": " alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu alpha beta gamma",
+    "stderr": "\n[stop=maxTokens prefill=546tok/11.46s new=16tok decode=1.89s tok/s=8.469]\n",
+    "swap_after": "vm.swapusage: total = 3072.00M  used = 2254.38M  free = 817.62M  (encrypted)",
+    "memory_after": "The system has 17179869184 (1048576 pages with a page size of 16384).\nSystem-wide memory free percentage: 46%"
+  },
+  {
+    "arm": 1024,
+    "started_at": "2026-09-17T13:13:58.716386+00:00",
+    "settings": {
+      "slots": 16,
+      "max_context": 4096,
+      "max_new": 16,
+      "temperature": 0,
+      "seed": 12345,
+      "prefill_chunk": "auto"
+    },
+    "swap_before": "vm.swapusage: total = 3072.00M  used = 2254.38M  free = 817.62M  (encrypted)",
+    "wall_seconds": 18.922,
+    "finished_at": "2026-09-17T13:14:17.643070+00:00",
+    "exit_code": 0,
+    "footer": {
+      "stop": "maxTokens",
+      "prompt_tokens": 1105,
+      "prefill_seconds": 14.96,
+      "new_tokens": 16,
+      "decode_seconds": 2.0,
+      "decode_tok_s": 7.992
+    },
+    "stdout": " alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu alpha beta gamma",
+    "stderr": "\n[stop=maxTokens prefill=1105tok/14.96s new=16tok decode=2.00s tok/s=7.992]\n",
+    "swap_after": "vm.swapusage: total = 3072.00M  used = 2254.38M  free = 817.62M  (encrypted)",
+    "memory_after": "The system has 17179869184 (1048576 pages with a page size of 16384).\nSystem-wide memory free percentage: 45%"
+  },
+  {
+    "arm": 2048,
+    "started_at": "2026-09-17T13:14:17.651851+00:00",
+    "settings": {
+      "slots": 16,
+      "max_context": 4096,
+      "max_new": 16,
+      "temperature": 0,
+      "seed": 12345,
+      "prefill_chunk": "auto"
+    },
+    "swap_before": "vm.swapusage: total = 3072.00M  used = 2254.38M  free = 817.62M  (encrypted)",
+    "wall_seconds": 35.926,
+    "finished_at": "2026-09-17T13:14:53.582505+00:00",
+    "exit_code": 0,
+    "footer": {
+      "stop": "maxTokens",
+      "prompt_tokens": 2210,
+      "prefill_seconds": 31.82,
+      "new_tokens": 16,
+      "decode_seconds": 2.11,
+      "decode_tok_s": 7.575
+    },
+    "stdout": " alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu alpha beta gamma",
+    "stderr": "\n[stop=maxTokens prefill=2210tok/31.82s new=16tok decode=2.11s tok/s=7.575]\n",
+    "swap_after": "vm.swapusage: total = 3072.00M  used = 2254.38M  free = 817.62M  (encrypted)",
+    "memory_after": "The system has 17179869184 (1048576 pages with a page size of 16384).\nSystem-wide memory free percentage: 44%"
+  }
+]

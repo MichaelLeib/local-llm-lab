@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "model": {
+    "path": "manjunathshiva/Laguna-S-2.1-tqTe-g64",
+    "source": "huggingface",
+    "name": "manjunathshiva/Laguna-S-2.1-tqTe-g64",
+    "type": "laguna",
+    "quantization": "turboquant",
+    "bits": 3,
+    "group_size": 64,
+    "expert_down_bits": null,
+    "n_layers": 48,
+    "n_experts": 256,
+    "experts_per_tok": 10,
+    "is_moe": true,
+    "total_bytes": 28695108446,
+    "expert_bytes": 26415726592,
+    "resident_bytes": 2279381854,
+    "ngram_bytes": 0
+  },
+  "machine": {
+    "assumed": false,
+    "wss_estimated": false,
+    "ram_bytes": 17179869184.0,
+    "wss_bytes": 12713115648.0
+  },
+  "projection": {
+    "context": 65536,
+    "kv_bits": null,
+    "ngram_offload": false,
+    "ngram_offloaded_bytes": 0,
+    "kv_bytes_per_token": 50304.0,
+    "kv_bytes": 3296722944.0,
+    "kv_note": "hybrid: 12/48 full-attention, 36 sliding (window 512)",
+    "prefill_step_size": 128,
+    "prefill_workspace_bytes": 847249408.0,
+    "runtime_reserve_bytes": 1000000000.0,
+    "peak_bytes": 33839080798.0,
+    "ceiling_bytes": 15461882265.6,
+    "headroom_bytes": -18377198532.4,
+    "ram_share": 1.96969374071341
+  },
+  "verdict": {
+    "mode": "streaming",
+    "runnable": true,
+    "needs_wired_bump": false
+  },
+  "flags": [
+    "--streaming   (weights exceed even the raised cap; experts page from disk)",
+    "--cache-budget-gb auto   (~7.4 GB here, peaking near 10.8 GB)",
+    "--prefill-step-size 128   (the default 2048 needs 13.56 GB of transient workspace at this context)",
+    "--kv-bits 8   (KV is over 1 GB at this context; halves it)"
+  ],
+  "warnings": []
+}

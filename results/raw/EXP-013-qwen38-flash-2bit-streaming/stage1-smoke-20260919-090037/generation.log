@@ -1,0 +1,21 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[stream] page-cache auto: model 55.8 GB vs RAM 17.2 GB -> F_NOCACHE on (override with use_page_cache=/--use-page-cache)
+[INFO] n-gram table served from disk: 17.88 GiB kept out of GPU memory
+[INFO] Replaced 713 layers with PolarQuantized versions
+[INFO] Added EOS from generation_config.json: 248044 ('<|endoftext|>')
+[stream] swapped 144 expert projections to streaming (budget 1.0 GB)
+[stream] loaded in 1.0s | resident RSS=0.51 GB
+============================================================
+==========
+Paris
+
+The answer is unambiguous because Paris is the sole, constitutionally defined capital city of France, with no other city holding this official status.
+==========
+Prompt: 30 tokens, 3.310 tokens-per-sec
+Generation: 31 tokens, 1.475 tokens-per-sec
+Peak memory: 3.871 GB
+============================================================
+[stream] 30 generated tok in 30.3s = 1.0 tok/s (end-to-end) | peak RSS=3.71 GB | mlx_peak=3.87 GB
+[stream] expert cache: hit_rate=23.6% (resident 23.6% + prefetch 0.0%) resident=1.00 GB
+[stream] disk: critical_read=21.6 GB prefetched=0.0 GB total=21.6 GB | prefetched_experts=0 dropped_unused=0
+[stream] coalescing: 46770 expert-loads in 43036 range-reads = 1.09 experts/read

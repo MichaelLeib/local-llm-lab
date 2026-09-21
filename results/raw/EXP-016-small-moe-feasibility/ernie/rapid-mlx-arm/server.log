@@ -1,0 +1,81 @@
+INFO:rapid_mlx.utils.mamba_cache:[MambaCache] Skipping _make_cache patch — mlx-lm ArraysCache has native batching support
+INFO:rapid_mlx.gdn_prefill:[gdn_prefill] blocked-seq GDN prefill kernel installed (prompt>=64 tokens, Dk=128)
+INFO:rapid_mlx.model_auto_config:Auto-detected model family 'hermes' → tool_call_parser=hermes, reasoning_parser=None, is_hybrid=False, supports_spec_decode=True
+INFO:rapid_mlx.cli:Auto-configured --tool-call-parser hermes
+INFO:rapid_mlx.server:CORS allow-origin defaulting to wildcard '*' (no RAPID_MLX_CORS_ALLOW_ORIGINS set). Set the env var to an explicit origin list (e.g. 'https://chat.openai.com,https://claude.ai') to lock down for production / multi-tenant deployments.
+
+  🐆 Rapid-MLX
+  ─────────
+  Features: tools: hermes, gc-control, cors: *
+  Model: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-016-small-moe-feasibility/ernie/model
+INFO:rapid_mlx.kv_cache_dtype:KV cache dtype: bf16 (model=/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-016-small-moe-feasibility/ernie/model) — bf16 selected (no QuantizedKVCache wrap)
+Mode: Continuous batching (for multiple concurrent users)
+Stream interval: 1 tokens
+Memory-aware cache: 1024MB (index=radix)
+
+  !! Memory pressure warning: this model is likely too large for your hardware.
+  Continuing may trigger a macOS kernel panic (see issue #324).
+
+    Model on disk:             11.4 GB
+    Est. working set:          17.2 GB  (model x 1.5 — short-chat workload; long-context serving will use more)
+    Currently used by OS:       8.7 GB
+    Total system RAM:          16.0 GB  (162% projected utilization)
+
+  Apple Silicon firmware can panic the whole system rather than
+  raise an OOM error when unified-memory pressure exceeds the
+  iBoot AMCC threshold. Recommended actions:
+
+    - Close other apps to free RAM, or
+    - Pick a smaller model:    rapid-mlx models
+    - Or lower memory headroom: rapid-mlx serve <model> --gpu-memory-utilization 0.75
+
+INFO:rapid_mlx.utils.generation_config:generation_config: loaded sampling defaults from /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-016-small-moe-feasibility/ernie/model/generation_config.json: {'temperature': 0.6, 'top_p': 0.95, 'repetition_penalty': 1.0, 'presence_penalty': 0.0, 'frequency_penalty': 0.0}
+INFO:rapid_mlx.server:Preparing lazy BatchedEngine: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-016-small-moe-feasibility/ernie/model
+INFO:rapid_mlx.server:Model configured in standby; weights will load on the first inference request: /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-016-small-moe-feasibility/ernie/model
+INFO:rapid_mlx.server:Native tool format enabled for parser: hermes
+INFO:rapid_mlx.server:Default max tokens: 64
+INFO:rapid_mlx.runtime.model_registry:Registered model '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-016-small-moe-feasibility/ernie/model' (aliases=none, default=True)
+
+  Starting server on http://127.0.0.1:8916 (standby — model loads on first request)
+⚠ rapid-mlx 0.14.1 is behind latest 0.14.3 — run `rapid-mlx upgrade` to pick up new model aliases / flags.
+
+INFO:     Started server process [42445]
+INFO:     Waiting for application startup.
+INFO:rapid_mlx.server:GC control enabled: thresholds set to (100000, 50, 50)
+  Ready: http://127.0.0.1:8916
+
+  OpenAI:    http://127.0.0.1:8916/v1
+  Anthropic: http://127.0.0.1:8916
+  Model:     /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-016-small-moe-feasibility/ernie/model
+
+  Connect:
+    Claude Code  rapid-mlx agents claude-code --setup --base-url http://127.0.0.1:8916/v1
+    Continue     rapid-mlx agents continue --setup --base-url http://127.0.0.1:8916/v1
+    Python       rapid-mlx connect openai-python --base-url http://127.0.0.1:8916/v1
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8916 (Press CTRL+C to quit)
+INFO:     127.0.0.1:62979 - "GET /health HTTP/1.1" 200 OK
+WARNING:rapid_mlx._signal_observability:rapid-mlx received signal SIGTERM; thread stacks follow (faulthandler)
+Current thread 0x00000001fd6d3f80 (most recent call first):
+  File "/opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/lib/python3.14/site-packages/vllm_mlx/_signal_observability.py", line 148 in _on_signal
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/selectors.py", line 548 in select
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 2019 in _run_once
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 678 in run_forever
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 707 in run_until_complete
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/runners.py", line 128 in run
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/runners.py", line 205 in run
+  File "/opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/lib/python3.14/site-packages/uvicorn/server.py", line 77 in run
+  File "/opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/lib/python3.14/site-packages/uvicorn/main.py", line 621 in run
+  File "/opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/lib/python3.14/site-packages/vllm_mlx/cli.py", line 455 in _run_uvicorn
+  File "/opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/lib/python3.14/site-packages/vllm_mlx/cli.py", line 5239 in serve_command
+  File "/opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/lib/python3.14/site-packages/vllm_mlx/cli.py", line 13744 in main
+  File "/opt/homebrew/Cellar/rapid-mlx/0.14.1/libexec/lib/python3.14/site-packages/vllm_mlx/cli.py", line 13859 in cli_entrypoint
+  File "/opt/homebrew/bin/rapid-mlx", line 6 in <module>
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:rapid_mlx.runtime.cache:[lifespan] Saving prefix cache to /Users/<user>/.cache/rapid-mlx/prefix_cache/--Users--<user>--HermesProjects--Local-LLM-Lab--results--raw--EXP-016-small-moe-feasibility--ernie--model--174450acc35b20c6 (shutdown budget 3.5s, commit headroom 0.4s)
+INFO:rapid_mlx.runtime.cache:[lifespan] No cache to save
+INFO:rapid_mlx.engine.batched:BatchedEngine stopped
+INFO:rapid_mlx.server:Engine stopped
+INFO:     Application shutdown complete.
+INFO:     Finished server process [42445]

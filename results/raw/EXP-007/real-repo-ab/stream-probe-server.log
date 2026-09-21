@@ -1,0 +1,22 @@
+2026-09-18T06:38:29Z request prompt=15 cached=0 new_prompt=15 completion=64 ttft=9.23s prefill=1.6tok/s decode=7.2tok/s total=18.08s stop=length cache_miss=noEntry render=0.001s match=0.000s prepare=0.005s expert_hit=48.2% expert_miss=10433 io_await=5.38s reasoning=64
+--- reasoning 64 tokens ---
+Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - User says: "Reply exactly: STREAM_OK"
+   - This is a direct instruction to output a specific string exactly as requested.
+
+2.  **Identify Constraints:**
+   - "Reply exactly:" means I
+--- end reasoning ---
+2026-09-18T06:39:04Z request prompt=268 cached=0 new_prompt=268 completion=51 ttft=7.62s prefill=35.2tok/s decode=7.2tok/s total=14.69s stop=tool_calls cache_miss=toolsChanged render=0.017s match=0.000s prepare=0.012s expert_hit=42.0% expert_miss=9282 io_await=4.55s reasoning=20
+--- reasoning 20 tokens ---
+I will use the terminal tool to run the command `printf STREAM_TOOL_OK` as requested.
+
+--- end reasoning ---
+2026-09-18T06:39:36Z request prompt=268 cached=0 new_prompt=268 completion=51 ttft=7.50s prefill=35.7tok/s decode=7.4tok/s total=14.37s stop=tool_calls cache_miss=historyDiverged render=0.006s match=0.000s prepare=0.015s expert_hit=43.6% expert_miss=9030 io_await=4.55s reasoning=20
+--- reasoning 20 tokens ---
+I will use the terminal tool to run the command `printf STREAM_TOOL_OK` as requested.
+
+--- end reasoning ---
+TurboFieldfareServer ready at http://127.0.0.1:8997 model=stream-probe context=8192 prompt_cache=single-prefix

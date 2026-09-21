@@ -1,0 +1,960 @@
+{
+  "created_at_utc": "2026-09-17T19:36:33.185175+00:00",
+  "experiment": "EXP-007",
+  "limitations": [
+    "This plan does not establish that all selected tensors changed; it conservatively acquires every eligible training target.",
+    "No selected tensor payload was persisted by this planning operation; the probe obtained one byte per attempt.",
+    "Stock BF16-to-MLX-affine conversion must be separately validated before Carnice payload acquisition."
+  ],
+  "per_shard": {
+    "model-00003-of-00026.safetensors": {
+      "bytes": 54525952,
+      "tensors": 4
+    },
+    "model-00005-of-00026.safetensors": {
+      "bytes": 54525952,
+      "tensors": 4
+    },
+    "model-00008-of-00026.safetensors": {
+      "bytes": 54525952,
+      "tensors": 4
+    },
+    "model-00010-of-00026.safetensors": {
+      "bytes": 54525952,
+      "tensors": 4
+    },
+    "model-00012-of-00026.safetensors": {
+      "bytes": 54525952,
+      "tensors": 4
+    },
+    "model-00016-of-00026.safetensors": {
+      "bytes": 54525952,
+      "tensors": 4
+    },
+    "model-00018-of-00026.safetensors": {
+      "bytes": 54525952,
+      "tensors": 4
+    },
+    "model-00020-of-00026.safetensors": {
+      "bytes": 54525952,
+      "tensors": 4
+    },
+    "model-00023-of-00026.safetensors": {
+      "bytes": 54525952,
+      "tensors": 4
+    },
+    "model-00026-of-00026.safetensors": {
+      "bytes": 109051904,
+      "tensors": 8
+    }
+  },
+  "phase": "sparse_range_preacquisition_plan",
+  "range_probe": {
+    "attempts": [
+      {
+        "accept_ranges": null,
+        "attempt": 1,
+        "bytes": 1,
+        "content_range": null,
+        "etag": null,
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/b4745308c1e86e05236513631dda8024d8e78d30b3b7a5fcd32374d2ea94aad0?user_id=public&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00003-of-00026.safetensors%3B+filename%3D%22model-00003-of-00026.safetensors%22%3B&Expires=1789677391&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2I0NzQ1MzA4YzFlODZlMDUyMzY1MTM2MzFkZGE4MDI0ZDhlNzhkMzBiM2I3YTVmY2QzMjM3NGQyZWE5NGFhZDBcXD91c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc3MzkxfX19XX0_&Signature=MEUCIQDsz54s5XjL7rcpvFpHabc7n6WGCkdoAr89Lip-HzNSCQIgKA2%7El85Dwpe2uTICaDsaLafntUPmukuImVeid9I03Zo_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "sha256": "6d90fbacc073ee0b4c43f3a3291cecda33764f6d66d14224ad60f471f2c8334b",
+        "status": 206,
+        "x_linked_size": null,
+        "x_xet_hash": null
+      },
+      {
+        "accept_ranges": null,
+        "attempt": 2,
+        "bytes": 1,
+        "content_range": null,
+        "etag": null,
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/b4745308c1e86e05236513631dda8024d8e78d30b3b7a5fcd32374d2ea94aad0?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00003-of-00026.safetensors%3B+filename%3D%22model-00003-of-00026.safetensors%22%3B&user_id=public&Expires=1789677391&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2I0NzQ1MzA4YzFlODZlMDUyMzY1MTM2MzFkZGE4MDI0ZDhlNzhkMzBiM2I3YTVmY2QzMjM3NGQyZWE5NGFhZDBcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc3MzkxfX19XX0_&Signature=MEQCIEevvVd%7EZ0zXBWrY8smg8QCxypY7mfqPMxocVAwGRfj4AiBclW559HSyQxH9nx%7E9q-Dx0TncGJWpeS7FKEDQcolF5A__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "sha256": "6d90fbacc073ee0b4c43f3a3291cecda33764f6d66d14224ad60f471f2c8334b",
+        "status": 206,
+        "x_linked_size": null,
+        "x_xet_hash": null
+      },
+      {
+        "accept_ranges": null,
+        "attempt": 3,
+        "bytes": 1,
+        "content_range": null,
+        "etag": null,
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69e48d33c4b1465fd388bc43/b4745308c1e86e05236513631dda8024d8e78d30b3b7a5fcd32374d2ea94aad0?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00003-of-00026.safetensors%3B+filename%3D%22model-00003-of-00026.safetensors%22%3B&Expires=1789677392&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjllNDhkMzNjNGIxNDY1ZmQzODhiYzQzL2I0NzQ1MzA4YzFlODZlMDUyMzY1MTM2MzFkZGE4MDI0ZDhlNzhkMzBiM2I3YTVmY2QzMjM3NGQyZWE5NGFhZDBcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc3MzkyfX19XX0_&Signature=MEYCIQCiNeLkJwj7uq4TOxppBpoyL-QXZlexeAa08UNqH55xTwIhAOmlxk85G0BQMBAwtwvPXACod1Dzkt2rohSEIXyn-jql&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "sha256": "6d90fbacc073ee0b4c43f3a3291cecda33764f6d66d14224ad60f471f2c8334b",
+        "status": 206,
+        "x_linked_size": null,
+        "x_xet_hash": null
+      }
+    ],
+    "errors": [],
+    "method": "Three independent one-byte requests at the first selected tensor data byte. SafeTensors data start is 8 + header_bytes + data_offset; this corrects the earlier range sampler offset calculation.",
+    "record": {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 3305469047,
+        "length": 2097152,
+        "start": 3303371896
+      },
+      "name": "model.language_model.layers.3.self_attn.k_proj.weight",
+      "safetensors_data_offsets": [
+        3303367552,
+        3305464704
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00003-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    "reliable": true
+  },
+  "records": [
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 3305469047,
+        "length": 2097152,
+        "start": 3303371896
+      },
+      "name": "model.language_model.layers.3.self_attn.k_proj.weight",
+      "safetensors_data_offsets": [
+        3303367552,
+        3305464704
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00003-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 3322246263,
+        "length": 16777216,
+        "start": 3305469048
+      },
+      "name": "model.language_model.layers.3.self_attn.o_proj.weight",
+      "safetensors_data_offsets": [
+        3305464704,
+        3322241920
+      ],
+      "shape": [
+        2048,
+        4096
+      ],
+      "shard": "model-00003-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 3355801207,
+        "length": 33554432,
+        "start": 3322246776
+      },
+      "name": "model.language_model.layers.3.self_attn.q_proj.weight",
+      "safetensors_data_offsets": [
+        3322242432,
+        3355796864
+      ],
+      "shape": [
+        8192,
+        2048
+      ],
+      "shard": "model-00003-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 3357898359,
+        "length": 2097152,
+        "start": 3355801208
+      },
+      "name": "model.language_model.layers.3.self_attn.v_proj.weight",
+      "safetensors_data_offsets": [
+        3355796864,
+        3357894016
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00003-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 3305469047,
+        "length": 2097152,
+        "start": 3303371896
+      },
+      "name": "model.language_model.layers.7.self_attn.k_proj.weight",
+      "safetensors_data_offsets": [
+        3303367552,
+        3305464704
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00005-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 3322246263,
+        "length": 16777216,
+        "start": 3305469048
+      },
+      "name": "model.language_model.layers.7.self_attn.o_proj.weight",
+      "safetensors_data_offsets": [
+        3305464704,
+        3322241920
+      ],
+      "shape": [
+        2048,
+        4096
+      ],
+      "shard": "model-00005-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 3355801207,
+        "length": 33554432,
+        "start": 3322246776
+      },
+      "name": "model.language_model.layers.7.self_attn.q_proj.weight",
+      "safetensors_data_offsets": [
+        3322242432,
+        3355796864
+      ],
+      "shape": [
+        8192,
+        2048
+      ],
+      "shard": "model-00005-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 3357898359,
+        "length": 2097152,
+        "start": 3355801208
+      },
+      "name": "model.language_model.layers.7.self_attn.v_proj.weight",
+      "safetensors_data_offsets": [
+        3355796864,
+        3357894016
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00005-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 1075840919,
+        "length": 2097152,
+        "start": 1073743768
+      },
+      "name": "model.language_model.layers.11.self_attn.k_proj.weight",
+      "safetensors_data_offsets": [
+        1073741824,
+        1075838976
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00008-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 1092618135,
+        "length": 16777216,
+        "start": 1075840920
+      },
+      "name": "model.language_model.layers.11.self_attn.o_proj.weight",
+      "safetensors_data_offsets": [
+        1075838976,
+        1092616192
+      ],
+      "shape": [
+        2048,
+        4096
+      ],
+      "shard": "model-00008-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 1126172567,
+        "length": 33554432,
+        "start": 1092618136
+      },
+      "name": "model.language_model.layers.11.self_attn.q_proj.weight",
+      "safetensors_data_offsets": [
+        1092616192,
+        1126170624
+      ],
+      "shape": [
+        8192,
+        2048
+      ],
+      "shard": "model-00008-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 1128269719,
+        "length": 2097152,
+        "start": 1126172568
+      },
+      "name": "model.language_model.layers.11.self_attn.v_proj.weight",
+      "safetensors_data_offsets": [
+        1126170624,
+        1128267776
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00008-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 2753562503,
+        "length": 2097152,
+        "start": 2751465352
+      },
+      "name": "model.language_model.layers.15.self_attn.k_proj.weight",
+      "safetensors_data_offsets": [
+        2751463424,
+        2753560576
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00010-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 2770339719,
+        "length": 16777216,
+        "start": 2753562504
+      },
+      "name": "model.language_model.layers.15.self_attn.o_proj.weight",
+      "safetensors_data_offsets": [
+        2753560576,
+        2770337792
+      ],
+      "shape": [
+        2048,
+        4096
+      ],
+      "shard": "model-00010-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 2803894151,
+        "length": 33554432,
+        "start": 2770339720
+      },
+      "name": "model.language_model.layers.15.self_attn.q_proj.weight",
+      "safetensors_data_offsets": [
+        2770337792,
+        2803892224
+      ],
+      "shape": [
+        8192,
+        2048
+      ],
+      "shard": "model-00010-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 2805991303,
+        "length": 2097152,
+        "start": 2803894152
+      },
+      "name": "model.language_model.layers.15.self_attn.v_proj.weight",
+      "safetensors_data_offsets": [
+        2803892224,
+        2805989376
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00010-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 3357542279,
+        "length": 2097152,
+        "start": 3355445128
+      },
+      "name": "model.language_model.layers.19.self_attn.k_proj.weight",
+      "safetensors_data_offsets": [
+        3355443200,
+        3357540352
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00012-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 3374319495,
+        "length": 16777216,
+        "start": 3357542280
+      },
+      "name": "model.language_model.layers.19.self_attn.o_proj.weight",
+      "safetensors_data_offsets": [
+        3357540352,
+        3374317568
+      ],
+      "shape": [
+        2048,
+        4096
+      ],
+      "shard": "model-00012-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 3407873927,
+        "length": 33554432,
+        "start": 3374319496
+      },
+      "name": "model.language_model.layers.19.self_attn.q_proj.weight",
+      "safetensors_data_offsets": [
+        3374317568,
+        3407872000
+      ],
+      "shape": [
+        8192,
+        2048
+      ],
+      "shard": "model-00012-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 3409971079,
+        "length": 2097152,
+        "start": 3407873928
+      },
+      "name": "model.language_model.layers.19.self_attn.v_proj.weight",
+      "safetensors_data_offsets": [
+        3407872000,
+        3409969152
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00012-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 1612711959,
+        "length": 2097152,
+        "start": 1610614808
+      },
+      "name": "model.language_model.layers.23.self_attn.k_proj.weight",
+      "safetensors_data_offsets": [
+        1610612736,
+        1612709888
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00016-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 1629489175,
+        "length": 16777216,
+        "start": 1612711960
+      },
+      "name": "model.language_model.layers.23.self_attn.o_proj.weight",
+      "safetensors_data_offsets": [
+        1612709888,
+        1629487104
+      ],
+      "shape": [
+        2048,
+        4096
+      ],
+      "shard": "model-00016-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 1663043607,
+        "length": 33554432,
+        "start": 1629489176
+      },
+      "name": "model.language_model.layers.23.self_attn.q_proj.weight",
+      "safetensors_data_offsets": [
+        1629487104,
+        1663041536
+      ],
+      "shape": [
+        8192,
+        2048
+      ],
+      "shard": "model-00016-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 1665140759,
+        "length": 2097152,
+        "start": 1663043608
+      },
+      "name": "model.language_model.layers.23.self_attn.v_proj.weight",
+      "safetensors_data_offsets": [
+        1663041536,
+        1665138688
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00016-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 2216691591,
+        "length": 2097152,
+        "start": 2214594440
+      },
+      "name": "model.language_model.layers.27.self_attn.k_proj.weight",
+      "safetensors_data_offsets": [
+        2214592512,
+        2216689664
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00018-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 2233468807,
+        "length": 16777216,
+        "start": 2216691592
+      },
+      "name": "model.language_model.layers.27.self_attn.o_proj.weight",
+      "safetensors_data_offsets": [
+        2216689664,
+        2233466880
+      ],
+      "shape": [
+        2048,
+        4096
+      ],
+      "shard": "model-00018-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 2267023239,
+        "length": 33554432,
+        "start": 2233468808
+      },
+      "name": "model.language_model.layers.27.self_attn.q_proj.weight",
+      "safetensors_data_offsets": [
+        2233466880,
+        2267021312
+      ],
+      "shape": [
+        8192,
+        2048
+      ],
+      "shard": "model-00018-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 2269120391,
+        "length": 2097152,
+        "start": 2267023240
+      },
+      "name": "model.language_model.layers.27.self_attn.v_proj.weight",
+      "safetensors_data_offsets": [
+        2267021312,
+        2269118464
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00018-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 3357542271,
+        "length": 2097152,
+        "start": 3355445120
+      },
+      "name": "model.language_model.layers.31.self_attn.k_proj.weight",
+      "safetensors_data_offsets": [
+        3355443200,
+        3357540352
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00020-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 3374319487,
+        "length": 16777216,
+        "start": 3357542272
+      },
+      "name": "model.language_model.layers.31.self_attn.o_proj.weight",
+      "safetensors_data_offsets": [
+        3357540352,
+        3374317568
+      ],
+      "shape": [
+        2048,
+        4096
+      ],
+      "shard": "model-00020-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 3407873919,
+        "length": 33554432,
+        "start": 3374319488
+      },
+      "name": "model.language_model.layers.31.self_attn.q_proj.weight",
+      "safetensors_data_offsets": [
+        3374317568,
+        3407872000
+      ],
+      "shape": [
+        8192,
+        2048
+      ],
+      "shard": "model-00020-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 3409971071,
+        "length": 2097152,
+        "start": 3407873920
+      },
+      "name": "model.language_model.layers.31.self_attn.v_proj.weight",
+      "safetensors_data_offsets": [
+        3407872000,
+        3409969152
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00020-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 3305469079,
+        "length": 2097152,
+        "start": 3303371928
+      },
+      "name": "model.language_model.layers.35.self_attn.k_proj.weight",
+      "safetensors_data_offsets": [
+        3303367552,
+        3305464704
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00023-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 3322246295,
+        "length": 16777216,
+        "start": 3305469080
+      },
+      "name": "model.language_model.layers.35.self_attn.o_proj.weight",
+      "safetensors_data_offsets": [
+        3305464704,
+        3322241920
+      ],
+      "shape": [
+        2048,
+        4096
+      ],
+      "shard": "model-00023-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 3355801239,
+        "length": 33554432,
+        "start": 3322246808
+      },
+      "name": "model.language_model.layers.35.self_attn.q_proj.weight",
+      "safetensors_data_offsets": [
+        3322242432,
+        3355796864
+      ],
+      "shape": [
+        8192,
+        2048
+      ],
+      "shard": "model-00023-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 3357898391,
+        "length": 2097152,
+        "start": 3355801240
+      },
+      "name": "model.language_model.layers.35.self_attn.v_proj.weight",
+      "safetensors_data_offsets": [
+        3355796864,
+        3357894016
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00023-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 1563443727,
+        "length": 2097152,
+        "start": 1561346576
+      },
+      "name": "model.language_model.layers.39.self_attn.k_proj.weight",
+      "safetensors_data_offsets": [
+        1561342464,
+        1563439616
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00026-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 1580220943,
+        "length": 16777216,
+        "start": 1563443728
+      },
+      "name": "model.language_model.layers.39.self_attn.o_proj.weight",
+      "safetensors_data_offsets": [
+        1563439616,
+        1580216832
+      ],
+      "shape": [
+        2048,
+        4096
+      ],
+      "shard": "model-00026-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 1613775887,
+        "length": 33554432,
+        "start": 1580221456
+      },
+      "name": "model.language_model.layers.39.self_attn.q_proj.weight",
+      "safetensors_data_offsets": [
+        1580217344,
+        1613771776
+      ],
+      "shape": [
+        8192,
+        2048
+      ],
+      "shard": "model-00026-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 1615873039,
+        "length": 2097152,
+        "start": 1613775888
+      },
+      "name": "model.language_model.layers.39.self_attn.v_proj.weight",
+      "safetensors_data_offsets": [
+        1613771776,
+        1615868928
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00026-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 2178975247,
+        "length": 2097152,
+        "start": 2176878096
+      },
+      "name": "mtp.layers.0.self_attn.k_proj.weight",
+      "safetensors_data_offsets": [
+        2176873984,
+        2178971136
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00026-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 2195752463,
+        "length": 16777216,
+        "start": 2178975248
+      },
+      "name": "mtp.layers.0.self_attn.o_proj.weight",
+      "safetensors_data_offsets": [
+        2178971136,
+        2195748352
+      ],
+      "shape": [
+        2048,
+        4096
+      ],
+      "shard": "model-00026-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 2229307407,
+        "length": 33554432,
+        "start": 2195752976
+      },
+      "name": "mtp.layers.0.self_attn.q_proj.weight",
+      "safetensors_data_offsets": [
+        2195748864,
+        2229303296
+      ],
+      "shape": [
+        8192,
+        2048
+      ],
+      "shard": "model-00026-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    },
+    {
+      "dtype": "BF16",
+      "http_range": {
+        "end_inclusive": 2231404559,
+        "length": 2097152,
+        "start": 2229307408
+      },
+      "name": "mtp.layers.0.self_attn.v_proj.weight",
+      "safetensors_data_offsets": [
+        2229303296,
+        2231400448
+      ],
+      "shape": [
+        512,
+        2048
+      ],
+      "shard": "model-00026-of-00026.safetensors",
+      "target_class": "QLoRA Q/K/V/O module"
+    }
+  ],
+  "selection_rule": "Every serialized Q/K/V/O projection tensor in main-model and MTP self-attention. This is the conservative complete set implied by the published LoRA targets; observed samples show changed main-model Q/K/V, but a range importer must not infer unchanged status from samples.",
+  "source": {
+    "format": "root BF16 SafeTensors only; fp8 excluded",
+    "repo": "samuelcardillo/Carnice-Qwen3.6-MoE-35B-A3B",
+    "revision": "d86a0cea3cd6794a294ad72a08598294249c761e"
+  },
+  "tensor_count": 44,
+  "total_bf16_bytes": 599785472
+}

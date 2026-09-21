@@ -1,0 +1,42 @@
+======================================================================
+llama-server [62391]: 64-bit    Footprint: 2196 MB (16384 bytes per page)
+======================================================================
+
+  Dirty      Clean  Reclaimable    Regions    Category
+    ---        ---          ---        ---    ---
+2086 MB        0 B          0 B         39    Untagged
+  49 MB        0 B        80 KB         17    Malloc Small
+  49 MB        0 B          0 B          9    Malloc Large
+8380 KB        0 B          0 B          1    page table
+1005 KB     592 KB          0 B        419    __DATA
+ 768 KB        0 B          0 B          9    Malloc Metadata
+ 550 KB        0 B          0 B        351    __DATA_DIRTY
+ 368 KB        0 B          0 B         28    Stack
+ 240 KB        0 B          0 B          1    Malloc Tiny
+ 158 KB        0 B          0 B       1164    unused dyld shared cache area
+  96 KB        0 B          0 B          1    Dispatch Continuations
+  80 KB        0 B          0 B          6    IOAccelerator (graphics)
+  70 KB        0 B          0 B        221    __AUTH
+  64 KB        0 B          0 B          2    IOAccelerator
+  64 KB        0 B          0 B          4    IOKit
+  64 KB        0 B          0 B          4    __TPRO_CONST
+  47 KB        0 B          0 B          1    __OBJC_RW
+  32 KB        0 B          0 B          1    Deferred Reclaim
+  32 KB        0 B          0 B          1    Activity Tracing
+  27 KB     320 KB          0 B        408    __DATA_CONST
+  16 KB        0 B          0 B          1    OS Alloc Once
+    0 B    7116 MB          0 B          7    mapped file
+    0 B    5424 KB          0 B        481    __TEXT
+    0 B     640 KB          0 B         13    __LINKEDIT
+    0 B        0 B          0 B          1    __CTF
+    0 B        0 B          0 B        399    __AUTH_CONST
+    0 B        0 B          0 B          1    __FONT_DATA
+    0 B        0 B          0 B          1    IOSurface
+    0 B        0 B          0 B          1    __OBJC_RO
+    ---        ---          ---        ---    ---
+2196 MB    7123 MB        80 KB       3594    TOTAL
+
+Auxiliary data:
+    phys_footprint: 2196 MB
+    phys_footprint_peak: 2196 MB
+

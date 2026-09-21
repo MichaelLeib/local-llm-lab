@@ -1,0 +1,9 @@
+Sun Sep 20 17:10:41 CEST 2026
+Ornith Q6 server ready: http://127.0.0.1:8919/v1 (runtime context: 65536, Q8_0 KV)
+FAST: down
+DEEP: up (Ornith Q6, port 8919)
+vm.swapusage: total = 4096.00M  used = 2752.94M  free = 1343.06M  (encrypted)
+FAST ready http://127.0.0.1:8901/v1
+FAST: up (MiniCPM5-2B Q4_K_M, port 8901)
+DEEP: down
+vm.swapusage: total = 4096.00M  used = 2752.94M  free = 1343.06M  (encrypted)

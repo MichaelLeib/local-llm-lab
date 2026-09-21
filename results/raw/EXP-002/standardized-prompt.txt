@@ -1,0 +1,144 @@
+# EXP-002 standardized workload prompt
+
+You are reviewing a small Python service before it is deployed. Treat this as a code-review and debugging task, not as a request to run commands. Do not repeat the entire source. Give a concise but technically specific review with: (1) the highest-risk correctness and reliability bugs, ordered by severity; (2) the exact execution path that triggers each bug; (3) a minimal patch or pseudocode change for each; (4) tests that would catch the regressions; and (5) a short deployment recommendation. If a suspected issue is uncertain, state what evidence would resolve it.
+
+The service accepts webhook events, deduplicates them, schedules background work, and exposes a status endpoint. The intended guarantees are: an event ID is processed at most once per 24 hours; retries are safe; a failed job is retried up to three times with exponential backoff; shutdown does not lose jobs that were already accepted; status reports only completed work; and two service instances may run behind a load balancer.
+
+Here is the complete current implementation and configuration used by the team:
+
+```python
+import asyncio
+import hashlib
+import json
+import logging
+import os
+import sqlite3
+import time
+from dataclasses import dataclass
+from datetime import datetime, timedelta, timezone
+from http import HTTPStatus
+from typing import Any
+
+log = logging.getLogger(__name__)
+DB_PATH = os.getenv("DB_PATH", "/var/lib/relay/relay.db")
+MAX_RETRIES = 3
+BACKOFF = 2.0
+
+@dataclass
+class Event:
+    event_id: str
+    received_at: float
+    payload: dict[str, Any]
+
+class Relay:
+    def __init__(self, db_path: str = DB_PATH):
+        self.db = sqlite3.connect(db_path, check_same_thread=False)
+        self.queue: asyncio.Queue[Event] = asyncio.Queue()
+        self.completed: dict[str, float] = {}
+        self.running = True
+        self.db.execute("CREATE TABLE IF NOT EXISTS events (id TEXT PRIMARY KEY, body TEXT, state TEXT, attempts INTEGER, updated REAL)")
+        self.db.commit()
+
+    async def accept(self, raw: bytes) -> tuple[int, str]:
+        body = json.loads(raw)
+        event_id = body.get("id") or hashlib.sha256(raw).hexdigest()
+        now = time.time()
+        previous = self.db.execute("SELECT state, updated FROM events WHERE id = ?", (event_id,)).fetchone()
+        if previous and now - previous[1] < 86400:
+            return HTTPStatus.OK, "duplicate"
+        self.db.execute("INSERT OR REPLACE INTO events VALUES (?, ?, ?, ?, ?)",
+                        (event_id, json.dumps(body), "queued", 0, now))
+        self.db.commit()
+        await self.queue.put(Event(event_id, now, body))
+        return HTTPStatus.ACCEPTED, "queued"
+
+    async def worker(self) -> None:
+        while self.running:
+            event = await self.queue.get()
+            try:
+                await self.process(event)
+            except Exception:
+                log.exception("job failed: %s", event.event_id)
+            finally:
+                self.queue.task_done()
+
+    async def process(self, event: Event) -> None:
+        row = self.db.execute("SELECT attempts FROM events WHERE id = ?", (event.event_id,)).fetchone()
+        attempts = row[0] if row else 0
+        for attempt in range(attempts, MAX_RETRIES):
+            self.db.execute("UPDATE events SET state='running', attempts=?, updated=? WHERE id=?",
+                            (attempt, time.time(), event.event_id))
+            self.db.commit()
+            try:
+                await deliver(event.payload)
+                self.db.execute("UPDATE events SET state='done', updated=? WHERE id=?",
+                                (time.time(), event.event_id))
+                self.db.commit()
+                self.completed[event.event_id] = time.time()
+                return
+            except TimeoutError:
+                await asyncio.sleep(BACKOFF ** attempt)
+        self.db.execute("UPDATE events SET state='failed', updated=? WHERE id=?",
+                        (time.time(), event.event_id))
+        self.db.commit()
+
+    async def status(self, event_id: str) -> dict[str, Any]:
+        row = self.db.execute("SELECT state, attempts, updated FROM events WHERE id=?", (event_id,)).fetchone()
+        if not row:
+            return {"state": "unknown"}
+        return {"state": row[0], "attempts": row[1], "updated": row[2]}
+
+    async def shutdown(self) -> None:
+        self.running = False
+        await self.queue.join()
+        self.db.close()
+
+async def deliver(payload: dict[str, Any]) -> None:
+    await asyncio.sleep(0.01)
+    if payload.get("force_timeout"):
+        raise TimeoutError("downstream timeout")
+
+relay = Relay()
+
+async def webhook_handler(request) -> tuple[int, str]:
+    if request.method != "POST":
+        return HTTPStatus.METHOD_NOT_ALLOWED, "method"
+    if request.headers.get("content-type") != "application/json":
+        return HTTPStatus.UNSUPPORTED_MEDIA_TYPE, "content type"
+    raw = await request.read()
+    if len(raw) > 1_000_000:
+        return HTTPStatus.REQUEST_ENTITY_TOO_LARGE, "large"
+    return await relay.accept(raw)
+
+async def status_handler(request) -> dict[str, Any]:
+    return await relay.status(request.query["id"])
+
+async def main() -> None:
+    workers = [asyncio.create_task(relay.worker()) for _ in range(int(os.getenv("WORKERS", "4")))]
+    await serve_http(webhook_handler, status_handler, host="0.0.0.0", port=8080)
+    await relay.shutdown()
+    await asyncio.gather(*workers)
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+The service is deployed with four workers per process, two replicas, SQLite on a local persistent volume, a reverse proxy that may retry a request after a 502, and a termination grace period of 10 seconds. Downstream delivery is not idempotent. The team has observed occasional duplicate deliveries, jobs stuck in `running`, status responses that briefly claim success too early, and shutdowns that sometimes leave accepted events unavailable after restart.
+
+Analyze the implementation against the stated guarantees and deployment conditions. Focus on interactions between persistence, concurrency, retries, multiple replicas, process termination, and the meaning of each recorded state. Explain which fixes are essential before production and which are hardening improvements. Keep the final answer within the generation limit, but make the reasoning concrete enough that an engineer could implement the changes.
+
+In particular, reason through these independent scenarios and then identify shared root causes rather than treating them as unrelated anecdotes:
+
+A. Two identical webhook requests for the same event ID arrive concurrently at different replicas. Both read the database before either commits. The downstream operation succeeds twice. Explain the database invariant and transaction boundary required to prevent this, and distinguish deduplication from downstream idempotency.
+
+B. A process crashes after the downstream operation succeeds but before the local `done` update commits. On restart, the persisted row is still `running` or `queued`. Explain the possible replay behavior, what an at-least-once system can and cannot guarantee, and what durable operation key or reconciliation mechanism is needed.
+
+C. A downstream timeout occurs after the remote service accepted the request but before the client received the response. The retry loop sends the same payload again. Explain why a timeout is not proof of non-delivery and how a stable idempotency key should flow through the downstream call.
+
+D. A job is dequeued, the worker updates its attempt state, and then the process receives SIGTERM. The HTTP server stops accepting requests, but the queue contains work and the ten-second grace period expires. Explain why the in-memory queue and the current shutdown ordering lose work, and propose a restart-safe claim/lease protocol.
+
+E. A status request races with a worker transaction. The response must never claim completed work before the durable completion record exists, and it should make retrying or permanently failed states unambiguous. Explain the state machine and the transaction isolation assumptions.
+
+F. The two replicas each run four workers against the same SQLite database on a local persistent volume. Discuss SQLite locking, connection settings, busy handling, filesystem topology, and whether this deployment arrangement is appropriate. Recommend a production storage topology if it is not.
+
+Also discuss the fact that the current retry loop uses `range(attempts, MAX_RETRIES)`, how the attempt counter is persisted, what happens for a row recovered after a crash, and whether backoff sleeps should hold any database lock. Include a compact test matrix covering duplicate races, crash points, ambiguous downstream timeouts, retry exhaustion, restart recovery, graceful shutdown, and status visibility.

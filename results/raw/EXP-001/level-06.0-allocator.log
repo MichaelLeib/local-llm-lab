@@ -1,0 +1,3 @@
+resident-memory: pid=93932 target_bytes=6442450944 target_gib=6.000 page_size=16384 pages_touched=393216
+resident-memory: committed and touched once; idle now; Ctrl-C or kill 93932 to release
+resident-memory: released; exiting

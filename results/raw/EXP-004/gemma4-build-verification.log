@@ -1,0 +1,39 @@
+--- binaries ---
+build-expertcache-metal/bin/llama-server 49984 bytes
+3fa193035157930267306f36ea79131f1535ec5d15558085a3b5174f7f9ca5d3  build-expertcache-metal/bin/llama-server
+build-expertcache-metal/bin/llama-cli 49960 bytes
+aa7c260f115235d78068f5db8acee0f8366484ea72249506deaa2f3aca1d585f  build-expertcache-metal/bin/llama-cli
+build-expertcache-metal/bin/llama-bench 33464 bytes
+be3ad4ba994e26622ad74a79e3f6451232ac3076dbfd3b18db50cbed0a40da9d  build-expertcache-metal/bin/llama-bench
+build-expertcache-metal/bin/test-backend-ops 879136 bytes
+30a4629100407d581cce4c8b83bac7c794221828e46020a174eb76aa4399d4d7  build-expertcache-metal/bin/test-backend-ops
+--- mxfp4 operation ---
+ggml_metal_device_init: tensor API disabled for pre-M5 and pre-A19 devices
+ggml_metal_library_init: using embedded metal library
+ggml_metal_library_init: loaded in 8.889 sec
+ggml_metal_rsets_init: creating a residency set collection (keep_alive = 180 s)
+ggml_metal_device_init: GPU name:   MTL0 (Apple M3)
+ggml_metal_device_init: GPU family: MTLGPUFamilyApple9  (1009)
+ggml_metal_device_init: GPU family: MTLGPUFamilyCommon3 (3003)
+ggml_metal_device_init: GPU family: MTLGPUFamilyMetal4  (5002)
+ggml_metal_device_init: simdgroup reduction   = true
+ggml_metal_device_init: simdgroup matrix mul. = true
+ggml_metal_device_init: has unified memory    = true
+ggml_metal_device_init: has bfloat            = true
+ggml_metal_device_init: has tensor            = false
+ggml_metal_device_init: use residency sets    = true
+ggml_metal_device_init: use shared buffers    = true
+ggml_metal_device_init: recommendedMaxWorkingSetSize  = 12713.12 MB
+ggml_metal_init: allocating
+ggml_metal_init: found device: Apple M3
+ggml_metal_init: picking default device: Apple M3
+ggml_metal_init: use fusion         = true
+ggml_metal_init: use concurrency    = true
+ggml_metal_init: use graph optimize = true
+ggml_metal_library_compile_pipeline: compiling pipeline: base = 'kernel_mul_mm_id_map0_ne20_2', name = 'kernel_mul_mm_id_map0_ne20_2_ne02=32'
+ggml_metal_library_compile_pipeline: loaded kernel_mul_mm_id_map0_ne20_2_ne02=32          0x1061f8f70 | th_max = 1024 | th_width =   32
+ggml_metal_library_compile_pipeline: compiling pipeline: base = 'kernel_mul_mm_id_mxfp4_f32', name = 'kernel_mul_mm_id_mxfp4_f32_bci=0'
+ggml_metal_library_compile_pipeline: loaded kernel_mul_mm_id_mxfp4_f32_bci=0              0x1061fa4f0 | th_max = 1024 | th_width =   32
+ggml_metal_free: deallocating
+"backend_name","op_name","op_params","test_mode","supported","error_message","backend_reg_name"
+"MTL0","MUL_MAT_ID","type_a=mxfp4,type_b=f32,n_mats=32,n_used=2,b=0,m=2880,n=32,k=2880","test","1","",""

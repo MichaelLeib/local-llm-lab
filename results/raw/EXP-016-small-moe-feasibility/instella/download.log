@@ -1,0 +1,6 @@
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Downloading 'Q4_K_M/amd.Instella-MoE-16B-A3B-Think.f16.gguf.Q4_K_M.gguf' to 'results/raw/EXP-016-small-moe-feasibility/instella/model/.cache/huggingface/download/Q4_K_M/Ivhi1Ny1ehiAk9fM6lJdpJ0bFE8=.f776ddfee5dc6c808265c3f0a9c1b384c98058bfa551fe5df656fe712eb4c7f3.incomplete'
+Downloading 'README.md' to 'results/raw/EXP-016-small-moe-feasibility/instella/model/.cache/huggingface/download/Xn7B-BWUGOee2Y6hCZtEhtFu4BE=.88554ced5a2f30be09fb163f8492d9b7b878fafe.incomplete'
+Download complete. Moving file to results/raw/EXP-016-small-moe-feasibility/instella/model/README.md
+Download complete. Moving file to results/raw/EXP-016-small-moe-feasibility/instella/model/Q4_K_M/amd.Instella-MoE-16B-A3B-Think.f16.gguf.Q4_K_M.gguf
+Fetching 2 files:  50%|█████     | 1/2 [01:33<01:33, 93.86s/it]Fetching 2 files: 100%|██████████| 2/2 [01:33<00:00, 46.93s/it]
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-016-small-moe-feasibility/instella/model

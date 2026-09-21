@@ -1,0 +1,1387 @@
+{
+  "data_start": 10943296,
+  "expert_tensors": [
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 732683072,
+      "ggml_type": 14,
+      "name": "blk.0.ffn_down_exps.weight",
+      "offset": 721739776
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 953744192,
+      "ggml_type": 12,
+      "name": "blk.0.ffn_gate_exps.weight",
+      "offset": 942800896
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 1107434304,
+      "ggml_type": 12,
+      "name": "blk.0.ffn_up_exps.weight",
+      "offset": 1096491008
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 1282440768,
+      "ggml_type": 14,
+      "name": "blk.1.ffn_down_exps.weight",
+      "offset": 1271497472
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 1503501888,
+      "ggml_type": 12,
+      "name": "blk.1.ffn_gate_exps.weight",
+      "offset": 1492558592
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 1657192000,
+      "ggml_type": 12,
+      "name": "blk.1.ffn_up_exps.weight",
+      "offset": 1646248704
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 1832198464,
+      "ggml_type": 14,
+      "name": "blk.2.ffn_down_exps.weight",
+      "offset": 1821255168
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 2053259584,
+      "ggml_type": 12,
+      "name": "blk.2.ffn_gate_exps.weight",
+      "offset": 2042316288
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 2206949696,
+      "ggml_type": 12,
+      "name": "blk.2.ffn_up_exps.weight",
+      "offset": 2196006400
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 2379082816,
+      "ggml_type": 14,
+      "name": "blk.3.ffn_down_exps.weight",
+      "offset": 2368139520
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 2600143936,
+      "ggml_type": 12,
+      "name": "blk.3.ffn_gate_exps.weight",
+      "offset": 2589200640
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 2753834048,
+      "ggml_type": 12,
+      "name": "blk.3.ffn_up_exps.weight",
+      "offset": 2742890752
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 2923916352,
+      "ggml_type": 14,
+      "name": "blk.4.ffn_down_exps.weight",
+      "offset": 2912973056
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 3144977472,
+      "ggml_type": 12,
+      "name": "blk.4.ffn_gate_exps.weight",
+      "offset": 3134034176
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 3298667584,
+      "ggml_type": 12,
+      "name": "blk.4.ffn_up_exps.weight",
+      "offset": 3287724288
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 3469348672,
+      "ggml_type": 12,
+      "name": "blk.5.ffn_down_exps.weight",
+      "offset": 3458405376
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 3620933440,
+      "ggml_type": 12,
+      "name": "blk.5.ffn_gate_exps.weight",
+      "offset": 3609990144
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 3774623552,
+      "ggml_type": 12,
+      "name": "blk.5.ffn_up_exps.weight",
+      "offset": 3763680256
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 3945304640,
+      "ggml_type": 12,
+      "name": "blk.6.ffn_down_exps.weight",
+      "offset": 3934361344
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 4096889408,
+      "ggml_type": 12,
+      "name": "blk.6.ffn_gate_exps.weight",
+      "offset": 4085946112
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 4250579520,
+      "ggml_type": 12,
+      "name": "blk.6.ffn_up_exps.weight",
+      "offset": 4239636224
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 4422712640,
+      "ggml_type": 14,
+      "name": "blk.7.ffn_down_exps.weight",
+      "offset": 4411769344
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 4643773760,
+      "ggml_type": 12,
+      "name": "blk.7.ffn_gate_exps.weight",
+      "offset": 4632830464
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 4797463872,
+      "ggml_type": 12,
+      "name": "blk.7.ffn_up_exps.weight",
+      "offset": 4786520576
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 4963220800,
+      "ggml_type": 12,
+      "name": "blk.8.ffn_down_exps.weight",
+      "offset": 4952277504
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 5114805568,
+      "ggml_type": 12,
+      "name": "blk.8.ffn_gate_exps.weight",
+      "offset": 5103862272
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 5268495680,
+      "ggml_type": 12,
+      "name": "blk.8.ffn_up_exps.weight",
+      "offset": 5257552384
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 5439176768,
+      "ggml_type": 12,
+      "name": "blk.9.ffn_down_exps.weight",
+      "offset": 5428233472
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 5590761536,
+      "ggml_type": 12,
+      "name": "blk.9.ffn_gate_exps.weight",
+      "offset": 5579818240
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 5744451648,
+      "ggml_type": 12,
+      "name": "blk.9.ffn_up_exps.weight",
+      "offset": 5733508352
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 5919458112,
+      "ggml_type": 14,
+      "name": "blk.10.ffn_down_exps.weight",
+      "offset": 5908514816
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 6140519232,
+      "ggml_type": 12,
+      "name": "blk.10.ffn_gate_exps.weight",
+      "offset": 6129575936
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 6294209344,
+      "ggml_type": 12,
+      "name": "blk.10.ffn_up_exps.weight",
+      "offset": 6283266048
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 6466072128,
+      "ggml_type": 12,
+      "name": "blk.11.ffn_down_exps.weight",
+      "offset": 6455128832
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 6617656896,
+      "ggml_type": 12,
+      "name": "blk.11.ffn_gate_exps.weight",
+      "offset": 6606713600
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 6771347008,
+      "ggml_type": 12,
+      "name": "blk.11.ffn_up_exps.weight",
+      "offset": 6760403712
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 6937103936,
+      "ggml_type": 12,
+      "name": "blk.12.ffn_down_exps.weight",
+      "offset": 6926160640
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 7088688704,
+      "ggml_type": 12,
+      "name": "blk.12.ffn_gate_exps.weight",
+      "offset": 7077745408
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 7242378816,
+      "ggml_type": 12,
+      "name": "blk.12.ffn_up_exps.weight",
+      "offset": 7231435520
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 7417385280,
+      "ggml_type": 14,
+      "name": "blk.13.ffn_down_exps.weight",
+      "offset": 7406441984
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 7638446400,
+      "ggml_type": 12,
+      "name": "blk.13.ffn_gate_exps.weight",
+      "offset": 7627503104
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 7792136512,
+      "ggml_type": 12,
+      "name": "blk.13.ffn_up_exps.weight",
+      "offset": 7781193216
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 7962817600,
+      "ggml_type": 12,
+      "name": "blk.14.ffn_down_exps.weight",
+      "offset": 7951874304
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 8114402368,
+      "ggml_type": 12,
+      "name": "blk.14.ffn_gate_exps.weight",
+      "offset": 8103459072
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 8268092480,
+      "ggml_type": 12,
+      "name": "blk.14.ffn_up_exps.weight",
+      "offset": 8257149184
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 8439955264,
+      "ggml_type": 12,
+      "name": "blk.15.ffn_down_exps.weight",
+      "offset": 8429011968
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 8591540032,
+      "ggml_type": 12,
+      "name": "blk.15.ffn_gate_exps.weight",
+      "offset": 8580596736
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 8745230144,
+      "ggml_type": 12,
+      "name": "blk.15.ffn_up_exps.weight",
+      "offset": 8734286848
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 8915312448,
+      "ggml_type": 14,
+      "name": "blk.16.ffn_down_exps.weight",
+      "offset": 8904369152
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 9136373568,
+      "ggml_type": 12,
+      "name": "blk.16.ffn_gate_exps.weight",
+      "offset": 9125430272
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 9290063680,
+      "ggml_type": 12,
+      "name": "blk.16.ffn_up_exps.weight",
+      "offset": 9279120384
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 9460744768,
+      "ggml_type": 12,
+      "name": "blk.17.ffn_down_exps.weight",
+      "offset": 9449801472
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 9612329536,
+      "ggml_type": 12,
+      "name": "blk.17.ffn_gate_exps.weight",
+      "offset": 9601386240
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 9766019648,
+      "ggml_type": 12,
+      "name": "blk.17.ffn_up_exps.weight",
+      "offset": 9755076352
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 9936700736,
+      "ggml_type": 12,
+      "name": "blk.18.ffn_down_exps.weight",
+      "offset": 9925757440
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 10088285504,
+      "ggml_type": 12,
+      "name": "blk.18.ffn_gate_exps.weight",
+      "offset": 10077342208
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 10241975616,
+      "ggml_type": 12,
+      "name": "blk.18.ffn_up_exps.weight",
+      "offset": 10231032320
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 10414108736,
+      "ggml_type": 14,
+      "name": "blk.19.ffn_down_exps.weight",
+      "offset": 10403165440
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 10635169856,
+      "ggml_type": 12,
+      "name": "blk.19.ffn_gate_exps.weight",
+      "offset": 10624226560
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 10788859968,
+      "ggml_type": 12,
+      "name": "blk.19.ffn_up_exps.weight",
+      "offset": 10777916672
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 10954616896,
+      "ggml_type": 12,
+      "name": "blk.20.ffn_down_exps.weight",
+      "offset": 10943673600
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 11106201664,
+      "ggml_type": 12,
+      "name": "blk.20.ffn_gate_exps.weight",
+      "offset": 11095258368
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 11259891776,
+      "ggml_type": 12,
+      "name": "blk.20.ffn_up_exps.weight",
+      "offset": 11248948480
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 11430572864,
+      "ggml_type": 12,
+      "name": "blk.21.ffn_down_exps.weight",
+      "offset": 11419629568
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 11582157632,
+      "ggml_type": 12,
+      "name": "blk.21.ffn_gate_exps.weight",
+      "offset": 11571214336
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 11735847744,
+      "ggml_type": 12,
+      "name": "blk.21.ffn_up_exps.weight",
+      "offset": 11724904448
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 11910854208,
+      "ggml_type": 14,
+      "name": "blk.22.ffn_down_exps.weight",
+      "offset": 11899910912
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 12131915328,
+      "ggml_type": 12,
+      "name": "blk.22.ffn_gate_exps.weight",
+      "offset": 12120972032
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 12285605440,
+      "ggml_type": 12,
+      "name": "blk.22.ffn_up_exps.weight",
+      "offset": 12274662144
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 12457468224,
+      "ggml_type": 12,
+      "name": "blk.23.ffn_down_exps.weight",
+      "offset": 12446524928
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 12609052992,
+      "ggml_type": 12,
+      "name": "blk.23.ffn_gate_exps.weight",
+      "offset": 12598109696
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 12762743104,
+      "ggml_type": 12,
+      "name": "blk.23.ffn_up_exps.weight",
+      "offset": 12751799808
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 12928500032,
+      "ggml_type": 12,
+      "name": "blk.24.ffn_down_exps.weight",
+      "offset": 12917556736
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 13080084800,
+      "ggml_type": 12,
+      "name": "blk.24.ffn_gate_exps.weight",
+      "offset": 13069141504
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 13233774912,
+      "ggml_type": 12,
+      "name": "blk.24.ffn_up_exps.weight",
+      "offset": 13222831616
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 13408781376,
+      "ggml_type": 14,
+      "name": "blk.25.ffn_down_exps.weight",
+      "offset": 13397838080
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 13629842496,
+      "ggml_type": 12,
+      "name": "blk.25.ffn_gate_exps.weight",
+      "offset": 13618899200
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 13783532608,
+      "ggml_type": 12,
+      "name": "blk.25.ffn_up_exps.weight",
+      "offset": 13772589312
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 13954213696,
+      "ggml_type": 12,
+      "name": "blk.26.ffn_down_exps.weight",
+      "offset": 13943270400
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 14105798464,
+      "ggml_type": 12,
+      "name": "blk.26.ffn_gate_exps.weight",
+      "offset": 14094855168
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 14259488576,
+      "ggml_type": 12,
+      "name": "blk.26.ffn_up_exps.weight",
+      "offset": 14248545280
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 14431351360,
+      "ggml_type": 12,
+      "name": "blk.27.ffn_down_exps.weight",
+      "offset": 14420408064
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 14582936128,
+      "ggml_type": 12,
+      "name": "blk.27.ffn_gate_exps.weight",
+      "offset": 14571992832
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 14736626240,
+      "ggml_type": 12,
+      "name": "blk.27.ffn_up_exps.weight",
+      "offset": 14725682944
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 14906708544,
+      "ggml_type": 14,
+      "name": "blk.28.ffn_down_exps.weight",
+      "offset": 14895765248
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 15127769664,
+      "ggml_type": 12,
+      "name": "blk.28.ffn_gate_exps.weight",
+      "offset": 15116826368
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 15281459776,
+      "ggml_type": 12,
+      "name": "blk.28.ffn_up_exps.weight",
+      "offset": 15270516480
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 15452140864,
+      "ggml_type": 12,
+      "name": "blk.29.ffn_down_exps.weight",
+      "offset": 15441197568
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 15603725632,
+      "ggml_type": 12,
+      "name": "blk.29.ffn_gate_exps.weight",
+      "offset": 15592782336
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 15757415744,
+      "ggml_type": 12,
+      "name": "blk.29.ffn_up_exps.weight",
+      "offset": 15746472448
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 15928096832,
+      "ggml_type": 12,
+      "name": "blk.30.ffn_down_exps.weight",
+      "offset": 15917153536
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 16079681600,
+      "ggml_type": 12,
+      "name": "blk.30.ffn_gate_exps.weight",
+      "offset": 16068738304
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 16233371712,
+      "ggml_type": 12,
+      "name": "blk.30.ffn_up_exps.weight",
+      "offset": 16222428416
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 16405504832,
+      "ggml_type": 14,
+      "name": "blk.31.ffn_down_exps.weight",
+      "offset": 16394561536
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 16626565952,
+      "ggml_type": 12,
+      "name": "blk.31.ffn_gate_exps.weight",
+      "offset": 16615622656
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 16780256064,
+      "ggml_type": 12,
+      "name": "blk.31.ffn_up_exps.weight",
+      "offset": 16769312768
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 16946012992,
+      "ggml_type": 12,
+      "name": "blk.32.ffn_down_exps.weight",
+      "offset": 16935069696
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 17097597760,
+      "ggml_type": 12,
+      "name": "blk.32.ffn_gate_exps.weight",
+      "offset": 17086654464
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 17251287872,
+      "ggml_type": 12,
+      "name": "blk.32.ffn_up_exps.weight",
+      "offset": 17240344576
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 17421968960,
+      "ggml_type": 12,
+      "name": "blk.33.ffn_down_exps.weight",
+      "offset": 17411025664
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 17573553728,
+      "ggml_type": 12,
+      "name": "blk.33.ffn_gate_exps.weight",
+      "offset": 17562610432
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 17727243840,
+      "ggml_type": 12,
+      "name": "blk.33.ffn_up_exps.weight",
+      "offset": 17716300544
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 17902250304,
+      "ggml_type": 14,
+      "name": "blk.34.ffn_down_exps.weight",
+      "offset": 17891307008
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 18123311424,
+      "ggml_type": 12,
+      "name": "blk.34.ffn_gate_exps.weight",
+      "offset": 18112368128
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 18277001536,
+      "ggml_type": 12,
+      "name": "blk.34.ffn_up_exps.weight",
+      "offset": 18266058240
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 18449134656,
+      "ggml_type": 14,
+      "name": "blk.35.ffn_down_exps.weight",
+      "offset": 18438191360
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 18670195776,
+      "ggml_type": 12,
+      "name": "blk.35.ffn_gate_exps.weight",
+      "offset": 18659252480
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 18823885888,
+      "ggml_type": 12,
+      "name": "blk.35.ffn_up_exps.weight",
+      "offset": 18812942592
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 18993968192,
+      "ggml_type": 14,
+      "name": "blk.36.ffn_down_exps.weight",
+      "offset": 18983024896
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 19215029312,
+      "ggml_type": 12,
+      "name": "blk.36.ffn_gate_exps.weight",
+      "offset": 19204086016
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 19368719424,
+      "ggml_type": 12,
+      "name": "blk.36.ffn_up_exps.weight",
+      "offset": 19357776128
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 19543725888,
+      "ggml_type": 14,
+      "name": "blk.37.ffn_down_exps.weight",
+      "offset": 19532782592
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 19764787008,
+      "ggml_type": 12,
+      "name": "blk.37.ffn_gate_exps.weight",
+      "offset": 19753843712
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 19918477120,
+      "ggml_type": 12,
+      "name": "blk.37.ffn_up_exps.weight",
+      "offset": 19907533824
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 20093483584,
+      "ggml_type": 14,
+      "name": "blk.38.ffn_down_exps.weight",
+      "offset": 20082540288
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 20314544704,
+      "ggml_type": 12,
+      "name": "blk.38.ffn_gate_exps.weight",
+      "offset": 20303601408
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 20468234816,
+      "ggml_type": 12,
+      "name": "blk.38.ffn_up_exps.weight",
+      "offset": 20457291520
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 20640367936,
+      "ggml_type": 14,
+      "name": "blk.39.ffn_down_exps.weight",
+      "offset": 20629424640
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 20861429056,
+      "ggml_type": 12,
+      "name": "blk.39.ffn_gate_exps.weight",
+      "offset": 20850485760
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 21015119168,
+      "ggml_type": 12,
+      "name": "blk.39.ffn_up_exps.weight",
+      "offset": 21004175872
+    },
+    {
+      "dims": [
+        512,
+        2048,
+        256
+      ],
+      "file_offset": 21182328128,
+      "ggml_type": 14,
+      "name": "blk.40.ffn_down_exps.weight",
+      "offset": 21171384832
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 21403389248,
+      "ggml_type": 12,
+      "name": "blk.40.ffn_gate_exps.weight",
+      "offset": 21392445952
+    },
+    {
+      "dims": [
+        2048,
+        512,
+        256
+      ],
+      "file_offset": 21557079360,
+      "ggml_type": 12,
+      "name": "blk.40.ffn_up_exps.weight",
+      "offset": 21546136064
+    }
+  ],
+  "file_bytes": 21713463040,
+  "magic": "GGUF",
+  "metadata": {
+    "general.architecture": "qwen35moe",
+    "general.file_type": 15,
+    "general.name": "Ornith-1.5-35B",
+    "qwen35moe.attention.head_count": 16,
+    "qwen35moe.attention.head_count_kv": 2,
+    "qwen35moe.block_count": 41,
+    "qwen35moe.context_length": 262144,
+    "qwen35moe.expert_count": 256,
+    "qwen35moe.expert_feed_forward_length": 512,
+    "qwen35moe.expert_shared_feed_forward_length": 512,
+    "qwen35moe.expert_used_count": 8,
+    "qwen35moe.rope.dimension_count": 64,
+    "qwen35moe.rope.dimension_sections": [
+      11,
+      11,
+      10,
+      0
+    ],
+    "qwen35moe.rope.freq_base": 10000000.0,
+    "tokenizer.chat_template": "{%- set image_count = namespace(value=0) %}\n{%- set video_count = namespace(value=0) %}\n{%- macro render_content(content, do_vision_count, is_system_content=false) %}\n    {%- if content is string %}\n        {{- content }}\n    {%- elif content is iterable and content is not mapping %}\n        {%- for item in content %}\n            {%- if 'image' in item or 'image_url' in item or item.type == 'image' %}\n                {%- if is_system_content %}\n                    {{- raise_exception('System message cannot contain images.') }}\n                {%- endif %}\n                {%- if do_vision_count %}\n                    {%- set image_count.value = image_count.value + 1 %}\n                {%- endif %}\n                {%- if add_vision_id %}\n                    {{- 'Picture ' ~ image_count.value ~ ': ' }}\n                {%- endif %}\n                {{- '<|vision_start|><|image_pad|><|vision_end|>' }}\n            {%- elif 'video' in item or item.type == 'video' %}\n                {%- if is_system_content %}\n                    {{- raise_exception('System message cannot contain videos.') }}\n                {%- endif %}\n                {%- if do_vision_count %}\n                    {%- set video_count.value = video_count.value + 1 %}\n                {%- endif %}\n                {%- if add_vision_id %}\n                    {{- 'Video ' ~ video_count.value ~ ': ' }}\n                {%- endif %}\n                {{- '<|vision_start|><|video_pad|><|vision_end|>' }}\n            {%- elif 'text' in item %}\n                {{- item.text }}\n            {%- else %}\n                {{- raise_exception('Unexpected item type in content.') }}\n            {%- endif %}\n        {%- endfor %}\n    {%- elif content is none or content is undefined %}\n        {{- '' }}\n    {%- else %}\n        {{- raise_exception('Unexpected content type.') }}\n    {%- endif %}\n{%- endmacro %}\n{%- if not messages %}\n    {{- raise_exception('No messages provided.') }}\n{%- endif %}\n{%- set num_sys = 0 %}\n{%- set merged_system = '' %}\n{%- if messages[0].role == 'system' or messages[0].role == 'developer' %}\n    {%- set first = render_content(messages[0].content, false, true)|trim %}\n    {%- if messages|length > 1 and (messages[1].role == 'system' or messages[1].role == 'developer') %}\n        {%- set second = render_content(messages[1].content, false, true)|trim %}\n        {%- set merged_system = first + '\\n' + second %}\n        {%- set num_sys = 2 %}\n    {%- else %}\n        {%- set merged_system = first %}\n        {%- set num_sys = 1 %}\n    {%- endif %}\n{%- endif %}\n{%- if tools and tools is iterable and tools is not mapping %}\n    {{- '<|im_start|>system\\n' }}\n    {{- \"# Tools\\n\\nYou have access to the following functions:\\n\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\" }}\n    {{- '\\n\\nIf you choose to call a function ONLY reply in the following format with NO suffix:\\n\\n<tool_call>\\n<function=example_function_name>\\n<parameter=example_parameter_1>\\nvalue_1\\n</parameter>\\n<parameter=example_parameter_2>\\nThis is the value for the second parameter\\nthat can span\\nmultiple lines\\n</parameter>\\n</function>\\n</tool_call>\\n\\n<IMPORTANT>\\nReminder:\\n- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags\\n- Required parameters MUST be specified\\n- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after\\n- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls\\n</IMPORTANT>' }}\n    {%- if merged_system %}\n        {{- '\\n\\n' + merged_system }}\n    {%- endif %}\n    {{- '<|im_end|>\\n' }}\n{%- else %}\n    {%- if merged_system %}\n        {{- '<|im_start|>system\\n' + merged_system + '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- set ns = namespace(multi_step_tool=true, last_query_index=messages|length - 1) %}\n{%- for message in messages[::-1] %}\n    {%- set index = (messages|length - 1) - loop.index0 %}\n    {%- if ns.multi_step_tool and message.role == \"user\" %}\n        {%- set content = render_content(message.content, false)|trim %}\n        {%- if not(content.startswith('<tool_response>') and content.endswith('</tool_response>')) %}\n            {%- set ns.multi_step_tool = false %}\n            {%- set ns.last_query_index = index %}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- for message in messages %}\n    {%- if loop.index0 >= num_sys and message.role != \"system\" and message.role != \"developer\" %}\n    {%- set content = render_content(message.content, true)|trim %}\n    {%- if message.role == \"user\" %}\n        {{- '<|im_start|>' + message.role + '\\n' + content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {%- set reasoning_content = '' %}\n        {%- if message.reasoning_content is string %}\n            {%- set reasoning_content = message.reasoning_content %}\n        {%- else %}\n            {%- if '</think>' in content %}\n                {%- set reasoning_content = content.split('</think>')[0].rstrip('\\n').split('<think>')[-1].lstrip('\\n') %}\n                {%- set content = content.split('</think>')[-1].lstrip('\\n') %}\n            {%- endif %}\n        {%- endif %}\n        {%- set reasoning_content = reasoning_content|trim %}\n        {{- '<|im_start|>' + message.role + '\\n<think>\\n' + reasoning_content + '\\n</think>\\n\\n' + content }}\n        {%- if message.tool_calls and message.tool_calls is iterable and message.tool_calls is not mapping %}\n            {%- for tool_call in message.tool_calls %}\n                {%- if tool_call.function is defined %}\n                    {%- set tool_call = tool_call.function %}\n                {%- endif %}\n                {%- if loop.first %}\n                    {%- if content|trim %}\n                        {{- '\\n\\n<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                    {%- else %}\n                        {{- '<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                    {%- endif %}\n                {%- else %}\n                    {{- '\\n<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                {%- endif %}\n                {%- if tool_call.arguments is mapping %}\n                    {%- for args_name in tool_call.arguments %}\n                        {%- set args_value = tool_call.arguments[args_name] %}\n                        {{- '<parameter=' + args_name + '>\\n' }}\n                        {%- set args_value = args_value | tojson | safe if args_value is mapping or (args_value is sequence and args_value is not string) else args_value | string %}\n                        {{- args_value }}\n                        {{- '\\n</parameter>\\n' }}\n                    {%- endfor %}\n                {%- endif %}\n                {{- '</function>\\n</tool_call>' }}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.previtem and loop.previtem.role != \"tool\" %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- content }}\n        {{- '\\n</tool_response>' }}\n        {%- if not loop.last and loop.nextitem.role != \"tool\" %}\n            {{- '<|im_end|>\\n' }}\n        {%- elif loop.last %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n    {%- if enable_thinking is defined and enable_thinking is false %}\n        {{- '<think>\\n\\n</think>\\n\\n' }}\n    {%- else %}\n        {{- '<think>\\n' }}\n    {%- endif %}\n{%- endif %}\n{#- Unsloth fixes - developer role, tool calling #}"
+  },
+  "metadata_count": 49,
+  "metadata_end": 10943280,
+  "path": "/Users/<user>/.cache/huggingface/hub/models--ornith-ai--Ornith-1.5-35B-A3B-GGUF/snapshots/12393612fd4f730ff5aadc23e9b8f9648aa49ceb/Ornith-1.5-35B-Q4_K_M.gguf",
+  "tensor_count": 753,
+  "version": 3
+}

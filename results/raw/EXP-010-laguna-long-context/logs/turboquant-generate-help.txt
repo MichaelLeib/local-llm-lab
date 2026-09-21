@@ -1,0 +1,79 @@
+usage: turboquant-generate [-h] --model MODEL [--prompt PROMPT]
+                           [--max-tokens MAX_TOKENS] [--temp TEMP]
+                           [--top-p TOP_P] [--top-k TOP_K]
+                           [--rep-penalty REP_PENALTY] [--no-think]
+                           [--multi-think] [--stop TOKEN] [--rep-ctx REP_CTX]
+                           [--fast] [--ngram-offload]
+                           [--min-tokens MIN_TOKENS] [--kv-bits KV_BITS]
+                           [--kv-k-bits KV_K_BITS] [--kv-v-bits KV_V_BITS]
+                           [--kv-min-tokens KV_MIN_TOKENS]
+                           [--kv-group-size KV_GROUP_SIZE]
+
+Generate text using a TurboQuant-compressed model
+
+options:
+  -h, --help            show this help message and exit
+  --model MODEL         Path to TurboQuant model directory
+  --prompt PROMPT       Input prompt
+  --max-tokens MAX_TOKENS
+                        Maximum tokens to generate (default: 200)
+  --temp TEMP           Sampling temperature (default: 0.7)
+  --top-p TOP_P         Nucleus sampling threshold. Defaults to the model's
+                        generation_config.json value when present, else
+                        disabled. Pass 0 to force-disable.
+  --top-k TOP_K         Top-k truncation. Defaults to the model's
+                        generation_config.json value when present, else
+                        disabled. Pass 0 to force-disable. Without truncation,
+                        rare tokens like a stray '</think>' can be sampled in
+                        place of EOS.
+  --rep-penalty REP_PENALTY
+                        Repetition penalty (e.g. 1.05). Defaults to the
+                        model's generation_config.json value when present,
+                        else disabled. Pass 0 or 1 to force-disable.
+                        Recommended for thinking-mode models on low-bit builds
+                        (breaks think-block loops); omit for numeric/math
+                        prompts.
+  --no-think            Disable thinking mode via the chat template
+                        (enable_thinking=False). Much faster and immune to
+                        think-block loops on thinking-capable models.
+  --multi-think         Allow more than one </think> token per generation. By
+                        default a second </think> is masked once one has been
+                        emitted, which prevents low-bit thinking models from
+                        re-emitting their answer.
+  --stop TOKEN          Extra stop token to terminate generation on, as a
+                        token string ('</assistant>') or a token id ('24').
+                        Repeatable. The model's generation_config.json
+                        terminators are applied automatically; use this only
+                        for one-off overrides. Must be a single token.
+  --rep-ctx REP_CTX     Repetition penalty context window in tokens (default:
+                        256). Only used when --rep-penalty is set.
+  --fast                Fast mode: skip QJL correction for ~25% faster decode
+                        (slightly lower quality)
+  --ngram-offload       Serve an n-gram embedding table (Qwen3.8-Flash-Next)
+                        from memory-mapped files on the CPU instead of GPU
+                        memory: ~17.9 GiB less resident on the 2-bit build,
+                        bit-identical output. Keep the model directory in
+                        place while the model is loaded. No effect on models
+                        without such a table.
+  --min-tokens MIN_TOKENS
+                        Mask EOS until at least this many tokens are
+                        generated. Useful for thinking-mode models (Nemotron
+                        3, etc.) whose chat template primes EOS as the top-1
+                        logit (default: 0)
+  --kv-bits KV_BITS     Symmetric KV-cache bits (K=V). Use --kv-k-bits / --kv-
+                        v-bits for mixed precision instead. Omit to keep fp16
+                        cache.
+  --kv-k-bits KV_K_BITS
+                        Bits for K cache (recommended: 8). Pair with --kv-v-
+                        bits.
+  --kv-v-bits KV_V_BITS
+                        Bits for V cache (recommended: 3). Pair with --kv-k-
+                        bits. Mixed K8/V3 is the v0.2 recommended default.
+  --kv-min-tokens KV_MIN_TOKENS
+                        Keep the first N cached tokens in fp16 (attention-sink
+                        protection). 128 is a reasonable default for long-
+                        context generation. Default: 0 (quantize from token
+                        0).
+  --kv-group-size KV_GROUP_SIZE
+                        Hadamard rotation group size for KV quantization
+                        (default: 64).

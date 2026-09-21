@@ -1,0 +1,39 @@
+npm notice run @amos-labs/expertcache@0.1.0 test
+npm notice run node --test
+✔ expert trace parser accepts routing only and normalizes the contract (3.777125ms)
+✔ expert trace rejects payload data, duplicate experts, and invalid layers (0.4155ms)
+✔ expert trace labels sampled routing arms without accepting partial settings (0.130167ms)
+✔ trace comparison quantifies top-k set agreement across runtimes (2.702417ms)
+✔ LRU isolates streamed prefill and reports reproducible decode metrics (1.263ms)
+✔ TinyLFU protects the recurring hot set from one-off workflow pollution (1.74675ms)
+✔ latency model decomposes p95 read, upload, remap, and total stall (0.477583ms)
+✔ verification batches union experts and amortize misses over accepted tokens (0.268875ms)
+✔ workflow prewarm learns from a separate profile trace and reports its cost (1.342208ms)
+✔ concurrency interleaves independent trace streams without crossing batches (8.681166ms)
+✔ policy sweep ranks bounded configurations and rejects unknown policies (1.271375ms)
+✔ memory budgets derive bounded per-layer slot counts (0.680291ms)
+✔ metadata cannot activate more experts than a layer owns (0.149959ms)
+✔ Phase 1 page replay measures a bounded real mmap working set (435.536084ms)
+✔ route-union analysis measures expert reuse across token windows (2.055ms)
+✔ llama timing parser separates prompt, decode, and total measurements (7.273542ms)
+✔ llama timing parser makes incomplete logs explicit (0.200167ms)
+✔ provisional publication artifact is internally valid and explicitly incomplete (65.391208ms)
+✔ strict publication validation refuses unfinished gates (112.634583ms)
+✔ host snapshots are sanitized and swap units parse deterministically (358.852ms)
+✔ host snapshots accept commit IDs but reject failed symbolic revisions (0.113042ms)
+✔ publication summaries report medians, quartiles, quality, and resource peaks (0.799958ms)
+✔ numeric summaries make missing observations explicit (0.396125ms)
+✔ contradictory-evidence evaluator accepts immaterial percentage spacing (1.261167ms)
+✔ tenant evaluator accepts explicit safe refusals without requiring one phrase (0.267958ms)
+✔ tenant evaluator still rejects unsafe arguments and vague responses (0.198167ms)
+✔ funnel evaluator accepts equivalent signup punctuation and spacing (0.572917ms)
+✔ funnel evaluator rejects answers that identify another stage or no conclusion (0.163625ms)
+✔ canonical qualification hashes ignore only opaque tool call IDs (2.232208ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 29
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 647.754666

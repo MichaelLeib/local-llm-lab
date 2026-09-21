@@ -1,0 +1,93 @@
+{
+  "transformers_repo": "ornith-ai/Ornith-1.5-35B-A3B",
+  "transformers_revision": "10fbf86fed7ecee4a061f8b499a618f46001cac1",
+  "gguf_repo": "ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+  "gguf_revision": "12393612fd4f730ff5aadc23e9b8f9648aa49ceb",
+  "gguf_files": {
+    "Ornith-1.5-35B-Q4_K_M.gguf": {
+      "bytes": 21713463040,
+      "oid": "c64b9535c518b1aa0fe44e46e808a3ea5f46c281",
+      "lfs_oid": "42739874cc2ccfdb8523b23fbe52e29b2a7555c8176737ca9ca0b5d59859d41f"
+    },
+    "Ornith-1.5-35B-Q5_K_M.gguf": {
+      "bytes": 25347532544
+    },
+    "Ornith-1.5-35B-Q6_K.gguf": {
+      "bytes": 29208731392
+    },
+    "mmproj-Ornith-1.5-35B-BF16.gguf": {
+      "bytes": 902822240
+    }
+  },
+  "config_facts": {
+    "model_type": "qwen3_5_moe",
+    "architecture": "Qwen3_5MoeForConditionalGeneration",
+    "hidden_size": 2048,
+    "num_hidden_layers": 40,
+    "num_experts": 256,
+    "num_experts_per_tok": 8,
+    "moe_intermediate_size": 512,
+    "max_position_embeddings": 262144,
+    "layer_types": "30 linear-attention + 10 full-attention positions per 40-layer main trunk",
+    "vision_present": true,
+    "text_only_test": "projector not needed unless multimodal input is tested"
+  },
+  "urls": {
+    "discussion": "https://github.com/ggml-org/llama.cpp/discussions/23324",
+    "poc_pr": "https://github.com/kisasexypantera94/llama.cpp/pull/2",
+    "poc_repo": "https://github.com/kisasexypantera94/llama.cpp",
+    "newer_cache_rfc": "https://github.com/ggml-org/llama.cpp/discussions/24528",
+    "upstream": "https://github.com/ggml-org/llama.cpp",
+    "gguf_repo": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+    "transformers_repo": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B"
+  },
+  "implementation": {
+    "fork": "kisasexypantera94/llama.cpp",
+    "branch": "moe-expert-residency",
+    "head_commit": "41ec4c4e94fd5ff6c258691f35f2fcd0d3dde892",
+    "tag": "moe-expert-residency-b9368-41ec4c4",
+    "pr_base_commit": "fda8528aa8c1d8ecb2a5cd2b6e85c43ef5425b6b",
+    "pr_merge_commit": "ab7abd4d8a062c0aa460ac40bac016db6004da2e",
+    "feature_files": [
+      "src/llama-moe-offloader.cpp",
+      "src/llama-moe-offloader.h",
+      "ggml/src/ggml-metal/ggml-metal.metal",
+      "ggml/src/ggml-metal/ggml-metal-ops.cpp",
+      "src/llama-graph.cpp",
+      "src/llama-model.cpp",
+      "src/llama-context.cpp",
+      "common/arg.cpp"
+    ],
+    "compare_status": {
+      "status": "ahead",
+      "ahead_by": 6,
+      "behind_by": 0,
+      "total_commits": 6
+    },
+    "compare_files": 26
+  },
+  "build": {
+    "cmake": "4.4.3",
+    "generator": "default Unix Makefiles",
+    "build_type": "Release",
+    "ggml_metal": true,
+    "llama_build_server": true,
+    "llama_build_tests": false,
+    "parallel": 4,
+    "result": "success",
+    "executables": [
+      "build/bin/llama-server",
+      "build/bin/llama-cli"
+    ],
+    "warnings": [
+      "deprecated Metal MTLDevice.location API on macOS 27",
+      "dispatch_apply nullability extension"
+    ]
+  },
+  "system_upstream": {
+    "brew_version": "0.4.1",
+    "brew_commit": "b29c606e2",
+    "disk_offload_flags_present": false,
+    "cpu_moe_flags_present": true
+  }
+}

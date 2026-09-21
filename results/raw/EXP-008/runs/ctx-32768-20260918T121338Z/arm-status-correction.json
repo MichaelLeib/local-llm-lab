@@ -1,0 +1,31 @@
+{
+  "schema": "exp008.arm-status-correction.v1",
+  "experiment": "EXP-008",
+  "applies_to": "ctx-32768-20260918T121338Z/summary.json",
+  "recorded_at": "2026-09-18T10:29:09Z",
+  "correction": {
+    "raw_summary_status": "completed",
+    "correct_status": "stopped_for_swap",
+    "reason": "The runner terminated the standalone CLI with SIGTERM after arm-local swap grew above the configured 256 MiB stop limit. The raw summary did not yet propagate cli.stopped_for_swap into its status field; the runner has since been fixed for future arms."
+  },
+  "arm_facts": {
+    "context_limit_tokens": 32768,
+    "requested_fill_fraction": 0.78,
+    "expert_cache_slots": 16,
+    "kv_representation": "FP16",
+    "source_commit": "3a892465729406944778a24064664d817617f558",
+    "baseline_swap_mib": 990.25,
+    "stop_sample_swap_mib": 1427.12,
+    "swap_delta_mib": 436.87,
+    "swap_stop_limit_mib": 256.0,
+    "swapouts_delta_pages": 31032,
+    "pageouts_delta_pages": 3225,
+    "peak_sampled_physical_footprint_gib": 3.3,
+    "lowest_observed_memory_free_percent": 26.0,
+    "cli_wall_seconds_before_termination": 929.558,
+    "cli_returncode": -15,
+    "cli_timing_footer": null,
+    "server_started": false
+  },
+  "interpretation": "This is a safety-stop result, not a successful 32K throughput, correctness, prefix-cache, or retrieval result. It prevents a 64K FP16 arm and any 128K source change under the current one-variable experiment plan."
+}

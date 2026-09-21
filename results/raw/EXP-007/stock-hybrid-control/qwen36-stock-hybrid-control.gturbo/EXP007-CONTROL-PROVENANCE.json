@@ -1,0 +1,1832 @@
+{
+  "artifact": "Stock Hybrid Control",
+  "base_index_sha256": "41b9356101ebf8e7519e150dc811f80c4226e727301fbb032b890f006ed0be83",
+  "base_repo": "Qwen/Qwen3.6-35B-A3B",
+  "base_revision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+  "changed_tensor_count": 40,
+  "control_manifest_sha256": "400b85ae4a4f950827c59acc66c644c3504492120e281f31fdeeb71308ab3804",
+  "control_model_weights_sha256": "25dd450656d4374f53468995de82475f388c30fc9d3e8c170b981930247c85f1",
+  "control_path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/stock-hybrid-control/qwen36-stock-hybrid-control.gturbo",
+  "created_at_utc": "2026-09-17T20:03:59.763553+00:00",
+  "experiment": "EXP-007",
+  "inference_started": false,
+  "next_gate": "Reissue an isolated verified-install receipt, then require explicit approval before any local-model load/inference validation.",
+  "quantizer": {
+    "bits": 4,
+    "group_size": 64,
+    "mlx": "0.32.1",
+    "mlx_lm": "0.31.3",
+    "mlx_vlm": "0.4.4",
+    "mode": "affine",
+    "wheel_sha256": "3ff86ea738ab1914dc1b07e4fa5d4cc34bec5909e540692cfad0af808af13c11"
+  },
+  "retrieved_bf16_bytes": 545259520,
+  "reused_expert_hashes": {
+    "packed_experts/layer_00.bin": {
+      "actual_sha256": "f7e8fbd29d58b6073bcfaaf08ca1e3e8373e1b66861c82fa6c385026dc7005b8",
+      "exact": true,
+      "expected_sha256": "f7e8fbd29d58b6073bcfaaf08ca1e3e8373e1b66861c82fa6c385026dc7005b8"
+    },
+    "packed_experts/layer_01.bin": {
+      "actual_sha256": "d183602f0072355b327a212d065baf9c51210d0042c58187d3aeb53aa2653993",
+      "exact": true,
+      "expected_sha256": "d183602f0072355b327a212d065baf9c51210d0042c58187d3aeb53aa2653993"
+    },
+    "packed_experts/layer_02.bin": {
+      "actual_sha256": "d427407c248be3e24e0200580f62951abb2b2e83d7282ffa33c9568c30dfbce8",
+      "exact": true,
+      "expected_sha256": "d427407c248be3e24e0200580f62951abb2b2e83d7282ffa33c9568c30dfbce8"
+    },
+    "packed_experts/layer_03.bin": {
+      "actual_sha256": "511ea7859025c408a713546806f6d113310ff194a0da2f82016a6644515a7181",
+      "exact": true,
+      "expected_sha256": "511ea7859025c408a713546806f6d113310ff194a0da2f82016a6644515a7181"
+    },
+    "packed_experts/layer_04.bin": {
+      "actual_sha256": "45ebd70309e69f867d6ba3a0b734fe9d5eacbb5ae80725774c27b342212250f8",
+      "exact": true,
+      "expected_sha256": "45ebd70309e69f867d6ba3a0b734fe9d5eacbb5ae80725774c27b342212250f8"
+    },
+    "packed_experts/layer_05.bin": {
+      "actual_sha256": "7020f8d2f0948f0cd50a5679454aaf8d4121789a875e841836425eb928df9ec0",
+      "exact": true,
+      "expected_sha256": "7020f8d2f0948f0cd50a5679454aaf8d4121789a875e841836425eb928df9ec0"
+    },
+    "packed_experts/layer_06.bin": {
+      "actual_sha256": "7b926a76f23898b115fc79456c910a63ac19c814bca717a8e42b611743c3be2c",
+      "exact": true,
+      "expected_sha256": "7b926a76f23898b115fc79456c910a63ac19c814bca717a8e42b611743c3be2c"
+    },
+    "packed_experts/layer_07.bin": {
+      "actual_sha256": "64da0ad2e70daf037212c649bdd61d5f99ed0407d31ae616e48bed8591f1fa19",
+      "exact": true,
+      "expected_sha256": "64da0ad2e70daf037212c649bdd61d5f99ed0407d31ae616e48bed8591f1fa19"
+    },
+    "packed_experts/layer_08.bin": {
+      "actual_sha256": "2af661e63504476cb9a32fbca802d7c3b1cfa8e4d9c8476d3d4da34f38d1aa46",
+      "exact": true,
+      "expected_sha256": "2af661e63504476cb9a32fbca802d7c3b1cfa8e4d9c8476d3d4da34f38d1aa46"
+    },
+    "packed_experts/layer_09.bin": {
+      "actual_sha256": "acf1ca5d66e623bb04a4336d640859c46646067fe2ee434196a343d88bf0f766",
+      "exact": true,
+      "expected_sha256": "acf1ca5d66e623bb04a4336d640859c46646067fe2ee434196a343d88bf0f766"
+    },
+    "packed_experts/layer_10.bin": {
+      "actual_sha256": "ae796efde0efd7aaef03e6c559fa549bf2133a2042c38e0182e90d3c905dfb08",
+      "exact": true,
+      "expected_sha256": "ae796efde0efd7aaef03e6c559fa549bf2133a2042c38e0182e90d3c905dfb08"
+    },
+    "packed_experts/layer_11.bin": {
+      "actual_sha256": "9e2ff7c11641319eab071f5f7a6a6cbf2bd9c2545947430143da78bc50264c03",
+      "exact": true,
+      "expected_sha256": "9e2ff7c11641319eab071f5f7a6a6cbf2bd9c2545947430143da78bc50264c03"
+    },
+    "packed_experts/layer_12.bin": {
+      "actual_sha256": "40a7f06f5b3dcfe6a553da0f6ee3379fc095aea2999169e44a66b42960b87e3e",
+      "exact": true,
+      "expected_sha256": "40a7f06f5b3dcfe6a553da0f6ee3379fc095aea2999169e44a66b42960b87e3e"
+    },
+    "packed_experts/layer_13.bin": {
+      "actual_sha256": "a104e66266d0c2ed133de7ce84c0e3c6426f5f0eae4726fb71f980328af6cd01",
+      "exact": true,
+      "expected_sha256": "a104e66266d0c2ed133de7ce84c0e3c6426f5f0eae4726fb71f980328af6cd01"
+    },
+    "packed_experts/layer_14.bin": {
+      "actual_sha256": "76f92b6569cf881be0dda50b387c780e47c9701da077da50c651f592d317a406",
+      "exact": true,
+      "expected_sha256": "76f92b6569cf881be0dda50b387c780e47c9701da077da50c651f592d317a406"
+    },
+    "packed_experts/layer_15.bin": {
+      "actual_sha256": "a96a53c9b12c08dc2917525ea8a94d44de6aed6de367a3b4af4789294c4978d3",
+      "exact": true,
+      "expected_sha256": "a96a53c9b12c08dc2917525ea8a94d44de6aed6de367a3b4af4789294c4978d3"
+    },
+    "packed_experts/layer_16.bin": {
+      "actual_sha256": "f4d76fa5426083e70eeab25f3dd79a51e45f89cac281644a7df9087a4388e08f",
+      "exact": true,
+      "expected_sha256": "f4d76fa5426083e70eeab25f3dd79a51e45f89cac281644a7df9087a4388e08f"
+    },
+    "packed_experts/layer_17.bin": {
+      "actual_sha256": "e63130e7c71fa471ab0045d9effd775fcf2dfc0c7c142fb7f5809afc46d23f88",
+      "exact": true,
+      "expected_sha256": "e63130e7c71fa471ab0045d9effd775fcf2dfc0c7c142fb7f5809afc46d23f88"
+    },
+    "packed_experts/layer_18.bin": {
+      "actual_sha256": "218767d58654b465939825b0d5c3d365fb2ab2d1ff8f17174eb6d3484f4e2453",
+      "exact": true,
+      "expected_sha256": "218767d58654b465939825b0d5c3d365fb2ab2d1ff8f17174eb6d3484f4e2453"
+    },
+    "packed_experts/layer_19.bin": {
+      "actual_sha256": "52e214ef343f537d248fa37ccbb86b9216020851bc4ee3d6ab6f8300a2819491",
+      "exact": true,
+      "expected_sha256": "52e214ef343f537d248fa37ccbb86b9216020851bc4ee3d6ab6f8300a2819491"
+    },
+    "packed_experts/layer_20.bin": {
+      "actual_sha256": "3757d8a48ec46bb50e680f2a11db6351cfea01bd2cfba4201cc2ff1bc53f06c3",
+      "exact": true,
+      "expected_sha256": "3757d8a48ec46bb50e680f2a11db6351cfea01bd2cfba4201cc2ff1bc53f06c3"
+    },
+    "packed_experts/layer_21.bin": {
+      "actual_sha256": "553b822c5abc9ca8b60a1a38654a8ee689e96f1a00c1920c6f1dee204b237792",
+      "exact": true,
+      "expected_sha256": "553b822c5abc9ca8b60a1a38654a8ee689e96f1a00c1920c6f1dee204b237792"
+    },
+    "packed_experts/layer_22.bin": {
+      "actual_sha256": "74d22074126c03a97944eebb2fb8919dfc0cc0474d587f82c893b6d883040cd6",
+      "exact": true,
+      "expected_sha256": "74d22074126c03a97944eebb2fb8919dfc0cc0474d587f82c893b6d883040cd6"
+    },
+    "packed_experts/layer_23.bin": {
+      "actual_sha256": "f31bb79fec5656c55dcea7b47a5efb2f8755a643b4fd02da3b18ecb1aa11bf45",
+      "exact": true,
+      "expected_sha256": "f31bb79fec5656c55dcea7b47a5efb2f8755a643b4fd02da3b18ecb1aa11bf45"
+    },
+    "packed_experts/layer_24.bin": {
+      "actual_sha256": "df0c51ec7f7939768f32f94d1589da580a4adcbd7171edf885e2f71fca89d56d",
+      "exact": true,
+      "expected_sha256": "df0c51ec7f7939768f32f94d1589da580a4adcbd7171edf885e2f71fca89d56d"
+    },
+    "packed_experts/layer_25.bin": {
+      "actual_sha256": "b93b0587f381ba8abfe21f05ebb21197cf87557a12f5bb217fde0503bc3f7bd8",
+      "exact": true,
+      "expected_sha256": "b93b0587f381ba8abfe21f05ebb21197cf87557a12f5bb217fde0503bc3f7bd8"
+    },
+    "packed_experts/layer_26.bin": {
+      "actual_sha256": "1d5dec76c8675f2577c251a9f859c37fdf410f3cfa3a6aba01cf3803727268d7",
+      "exact": true,
+      "expected_sha256": "1d5dec76c8675f2577c251a9f859c37fdf410f3cfa3a6aba01cf3803727268d7"
+    },
+    "packed_experts/layer_27.bin": {
+      "actual_sha256": "3d594a093126ce33162e510f79b15254e742a6d8805940007ed091e2ea20057e",
+      "exact": true,
+      "expected_sha256": "3d594a093126ce33162e510f79b15254e742a6d8805940007ed091e2ea20057e"
+    },
+    "packed_experts/layer_28.bin": {
+      "actual_sha256": "27e752c2558ba291471d18b5a610e2b9e0618d41c6a9e1196770584a4ec8a0f6",
+      "exact": true,
+      "expected_sha256": "27e752c2558ba291471d18b5a610e2b9e0618d41c6a9e1196770584a4ec8a0f6"
+    },
+    "packed_experts/layer_29.bin": {
+      "actual_sha256": "6c6669210e90c49de64d03514cc1b8a940b962cb0178406b3be6f2298e961853",
+      "exact": true,
+      "expected_sha256": "6c6669210e90c49de64d03514cc1b8a940b962cb0178406b3be6f2298e961853"
+    },
+    "packed_experts/layer_30.bin": {
+      "actual_sha256": "9730968251b94ee8bd2f68e6766fdcb32931e2d385240860f3f3f8e9a8544ae5",
+      "exact": true,
+      "expected_sha256": "9730968251b94ee8bd2f68e6766fdcb32931e2d385240860f3f3f8e9a8544ae5"
+    },
+    "packed_experts/layer_31.bin": {
+      "actual_sha256": "68bb731a2d09cf452a9b5d0d11b87c9350ad36dc679e9d3433d94e444503d276",
+      "exact": true,
+      "expected_sha256": "68bb731a2d09cf452a9b5d0d11b87c9350ad36dc679e9d3433d94e444503d276"
+    },
+    "packed_experts/layer_32.bin": {
+      "actual_sha256": "fc335b49c0bb83667bd1037495c203e920bab6b5ce0e155c4e4f2d5580634a05",
+      "exact": true,
+      "expected_sha256": "fc335b49c0bb83667bd1037495c203e920bab6b5ce0e155c4e4f2d5580634a05"
+    },
+    "packed_experts/layer_33.bin": {
+      "actual_sha256": "d4d9af1c7b6397a67683758fbdc4180d566109319a01dfebb1bcddc470855f90",
+      "exact": true,
+      "expected_sha256": "d4d9af1c7b6397a67683758fbdc4180d566109319a01dfebb1bcddc470855f90"
+    },
+    "packed_experts/layer_34.bin": {
+      "actual_sha256": "8180d7efccbb9c0f28d13094e9bc46a113c7a852ba07613a145bcded7f72dac1",
+      "exact": true,
+      "expected_sha256": "8180d7efccbb9c0f28d13094e9bc46a113c7a852ba07613a145bcded7f72dac1"
+    },
+    "packed_experts/layer_35.bin": {
+      "actual_sha256": "e695e634c8c92e378e3221ba1240b1ae56a60357acba0dfdfbde4742ed61d57c",
+      "exact": true,
+      "expected_sha256": "e695e634c8c92e378e3221ba1240b1ae56a60357acba0dfdfbde4742ed61d57c"
+    },
+    "packed_experts/layer_36.bin": {
+      "actual_sha256": "300681b992213a9ae67d9de887fcfeb3c91d73d3e2625e4ff6e86d9bb3f73400",
+      "exact": true,
+      "expected_sha256": "300681b992213a9ae67d9de887fcfeb3c91d73d3e2625e4ff6e86d9bb3f73400"
+    },
+    "packed_experts/layer_37.bin": {
+      "actual_sha256": "01ba001da1ad2c41164c3d257dbf06f4701c319c8011dda772d83c16a6bc6902",
+      "exact": true,
+      "expected_sha256": "01ba001da1ad2c41164c3d257dbf06f4701c319c8011dda772d83c16a6bc6902"
+    },
+    "packed_experts/layer_38.bin": {
+      "actual_sha256": "1d439cecbc69ede60db7c08ed57dc5e67fdbc1f0d323cfe065de50af8288e2de",
+      "exact": true,
+      "expected_sha256": "1d439cecbc69ede60db7c08ed57dc5e67fdbc1f0d323cfe065de50af8288e2de"
+    },
+    "packed_experts/layer_39.bin": {
+      "actual_sha256": "e1fa9e70174ab328e52914906c5ad1e536c2ba78124eef2ce58d16a9ebbdffcf",
+      "exact": true,
+      "expected_sha256": "e1fa9e70174ab328e52914906c5ad1e536c2ba78124eef2ce58d16a9ebbdffcf"
+    }
+  },
+  "reused_experts_all_exact": true,
+  "reused_layout_sha256": "43419e62527915d1b6ac416b37131c3e7db1c61c5c95e7a7e03a4338abe7c9f7",
+  "rows": [
+    {
+      "bf16_bytes": 33554432,
+      "bf16_sha256": "0e91002fe4cfb6d097b441e86dfdc0e27d89009a0fe888d25d3e721932c4bae4",
+      "components": [
+        {
+          "bytes": 8388608,
+          "component": "weight",
+          "file_offset": 350199296,
+          "sha256": "83d9fc7d41ec15a6e9d410e11d74f5426a183f3c7d37cd355a5683fcc2a7ef34",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_3_self_attn_q_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "scales",
+          "file_offset": 358587904,
+          "sha256": "bc1fed9ecf0867932631fb75e207f714cb6edf8fea6761ea759687884fe2ab0d",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_3_self_attn_q_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "biases",
+          "file_offset": 359112192,
+          "sha256": "e050ce6f3529ca394c45aa9b2fbac1a262ef59dde165795e46bec57bf6725033",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_3_self_attn_q_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.3.self_attn.q_proj.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.3.self_attn.q_proj.weight",
+      "source_shard": "model-00003-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3322246776-3355801207/3357898360",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/cdf848f3c60b4ae60a0c3a722fb32cd4980e2e5c8d21fda1de743a938a60e1a1?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00003-of-00026.safetensors%3B+filename%3D%22model-00003-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&user_id=public&Expires=1789678990&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2NkZjg0OGYzYzYwYjRhZTYwYTBjM2E3MjJmYjMyY2Q0OTgwZTJlNWM4ZDIxZmRhMWRlNzQzYTkzOGE2MGUxYTFcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4OTkwfX19XX0_&Signature=MEUCIHwYNbK9j5Rva7M87wGjsHZd4BiGwmEudz76niG7ZCVfAiEA%7EYy2gBU6boQ1Nws07IME2D30A%7ERoIVnerYfTTJYS9e0_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "ffe19844b38ec0e79144415e251a7b7c14712108a7e1c2ccd5cd6f15f0f340e0",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 359636480,
+          "sha256": "f094155347f914de8defde9289af4d82bfad28d853b8a47c1b19d66e9f3ef5b4",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_3_self_attn_k_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 360160768,
+          "sha256": "4ec614660170cc25f24d05c8c231a6faa2ce532c907a3b65190adea536e927b4",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_3_self_attn_k_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 360193536,
+          "sha256": "cdef676700651773b7b2c047d4ab21a8eb41f007a81f38bb0088ad70dbab2945",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_3_self_attn_k_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.3.self_attn.k_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.3.self_attn.k_proj.weight",
+      "source_shard": "model-00003-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3303371896-3305469047/3357898360",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/cdf848f3c60b4ae60a0c3a722fb32cd4980e2e5c8d21fda1de743a938a60e1a1?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00003-of-00026.safetensors%3B+filename%3D%22model-00003-of-00026.safetensors%22%3B&user_id=public&Expires=1789678991&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2NkZjg0OGYzYzYwYjRhZTYwYTBjM2E3MjJmYjMyY2Q0OTgwZTJlNWM4ZDIxZmRhMWRlNzQzYTkzOGE2MGUxYTFcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4OTkxfX19XX0_&Signature=MEUCIQCWBi0mSiiKCg-vFehtX7uUVPTxHvGl6YC2gml5kqM2PAIgZ-4Fj2crUU%7EcLUBrZ1t%7EJJkFloIkFSNjh913JZvGgQk_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "8e286b6d992a97a47845e6cb4b86f2a7895ed87495e3bd1130cd146bc1cac95d",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 360226304,
+          "sha256": "8c9753cb2ae6905ee37d8d92d9e4961a4df7d7b486d0f5ccbd95718a3889a46e",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_3_self_attn_v_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 360750592,
+          "sha256": "b46398bdae6157d20328c098c755113b8f88788e6f89c0156cb986fff3ef7865",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_3_self_attn_v_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 360783360,
+          "sha256": "0937463cadc8896445b2bc14cafbe4b52ef9041a22154ec0a3e0b7ac91854a1c",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_3_self_attn_v_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.3.self_attn.v_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.3.self_attn.v_proj.weight",
+      "source_shard": "model-00003-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3355801208-3357898359/3357898360",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/cdf848f3c60b4ae60a0c3a722fb32cd4980e2e5c8d21fda1de743a938a60e1a1?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00003-of-00026.safetensors%3B+filename%3D%22model-00003-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&user_id=public&Expires=1789678992&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2NkZjg0OGYzYzYwYjRhZTYwYTBjM2E3MjJmYjMyY2Q0OTgwZTJlNWM4ZDIxZmRhMWRlNzQzYTkzOGE2MGUxYTFcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4OTkyfX19XX0_&Signature=MEYCIQC5QO85dc8RjcfS5MLLlUS9gBodFps1PQfO7WbpQrS37gIhAMWnnvKwaxNm3vaELvFY%7EWdSzt83GAKEN3AWRSmJbbWx&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 16777216,
+      "bf16_sha256": "f4cb470eeff400e05add65afc846ca49ae934455237609da4e3a2d58380f02ab",
+      "components": [
+        {
+          "bytes": 4194304,
+          "component": "weight",
+          "file_offset": 360816128,
+          "sha256": "65a9886496c9db23bbdd166ad4d87792a7dc828715b5cb11e8edcda56226565d",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_3_self_attn_o_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "scales",
+          "file_offset": 365010432,
+          "sha256": "ed30a35e3fdcdd4eaa6c66508df9925c4e5b785c1ad535f298338ec40195ada8",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_3_self_attn_o_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "biases",
+          "file_offset": 365272576,
+          "sha256": "5d46b860f0008aa1f39032ba908ee1c08ab208e2baa4f76749af84c00f2e658a",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_3_self_attn_o_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.3.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        4096
+      ],
+      "source_bf16_tensor": "model.language_model.layers.3.self_attn.o_proj.weight",
+      "source_shard": "model-00003-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3305469048-3322246263/3357898360",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/cdf848f3c60b4ae60a0c3a722fb32cd4980e2e5c8d21fda1de743a938a60e1a1?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00003-of-00026.safetensors%3B+filename%3D%22model-00003-of-00026.safetensors%22%3B&user_id=public&Expires=1789678993&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2NkZjg0OGYzYzYwYjRhZTYwYTBjM2E3MjJmYjMyY2Q0OTgwZTJlNWM4ZDIxZmRhMWRlNzQzYTkzOGE2MGUxYTFcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4OTkzfX19XX0_&Signature=MEUCIBvU6YW%7EAgSvrERE%7EZ0yhRT2IyOfhLUNJuHF0F1lmFwhAiEAhsGVkGCrNiiVzetXEAzU8FBmOEgkCOjzn6Xny8F%7El1A_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 33554432,
+      "bf16_sha256": "18784ed7bfa6488bfc9ba4cbebcb13f0cebe23b44cfc17c3a577b6621df4ee80",
+      "components": [
+        {
+          "bytes": 8388608,
+          "component": "weight",
+          "file_offset": 431925376,
+          "sha256": "c222803f2676c9374578e06ce46528298bb6f51f1658269247266c35f3860103",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_7_self_attn_q_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "scales",
+          "file_offset": 440313984,
+          "sha256": "0712ba7eede3703be799b1e6da4f32372190eb6c5479d18c3cc7a2939ea3cd93",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_7_self_attn_q_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "biases",
+          "file_offset": 440838272,
+          "sha256": "8f9a0b1994956d730955a29bb45e15b016d168e865605ac88e5dc1a513fcd50a",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_7_self_attn_q_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.7.self_attn.q_proj.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.7.self_attn.q_proj.weight",
+      "source_shard": "model-00005-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3322246776-3355801207/3357898360",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/e60a53e33465f31c6902512ccc804a1d0b8cd89e8adf088ce230717c349dd451?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00005-of-00026.safetensors%3B+filename%3D%22model-00005-of-00026.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789678994&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2U2MGE1M2UzMzQ2NWYzMWM2OTAyNTEyY2NjODA0YTFkMGI4Y2Q4OWU4YWRmMDg4Y2UyMzA3MTdjMzQ5ZGQ0NTFcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDUtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwNS1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4OTk0fX19XX0_&Signature=MEUCIQDKxbi29UOePR10LmI32A694eAoCTkq4-6jNPOldpKWowIgFy9hz9ze2LVvE9fEK77tePxo79s9qLBoZNMFFTept7w_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "42ef2f4ac5e4bd19e381ed37ce1762df36aab83f2ada8a4e1e34875ecbda3d15",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 441362560,
+          "sha256": "3a669bd585bdfab5cf455289ff05bd23f072bf24088a43cc2120e3a275c78afc",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_7_self_attn_k_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 441886848,
+          "sha256": "9d7e74c274bd9e0d56741666c794f96d430c55aaa9c440a18094db2fda26f965",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_7_self_attn_k_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 441919616,
+          "sha256": "50c6f94b702e68b475b5a9852ec83bbc04a5a79da528aab75842e7a3cbaa6382",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_7_self_attn_k_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.7.self_attn.k_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.7.self_attn.k_proj.weight",
+      "source_shard": "model-00005-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3303371896-3305469047/3357898360",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/e60a53e33465f31c6902512ccc804a1d0b8cd89e8adf088ce230717c349dd451?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00005-of-00026.safetensors%3B+filename%3D%22model-00005-of-00026.safetensors%22%3B&user_id=public&Expires=1789678995&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2U2MGE1M2UzMzQ2NWYzMWM2OTAyNTEyY2NjODA0YTFkMGI4Y2Q4OWU4YWRmMDg4Y2UyMzA3MTdjMzQ5ZGQ0NTFcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDUtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwNS1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4OTk1fX19XX0_&Signature=MEUCIQCXbpI-mxywmkTO6N8SbTpMTcew60mcQQNPN8YPdv4ciwIgLriPT7hEdYuwYvbL-82TVtOwyYQXM%7EBnk1QVj5cks2c_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "b9f37d5ad14ead1deeff374fb8c2152ea75c5df18569c14c829f3d6c294bf9fa",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 441952384,
+          "sha256": "c759a1a3410f418553176a156027285c89ee12270f47b1ef97173fea92de7769",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_7_self_attn_v_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 442476672,
+          "sha256": "2ff7c252a3d53675897e0550f4b082e77a59a673d0c0b444613ceadb6af50476",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_7_self_attn_v_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 442509440,
+          "sha256": "3ae9ae1953b1c6b292729f5f7dace83e27cda66d2f98a080d89ce20cba3c253a",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_7_self_attn_v_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.7.self_attn.v_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.7.self_attn.v_proj.weight",
+      "source_shard": "model-00005-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3355801208-3357898359/3357898360",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/e60a53e33465f31c6902512ccc804a1d0b8cd89e8adf088ce230717c349dd451?user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00005-of-00026.safetensors%3B+filename%3D%22model-00005-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&Expires=1789678996&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2U2MGE1M2UzMzQ2NWYzMWM2OTAyNTEyY2NjODA0YTFkMGI4Y2Q4OWU4YWRmMDg4Y2UyMzA3MTdjMzQ5ZGQ0NTFcXD91c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDUtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwNS1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4OTk2fX19XX0_&Signature=MEUCIFubR-wrkofod5eh6g3PvriO8G1mQOv1iALgsP64Q7l6AiEA2uWfKqdEwhMgbkQ0RNrFN533I0ZgtiglMDRWxKqGy2Y_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 16777216,
+      "bf16_sha256": "b4f70c79442553b168b6963ab736b96bf2fad8b8df7edada33f1efb34bc1d0e6",
+      "components": [
+        {
+          "bytes": 4194304,
+          "component": "weight",
+          "file_offset": 442542208,
+          "sha256": "20d260381d9e9455580e55830babe1ad747966927ee31c5c0085091d045a90a0",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_7_self_attn_o_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "scales",
+          "file_offset": 446736512,
+          "sha256": "b919123c07d12aecda259fd2884b512a8ca57d1826371e8af4114fac9c900a9a",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_7_self_attn_o_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "biases",
+          "file_offset": 446998656,
+          "sha256": "857c7d16f2e31529fea8b41bf91cabae9cc1e0268e2ff296ced2e9aed28e1374",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_7_self_attn_o_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.7.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        4096
+      ],
+      "source_bf16_tensor": "model.language_model.layers.7.self_attn.o_proj.weight",
+      "source_shard": "model-00005-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3305469048-3322246263/3357898360",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/e60a53e33465f31c6902512ccc804a1d0b8cd89e8adf088ce230717c349dd451?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00005-of-00026.safetensors%3B+filename%3D%22model-00005-of-00026.safetensors%22%3B&Expires=1789678997&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2U2MGE1M2UzMzQ2NWYzMWM2OTAyNTEyY2NjODA0YTFkMGI4Y2Q4OWU4YWRmMDg4Y2UyMzA3MTdjMzQ5ZGQ0NTFcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDUtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwNS1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4OTk3fX19XX0_&Signature=MEYCIQD0GoNEXnlyyEQlg%7EQWCmEj2k2b43aTrTatG0y0qsWYVAIhANmvnj8xb7uybb2oCsHGPPPA2Z9k0EHvd3F7JxI0L4y4&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 33554432,
+      "bf16_sha256": "0761c6f7a93c7bd60b27f0e4481482aa4964206b62e4a268b06ad13ed9abac93",
+      "components": [
+        {
+          "bytes": 8388608,
+          "component": "weight",
+          "file_offset": 513651456,
+          "sha256": "fda14b823a59242763752a8eb21641c457d0a5125b496d89fc186219c4386d98",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_11_self_attn_q_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "scales",
+          "file_offset": 522040064,
+          "sha256": "7d3098e8452271f6ba507de767cf4a107968902c35d68af900c908ee78e9877d",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_11_self_attn_q_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "biases",
+          "file_offset": 522564352,
+          "sha256": "472a82d4606c46ef36bb2191c92044e991d33c649e3f954bb697f414c4896330",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_11_self_attn_q_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.11.self_attn.q_proj.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.11.self_attn.q_proj.weight",
+      "source_shard": "model-00008-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1092618136-1126172567/3946842008",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/ad1b92fdffd322f59da9a07b8ab767bb2ae3a67ff7c0adc4c59b638ffb8d251a?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00008-of-00026.safetensors%3B+filename%3D%22model-00008-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&user_id=public&Expires=1789678998&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2FkMWI5MmZkZmZkMzIyZjU5ZGE5YTA3YjhhYjc2N2JiMmFlM2E2N2ZmN2MwYWRjNGM1OWI2MzhmZmI4ZDI1MWFcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDgtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwOC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4OTk4fX19XX0_&Signature=MEUCIQDAbWDPxtpYtNYRTxqg2opJRK6zE7NOzk7iW5hNYfR0rwIgIUa5UU8eNf3V45lLI8VR8ueJNhoDcxRMAYocIBbKJds_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "c923f114c38b4153bb871103d01b8a2361fa9a7e87950aa8aafdae693939b893",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 523088640,
+          "sha256": "16df5b92bbba89d899995501382c27d2b3ec6800b7333a0932201fe63b4e6a33",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_11_self_attn_k_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 523612928,
+          "sha256": "d25d98b0943125035db5d8eaa0524fc2bf97480329d2e024139042628bc14c90",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_11_self_attn_k_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 523645696,
+          "sha256": "ffa060d04ae7643413afd30d2f217d61f7b5178009259f2c6cfb7070c01fbec0",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_11_self_attn_k_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.11.self_attn.k_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.11.self_attn.k_proj.weight",
+      "source_shard": "model-00008-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1073743768-1075840919/3946842008",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/ad1b92fdffd322f59da9a07b8ab767bb2ae3a67ff7c0adc4c59b638ffb8d251a?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00008-of-00026.safetensors%3B+filename%3D%22model-00008-of-00026.safetensors%22%3B&Expires=1789678999&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2FkMWI5MmZkZmZkMzIyZjU5ZGE5YTA3YjhhYjc2N2JiMmFlM2E2N2ZmN2MwYWRjNGM1OWI2MzhmZmI4ZDI1MWFcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDgtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwOC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc4OTk5fX19XX0_&Signature=MEYCIQCIUI70ewrvc8cBqXPemNkSxekTDbmYX55Zu8hRBAE26QIhAMyqv29JPIkX88W5CawTQfNdmLNgEpUYc768MWmwdHjV&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "fc0ff361afbf728559ecbdd867d39131fcd842cb60a6dc1d3b3ab2e305fa4dd7",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 523678464,
+          "sha256": "406838c3be809340586f6abee04c3576b7cbe888df278d8c137579397f128d2e",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_11_self_attn_v_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 524202752,
+          "sha256": "0d7ab3d3a028912ece831bf058a3b164a3ac82b4324ab2044ebb56744c57769b",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_11_self_attn_v_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 524235520,
+          "sha256": "2c1ef789366a93acb287058c02b69ead703915b4a1c4f66b1017c294e867acd4",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_11_self_attn_v_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.11.self_attn.v_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.11.self_attn.v_proj.weight",
+      "source_shard": "model-00008-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1126172568-1128269719/3946842008",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/ad1b92fdffd322f59da9a07b8ab767bb2ae3a67ff7c0adc4c59b638ffb8d251a?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00008-of-00026.safetensors%3B+filename%3D%22model-00008-of-00026.safetensors%22%3B&Expires=1789679000&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2FkMWI5MmZkZmZkMzIyZjU5ZGE5YTA3YjhhYjc2N2JiMmFlM2E2N2ZmN2MwYWRjNGM1OWI2MzhmZmI4ZDI1MWFcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDgtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwOC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDAwfX19XX0_&Signature=MEQCIA128NOR7BvwhociZXcpehenQcuuqWfK4LLw1EHN1Ft6AiA6KQ6oFQ4n-xJoYaXoBCmD0x-n4-LddKWI3SZXYNlw3g__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 16777216,
+      "bf16_sha256": "23a176d613a5948518ccb553061a648cf4f80d9acf6d9668a6ccf228bd2dd5c7",
+      "components": [
+        {
+          "bytes": 4194304,
+          "component": "weight",
+          "file_offset": 524268288,
+          "sha256": "d4bb3aa2720a0b5dd8acee13ed98998c63221bd39d06d004e9575fedf2953eae",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_11_self_attn_o_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "scales",
+          "file_offset": 528462592,
+          "sha256": "b47d3ae16db66f73ea9393b4eb267a432bd55ccfc5a27a3215d88c5dea3f5b5a",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_11_self_attn_o_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "biases",
+          "file_offset": 528724736,
+          "sha256": "f7392d19f8cf37439d5f4a619c199d68e1e730bb0f66099dc79fddc684311ca0",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_11_self_attn_o_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.11.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        4096
+      ],
+      "source_bf16_tensor": "model.language_model.layers.11.self_attn.o_proj.weight",
+      "source_shard": "model-00008-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1075840920-1092618135/3946842008",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/ad1b92fdffd322f59da9a07b8ab767bb2ae3a67ff7c0adc4c59b638ffb8d251a?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00008-of-00026.safetensors%3B+filename%3D%22model-00008-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&user_id=public&Expires=1789679001&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2FkMWI5MmZkZmZkMzIyZjU5ZGE5YTA3YjhhYjc2N2JiMmFlM2E2N2ZmN2MwYWRjNGM1OWI2MzhmZmI4ZDI1MWFcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMDgtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAwOC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDAxfX19XX0_&Signature=MEUCIQD2I4LBFncKi0WgDlWzQA78kg-xycM09Gcd3X4JTqJP7AIgPwr0CmpEhn%7E8P0CQ5sbKPJtUR4IR7bGFqn7ekXz0-Xg_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 33554432,
+      "bf16_sha256": "a6cb9d5a9178f9531cda7d1f686d32cef530150884212ea72909a751548dc84c",
+      "components": [
+        {
+          "bytes": 8388608,
+          "component": "weight",
+          "file_offset": 595377536,
+          "sha256": "415af131942439f0dc8df80179546d4a25971a5d90956b31d2c6b2766d0c074b",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_15_self_attn_q_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "scales",
+          "file_offset": 603766144,
+          "sha256": "674332857254bde2375c68d7331d6e9ccd10da4767057f261033a5c746679b35",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_15_self_attn_q_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "biases",
+          "file_offset": 604290432,
+          "sha256": "30832078d3e43273e794e7010aa519b052a69c751327728fabe2f3c7dd08fae7",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_15_self_attn_q_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.15.self_attn.q_proj.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.15.self_attn.q_proj.weight",
+      "source_shard": "model-00010-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 2770339720-2803894151/3946841992",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/d5296ca1bfc00f45cc152fc9aaf2e35f84fe35223a881b80aa35b7337dd6ce8e?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00010-of-00026.safetensors%3B+filename%3D%22model-00010-of-00026.safetensors%22%3B&Expires=1789679002&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2Q1Mjk2Y2ExYmZjMDBmNDVjYzE1MmZjOWFhZjJlMzVmODRmZTM1MjIzYTg4MWI4MGFhMzViNzMzN2RkNmNlOGVcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTAtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxMC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDAyfX19XX0_&Signature=MEUCIQDNI17f166xJiLG6DIqZUWncHNpCJLNfXZHQ94z2WcYxwIgEeegvOM5ykuceZKcRYtJDqJ9PKkahYTHLVZtUXqgDJU_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "c18b5ba198c812d076a05c79f876addf83908e9bbc654c47148a40ec19f7b9c5",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 604814720,
+          "sha256": "71dd7caac503b251a7ebb4037c9cc54f169f65506e78cd1ded4f4483b4a020d1",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_15_self_attn_k_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 605339008,
+          "sha256": "064ee3363033e2d56465a2a2d4d9db1f271e90c126b740260e6c221046e33e74",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_15_self_attn_k_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 605371776,
+          "sha256": "2dc0fc0d464ab4ae7eaaf5da78bd2b4625c95f449d9bb5cce051690a2efebd23",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_15_self_attn_k_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.15.self_attn.k_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.15.self_attn.k_proj.weight",
+      "source_shard": "model-00010-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 2751465352-2753562503/3946841992",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/d5296ca1bfc00f45cc152fc9aaf2e35f84fe35223a881b80aa35b7337dd6ce8e?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00010-of-00026.safetensors%3B+filename%3D%22model-00010-of-00026.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789679003&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2Q1Mjk2Y2ExYmZjMDBmNDVjYzE1MmZjOWFhZjJlMzVmODRmZTM1MjIzYTg4MWI4MGFhMzViNzMzN2RkNmNlOGVcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTAtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxMC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDAzfX19XX0_&Signature=MEUCIHXYIV22TH8ONMY3zWwTrsdepOj-buJlks57l24EvRcYAiEAv3R-uJ4Ed2QAcZcrWNhwBDhVJ8IHUvUV-lqYUNa5DoI_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "67fa8099be0927086b4942d871ef5d2e8fa35a1c999bb9e73ef8e50927022aba",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 605404544,
+          "sha256": "63f20d582d39e1c0028ea72884ef757547a8102af4b92740e756c11d53d0419a",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_15_self_attn_v_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 605928832,
+          "sha256": "51bc0a3a7e4dd6187097521abc28d590a7cb2226bb1ba95d1156a18f9dff6ffb",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_15_self_attn_v_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 605961600,
+          "sha256": "c23c9cdca2187f25241c00e3654621a59c37cb8de57b055f87be504ffe47e369",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_15_self_attn_v_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.15.self_attn.v_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.15.self_attn.v_proj.weight",
+      "source_shard": "model-00010-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 2803894152-2805991303/3946841992",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/d5296ca1bfc00f45cc152fc9aaf2e35f84fe35223a881b80aa35b7337dd6ce8e?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00010-of-00026.safetensors%3B+filename%3D%22model-00010-of-00026.safetensors%22%3B&user_id=public&Expires=1789679004&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2Q1Mjk2Y2ExYmZjMDBmNDVjYzE1MmZjOWFhZjJlMzVmODRmZTM1MjIzYTg4MWI4MGFhMzViNzMzN2RkNmNlOGVcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTAtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxMC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDA0fX19XX0_&Signature=MEUCIQDERFuQ3dDPwzzLxTLXOnj7de7AaHXAn2WWX9HPQZhgogIgR8NnCn9JqU68gEYeO6VM1GRRP3xZMPlxW0Iq7ytFkEo_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 16777216,
+      "bf16_sha256": "b97e9a2e9491aef7b9b37a33b14fb604ff5d26f288c69c28dd0ca3bb5636b126",
+      "components": [
+        {
+          "bytes": 4194304,
+          "component": "weight",
+          "file_offset": 605994368,
+          "sha256": "9d0084d502469b76c3b6e6393d3ab110a65ec28acbb4a6a30d0b505b13682991",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_15_self_attn_o_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "scales",
+          "file_offset": 610188672,
+          "sha256": "679dd9813b1cb1367b0d2e2cd486a543f59c8585eeebecb3f826be1624c91d0d",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_15_self_attn_o_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "biases",
+          "file_offset": 610450816,
+          "sha256": "294def43b425895e640cb7c8eca9eb35658d536b3bc6fb57ac1eb6edfe8d7b2b",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_15_self_attn_o_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.15.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        4096
+      ],
+      "source_bf16_tensor": "model.language_model.layers.15.self_attn.o_proj.weight",
+      "source_shard": "model-00010-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 2753562504-2770339719/3946841992",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/d5296ca1bfc00f45cc152fc9aaf2e35f84fe35223a881b80aa35b7337dd6ce8e?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00010-of-00026.safetensors%3B+filename%3D%22model-00010-of-00026.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789679004&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2Q1Mjk2Y2ExYmZjMDBmNDVjYzE1MmZjOWFhZjJlMzVmODRmZTM1MjIzYTg4MWI4MGFhMzViNzMzN2RkNmNlOGVcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTAtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxMC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDA0fX19XX0_&Signature=MEQCICfeedjsSbTjVLFRX1vU6lj-1YxmEWegyMid1CE3W8F1AiBdPYmWoqtzxcgl4V7dcp9fEJ5NU6nqi6cODvsklKEN6Q__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 33554432,
+      "bf16_sha256": "2f1085e032c0641cba1bc1c2fa68a1a66036cc0015790d029e2ec39548f33ed0",
+      "components": [
+        {
+          "bytes": 8388608,
+          "component": "weight",
+          "file_offset": 677103616,
+          "sha256": "5cc445088b8cd246b9fa41fd227cba365ca35e34b59539bfcf264f15de14da2a",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_19_self_attn_q_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "scales",
+          "file_offset": 685492224,
+          "sha256": "109c0d9778816c75e765f7a893b3a7b2e872e5525ff0ea44206a5f8239606ff4",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_19_self_attn_q_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "biases",
+          "file_offset": 686016512,
+          "sha256": "f190fd8b909d267b93a975dbd1a6c90893682dcbcd51f968eb66de3734fa8d5f",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_19_self_attn_q_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.19.self_attn.q_proj.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.19.self_attn.q_proj.weight",
+      "source_shard": "model-00012-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3374319496-3407873927/3409971080",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/bdadacf50dc96cebf6c8199b06263f0a326762918c0d8b8db3dd461e87b4ecce?user_id=public&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00012-of-00026.safetensors%3B+filename%3D%22model-00012-of-00026.safetensors%22%3B&Expires=1789679005&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2JkYWRhY2Y1MGRjOTZjZWJmNmM4MTk5YjA2MjYzZjBhMzI2NzYyOTE4YzBkOGI4ZGIzZGQ0NjFlODdiNGVjY2VcXD91c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTItb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxMi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDA1fX19XX0_&Signature=MEUCIEGxKc1XyG1iOaNgRzTgkBN%7EI9rrtR5NqoYY8BsF0fq9AiEA1DtkSU4QX1RdnIJPpSFnJkshLytv-kqJqLA0T%7E8pGGo_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "0082cf1591090402a7d96e40c3eba94385e58088d474186ffbeb7a857f761503",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 686540800,
+          "sha256": "debbf27e22875c968827690b17f84c1fa2f6f3f7c024bbb79ccd2c6815a2af9f",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_19_self_attn_k_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 687065088,
+          "sha256": "44ba858a4caeca3ed16f630f1426e2b5bd4145840381211ae5a68a6040331080",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_19_self_attn_k_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 687097856,
+          "sha256": "0eaefb858ec1f6d4509ef590ad2f733ed66a8263f606fa7f14ffdee663107e99",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_19_self_attn_k_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.19.self_attn.k_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.19.self_attn.k_proj.weight",
+      "source_shard": "model-00012-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3355445128-3357542279/3409971080",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/bdadacf50dc96cebf6c8199b06263f0a326762918c0d8b8db3dd461e87b4ecce?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00012-of-00026.safetensors%3B+filename%3D%22model-00012-of-00026.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789679006&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2JkYWRhY2Y1MGRjOTZjZWJmNmM4MTk5YjA2MjYzZjBhMzI2NzYyOTE4YzBkOGI4ZGIzZGQ0NjFlODdiNGVjY2VcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTItb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxMi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDA2fX19XX0_&Signature=MEUCIFI7uU-nJ%7EUFP0LhmPSXvi%7ES7dV2QohD6MewWX241ElDAiEAjadV9pVoqweEWw3XE0uXN-DYPoZ1npriFrjqk%7EidC3U_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "1174569e8fac27df1dd1523673c732ab60e0ef91950063c075ba09f553f00f13",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 687130624,
+          "sha256": "8c8839846bfd8ae6082a32589f0b3d514768de9c1aac55a8878b4f5296aa9a09",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_19_self_attn_v_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 687654912,
+          "sha256": "a61773734f455e138330c1c951ca0ed7316cb9f263862ee027c9e9e2e728a6dd",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_19_self_attn_v_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 687687680,
+          "sha256": "0413a69da7b069e6f8f006a0a57119ca9f6d086965ab236003d61230d0c8c810",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_19_self_attn_v_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.19.self_attn.v_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.19.self_attn.v_proj.weight",
+      "source_shard": "model-00012-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3407873928-3409971079/3409971080",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/bdadacf50dc96cebf6c8199b06263f0a326762918c0d8b8db3dd461e87b4ecce?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00012-of-00026.safetensors%3B+filename%3D%22model-00012-of-00026.safetensors%22%3B&user_id=public&Expires=1789679007&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2JkYWRhY2Y1MGRjOTZjZWJmNmM4MTk5YjA2MjYzZjBhMzI2NzYyOTE4YzBkOGI4ZGIzZGQ0NjFlODdiNGVjY2VcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTItb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxMi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDA3fX19XX0_&Signature=MEQCIF%7EHZXD6QmVOaKUs6UhWCI8qXcct3eYzSR53AdbeTvUcAiBEtGiy8r2LJlI%7EFxwjqd39W1spRASf-nDm1Mm8waxNSg__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 16777216,
+      "bf16_sha256": "35ef8c8399887b55327e42e9ab211e4f437f73ae5b9ae14bfbb5e66bde35aa34",
+      "components": [
+        {
+          "bytes": 4194304,
+          "component": "weight",
+          "file_offset": 687720448,
+          "sha256": "c6c1704b5e6ce8b67dd7614bb623e2525cf2f1b916aa89ba23413aa34e464fd9",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_19_self_attn_o_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "scales",
+          "file_offset": 691914752,
+          "sha256": "57e1162bdaf44d4db8946e1f8bcd618106d602c77f9d67650b5b4a701542999d",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_19_self_attn_o_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "biases",
+          "file_offset": 692176896,
+          "sha256": "33f1c578bea8f55881edc52f0e6f63adffb440d6c9082ccb9a784cbc2760b9ae",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_19_self_attn_o_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.19.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        4096
+      ],
+      "source_bf16_tensor": "model.language_model.layers.19.self_attn.o_proj.weight",
+      "source_shard": "model-00012-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3357542280-3374319495/3409971080",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/bdadacf50dc96cebf6c8199b06263f0a326762918c0d8b8db3dd461e87b4ecce?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00012-of-00026.safetensors%3B+filename%3D%22model-00012-of-00026.safetensors%22%3B&user_id=public&Expires=1789679008&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2JkYWRhY2Y1MGRjOTZjZWJmNmM4MTk5YjA2MjYzZjBhMzI2NzYyOTE4YzBkOGI4ZGIzZGQ0NjFlODdiNGVjY2VcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTItb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxMi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDA4fX19XX0_&Signature=MEYCIQD3o2YKmbNBQ2KLnzOoexHp3ATsfHBPQLUN3U-Qg2S2vgIhAMDv7Kewm2Jsf3ReSkFscivRQOpaVKMiOBW1E6pVU9pl&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 33554432,
+      "bf16_sha256": "e1b890d1fb829568ccd97dda0317138dc7b011eb0ed4b71907560582b8b0fc23",
+      "components": [
+        {
+          "bytes": 8388608,
+          "component": "weight",
+          "file_offset": 758829696,
+          "sha256": "00b9505d21abf67a8be797d9ec619be3b3902284ce78b011225874bd1a860d1e",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_23_self_attn_q_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "scales",
+          "file_offset": 767218304,
+          "sha256": "25d9b7db08c882d569e586d6648116e673b4e325adf64cec54ccdfeee17a576e",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_23_self_attn_q_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "biases",
+          "file_offset": 767742592,
+          "sha256": "89a0140a501f98553202344591bdf606ea4ba32ca888d7a1c1ea67f218f5a741",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_23_self_attn_q_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.23.self_attn.q_proj.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.23.self_attn.q_proj.weight",
+      "source_shard": "model-00016-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1629489176-1663043607/3946842136",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/c2b55bed83b4c38f650fcd6dd59f21e88a8faf5624644a13976a8633bd8010e2?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00016-of-00026.safetensors%3B+filename%3D%22model-00016-of-00026.safetensors%22%3B&user_id=public&Expires=1789679009&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2MyYjU1YmVkODNiNGMzOGY2NTBmY2Q2ZGQ1OWYyMWU4OGE4ZmFmNTYyNDY0NGExMzk3NmE4NjMzYmQ4MDEwZTJcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTYtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxNi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDA5fX19XX0_&Signature=MEYCIQDWlpyLnKvTeQvrCSZbymDNDNoMtKyRN9GZd3V9jaTqTwIhANt9AMBJ-grtIWnvfOREOqYdAEq-BkVId7F8y8X6b2HM&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "f1b0366f6b8e4ed7eecb4e025945702a996a12f5b0c8127660d2c36c8aebec00",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 768266880,
+          "sha256": "86a6672def886fa26d69398dd723af2e56ad0fff085330fbb6c37aec94a38fa1",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_23_self_attn_k_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 768791168,
+          "sha256": "489125d811c2e4cf9571c3f80a276fdca738ea9da2c6024d2de7c22367ccea0f",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_23_self_attn_k_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 768823936,
+          "sha256": "cf4b7362c7c5acb3a37c6507a76640c607471d7408c856f7dc583d5d3cc14a96",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_23_self_attn_k_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.23.self_attn.k_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.23.self_attn.k_proj.weight",
+      "source_shard": "model-00016-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1610614808-1612711959/3946842136",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/c2b55bed83b4c38f650fcd6dd59f21e88a8faf5624644a13976a8633bd8010e2?user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00016-of-00026.safetensors%3B+filename%3D%22model-00016-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&Expires=1789679010&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2MyYjU1YmVkODNiNGMzOGY2NTBmY2Q2ZGQ1OWYyMWU4OGE4ZmFmNTYyNDY0NGExMzk3NmE4NjMzYmQ4MDEwZTJcXD91c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTYtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxNi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDEwfX19XX0_&Signature=MEUCICkuKSgkE9%7EUlqHh57kpL8e71qqNNZxXvSBqVlr69oP-AiEAr3AuPLGi7q47110GfTqSDMcsV8PyDBeLJ9pMlWSWc%7EM_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "238546436b7d26db48c9a409c0514403d859fdac27341f79c87506377229089f",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 768856704,
+          "sha256": "050b0aba1b91bd08140518ba4f608067e322117caa13b8efdd85357cb9c6e11c",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_23_self_attn_v_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 769380992,
+          "sha256": "dc4b336aaaf4896e9554578b19ce59805aef010c73f2b74137113ff90a44fd81",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_23_self_attn_v_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 769413760,
+          "sha256": "403a11a8920d5b9d41e1534009cb7325ec473d4957473159a88356a5bbab82f3",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_23_self_attn_v_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.23.self_attn.v_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.23.self_attn.v_proj.weight",
+      "source_shard": "model-00016-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1663043608-1665140759/3946842136",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/c2b55bed83b4c38f650fcd6dd59f21e88a8faf5624644a13976a8633bd8010e2?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00016-of-00026.safetensors%3B+filename%3D%22model-00016-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&user_id=public&Expires=1789679011&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2MyYjU1YmVkODNiNGMzOGY2NTBmY2Q2ZGQ1OWYyMWU4OGE4ZmFmNTYyNDY0NGExMzk3NmE4NjMzYmQ4MDEwZTJcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTYtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxNi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDExfX19XX0_&Signature=MEYCIQC7eP7wAR9S4JVY0qeAF5nguKvUJm2jMF9IyHiMKbKqXwIhAO5ouJksMByvLHKcSw0fO7AvV3A-bhGQJY7degdwPHBH&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 16777216,
+      "bf16_sha256": "83c24ba43a5d0e0c08a914c659b4c18f85269556f78aacaecad25cce64d50720",
+      "components": [
+        {
+          "bytes": 4194304,
+          "component": "weight",
+          "file_offset": 769446528,
+          "sha256": "85e006b0c01ee266e3855c34452c06d50d512ba7df8192afc5610313ac0268a2",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_23_self_attn_o_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "scales",
+          "file_offset": 773640832,
+          "sha256": "5c343d562562b858d65d1fa5b7e1155797c7e0e067775f20b1bd0a12088f2cfa",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_23_self_attn_o_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "biases",
+          "file_offset": 773902976,
+          "sha256": "140d96d4685ac095d2f6d5909f140aed216bed0216abf426393165854b2e7414",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_23_self_attn_o_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.23.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        4096
+      ],
+      "source_bf16_tensor": "model.language_model.layers.23.self_attn.o_proj.weight",
+      "source_shard": "model-00016-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1612711960-1629489175/3946842136",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/c2b55bed83b4c38f650fcd6dd59f21e88a8faf5624644a13976a8633bd8010e2?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00016-of-00026.safetensors%3B+filename%3D%22model-00016-of-00026.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789679012&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2MyYjU1YmVkODNiNGMzOGY2NTBmY2Q2ZGQ1OWYyMWU4OGE4ZmFmNTYyNDY0NGExMzk3NmE4NjMzYmQ4MDEwZTJcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTYtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxNi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDEyfX19XX0_&Signature=MEYCIQCNuN5fv5PA%7E7P4hDfSlinViHBnNb03tyMm6K4h%7EDkTsgIhAJ06-2yk3nBB0PqP6B0iPO26pttcKfshIXdPelbyfN8T&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 33554432,
+      "bf16_sha256": "71c4f7911820a1c61cac98775d1a2a90e61624203a93cb91a45536872e3b1ed4",
+      "components": [
+        {
+          "bytes": 8388608,
+          "component": "weight",
+          "file_offset": 840555776,
+          "sha256": "841eeef8c6a4af98898956c144275ba8c50c2d25e3641eab4afcef8763c9054e",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_27_self_attn_q_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "scales",
+          "file_offset": 848944384,
+          "sha256": "5146d29272c0659e04fc144e9cafcd8ddceb9e740b016f1afc7ca11a5ce77a39",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_27_self_attn_q_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "biases",
+          "file_offset": 849468672,
+          "sha256": "06ba54588d1c742377549f6c38d2ea10965f8bf45841c720be2209d1a9213d01",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_27_self_attn_q_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.27.self_attn.q_proj.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.27.self_attn.q_proj.weight",
+      "source_shard": "model-00018-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 2233468808-2267023239/3946841992",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/ed5aca02238da031f867599b47e792577bc6000b980e68cf0a98f1ffc198a6c7?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00018-of-00026.safetensors%3B+filename%3D%22model-00018-of-00026.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789679013&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2VkNWFjYTAyMjM4ZGEwMzFmODY3NTk5YjQ3ZTc5MjU3N2JjNjAwMGI5ODBlNjhjZjBhOThmMWZmYzE5OGE2YzdcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTgtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxOC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDEzfX19XX0_&Signature=MEYCIQCxXOfyTkjGzQEsHoVEDrKo8Ed%7EVjLYx8K%7EaH%7EDd-xr%7EgIhAOceMGiHEQTRNDrMDksE8rdYjx3EZE2fuS4A9zElgUE%7E&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "f22152f8ab1243256c23a7a4fdce8832fe5661ca1935879416d4738df3b2bf04",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 849992960,
+          "sha256": "f508a04bcec6be67e5a4af7c239b7ec229e0df88dc710fbaef08b10c703d9e2d",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_27_self_attn_k_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 850517248,
+          "sha256": "f0688c0a75f20d8aef6a59094befa38ca203ca36557723425d6d3e0f1e872856",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_27_self_attn_k_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 850550016,
+          "sha256": "364774f64f85ef84ca0fdcbfa11fc098f781fb3e3353c4e79f7fa20903ba423a",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_27_self_attn_k_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.27.self_attn.k_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.27.self_attn.k_proj.weight",
+      "source_shard": "model-00018-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 2214594440-2216691591/3946841992",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/ed5aca02238da031f867599b47e792577bc6000b980e68cf0a98f1ffc198a6c7?user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00018-of-00026.safetensors%3B+filename%3D%22model-00018-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&Expires=1789679014&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2VkNWFjYTAyMjM4ZGEwMzFmODY3NTk5YjQ3ZTc5MjU3N2JjNjAwMGI5ODBlNjhjZjBhOThmMWZmYzE5OGE2YzdcXD91c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTgtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxOC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDE0fX19XX0_&Signature=MEUCIQC06JpU00VtwCaRKApESIVAPz%7EDUFOd8Q0GqbIx%7EBt6VQIgTlPhn2vcLI2Iuu4EVvMuztaLhUwKbrtWAdtHTP4D%7Eo8_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "a481b83f702099118002466eac5fd88c26986dd69207466a678b30aabaf2cf91",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 850582784,
+          "sha256": "71568ccad4163433bfd777bbaea74507f748023880ec4b618accca7eab00e5e3",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_27_self_attn_v_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 851107072,
+          "sha256": "9284cc96f70f973c771e16945c4b6e094e33f44838118b0ae91aa981062b6efd",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_27_self_attn_v_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 851139840,
+          "sha256": "d944b727dfc60982540e0b0f5e20512ce50035ff54fca0ca6b2eecf2823860d7",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_27_self_attn_v_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.27.self_attn.v_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.27.self_attn.v_proj.weight",
+      "source_shard": "model-00018-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 2267023240-2269120391/3946841992",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/ed5aca02238da031f867599b47e792577bc6000b980e68cf0a98f1ffc198a6c7?user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00018-of-00026.safetensors%3B+filename%3D%22model-00018-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&Expires=1789679015&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2VkNWFjYTAyMjM4ZGEwMzFmODY3NTk5YjQ3ZTc5MjU3N2JjNjAwMGI5ODBlNjhjZjBhOThmMWZmYzE5OGE2YzdcXD91c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTgtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxOC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDE1fX19XX0_&Signature=MEQCIBGcZAahjrcd8Rlz-1SGuaMwYWxtxC7vGkPwacmv4ruFAiA0WWj3AcBB2FFyAAGr7P6IcPACyFnQALvhuynGl37g6A__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 16777216,
+      "bf16_sha256": "b931fcc61abdddf623a6fe21e0cccb7e871f73a62babcaed99284e41b54370ec",
+      "components": [
+        {
+          "bytes": 4194304,
+          "component": "weight",
+          "file_offset": 851172608,
+          "sha256": "afe3ff24f2e1945d38ccf0555ff7d87e02f7c6181cee4384be68371aa6fb3935",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_27_self_attn_o_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "scales",
+          "file_offset": 855366912,
+          "sha256": "23b2ff56bcb190a70be6533ea8d3c59947ea2e333559ad1353e682c57f6a9090",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_27_self_attn_o_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "biases",
+          "file_offset": 855629056,
+          "sha256": "dee9cda5d9c7b3355fea589a57a450d20349fe4a4bacce4b74f5ea557f29bd67",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_27_self_attn_o_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.27.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        4096
+      ],
+      "source_bf16_tensor": "model.language_model.layers.27.self_attn.o_proj.weight",
+      "source_shard": "model-00018-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 2216691592-2233468807/3946841992",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/ed5aca02238da031f867599b47e792577bc6000b980e68cf0a98f1ffc198a6c7?user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00018-of-00026.safetensors%3B+filename%3D%22model-00018-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&Expires=1789679016&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1L2VkNWFjYTAyMjM4ZGEwMzFmODY3NTk5YjQ3ZTc5MjU3N2JjNjAwMGI5ODBlNjhjZjBhOThmMWZmYzE5OGE2YzdcXD91c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMTgtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAxOC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDE2fX19XX0_&Signature=MEUCIA9GsnMtwxJ0jp4DdkP3plypSjzeRG8WR3DYmwtl%7E10JAiEA3EMdfBmBt71HlR2WMXCbgtvYiXPyHEOfT38eOv5d4yo_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 33554432,
+      "bf16_sha256": "6419399681c1acb7c528e28d1c7b4247b45fb9a904b5005344d0ef02c75e04e8",
+      "components": [
+        {
+          "bytes": 8388608,
+          "component": "weight",
+          "file_offset": 922281856,
+          "sha256": "7774d59c63e91bcff47a9ad8b1c5bb0c46c1cd82fb9694c8cb899b95de5b86b5",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_31_self_attn_q_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "scales",
+          "file_offset": 930670464,
+          "sha256": "bffe6824adff4f8f6cb374a3bf5f6a8c5e6b4ae6ac3a8eb977d4826e383185fb",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_31_self_attn_q_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "biases",
+          "file_offset": 931194752,
+          "sha256": "843f25f70846759d09255ba4467ce9b1a5a8f22f5510ab413dd117603b0544ad",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_31_self_attn_q_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.31.self_attn.q_proj.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.31.self_attn.q_proj.weight",
+      "source_shard": "model-00020-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3374319488-3407873919/3409971072",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/93c9efded53d134965cf943c249aa2d2e6d5a0eaf93662798679c77512f2899e?user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00020-of-00026.safetensors%3B+filename%3D%22model-00020-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&Expires=1789679017&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1LzkzYzllZmRlZDUzZDEzNDk2NWNmOTQzYzI0OWFhMmQyZTZkNWEwZWFmOTM2NjI3OTg2NzljNzc1MTJmMjg5OWVcXD91c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjAtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyMC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDE3fX19XX0_&Signature=MEYCIQDOAi91E5wyHoNxgy--RjH1lD5F5TYOPUwgm%7EWjRVv6vgIhAM-z2LZUl6EEmlvEUsCFwhT9dyfmglenEmd01Ydk7Lgk&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "bf798b6c2fd540ba7b847b200a679d011cc7c4b30899985614ebbdf22e246b15",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 931719040,
+          "sha256": "fbb9c9db75f901edfbc480c720e5b3c2756cec66881d2e6e30bdeac40803d896",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_31_self_attn_k_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 932243328,
+          "sha256": "2f4848985af76afeb9283bfb709abe99d4b9d74ad3d499be8ec94c9413f79b3b",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_31_self_attn_k_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 932276096,
+          "sha256": "d5ee379257245d53a2faa491d121cee03b8a8433ad85832ea7a7f5788be9d0fa",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_31_self_attn_k_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.31.self_attn.k_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.31.self_attn.k_proj.weight",
+      "source_shard": "model-00020-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3355445120-3357542271/3409971072",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/93c9efded53d134965cf943c249aa2d2e6d5a0eaf93662798679c77512f2899e?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00020-of-00026.safetensors%3B+filename%3D%22model-00020-of-00026.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789679018&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1LzkzYzllZmRlZDUzZDEzNDk2NWNmOTQzYzI0OWFhMmQyZTZkNWEwZWFmOTM2NjI3OTg2NzljNzc1MTJmMjg5OWVcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjAtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyMC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDE4fX19XX0_&Signature=MEUCIQCOfiWtYaakb-t4aKudgEEIvwREbIEDhCw0KPr1qhfSFgIgR%7Ei-wqgZyBp0IzpmLSTeHGeBe36gWOsggM-ltcv4kdI_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "e5e9d0d40fcdd6e6d8ac13e570a2637dd2c22400d99b02edfa0b3684305ae3be",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 932308864,
+          "sha256": "4741af8339413c8b308f51c84ce7a92e7fc735417d8916ba17012307d6335f0c",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_31_self_attn_v_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 932833152,
+          "sha256": "d86666141c0e2a25e978c7aefe3c102d0046173adf7615e012249f528a20c1e8",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_31_self_attn_v_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 932865920,
+          "sha256": "dcabee2bc3706347f64c2509d29ade7387545dd661175f01e19151f1ce91bfbb",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_31_self_attn_v_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.31.self_attn.v_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.31.self_attn.v_proj.weight",
+      "source_shard": "model-00020-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3407873920-3409971071/3409971072",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/93c9efded53d134965cf943c249aa2d2e6d5a0eaf93662798679c77512f2899e?X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00020-of-00026.safetensors%3B+filename%3D%22model-00020-of-00026.safetensors%22%3B&user_id=public&Expires=1789679019&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1LzkzYzllZmRlZDUzZDEzNDk2NWNmOTQzYzI0OWFhMmQyZTZkNWEwZWFmOTM2NjI3OTg2NzljNzc1MTJmMjg5OWVcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjAtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyMC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDE5fX19XX0_&Signature=MEUCIQD%7EbCebFV-6vzPG%7EPM6K3epjcvmnzwCOHTofld72Tq6oQIgFVoIV5mAS3-D1XCq3zNefT6dzgJnMiuRIuFZyAt-lFo_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 16777216,
+      "bf16_sha256": "68dbea70b518fe0f0fd5e78204ebb1eeb9938ec4051797e2e06351617eaa9693",
+      "components": [
+        {
+          "bytes": 4194304,
+          "component": "weight",
+          "file_offset": 932898688,
+          "sha256": "3df0234c68f34f6fe840162f663a1d04a73a34bb9b6a17885ab48137604d108c",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_31_self_attn_o_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "scales",
+          "file_offset": 937092992,
+          "sha256": "2f37b20191b08671ccd746615adfa13d8c82e7a4c53b217341c4d70274a719d2",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_31_self_attn_o_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "biases",
+          "file_offset": 937355136,
+          "sha256": "f7b75adad8242fa56476798a0ea3f744d2a5f65b402e227c0162bfc3c37d3946",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_31_self_attn_o_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.31.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        4096
+      ],
+      "source_bf16_tensor": "model.language_model.layers.31.self_attn.o_proj.weight",
+      "source_shard": "model-00020-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3357542272-3374319487/3409971072",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/93c9efded53d134965cf943c249aa2d2e6d5a0eaf93662798679c77512f2899e?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00020-of-00026.safetensors%3B+filename%3D%22model-00020-of-00026.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789679019&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1LzkzYzllZmRlZDUzZDEzNDk2NWNmOTQzYzI0OWFhMmQyZTZkNWEwZWFmOTM2NjI3OTg2NzljNzc1MTJmMjg5OWVcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjAtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyMC1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDE5fX19XX0_&Signature=MEUCIQCVmx0qUpL8AbYa1w1aTGF%7EcVIuTFqLP5Mg0kGUXfJUIgIgUQ%7E50H5ZEAheQEeBGkD-xthT8dIujuTh6IulEJQxLtI_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 33554432,
+      "bf16_sha256": "078afb428127c07e53d421e8c602e5b90c9e53eeb1aa3edec1a41f2b71984342",
+      "components": [
+        {
+          "bytes": 8388608,
+          "component": "weight",
+          "file_offset": 1004007936,
+          "sha256": "d737df091f579a1b11355e277b27fce9e5aa76158be9511c182e092e04aca6ef",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_35_self_attn_q_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "scales",
+          "file_offset": 1012396544,
+          "sha256": "fbd782fac0b89308c442d9b4eed2f060df0e39b21a2bf011be31ac625f04b6cf",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_35_self_attn_q_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "biases",
+          "file_offset": 1012920832,
+          "sha256": "f095b49bf0b5266544b6480bfdf4dd5da24243e3deb5f7f64b68395ff1ef5033",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_35_self_attn_q_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.35.self_attn.q_proj.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.35.self_attn.q_proj.weight",
+      "source_shard": "model-00023-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3322246808-3355801239/3357898392",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/6cb114b4a40b0a3a17f6ec8bc124d8f6ed166c8581f19d8a86ce1a136ae3df87?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00023-of-00026.safetensors%3B+filename%3D%22model-00023-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&user_id=public&Expires=1789679020&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1LzZjYjExNGI0YTQwYjBhM2ExN2Y2ZWM4YmMxMjRkOGY2ZWQxNjZjODU4MWYxOWQ4YTg2Y2UxYTEzNmFlM2RmODdcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDIwfX19XX0_&Signature=MEYCIQCMLUqaAXCmTQBypo9rGKqBksh2Va4lG0MuiegzfxMtVQIhAIlxThb7xsvBxwsQ6hi4FTpEX6%7E3cUKHnEpYnqew1abg&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "b1d1987ffbd922509a2d2530361584ad7cf9dcfab460426f1b838fb6dbeba77f",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 1013445120,
+          "sha256": "6b583a0cd0b9f970671101c1d05f07c058b654012ad9e8701a5f54551ff12f25",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_35_self_attn_k_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 1013969408,
+          "sha256": "897c6d70445ce6739d1e86f755ea6961331880fcb77f99e1e0cee6e3bff486b9",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_35_self_attn_k_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 1014002176,
+          "sha256": "2c49cd258d9226824479472290b984033f66f3c740e22aaf5f3a0a2b9dd222a7",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_35_self_attn_k_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.35.self_attn.k_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.35.self_attn.k_proj.weight",
+      "source_shard": "model-00023-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3303371928-3305469079/3357898392",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/6cb114b4a40b0a3a17f6ec8bc124d8f6ed166c8581f19d8a86ce1a136ae3df87?X-Xet-Cas-Uid=public&user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00023-of-00026.safetensors%3B+filename%3D%22model-00023-of-00026.safetensors%22%3B&Expires=1789679022&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1LzZjYjExNGI0YTQwYjBhM2ExN2Y2ZWM4YmMxMjRkOGY2ZWQxNjZjODU4MWYxOWQ4YTg2Y2UxYTEzNmFlM2RmODdcXD9YLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDIyfX19XX0_&Signature=MEYCIQCau5UURtusk9SOgoUHBtAoSot30sQgwP1Mx0mF2BmjpAIhAIwZYYe2Qg7TjWx%7EGk2eOyYHwbEYq%7Ef44isNUu0ZBQ97&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "7cd861ac0f46162abc27d2d16e61c331833497d418fd09b33305b7abfcc2fdf3",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 1014034944,
+          "sha256": "cc54438d3633bcc0f40255e7f1efe7b25dd54d4bbfc038510a39379eb3fff3cd",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_35_self_attn_v_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 1014559232,
+          "sha256": "863e793c7e90d764b35e3ffe06da197d5c39efd23b6c3449e73ee7e6fcbe834c",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_35_self_attn_v_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 1014592000,
+          "sha256": "714c019c582bc2b1efedd744ebea275a449aada3e5d593c7a00e368df44606ef",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_35_self_attn_v_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.35.self_attn.v_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.35.self_attn.v_proj.weight",
+      "source_shard": "model-00023-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3355801240-3357898391/3357898392",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/6cb114b4a40b0a3a17f6ec8bc124d8f6ed166c8581f19d8a86ce1a136ae3df87?user_id=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00023-of-00026.safetensors%3B+filename%3D%22model-00023-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&Expires=1789679022&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1LzZjYjExNGI0YTQwYjBhM2ExN2Y2ZWM4YmMxMjRkOGY2ZWQxNjZjODU4MWYxOWQ4YTg2Y2UxYTEzNmFlM2RmODdcXD91c2VyX2lkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDIyfX19XX0_&Signature=MEYCIQCLFYn4ZXuZ4MrfPEeOgC6Moa3Yye5lOFljFAM8otmqHAIhANMb9gmimM9YuJt1JiVkw19eVmuWmpX-C0DWFlC7ROvR&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 16777216,
+      "bf16_sha256": "257d1924fecf5a3b17cb97477dff166113877ecad0f339610de9bb6fa59c9ab1",
+      "components": [
+        {
+          "bytes": 4194304,
+          "component": "weight",
+          "file_offset": 1014624768,
+          "sha256": "34cf36c2d1300510a89ac51e6d5f36744b638d3a115bc98a978eb28f017df70c",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_35_self_attn_o_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "scales",
+          "file_offset": 1018819072,
+          "sha256": "aa78c92f0ab9bce64dbea438705b71f42a5d63134c7c3a785b2a858fce3f1b40",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_35_self_attn_o_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "biases",
+          "file_offset": 1019081216,
+          "sha256": "28ff4fe055072a7d981fe685ec0f025c3f53bdc73f81425f1fe6dbcb249dc44f",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_35_self_attn_o_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.35.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        4096
+      ],
+      "source_bf16_tensor": "model.language_model.layers.35.self_attn.o_proj.weight",
+      "source_shard": "model-00023-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 3305469080-3322246295/3357898392",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/6cb114b4a40b0a3a17f6ec8bc124d8f6ed166c8581f19d8a86ce1a136ae3df87?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00023-of-00026.safetensors%3B+filename%3D%22model-00023-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&user_id=public&Expires=1789679023&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1LzZjYjExNGI0YTQwYjBhM2ExN2Y2ZWM4YmMxMjRkOGY2ZWQxNjZjODU4MWYxOWQ4YTg2Y2UxYTEzNmFlM2RmODdcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjMtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyMy1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDIzfX19XX0_&Signature=MEUCIHMposis83fqfi1o%7Ernlb51nZsKI5MMWf6tfWMUzunx1AiEA6VYyaUmDSn4cwIBz7tGO5zY9YXJZhktnb0N0hNOOppU_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 33554432,
+      "bf16_sha256": "416e591f4f8386db758db61b81888086d352ab9582c02ba9c2119a14c79145da",
+      "components": [
+        {
+          "bytes": 8388608,
+          "component": "weight",
+          "file_offset": 1085734016,
+          "sha256": "94f7d42dda2791b94e58bfb8480cbf33a82a959621e9bfde72b27afc243c170f",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_39_self_attn_q_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "scales",
+          "file_offset": 1094122624,
+          "sha256": "e1b3f53ddab4fa29502277e00ba4d6e06c7bc06b9f8865dd8c78e81d5fc27b06",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_39_self_attn_q_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 524288,
+          "component": "biases",
+          "file_offset": 1094646912,
+          "sha256": "43458cefd07827708b1a6d45a4a641545877d471af09ede5c290807452f7dffa",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_39_self_attn_q_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.39.self_attn.q_proj.weight",
+      "shape": [
+        8192,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.39.self_attn.q_proj.weight",
+      "source_shard": "model-00026-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1580221456-1613775887/2231416848",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/0041d53066f98695453aba3f0240867f6261814bbb8b8861a9696f84fb8d2a23?user_id=public&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00026-of-00026.safetensors%3B+filename%3D%22model-00026-of-00026.safetensors%22%3B&Expires=1789679024&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1LzAwNDFkNTMwNjZmOTg2OTU0NTNhYmEzZjAyNDA4NjdmNjI2MTgxNGJiYjhiODg2MWE5Njk2Zjg0ZmI4ZDJhMjNcXD91c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjYtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyNi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDI0fX19XX0_&Signature=MEQCIARmrgm-s1h6KKowk2bODXFLG4XQCgnvcu2vey5nZK5XAiBRSsAzLx1HxrAd0XyhUXpTN%7ExrfMLAzL0efytX-pVS5g__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "e913d288f5f9fb7c1e11cb7108f0670069df5a92c3fe4f2a2d8a372911bbae83",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 1095171200,
+          "sha256": "c4e7c2754353529e85c3225bf88b9cd966191b4e96eb873a64150a80d837a69d",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_39_self_attn_k_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 1095695488,
+          "sha256": "921441bf0123d337da3b7e7ab005f8b92e8017f8b958eaf76f9db86aa566f9e0",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_39_self_attn_k_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 1095728256,
+          "sha256": "89567967fca4f41bfb4e9caa4fd58a84fd0cbc729c509508a6c9c63ffc7de264",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_39_self_attn_k_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.39.self_attn.k_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.39.self_attn.k_proj.weight",
+      "source_shard": "model-00026-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1561346576-1563443727/2231416848",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/0041d53066f98695453aba3f0240867f6261814bbb8b8861a9696f84fb8d2a23?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00026-of-00026.safetensors%3B+filename%3D%22model-00026-of-00026.safetensors%22%3B&user_id=public&X-Xet-Cas-Uid=public&Expires=1789679025&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1LzAwNDFkNTMwNjZmOTg2OTU0NTNhYmEzZjAyNDA4NjdmNjI2MTgxNGJiYjhiODg2MWE5Njk2Zjg0ZmI4ZDJhMjNcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjYtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyNi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZ1c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDI1fX19XX0_&Signature=MEQCIFo0JjUhmUzAlWhOi3-urfDdQ%7EU3871nnTEUwXg4ck5xAiA1DLtDWlHoYrYRyznT%7EzniV4mgulIhHhkSr0r4a%7EqCJQ__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 2097152,
+      "bf16_sha256": "6d60bdad09c87b9235767770cbb9f6cff44ec246dc3da606136c0e8827229cba",
+      "components": [
+        {
+          "bytes": 524288,
+          "component": "weight",
+          "file_offset": 1095761024,
+          "sha256": "522587c1803ab6223742246f1dcb7efcd60061356478ddbb164119c6c61bba29",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_39_self_attn_v_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "scales",
+          "file_offset": 1096285312,
+          "sha256": "d24e86f77bb602b120a27183e83379d527371f6eb857a26ba4a2b1e9b446461b",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_39_self_attn_v_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 32768,
+          "component": "biases",
+          "file_offset": 1096318080,
+          "sha256": "740f8ff47505e9dcbf7915752b5a1e6a85be3bfaef4b1ecb479315f3c4d42215",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_39_self_attn_v_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.39.self_attn.v_proj.weight",
+      "shape": [
+        512,
+        2048
+      ],
+      "source_bf16_tensor": "model.language_model.layers.39.self_attn.v_proj.weight",
+      "source_shard": "model-00026-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1613775888-1615873039/2231416848",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/0041d53066f98695453aba3f0240867f6261814bbb8b8861a9696f84fb8d2a23?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00026-of-00026.safetensors%3B+filename%3D%22model-00026-of-00026.safetensors%22%3B&X-Xet-Cas-Uid=public&user_id=public&Expires=1789679026&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1LzAwNDFkNTMwNjZmOTg2OTU0NTNhYmEzZjAyNDA4NjdmNjI2MTgxNGJiYjhiODg2MWE5Njk2Zjg0ZmI4ZDJhMjNcXD9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjYtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyNi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiZYLVhldC1DYXMtVWlkPXB1YmxpYyZ1c2VyX2lkPXB1YmxpYyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDI2fX19XX0_&Signature=MEUCIQCfpP8eh6NsP-pNcQBzR3YwEfGmGjsz-hB0s5WgdUG3BgIgbe1O%7E59Ej7VJIUHs6ddR17Ytrcx8V-ptcfoWqgnUKhQ_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    },
+    {
+      "bf16_bytes": 16777216,
+      "bf16_sha256": "a6b40745711a5807e2db1fb63b05694695634ee7b3dce779d4aa53b994d37312",
+      "components": [
+        {
+          "bytes": 4194304,
+          "component": "weight",
+          "file_offset": 1096350848,
+          "sha256": "dd3f88e622a115df2e3c4d24ce52bf8e6a2a69f7866c0c7ebb82102218ce4480",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_39_self_attn_o_proj_weight.weight.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "scales",
+          "file_offset": 1100545152,
+          "sha256": "449346d04151e80b4e286aa4b36de98f69bd5d793aedb86b26b2e10e073a41c0",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_39_self_attn_o_proj_weight.scales.bin"
+        },
+        {
+          "bytes": 262144,
+          "component": "biases",
+          "file_offset": 1100807296,
+          "sha256": "6896b2643c5af0d3d49ce0b66aa686baf0c88853cd78e2452f8f2fb166c6e704",
+          "staged_file": "results/raw/EXP-007/stock-hybrid-control/generated-resident/language_model_model_layers_39_self_attn_o_proj_weight.biases.bin"
+        }
+      ],
+      "resident_tensor": "language_model.model.layers.39.self_attn.o_proj.weight",
+      "shape": [
+        2048,
+        4096
+      ],
+      "source_bf16_tensor": "model.language_model.layers.39.self_attn.o_proj.weight",
+      "source_shard": "model-00026-of-00026.safetensors",
+      "transport": {
+        "attempt": 1,
+        "content_range": "bytes 1563443728-1580220943/2231416848",
+        "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/69df2937a1a44a4df58e0dd5/0041d53066f98695453aba3f0240867f6261814bbb8b8861a9696f84fb8d2a23?user_id=public&X-Xet-Cas-Uid=public&response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model-00026-of-00026.safetensors%3B+filename%3D%22model-00026-of-00026.safetensors%22%3B&Expires=1789679027&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hldC1icmlkZ2UtdXMvNjlkZjI5MzdhMWE0NGE0ZGY1OGUwZGQ1LzAwNDFkNTMwNjZmOTg2OTU0NTNhYmEzZjAyNDA4NjdmNjI2MTgxNGJiYjhiODg2MWE5Njk2Zjg0ZmI4ZDJhMjNcXD91c2VyX2lkPXB1YmxpYyZYLVhldC1DYXMtVWlkPXB1YmxpYyZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWlubGluZSUzQitmaWxlbmFtZSUyQSUzRFVURi04JTI3JTI3bW9kZWwtMDAwMjYtb2YtMDAwMjYuc2FmZXRlbnNvcnMlM0IrZmlsZW5hbWUlM0QlMjJtb2RlbC0wMDAyNi1vZi0wMDAyNi5zYWZldGVuc29ycyUyMiUzQiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRXBvY2hUaW1lIjoxNzg5Njc5MDI3fX19XX0_&Signature=MEUCIB4mf2gUsWp6XeMyhN0KJMxskrjstED5CfEl5Al3i8AEAiEAlTnvqlt2rhkK67RgmhpiXnu1D0buAbI7eI1J2w3dvBQ_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F&Hash-Algorithm=SHA256",
+        "status": 206
+      }
+    }
+  ],
+  "source_control_path": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/model/qwen36.gturbo",
+  "stock_artifact_modified": false
+}

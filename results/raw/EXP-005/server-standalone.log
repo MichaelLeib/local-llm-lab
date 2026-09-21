@@ -1,0 +1,64 @@
+=== server start ===
+2026-09-17T15:16:18+02:00
+2026-09-17T13:17:12Z request prompt=16 cached=0 new_prompt=16 completion=16 ttft=9.40s prefill=1.7tok/s decode=8.1tok/s total=11.37s stop=length cache_miss=noEntry render=0.001s match=0.000s prepare=0.005s expert_hit=47.6% expert_miss=2513 io_await=1.30s reasoning=16
+--- reasoning 16 tokens ---
+Here's a thinking process:
+
+1.  **Analyze User Input:**
+--- end reasoning ---
+2026-09-17T13:17:16Z request prompt=16 cached=0 new_prompt=16 completion=16 ttft=1.77s prefill=9.0tok/s decode=8.4tok/s total=3.67s stop=length cache_miss=historyDiverged render=0.002s match=0.000s prepare=0.004s expert_hit=49.8% expert_miss=2409 io_await=1.24s reasoning=16
+--- reasoning 16 tokens ---
+Here's a thinking process:
+
+1.  **Analyze User Input:**
+--- end reasoning ---
+2026-09-17T13:18:38Z request prompt=16 cached=0 new_prompt=16 completion=128 ttft=2.18s prefill=7.3tok/s decode=7.9tok/s total=18.36s stop=length cache_miss=historyDiverged render=0.001s match=0.000s prepare=0.013s expert_hit=49.1% expert_miss=20679 io_await=10.40s reasoning=128
+--- reasoning 128 tokens ---
+Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - User says: "Reply with exactly API_READY."
+   - This is a direct instruction specifying the exact output required.
+
+2.  **Identify Key Constraints:**
+   - The response must be *exactly* "API_READY"
+   - No additional text, explanations, or formatting should be included.
+
+3.  **Formulate Response:**
+   - I will output exactly: API_READY
+   - Check against constraints: Matches exactly. No extra characters, no markdown (unless necessary, but the prompt says "ex
+--- end reasoning ---
+2026-09-17T13:18:55Z request prompt=16 cached=0 new_prompt=16 completion=128 ttft=1.81s prefill=8.9tok/s decode=8.0tok/s total=17.89s stop=length cache_miss=historyDiverged render=0.001s match=0.000s prepare=0.003s expert_hit=48.9% expert_miss=20760 io_await=10.36s reasoning=128
+--- reasoning 128 tokens ---
+Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - User says: "Reply with exactly STREAM_READY."
+   - This is a direct instruction with a strict constraint: the response must be exactly "STREAM_READY" and nothing else.
+
+2.  **Identify Constraints:**
+   - Exact match required: "STREAM_READY"
+   - No additional text, explanations, greetings, or formatting.
+
+3.  **Formulate Response:**
+   - Simply output: STREAM_READY
+
+4.  **Verify:**
+   - Does it match exactly? Yes.
+   - Does it
+--- end reasoning ---
+2026-09-17T13:19:13Z request prompt=270 cached=0 new_prompt=270 completion=76 ttft=7.65s prefill=35.3tok/s decode=7.4tok/s total=17.90s stop=tool_calls cache_miss=toolsChanged render=0.023s match=0.000s prepare=0.003s expert_hit=43.8% expert_miss=13488 io_await=6.79s reasoning=48
+--- reasoning 48 tokens ---
+The user wants to run the command `date` using the `terminal` tool.
+I need to call the `terminal` tool with the argument `command="date"`.
+I will wait for the tool result before answering.
+
+--- end reasoning ---
+2026-09-17T13:19:58Z request prompt=382 cached=345 new_prompt=37 completion=89 ttft=3.04s prefill=12.2tok/s decode=7.8tok/s total=14.51s stop=stop render=0.007s match=0.004s prepare=0.000s expert_hit=44.6% expert_miss=15591 io_await=7.43s reasoning=58
+--- reasoning 58 tokens ---
+The user asked to run the command `date` using the terminal tool.
+The tool has returned the result: `Thu Sep 17 15:19:24 CEST 2026`.
+I should now provide this information to the user.
+
+--- end reasoning ---
+TurboFieldfareServer ready at http://127.0.0.1:8091 model=qwen3.6-35b-a3b context=4096 prompt_cache=single-prefix

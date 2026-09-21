@@ -1,0 +1,46 @@
+LABEL: model-download-mlx3
+COMMAND: hf download mlx-community/Laguna-XS-2.1-3bit --local-dir /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3 --max-workers 4
+START: 2026-09-19T15:07:23Z
+--- stdout/stderr ---
+Fetching 17 files:   0%|          | 0/17 [00:00<?, ?it/s]Still waiting to acquire lock on /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.cache/huggingface/.gitignore.lock (elapsed: 0.2 seconds)
+Downloading '.eval_results/terminal-bench-2.0.yaml' to '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.cache/huggingface/download/.eval_results/XXULf7sz6wCCcX90xaRrKO-oknE=.8a99e064ff885936e8564ea6d9fadbfb4956b6e7.incomplete'
+Download complete. Moving file to /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.eval_results/terminal-bench-2.0.yaml
+Downloading '.eval_results/swe-bench_verified.yaml' to '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.cache/huggingface/download/.eval_results/XAl4wikIdRdCPDcLf9a7awWaEMg=.45a180bb72eebaf192a73202480df9a91daf06f9.incomplete'
+Downloading '.gitattributes' to '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.cache/huggingface/download/wPaCkH-WbT7GsmxMKKrNZTV4nSM=.a6344aac8c09253b3b630fb776ae94478aa0275b.incomplete'
+Download complete. Moving file to /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.eval_results/swe-bench_verified.yaml
+Download complete. Moving file to /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.gitattributes
+Downloading '.eval_results/swe-bench_pro.yaml' to '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.cache/huggingface/download/.eval_results/8tMSGpH5cF2urM_ac-CLKzSso4U=.86d808215ddaf64bf014f76b48f64220694b20cf.incomplete'
+Downloading 'README.md' to '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.cache/huggingface/download/Xn7B-BWUGOee2Y6hCZtEhtFu4BE=.86612be4a686969afdd00857285ccd098cac0e99.incomplete'
+Download complete. Moving file to /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/README.md
+Downloading 'config.json' to '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.cache/huggingface/download/8_PA_wEVGiVa2goH2H4KQOQpvVY=.d5896e52bdff9916e7c66567d9db2f8f37007687.incomplete'
+Download complete. Moving file to /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.eval_results/swe-bench_pro.yaml
+Download complete. Moving file to /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/config.json
+Fetching 17 files:   6%|▌         | 1/17 [00:00<00:09,  1.61it/s]Downloading 'chat_template.jinja' to '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.cache/huggingface/download/yIUQ6Jg7XpBWXEkozaEkS2ih05g=.d45f23f7038aceb3a401547f38a610a4fee47be2.incomplete'
+Download complete. Moving file to /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/chat_template.jinja
+Fetching 17 files:  35%|███▌      | 6/17 [00:00<00:01, 10.56it/s]Downloading 'model-00001-of-00003.safetensors' to '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.cache/huggingface/download/Y6g195DXbsCiN_Ka1NwH6jyLkvc=.b3e5a1445aede13cef051bba5198248ddeb27e2f2dac3341fff69a6e1aabbee7.incomplete'
+Downloading 'generation_config.json' to '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.cache/huggingface/download/3EVKVggOldJcKSsGjSdoUCN1AyQ=.bf444a903df55abf3cfe390bab1ff838da52eeba.incomplete'
+Downloading 'configuration_laguna.py' to '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.cache/huggingface/download/TLy6hnSuilXWuQw3fLanafIckp8=.a63f2be2ae88abffad6f47cbf775fd15d44766d7.incomplete'
+Downloading 'model-00002-of-00003.safetensors' to '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.cache/huggingface/download/D5-QTaCbl9VUFv9Wr0C28eFewRc=.899ab30f67707e2a4fa44f6cfc091b4a9abe1c48c21f6e42575f230e01744527.incomplete'
+Download complete. Moving file to /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/generation_config.json
+Download complete. Moving file to /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/configuration_laguna.py
+Fetching 17 files:  53%|█████▎    | 9/17 [00:00<00:00, 11.26it/s]Downloading 'model-00003-of-00003.safetensors' to '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.cache/huggingface/download/NmVQgThqhsRkG2FlXLh-M51MilA=.bd11d51020e22f7dbd848e77bf01bf2c85ec0df999be490ec834cb60eb2f8c59.incomplete'
+Downloading 'model.safetensors.index.json' to '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.cache/huggingface/download/yVzAsSxRSINSz-tQbpx-TLpfkLU=.529d4cdd1af8c391c15b10d55265a2ec69d8a2c9.incomplete'
+Download complete. Moving file to /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/model.safetensors.index.json
+Downloading 'modeling_laguna.py' to '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.cache/huggingface/download/mNGHKd8XaBxjXgFB6uDbDqB-XP4=.e6a067495e29b42ef529c71c20a02d2d248f986b.incomplete'
+Download complete. Moving file to /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/modeling_laguna.py
+Downloading 'special_tokens_map.json' to '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.cache/huggingface/download/ahkChHUJFxEmOdq5GDFEmerRzCY=.60bc5592a5aa7f65befc3b621650446679284266.incomplete'
+Download complete. Moving file to /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/special_tokens_map.json
+Downloading 'tokenizer.json' to '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.cache/huggingface/download/HgM_lKo9sdSCfRtVg7MMFS7EKqo=.52b5e7de48a1c12034abe4caeed6a05ec4c45225.incomplete'
+Download complete. Moving file to /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/tokenizer.json
+Downloading 'tokenizer_config.json' to '/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/.cache/huggingface/download/vzaExXFZNBay89bvlQv-ZcI6BTg=.f2943da2c27ab4aef2c4ef2e44e34e3d62ee984a.incomplete'
+Download complete. Moving file to /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/tokenizer_config.json
+Fetching 17 files:  53%|█████▎    | 9/17 [00:20<00:00, 11.26it/s]Download complete. Moving file to /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/model-00003-of-00003.safetensors
+Download complete. Moving file to /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/model-00002-of-00003.safetensors
+Download complete. Moving file to /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3/model-00001-of-00003.safetensors
+Fetching 17 files:  59%|█████▉    | 10/17 [02:11<02:35, 22.28s/it]Fetching 17 files: 100%|██████████| 17/17 [02:11<00:00,  7.76s/it]
+/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-018-laguna-xs21/model-mlx3
+
+--- end ---
+EXIT: 0
+END: 2026-09-19T15:09:35Z
+ELAPSED_SECONDS: 132

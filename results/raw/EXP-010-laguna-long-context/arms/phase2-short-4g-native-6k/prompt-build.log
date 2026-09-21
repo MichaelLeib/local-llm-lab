@@ -1,0 +1,29 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Traceback (most recent call last):
+  File "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-010-laguna-long-context/scripts/make_prompt.py", line 19, in <module>
+    tok = AutoTokenizer.from_pretrained(model, local_files_only=True, trust_remote_code=True)
+  File "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-010-laguna-long-context/.venv/lib/python3.13/site-packages/transformers/models/auto/tokenization_auto.py", line 785, in from_pretrained
+    config = AutoConfig.from_pretrained(
+        pretrained_model_name_or_path, trust_remote_code=trust_remote_code, **kwargs
+    )
+  File "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-010-laguna-long-context/.venv/lib/python3.13/site-packages/transformers/models/auto/configuration_auto.py", line 409, in from_pretrained
+    return config_class.from_pretrained(pretrained_model_name_or_path, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-010-laguna-long-context/.venv/lib/python3.13/site-packages/transformers/configuration_utils.py", line 727, in from_pretrained
+    return cls.from_dict(config_dict, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-010-laguna-long-context/.venv/lib/python3.13/site-packages/transformers/configuration_utils.py", line 912, in from_dict
+    config = cls(**config_dict)
+  File "/Users/<user>/.cache/huggingface/modules/transformers_modules/laguna_hyphen_s21_hyphen_tqTe_hyphen_g64/c18e1202fa37cb54/configuration_laguna.py", line 246, in __init__
+    super().__init__(tie_word_embeddings=tie_word_embeddings, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-010-laguna-long-context/.venv/lib/python3.13/site-packages/huggingface_hub/dataclasses.py", line 276, in init_with_validate
+    cls.validate(self)  # type: ignore [attr-defined]
+    ~~~~~~~~~~~~^^^^^^
+  File "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-010-laguna-long-context/.venv/lib/python3.13/site-packages/huggingface_hub/dataclasses.py", line 251, in validate
+    validator(self)
+    ~~~~~~~~~^^^^^^
+  File "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-010-laguna-long-context/.venv/lib/python3.13/site-packages/transformers/modeling_rope_utils.py", line 850, in validate_rope
+    rope_type = rope_parameters.get("rope_type", rope_parameters.get("type", "default"))
+                ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'get'

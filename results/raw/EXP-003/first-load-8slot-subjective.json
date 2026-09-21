@@ -1,0 +1,11 @@
+{
+  "experiment": "EXP-003",
+  "checkpoint": "first_load_8_slots",
+  "rating_scale": "0=indistinguishable, 5=painful/disruptive",
+  "primary_rating": 0,
+  "transient_possible_rating": 1,
+  "transient_duration": "a few seconds",
+  "attribution": "possibly unrelated",
+  "user_note": "0 - maybe 1 for a few seconds i guess... could be unrelated",
+  "advancement_decision": "acceptable_to_test_16_slots"
+}

@@ -1,0 +1,6 @@
+HEAD=9c03db58d86e7ac35917ee3f05cf58fbab97f666
+commit=9c03db58d86e7ac35917ee3f05cf58fbab97f666
+author_date=2026-09-18T16:43:36+07:00
+subject=qsa: measure the host prefill selection before moving it to the GPU (TT-010)
+origin	https://github.com/Pummelchen/TinyTitan.git (fetch) [blob:none]
+origin	https://github.com/Pummelchen/TinyTitan.git (push)

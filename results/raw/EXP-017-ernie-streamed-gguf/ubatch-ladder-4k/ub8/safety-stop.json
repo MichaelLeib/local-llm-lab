@@ -1,0 +1,22 @@
+{
+  "status": "safety-stopped",
+  "ubatch": 8,
+  "input_tokens": 3982,
+  "context": 8192,
+  "logical_batch": 512,
+  "generated_token_cap": 128,
+  "exit_code": null,
+  "protective_stop": {
+    "reason": "sustained_swapout_and_pageout_activity_without_completed_prefill",
+    "action": "terminated experiment process group",
+    "observed_minimum_free_percent": 22
+  },
+  "metrics_at_stop_or_cleanup": {
+    "swap_delta_mib": -227.81,
+    "swapouts_delta": 6924,
+    "swapins_delta": 21900,
+    "pageouts_delta": 61979,
+    "free_percent_after_cleanup": 66
+  },
+  "notes": "The outer measurement process was safety-terminated before it flushed its in-memory periodic samples. Raw command, pre-arm baseline, and incomplete run log are retained. No output tokens or rate were emitted before the stop."
+}

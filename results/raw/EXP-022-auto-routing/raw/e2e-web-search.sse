@@ -1,0 +1,20 @@
+data: {"event": "tool.started", "run_id": "run_ae4a547e8733497ab2f096f9f9f17d1d", "timestamp": 1789916501.41665, "tool": "web_search", "preview": "official Python documentation home page"}
+
+data: {"event": "tool.completed", "run_id": "run_ae4a547e8733497ab2f096f9f9f17d1d", "timestamp": 1789916502.786378, "tool": "web_search", "duration": 1.363, "error": false}
+
+data: {"event": "message.delta", "run_id": "run_ae4a547e8733497ab2f096f9f9f17d1d", "timestamp": 1789916509.685122, "delta": "\n\nhttps"}
+
+data: {"event": "message.delta", "run_id": "run_ae4a547e8733497ab2f096f9f9f17d1d", "timestamp": 1789916509.8544629, "delta": "://"}
+
+data: {"event": "message.delta", "run_id": "run_ae4a547e8733497ab2f096f9f9f17d1d", "timestamp": 1789916509.8552, "delta": "docs"}
+
+data: {"event": "message.delta", "run_id": "run_ae4a547e8733497ab2f096f9f9f17d1d", "timestamp": 1789916509.855526, "delta": ".python"}
+
+data: {"event": "message.delta", "run_id": "run_ae4a547e8733497ab2f096f9f9f17d1d", "timestamp": 1789916509.8558238, "delta": ".org"}
+
+data: {"event": "reasoning.available", "run_id": "run_ae4a547e8733497ab2f096f9f9f17d1d", "timestamp": 1789916509.859614, "text": "https://docs.python.org"}
+
+data: {"event": "run.completed", "run_id": "run_ae4a547e8733497ab2f096f9f9f17d1d", "timestamp": 1789916509.8752902, "output": "https://docs.python.org", "usage": {"input_tokens": 30395, "output_tokens": 25, "total_tokens": 30420}}
+
+: stream closed
+

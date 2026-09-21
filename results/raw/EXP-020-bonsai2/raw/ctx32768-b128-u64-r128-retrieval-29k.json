@@ -1,0 +1,43 @@
+{
+  "_swap_baseline_mb": 1037.25,
+  "_swap_stop_threshold_mb": 1549.25,
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "CEDAR-4827",
+        "reasoning_content": "We need answer user's request. User provided long archive records and one line: \"CRITICAL ARCHIVE FACT: the recovery code is CEDAR-4827.\" Then asks: What is the recovery code? Reply with only the code. Need final only code. Ensure no extra.\n"
+      }
+    }
+  ],
+  "created": 1789851034,
+  "model": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-020-bonsai2/models/Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+  "system_fingerprint": "b10709-9a9394a89",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 70,
+    "prompt_tokens": 18283,
+    "total_tokens": 18353,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-APbNH0mqyS09UimrXdDjP10ol987tBFa",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 18283,
+    "prompt_ms": 452394.689,
+    "prompt_per_token_ms": 24.744007493299787,
+    "prompt_per_second": 40.413825459387745,
+    "predicted_n": 70,
+    "predicted_ms": 10866.62,
+    "predicted_per_token_ms": 157.4872463768116,
+    "predicted_per_second": 6.3497205202721725
+  },
+  "_http_status": 200,
+  "_client_wall_s": 463.289,
+  "_swap_after_mb": 1029.25,
+  "_swap_guard_tripped_mb": null
+}

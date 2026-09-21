@@ -1,0 +1,43 @@
+{
+  "_swap_baseline_mb": 1085.25,
+  "_swap_stop_threshold_mb": 1597.25,
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": "We need answer user's request. User"
+      }
+    }
+  ],
+  "created": 1789850510,
+  "model": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-020-bonsai2/models/Ternary-Bonsai-2-27B-PTQ1_0.gguf",
+  "system_fingerprint": "b10709-9a9394a89",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 29977,
+    "total_tokens": 29985,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "id": "chatcmpl-j0J0X6iFZJJY1perQ8HrnSSd5q1JLO2L",
+  "timings": {
+    "cache_n": 0,
+    "prompt_n": 29977,
+    "prompt_ms": 786243.038,
+    "prompt_per_token_ms": 26.228209560663174,
+    "prompt_per_second": 38.126887681261735,
+    "predicted_n": 8,
+    "predicted_ms": 1473.579,
+    "predicted_per_token_ms": 210.51128571428572,
+    "predicted_per_second": 4.750339140283623
+  },
+  "_http_status": 200,
+  "_client_wall_s": 787.752,
+  "_swap_after_mb": 1037.25,
+  "_swap_guard_tripped_mb": null
+}

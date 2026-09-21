@@ -1,0 +1,18 @@
+{
+  "attempt": "8-slot-first-load-configuration-1",
+  "result": "startup_assertion_before_model_readiness",
+  "exit_code": -6,
+  "signal": "SIGABRT",
+  "command_flags": {
+    "moe_n_slots": 8,
+    "moe_n_layers": 40,
+    "batch_size": 1,
+    "ubatch_size": 1,
+    "context": 2048,
+    "no_mmap": true,
+    "no_warmup": true
+  },
+  "error": "GGML_ASSERT(n_tokens_all <= cparams.n_batch) at llama-context.cpp:1717",
+  "interpretation": "Configuration error during server model initialization; no readiness or inference checkpoint and no memory result.",
+  "log": "results/raw/EXP-003/first-load-8slot-server.log"
+}

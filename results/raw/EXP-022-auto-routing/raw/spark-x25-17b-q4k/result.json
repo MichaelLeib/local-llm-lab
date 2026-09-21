@@ -1,0 +1,346 @@
+{
+  "candidate": "spark-x25-17b-q4k",
+  "model": "models/spark/Spark-X2.5-1.7B-Q4_K.gguf",
+  "port": 8922,
+  "started_at_epoch": 1789914821.602508,
+  "before": {
+    "swapusage": "vm.swapusage: total = 2048.00M  used = 869.50M  free = 1178.50M  (encrypted)",
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 95447 \nPages purgeable: 2805 \nPages purged: 29410320 \n\nSwap I/O:\nSwapins: 2872196 \nSwapouts: 3895953 \n\nPage Q counts:\nPages active: 347437 \nPages inactive: 338826 \nPages speculative: 9024 \nPages throttled: 0 \nPages wired down: 134378 \n\nCompressor Stats:\nPages used by compressor: 86035 \nPages decompressed: 130275326 \nPages compressed: 151592580 \n\nFile I/O:\nPageins: 95186644 \nPageouts: 164086 \n\nSystem-wide memory free percentage: 78%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                    95438.\nPages active:                                 347435.\nPages inactive:                               338680.\nPages speculative:                              9024.\nPages throttled:                                   0.\nPages wired down:                             134535.\nPages purgeable:                                2752.\n\"Translation faults\":                      907599048.\nPages copy-on-write:                        37629767.\nPages zero filled:                         482643161.\nPages reactivated:                         136432504.\nPages purged:                               29410320.\nFile-backed pages:                            489841.\nAnonymous pages:                              205298.\nPages stored in compressor:                   189219.\nPages occupied by compressor:                  86035.\nDecompressions:                            130275326.\nCompressions:                              151592580.\nPageins:                                    95186645.\nPageouts:                                     164086.\nSwapins:                                     2872196.\nSwapouts:                                    3895953."
+  },
+  "pid": 9483,
+  "load_seconds": 1.008,
+  "health": {
+    "status": "ok"
+  },
+  "models": {
+    "models": [
+      {
+        "name": "spark-x25-17b-q4k",
+        "model": "spark-x25-17b-q4k",
+        "modified_at": "",
+        "size": "",
+        "digest": "",
+        "type": "model",
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "capabilities": [
+          "completion"
+        ],
+        "parameters": "",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "",
+          "families": [
+            ""
+          ],
+          "parameter_size": "",
+          "quantization_level": ""
+        }
+      }
+    ],
+    "object": "list",
+    "data": [
+      {
+        "id": "spark-x25-17b-q4k",
+        "aliases": [
+          "spark-x25-17b-q4k"
+        ],
+        "tags": [],
+        "object": "model",
+        "created": 1789914822,
+        "owned_by": "llamacpp",
+        "meta": {
+          "vocab_type": true,
+          "n_vocab": 131072,
+          "n_ctx": 8192,
+          "n_ctx_train": 1048576,
+          "n_embd": 2048,
+          "n_params": 1707657216,
+          "size": 960557056,
+          "ftype": "Q4_K - Medium"
+        }
+      }
+    ]
+  },
+  "props": {
+    "default_generation_settings": {
+      "params": {
+        "seed": 4294967295,
+        "temperature": 1.0,
+        "dynatemp_range": 0.0,
+        "dynatemp_exponent": 1.0,
+        "top_k": -1,
+        "top_p": 0.949999988079071,
+        "min_p": 0.05000000074505806,
+        "top_n_sigma": -1.0,
+        "xtc_probability": 0.0,
+        "xtc_threshold": 0.10000000149011612,
+        "typical_p": 1.0,
+        "repeat_last_n": 64,
+        "repeat_penalty": 1.0,
+        "presence_penalty": 0.0,
+        "frequency_penalty": 0.0,
+        "dry_multiplier": 0.0,
+        "dry_base": 1.75,
+        "dry_allowed_length": 2,
+        "dry_penalty_last_n": 64,
+        "mirostat": 0,
+        "mirostat_tau": 5.0,
+        "mirostat_eta": 0.10000000149011612,
+        "adaptive_target": -1.0,
+        "adaptive_decay": 0.8999999761581421,
+        "max_tokens": -1,
+        "n_predict": -1,
+        "n_keep": 0,
+        "n_discard": 0,
+        "ignore_eos": false,
+        "stream": false,
+        "n_probs": 0,
+        "min_keep": 0,
+        "chat_format": "Content-only",
+        "reasoning_format": "none",
+        "reasoning_in_content": false,
+        "generation_prompt": "",
+        "samplers": [
+          "penalties",
+          "dry",
+          "top_n_sigma",
+          "top_k",
+          "typ_p",
+          "top_p",
+          "min_p",
+          "xtc",
+          "temperature"
+        ],
+        "speculative.types": "none",
+        "timings_per_token": false,
+        "post_sampling_probs": false,
+        "backend_sampling": false,
+        "lora": []
+      },
+      "n_ctx": 8192
+    },
+    "total_slots": 4,
+    "model_alias": "spark-x25-17b-q4k",
+    "model_ftype": "Q4_K - Medium",
+    "model_path": "models/spark/Spark-X2.5-1.7B-Q4_K.gguf",
+    "modalities": {
+      "vision": false,
+      "video": false,
+      "audio": false
+    },
+    "media_marker": "<__media_g4Egt35mHdqXS9aoQ5b9XAdM1j9TFNQj__>",
+    "endpoint_slots": true,
+    "endpoint_props": false,
+    "endpoint_metrics": true,
+    "ui": true,
+    "ui_settings": {},
+    "chat_template": "{%- if not messages %}{{- raise_exception('No messages provided.') }}{%- endif %}{%- set enable_thinking = enable_thinking | default(true) %}{#- Render a string or a list of text blocks. -#}{%- macro render_content(content, context_name) %}{%- if content is string %}{{- content }}{%- elif content is none or content is undefined %}{{- '' }}{%- elif content is iterable and content is not mapping %}{%- for block in content %}{%- if block.type == 'text' %}{{- block.text }}{%- else %}{{- raise_exception('Unsupported ' ~ context_name ~ ' content block type: ' ~ (block.type | string)) }}{%- endif %}{%- endfor %}{%- else %}{{- raise_exception(context_name ~ ' content must be a string or a list of text blocks') }}{%- endif %}{%- endmacro %}{#- Default system prompt -#}{%- set default_system = 'you are a helpful assistant.' %}{#- The first message-level system is placed in the initial system block. -#}{%- set ns = namespace(initial_system='') %}{%- if messages[0].role == 'system' %}{%- set ns.initial_system = render_content(messages[0].content, 'system') %}{%- endif %}{#- System block -#}{{- '<｜start▁of▁sentence｜><|System|>' + '\n' + default_system }}{%- if tools %}{{- '## Tools' + '\n' + 'You have access to the following functions:' + '\n' + '<tools>' }}{%- for tool in tools %}{{- '\n' + tool.function | tojson}}{%- endfor %}{{- '\n' + '</tools>' }}{%- endif %}{%- if ns.initial_system %}{{- '\n\n' + ns.initial_system }}{%- endif %}{{- '<｜end▁of▁sentence｜>'}}{#- Conversation turns -#}{%- for message in messages %}{%- if message.role == 'system' %}{#- The first system message was consumed by the initial block. -#}{%- if not loop.first %}{{- '<｜start▁of▁sentence｜><|System|>\n' + render_content(message.content, 'system') + '<｜end▁of▁sentence｜>' }}{%- endif %}{%- elif message.role == 'user' %}{{- '<｜start▁of▁sentence｜><|User|>' + render_content(message.content, 'user') + '<｜end▁of▁sentence｜>' }}{%- elif message.role == 'assistant' %}{%- set assistant_content = render_content(message.content, 'assistant') %}{%- if message.reasoning_content is defined and message.reasoning_content %}{%- set reasoning_content = message.reasoning_content %}{%- else %}{%- set reasoning_content = '' %}{%- endif %}{{- '<｜start▁of▁sentence｜><|Bot|>'}}{%- if reasoning_content %}{{- '<think>' + reasoning_content + '</think>'}}{%- else %}{{- '</think>' }}{%- endif %}{%- if assistant_content %}{{- assistant_content }}{%- endif %}{%- if message.tool_calls is defined and message.tool_calls is not none %}{%- for tool_call in message.tool_calls %}{%- if tool_call.function.arguments is not mapping %}{{- raise_exception('tool_call.function.arguments must be a dictionary; normalize JSON strings before apply_chat_template') }}{%- endif %}{%- set args = tool_call.function.arguments %}{{- '<tool_call>' + tool_call.function.name }}{%- for k, v in args.items() %}{{- '<arg_key>' ~ k ~ '</arg_key><arg_value>' ~ (v if v is string else v | tojson) ~ '</arg_value>' }}{%- endfor %}{{- '</tool_call>' }}{%- endfor %}{%- endif %}{{- '<｜end▁of▁sentence｜>' }}{%- elif message.role == 'tool' %}{%- if loop.previtem is undefined or loop.previtem.role != 'tool' %}{{- '<｜start▁of▁sentence｜><|Tool|>' }}{%- endif %}{{- '<tool_response>' ~ message.content ~ '</tool_response>' }}{%- if loop.nextitem is undefined or loop.nextitem.role != 'tool' %}{{- '<｜end▁of▁sentence｜>' }}{%- endif %}{%- else %}{{- raise_exception('Unsupported message role: ' ~ message.role) }}{%- endif %}{%- endfor %}{#- Generation prompt -#}{%- if add_generation_prompt %}{{- '<｜start▁of▁sentence｜><|Bot|>' }}{%- if enable_thinking is defined and enable_thinking %}{{- '<think>' }}{%- endif %}{%- if enable_thinking is defined and not enable_thinking %}{{- '</think>' }}{%- endif %}{%- endif %}",
+    "chat_template_caps": {
+      "supports_object_arguments": true,
+      "supports_parallel_tool_calls": true,
+      "supports_preserve_reasoning": true,
+      "supports_reasoning_effort": false,
+      "supports_string_content": true,
+      "supports_system_role": true,
+      "supports_tool_calls": true,
+      "supports_tools": true,
+      "supports_typed_content": true
+    },
+    "bos_token": "<｜start▁of▁sentence｜>",
+    "eos_token": "<｜end▁of▁sentence｜>",
+    "build_info": "b10964-b29c606e2",
+    "is_sleeping": false,
+    "cors_proxy_enabled": false
+  },
+  "loaded_idle_rss": "9483 1284320 00:01 /opt/homebrew/bin/llama-server -m models/spark/Spark-X2.5-1.7B-Q4_K.gguf --host 127.0.0.1 --port 8922 -ngl 99 -c 8192 --jinja --flash-attn on --no-warmup --metrics --alias spark-x25-17b-q4k",
+  "loaded_idle": {
+    "swapusage": "vm.swapusage: total = 2048.00M  used = 869.50M  free = 1178.50M  (encrypted)",
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 67810 \nPages purgeable: 2618 \nPages purged: 29410320 \n\nSwap I/O:\nSwapins: 2872196 \nSwapouts: 3895953 \n\nPage Q counts:\nPages active: 322016 \nPages inactive: 312058 \nPages speculative: 9062 \nPages throttled: 0 \nPages wired down: 214166 \n\nCompressor Stats:\nPages used by compressor: 86035 \nPages decompressed: 130275326 \nPages compressed: 151592580 \n\nFile I/O:\nPageins: 95186752 \nPageouts: 164086 \n\nSystem-wide memory free percentage: 70%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                    67810.\nPages active:                                 322016.\nPages inactive:                               312058.\nPages speculative:                              9062.\nPages throttled:                                   0.\nPages wired down:                             214166.\nPages purgeable:                                2618.\n\"Translation faults\":                      907688625.\nPages copy-on-write:                        37630876.\nPages zero filled:                         482673644.\nPages reactivated:                         136432506.\nPages purged:                               29410320.\nFile-backed pages:                            431319.\nAnonymous pages:                              211817.\nPages stored in compressor:                   189219.\nPages occupied by compressor:                  86035.\nDecompressions:                            130275326.\nCompressions:                              151592580.\nPageins:                                    95186753.\nPageouts:                                     164086.\nSwapins:                                     2872196.\nSwapouts:                                    3895953."
+  },
+  "direct_no_think": {
+    "seconds": 0.23583320900000015,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "FR"
+          }
+        }
+      ],
+      "created": 1789914822,
+      "model": "spark-x25-17b-q4k",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 24,
+        "total_tokens": 26,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "id": "chatcmpl-hiSlUw3O899afQZqkyZUPOCBewz37FgH",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 24,
+        "prompt_ms": 207.072,
+        "prompt_per_token_ms": 8.628,
+        "prompt_per_second": 115.90171534538712,
+        "predicted_n": 2,
+        "predicted_ms": 18.396,
+        "predicted_per_token_ms": 18.396,
+        "predicted_per_second": 54.35964340073929
+      }
+    }
+  },
+  "warm_direct": {
+    "seconds": 0.08345666600000001,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "FR"
+          }
+        }
+      ],
+      "created": 1789914822,
+      "model": "spark-x25-17b-q4k",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 24,
+        "total_tokens": 26,
+        "prompt_tokens_details": {
+          "cached_tokens": 19
+        }
+      },
+      "id": "chatcmpl-rX4Fj83Iw4KbbPOirmVBEMDnJ8w2m18W",
+      "timings": {
+        "cache_n": 19,
+        "prompt_n": 5,
+        "prompt_ms": 55.629,
+        "prompt_per_token_ms": 11.1258,
+        "prompt_per_second": 89.8811770838951,
+        "predicted_n": 2,
+        "predicted_ms": 18.198,
+        "predicted_per_token_ms": 18.198,
+        "predicted_per_second": 54.951093526761184
+      }
+    }
+  },
+  "tool_call": {
+    "seconds": 0.608192667,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "tool_calls",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "get_git_status",
+                  "arguments": "{\"path\":\"/tmp/repo\"}"
+                },
+                "id": "2oeFf76U1GG2O0rdVZfm860rJ5ziC40X"
+              }
+            ]
+          }
+        }
+      ],
+      "created": 1789914823,
+      "model": "spark-x25-17b-q4k",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 16,
+        "prompt_tokens": 115,
+        "total_tokens": 131,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "id": "chatcmpl-02sOaiyYPs6g1ojDd7mX08gze8eH9zcM",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 115,
+        "prompt_ms": 349.633,
+        "prompt_per_token_ms": 3.0402869565217387,
+        "prompt_per_second": 328.9163208278395,
+        "predicted_n": 16,
+        "predicted_ms": 245.608,
+        "predicted_per_token_ms": 16.373866666666668,
+        "predicted_per_second": 61.07292922054656
+      }
+    }
+  },
+  "tool_continuation": {
+    "seconds": 0.9860240839999999,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "The result from `get_git_status` for `/tmp/repo` is:\n\n- **Branch:** `main`\n- **Dirty status:** `false` (clean)\n\nNo guessing or unanswered output."
+          }
+        }
+      ],
+      "created": 1789914824,
+      "model": "spark-x25-17b-q4k",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 50,
+        "prompt_tokens": 149,
+        "total_tokens": 199,
+        "prompt_tokens_details": {
+          "cached_tokens": 110
+        }
+      },
+      "id": "chatcmpl-slYiErcDOehErQzMbnnBhRNR5458KZfr",
+      "timings": {
+        "cache_n": 110,
+        "prompt_n": 39,
+        "prompt_ms": 130.507,
+        "prompt_per_token_ms": 3.3463333333333334,
+        "prompt_per_second": 298.8345452734336,
+        "predicted_n": 50,
+        "predicted_ms": 840.074,
+        "predicted_per_token_ms": 17.144367346938775,
+        "predicted_per_second": 58.32819489711621
+      }
+    }
+  },
+  "active_rss": "9483 1320800 00:03 /opt/homebrew/bin/llama-server -m models/spark/Spark-X2.5-1.7B-Q4_K.gguf --host 127.0.0.1 --port 8922 -ngl 99 -c 8192 --jinja --flash-attn on --no-warmup --metrics --alias spark-x25-17b-q4k",
+  "metrics": "# HELP llamacpp:prompt_tokens_total Number of prompt tokens processed, excluding cached tokens\n# TYPE llamacpp:prompt_tokens_total counter\nllamacpp:prompt_tokens_total 183\n# HELP llamacpp:prompt_tokens_cached_total Number of prompt tokens reused from the cache\n# TYPE llamacpp:prompt_tokens_cached_total counter\nllamacpp:prompt_tokens_cached_total 129\n# HELP llamacpp:prompt_seconds_total Total time spent processing prompts\n# TYPE llamacpp:prompt_seconds_total counter\nllamacpp:prompt_seconds_total 0.734755\n# HELP llamacpp:tokens_predicted_total Number of generation tokens processed\n# TYPE llamacpp:tokens_predicted_total counter\nllamacpp:tokens_predicted_total 70\n# HELP llamacpp:tokens_predicted_seconds_total Total time spent generating tokens\n# TYPE llamacpp:tokens_predicted_seconds_total counter\nllamacpp:tokens_predicted_seconds_total 1.12228\n# HELP llamacpp:n_decode_total Total number of llama_decode() calls, excluding speculative decoding and multimodal decoding\n# TYPE llamacpp:n_decode_total counter\nllamacpp:n_decode_total 76\n# HELP llamacpp:n_tokens_max Largest observed sequence length (prompt + generation)\n# TYPE llamacpp:n_tokens_max counter\nllamacpp:n_tokens_max 198\n# HELP llamacpp:spec_decode_num_draft_tokens_total Speculative: Total draft tokens generated\n# TYPE llamacpp:spec_decode_num_draft_tokens_total counter\nllamacpp:spec_decode_num_draft_tokens_total 0\n# HELP llamacpp:spec_decode_num_accepted_tokens_total Speculative: Total draft tokens accepted by the target model\n# TYPE llamacpp:spec_decode_num_accepted_tokens_total counter\nllamacpp:spec_decode_num_accepted_tokens_total 0\n# HELP llamacpp:spec_decode_num_drafts_total Speculative: Total speculative decoding verification steps\n# TYPE llamacpp:spec_decode_num_drafts_total counter\nllamacpp:spec_decode_num_drafts_total 0\n# HELP llamacpp:prompt_tokens_seconds Average prompt throughput in tokens/s\n# TYPE llamacpp:prompt_tokens_seconds gauge\nllamacpp:prompt_tokens_seconds 249.063\n# HELP llamacpp:predicted_tokens_seconds Average generation throughput in tokens/s\n# TYPE llamacpp:predicted_tokens_seconds gauge\nllamacpp:predicted_tokens_seconds 58.8091\n# HELP llamacpp:requests_processing Number of requests processing\n# TYPE llamacpp:requests_processing gauge\nllamacpp:requests_processing 0\n# HELP llamacpp:requests_deferred Number of requests deferred\n# TYPE llamacpp:requests_deferred gauge\nllamacpp:requests_deferred 0\n# HELP llamacpp:n_busy_slots_per_decode Average number of busy slots per llama_decode() call\n# TYPE llamacpp:n_busy_slots_per_decode gauge\nllamacpp:n_busy_slots_per_decode 1\n",
+  "after": {
+    "swapusage": "vm.swapusage: total = 2048.00M  used = 869.50M  free = 1178.50M  (encrypted)",
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 65069 \nPages purgeable: 2610 \nPages purged: 29410322 \n\nSwap I/O:\nSwapins: 2872196 \nSwapouts: 3895953 \n\nPage Q counts:\nPages active: 323935 \nPages inactive: 314118 \nPages speculative: 9084 \nPages throttled: 0 \nPages wired down: 212906 \n\nCompressor Stats:\nPages used by compressor: 86035 \nPages decompressed: 130275329 \nPages compressed: 151592580 \n\nFile I/O:\nPageins: 95186799 \nPageouts: 164086 \n\nSystem-wide memory free percentage: 70%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                    65066.\nPages active:                                 323935.\nPages inactive:                               314118.\nPages speculative:                              9084.\nPages throttled:                                   0.\nPages wired down:                             212909.\nPages purgeable:                                2610.\n\"Translation faults\":                      907698138.\nPages copy-on-write:                        37632032.\nPages zero filled:                         482678540.\nPages reactivated:                         136432510.\nPages purged:                               29410322.\nFile-backed pages:                            431372.\nAnonymous pages:                              215765.\nPages stored in compressor:                   189219.\nPages occupied by compressor:                  86035.\nDecompressions:                            130275329.\nCompressions:                              151592580.\nPageins:                                    95186800.\nPageouts:                                     164086.\nSwapins:                                     2872196.\nSwapouts:                                    3895953."
+  },
+  "outcome": "completed",
+  "exit_code": 0,
+  "post_stop": {
+    "swapusage": "vm.swapusage: total = 2048.00M  used = 869.50M  free = 1178.50M  (encrypted)",
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 95211 \nPages purgeable: 2610 \nPages purged: 29410322 \n\nSwap I/O:\nSwapins: 2872196 \nSwapouts: 3895953 \n\nPage Q counts:\nPages active: 367542 \nPages inactive: 320132 \nPages speculative: 9082 \nPages throttled: 0 \nPages wired down: 133145 \n\nCompressor Stats:\nPages used by compressor: 86035 \nPages decompressed: 130275330 \nPages compressed: 151592580 \n\nFile I/O:\nPageins: 95186802 \nPageouts: 164086 \n\nSystem-wide memory free percentage: 78%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                    95210.\nPages active:                                 367423.\nPages inactive:                               320252.\nPages speculative:                              9082.\nPages throttled:                                   0.\nPages wired down:                             133145.\nPages purgeable:                                2610.\n\"Translation faults\":                      907699580.\nPages copy-on-write:                        37632513.\nPages zero filled:                         482678719.\nPages reactivated:                         136432510.\nPages purged:                               29410322.\nFile-backed pages:                            489978.\nAnonymous pages:                              206779.\nPages stored in compressor:                   189219.\nPages occupied by compressor:                  86035.\nDecompressions:                            130275330.\nCompressions:                              151592580.\nPageins:                                    95186803.\nPageouts:                                     164086.\nSwapins:                                     2872196.\nSwapouts:                                    3895953."
+  }
+}

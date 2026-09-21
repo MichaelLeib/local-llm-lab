@@ -1,0 +1,10 @@
+{
+  "experiment": "EXP-002",
+  "model": "ornith-ai/Ornith-1.5-9B-MLX-6bit",
+  "revision": "538eb2e517a3adf8691e77cc20232ef1a3af39f3",
+  "stage": "loaded-idle",
+  "captured_at_utc": "2026-09-17T07:50:47Z",
+  "degradation_rating": 0,
+  "symptoms": [],
+  "raw_user_report": "0/5 all good - go on"
+}

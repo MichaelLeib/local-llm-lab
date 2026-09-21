@@ -1,0 +1,17 @@
+{
+  "completion_allowance": 4096,
+  "completion_tokens": 0,
+  "context_limit": 16384,
+  "context_limit_approached": false,
+  "cumulative_tool_result_tokens": 0,
+  "initial_prompt_tokens": 0,
+  "maximum_accumulated_prompt_tokens": 0,
+  "policy": "EXP-007-context-safe-v2",
+  "repeated_file_ranges": 0,
+  "repeated_unrefined_searches": 0,
+  "server_request_count": 0,
+  "tool_calls_by_name": {},
+  "tool_calls_made": 0,
+  "tool_result_tokens": [],
+  "truncated_tool_outputs": 0
+}

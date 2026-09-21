@@ -1,0 +1,24 @@
+: keepalive
+
+: keepalive
+
+: keepalive
+
+data: {"event": "message.delta", "run_id": "run_0955683d26144d3f946df3a87e09dadd", "timestamp": 1789916726.044065, "delta": "DE"}
+
+data: {"event": "message.delta", "run_id": "run_0955683d26144d3f946df3a87e09dadd", "timestamp": 1789916726.145056, "delta": "EP"}
+
+data: {"event": "message.delta", "run_id": "run_0955683d26144d3f946df3a87e09dadd", "timestamp": 1789916726.2452438, "delta": "_E"}
+
+data: {"event": "message.delta", "run_id": "run_0955683d26144d3f946df3a87e09dadd", "timestamp": 1789916726.3439622, "delta": "2"}
+
+data: {"event": "message.delta", "run_id": "run_0955683d26144d3f946df3a87e09dadd", "timestamp": 1789916726.5470421, "delta": "E"}
+
+data: {"event": "message.delta", "run_id": "run_0955683d26144d3f946df3a87e09dadd", "timestamp": 1789916726.547612, "delta": "_OK"}
+
+data: {"event": "reasoning.available", "run_id": "run_0955683d26144d3f946df3a87e09dadd", "timestamp": 1789916726.774391, "text": "DEEP_E2E_OK"}
+
+data: {"event": "run.completed", "run_id": "run_0955683d26144d3f946df3a87e09dadd", "timestamp": 1789916726.842896, "output": "DEEP_E2E_OK", "usage": {"input_tokens": 14426, "output_tokens": 45, "total_tokens": 14471}}
+
+: stream closed
+

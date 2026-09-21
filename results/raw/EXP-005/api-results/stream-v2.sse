@@ -1,0 +1,12 @@
+data: {"id":"chatcmpl-bc3bb15da2984bbc980986dda0e8930b","model":"qwen3.6-35b-a3b","object":"chat.completion.chunk","choices":[{"delta":{"role":"assistant"},"finish_reason":null,"index":0}],"created":1789651118}
+
+: ping
+
+: ping
+
+: ping
+
+data: {"object":"chat.completion.chunk","created":1789651118,"model":"qwen3.6-35b-a3b","choices":[{"delta":{},"finish_reason":"length","index":0}],"id":"chatcmpl-bc3bb15da2984bbc980986dda0e8930b"}
+
+data: [DONE]
+

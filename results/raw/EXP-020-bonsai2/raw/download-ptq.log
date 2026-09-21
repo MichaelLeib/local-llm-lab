@@ -1,0 +1,4 @@
+2026-09-19T19:48:09Z PTQ1_0 acquisition begin
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+path=/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-020-bonsai2/models/Ternary-Bonsai-2-27B-PTQ1_0.gguf
+2026-09-19T19:49:58Z acquisition exit=0

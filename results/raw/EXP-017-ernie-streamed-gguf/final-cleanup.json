@@ -1,0 +1,18 @@
+{
+  "timestamp_local": "2026-09-19",
+  "lanes": {"FAST": "down", "DEEP": "down"},
+  "residual_inference_processes": [],
+  "residual_ernie_or_llama_listener": [],
+  "memory_pressure_free_percent": 75,
+  "swap_used_mib": 1624.38,
+  "vm_counters": {"swapins": 3197811, "swapouts": 4528759, "pageouts": 1297335},
+  "verification_commands": [
+    "~/.hermes/bin/hermes-local-model status",
+    "pgrep -x llama-cli; pgrep -x llama-server",
+    "lsof -nP -iTCP -sTCP:LISTEN | grep -Ei '[l]lama|[e]rnie'",
+    "memory_pressure | grep 'free percentage'",
+    "sysctl vm.swapusage",
+    "vm_stat | grep -E 'Swapins|Swapouts|Pageouts'"
+  ],
+  "verification_result": "FAST and DEEP down; no llama-cli/llama-server process and no ERNIE/llama listener."
+}

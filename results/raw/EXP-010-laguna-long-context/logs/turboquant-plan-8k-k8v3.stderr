@@ -1,0 +1,6 @@
+usage: turboquant-plan [-h] --model MODEL [--context CONTEXT]
+                       [--kv-bits KV_BITS]
+                       [--prefill-step-size PREFILL_STEP_SIZE]
+                       [--wired-gb WIRED_GB] [--ram-gb RAM_GB]
+                       [--ngram-offload] [--json]
+turboquant-plan: error: unrecognized arguments: --kv-k-bits 8 --kv-v-bits 3

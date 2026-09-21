@@ -1,0 +1,60 @@
+=== freeze-gate syntax ===
+=== freeze-gate deterministic tests ===
+test_file_read_is_bounded_and_paginates (results.raw.EXP-007.context-safe-harness.v2.tests.test_context_safe_output_v2.ContextSafeOutputTests.test_file_read_is_bounded_and_paginates) ... ok
+test_search_caps_match_records_and_reports_omission (results.raw.EXP-007.context-safe-harness.v2.tests.test_context_safe_output_v2.ContextSafeOutputTests.test_search_caps_match_records_and_reports_omission) ... ok
+test_search_files_list_is_capped_like_matches (results.raw.EXP-007.context-safe-harness.v2.tests.test_context_safe_output_v2.ContextSafeOutputTests.test_search_files_list_is_capped_like_matches) ... ok
+test_small_result_is_unchanged_but_instrumented (results.raw.EXP-007.context-safe-harness.v2.tests.test_context_safe_output_v2.ContextSafeOutputTests.test_small_result_is_unchanged_but_instrumented) ... ok
+test_terminal_preserves_head_tail_exit_and_explicit_omission (results.raw.EXP-007.context-safe-harness.v2.tests.test_context_safe_output_v2.ContextSafeOutputTests.test_terminal_preserves_head_tail_exit_and_explicit_omission) ... ok
+test_aggregates_tool_cost_repeats_and_server_telemetry (results.raw.EXP-007.context-safe-harness.v2.tests.test_context_metrics_v2.ContextMetricsTests.test_aggregates_tool_cost_repeats_and_server_telemetry) ... ok
+test_plugin_registers_only_transform_hook (results.raw.EXP-007.context-safe-harness.v2.tests.test_plugin_schema_safety_v2.HookOnlyRegistrationTests.test_plugin_registers_only_transform_hook) ... ok
+test_classifies_explicit_file_followup_and_unrefined_search (results.raw.EXP-007.context-safe-harness.v2.tests.test_retrieval_refinement_v2.RetrievalRefinementTests.test_classifies_explicit_file_followup_and_unrefined_search) ... ok
+test_v2_runner_isolated_and_preserves_fixed_controls (results.raw.EXP-007.context-safe-harness.v2.tests.test_runner_v2_contract.RunnerV2ContractTests.test_v2_runner_isolated_and_preserves_fixed_controls) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.223s
+
+OK
+=== profile equivalence and isolation ===
+=== prompt-relevant profile equivalence ===
+config_equal_after_only_plugin_identifier_substitution
+=== profile/plugin isolation ===
+isolated_plugin_paths_confirmed
+=== v1/v2 tool schemas ===
+9f0e6dd16cb627e08757233643d864615c6aabb28f3005fe57b5b4786b1f94ed  /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/context-safe-harness/v2/validation/tool-schema-exp007bench.json
+9f0e6dd16cb627e08757233643d864615c6aabb28f3005fe57b5b4786b1f94ed  /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/context-safe-harness/v2/validation/tool-schema-exp007benchv2.json
+=== no-model real hook dispatch ===
+{
+  "serialized_tokens": 350,
+  "exit_code": 7,
+  "marker": true
+}
+=== offline trace replay ===
+{
+  "completion_allowance": 4096,
+  "context_limit": 16384,
+  "initial_prompt_tokens": 4070,
+  "method": "conservative token-budget replay: sum(min(v1 exact original token count, v2 cap)); raw pre-hook text was not persisted",
+  "original_tool_result_tokens": 25250,
+  "projected_reduction_tokens": 19399,
+  "projected_tool_budget_headroom": 2367,
+  "projected_v2_serialized_tool_tokens_upper_bound": 5851,
+  "tool_result_budget_after_initial_and_reserve": 8218,
+  "tool_results": 17,
+  "trace": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/results/candidate-K7/hermes/T01/20260918T070937Z/context-safe-tool-results.jsonl",
+  "v2_cap_tokens": 350
+}
+{
+  "completion_allowance": 4096,
+  "context_limit": 16384,
+  "initial_prompt_tokens": 4070,
+  "method": "conservative token-budget replay: sum(min(v1 exact original token count, v2 cap)); raw pre-hook text was not persisted",
+  "original_tool_result_tokens": 20160,
+  "projected_reduction_tokens": 14388,
+  "projected_tool_budget_headroom": 2446,
+  "projected_v2_serialized_tool_tokens_upper_bound": 5772,
+  "tool_result_budget_after_initial_and_reserve": 8218,
+  "tool_results": 20,
+  "trace": "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/real-repo-ab/results/candidate-R2/hermes/T01/20260918T072855Z/context-safe-tool-results.jsonl",
+  "v2_cap_tokens": 350
+}
+=== listeners (must be empty) ===

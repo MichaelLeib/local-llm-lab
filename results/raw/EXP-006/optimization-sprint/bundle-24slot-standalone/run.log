@@ -1,0 +1,42 @@
+Thu Sep 17 18:59:13 UTC 2026
+bundle=24-slot-standalone
+command=TinyTitanCLI --messages-file throughput-messages.json --max-new 64 --max-context 4096 --temperature 0 --seed 12345 --thinking off --concise --expert-cache-slots 24
+vm.swapusage: total = 0.00M  used = 0.00M  free = 0.00M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+System-wide memory free percentage: 67%
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi    50Gi    21%    484k  520M    0%   /
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+2
+[decode expert io] hits 19862 misses 10378 (65.7% hit) 26.76 GiB = 428.2 MiB/token
+
+[stop=maxTokens prefill=238tok/15.94s new=64tok decode=22.54s tok/s=2.839]
+probe_exit=0
+vm.swapusage: total = 2048.00M  used = 1493.12M  free = 554.88M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+System-wide memory free percentage: 73%
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi    48Gi    22%    484k  499M    0%   /

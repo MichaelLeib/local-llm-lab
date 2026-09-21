@@ -1,0 +1,15 @@
+{
+  "repo_id": "ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+  "revision": "12393612fd4f730ff5aadc23e9b8f9648aa49ceb",
+  "filename": "Ornith-1.5-35B-Q4_K_M.gguf",
+  "snapshot_path": "/Users/<user>/.cache/huggingface/hub/models--ornith-ai--Ornith-1.5-35B-A3B-GGUF/snapshots/12393612fd4f730ff5aadc23e9b8f9648aa49ceb/Ornith-1.5-35B-Q4_K_M.gguf",
+  "bytes": 21713463040,
+  "sha256": "42739874cc2ccfdb8523b23fbe52e29b2a7555c8176737ca9ca0b5d59859d41f",
+  "expected_sha256": "42739874cc2ccfdb8523b23fbe52e29b2a7555c8176737ca9ca0b5d59859d41f",
+  "hash_match": true,
+  "downloaded_via": "hf download",
+  "download_command": "hf download ornith-ai/Ornith-1.5-35B-A3B-GGUF Ornith-1.5-35B-Q4_K_M.gguf --revision 12393612fd4f730ff5aadc23e9b8f9648aa49ceb",
+  "extra_files_in_snapshot": [],
+  "inference_started": false,
+  "gguf_header_artifact": "results/raw/EXP-003/gguf-header.json"
+}

@@ -1,0 +1,1 @@
+ 9614   2688 06:53 /opt/homebrew/bin/llama-server -m models/minicpm/MiniCPM5-2B-Q4_K_M.gguf --host 127.0.0.1 --port 8921 -ngl 99 -c 8192 --jinja --flash-attn on --no-warmup --metrics --alias minicpm5-2b-q4km

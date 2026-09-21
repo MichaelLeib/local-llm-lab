@@ -1,0 +1,5 @@
+`date` output:
+
+```
+Thu Sep 17 14:02:17 CEST 2026
+```

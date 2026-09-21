@@ -1,0 +1,80 @@
+# EXP-018 — Laguna XS 2.1 full autonomous evaluation
+
+## Authority and non-negotiable objective
+User explicitly authorized this full campaign: dependency installation; current model/runtime discovery; model downloads/conversions; local inference; creation of isolated Hermes profiles/wrappers; safe disposable coding repositories; network research through Hermes tools; routine model-storage cleanup; and movement of model artifacts to `/Volumes/EXT/Local-LLM-Archive` if mounted/writable. Never delete unique personal data, secrets, unrelated source, experiment reports, raw evidence, or unique scripts. Keep the normal FAST/DEEP defaults and production Hermes config unchanged.
+
+Do not finish on discovery/load/smoke/one benchmark/one failed config. Finish only with a defensible decision: **PROMOTE**, **CONTINUE**, **RETAIN AS SPECIALIST**, or **REJECT**. If runtime passes, perform actual autonomous coding (two tasks) and research testing—not only claimed capabilities.
+
+Hardware: MacBook Air M3, 16 GB unified memory, 512 GB internal SSD, external water cooling. Desired practical agent: >=4 generated tok/s (prefer >=6, ideal >=8), usable Mac, correct Hermes tools, useful warm interaction, substantial verified context (aim 64K, accept measured reality), autonomous coding and serious research.
+
+## Phase 0 — build and validate low-token harness FIRST
+Create `tools/llm-exp/` in the Local-LLM-Lab project, no heavy dependencies. It must be reusable for later candidates.
+
+Implement, document, and validate:
+- `run` wrapper: command label + command executed; timestamped raw stdout/stderr file; exit code; start/end/elapsed; compact stdout only (label/status/time/extracted metrics/last useful lines/log path). Never print giant logs by default.
+- failure summarizer: preserve full raw log, extract only 20–50 lines around `error|exception|traceback|abort|oom|metal|assert|signal|failure`.
+- `sysmon`: sample pressure/free memory/compressed if accessible/swap/pageouts/swapouts/model RSS/SSD I/O/CPU-GPU/thermal where practical to JSONL or CSV. At end write compact statistics JSON.
+- metric parser/summary JSON. Do local parsing, not large log ingestion.
+- campaign `results.jsonl` registry fields at minimum: experiment ID, model, revision, runtime, quantization, full config, context allocation, prompt/output tokens, prefill seconds, decode tps, TTFT, memory/swap stats, correctness, exit/classification, raw path.
+- `compare` reads registry and prints a compact comparison table.
+- concise `STATE.md` / `DECISIONS.md`: current phase, established facts, best config, completed experiments, failures, next action.
+
+Validate harness before Laguna: a passing trivial command AND a deliberate failing command. Verify raw logs on disk, compact success/failure summaries, metrics JSON, registry entry, and comparison output. Record an honest estimate of token-output reduction. Use this harness henceforward. Never cat massive logs; use compact JSON, targeted read/range/search only.
+
+## Phase 1 — current discovery and selection
+Target: Poolside Laguna XS 2.1. Treat all supplied claims as hypotheses. Verify on current official/credible sources and model configs:
+- official model/revision/license; architecture, total/active count, expert routing, attention/KV geometry/context, chat template, tool-call support;
+- credible Apple Silicon runtimes and current MLX/GGUF/TurboQuant representations, their revisions/size/quantization and compatibility;
+- reported memory behavior.
+
+Read existing local Laguna evidence first (notably `results/raw/EXP-010-laguna-long-context/`) and preserve it as prior evidence; do not repeat tests without reason. Select a credible 3-bit MLX implementation first. Consider 4-bit only if memory arithmetic warrants it; then an alternative 3-bit representation; avoid 2-bit unless compelling. Use model storage policy: delete redownloadable Qwen Flash/Flash-Next payloads and caches if needed while retaining reports/docs/scripts/raw evidence; otherwise archive large nonactive local-model artifacts to the external disk after verifying destination and copy/move integrity. Record all storage actions.
+
+## Phase 2 — runtime, configuration, and context evaluation
+Use only one resident local model. FAST/DEEP must stay down for every isolated Laguna arm. Before/after every arm verify processes/ports clean.
+
+Basic arms: coherent smoke, repeated short decode sufficient for stable rate, load time, memory, swap/pageouts, system responsiveness, SSD activity, thermals if observable. Never conclude there.
+
+Find best practical short-context configuration with evidence-led—not combinatorial—adjustment of runtime options (batch/prefill batch/cache/Metal/thread/attention/mmap/MoE controls). Benchmark populated 250, 500, 1K, 2K, 4K, 8K inputs, logging prefill, TTFT, decode, health, and raw evidence through harness.
+
+Then context scale the proven best configuration using real populated deterministic needle/retrieval prompts. Test 8K, 16K, 24K, 32K; then 48K and 64K only when safe. For every size distinguish: allocates, prefills, generates, retrieval correct, machine healthy, and practically useful. Track free memory as a first-class gate—not just swap. Stop an arm cleanly if free page/memory collapses, red/severe pressure, sustained paging/thrashing, runaway SSD I/O, instability, or meaningful usability loss. Never reboot merely to clear swap. Preserve evidence and proceed with remaining useful diagnostics.
+
+## Phase 3 — isolated Hermes integration / runtime gate
+If Laguna reaches plausibly useful runtime behavior, create an isolated profile/wrapper such as `~/.hermes/bin/local-laguna` and a dedicated profile. Use supported Hermes config commands, never hand-edit production config. Do not replace normal defaults.
+
+Prove OpenAI-compatible endpoint, chat format/thinking, multi-turn, realistic slim 4–6K rendered Hermes prompt, terminal and file tool syntax/round trips, correct returned tool results, cold/warm TTFT and prefix reuse, tool latency, memory behavior.
+
+Runtime passes into capability testing only if judgment supports useful agent operation: roughly >=4 generated tok/s realistic decode, healthy Mac, reliable Hermes/tools, and >=16K verified useful context (prefer 32K+). A near threshold may still pass only with compensating strengths. A clear failure must still produce enough diagnostics and the final report—do not leave an intermediate note.
+
+## Phase 4 — real capability tests (ONLY if runtime gate passes)
+### Coding task 1
+Create a safe disposable benchmark repo (or clone a public nonimportant repo) under the EXP-018 hierarchy. Give Laguna only high-level user-visible requirements—no filenames/functions/classes/architecture/decomposition. Require it to inspect, decide, implement, test, debug, and verify autonomously through Hermes. Capture the full trajectory on disk and compact registry summaries. Assess exploration, planning, implementation, tool use, compile/test success, wrong turns, self-correction, final functionality, and human interventions (target zero).
+
+### Coding task 2
+Only if task 1 is promising: an independent high-level debugging/cross-component behavior task in a separate disposable repo. Same no-handholding rule and evaluation.
+
+### Research task
+If still promising, issue a nontrivial, externally verifiable research task requiring decomposition, several searches, source evaluation, disagreement reconciliation, causal reasoning, uncertainty, citations/evidence tracking, adversarial challenge, and final synthesis. Preserve trace. Assess source quality, evidence/speculation distinction, contradictions, citation correctness, challenge behavior, and usefulness.
+
+### Long run
+If capability tests are promising, run a realistic longer Hermes session at the identified practical context to observe tool calls, conversation growth, prefix reuse, memory creep, decode drift, and pressure. Do not intentionally fill 256K.
+
+## Comparison / final decision
+Reuse existing Qwen3.6/Slipstream evidence; do not rerun it. Reference: standalone decode ~7.5–8.4 tok/s; slim Hermes ~6.1–6.9; cold ~5K TTFT 108–127s; warm 3.1–4.5s; strong prefix reuse; desired 32K memory envelope failed; no promotion. Compare headroom, usable context, cold/warm behavior, agentic coding, research, and one-model suitability honestly.
+
+## Required artifacts and completion
+Under `results/raw/EXP-018-laguna-xs21/` write at minimum:
+- `REPORT.md` comprehensive final result;
+- `results.jsonl`, `STATE.md`, `DECISIONS.md`, structured summary/comparison JSON;
+- raw logs and per-arm harness summaries;
+- coding/research trajectories if performed;
+- storage receipt.
+
+Final REPORT must include executive conclusion; exact reproducible winning config (model/revision/quant/runtime/paths/command/environment/cache/context/wrapper/profile/dependencies); performance table (short, 1K–8K, Hermes decode/cold/warm); 8–64K classifications; health/SSD/stability; coding and research outcomes if runtime passed; Qwen3.6 comparison; harness documentation/usage/token reduction; storage actions; and ONE final classification.
+
+If no decision-blocking issue genuinely remains, never end with vague "more testing." If a runtime failure precludes quality testing, explain why capability testing was not warranted and choose a final classification anyway.
+
+## Notifications and cleanup
+Post concise actual milestones/failures/final result only using:
+`HERMES_HOME="$HOME/.hermes" hermes send --to 'matrix:development' --subject '[EXP-018 Laguna XS 2.1]' '<measured result>' --json`
+
+At final completion terminate inference/server processes; confirm FAST and DEEP are down, no Laguna process/listener persists, and record final pressure/swap/disk state.

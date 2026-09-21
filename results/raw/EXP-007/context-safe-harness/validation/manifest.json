@@ -1,0 +1,22 @@
+{
+  "files": {
+    "/Users/<user>/.hermes/profiles/exp007bench/plugins/exp007-context-safe/__init__.py": "74c979e67f4ceebdf1fd44fa8f83612e1e697db564380f4ad42c7e979c577a92",
+    "/Users/<user>/.hermes/profiles/exp007bench/plugins/exp007-context-safe/plugin.yaml": "d62a4cd56a98c29df95afa18cde85e8fb41f537af806bc54993159cbcd4d8045",
+    "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/context-safe-harness/POLICY.md": "69b37171d15e855ac7c9f5ff8c7096623931dc66242e9920d93d6ebf92a8ad04",
+    "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/context-safe-harness/before-after-context-estimate.json": "603f73773a2a8192cc8b2799e24d740883113f0774b03bb1fb07b38296ee315a",
+    "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/context-safe-harness/validation/integration-summary.json": "6b4d87214e4c95bedf208a2e1d456ce35155eda530fbdf4417b4a662b83b6655",
+    "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-007/context-safe-harness/validation/integration-tool-results.jsonl": "efb5f3a48eecd4f5af3af7dc44641ac5289c32c7dea3d3e58fac386dbcbff5eb",
+    "/Users/<user>/HermesProjects/Local-LLM-Lab/tools/exp007_summarize_context_metrics.py": "3f0cfeb8b40e96a3a9141e39ac3602d24b7cd387ef70e98837d7059dfa8300ed"
+  },
+  "limits": {
+    "completion_allowance": 4096,
+    "per_result_qwen_tokens": 800,
+    "read_max_line_length": 500,
+    "read_max_lines": 250,
+    "search_max_records": 24,
+    "server_context": 16384,
+    "terminal_raw_max_bytes": 4000
+  },
+  "policy": "EXP-007-context-safe-v1",
+  "validation_tests": 9
+}

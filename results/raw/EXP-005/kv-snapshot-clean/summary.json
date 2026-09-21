@@ -1,0 +1,26 @@
+{
+  "experiment": "EXP-005",
+  "sweep": "post_reboot_clean_disk_kv_snapshot",
+  "status": "success",
+  "baseline": {
+    "swap_before_mib": 0.0,
+    "swap_after_mib": 0.0,
+    "expert_cache_slots": 16,
+    "max_context": 4096,
+    "snapshot_bytes": 88883888
+  },
+  "cold_save": {
+    "prompt_tokens": 1196,
+    "prefill_seconds": 16.67,
+    "decode_tok_s": 7.563,
+    "wall_seconds": 20.581,
+    "exit_code": 0
+  },
+  "warm_restore": {
+    "reported_prefill_seconds": 0.04,
+    "decode_tok_s": 1.546,
+    "wall_seconds": 12.405,
+    "exit_code": 0
+  },
+  "artifacts": "results/raw/EXP-005/kv-snapshot-clean/"
+}

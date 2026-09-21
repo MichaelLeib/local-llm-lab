@@ -1,0 +1,23 @@
+Thu Sep 17 17:59:33 UTC 2026
+ProductName:		macOS
+ProductVersion:		27.0
+BuildVersion:		26A428
+swift-driver version: 1.168.6 Apple Swift version 6.4 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
+Target: arm64-apple-macosx27.0.0
+Mac15,13
+17179869184
+8
+vm.swapusage: total = 0.00M  used = 0.00M  free = 0.00M  (encrypted)
+The system has 17179869184 (1048576 pages with a page size of 16384).
+System-wide memory free percentage: 37%
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi    49Gi    21%    484k  518M    0%   /
+
+
+<think>
+The user is asking me
+[stop=maxTokens prefill=5tok/5.61s new=8tok decode=30.45s tok/s=0.263]
+probe_exit=0
+vm.swapusage: total = 7168.00M  used = 5916.75M  free = 1251.25M  (encrypted)
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   460Gi    13Gi    42Gi    24%    484k  445M    0%   /

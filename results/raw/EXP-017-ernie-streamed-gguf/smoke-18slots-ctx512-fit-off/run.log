@@ -1,0 +1,24 @@
+command=/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-017-ernie-streamed-gguf/source/llama.cpp-moe-streaming/build-exp017/bin/llama-cli -m /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-016-small-moe-feasibility/ernie/gguf/model/ERNIE-4.5-21B-A3B-Thinking-Q4_K_M.gguf --moe-stream-cache 18s --moe-stream-io-threads 2 --moe-stream-direct --no-mmap --no-warmup --fit off -ngl 99 -c 512 -b 1 -ub 1 -n 8 --temp 0 --seed 1234 --single-turn --simple-io -p Reply with exactly READY.
+
+Loading model... /Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-017-ernie-streamed-gguf/source/llama.cpp-moe-streaming/ggml/src/ggml.c:1765: GGML_ASSERT(obj_new) failed
+WARNING: Using native backtrace. Set GGML_BACKTRACE_LLDB for more info.
+WARNING: GGML_BACKTRACE_LLDB may cause native MacOS Terminal.app to crash.
+See: https://github.com/ggml-org/llama.cpp/pull/17869
+0   libggml-base.0.15.3.dylib           0x0000000104dd13d0 ggml_print_backtrace + 276
+1   libggml-base.0.15.3.dylib           0x0000000104e3d1f4 ggml_abort + 156
+2   libggml-base.0.15.3.dylib           0x0000000104e3d3d8 ggml_new_object.cold.1 + 0
+3   libggml-base.0.15.3.dylib           0x0000000104dd2efc ggml_new_tensor_impl + 640
+4   libggml-base.0.15.3.dylib           0x0000000104dd8594 ggml_reshape_3d + 232
+5   libllama.0.0.9881.dylib             0x0000000105cdb558 _ZNK17llm_graph_context9build_qkvERK11llama_layerP11ggml_tensorxxxi + 1368
+6   libllama.0.0.9881.dylib             0x0000000105db91f0 _ZN24llama_model_ernie4_5_moe5graphC2ERK11llama_modelRK16llm_graph_params + 328
+7   libllama.0.0.9881.dylib             0x0000000105db9080 _ZNK24llama_model_ernie4_5_moe16build_arch_graphERK16llm_graph_params + 52
+8   libllama.0.0.9881.dylib             0x0000000105d3eff0 _ZNK11llama_model11build_graphERK16llm_graph_params + 40
+9   libllama.0.0.9881.dylib             0x0000000105cb3c08 _ZN13llama_context13graph_reserveEjjjPK22llama_memory_context_ibPm + 404
+10  libllama.0.0.9881.dylib             0x0000000105cb2a3c _ZN13llama_context13sched_reserveEv + 1384
+11  libllama.0.0.9881.dylib             0x0000000105cb12d0 _ZN13llama_contextC2ERK11llama_model20llama_context_params + 4068
+12  libllama.0.0.9881.dylib             0x0000000105cbbbec llama_init_from_model + 588
+13  libllama-common.0.0.9881.dylib      0x000000010588fa70 _ZN18common_init_resultC2ER13common_paramsb + 3700
+14  libllama-common.0.0.9881.dylib      0x0000000105890290 _Z23common_init_from_paramsR13common_paramsb + 68
+15  libllama-cli-impl.dylib             0x0000000104f3662c _ZN19server_context_impl10load_modelER13common_params + 3472
+16  libllama-cli-impl.dylib             0x0000000104e9f694 _Z9llama_cliiPPc + 388
+17  dyld                                0x00000001977d3e80 start + 6688

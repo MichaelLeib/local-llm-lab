@@ -1,0 +1,346 @@
+{
+  "candidate": "neohorse-14b-q4km",
+  "model": "models/neohorse/NeoHorse-1-4B-Q4_K_M.gguf",
+  "port": 8923,
+  "started_at_epoch": 1789914829.727602,
+  "before": {
+    "swapusage": "vm.swapusage: total = 2048.00M  used = 869.50M  free = 1178.50M  (encrypted)",
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 94811 \nPages purgeable: 2760 \nPages purged: 29410322 \n\nSwap I/O:\nSwapins: 2872216 \nSwapouts: 3895953 \n\nPage Q counts:\nPages active: 347305 \nPages inactive: 338078 \nPages speculative: 9140 \nPages throttled: 0 \nPages wired down: 135773 \n\nCompressor Stats:\nPages used by compressor: 86040 \nPages decompressed: 130275434 \nPages compressed: 151592580 \n\nFile I/O:\nPageins: 95186887 \nPageouts: 164086 \n\nSystem-wide memory free percentage: 77%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                    94816.\nPages active:                                 347301.\nPages inactive:                               338077.\nPages speculative:                              9140.\nPages throttled:                                   0.\nPages wired down:                             135773.\nPages purgeable:                                2760.\n\"Translation faults\":                      907739801.\nPages copy-on-write:                        37637468.\nPages zero filled:                         482686015.\nPages reactivated:                         136432522.\nPages purged:                               29410322.\nFile-backed pages:                            490053.\nAnonymous pages:                              204465.\nPages stored in compressor:                   189198.\nPages occupied by compressor:                  86040.\nDecompressions:                            130275434.\nCompressions:                              151592580.\nPageins:                                    95186888.\nPageouts:                                     164086.\nSwapins:                                     2872216.\nSwapouts:                                    3895953."
+  },
+  "pid": 9520,
+  "load_seconds": 1.009,
+  "health": {
+    "status": "ok"
+  },
+  "models": {
+    "models": [
+      {
+        "name": "neohorse-14b-q4km",
+        "model": "neohorse-14b-q4km",
+        "modified_at": "",
+        "size": "",
+        "digest": "",
+        "type": "model",
+        "description": "",
+        "tags": [
+          ""
+        ],
+        "capabilities": [
+          "completion"
+        ],
+        "parameters": "",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "",
+          "families": [
+            ""
+          ],
+          "parameter_size": "",
+          "quantization_level": ""
+        }
+      }
+    ],
+    "object": "list",
+    "data": [
+      {
+        "id": "neohorse-14b-q4km",
+        "aliases": [
+          "neohorse-14b-q4km"
+        ],
+        "tags": [],
+        "object": "model",
+        "created": 1789914830,
+        "owned_by": "llamacpp",
+        "meta": {
+          "vocab_type": true,
+          "n_vocab": 248320,
+          "n_ctx": 8192,
+          "n_ctx_train": 262144,
+          "n_embd": 2560,
+          "n_params": 4205751296,
+          "size": 2697836544,
+          "ftype": "Q4_K - Medium"
+        }
+      }
+    ]
+  },
+  "props": {
+    "default_generation_settings": {
+      "params": {
+        "seed": 4294967295,
+        "temperature": 0.800000011920929,
+        "dynatemp_range": 0.0,
+        "dynatemp_exponent": 1.0,
+        "top_k": 40,
+        "top_p": 0.949999988079071,
+        "min_p": 0.05000000074505806,
+        "top_n_sigma": -1.0,
+        "xtc_probability": 0.0,
+        "xtc_threshold": 0.10000000149011612,
+        "typical_p": 1.0,
+        "repeat_last_n": 64,
+        "repeat_penalty": 1.0,
+        "presence_penalty": 0.0,
+        "frequency_penalty": 0.0,
+        "dry_multiplier": 0.0,
+        "dry_base": 1.75,
+        "dry_allowed_length": 2,
+        "dry_penalty_last_n": 64,
+        "mirostat": 0,
+        "mirostat_tau": 5.0,
+        "mirostat_eta": 0.10000000149011612,
+        "adaptive_target": -1.0,
+        "adaptive_decay": 0.8999999761581421,
+        "max_tokens": -1,
+        "n_predict": -1,
+        "n_keep": 0,
+        "n_discard": 0,
+        "ignore_eos": false,
+        "stream": false,
+        "n_probs": 0,
+        "min_keep": 0,
+        "chat_format": "Content-only",
+        "reasoning_format": "none",
+        "reasoning_in_content": false,
+        "generation_prompt": "",
+        "samplers": [
+          "penalties",
+          "dry",
+          "top_n_sigma",
+          "top_k",
+          "typ_p",
+          "top_p",
+          "min_p",
+          "xtc",
+          "temperature"
+        ],
+        "speculative.types": "none",
+        "timings_per_token": false,
+        "post_sampling_probs": false,
+        "backend_sampling": false,
+        "lora": []
+      },
+      "n_ctx": 8192
+    },
+    "total_slots": 4,
+    "model_alias": "neohorse-14b-q4km",
+    "model_ftype": "Q4_K - Medium",
+    "model_path": "models/neohorse/NeoHorse-1-4B-Q4_K_M.gguf",
+    "modalities": {
+      "vision": false,
+      "video": false,
+      "audio": false
+    },
+    "media_marker": "<__media_db6j4IbGppM19gSCsfvfSzYNNlMLcMNe__>",
+    "endpoint_slots": true,
+    "endpoint_props": false,
+    "endpoint_metrics": true,
+    "ui": true,
+    "ui_settings": {},
+    "chat_template": "{%- set image_count = namespace(value=0) %}\n{%- set video_count = namespace(value=0) %}\n{%- macro render_content(content, do_vision_count, is_system_content=false) %}\n    {%- if content is string %}\n        {{- content }}\n    {%- elif content is iterable and content is not mapping %}\n        {%- for item in content %}\n            {%- if 'image' in item or 'image_url' in item or item.type == 'image' %}\n                {%- if is_system_content %}\n                    {{- raise_exception('System message cannot contain images.') }}\n                {%- endif %}\n                {%- if do_vision_count %}\n                    {%- set image_count.value = image_count.value + 1 %}\n                {%- endif %}\n                {%- if add_vision_id %}\n                    {{- 'Picture ' ~ image_count.value ~ ': ' }}\n                {%- endif %}\n                {{- '<|vision_start|><|image_pad|><|vision_end|>' }}\n            {%- elif 'video' in item or item.type == 'video' %}\n                {%- if is_system_content %}\n                    {{- raise_exception('System message cannot contain videos.') }}\n                {%- endif %}\n                {%- if do_vision_count %}\n                    {%- set video_count.value = video_count.value + 1 %}\n                {%- endif %}\n                {%- if add_vision_id %}\n                    {{- 'Video ' ~ video_count.value ~ ': ' }}\n                {%- endif %}\n                {{- '<|vision_start|><|video_pad|><|vision_end|>' }}\n            {%- elif 'text' in item %}\n                {{- item.text }}\n            {%- else %}\n                {{- raise_exception('Unexpected item type in content.') }}\n            {%- endif %}\n        {%- endfor %}\n    {%- elif content is none or content is undefined %}\n        {{- '' }}\n    {%- else %}\n        {{- raise_exception('Unexpected content type.') }}\n    {%- endif %}\n{%- endmacro %}\n{%- if not messages %}\n    {{- raise_exception('No messages provided.') }}\n{%- endif %}\n{%- if tools and tools is iterable and tools is not mapping %}\n    {{- '<|im_start|>system\\n' }}\n    {{- \"# Tools\\n\\nYou have access to the following functions:\\n\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\" }}\n    {{- '\\n\\nIf you choose to call a function ONLY reply in the following format with NO suffix:\\n\\n<tool_call>\\n<function=example_function_name>\\n<parameter=example_parameter_1>\\nvalue_1\\n</parameter>\\n<parameter=example_parameter_2>\\nThis is the value for the second parameter\\nthat can span\\nmultiple lines\\n</parameter>\\n</function>\\n</tool_call>\\n\\n<IMPORTANT>\\nReminder:\\n- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags\\n- Required parameters MUST be specified\\n- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after\\n- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls\\n</IMPORTANT>' }}\n    {%- if messages[0].role == 'system' %}\n        {%- set content = render_content(messages[0].content, false, true)|trim %}\n        {%- if content %}\n            {{- '\\n\\n' + content }}\n        {%- endif %}\n    {%- endif %}\n    {{- '<|im_end|>\\n' }}\n{%- else %}\n    {%- if messages[0].role == 'system' %}\n        {%- set content = render_content(messages[0].content, false, true)|trim %}\n        {{- '<|im_start|>system\\n' + content + '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- set ns = namespace(multi_step_tool=true, last_query_index=messages|length - 1) %}\n{%- for message in messages[::-1] %}\n    {%- set index = (messages|length - 1) - loop.index0 %}\n    {%- if ns.multi_step_tool and message.role == \"user\" %}\n        {%- set content = render_content(message.content, false)|trim %}\n        {%- if not(content.startswith('<tool_response>') and content.endswith('</tool_response>')) %}\n            {%- set ns.multi_step_tool = false %}\n            {%- set ns.last_query_index = index %}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if ns.multi_step_tool %}\n    {{- raise_exception('No user query found in messages.') }}\n{%- endif %}\n{%- for message in messages %}\n    {%- set content = render_content(message.content, true)|trim %}\n    {%- if message.role == \"system\" %}\n        {%- if not loop.first %}\n            {{- raise_exception('System message must be at the beginning.') }}\n        {%- endif %}\n    {%- elif message.role == \"user\" %}\n        {{- '<|im_start|>' + message.role + '\\n' + content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {%- set reasoning_content = '' %}\n        {%- if message.reasoning_content is string %}\n            {%- set reasoning_content = message.reasoning_content %}\n        {%- else %}\n            {%- if '</think>' in content %}\n                {%- set reasoning_content = content.split('</think>')[0].rstrip('\\n').split('<think>')[-1].lstrip('\\n') %}\n                {%- set content = content.split('</think>')[-1].lstrip('\\n') %}\n            {%- endif %}\n        {%- endif %}\n        {%- set reasoning_content = reasoning_content|trim %}\n        {%- if loop.index0 > ns.last_query_index %}\n            {{- '<|im_start|>' + message.role + '\\n<think>\\n' + reasoning_content + '\\n</think>\\n\\n' + content }}\n        {%- else %}\n            {{- '<|im_start|>' + message.role + '\\n' + content }}\n        {%- endif %}\n        {%- if message.tool_calls and message.tool_calls is iterable and message.tool_calls is not mapping %}\n            {%- for tool_call in message.tool_calls %}\n                {%- if tool_call.function is defined %}\n                    {%- set tool_call = tool_call.function %}\n                {%- endif %}\n                {%- if loop.first %}\n                    {%- if content|trim %}\n                        {{- '\\n\\n<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                    {%- else %}\n                        {{- '<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                    {%- endif %}\n                {%- else %}\n                    {{- '\\n<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                {%- endif %}\n                {%- if tool_call.arguments is defined %}\n                    {%- for args_name, args_value in tool_call.arguments|items %}\n                        {{- '<parameter=' + args_name + '>\\n' }}\n                        {%- set args_value = args_value | tojson | safe if args_value is mapping or (args_value is sequence and args_value is not string) else args_value | string %}\n                        {{- args_value }}\n                        {{- '\\n</parameter>\\n' }}\n                    {%- endfor %}\n                {%- endif %}\n                {{- '</function>\\n</tool_call>' }}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.previtem and loop.previtem.role != \"tool\" %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- content }}\n        {{- '\\n</tool_response>' }}\n        {%- if not loop.last and loop.nextitem.role != \"tool\" %}\n            {{- '<|im_end|>\\n' }}\n        {%- elif loop.last %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- else %}\n        {{- raise_exception('Unexpected message role.') }}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n    {%- if enable_thinking is defined and enable_thinking is false %}\n        {{- '<think>\\n\\n</think>\\n\\n' }}\n    {%- else %}\n        {{- '<think>\\n' }}\n    {%- endif %}\n{%- endif %}",
+    "chat_template_caps": {
+      "supports_object_arguments": true,
+      "supports_parallel_tool_calls": true,
+      "supports_preserve_reasoning": false,
+      "supports_reasoning_effort": false,
+      "supports_string_content": true,
+      "supports_system_role": true,
+      "supports_tool_calls": true,
+      "supports_tools": true,
+      "supports_typed_content": true
+    },
+    "bos_token": ",",
+    "eos_token": "<|im_end|>",
+    "build_info": "b10964-b29c606e2",
+    "is_sleeping": false,
+    "cors_proxy_enabled": false
+  },
+  "loaded_idle_rss": "9520 3284832 00:01 /opt/homebrew/bin/llama-server -m models/neohorse/NeoHorse-1-4B-Q4_K_M.gguf --host 127.0.0.1 --port 8923 -ngl 99 -c 8192 --jinja --flash-attn on --no-warmup --metrics --alias neohorse-14b-q4km",
+  "loaded_idle": {
+    "swapusage": "vm.swapusage: total = 2048.00M  used = 869.50M  free = 1178.50M  (encrypted)",
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 45719 \nPages purgeable: 2609 \nPages purged: 29410322 \n\nSwap I/O:\nSwapins: 2872216 \nSwapouts: 3895953 \n\nPage Q counts:\nPages active: 269494 \nPages inactive: 259488 \nPages speculative: 9137 \nPages throttled: 0 \nPages wired down: 341272 \n\nCompressor Stats:\nPages used by compressor: 86037 \nPages decompressed: 130275469 \nPages compressed: 151592580 \n\nFile I/O:\nPageins: 95186926 \nPageouts: 164086 \n\nSystem-wide memory free percentage: 57%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                    45725.\nPages active:                                 269487.\nPages inactive:                               259489.\nPages speculative:                              9137.\nPages throttled:                                   0.\nPages wired down:                             341272.\nPages purgeable:                                2609.\n\"Translation faults\":                      907967947.\nPages copy-on-write:                        37638465.\nPages zero filled:                         482752087.\nPages reactivated:                         136432527.\nPages purged:                               29410322.\nFile-backed pages:                            325431.\nAnonymous pages:                              212682.\nPages stored in compressor:                   189164.\nPages occupied by compressor:                  86037.\nDecompressions:                            130275469.\nCompressions:                              151592580.\nPageins:                                    95186927.\nPageouts:                                     164086.\nSwapins:                                     2872216.\nSwapouts:                                    3895953."
+  },
+  "direct_no_think": {
+    "seconds": 0.31505562499999984,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "PARIS"
+          }
+        }
+      ],
+      "created": 1789914831,
+      "model": "neohorse-14b-q4km",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 3,
+        "prompt_tokens": 20,
+        "total_tokens": 23,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "id": "chatcmpl-O4WWDmwP6SoGqApygNqgtJYuf9gXf30O",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 20,
+        "prompt_ms": 225.236,
+        "prompt_per_token_ms": 11.2618,
+        "prompt_per_second": 88.79575201122378,
+        "predicted_n": 3,
+        "predicted_ms": 87.359,
+        "predicted_per_token_ms": 43.6795,
+        "predicted_per_second": 22.894034959191384
+      }
+    }
+  },
+  "warm_direct": {
+    "seconds": 0.20073529199999984,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "PARIS"
+          }
+        }
+      ],
+      "created": 1789914831,
+      "model": "neohorse-14b-q4km",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 3,
+        "prompt_tokens": 20,
+        "total_tokens": 23,
+        "prompt_tokens_details": {
+          "cached_tokens": 16
+        }
+      },
+      "id": "chatcmpl-EaaVUh5x95QmoMn5m2J4rIuyUrJ1anhW",
+      "timings": {
+        "cache_n": 16,
+        "prompt_n": 4,
+        "prompt_ms": 111.89,
+        "prompt_per_token_ms": 27.9725,
+        "prompt_per_second": 35.7493967289302,
+        "predicted_n": 3,
+        "predicted_ms": 85.342,
+        "predicted_per_token_ms": 42.671,
+        "predicted_per_second": 23.43511987063814
+      }
+    }
+  },
+  "tool_call": {
+    "seconds": 2.307117958,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "tool_calls",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "get_git_status",
+                  "arguments": "{\"path\":\"/tmp/repo\"}"
+                },
+                "id": "LM4l2IzGfqTsob0s8nGAwKHE1H3n2gAo"
+              }
+            ]
+          }
+        }
+      ],
+      "created": 1789914833,
+      "model": "neohorse-14b-q4km",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 28,
+        "prompt_tokens": 299,
+        "total_tokens": 327,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "id": "chatcmpl-y35Ok5XrqZrV9JqB4ncThyh2mUj2dbtJ",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 299,
+        "prompt_ms": 1169.56,
+        "prompt_per_token_ms": 3.911571906354515,
+        "prompt_per_second": 255.6516980744896,
+        "predicted_n": 28,
+        "predicted_ms": 1116.527,
+        "predicted_per_token_ms": 41.35285185185185,
+        "predicted_per_second": 24.182129048379483
+      }
+    }
+  },
+  "tool_continuation": {
+    "seconds": 1.1555838329999997,
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "The repository at `/tmp/repo` is on the `main` branch and is clean (not dirty)."
+          }
+        }
+      ],
+      "created": 1789914834,
+      "model": "neohorse-14b-q4km",
+      "system_fingerprint": "b10964-b29c606e2",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 23,
+        "prompt_tokens": 353,
+        "total_tokens": 376,
+        "prompt_tokens_details": {
+          "cached_tokens": 326
+        }
+      },
+      "id": "chatcmpl-EVGljcKopytokpNkUmQDCaSAk1lrFmUY",
+      "timings": {
+        "cache_n": 326,
+        "prompt_n": 27,
+        "prompt_ms": 235.878,
+        "prompt_per_token_ms": 8.736222222222223,
+        "prompt_per_second": 114.46595273827997,
+        "predicted_n": 23,
+        "predicted_ms": 911.978,
+        "predicted_per_token_ms": 41.453545454545456,
+        "predicted_per_second": 24.123388941399902
+      }
+    }
+  },
+  "active_rss": "9520 3607248 00:05 /opt/homebrew/bin/llama-server -m models/neohorse/NeoHorse-1-4B-Q4_K_M.gguf --host 127.0.0.1 --port 8923 -ngl 99 -c 8192 --jinja --flash-attn on --no-warmup --metrics --alias neohorse-14b-q4km",
+  "metrics": "# HELP llamacpp:prompt_tokens_total Number of prompt tokens processed, excluding cached tokens\n# TYPE llamacpp:prompt_tokens_total counter\nllamacpp:prompt_tokens_total 350\n# HELP llamacpp:prompt_tokens_cached_total Number of prompt tokens reused from the cache\n# TYPE llamacpp:prompt_tokens_cached_total counter\nllamacpp:prompt_tokens_cached_total 342\n# HELP llamacpp:prompt_seconds_total Total time spent processing prompts\n# TYPE llamacpp:prompt_seconds_total counter\nllamacpp:prompt_seconds_total 1.72236\n# HELP llamacpp:tokens_predicted_total Number of generation tokens processed\n# TYPE llamacpp:tokens_predicted_total counter\nllamacpp:tokens_predicted_total 57\n# HELP llamacpp:tokens_predicted_seconds_total Total time spent generating tokens\n# TYPE llamacpp:tokens_predicted_seconds_total counter\nllamacpp:tokens_predicted_seconds_total 2.20121\n# HELP llamacpp:n_decode_total Total number of llama_decode() calls, excluding speculative decoding and multimodal decoding\n# TYPE llamacpp:n_decode_total counter\nllamacpp:n_decode_total 61\n# HELP llamacpp:n_tokens_max Largest observed sequence length (prompt + generation)\n# TYPE llamacpp:n_tokens_max counter\nllamacpp:n_tokens_max 375\n# HELP llamacpp:spec_decode_num_draft_tokens_total Speculative: Total draft tokens generated\n# TYPE llamacpp:spec_decode_num_draft_tokens_total counter\nllamacpp:spec_decode_num_draft_tokens_total 0\n# HELP llamacpp:spec_decode_num_accepted_tokens_total Speculative: Total draft tokens accepted by the target model\n# TYPE llamacpp:spec_decode_num_accepted_tokens_total counter\nllamacpp:spec_decode_num_accepted_tokens_total 0\n# HELP llamacpp:spec_decode_num_drafts_total Speculative: Total speculative decoding verification steps\n# TYPE llamacpp:spec_decode_num_drafts_total counter\nllamacpp:spec_decode_num_drafts_total 0\n# HELP llamacpp:prompt_tokens_seconds Average prompt throughput in tokens/s\n# TYPE llamacpp:prompt_tokens_seconds gauge\nllamacpp:prompt_tokens_seconds 203.209\n# HELP llamacpp:predicted_tokens_seconds Average generation throughput in tokens/s\n# TYPE llamacpp:predicted_tokens_seconds gauge\nllamacpp:predicted_tokens_seconds 24.0777\n# HELP llamacpp:requests_processing Number of requests processing\n# TYPE llamacpp:requests_processing gauge\nllamacpp:requests_processing 0\n# HELP llamacpp:requests_deferred Number of requests deferred\n# TYPE llamacpp:requests_deferred gauge\nllamacpp:requests_deferred 0\n# HELP llamacpp:n_busy_slots_per_decode Average number of busy slots per llama_decode() call\n# TYPE llamacpp:n_busy_slots_per_decode gauge\nllamacpp:n_busy_slots_per_decode 1\n",
+  "after": {
+    "swapusage": "vm.swapusage: total = 2048.00M  used = 869.50M  free = 1178.50M  (encrypted)",
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 26050 \nPages purgeable: 2622 \nPages purged: 29410322 \n\nSwap I/O:\nSwapins: 2872216 \nSwapouts: 3895953 \n\nPage Q counts:\nPages active: 280870 \nPages inactive: 270911 \nPages speculative: 9143 \nPages throttled: 0 \nPages wired down: 338139 \n\nCompressor Stats:\nPages used by compressor: 86034 \nPages decompressed: 130275495 \nPages compressed: 151592580 \n\nFile I/O:\nPageins: 95186955 \nPageouts: 164086 \n\nSystem-wide memory free percentage: 57%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                    26051.\nPages active:                                 280869.\nPages inactive:                               270911.\nPages speculative:                              9143.\nPages throttled:                                   0.\nPages wired down:                             338139.\nPages purgeable:                                2622.\n\"Translation faults\":                      908011879.\nPages copy-on-write:                        37641716.\nPages zero filled:                         482776451.\nPages reactivated:                         136432535.\nPages purged:                               29410322.\nFile-backed pages:                            325466.\nAnonymous pages:                              235457.\nPages stored in compressor:                   189149.\nPages occupied by compressor:                  86034.\nDecompressions:                            130275495.\nCompressions:                              151592580.\nPageins:                                    95186956.\nPageouts:                                     164086.\nSwapins:                                     2872216.\nSwapouts:                                    3895953."
+  },
+  "outcome": "completed",
+  "exit_code": 0,
+  "post_stop": {
+    "swapusage": "vm.swapusage: total = 2048.00M  used = 869.50M  free = 1178.50M  (encrypted)",
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 94798 \nPages purgeable: 2617 \nPages purged: 29410322 \n\nSwap I/O:\nSwapins: 2872216 \nSwapouts: 3895953 \n\nPage Q counts:\nPages active: 353486 \nPages inactive: 334626 \nPages speculative: 9143 \nPages throttled: 0 \nPages wired down: 133060 \n\nCompressor Stats:\nPages used by compressor: 86034 \nPages decompressed: 130275507 \nPages compressed: 151592580 \n\nFile I/O:\nPageins: 95186962 \nPageouts: 164086 \n\nSystem-wide memory free percentage: 78%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                    94799.\nPages active:                                 353350.\nPages inactive:                               334761.\nPages speculative:                              9143.\nPages throttled:                                   0.\nPages wired down:                             133060.\nPages purgeable:                                2617.\n\"Translation faults\":                      908021944.\nPages copy-on-write:                        37643477.\nPages zero filled:                         482776963.\nPages reactivated:                         136432536.\nPages purged:                               29410322.\nFile-backed pages:                            490109.\nAnonymous pages:                              207145.\nPages stored in compressor:                   189149.\nPages occupied by compressor:                  86034.\nDecompressions:                            130275507.\nCompressions:                              151592580.\nPageins:                                    95186963.\nPageouts:                                     164086.\nSwapins:                                     2872216.\nSwapouts:                                    3895953."
+  }
+}

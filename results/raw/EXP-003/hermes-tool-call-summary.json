@@ -1,0 +1,60 @@
+{
+  "experiment": "EXP-003",
+  "checkpoint": "hermes_native_tool_call_smoke_8slot",
+  "status": "blocked_by_provider_integration_timeout_no_tool_call",
+  "subjective_normal_workload": {"primary_rating": 0, "transient_possible_rating": 1, "attribution": "possibly unrelated", "scope": "Hermes smoke-test observation"},
+  "server_config": {
+    "moe_n_slots": 8,
+    "moe_n_layers": 40,
+    "context": 8192,
+    "batch_size": 2048,
+    "ubatch_size": 1,
+    "no_mmap": true,
+    "no_warmup": true,
+    "reasoning": "off",
+    "port": 8901
+  },
+  "prompt_file": "results/raw/EXP-003/hermes-tool-call-prompt.txt",
+  "runs": [
+    {
+      "api_mode": "codex_responses",
+      "output_file": "results/raw/EXP-003/hermes-tool-call-output-retry.txt",
+      "output_bytes": 36,
+      "server_log": "results/raw/EXP-003/hermes-8slot-server-retry.log",
+      "metrics_file": "results/raw/EXP-003/hermes-tool-call-retry-metrics.jsonl",
+      "server_completed_response": false,
+      "native_tool_call_observed": false,
+      "failure": "Hermes request canceled/no parsed SSE completion before llama-server emitted a response; no tool call reached executor.",
+      "metrics_samples": 9,
+      "process_footprint_peak_bytes": 3654094088,
+      "ioaccelerator_alloc_peak_bytes": 8297725952,
+      "ioaccelerator_in_use_peak_bytes": 4802166784,
+      "simulated_free_min_percent": 31
+    },
+    {
+      "api_mode": "chat_completions",
+      "output_file": "results/raw/EXP-003/hermes-tool-call-output-chatcompletions-timeout600.txt",
+      "output_bytes": 36,
+      "server_log": "results/raw/EXP-003/hermes-8slot-server-chatcompletions.log",
+      "metrics_file": "results/raw/EXP-003/hermes-tool-call-timeout600-metrics.jsonl",
+      "server_completed_response": false,
+      "native_tool_call_observed": false,
+      "failure": "Hermes request canceled/no parsed SSE completion before llama-server emitted a response; no tool call reached executor.",
+      "metrics_samples": 5,
+      "process_footprint_peak_bytes": 3322629168,
+      "ioaccelerator_alloc_peak_bytes": 8320270336,
+      "ioaccelerator_in_use_peak_bytes": 4911939584,
+      "simulated_free_min_percent": 32
+    }
+  ],
+  "cleanup": {
+    "temporary_profile": "exp003-smoke",
+    "deleted": true,
+    "port_8901_listening": false,
+    "port_8902_listening": false,
+    "fast_down": true,
+    "deep_down": true
+  },
+  "interpretation": "Direct OpenAI-compatible generation was previously successful. Hermes native integration was not validated because the local provider path produced no parsed SSE completion; first codex_responses mode was incompatible, and a temporary chat_completions profile still saw request cancellation before response. This is an integration/runtime timeout failure, not evidence that the model cannot generate.",
+  "next_smallest_experiment": "Inspect/adjust Hermes local-provider streaming timeout and llama.cpp request compatibility in a dedicated isolated integration test before repeating on the Mac."
+}

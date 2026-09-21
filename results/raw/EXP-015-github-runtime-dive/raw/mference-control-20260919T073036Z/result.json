@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-09-19T07:30:51.311513+00:00",
+  "exit_code": 0,
+  "timeout": false,
+  "wall_seconds": 14.646,
+  "before": {
+    "swapusage": "vm.swapusage: total = 3072.00M  used = 1795.25M  free = 1276.75M  (encrypted)",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                   140686.\nPages active:                                 313035.\nPages inactive:                               311776.\nPages speculative:                              1597.\nPages throttled:                                   0.\nPages wired down:                             162485.\nPages purgeable:                                5246.\n\"Translation faults\":                     1016658753.\nPages copy-on-write:                        45073719.\nPages zero filled:                         692307590.\nPages reactivated:                          85401846.\nPages purged:                               29683730.\nFile-backed pages:                            363113.\nAnonymous pages:                              263295.\nPages stored in compressor:                   220703.\nPages occupied by compressor:                  81568.\nDecompressions:                            232183563.\nCompressions:                              259467586.\nPageins:                                   600242719.\nPageouts:                                     678483.\nSwapins:                                      612633.\nSwapouts:                                     830421.\n",
+    "pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\nSystem-wide memory free percentage: 75%"
+  },
+  "after": {
+    "swapusage": "vm.swapusage: total = 3072.00M  used = 1795.44M  free = 1276.56M  (encrypted)",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                   133510.\nPages active:                                 278374.\nPages inactive:                               281238.\nPages speculative:                               807.\nPages throttled:                                   0.\nPages wired down:                             211277.\nPages purgeable:                                 108.\n\"Translation faults\":                     1016876377.\nPages copy-on-write:                        45169654.\nPages zero filled:                         692445280.\nPages reactivated:                          85424843.\nPages purged:                               29689908.\nFile-backed pages:                            369794.\nAnonymous pages:                              190625.\nPages stored in compressor:                   275141.\nPages occupied by compressor:                 105941.\nDecompressions:                            232219561.\nCompressions:                              259568222.\nPageins:                                   600918395.\nPageouts:                                     678814.\nSwapins:                                      612641.\nSwapouts:                                     830433.\n",
+    "pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\nSystem-wide memory free percentage: 72%"
+  },
+  "timing_footers": [
+    "[stop=maxTokens prefill=19tok/2.30s new=64tok decode=8.75s tok/s=7.312]"
+  ],
+  "command": [
+    "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-015-github-runtime-dive/source/Mference/.build/out/Products/Release/MferenceCLI",
+    "--model",
+    "/Users/<user>/HermesProjects/Local-LLM-Lab/results/raw/EXP-005/model/qwen36.gturbo",
+    "--prompt",
+    "In exactly four concise sentences, explain why stable prompt prefixes matter for local tool-using language models.",
+    "--max-new",
+    "64",
+    "--max-context",
+    "8192",
+    "--temperature",
+    "0",
+    "--top-k",
+    "1",
+    "--top-p",
+    "1",
+    "--expert-cache-slots",
+    "16",
+    "--prefill-chunk",
+    "128",
+    "--verify",
+    "trusted-receipt"
+  ]
+}

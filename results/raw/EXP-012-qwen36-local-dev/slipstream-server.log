@@ -1,0 +1,6 @@
+2026-09-18T19:37:22Z request prompt=15 cached=0 new_prompt=15 completion=16 ttft=8.82s prefill=1.7tok/s decode=8.4tok/s total=10.72s stop=length cache_miss=noEntry render=0.000s match=0.000s prepare=0.001s expert_hit=51.9% expert_miss=2307 io_await=1.27s reasoning=16
+--- reasoning 16 tokens ---
+Thinking Process:
+1.  **Analyze the Request:** The user wants
+--- end reasoning ---
+TurboFieldfareServer ready at http://127.0.0.1:8901 model=qwen3.6-35b-a3b context=8192 prompt_cache=single-prefix

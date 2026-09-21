@@ -1,0 +1,216 @@
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921346.560946, "delta": "The"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921346.623171, "delta": " first"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921346.676864, "delta": " command"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921346.732125, "delta": " to"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921346.787636, "delta": " diagnose"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921346.842129, "delta": " connection"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921346.896016, "delta": " refused"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921346.950926, "delta": " from"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.004649, "delta": " a"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.048594, "delta": " local"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.086085, "delta": " HTTP"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.121829, "delta": " server"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.15623, "delta": " is"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.262192, "delta": ":\n"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.262979, "delta": "\n"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.263579, "delta": "```"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.300887, "delta": "bash"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.3382359, "delta": "\n"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.37261, "delta": "nc"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.4076219, "delta": " -"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.444875, "delta": "vz"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.482212, "delta": " "}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.520719, "delta": "<host"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.556059, "delta": ">"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.590226, "delta": " "}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.6266172, "delta": "<port"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.663998, "delta": ">\n"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.700941, "delta": "```\n"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.7369332, "delta": "\n"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.771277, "delta": "That"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.806508, "delta": " runs"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.842464, "delta": " against"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.878989, "delta": " the"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.915461, "delta": " real"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.953393, "delta": " network"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921347.988501, "delta": " path"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.023156, "delta": " and"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.060159, "delta": " reports"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.0978181, "delta": " the"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.136574, "delta": " specific"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.173374, "delta": " reason"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.208411, "delta": " if"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.245844, "delta": " the"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.2814631, "delta": " socket"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.317951, "delta": " cannot"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.3541918, "delta": " be"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.3892732, "delta": " established"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.4235892, "delta": ".\n"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.460287, "delta": "\n"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.498488, "delta": "A"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.535069, "delta": " second"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.571568, "delta": ","}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.6059892, "delta": " more"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.64003, "delta": " useful"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.675519, "delta": " diagnostic"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.712654, "delta": " is"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.822811, "delta": ":\n"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.823222, "delta": "\n"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.8233972, "delta": "```"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.859624, "delta": "bash"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.896571, "delta": "\n"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.9334028, "delta": "ss"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921348.9708622, "delta": " -"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.005933, "delta": "t"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.04164, "delta": "ln"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.078509, "delta": "p"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.114282, "delta": " |"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.151708, "delta": " grep"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.188069, "delta": " "}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.2228339, "delta": "<host"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.258552, "delta": ">:"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.332705, "delta": "<port"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.369361, "delta": ">\n"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.40495, "delta": "```\n"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.4404821, "delta": "\n"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.4739342, "delta": "That"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.511393, "delta": " confirms"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.54774, "delta": " whether"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.5850072, "delta": " the"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.621834, "delta": " process"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.657058, "delta": " is"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.6947358, "delta": " bound"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.731978, "delta": " to"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.7699149, "delta": " the"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.804617, "delta": " interface"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.8394802, "delta": ","}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.8754702, "delta": " listening"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.911053, "delta": " on"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.9483688, "delta": " TCP"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921349.986057, "delta": ","}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921350.0219781, "delta": " and"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921350.0587468, "delta": " which"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921350.096649, "delta": " PID"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921350.13434, "delta": " owns"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921350.171958, "delta": " it"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921350.206593, "delta": " \u2014"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921350.243305, "delta": " a"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921350.2806442, "delta": " prerequisite"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921350.317485, "delta": " before"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921350.3544161, "delta": " a"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921350.389368, "delta": " connection"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921350.425148, "delta": " can"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921350.4621, "delta": " be"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921350.499147, "delta": " refused"}
+
+data: {"event": "message.delta", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921350.537078, "delta": "."}
+
+data: {"event": "reasoning.available", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921350.5785222, "text": "The first command to diagnose connection refused from a local HTTP server is:\n\n```bash\nnc -vz <host> <port>\n```\n\nThat runs against the real network path and reports the specific reason if the socket cannot be established.\n\nA second, more useful diagnostic is:\n\n```bash\nss -tlnp | grep <host>:<port>\n```\n\nThat confirms whether the process is bound to the interface, listening on TCP, and which PID owns it \u2014 a prerequisite before a connection can be refused."}
+
+data: {"event": "run.completed", "run_id": "run_26b4c235bb9d4966b4b128ddcaf2d123", "timestamp": 1789921350.593076, "output": "The first command to diagnose connection refused from a local HTTP server is:\n\n```bash\nnc -vz <host> <port>\n```\n\nThat runs against the real network path and reports the specific reason if the socket cannot be established.\n\nA second, more useful diagnostic is:\n\n```bash\nss -tlnp | grep <host>:<port>\n```\n\nThat confirms whether the process is bound to the interface, listening on TCP, and which PID owns it \u2014 a prerequisite before a connection can be refused.", "usage": {"input_tokens": 14407, "output_tokens": 107, "total_tokens": 14514}}
+
+: stream closed
+
