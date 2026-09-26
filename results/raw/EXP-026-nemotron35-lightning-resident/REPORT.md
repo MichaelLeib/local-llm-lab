@@ -61,4 +61,4 @@ Reopen Branch 1 only with a materially different bounded-working-set Metal/runti
 
 ## Artifacts
 
-`guard-8k.jsonl`, `server-8k.log`, `small-gate.json`, `model.sha256`, `source/llama.cpp/` (pinned checkout), `build/`, and `make_retrieval_corpus.py` are retained. The corpus generator is retained unexecuted at long context because the guard correctly stopped before a populated admission.
+Published evidence includes `guard-8k.jsonl`, `server-8k.log`, `small-gate.json`, `model.sha256`, and `make_retrieval_corpus.py`. The pinned `source/llama.cpp/` checkout, compiled `build/` tree, and GGUF weights are retained locally but deliberately excluded from Git history. The corpus generator remains unexecuted at long context because the guard correctly stopped before a populated admission.
