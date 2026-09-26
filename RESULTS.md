@@ -444,6 +444,10 @@ Artifacts: `results/raw/EXP-006/optimization-sprint/`.
 - **Rollout:** exact served id `gemma-4-E4B-it-Q6_K` wired across lane manager, root config, all profile alias maps/providers, research runner (deep/super → DEEP), and user tooling; Ornith Q6 retained as instant rollback.
 - **Evidence:** `results/raw/EXP-020-tensorsharp-gemma4-e4b/` (PROGRESS.md, bench/, logs/, gen-test JSON, release.json).
 
+## EXP-026 — Nemotron 3.5 Lightning 30B-A3B resident gate
+
+- **Decision:** **REJECTED — resident Branch 1 is unsafe on this 16 GiB Mac** (2026-09-21). The sole <10-GiB candidate found, verified 9.09-GiB mixed Q2/Q4 2.47-bpw GGUF, loaded in an isolated current upstream llama.cpp Metal server but immediately drove free system memory from the recorded 63% quiet baseline to 13%. The independent guard stopped the server before a genuinely populated 8K request; no context-ladder, API/tool, or Hermes result is claimed. Q8 KV at 128K is only a 384-MiB lower bound, so it is not the initial blocker: resident weight/Metal unified-memory pressure is. Higher-quality 11.735-GB+ quants are excluded; deeper compression would need multi-GiB savings and lacks a credible quality floor. The installed TensorSharp ggml_metal server parses `nemotron_h_moe` but refuses this file before weight allocation (`Unknown GGML tensor type: 42`), so it is not a lower-memory alternative today. Reopen only with a materially bounded-working-set runtime, TensorSharp GGML type-42 support plus a fresh guarded load comparison, 24–32 GiB+ unified memory, or a separately approved non-resident branch. Report: `results/raw/EXP-026-nemotron35-lightning-resident/REPORT.md`.
+
 ## EXP-025 — Nemotron-3-Nano-30B-A3B Gate 0
 
 - **Decision:** **not a candidate on this 16 GiB Mac** (2026-09-21). Smallest credible 4-bit releases are 17.8–24.6 GB weights — above physical unified memory before any runtime workspace. No download, no inference. KV is not the blocker (0.75 GiB @128K FP16 hybrid-Mamba bound); weight residency is. Needs ≥24/32 GB hardware. Report: `results/raw/EXP-025-nemotron3nano-gate0/REPORT.md`.

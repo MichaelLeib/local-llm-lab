@@ -1,8 +1,10 @@
 # Current state
 
-Updated: 2026-09-20
+Updated: 2026-09-21
 
 ## Latest experiment
+
+**EXP-026 resident Nemotron 3.5 Lightning 30B-A3B is complete and rejected for this 16 GiB M3.** The verified 9.09-GiB mixed-Q2/Q4 2.47-bpw GGUF loaded under an isolated current upstream llama.cpp Metal build, but reached 13% system-wide free memory before any populated prompt; the independent guard stopped it at the 15% floor. This is a first-load resident-weight/Metal-memory failure, not a 64–128K KV failure: no populated 8K retrieval, API/native tool, or Hermes qualification is claimed. The installed TensorSharp ggml_metal server recognizes the architecture but rejects this mixed GGUF before allocation (`Unknown GGML tensor type: 42`), so it cannot currently provide an alternate admission path. Do not download a higher-quality quant or pursue destructive extra compression; reopen only with a demonstrably bounded-working-set runtime, 24–32 GiB+ unified memory, or the separately scoped SSD/expert-streaming branch. Evidence: `results/raw/EXP-026-nemotron35-lightning-resident/REPORT.md`.
 
 **EXP-022 Ornith MLX-4bit vs GGUF-Q6_K quality A/B is complete: MLX4 is rejected as a ≤5 percentage-point quality-loss replacement for Q6.** On the deterministic 16-item exact-answer gate, Q6 scored 14/16 (87.50%) and MLX4 scored 11/16 (68.75%), a -18.75-point MLX4 regression. MLX4 did complete a real Hermes read → reverse/write → reread file workflow in 107 s with a verified artifact; its speed-first lane status is unchanged, but it is not a no-quality-loss substitute. The Q6 fresh native rerun was resource-inconclusive and stopped safely; EXP-019's existing Q6 native-tool evidence remains the reference. On 2026-09-20 Q6_K + Q8_0 KV at a 64K endpoint was promoted to the FAST server (`hermes-fast`, port 8901) and made the default for Matrix's default/routed profiles and fresh myChatty sessions. A gateway default-model smoke and an explicit myChatty `local-fast`/`hermes-fast` run both returned their exact expected values. Full report: `results/raw/EXP-022-ornith-quality-ab/REPORT.md`; structured summary: `results/raw/EXP-022-ornith-quality-ab/summary.json`.
 

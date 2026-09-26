@@ -21,6 +21,13 @@ serving on constrained hardware — not leaderboard chasing.
 
 ## Highlights
 
+- **EXP-026 (Nemotron 3.5 Lightning resident GGUF):** the 9.09-GiB mixed
+  Q2/Q4 2.47-bpw candidate loaded in llama.cpp but was safety-stopped at the
+  first 8K arm: 13% free memory, +417.94 MiB observed swap, and 77,036
+  observed pageouts versus the quiet baseline. No populated-context, native
+  tool, or Hermes qualification is claimed. TensorSharp recognized
+  `nemotron_h_moe` but refused this GGUF's tensor type 42 before allocation.
+  Resident Branch 1 is rejected on the 16-GB M3; SSD streaming was not tested.
 - **EXP-020 (Gemma4-E4B + TensorSharp):** new DEEP lane — Gemma-4-E4B
   Q6_K + MTP draft on the TensorSharp runtime (ggml_metal). 11.1 tok/s
   decode, ~184 tok/s prefill through 15K, native Hermes tool-call loop
@@ -83,6 +90,7 @@ the decision current) as part of writing the result pack — plus a
 | **Qwen3.6-35B-A3B + Slipstream** (EXP-005/012/014/015) | 35B-A3B MoE, .gturbo SSD streaming | 7.5–8.4 tok/s decode; warm TTFT 3.1–4.5 s; cold TTFT 107.9 s @5K; populated-32K prefill safety-stopped | best streamed-MoE arm; **not promoted** (no safe 32K+/64K) |
 | **Mference runtime + 32 slots** (EXP-015) | same Qwen3.6 | 7.495 vs 7.312 tok/s (+2.5%), no swap growth | only safe incremental win; retained config |
 | **Nemotron-3-Nano-30B-A3B 4-bit / oMLX** (EXP-015 arm) | MLX 4-bit, 17.38 GB checkpoint | 8,099-token request rejected HTTP 507 in 0.01 s under 11.84-GB Metal cap; no model allocation, prefill, or decode | **not viable on this 16-GB Mac**; expert offload was never reached |
+| **Nemotron 3.5 Lightning 30B-A3B GGUF** (EXP-026) | 2.47-bpw mixed Q2/Q4, 9.09 GiB resident GGUF | model loaded, then 13% free at first 8K arm; +417.94 MiB observed swap and 77,036 observed pageouts; no populated request admitted | **rejected** — resident-weight/Metal unified-memory safety failure; no SSD streaming tested |
 | **Bonsai-2 27B PTQ1_0 (Prism)** (EXP-020) | 27B ternary 2-bit | healthy direct 32K; 64K FP16 KV idle leaves 9% free; first Hermes tool turn timed out | **rejected as primary** — fails Hermes 64K admission floor |
 | **Nanbeige4.2-3B** (EXP-021) | 3B, Q6/Q5 GGUF + MLX smoke | 13.26 tok/s @1K decode but 11.49 @8K; 64K unsafe during load (~10.7 GB RSS); Hermes turn 229 s vs Ornith 86.7 s | **rejected** |
 | **TinyTitan + Qwen3.8-Flash-Next** (EXP-006/009) | 125B-A6B MoE streamed | 2.44–2.84 tok/s with 1,493 MiB swap; requal arm stopped at 2,801 MiB swap before first token | **rejected** for interactive use |

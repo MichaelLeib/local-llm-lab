@@ -1,0 +1,17 @@
+0.00.000.055 I srv  llama_server: initializing ...
+0.00.026.566 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.029.394 W srv  llama_server: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.00.031.448 I srv    load_model: loading model 'results/raw/EXP-026-nemotron35-lightning-resident/models/Nemotron-3.5-Lightning-30B-A3B-MIXED-Q2_0-Q4_0-2.47BPW.gguf'
+0.12.311.202 I cmn          init: llama threadpool init, n_threads = 4
+0.12.751.668 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 8192, kv_unified = 'false'
+0.12.762.681 W srv          init: chat template supports preserving reasoning, it is enabled by default (may use more tokens, disable via --no-reasoning-preserve)
+0.12.762.693 I srv  llama_server: model loaded
+0.12.762.698 I srv  llama_server: listening on http://127.0.0.1:8926
+0.23.112.500 I slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+0.23.112.527 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+0.24.340.052 I slot print_timing: id  0 | task 0 | prompt eval time =     303.96 ms /    16 tokens (   19.00 ms per token,    52.64 tokens per second)
+0.24.340.056 I slot print_timing: id  0 | task 0 |        eval time =     923.40 ms /    32 tokens (   29.79 ms per token,    33.57 tokens per second)
+0.24.340.056 I slot print_timing: id  0 | task 0 |       total time =    1227.36 ms /    48 tokens
+0.24.340.057 I slot print_timing: id  0 | task 0 |    graphs reused =         31
+0.24.340.106 I slot      release: id  0 | task 0 | stop processing: n_tokens = 47, truncated = 0
+0.45.963.796 I srv    operator(): operator(): cleaning up before exit...
